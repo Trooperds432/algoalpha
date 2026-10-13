@@ -1,0 +1,7 @@
+# M21 unchanged-strategy lifecycle evidence
+
+Fresh integrated check: `checks-20261002T211741956812Z.json`, 642 passed, 32 explicit skips. The lifecycle regression passed and its actual state was preserved outside temporary pytest storage at `C:/Users/Jonat/algoalpha/runtime/m21-lifecycle-evidence`. `m21-lifecycle-artifacts.json` records file hashes and eight actual registered manifests.
+
+`builtin.buy_and_hold.v1` runs include `m21-backtest`, two `m21-optimize` trials, two walk-forward training trials, `m21-walk-forward-oos-00000` and `m21-walk-forward-oos-00001`, and the higher-commission robustness run. The regression exercises immutable synthetic dataset import, backtest fills/accounting, JSON/HTML reporting, optimisation, rolling walk-forward and stitched OOS, Monte Carlo using those registered OOS run IDs, robustness and comparison. Optimisation does not automatically approve a strategy.
+
+The same Python strategy class and quantity, with source hash checked before/after, execute through virtual PaperBroker. Baseline and paper economics: buy 10 at 101, commission 1, final cash 8989 and NAV 10109. Walk-forward explicitly liquidates at boundaries; its economics therefore differ from the uninterrupted baseline. Paper results are retained in `paper.sqlite3`. No Trading 212 test or order occurred. This is deterministic synthetic engineering evidence, not profitable-strategy validation.

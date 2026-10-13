@@ -1,0 +1,4648 @@
+[
+  {
+    "id": "c1076224-6208-444c-be37-996239356df0",
+    "companyId": "3b1d401d-7010-4eed-acd1-be7d52372c07",
+    "name": "Institutional Sales & Trading",
+    "role": "general",
+    "title": "Institutional Sales & Trading",
+    "icon": null,
+    "status": "idle",
+    "reportsTo": "9ecfbe59-069d-41c6-900d-0a55c2f37ced",
+    "capabilities": "Research institutional liquidity needs and model hypothetical client flow. Draft internal materials only; no client contact, solicitation or actual trade facilitation.",
+    "adapterType": "codex_local",
+    "adapterConfig": {
+      "cwd": "C:/Users/Jonat/algoalpha",
+      "engine": "auto",
+      "search": true,
+      "paperclipSkillSync": {
+        "desiredSkills": [
+          "paperclipai/optional/browser/agent-browser",
+          "paperclipai/optional/product/design-critique",
+          "paperclipai/bundled/docs/doc-maintenance",
+          "paperclipai/bundled/software-development/github-pr-workflow",
+          "paperclipai/bundled/paperclip-operations/issue-triage",
+          "paperclipai/optional/research/last30days",
+          "paperclipai/paperclip/paperclip",
+          "paperclipai/paperclip/paperclip-board",
+          "paperclipai/bundled/product/paperclip-capsules",
+          "paperclipai/paperclip/paperclip-converting-plans-to-tasks",
+          "paperclipai/paperclip/paperclip-create-agent",
+          "paperclipai/paperclip/para-memory-files",
+          "paperclipai/optional/software-development/prepare-mcp-integration",
+          "paperclipai/bundled/quality/qa-acceptance",
+          "paperclipai/optional/finance/ramp",
+          "paperclipai/bundled/paperclip-operations/reflection-coach",
+          "paperclipai/optional/content/release-announcement",
+          "paperclipai/optional/content/simplified-english",
+          "paperclipai/bundled/paperclip-operations/status-card-query",
+          "paperclipai/bundled/paperclip-operations/summarize-status",
+          "paperclipai/bundled/paperclip-operations/task-planning",
+          "paperclipai/bundled/product/wireframe"
+        ]
+      },
+      "instructionsFilePath": "C:/Users/Jonat/algoalpha/agents/institutional-sales-trading/AGENTS.md",
+      "dangerouslyBypassApprovalsAndSandbox": false
+    },
+    "runtimeConfig": {
+      "heartbeat": {
+        "enabled": false,
+        "maxConcurrentRuns": 20
+      }
+    },
+    "defaultEnvironmentId": null,
+    "budgetMonthlyCents": 0,
+    "spentMonthlyCents": 0,
+    "pauseReason": null,
+    "pausedAt": null,
+    "errorReason": null,
+    "permissions": {
+      "canCreateAgents": false,
+      "canCreateSkills": true
+    },
+    "lastHeartbeatAt": null,
+    "metadata": {
+      "firmRoleSlug": "institutional-sales-trading",
+      "paperTradingOnly": true
+    },
+    "createdAt": "2026-09-22T14:36:10.248Z",
+    "updatedAt": "2026-09-22T19:24:05.145Z",
+    "urlKey": "institutional-sales-trading",
+    "orgChainHealth": {
+      "status": "healthy",
+      "reason": "healthy",
+      "fullChain": [
+        {
+          "id": "c1076224-6208-444c-be37-996239356df0",
+          "companyId": "3b1d401d-7010-4eed-acd1-be7d52372c07",
+          "name": "Institutional Sales & Trading",
+          "status": "idle",
+          "reportsTo": "9ecfbe59-069d-41c6-900d-0a55c2f37ced",
+          "depth": 0,
+          "relation": "self"
+        },
+        {
+          "id": "9ecfbe59-069d-41c6-900d-0a55c2f37ced",
+          "companyId": "3b1d401d-7010-4eed-acd1-be7d52372c07",
+          "name": "CEO",
+          "status": "idle",
+          "reportsTo": null,
+          "depth": 1,
+          "relation": "ancestor"
+        }
+      ],
+      "firstInvalidAncestor": null,
+      "invalidAncestors": [],
+      "repairGuidance": null,
+      "pausedAncestors": [],
+      "escalationWarning": null
+    }
+  },
+  {
+    "id": "e7f5692a-deda-4554-a929-be132d2c6ca8",
+    "companyId": "3b1d401d-7010-4eed-acd1-be7d52372c07",
+    "name": "Infrastructure Engineer",
+    "role": "general",
+    "title": "Infrastructure Engineer",
+    "icon": null,
+    "status": "idle",
+    "reportsTo": "e3ea9802-b22f-472f-8139-4f70a33ce978",
+    "capabilities": "Design local compute, storage, deployment and monitoring for reproducible research. Do not buy resources or deploy external infrastructure without owner instruction.",
+    "adapterType": "codex_local",
+    "adapterConfig": {
+      "cwd": "C:/Users/Jonat/algoalpha",
+      "engine": "auto",
+      "search": true,
+      "paperclipSkillSync": {
+        "desiredSkills": [
+          "paperclipai/optional/browser/agent-browser",
+          "paperclipai/optional/product/design-critique",
+          "paperclipai/bundled/docs/doc-maintenance",
+          "paperclipai/bundled/software-development/github-pr-workflow",
+          "paperclipai/bundled/paperclip-operations/issue-triage",
+          "paperclipai/optional/research/last30days",
+          "paperclipai/paperclip/paperclip",
+          "paperclipai/paperclip/paperclip-board",
+          "paperclipai/bundled/product/paperclip-capsules",
+          "paperclipai/paperclip/paperclip-converting-plans-to-tasks",
+          "paperclipai/paperclip/paperclip-create-agent",
+          "paperclipai/paperclip/para-memory-files",
+          "paperclipai/optional/software-development/prepare-mcp-integration",
+          "paperclipai/bundled/quality/qa-acceptance",
+          "paperclipai/optional/finance/ramp",
+          "paperclipai/bundled/paperclip-operations/reflection-coach",
+          "paperclipai/optional/content/release-announcement",
+          "paperclipai/optional/content/simplified-english",
+          "paperclipai/bundled/paperclip-operations/status-card-query",
+          "paperclipai/bundled/paperclip-operations/summarize-status",
+          "paperclipai/bundled/paperclip-operations/task-planning",
+          "paperclipai/bundled/product/wireframe"
+        ]
+      },
+      "instructionsFilePath": "C:/Users/Jonat/algoalpha/agents/infrastructure-engineer/AGENTS.md",
+      "dangerouslyBypassApprovalsAndSandbox": false
+    },
+    "runtimeConfig": {
+      "heartbeat": {
+        "enabled": false,
+        "maxConcurrentRuns": 20
+      }
+    },
+    "defaultEnvironmentId": null,
+    "budgetMonthlyCents": 0,
+    "spentMonthlyCents": 0,
+    "pauseReason": null,
+    "pausedAt": null,
+    "errorReason": null,
+    "permissions": {
+      "canCreateAgents": false,
+      "canCreateSkills": true
+    },
+    "lastHeartbeatAt": null,
+    "metadata": {
+      "firmRoleSlug": "infrastructure-engineer",
+      "paperTradingOnly": true
+    },
+    "createdAt": "2026-09-22T14:36:14.836Z",
+    "updatedAt": "2026-09-22T19:24:09.735Z",
+    "urlKey": "infrastructure-engineer",
+    "orgChainHealth": {
+      "status": "healthy",
+      "reason": "healthy",
+      "fullChain": [
+        {
+          "id": "e7f5692a-deda-4554-a929-be132d2c6ca8",
+          "companyId": "3b1d401d-7010-4eed-acd1-be7d52372c07",
+          "name": "Infrastructure Engineer",
+          "status": "idle",
+          "reportsTo": "e3ea9802-b22f-472f-8139-4f70a33ce978",
+          "depth": 0,
+          "relation": "self"
+        },
+        {
+          "id": "e3ea9802-b22f-472f-8139-4f70a33ce978",
+          "companyId": "3b1d401d-7010-4eed-acd1-be7d52372c07",
+          "name": "Software Engineer",
+          "status": "idle",
+          "reportsTo": "9ecfbe59-069d-41c6-900d-0a55c2f37ced",
+          "depth": 1,
+          "relation": "ancestor"
+        },
+        {
+          "id": "9ecfbe59-069d-41c6-900d-0a55c2f37ced",
+          "companyId": "3b1d401d-7010-4eed-acd1-be7d52372c07",
+          "name": "CEO",
+          "status": "idle",
+          "reportsTo": null,
+          "depth": 2,
+          "relation": "ancestor"
+        }
+      ],
+      "firstInvalidAncestor": null,
+      "invalidAncestors": [],
+      "repairGuidance": null,
+      "pausedAncestors": [],
+      "escalationWarning": null
+    }
+  },
+  {
+    "id": "2d41db75-b4a5-49f5-bcc5-752bb3ed850b",
+    "companyId": "3b1d401d-7010-4eed-acd1-be7d52372c07",
+    "name": "Production Engineer",
+    "role": "general",
+    "title": "Production Engineer",
+    "icon": null,
+    "status": "idle",
+    "reportsTo": "e3ea9802-b22f-472f-8139-4f70a33ce978",
+    "capabilities": "Maintain local research and simulation services, diagnose incidents and automate recovery with auditable changes.",
+    "adapterType": "codex_local",
+    "adapterConfig": {
+      "cwd": "C:/Users/Jonat/algoalpha",
+      "engine": "auto",
+      "search": true,
+      "paperclipSkillSync": {
+        "desiredSkills": [
+          "paperclipai/optional/browser/agent-browser",
+          "paperclipai/optional/product/design-critique",
+          "paperclipai/bundled/docs/doc-maintenance",
+          "paperclipai/bundled/software-development/github-pr-workflow",
+          "paperclipai/bundled/paperclip-operations/issue-triage",
+          "paperclipai/optional/research/last30days",
+          "paperclipai/paperclip/paperclip",
+          "paperclipai/paperclip/paperclip-board",
+          "paperclipai/bundled/product/paperclip-capsules",
+          "paperclipai/paperclip/paperclip-converting-plans-to-tasks",
+          "paperclipai/paperclip/paperclip-create-agent",
+          "paperclipai/paperclip/para-memory-files",
+          "paperclipai/optional/software-development/prepare-mcp-integration",
+          "paperclipai/bundled/quality/qa-acceptance",
+          "paperclipai/optional/finance/ramp",
+          "paperclipai/bundled/paperclip-operations/reflection-coach",
+          "paperclipai/optional/content/release-announcement",
+          "paperclipai/optional/content/simplified-english",
+          "paperclipai/bundled/paperclip-operations/status-card-query",
+          "paperclipai/bundled/paperclip-operations/summarize-status",
+          "paperclipai/bundled/paperclip-operations/task-planning",
+          "paperclipai/bundled/product/wireframe"
+        ]
+      },
+      "instructionsFilePath": "C:/Users/Jonat/algoalpha/agents/production-engineer/AGENTS.md",
+      "dangerouslyBypassApprovalsAndSandbox": false
+    },
+    "runtimeConfig": {
+      "heartbeat": {
+        "enabled": false,
+        "maxConcurrentRuns": 20
+      }
+    },
+    "defaultEnvironmentId": null,
+    "budgetMonthlyCents": 0,
+    "spentMonthlyCents": 0,
+    "pauseReason": null,
+    "pausedAt": null,
+    "errorReason": null,
+    "permissions": {
+      "canCreateAgents": false,
+      "canCreateSkills": true
+    },
+    "lastHeartbeatAt": null,
+    "metadata": {
+      "firmRoleSlug": "production-engineer",
+      "paperTradingOnly": true
+    },
+    "createdAt": "2026-09-22T14:36:15.893Z",
+    "updatedAt": "2026-09-22T19:23:58.133Z",
+    "urlKey": "production-engineer",
+    "orgChainHealth": {
+      "status": "healthy",
+      "reason": "healthy",
+      "fullChain": [
+        {
+          "id": "2d41db75-b4a5-49f5-bcc5-752bb3ed850b",
+          "companyId": "3b1d401d-7010-4eed-acd1-be7d52372c07",
+          "name": "Production Engineer",
+          "status": "idle",
+          "reportsTo": "e3ea9802-b22f-472f-8139-4f70a33ce978",
+          "depth": 0,
+          "relation": "self"
+        },
+        {
+          "id": "e3ea9802-b22f-472f-8139-4f70a33ce978",
+          "companyId": "3b1d401d-7010-4eed-acd1-be7d52372c07",
+          "name": "Software Engineer",
+          "status": "idle",
+          "reportsTo": "9ecfbe59-069d-41c6-900d-0a55c2f37ced",
+          "depth": 1,
+          "relation": "ancestor"
+        },
+        {
+          "id": "9ecfbe59-069d-41c6-900d-0a55c2f37ced",
+          "companyId": "3b1d401d-7010-4eed-acd1-be7d52372c07",
+          "name": "CEO",
+          "status": "idle",
+          "reportsTo": null,
+          "depth": 2,
+          "relation": "ancestor"
+        }
+      ],
+      "firstInvalidAncestor": null,
+      "invalidAncestors": [],
+      "repairGuidance": null,
+      "pausedAncestors": [],
+      "escalationWarning": null
+    }
+  },
+  {
+    "id": "5193cebc-aec5-4b6b-aa68-ea7e87241e97",
+    "companyId": "3b1d401d-7010-4eed-acd1-be7d52372c07",
+    "name": "Independent Backtest Agent",
+    "role": "general",
+    "title": "Independent Backtest Agent",
+    "icon": null,
+    "status": "idle",
+    "reportsTo": "9ecfbe59-069d-41c6-900d-0a55c2f37ced",
+    "capabilities": "Independently validate specified strategies, prevent look-ahead, survivorship and selection bias, include fees spread slippage, sample dates, out-of-sample methodology, trade count, Sharpe, drawdown, win rate, expected value, turnover, capacity and sensitivity. Preserve failed results and never fabricate data.",
+    "adapterType": "codex_local",
+    "adapterConfig": {
+      "cwd": "C:/Users/Jonat/algoalpha",
+      "engine": "auto",
+      "search": true,
+      "paperclipSkillSync": {
+        "desiredSkills": [
+          "paperclipai/optional/browser/agent-browser",
+          "paperclipai/optional/product/design-critique",
+          "paperclipai/bundled/docs/doc-maintenance",
+          "paperclipai/bundled/software-development/github-pr-workflow",
+          "paperclipai/bundled/paperclip-operations/issue-triage",
+          "paperclipai/optional/research/last30days",
+          "paperclipai/paperclip/paperclip",
+          "paperclipai/paperclip/paperclip-board",
+          "paperclipai/bundled/product/paperclip-capsules",
+          "paperclipai/paperclip/paperclip-converting-plans-to-tasks",
+          "paperclipai/paperclip/paperclip-create-agent",
+          "paperclipai/paperclip/para-memory-files",
+          "paperclipai/optional/software-development/prepare-mcp-integration",
+          "paperclipai/bundled/quality/qa-acceptance",
+          "paperclipai/optional/finance/ramp",
+          "paperclipai/bundled/paperclip-operations/reflection-coach",
+          "paperclipai/optional/content/release-announcement",
+          "paperclipai/optional/content/simplified-english",
+          "paperclipai/bundled/paperclip-operations/status-card-query",
+          "paperclipai/bundled/paperclip-operations/summarize-status",
+          "paperclipai/bundled/paperclip-operations/task-planning",
+          "paperclipai/bundled/product/wireframe"
+        ]
+      },
+      "instructionsFilePath": "C:/Users/Jonat/algoalpha/agents/backtest/AGENTS.md",
+      "dangerouslyBypassApprovalsAndSandbox": false
+    },
+    "runtimeConfig": {
+      "heartbeat": {
+        "enabled": false,
+        "maxConcurrentRuns": 20
+      }
+    },
+    "defaultEnvironmentId": null,
+    "budgetMonthlyCents": 0,
+    "spentMonthlyCents": 0,
+    "pauseReason": null,
+    "pausedAt": null,
+    "errorReason": null,
+    "permissions": {
+      "canCreateAgents": false,
+      "canCreateSkills": true
+    },
+    "lastHeartbeatAt": null,
+    "metadata": {
+      "firmRoleSlug": "backtest",
+      "paperTradingOnly": true
+    },
+    "createdAt": "2026-09-22T14:37:14.610Z",
+    "updatedAt": "2026-09-22T19:24:18.811Z",
+    "urlKey": "independent-backtest-agent",
+    "orgChainHealth": {
+      "status": "healthy",
+      "reason": "healthy",
+      "fullChain": [
+        {
+          "id": "5193cebc-aec5-4b6b-aa68-ea7e87241e97",
+          "companyId": "3b1d401d-7010-4eed-acd1-be7d52372c07",
+          "name": "Independent Backtest Agent",
+          "status": "idle",
+          "reportsTo": "9ecfbe59-069d-41c6-900d-0a55c2f37ced",
+          "depth": 0,
+          "relation": "self"
+        },
+        {
+          "id": "9ecfbe59-069d-41c6-900d-0a55c2f37ced",
+          "companyId": "3b1d401d-7010-4eed-acd1-be7d52372c07",
+          "name": "CEO",
+          "status": "idle",
+          "reportsTo": null,
+          "depth": 1,
+          "relation": "ancestor"
+        }
+      ],
+      "firstInvalidAncestor": null,
+      "invalidAncestors": [],
+      "repairGuidance": null,
+      "pausedAncestors": [],
+      "escalationWarning": null
+    }
+  },
+  {
+    "id": "dee8add1-4af8-4bb1-a59b-f0e3e0c7114e",
+    "companyId": "3b1d401d-7010-4eed-acd1-be7d52372c07",
+    "name": "Product Manager",
+    "role": "general",
+    "title": "Product Manager",
+    "icon": null,
+    "status": "idle",
+    "reportsTo": "24395ed9-c13c-49d7-ad13-52c7e6f2d79b",
+    "capabilities": "Coordinate requirements and prioritisation for internal research, simulation and risk tools.",
+    "adapterType": "codex_local",
+    "adapterConfig": {
+      "cwd": "C:/Users/Jonat/algoalpha",
+      "engine": "auto",
+      "search": true,
+      "paperclipSkillSync": {
+        "desiredSkills": [
+          "paperclipai/optional/browser/agent-browser",
+          "paperclipai/optional/product/design-critique",
+          "paperclipai/bundled/docs/doc-maintenance",
+          "paperclipai/bundled/software-development/github-pr-workflow",
+          "paperclipai/bundled/paperclip-operations/issue-triage",
+          "paperclipai/optional/research/last30days",
+          "paperclipai/paperclip/paperclip",
+          "paperclipai/paperclip/paperclip-board",
+          "paperclipai/bundled/product/paperclip-capsules",
+          "paperclipai/paperclip/paperclip-converting-plans-to-tasks",
+          "paperclipai/paperclip/paperclip-create-agent",
+          "paperclipai/paperclip/para-memory-files",
+          "paperclipai/optional/software-development/prepare-mcp-integration",
+          "paperclipai/bundled/quality/qa-acceptance",
+          "paperclipai/optional/finance/ramp",
+          "paperclipai/bundled/paperclip-operations/reflection-coach",
+          "paperclipai/optional/content/release-announcement",
+          "paperclipai/optional/content/simplified-english",
+          "paperclipai/bundled/paperclip-operations/status-card-query",
+          "paperclipai/bundled/paperclip-operations/summarize-status",
+          "paperclipai/bundled/paperclip-operations/task-planning",
+          "paperclipai/bundled/product/wireframe"
+        ]
+      },
+      "instructionsFilePath": "C:/Users/Jonat/algoalpha/agents/product-manager/AGENTS.md",
+      "dangerouslyBypassApprovalsAndSandbox": false
+    },
+    "runtimeConfig": {
+      "heartbeat": {
+        "enabled": false,
+        "maxConcurrentRuns": 20
+      }
+    },
+    "defaultEnvironmentId": null,
+    "budgetMonthlyCents": 0,
+    "spentMonthlyCents": 0,
+    "pauseReason": null,
+    "pausedAt": null,
+    "errorReason": null,
+    "permissions": {
+      "canCreateAgents": false,
+      "canCreateSkills": true
+    },
+    "lastHeartbeatAt": null,
+    "metadata": {
+      "firmRoleSlug": "product-manager",
+      "paperTradingOnly": true
+    },
+    "createdAt": "2026-09-22T14:36:26.741Z",
+    "updatedAt": "2026-09-22T19:24:23.368Z",
+    "urlKey": "product-manager",
+    "orgChainHealth": {
+      "status": "healthy",
+      "reason": "healthy",
+      "fullChain": [
+        {
+          "id": "dee8add1-4af8-4bb1-a59b-f0e3e0c7114e",
+          "companyId": "3b1d401d-7010-4eed-acd1-be7d52372c07",
+          "name": "Product Manager",
+          "status": "idle",
+          "reportsTo": "24395ed9-c13c-49d7-ad13-52c7e6f2d79b",
+          "depth": 0,
+          "relation": "self"
+        },
+        {
+          "id": "24395ed9-c13c-49d7-ad13-52c7e6f2d79b",
+          "companyId": "3b1d401d-7010-4eed-acd1-be7d52372c07",
+          "name": "Strategy and Product",
+          "status": "idle",
+          "reportsTo": "9ecfbe59-069d-41c6-900d-0a55c2f37ced",
+          "depth": 1,
+          "relation": "ancestor"
+        },
+        {
+          "id": "9ecfbe59-069d-41c6-900d-0a55c2f37ced",
+          "companyId": "3b1d401d-7010-4eed-acd1-be7d52372c07",
+          "name": "CEO",
+          "status": "idle",
+          "reportsTo": null,
+          "depth": 2,
+          "relation": "ancestor"
+        }
+      ],
+      "firstInvalidAncestor": null,
+      "invalidAncestors": [],
+      "repairGuidance": null,
+      "pausedAncestors": [],
+      "escalationWarning": null
+    }
+  },
+  {
+    "id": "212ce742-8694-4b4c-bab9-6444d3ef60cd",
+    "companyId": "3b1d401d-7010-4eed-acd1-be7d52372c07",
+    "name": "Paper Execution Agent",
+    "role": "general",
+    "title": "Paper Execution Agent",
+    "icon": null,
+    "status": "idle",
+    "reportsTo": "5cab51d9-bc95-4d87-b6ad-55192d185a8a",
+    "capabilities": "Simulate orders only after risk review. Log timestamp, symbol, side, theoretical size, signal price, simulated fill, fees, slippage, exit, PnL and data source. Refuse and report requests for live orders.",
+    "adapterType": "codex_local",
+    "adapterConfig": {
+      "cwd": "C:/Users/Jonat/algoalpha",
+      "engine": "auto",
+      "search": true,
+      "paperclipSkillSync": {
+        "desiredSkills": [
+          "paperclipai/optional/browser/agent-browser",
+          "paperclipai/optional/product/design-critique",
+          "paperclipai/bundled/docs/doc-maintenance",
+          "paperclipai/bundled/software-development/github-pr-workflow",
+          "paperclipai/bundled/paperclip-operations/issue-triage",
+          "paperclipai/optional/research/last30days",
+          "paperclipai/paperclip/paperclip",
+          "paperclipai/paperclip/paperclip-board",
+          "paperclipai/bundled/product/paperclip-capsules",
+          "paperclipai/paperclip/paperclip-converting-plans-to-tasks",
+          "paperclipai/paperclip/paperclip-create-agent",
+          "paperclipai/paperclip/para-memory-files",
+          "paperclipai/optional/software-development/prepare-mcp-integration",
+          "paperclipai/bundled/quality/qa-acceptance",
+          "paperclipai/optional/finance/ramp",
+          "paperclipai/bundled/paperclip-operations/reflection-coach",
+          "paperclipai/optional/content/release-announcement",
+          "paperclipai/optional/content/simplified-english",
+          "paperclipai/bundled/paperclip-operations/status-card-query",
+          "paperclipai/bundled/paperclip-operations/summarize-status",
+          "paperclipai/bundled/paperclip-operations/task-planning",
+          "paperclipai/bundled/product/wireframe"
+        ]
+      },
+      "instructionsFilePath": "C:/Users/Jonat/algoalpha/agents/execution/AGENTS.md",
+      "dangerouslyBypassApprovalsAndSandbox": false
+    },
+    "runtimeConfig": {
+      "heartbeat": {
+        "enabled": false,
+        "maxConcurrentRuns": 20
+      }
+    },
+    "defaultEnvironmentId": null,
+    "budgetMonthlyCents": 0,
+    "spentMonthlyCents": 0,
+    "pauseReason": null,
+    "pausedAt": null,
+    "errorReason": null,
+    "permissions": {
+      "canCreateAgents": false,
+      "canCreateSkills": true
+    },
+    "lastHeartbeatAt": null,
+    "metadata": {
+      "firmRoleSlug": "execution",
+      "paperTradingOnly": true
+    },
+    "createdAt": "2026-09-22T14:37:15.361Z",
+    "updatedAt": "2026-09-22T19:24:14.308Z",
+    "urlKey": "paper-execution-agent",
+    "orgChainHealth": {
+      "status": "healthy",
+      "reason": "healthy",
+      "fullChain": [
+        {
+          "id": "212ce742-8694-4b4c-bab9-6444d3ef60cd",
+          "companyId": "3b1d401d-7010-4eed-acd1-be7d52372c07",
+          "name": "Paper Execution Agent",
+          "status": "idle",
+          "reportsTo": "5cab51d9-bc95-4d87-b6ad-55192d185a8a",
+          "depth": 0,
+          "relation": "self"
+        },
+        {
+          "id": "5cab51d9-bc95-4d87-b6ad-55192d185a8a",
+          "companyId": "3b1d401d-7010-4eed-acd1-be7d52372c07",
+          "name": "Quantitative Trader",
+          "status": "idle",
+          "reportsTo": "9ecfbe59-069d-41c6-900d-0a55c2f37ced",
+          "depth": 1,
+          "relation": "ancestor"
+        },
+        {
+          "id": "9ecfbe59-069d-41c6-900d-0a55c2f37ced",
+          "companyId": "3b1d401d-7010-4eed-acd1-be7d52372c07",
+          "name": "CEO",
+          "status": "idle",
+          "reportsTo": null,
+          "depth": 2,
+          "relation": "ancestor"
+        }
+      ],
+      "firstInvalidAncestor": null,
+      "invalidAncestors": [],
+      "repairGuidance": null,
+      "pausedAncestors": [],
+      "escalationWarning": null
+    }
+  },
+  {
+    "id": "f2616edd-0ef4-4562-8432-8eaa8a4c4f45",
+    "companyId": "3b1d401d-7010-4eed-acd1-be7d52372c07",
+    "name": "Site Reliability Engineer",
+    "role": "general",
+    "title": "Site Reliability Engineer",
+    "icon": null,
+    "status": "idle",
+    "reportsTo": "e3ea9802-b22f-472f-8139-4f70a33ce978",
+    "capabilities": "Define research service SLOs, observability, error budgets and recovery procedures. Keep monitoring bounded and issue-driven.",
+    "adapterType": "codex_local",
+    "adapterConfig": {
+      "cwd": "C:/Users/Jonat/algoalpha",
+      "engine": "auto",
+      "search": true,
+      "paperclipSkillSync": {
+        "desiredSkills": [
+          "paperclipai/optional/browser/agent-browser",
+          "paperclipai/optional/product/design-critique",
+          "paperclipai/bundled/docs/doc-maintenance",
+          "paperclipai/bundled/software-development/github-pr-workflow",
+          "paperclipai/bundled/paperclip-operations/issue-triage",
+          "paperclipai/optional/research/last30days",
+          "paperclipai/paperclip/paperclip",
+          "paperclipai/paperclip/paperclip-board",
+          "paperclipai/bundled/product/paperclip-capsules",
+          "paperclipai/paperclip/paperclip-converting-plans-to-tasks",
+          "paperclipai/paperclip/paperclip-create-agent",
+          "paperclipai/paperclip/para-memory-files",
+          "paperclipai/optional/software-development/prepare-mcp-integration",
+          "paperclipai/bundled/quality/qa-acceptance",
+          "paperclipai/optional/finance/ramp",
+          "paperclipai/bundled/paperclip-operations/reflection-coach",
+          "paperclipai/optional/content/release-announcement",
+          "paperclipai/optional/content/simplified-english",
+          "paperclipai/bundled/paperclip-operations/status-card-query",
+          "paperclipai/bundled/paperclip-operations/summarize-status",
+          "paperclipai/bundled/paperclip-operations/task-planning",
+          "paperclipai/bundled/product/wireframe"
+        ]
+      },
+      "instructionsFilePath": "C:/Users/Jonat/algoalpha/agents/site-reliability-engineer/AGENTS.md",
+      "dangerouslyBypassApprovalsAndSandbox": false
+    },
+    "runtimeConfig": {
+      "heartbeat": {
+        "enabled": false,
+        "maxConcurrentRuns": 20
+      }
+    },
+    "defaultEnvironmentId": null,
+    "budgetMonthlyCents": 0,
+    "spentMonthlyCents": 0,
+    "pauseReason": null,
+    "pausedAt": null,
+    "errorReason": null,
+    "permissions": {
+      "canCreateAgents": false,
+      "canCreateSkills": true
+    },
+    "lastHeartbeatAt": null,
+    "metadata": {
+      "firmRoleSlug": "site-reliability-engineer",
+      "paperTradingOnly": true
+    },
+    "createdAt": "2026-09-22T14:36:20.369Z",
+    "updatedAt": "2026-09-22T19:24:29.751Z",
+    "urlKey": "site-reliability-engineer",
+    "orgChainHealth": {
+      "status": "healthy",
+      "reason": "healthy",
+      "fullChain": [
+        {
+          "id": "f2616edd-0ef4-4562-8432-8eaa8a4c4f45",
+          "companyId": "3b1d401d-7010-4eed-acd1-be7d52372c07",
+          "name": "Site Reliability Engineer",
+          "status": "idle",
+          "reportsTo": "e3ea9802-b22f-472f-8139-4f70a33ce978",
+          "depth": 0,
+          "relation": "self"
+        },
+        {
+          "id": "e3ea9802-b22f-472f-8139-4f70a33ce978",
+          "companyId": "3b1d401d-7010-4eed-acd1-be7d52372c07",
+          "name": "Software Engineer",
+          "status": "idle",
+          "reportsTo": "9ecfbe59-069d-41c6-900d-0a55c2f37ced",
+          "depth": 1,
+          "relation": "ancestor"
+        },
+        {
+          "id": "9ecfbe59-069d-41c6-900d-0a55c2f37ced",
+          "companyId": "3b1d401d-7010-4eed-acd1-be7d52372c07",
+          "name": "CEO",
+          "status": "idle",
+          "reportsTo": null,
+          "depth": 2,
+          "relation": "ancestor"
+        }
+      ],
+      "firstInvalidAncestor": null,
+      "invalidAncestors": [],
+      "repairGuidance": null,
+      "pausedAncestors": [],
+      "escalationWarning": null
+    }
+  },
+  {
+    "id": "53d57855-3088-46f4-a3af-920aac15f294",
+    "companyId": "3b1d401d-7010-4eed-acd1-be7d52372c07",
+    "name": "Facilities Engineer",
+    "role": "general",
+    "title": "Facilities Engineer",
+    "icon": null,
+    "status": "idle",
+    "reportsTo": "64d03f12-4b3e-4391-af6d-ebd311ee174e",
+    "capabilities": "Assess hypothetical facility resilience and capacity requirements; planning only, no physical modifications.",
+    "adapterType": "codex_local",
+    "adapterConfig": {
+      "cwd": "C:/Users/Jonat/algoalpha",
+      "engine": "auto",
+      "search": true,
+      "paperclipSkillSync": {
+        "desiredSkills": [
+          "paperclipai/optional/browser/agent-browser",
+          "paperclipai/optional/product/design-critique",
+          "paperclipai/bundled/docs/doc-maintenance",
+          "paperclipai/bundled/software-development/github-pr-workflow",
+          "paperclipai/bundled/paperclip-operations/issue-triage",
+          "paperclipai/optional/research/last30days",
+          "paperclipai/paperclip/paperclip",
+          "paperclipai/paperclip/paperclip-board",
+          "paperclipai/bundled/product/paperclip-capsules",
+          "paperclipai/paperclip/paperclip-converting-plans-to-tasks",
+          "paperclipai/paperclip/paperclip-create-agent",
+          "paperclipai/paperclip/para-memory-files",
+          "paperclipai/optional/software-development/prepare-mcp-integration",
+          "paperclipai/bundled/quality/qa-acceptance",
+          "paperclipai/optional/finance/ramp",
+          "paperclipai/bundled/paperclip-operations/reflection-coach",
+          "paperclipai/optional/content/release-announcement",
+          "paperclipai/optional/content/simplified-english",
+          "paperclipai/bundled/paperclip-operations/status-card-query",
+          "paperclipai/bundled/paperclip-operations/summarize-status",
+          "paperclipai/bundled/paperclip-operations/task-planning",
+          "paperclipai/bundled/product/wireframe"
+        ]
+      },
+      "instructionsFilePath": "C:/Users/Jonat/algoalpha/agents/facilities-engineer/AGENTS.md",
+      "dangerouslyBypassApprovalsAndSandbox": false
+    },
+    "runtimeConfig": {
+      "heartbeat": {
+        "enabled": false,
+        "maxConcurrentRuns": 20
+      }
+    },
+    "defaultEnvironmentId": null,
+    "budgetMonthlyCents": 0,
+    "spentMonthlyCents": 0,
+    "pauseReason": null,
+    "pausedAt": null,
+    "errorReason": null,
+    "permissions": {
+      "canCreateAgents": false,
+      "canCreateSkills": true
+    },
+    "lastHeartbeatAt": null,
+    "metadata": {
+      "firmRoleSlug": "facilities-engineer",
+      "paperTradingOnly": true
+    },
+    "createdAt": "2026-09-22T14:37:13.893Z",
+    "updatedAt": "2026-09-22T19:24:25.514Z",
+    "urlKey": "facilities-engineer",
+    "orgChainHealth": {
+      "status": "healthy",
+      "reason": "healthy",
+      "fullChain": [
+        {
+          "id": "53d57855-3088-46f4-a3af-920aac15f294",
+          "companyId": "3b1d401d-7010-4eed-acd1-be7d52372c07",
+          "name": "Facilities Engineer",
+          "status": "idle",
+          "reportsTo": "64d03f12-4b3e-4391-af6d-ebd311ee174e",
+          "depth": 0,
+          "relation": "self"
+        },
+        {
+          "id": "64d03f12-4b3e-4391-af6d-ebd311ee174e",
+          "companyId": "3b1d401d-7010-4eed-acd1-be7d52372c07",
+          "name": "Building Operations",
+          "status": "idle",
+          "reportsTo": "56a5a903-bec7-4597-845a-62e166ddb271",
+          "depth": 1,
+          "relation": "ancestor"
+        },
+        {
+          "id": "56a5a903-bec7-4597-845a-62e166ddb271",
+          "companyId": "3b1d401d-7010-4eed-acd1-be7d52372c07",
+          "name": "Office Management",
+          "status": "idle",
+          "reportsTo": "9ecfbe59-069d-41c6-900d-0a55c2f37ced",
+          "depth": 2,
+          "relation": "ancestor"
+        },
+        {
+          "id": "9ecfbe59-069d-41c6-900d-0a55c2f37ced",
+          "companyId": "3b1d401d-7010-4eed-acd1-be7d52372c07",
+          "name": "CEO",
+          "status": "idle",
+          "reportsTo": null,
+          "depth": 3,
+          "relation": "ancestor"
+        }
+      ],
+      "firstInvalidAncestor": null,
+      "invalidAncestors": [],
+      "repairGuidance": null,
+      "pausedAncestors": [],
+      "escalationWarning": null
+    }
+  },
+  {
+    "id": "5ed56bac-12cf-4d2d-980d-daeb47fa4380",
+    "companyId": "3b1d401d-7010-4eed-acd1-be7d52372c07",
+    "name": "Finance",
+    "role": "general",
+    "title": "Finance",
+    "icon": null,
+    "status": "idle",
+    "reportsTo": "9ecfbe59-069d-41c6-900d-0a55c2f37ced",
+    "capabilities": "Plan research budgets and hypothetical capital scenarios. Record estimates separately from real expenditure; no payments or financial commitments.",
+    "adapterType": "codex_local",
+    "adapterConfig": {
+      "cwd": "C:/Users/Jonat/algoalpha",
+      "engine": "auto",
+      "search": true,
+      "paperclipSkillSync": {
+        "desiredSkills": [
+          "paperclipai/optional/browser/agent-browser",
+          "paperclipai/optional/product/design-critique",
+          "paperclipai/bundled/docs/doc-maintenance",
+          "paperclipai/bundled/software-development/github-pr-workflow",
+          "paperclipai/bundled/paperclip-operations/issue-triage",
+          "paperclipai/optional/research/last30days",
+          "paperclipai/paperclip/paperclip",
+          "paperclipai/paperclip/paperclip-board",
+          "paperclipai/bundled/product/paperclip-capsules",
+          "paperclipai/paperclip/paperclip-converting-plans-to-tasks",
+          "paperclipai/paperclip/paperclip-create-agent",
+          "paperclipai/paperclip/para-memory-files",
+          "paperclipai/optional/software-development/prepare-mcp-integration",
+          "paperclipai/bundled/quality/qa-acceptance",
+          "paperclipai/optional/finance/ramp",
+          "paperclipai/bundled/paperclip-operations/reflection-coach",
+          "paperclipai/optional/content/release-announcement",
+          "paperclipai/optional/content/simplified-english",
+          "paperclipai/bundled/paperclip-operations/status-card-query",
+          "paperclipai/bundled/paperclip-operations/summarize-status",
+          "paperclipai/bundled/paperclip-operations/task-planning",
+          "paperclipai/bundled/product/wireframe"
+        ]
+      },
+      "instructionsFilePath": "C:/Users/Jonat/algoalpha/agents/finance/AGENTS.md",
+      "dangerouslyBypassApprovalsAndSandbox": false
+    },
+    "runtimeConfig": {
+      "heartbeat": {
+        "enabled": false,
+        "maxConcurrentRuns": 20
+      }
+    },
+    "defaultEnvironmentId": null,
+    "budgetMonthlyCents": 0,
+    "spentMonthlyCents": 0,
+    "pauseReason": null,
+    "pausedAt": null,
+    "errorReason": null,
+    "permissions": {
+      "canCreateAgents": false,
+      "canCreateSkills": true
+    },
+    "lastHeartbeatAt": null,
+    "metadata": {
+      "firmRoleSlug": "finance",
+      "paperTradingOnly": true
+    },
+    "createdAt": "2026-09-22T14:36:29.670Z",
+    "updatedAt": "2026-09-22T19:24:36.076Z",
+    "urlKey": "finance",
+    "orgChainHealth": {
+      "status": "healthy",
+      "reason": "healthy",
+      "fullChain": [
+        {
+          "id": "5ed56bac-12cf-4d2d-980d-daeb47fa4380",
+          "companyId": "3b1d401d-7010-4eed-acd1-be7d52372c07",
+          "name": "Finance",
+          "status": "idle",
+          "reportsTo": "9ecfbe59-069d-41c6-900d-0a55c2f37ced",
+          "depth": 0,
+          "relation": "self"
+        },
+        {
+          "id": "9ecfbe59-069d-41c6-900d-0a55c2f37ced",
+          "companyId": "3b1d401d-7010-4eed-acd1-be7d52372c07",
+          "name": "CEO",
+          "status": "idle",
+          "reportsTo": null,
+          "depth": 1,
+          "relation": "ancestor"
+        }
+      ],
+      "firstInvalidAncestor": null,
+      "invalidAncestors": [],
+      "repairGuidance": null,
+      "pausedAncestors": [],
+      "escalationWarning": null
+    }
+  },
+  {
+    "id": "b44d2835-fbd0-4d19-b83c-14d82c39403f",
+    "companyId": "3b1d401d-7010-4eed-acd1-be7d52372c07",
+    "name": "Legal Counsel",
+    "role": "general",
+    "title": "Legal Counsel",
+    "icon": null,
+    "status": "idle",
+    "reportsTo": "9ecfbe59-069d-41c6-900d-0a55c2f37ced",
+    "capabilities": "Research public legal issues and flag matters needing qualified counsel. Draft internal reviews only; no representation, legal sign-off or external filings.",
+    "adapterType": "codex_local",
+    "adapterConfig": {
+      "cwd": "C:/Users/Jonat/algoalpha",
+      "engine": "auto",
+      "search": true,
+      "paperclipSkillSync": {
+        "desiredSkills": [
+          "paperclipai/optional/browser/agent-browser",
+          "paperclipai/optional/product/design-critique",
+          "paperclipai/bundled/docs/doc-maintenance",
+          "paperclipai/bundled/software-development/github-pr-workflow",
+          "paperclipai/bundled/paperclip-operations/issue-triage",
+          "paperclipai/optional/research/last30days",
+          "paperclipai/paperclip/paperclip",
+          "paperclipai/paperclip/paperclip-board",
+          "paperclipai/bundled/product/paperclip-capsules",
+          "paperclipai/paperclip/paperclip-converting-plans-to-tasks",
+          "paperclipai/paperclip/paperclip-create-agent",
+          "paperclipai/paperclip/para-memory-files",
+          "paperclipai/optional/software-development/prepare-mcp-integration",
+          "paperclipai/bundled/quality/qa-acceptance",
+          "paperclipai/optional/finance/ramp",
+          "paperclipai/bundled/paperclip-operations/reflection-coach",
+          "paperclipai/optional/content/release-announcement",
+          "paperclipai/optional/content/simplified-english",
+          "paperclipai/bundled/paperclip-operations/status-card-query",
+          "paperclipai/bundled/paperclip-operations/summarize-status",
+          "paperclipai/bundled/paperclip-operations/task-planning",
+          "paperclipai/bundled/product/wireframe"
+        ]
+      },
+      "instructionsFilePath": "C:/Users/Jonat/algoalpha/agents/legal-counsel/AGENTS.md",
+      "dangerouslyBypassApprovalsAndSandbox": false
+    },
+    "runtimeConfig": {
+      "heartbeat": {
+        "enabled": false,
+        "maxConcurrentRuns": 20
+      }
+    },
+    "defaultEnvironmentId": null,
+    "budgetMonthlyCents": 0,
+    "spentMonthlyCents": 0,
+    "pauseReason": null,
+    "pausedAt": null,
+    "errorReason": null,
+    "permissions": {
+      "canCreateAgents": false,
+      "canCreateSkills": true
+    },
+    "lastHeartbeatAt": null,
+    "metadata": {
+      "firmRoleSlug": "legal-counsel",
+      "paperTradingOnly": true
+    },
+    "createdAt": "2026-09-22T14:36:35.964Z",
+    "updatedAt": "2026-09-22T19:24:40.500Z",
+    "urlKey": "legal-counsel",
+    "orgChainHealth": {
+      "status": "healthy",
+      "reason": "healthy",
+      "fullChain": [
+        {
+          "id": "b44d2835-fbd0-4d19-b83c-14d82c39403f",
+          "companyId": "3b1d401d-7010-4eed-acd1-be7d52372c07",
+          "name": "Legal Counsel",
+          "status": "idle",
+          "reportsTo": "9ecfbe59-069d-41c6-900d-0a55c2f37ced",
+          "depth": 0,
+          "relation": "self"
+        },
+        {
+          "id": "9ecfbe59-069d-41c6-900d-0a55c2f37ced",
+          "companyId": "3b1d401d-7010-4eed-acd1-be7d52372c07",
+          "name": "CEO",
+          "status": "idle",
+          "reportsTo": null,
+          "depth": 1,
+          "relation": "ancestor"
+        }
+      ],
+      "firstInvalidAncestor": null,
+      "invalidAncestors": [],
+      "repairGuidance": null,
+      "pausedAncestors": [],
+      "escalationWarning": null
+    }
+  },
+  {
+    "id": "d5d21c88-4830-4a8f-9f42-273ff6894fad",
+    "companyId": "3b1d401d-7010-4eed-acd1-be7d52372c07",
+    "name": "Research Analyst",
+    "role": "general",
+    "title": "Research Analyst",
+    "icon": null,
+    "status": "idle",
+    "reportsTo": "46d53bec-928a-41fc-86ed-a8bd5f90330c",
+    "capabilities": "Gather lawful public information, document source dates and evidence quality, and produce concise hypothesis briefs.",
+    "adapterType": "codex_local",
+    "adapterConfig": {
+      "cwd": "C:/Users/Jonat/algoalpha",
+      "engine": "auto",
+      "search": true,
+      "paperclipSkillSync": {
+        "desiredSkills": [
+          "paperclipai/optional/browser/agent-browser",
+          "paperclipai/optional/product/design-critique",
+          "paperclipai/bundled/docs/doc-maintenance",
+          "paperclipai/bundled/software-development/github-pr-workflow",
+          "paperclipai/bundled/paperclip-operations/issue-triage",
+          "paperclipai/optional/research/last30days",
+          "paperclipai/paperclip/paperclip",
+          "paperclipai/paperclip/paperclip-board",
+          "paperclipai/bundled/product/paperclip-capsules",
+          "paperclipai/paperclip/paperclip-converting-plans-to-tasks",
+          "paperclipai/paperclip/paperclip-create-agent",
+          "paperclipai/paperclip/para-memory-files",
+          "paperclipai/optional/software-development/prepare-mcp-integration",
+          "paperclipai/bundled/quality/qa-acceptance",
+          "paperclipai/optional/finance/ramp",
+          "paperclipai/bundled/paperclip-operations/reflection-coach",
+          "paperclipai/optional/content/release-announcement",
+          "paperclipai/optional/content/simplified-english",
+          "paperclipai/bundled/paperclip-operations/status-card-query",
+          "paperclipai/bundled/paperclip-operations/summarize-status",
+          "paperclipai/bundled/paperclip-operations/task-planning",
+          "paperclipai/bundled/product/wireframe"
+        ]
+      },
+      "instructionsFilePath": "C:/Users/Jonat/algoalpha/agents/research-analyst/AGENTS.md",
+      "dangerouslyBypassApprovalsAndSandbox": false
+    },
+    "runtimeConfig": {
+      "heartbeat": {
+        "enabled": false,
+        "maxConcurrentRuns": 20
+      }
+    },
+    "defaultEnvironmentId": null,
+    "budgetMonthlyCents": 0,
+    "spentMonthlyCents": 0,
+    "pauseReason": null,
+    "pausedAt": null,
+    "errorReason": null,
+    "permissions": {
+      "canCreateAgents": false,
+      "canCreateSkills": true
+    },
+    "lastHeartbeatAt": null,
+    "metadata": {
+      "firmRoleSlug": "research-analyst",
+      "paperTradingOnly": true
+    },
+    "createdAt": "2026-09-22T14:36:23.911Z",
+    "updatedAt": "2026-09-22T19:24:45.832Z",
+    "urlKey": "research-analyst",
+    "orgChainHealth": {
+      "status": "healthy",
+      "reason": "healthy",
+      "fullChain": [
+        {
+          "id": "d5d21c88-4830-4a8f-9f42-273ff6894fad",
+          "companyId": "3b1d401d-7010-4eed-acd1-be7d52372c07",
+          "name": "Research Analyst",
+          "status": "idle",
+          "reportsTo": "46d53bec-928a-41fc-86ed-a8bd5f90330c",
+          "depth": 0,
+          "relation": "self"
+        },
+        {
+          "id": "46d53bec-928a-41fc-86ed-a8bd5f90330c",
+          "companyId": "3b1d401d-7010-4eed-acd1-be7d52372c07",
+          "name": "Quantitative Researcher",
+          "status": "idle",
+          "reportsTo": "9ecfbe59-069d-41c6-900d-0a55c2f37ced",
+          "depth": 1,
+          "relation": "ancestor"
+        },
+        {
+          "id": "9ecfbe59-069d-41c6-900d-0a55c2f37ced",
+          "companyId": "3b1d401d-7010-4eed-acd1-be7d52372c07",
+          "name": "CEO",
+          "status": "idle",
+          "reportsTo": null,
+          "depth": 2,
+          "relation": "ancestor"
+        }
+      ],
+      "firstInvalidAncestor": null,
+      "invalidAncestors": [],
+      "repairGuidance": null,
+      "pausedAncestors": [],
+      "escalationWarning": null
+    }
+  },
+  {
+    "id": "85fc2491-6896-4f36-b136-487252bd2bc9",
+    "companyId": "3b1d401d-7010-4eed-acd1-be7d52372c07",
+    "name": "Accounting",
+    "role": "general",
+    "title": "Accounting",
+    "icon": null,
+    "status": "idle",
+    "reportsTo": "5ed56bac-12cf-4d2d-980d-daeb47fa4380",
+    "capabilities": "Maintain accurate internal cost records and simulated ledgers. Draft reporting only; no regulatory submissions or claims of professional certification.",
+    "adapterType": "codex_local",
+    "adapterConfig": {
+      "cwd": "C:/Users/Jonat/algoalpha",
+      "engine": "auto",
+      "search": true,
+      "paperclipSkillSync": {
+        "desiredSkills": [
+          "paperclipai/optional/browser/agent-browser",
+          "paperclipai/optional/product/design-critique",
+          "paperclipai/bundled/docs/doc-maintenance",
+          "paperclipai/bundled/software-development/github-pr-workflow",
+          "paperclipai/bundled/paperclip-operations/issue-triage",
+          "paperclipai/optional/research/last30days",
+          "paperclipai/paperclip/paperclip",
+          "paperclipai/paperclip/paperclip-board",
+          "paperclipai/bundled/product/paperclip-capsules",
+          "paperclipai/paperclip/paperclip-converting-plans-to-tasks",
+          "paperclipai/paperclip/paperclip-create-agent",
+          "paperclipai/paperclip/para-memory-files",
+          "paperclipai/optional/software-development/prepare-mcp-integration",
+          "paperclipai/bundled/quality/qa-acceptance",
+          "paperclipai/optional/finance/ramp",
+          "paperclipai/bundled/paperclip-operations/reflection-coach",
+          "paperclipai/optional/content/release-announcement",
+          "paperclipai/optional/content/simplified-english",
+          "paperclipai/bundled/paperclip-operations/status-card-query",
+          "paperclipai/bundled/paperclip-operations/summarize-status",
+          "paperclipai/bundled/paperclip-operations/task-planning",
+          "paperclipai/bundled/product/wireframe"
+        ]
+      },
+      "instructionsFilePath": "C:/Users/Jonat/algoalpha/agents/accounting/AGENTS.md",
+      "dangerouslyBypassApprovalsAndSandbox": false
+    },
+    "runtimeConfig": {
+      "heartbeat": {
+        "enabled": false,
+        "maxConcurrentRuns": 20
+      }
+    },
+    "defaultEnvironmentId": null,
+    "budgetMonthlyCents": 0,
+    "spentMonthlyCents": 0,
+    "pauseReason": null,
+    "pausedAt": null,
+    "errorReason": null,
+    "permissions": {
+      "canCreateAgents": false,
+      "canCreateSkills": true
+    },
+    "lastHeartbeatAt": null,
+    "metadata": {
+      "firmRoleSlug": "accounting",
+      "paperTradingOnly": true
+    },
+    "createdAt": "2026-09-22T14:36:30.623Z",
+    "updatedAt": "2026-09-22T19:24:54.701Z",
+    "urlKey": "accounting",
+    "orgChainHealth": {
+      "status": "healthy",
+      "reason": "healthy",
+      "fullChain": [
+        {
+          "id": "85fc2491-6896-4f36-b136-487252bd2bc9",
+          "companyId": "3b1d401d-7010-4eed-acd1-be7d52372c07",
+          "name": "Accounting",
+          "status": "idle",
+          "reportsTo": "5ed56bac-12cf-4d2d-980d-daeb47fa4380",
+          "depth": 0,
+          "relation": "self"
+        },
+        {
+          "id": "5ed56bac-12cf-4d2d-980d-daeb47fa4380",
+          "companyId": "3b1d401d-7010-4eed-acd1-be7d52372c07",
+          "name": "Finance",
+          "status": "idle",
+          "reportsTo": "9ecfbe59-069d-41c6-900d-0a55c2f37ced",
+          "depth": 1,
+          "relation": "ancestor"
+        },
+        {
+          "id": "9ecfbe59-069d-41c6-900d-0a55c2f37ced",
+          "companyId": "3b1d401d-7010-4eed-acd1-be7d52372c07",
+          "name": "CEO",
+          "status": "idle",
+          "reportsTo": null,
+          "depth": 2,
+          "relation": "ancestor"
+        }
+      ],
+      "firstInvalidAncestor": null,
+      "invalidAncestors": [],
+      "repairGuidance": null,
+      "pausedAncestors": [],
+      "escalationWarning": null
+    }
+  },
+  {
+    "id": "9ef86ead-3131-4980-9bf0-bd505d5765e6",
+    "companyId": "3b1d401d-7010-4eed-acd1-be7d52372c07",
+    "name": "Compliance Officer",
+    "role": "general",
+    "title": "Compliance Officer",
+    "icon": null,
+    "status": "idle",
+    "reportsTo": null,
+    "capabilities": "Independently review data provenance, paper-only boundaries and audit completeness. Flag potential issues to owner; no regulatory filings or live surveillance claims.",
+    "adapterType": "codex_local",
+    "adapterConfig": {
+      "cwd": "C:/Users/Jonat/algoalpha",
+      "engine": "auto",
+      "search": true,
+      "paperclipSkillSync": {
+        "desiredSkills": [
+          "paperclipai/optional/browser/agent-browser",
+          "paperclipai/optional/product/design-critique",
+          "paperclipai/bundled/docs/doc-maintenance",
+          "paperclipai/bundled/software-development/github-pr-workflow",
+          "paperclipai/bundled/paperclip-operations/issue-triage",
+          "paperclipai/optional/research/last30days",
+          "paperclipai/paperclip/paperclip",
+          "paperclipai/paperclip/paperclip-board",
+          "paperclipai/bundled/product/paperclip-capsules",
+          "paperclipai/paperclip/paperclip-converting-plans-to-tasks",
+          "paperclipai/paperclip/paperclip-create-agent",
+          "paperclipai/paperclip/para-memory-files",
+          "paperclipai/optional/software-development/prepare-mcp-integration",
+          "paperclipai/bundled/quality/qa-acceptance",
+          "paperclipai/optional/finance/ramp",
+          "paperclipai/bundled/paperclip-operations/reflection-coach",
+          "paperclipai/optional/content/release-announcement",
+          "paperclipai/optional/content/simplified-english",
+          "paperclipai/bundled/paperclip-operations/status-card-query",
+          "paperclipai/bundled/paperclip-operations/summarize-status",
+          "paperclipai/bundled/paperclip-operations/task-planning",
+          "paperclipai/bundled/product/wireframe"
+        ]
+      },
+      "instructionsFilePath": "C:/Users/Jonat/algoalpha/agents/compliance-officer/AGENTS.md",
+      "dangerouslyBypassApprovalsAndSandbox": false
+    },
+    "runtimeConfig": {
+      "heartbeat": {
+        "enabled": false,
+        "maxConcurrentRuns": 20
+      }
+    },
+    "defaultEnvironmentId": null,
+    "budgetMonthlyCents": 0,
+    "spentMonthlyCents": 0,
+    "pauseReason": null,
+    "pausedAt": null,
+    "errorReason": null,
+    "permissions": {
+      "canCreateAgents": false,
+      "canCreateSkills": true
+    },
+    "lastHeartbeatAt": null,
+    "metadata": {
+      "firmRoleSlug": "compliance-officer",
+      "paperTradingOnly": true
+    },
+    "createdAt": "2026-09-22T14:36:36.615Z",
+    "updatedAt": "2026-09-22T19:24:58.979Z",
+    "urlKey": "compliance-officer",
+    "orgChainHealth": {
+      "status": "healthy",
+      "reason": "healthy",
+      "fullChain": [
+        {
+          "id": "9ef86ead-3131-4980-9bf0-bd505d5765e6",
+          "companyId": "3b1d401d-7010-4eed-acd1-be7d52372c07",
+          "name": "Compliance Officer",
+          "status": "idle",
+          "reportsTo": null,
+          "depth": 0,
+          "relation": "self"
+        }
+      ],
+      "firstInvalidAncestor": null,
+      "invalidAncestors": [],
+      "repairGuidance": null,
+      "pausedAncestors": [],
+      "escalationWarning": null
+    }
+  },
+  {
+    "id": "24395ed9-c13c-49d7-ad13-52c7e6f2d79b",
+    "companyId": "3b1d401d-7010-4eed-acd1-be7d52372c07",
+    "name": "Strategy and Product",
+    "role": "general",
+    "title": "Strategy and Product",
+    "icon": null,
+    "status": "idle",
+    "reportsTo": "9ecfbe59-069d-41c6-900d-0a55c2f37ced",
+    "capabilities": "Evaluate research markets, product opportunities and long-term priorities with feasibility, data cost and capacity evidence.",
+    "adapterType": "codex_local",
+    "adapterConfig": {
+      "cwd": "C:/Users/Jonat/algoalpha",
+      "engine": "auto",
+      "search": true,
+      "paperclipSkillSync": {
+        "desiredSkills": [
+          "paperclipai/optional/browser/agent-browser",
+          "paperclipai/optional/product/design-critique",
+          "paperclipai/bundled/docs/doc-maintenance",
+          "paperclipai/bundled/software-development/github-pr-workflow",
+          "paperclipai/bundled/paperclip-operations/issue-triage",
+          "paperclipai/optional/research/last30days",
+          "paperclipai/paperclip/paperclip",
+          "paperclipai/paperclip/paperclip-board",
+          "paperclipai/bundled/product/paperclip-capsules",
+          "paperclipai/paperclip/paperclip-converting-plans-to-tasks",
+          "paperclipai/paperclip/paperclip-create-agent",
+          "paperclipai/paperclip/para-memory-files",
+          "paperclipai/optional/software-development/prepare-mcp-integration",
+          "paperclipai/bundled/quality/qa-acceptance",
+          "paperclipai/optional/finance/ramp",
+          "paperclipai/bundled/paperclip-operations/reflection-coach",
+          "paperclipai/optional/content/release-announcement",
+          "paperclipai/optional/content/simplified-english",
+          "paperclipai/bundled/paperclip-operations/status-card-query",
+          "paperclipai/bundled/paperclip-operations/summarize-status",
+          "paperclipai/bundled/paperclip-operations/task-planning",
+          "paperclipai/bundled/product/wireframe"
+        ]
+      },
+      "instructionsFilePath": "C:/Users/Jonat/algoalpha/agents/strategy-product/AGENTS.md",
+      "dangerouslyBypassApprovalsAndSandbox": false
+    },
+    "runtimeConfig": {
+      "heartbeat": {
+        "enabled": false,
+        "maxConcurrentRuns": 20
+      }
+    },
+    "defaultEnvironmentId": null,
+    "budgetMonthlyCents": 0,
+    "spentMonthlyCents": 0,
+    "pauseReason": null,
+    "pausedAt": null,
+    "errorReason": null,
+    "permissions": {
+      "canCreateAgents": false,
+      "canCreateSkills": true
+    },
+    "lastHeartbeatAt": null,
+    "metadata": {
+      "firmRoleSlug": "strategy-product",
+      "paperTradingOnly": true
+    },
+    "createdAt": "2026-09-22T14:36:25.780Z",
+    "updatedAt": "2026-09-22T19:24:50.010Z",
+    "urlKey": "strategy-and-product",
+    "orgChainHealth": {
+      "status": "healthy",
+      "reason": "healthy",
+      "fullChain": [
+        {
+          "id": "24395ed9-c13c-49d7-ad13-52c7e6f2d79b",
+          "companyId": "3b1d401d-7010-4eed-acd1-be7d52372c07",
+          "name": "Strategy and Product",
+          "status": "idle",
+          "reportsTo": "9ecfbe59-069d-41c6-900d-0a55c2f37ced",
+          "depth": 0,
+          "relation": "self"
+        },
+        {
+          "id": "9ecfbe59-069d-41c6-900d-0a55c2f37ced",
+          "companyId": "3b1d401d-7010-4eed-acd1-be7d52372c07",
+          "name": "CEO",
+          "status": "idle",
+          "reportsTo": null,
+          "depth": 1,
+          "relation": "ancestor"
+        }
+      ],
+      "firstInvalidAncestor": null,
+      "invalidAncestors": [],
+      "repairGuidance": null,
+      "pausedAncestors": [],
+      "escalationWarning": null
+    }
+  },
+  {
+    "id": "492359aa-3604-4e98-8152-da894be0736b",
+    "companyId": "3b1d401d-7010-4eed-acd1-be7d52372c07",
+    "name": "Data Scientist",
+    "role": "general",
+    "title": "Data Scientist",
+    "icon": null,
+    "status": "idle",
+    "reportsTo": "46d53bec-928a-41fc-86ed-a8bd5f90330c",
+    "capabilities": "Analyse paper execution quality, signal decay, research efficiency and operational patterns with reproducible statistical evidence.",
+    "adapterType": "codex_local",
+    "adapterConfig": {
+      "cwd": "C:/Users/Jonat/algoalpha",
+      "engine": "auto",
+      "search": true,
+      "paperclipSkillSync": {
+        "desiredSkills": [
+          "paperclipai/optional/browser/agent-browser",
+          "paperclipai/optional/product/design-critique",
+          "paperclipai/bundled/docs/doc-maintenance",
+          "paperclipai/bundled/software-development/github-pr-workflow",
+          "paperclipai/bundled/paperclip-operations/issue-triage",
+          "paperclipai/optional/research/last30days",
+          "paperclipai/paperclip/paperclip",
+          "paperclipai/paperclip/paperclip-board",
+          "paperclipai/bundled/product/paperclip-capsules",
+          "paperclipai/paperclip/paperclip-converting-plans-to-tasks",
+          "paperclipai/paperclip/paperclip-create-agent",
+          "paperclipai/paperclip/para-memory-files",
+          "paperclipai/optional/software-development/prepare-mcp-integration",
+          "paperclipai/bundled/quality/qa-acceptance",
+          "paperclipai/optional/finance/ramp",
+          "paperclipai/bundled/paperclip-operations/reflection-coach",
+          "paperclipai/optional/content/release-announcement",
+          "paperclipai/optional/content/simplified-english",
+          "paperclipai/bundled/paperclip-operations/status-card-query",
+          "paperclipai/bundled/paperclip-operations/summarize-status",
+          "paperclipai/bundled/paperclip-operations/task-planning",
+          "paperclipai/bundled/product/wireframe"
+        ]
+      },
+      "instructionsFilePath": "C:/Users/Jonat/algoalpha/agents/data-scientist/AGENTS.md",
+      "dangerouslyBypassApprovalsAndSandbox": false
+    },
+    "runtimeConfig": {
+      "heartbeat": {
+        "enabled": false,
+        "maxConcurrentRuns": 20
+      }
+    },
+    "defaultEnvironmentId": null,
+    "budgetMonthlyCents": 0,
+    "spentMonthlyCents": 0,
+    "pauseReason": null,
+    "pausedAt": null,
+    "errorReason": null,
+    "permissions": {
+      "canCreateAgents": false,
+      "canCreateSkills": true
+    },
+    "lastHeartbeatAt": null,
+    "metadata": {
+      "firmRoleSlug": "data-scientist",
+      "paperTradingOnly": true
+    },
+    "createdAt": "2026-09-22T14:36:22.105Z",
+    "updatedAt": "2026-09-22T19:25:01.205Z",
+    "urlKey": "data-scientist",
+    "orgChainHealth": {
+      "status": "healthy",
+      "reason": "healthy",
+      "fullChain": [
+        {
+          "id": "492359aa-3604-4e98-8152-da894be0736b",
+          "companyId": "3b1d401d-7010-4eed-acd1-be7d52372c07",
+          "name": "Data Scientist",
+          "status": "idle",
+          "reportsTo": "46d53bec-928a-41fc-86ed-a8bd5f90330c",
+          "depth": 0,
+          "relation": "self"
+        },
+        {
+          "id": "46d53bec-928a-41fc-86ed-a8bd5f90330c",
+          "companyId": "3b1d401d-7010-4eed-acd1-be7d52372c07",
+          "name": "Quantitative Researcher",
+          "status": "idle",
+          "reportsTo": "9ecfbe59-069d-41c6-900d-0a55c2f37ced",
+          "depth": 1,
+          "relation": "ancestor"
+        },
+        {
+          "id": "9ecfbe59-069d-41c6-900d-0a55c2f37ced",
+          "companyId": "3b1d401d-7010-4eed-acd1-be7d52372c07",
+          "name": "CEO",
+          "status": "idle",
+          "reportsTo": null,
+          "depth": 2,
+          "relation": "ancestor"
+        }
+      ],
+      "firstInvalidAncestor": null,
+      "invalidAncestors": [],
+      "repairGuidance": null,
+      "pausedAncestors": [],
+      "escalationWarning": null
+    }
+  },
+  {
+    "id": "8867db56-8067-4f5a-a928-198216143003",
+    "companyId": "3b1d401d-7010-4eed-acd1-be7d52372c07",
+    "name": "Hospitality",
+    "role": "general",
+    "title": "Hospitality",
+    "icon": null,
+    "status": "idle",
+    "reportsTo": "56a5a903-bec7-4597-845a-62e166ddb271",
+    "capabilities": "Produce hypothetical workplace and visitor-experience plans only; no purchases or reservations.",
+    "adapterType": "codex_local",
+    "adapterConfig": {
+      "cwd": "C:/Users/Jonat/algoalpha",
+      "engine": "auto",
+      "search": true,
+      "paperclipSkillSync": {
+        "desiredSkills": [
+          "paperclipai/optional/browser/agent-browser",
+          "paperclipai/optional/product/design-critique",
+          "paperclipai/bundled/docs/doc-maintenance",
+          "paperclipai/bundled/software-development/github-pr-workflow",
+          "paperclipai/bundled/paperclip-operations/issue-triage",
+          "paperclipai/optional/research/last30days",
+          "paperclipai/paperclip/paperclip",
+          "paperclipai/paperclip/paperclip-board",
+          "paperclipai/bundled/product/paperclip-capsules",
+          "paperclipai/paperclip/paperclip-converting-plans-to-tasks",
+          "paperclipai/paperclip/paperclip-create-agent",
+          "paperclipai/paperclip/para-memory-files",
+          "paperclipai/optional/software-development/prepare-mcp-integration",
+          "paperclipai/bundled/quality/qa-acceptance",
+          "paperclipai/optional/finance/ramp",
+          "paperclipai/bundled/paperclip-operations/reflection-coach",
+          "paperclipai/optional/content/release-announcement",
+          "paperclipai/optional/content/simplified-english",
+          "paperclipai/bundled/paperclip-operations/status-card-query",
+          "paperclipai/bundled/paperclip-operations/summarize-status",
+          "paperclipai/bundled/paperclip-operations/task-planning",
+          "paperclipai/bundled/product/wireframe"
+        ]
+      },
+      "instructionsFilePath": "C:/Users/Jonat/algoalpha/agents/hospitality/AGENTS.md",
+      "dangerouslyBypassApprovalsAndSandbox": false
+    },
+    "runtimeConfig": {
+      "heartbeat": {
+        "enabled": false,
+        "maxConcurrentRuns": 20
+      }
+    },
+    "defaultEnvironmentId": null,
+    "budgetMonthlyCents": 0,
+    "spentMonthlyCents": 0,
+    "pauseReason": null,
+    "pausedAt": null,
+    "errorReason": null,
+    "permissions": {
+      "canCreateAgents": false,
+      "canCreateSkills": true
+    },
+    "lastHeartbeatAt": null,
+    "metadata": {
+      "firmRoleSlug": "hospitality",
+      "paperTradingOnly": true
+    },
+    "createdAt": "2026-09-22T14:37:12.717Z",
+    "updatedAt": "2026-09-22T19:25:05.572Z",
+    "urlKey": "hospitality",
+    "orgChainHealth": {
+      "status": "healthy",
+      "reason": "healthy",
+      "fullChain": [
+        {
+          "id": "8867db56-8067-4f5a-a928-198216143003",
+          "companyId": "3b1d401d-7010-4eed-acd1-be7d52372c07",
+          "name": "Hospitality",
+          "status": "idle",
+          "reportsTo": "56a5a903-bec7-4597-845a-62e166ddb271",
+          "depth": 0,
+          "relation": "self"
+        },
+        {
+          "id": "56a5a903-bec7-4597-845a-62e166ddb271",
+          "companyId": "3b1d401d-7010-4eed-acd1-be7d52372c07",
+          "name": "Office Management",
+          "status": "idle",
+          "reportsTo": "9ecfbe59-069d-41c6-900d-0a55c2f37ced",
+          "depth": 1,
+          "relation": "ancestor"
+        },
+        {
+          "id": "9ecfbe59-069d-41c6-900d-0a55c2f37ced",
+          "companyId": "3b1d401d-7010-4eed-acd1-be7d52372c07",
+          "name": "CEO",
+          "status": "idle",
+          "reportsTo": null,
+          "depth": 2,
+          "relation": "ancestor"
+        }
+      ],
+      "firstInvalidAncestor": null,
+      "invalidAncestors": [],
+      "repairGuidance": null,
+      "pausedAncestors": [],
+      "escalationWarning": null
+    }
+  },
+  {
+    "id": "6708e6cd-c880-4a17-9c45-57cb820b42f0",
+    "companyId": "3b1d401d-7010-4eed-acd1-be7d52372c07",
+    "name": "Fundamental Researcher",
+    "role": "general",
+    "title": "Fundamental Researcher",
+    "icon": null,
+    "status": "idle",
+    "reportsTo": "46d53bec-928a-41fc-86ed-a8bd5f90330c",
+    "capabilities": "Investigate durable business economics, cash flows, capital allocation and competitive dynamics; distinguish thesis from validated signal.",
+    "adapterType": "codex_local",
+    "adapterConfig": {
+      "cwd": "C:/Users/Jonat/algoalpha",
+      "engine": "auto",
+      "search": true,
+      "paperclipSkillSync": {
+        "desiredSkills": [
+          "paperclipai/optional/browser/agent-browser",
+          "paperclipai/optional/product/design-critique",
+          "paperclipai/bundled/docs/doc-maintenance",
+          "paperclipai/bundled/software-development/github-pr-workflow",
+          "paperclipai/bundled/paperclip-operations/issue-triage",
+          "paperclipai/optional/research/last30days",
+          "paperclipai/paperclip/paperclip",
+          "paperclipai/paperclip/paperclip-board",
+          "paperclipai/bundled/product/paperclip-capsules",
+          "paperclipai/paperclip/paperclip-converting-plans-to-tasks",
+          "paperclipai/paperclip/paperclip-create-agent",
+          "paperclipai/paperclip/para-memory-files",
+          "paperclipai/optional/software-development/prepare-mcp-integration",
+          "paperclipai/bundled/quality/qa-acceptance",
+          "paperclipai/optional/finance/ramp",
+          "paperclipai/bundled/paperclip-operations/reflection-coach",
+          "paperclipai/optional/content/release-announcement",
+          "paperclipai/optional/content/simplified-english",
+          "paperclipai/bundled/paperclip-operations/status-card-query",
+          "paperclipai/bundled/paperclip-operations/summarize-status",
+          "paperclipai/bundled/paperclip-operations/task-planning",
+          "paperclipai/bundled/product/wireframe"
+        ]
+      },
+      "instructionsFilePath": "C:/Users/Jonat/algoalpha/agents/fundamental-researcher/AGENTS.md",
+      "dangerouslyBypassApprovalsAndSandbox": false
+    },
+    "runtimeConfig": {
+      "heartbeat": {
+        "enabled": false,
+        "maxConcurrentRuns": 20
+      }
+    },
+    "defaultEnvironmentId": null,
+    "budgetMonthlyCents": 0,
+    "spentMonthlyCents": 0,
+    "pauseReason": null,
+    "pausedAt": null,
+    "errorReason": null,
+    "permissions": {
+      "canCreateAgents": false,
+      "canCreateSkills": true
+    },
+    "lastHeartbeatAt": null,
+    "metadata": {
+      "firmRoleSlug": "fundamental-researcher",
+      "paperTradingOnly": true
+    },
+    "createdAt": "2026-09-22T14:36:24.856Z",
+    "updatedAt": "2026-09-22T19:25:03.376Z",
+    "urlKey": "fundamental-researcher",
+    "orgChainHealth": {
+      "status": "healthy",
+      "reason": "healthy",
+      "fullChain": [
+        {
+          "id": "6708e6cd-c880-4a17-9c45-57cb820b42f0",
+          "companyId": "3b1d401d-7010-4eed-acd1-be7d52372c07",
+          "name": "Fundamental Researcher",
+          "status": "idle",
+          "reportsTo": "46d53bec-928a-41fc-86ed-a8bd5f90330c",
+          "depth": 0,
+          "relation": "self"
+        },
+        {
+          "id": "46d53bec-928a-41fc-86ed-a8bd5f90330c",
+          "companyId": "3b1d401d-7010-4eed-acd1-be7d52372c07",
+          "name": "Quantitative Researcher",
+          "status": "idle",
+          "reportsTo": "9ecfbe59-069d-41c6-900d-0a55c2f37ced",
+          "depth": 1,
+          "relation": "ancestor"
+        },
+        {
+          "id": "9ecfbe59-069d-41c6-900d-0a55c2f37ced",
+          "companyId": "3b1d401d-7010-4eed-acd1-be7d52372c07",
+          "name": "CEO",
+          "status": "idle",
+          "reportsTo": null,
+          "depth": 2,
+          "relation": "ancestor"
+        }
+      ],
+      "firstInvalidAncestor": null,
+      "invalidAncestors": [],
+      "repairGuidance": null,
+      "pausedAncestors": [],
+      "escalationWarning": null
+    }
+  },
+  {
+    "id": "db731fd6-de4e-4a71-90ab-d3d2c95adfb5",
+    "companyId": "3b1d401d-7010-4eed-acd1-be7d52372c07",
+    "name": "Treasury",
+    "role": "general",
+    "title": "Treasury",
+    "icon": null,
+    "status": "idle",
+    "reportsTo": "5ed56bac-12cf-4d2d-980d-daeb47fa4380",
+    "capabilities": "Model hypothetical liquidity, funding and collateral requirements for paper portfolios; no movement of money or account access.",
+    "adapterType": "codex_local",
+    "adapterConfig": {
+      "cwd": "C:/Users/Jonat/algoalpha",
+      "engine": "auto",
+      "search": true,
+      "paperclipSkillSync": {
+        "desiredSkills": [
+          "paperclipai/optional/browser/agent-browser",
+          "paperclipai/optional/product/design-critique",
+          "paperclipai/bundled/docs/doc-maintenance",
+          "paperclipai/bundled/software-development/github-pr-workflow",
+          "paperclipai/bundled/paperclip-operations/issue-triage",
+          "paperclipai/optional/research/last30days",
+          "paperclipai/paperclip/paperclip",
+          "paperclipai/paperclip/paperclip-board",
+          "paperclipai/bundled/product/paperclip-capsules",
+          "paperclipai/paperclip/paperclip-converting-plans-to-tasks",
+          "paperclipai/paperclip/paperclip-create-agent",
+          "paperclipai/paperclip/para-memory-files",
+          "paperclipai/optional/software-development/prepare-mcp-integration",
+          "paperclipai/bundled/quality/qa-acceptance",
+          "paperclipai/optional/finance/ramp",
+          "paperclipai/bundled/paperclip-operations/reflection-coach",
+          "paperclipai/optional/content/release-announcement",
+          "paperclipai/optional/content/simplified-english",
+          "paperclipai/bundled/paperclip-operations/status-card-query",
+          "paperclipai/bundled/paperclip-operations/summarize-status",
+          "paperclipai/bundled/paperclip-operations/task-planning",
+          "paperclipai/bundled/product/wireframe"
+        ]
+      },
+      "instructionsFilePath": "C:/Users/Jonat/algoalpha/agents/treasury/AGENTS.md",
+      "dangerouslyBypassApprovalsAndSandbox": false
+    },
+    "runtimeConfig": {
+      "heartbeat": {
+        "enabled": false,
+        "maxConcurrentRuns": 20
+      }
+    },
+    "defaultEnvironmentId": null,
+    "budgetMonthlyCents": 0,
+    "spentMonthlyCents": 0,
+    "pauseReason": null,
+    "pausedAt": null,
+    "errorReason": null,
+    "permissions": {
+      "canCreateAgents": false,
+      "canCreateSkills": true
+    },
+    "lastHeartbeatAt": null,
+    "metadata": {
+      "firmRoleSlug": "treasury",
+      "paperTradingOnly": true
+    },
+    "createdAt": "2026-09-22T14:36:31.485Z",
+    "updatedAt": "2026-09-22T19:25:16.462Z",
+    "urlKey": "treasury",
+    "orgChainHealth": {
+      "status": "healthy",
+      "reason": "healthy",
+      "fullChain": [
+        {
+          "id": "db731fd6-de4e-4a71-90ab-d3d2c95adfb5",
+          "companyId": "3b1d401d-7010-4eed-acd1-be7d52372c07",
+          "name": "Treasury",
+          "status": "idle",
+          "reportsTo": "5ed56bac-12cf-4d2d-980d-daeb47fa4380",
+          "depth": 0,
+          "relation": "self"
+        },
+        {
+          "id": "5ed56bac-12cf-4d2d-980d-daeb47fa4380",
+          "companyId": "3b1d401d-7010-4eed-acd1-be7d52372c07",
+          "name": "Finance",
+          "status": "idle",
+          "reportsTo": "9ecfbe59-069d-41c6-900d-0a55c2f37ced",
+          "depth": 1,
+          "relation": "ancestor"
+        },
+        {
+          "id": "9ecfbe59-069d-41c6-900d-0a55c2f37ced",
+          "companyId": "3b1d401d-7010-4eed-acd1-be7d52372c07",
+          "name": "CEO",
+          "status": "idle",
+          "reportsTo": null,
+          "depth": 2,
+          "relation": "ancestor"
+        }
+      ],
+      "firstInvalidAncestor": null,
+      "invalidAncestors": [],
+      "repairGuidance": null,
+      "pausedAncestors": [],
+      "escalationWarning": null
+    }
+  },
+  {
+    "id": "3ba591c8-95cd-41c5-9cb2-9c401269e6b2",
+    "companyId": "3b1d401d-7010-4eed-acd1-be7d52372c07",
+    "name": "Recruiting",
+    "role": "general",
+    "title": "Recruiting",
+    "icon": null,
+    "status": "idle",
+    "reportsTo": "c3b5adec-b311-4fe1-866d-22e2a5487cbc",
+    "capabilities": "Identify gaps in agent capabilities and draft role requirements. No contacting candidates or hiring people.",
+    "adapterType": "codex_local",
+    "adapterConfig": {
+      "cwd": "C:/Users/Jonat/algoalpha",
+      "engine": "auto",
+      "search": true,
+      "paperclipSkillSync": {
+        "desiredSkills": [
+          "paperclipai/optional/browser/agent-browser",
+          "paperclipai/optional/product/design-critique",
+          "paperclipai/bundled/docs/doc-maintenance",
+          "paperclipai/bundled/software-development/github-pr-workflow",
+          "paperclipai/bundled/paperclip-operations/issue-triage",
+          "paperclipai/optional/research/last30days",
+          "paperclipai/paperclip/paperclip",
+          "paperclipai/paperclip/paperclip-board",
+          "paperclipai/bundled/product/paperclip-capsules",
+          "paperclipai/paperclip/paperclip-converting-plans-to-tasks",
+          "paperclipai/paperclip/paperclip-create-agent",
+          "paperclipai/paperclip/para-memory-files",
+          "paperclipai/optional/software-development/prepare-mcp-integration",
+          "paperclipai/bundled/quality/qa-acceptance",
+          "paperclipai/optional/finance/ramp",
+          "paperclipai/bundled/paperclip-operations/reflection-coach",
+          "paperclipai/optional/content/release-announcement",
+          "paperclipai/optional/content/simplified-english",
+          "paperclipai/bundled/paperclip-operations/status-card-query",
+          "paperclipai/bundled/paperclip-operations/summarize-status",
+          "paperclipai/bundled/paperclip-operations/task-planning",
+          "paperclipai/bundled/product/wireframe"
+        ]
+      },
+      "instructionsFilePath": "C:/Users/Jonat/algoalpha/agents/recruiting/AGENTS.md",
+      "dangerouslyBypassApprovalsAndSandbox": false
+    },
+    "runtimeConfig": {
+      "heartbeat": {
+        "enabled": false,
+        "maxConcurrentRuns": 20
+      }
+    },
+    "defaultEnvironmentId": null,
+    "budgetMonthlyCents": 0,
+    "spentMonthlyCents": 0,
+    "pauseReason": null,
+    "pausedAt": null,
+    "errorReason": null,
+    "permissions": {
+      "canCreateAgents": false,
+      "canCreateSkills": true
+    },
+    "lastHeartbeatAt": null,
+    "metadata": {
+      "firmRoleSlug": "recruiting",
+      "paperTradingOnly": true
+    },
+    "createdAt": "2026-09-22T14:36:35.282Z",
+    "updatedAt": "2026-09-22T19:25:09.881Z",
+    "urlKey": "recruiting",
+    "orgChainHealth": {
+      "status": "healthy",
+      "reason": "healthy",
+      "fullChain": [
+        {
+          "id": "3ba591c8-95cd-41c5-9cb2-9c401269e6b2",
+          "companyId": "3b1d401d-7010-4eed-acd1-be7d52372c07",
+          "name": "Recruiting",
+          "status": "idle",
+          "reportsTo": "c3b5adec-b311-4fe1-866d-22e2a5487cbc",
+          "depth": 0,
+          "relation": "self"
+        },
+        {
+          "id": "c3b5adec-b311-4fe1-866d-22e2a5487cbc",
+          "companyId": "3b1d401d-7010-4eed-acd1-be7d52372c07",
+          "name": "Human Resources",
+          "status": "idle",
+          "reportsTo": "9ecfbe59-069d-41c6-900d-0a55c2f37ced",
+          "depth": 1,
+          "relation": "ancestor"
+        },
+        {
+          "id": "9ecfbe59-069d-41c6-900d-0a55c2f37ced",
+          "companyId": "3b1d401d-7010-4eed-acd1-be7d52372c07",
+          "name": "CEO",
+          "status": "idle",
+          "reportsTo": null,
+          "depth": 2,
+          "relation": "ancestor"
+        }
+      ],
+      "firstInvalidAncestor": null,
+      "invalidAncestors": [],
+      "repairGuidance": null,
+      "pausedAncestors": [],
+      "escalationWarning": null
+    }
+  },
+  {
+    "id": "49e2d426-c4df-4af2-8cc3-f0318f4d0ac2",
+    "companyId": "3b1d401d-7010-4eed-acd1-be7d52372c07",
+    "name": "Business Analyst",
+    "role": "general",
+    "title": "Business Analyst",
+    "icon": null,
+    "status": "idle",
+    "reportsTo": "24395ed9-c13c-49d7-ad13-52c7e6f2d79b",
+    "capabilities": "Provide evidence on research economics, internal product usage, workflow efficiency and scenario forecasts.",
+    "adapterType": "codex_local",
+    "adapterConfig": {
+      "cwd": "C:/Users/Jonat/algoalpha",
+      "engine": "auto",
+      "search": true,
+      "paperclipSkillSync": {
+        "desiredSkills": [
+          "paperclipai/optional/browser/agent-browser",
+          "paperclipai/optional/product/design-critique",
+          "paperclipai/bundled/docs/doc-maintenance",
+          "paperclipai/bundled/software-development/github-pr-workflow",
+          "paperclipai/bundled/paperclip-operations/issue-triage",
+          "paperclipai/optional/research/last30days",
+          "paperclipai/paperclip/paperclip",
+          "paperclipai/paperclip/paperclip-board",
+          "paperclipai/bundled/product/paperclip-capsules",
+          "paperclipai/paperclip/paperclip-converting-plans-to-tasks",
+          "paperclipai/paperclip/paperclip-create-agent",
+          "paperclipai/paperclip/para-memory-files",
+          "paperclipai/optional/software-development/prepare-mcp-integration",
+          "paperclipai/bundled/quality/qa-acceptance",
+          "paperclipai/optional/finance/ramp",
+          "paperclipai/bundled/paperclip-operations/reflection-coach",
+          "paperclipai/optional/content/release-announcement",
+          "paperclipai/optional/content/simplified-english",
+          "paperclipai/bundled/paperclip-operations/status-card-query",
+          "paperclipai/bundled/paperclip-operations/summarize-status",
+          "paperclipai/bundled/paperclip-operations/task-planning",
+          "paperclipai/bundled/product/wireframe"
+        ]
+      },
+      "instructionsFilePath": "C:/Users/Jonat/algoalpha/agents/business-analyst/AGENTS.md",
+      "dangerouslyBypassApprovalsAndSandbox": false
+    },
+    "runtimeConfig": {
+      "heartbeat": {
+        "enabled": false,
+        "maxConcurrentRuns": 20
+      }
+    },
+    "defaultEnvironmentId": null,
+    "budgetMonthlyCents": 0,
+    "spentMonthlyCents": 0,
+    "pauseReason": null,
+    "pausedAt": null,
+    "errorReason": null,
+    "permissions": {
+      "canCreateAgents": false,
+      "canCreateSkills": true
+    },
+    "lastHeartbeatAt": null,
+    "metadata": {
+      "firmRoleSlug": "business-analyst",
+      "paperTradingOnly": true
+    },
+    "createdAt": "2026-09-22T14:36:27.743Z",
+    "updatedAt": "2026-09-22T19:25:12.001Z",
+    "urlKey": "business-analyst",
+    "orgChainHealth": {
+      "status": "healthy",
+      "reason": "healthy",
+      "fullChain": [
+        {
+          "id": "49e2d426-c4df-4af2-8cc3-f0318f4d0ac2",
+          "companyId": "3b1d401d-7010-4eed-acd1-be7d52372c07",
+          "name": "Business Analyst",
+          "status": "idle",
+          "reportsTo": "24395ed9-c13c-49d7-ad13-52c7e6f2d79b",
+          "depth": 0,
+          "relation": "self"
+        },
+        {
+          "id": "24395ed9-c13c-49d7-ad13-52c7e6f2d79b",
+          "companyId": "3b1d401d-7010-4eed-acd1-be7d52372c07",
+          "name": "Strategy and Product",
+          "status": "idle",
+          "reportsTo": "9ecfbe59-069d-41c6-900d-0a55c2f37ced",
+          "depth": 1,
+          "relation": "ancestor"
+        },
+        {
+          "id": "9ecfbe59-069d-41c6-900d-0a55c2f37ced",
+          "companyId": "3b1d401d-7010-4eed-acd1-be7d52372c07",
+          "name": "CEO",
+          "status": "idle",
+          "reportsTo": null,
+          "depth": 2,
+          "relation": "ancestor"
+        }
+      ],
+      "firstInvalidAncestor": null,
+      "invalidAncestors": [],
+      "repairGuidance": null,
+      "pausedAncestors": [],
+      "escalationWarning": null
+    }
+  },
+  {
+    "id": "3a7f3428-4452-4ef6-9443-aef22b225b58",
+    "companyId": "3b1d401d-7010-4eed-acd1-be7d52372c07",
+    "name": "Operations Analyst",
+    "role": "general",
+    "title": "Operations Analyst",
+    "icon": null,
+    "status": "idle",
+    "reportsTo": "a08fb5a4-d158-4a2e-937d-112e3b34757c",
+    "capabilities": "Map simulation processes, identify errors and bottlenecks, and recommend auditable process improvements.",
+    "adapterType": "codex_local",
+    "adapterConfig": {
+      "cwd": "C:/Users/Jonat/algoalpha",
+      "engine": "auto",
+      "search": true,
+      "paperclipSkillSync": {
+        "desiredSkills": [
+          "paperclipai/optional/browser/agent-browser",
+          "paperclipai/optional/product/design-critique",
+          "paperclipai/bundled/docs/doc-maintenance",
+          "paperclipai/bundled/software-development/github-pr-workflow",
+          "paperclipai/bundled/paperclip-operations/issue-triage",
+          "paperclipai/optional/research/last30days",
+          "paperclipai/paperclip/paperclip",
+          "paperclipai/paperclip/paperclip-board",
+          "paperclipai/bundled/product/paperclip-capsules",
+          "paperclipai/paperclip/paperclip-converting-plans-to-tasks",
+          "paperclipai/paperclip/paperclip-create-agent",
+          "paperclipai/paperclip/para-memory-files",
+          "paperclipai/optional/software-development/prepare-mcp-integration",
+          "paperclipai/bundled/quality/qa-acceptance",
+          "paperclipai/optional/finance/ramp",
+          "paperclipai/bundled/paperclip-operations/reflection-coach",
+          "paperclipai/optional/content/release-announcement",
+          "paperclipai/optional/content/simplified-english",
+          "paperclipai/bundled/paperclip-operations/status-card-query",
+          "paperclipai/bundled/paperclip-operations/summarize-status",
+          "paperclipai/bundled/paperclip-operations/task-planning",
+          "paperclipai/bundled/product/wireframe"
+        ]
+      },
+      "instructionsFilePath": "C:/Users/Jonat/algoalpha/agents/operations-analyst/AGENTS.md",
+      "dangerouslyBypassApprovalsAndSandbox": false
+    },
+    "runtimeConfig": {
+      "heartbeat": {
+        "enabled": false,
+        "maxConcurrentRuns": 20
+      }
+    },
+    "defaultEnvironmentId": null,
+    "budgetMonthlyCents": 0,
+    "spentMonthlyCents": 0,
+    "pauseReason": null,
+    "pausedAt": null,
+    "errorReason": null,
+    "permissions": {
+      "canCreateAgents": false,
+      "canCreateSkills": true
+    },
+    "lastHeartbeatAt": null,
+    "metadata": {
+      "firmRoleSlug": "operations-analyst",
+      "paperTradingOnly": true
+    },
+    "createdAt": "2026-09-22T14:36:28.744Z",
+    "updatedAt": "2026-09-22T19:25:23.004Z",
+    "urlKey": "operations-analyst",
+    "orgChainHealth": {
+      "status": "healthy",
+      "reason": "healthy",
+      "fullChain": [
+        {
+          "id": "3a7f3428-4452-4ef6-9443-aef22b225b58",
+          "companyId": "3b1d401d-7010-4eed-acd1-be7d52372c07",
+          "name": "Operations Analyst",
+          "status": "idle",
+          "reportsTo": "a08fb5a4-d158-4a2e-937d-112e3b34757c",
+          "depth": 0,
+          "relation": "self"
+        },
+        {
+          "id": "a08fb5a4-d158-4a2e-937d-112e3b34757c",
+          "companyId": "3b1d401d-7010-4eed-acd1-be7d52372c07",
+          "name": "Trading Operations",
+          "status": "idle",
+          "reportsTo": "9ecfbe59-069d-41c6-900d-0a55c2f37ced",
+          "depth": 1,
+          "relation": "ancestor"
+        },
+        {
+          "id": "9ecfbe59-069d-41c6-900d-0a55c2f37ced",
+          "companyId": "3b1d401d-7010-4eed-acd1-be7d52372c07",
+          "name": "CEO",
+          "status": "idle",
+          "reportsTo": null,
+          "depth": 2,
+          "relation": "ancestor"
+        }
+      ],
+      "firstInvalidAncestor": null,
+      "invalidAncestors": [],
+      "repairGuidance": null,
+      "pausedAncestors": [],
+      "escalationWarning": null
+    }
+  },
+  {
+    "id": "cd6e2321-5900-44a2-a3c5-bfb1a61dfe2d",
+    "companyId": "3b1d401d-7010-4eed-acd1-be7d52372c07",
+    "name": "Risk Management",
+    "role": "general",
+    "title": "Risk Management",
+    "icon": null,
+    "status": "idle",
+    "reportsTo": null,
+    "capabilities": "Independently enforce owner-controlled phase thresholds, stress tests and model controls. May block promotion or simulation. Report to Board directly. Require six months historical testing, out-of-sample evaluation and costs; require 30 days documented paper simulation before further paper eligibility. Initial controlled paper simulation may be authorised after backtest review to collect this evidence. Never approve live trading.",
+    "adapterType": "codex_local",
+    "adapterConfig": {
+      "cwd": "C:/Users/Jonat/algoalpha",
+      "engine": "auto",
+      "search": true,
+      "paperclipSkillSync": {
+        "desiredSkills": [
+          "paperclipai/optional/browser/agent-browser",
+          "paperclipai/optional/product/design-critique",
+          "paperclipai/bundled/docs/doc-maintenance",
+          "paperclipai/bundled/software-development/github-pr-workflow",
+          "paperclipai/bundled/paperclip-operations/issue-triage",
+          "paperclipai/optional/research/last30days",
+          "paperclipai/paperclip/paperclip",
+          "paperclipai/paperclip/paperclip-board",
+          "paperclipai/bundled/product/paperclip-capsules",
+          "paperclipai/paperclip/paperclip-converting-plans-to-tasks",
+          "paperclipai/paperclip/paperclip-create-agent",
+          "paperclipai/paperclip/para-memory-files",
+          "paperclipai/optional/software-development/prepare-mcp-integration",
+          "paperclipai/bundled/quality/qa-acceptance",
+          "paperclipai/optional/finance/ramp",
+          "paperclipai/bundled/paperclip-operations/reflection-coach",
+          "paperclipai/optional/content/release-announcement",
+          "paperclipai/optional/content/simplified-english",
+          "paperclipai/bundled/paperclip-operations/status-card-query",
+          "paperclipai/bundled/paperclip-operations/summarize-status",
+          "paperclipai/bundled/paperclip-operations/task-planning",
+          "paperclipai/bundled/product/wireframe"
+        ]
+      },
+      "instructionsFilePath": "C:/Users/Jonat/algoalpha/agents/risk-management/AGENTS.md",
+      "dangerouslyBypassApprovalsAndSandbox": false
+    },
+    "runtimeConfig": {
+      "heartbeat": {
+        "enabled": false,
+        "maxConcurrentRuns": 20
+      }
+    },
+    "defaultEnvironmentId": null,
+    "budgetMonthlyCents": 0,
+    "spentMonthlyCents": 0,
+    "pauseReason": null,
+    "pausedAt": null,
+    "errorReason": null,
+    "permissions": {
+      "canCreateAgents": false,
+      "canCreateSkills": true
+    },
+    "lastHeartbeatAt": null,
+    "metadata": {
+      "firmRoleSlug": "risk-management",
+      "paperTradingOnly": true
+    },
+    "createdAt": "2026-09-22T14:36:32.364Z",
+    "updatedAt": "2026-09-22T19:25:29.644Z",
+    "urlKey": "risk-management",
+    "orgChainHealth": {
+      "status": "healthy",
+      "reason": "healthy",
+      "fullChain": [
+        {
+          "id": "cd6e2321-5900-44a2-a3c5-bfb1a61dfe2d",
+          "companyId": "3b1d401d-7010-4eed-acd1-be7d52372c07",
+          "name": "Risk Management",
+          "status": "idle",
+          "reportsTo": null,
+          "depth": 0,
+          "relation": "self"
+        }
+      ],
+      "firstInvalidAncestor": null,
+      "invalidAncestors": [],
+      "repairGuidance": null,
+      "pausedAncestors": [],
+      "escalationWarning": null
+    }
+  },
+  {
+    "id": "71e8e56e-fb2c-429c-94ab-25658e17308c",
+    "companyId": "3b1d401d-7010-4eed-acd1-be7d52372c07",
+    "name": "Portfolio Manager",
+    "role": "general",
+    "title": "Portfolio Manager",
+    "icon": null,
+    "status": "idle",
+    "reportsTo": "9ecfbe59-069d-41c6-900d-0a55c2f37ced",
+    "capabilities": "Chair paper capital allocation. Gather Quant, Fundamental, Risk, Execution and Validation votes. Missing votes, risk veto or validation rejection means zero allocation. Respect explicit risk caps and total capital budget. Never deploy actual capital.",
+    "adapterType": "codex_local",
+    "adapterConfig": {
+      "cwd": "C:/Users/Jonat/algoalpha",
+      "engine": "auto",
+      "search": true,
+      "paperclipSkillSync": {
+        "desiredSkills": [
+          "paperclipai/optional/browser/agent-browser",
+          "paperclipai/optional/product/design-critique",
+          "paperclipai/bundled/docs/doc-maintenance",
+          "paperclipai/bundled/software-development/github-pr-workflow",
+          "paperclipai/bundled/paperclip-operations/issue-triage",
+          "paperclipai/optional/research/last30days",
+          "paperclipai/paperclip/paperclip",
+          "paperclipai/paperclip/paperclip-board",
+          "paperclipai/bundled/product/paperclip-capsules",
+          "paperclipai/paperclip/paperclip-converting-plans-to-tasks",
+          "paperclipai/paperclip/paperclip-create-agent",
+          "paperclipai/paperclip/para-memory-files",
+          "paperclipai/optional/software-development/prepare-mcp-integration",
+          "paperclipai/bundled/quality/qa-acceptance",
+          "paperclipai/optional/finance/ramp",
+          "paperclipai/bundled/paperclip-operations/reflection-coach",
+          "paperclipai/optional/content/release-announcement",
+          "paperclipai/optional/content/simplified-english",
+          "paperclipai/bundled/paperclip-operations/status-card-query",
+          "paperclipai/bundled/paperclip-operations/summarize-status",
+          "paperclipai/bundled/paperclip-operations/task-planning",
+          "paperclipai/bundled/product/wireframe"
+        ]
+      },
+      "instructionsFilePath": "C:/Users/Jonat/algoalpha/agents/portfolio-manager/AGENTS.md",
+      "dangerouslyBypassApprovalsAndSandbox": false
+    },
+    "runtimeConfig": {
+      "heartbeat": {
+        "enabled": false,
+        "maxConcurrentRuns": 20
+      }
+    },
+    "defaultEnvironmentId": null,
+    "budgetMonthlyCents": 0,
+    "spentMonthlyCents": 0,
+    "pauseReason": null,
+    "pausedAt": null,
+    "errorReason": null,
+    "permissions": {
+      "canCreateAgents": false,
+      "canCreateSkills": true
+    },
+    "lastHeartbeatAt": null,
+    "metadata": {
+      "firmRoleSlug": "portfolio-manager",
+      "paperTradingOnly": true
+    },
+    "createdAt": "2026-09-22T18:53:49.493Z",
+    "updatedAt": "2026-09-22T19:25:33.823Z",
+    "urlKey": "portfolio-manager",
+    "orgChainHealth": {
+      "status": "healthy",
+      "reason": "healthy",
+      "fullChain": [
+        {
+          "id": "71e8e56e-fb2c-429c-94ab-25658e17308c",
+          "companyId": "3b1d401d-7010-4eed-acd1-be7d52372c07",
+          "name": "Portfolio Manager",
+          "status": "idle",
+          "reportsTo": "9ecfbe59-069d-41c6-900d-0a55c2f37ced",
+          "depth": 0,
+          "relation": "self"
+        },
+        {
+          "id": "9ecfbe59-069d-41c6-900d-0a55c2f37ced",
+          "companyId": "3b1d401d-7010-4eed-acd1-be7d52372c07",
+          "name": "CEO",
+          "status": "idle",
+          "reportsTo": null,
+          "depth": 1,
+          "relation": "ancestor"
+        }
+      ],
+      "firstInvalidAncestor": null,
+      "invalidAncestors": [],
+      "repairGuidance": null,
+      "pausedAncestors": [],
+      "escalationWarning": null
+    }
+  },
+  {
+    "id": "5cab51d9-bc95-4d87-b6ad-55192d185a8a",
+    "companyId": "3b1d401d-7010-4eed-acd1-be7d52372c07",
+    "name": "Quantitative Trader",
+    "role": "general",
+    "title": "Quantitative Trader",
+    "icon": null,
+    "status": "idle",
+    "reportsTo": "9ecfbe59-069d-41c6-900d-0a55c2f37ced",
+    "capabilities": "Develop pricing, position sizing, inventory control and execution hypotheses. Simulate fair-value quotes and orders only. Measure net paper PnL, Sharpe, exposure and execution quality.",
+    "adapterType": "codex_local",
+    "adapterConfig": {
+      "cwd": "C:/Users/Jonat/algoalpha",
+      "engine": "auto",
+      "search": true,
+      "paperclipSkillSync": {
+        "desiredSkills": [
+          "paperclipai/optional/browser/agent-browser",
+          "paperclipai/optional/product/design-critique",
+          "paperclipai/bundled/docs/doc-maintenance",
+          "paperclipai/bundled/software-development/github-pr-workflow",
+          "paperclipai/bundled/paperclip-operations/issue-triage",
+          "paperclipai/optional/research/last30days",
+          "paperclipai/paperclip/paperclip",
+          "paperclipai/paperclip/paperclip-board",
+          "paperclipai/bundled/product/paperclip-capsules",
+          "paperclipai/paperclip/paperclip-converting-plans-to-tasks",
+          "paperclipai/paperclip/paperclip-create-agent",
+          "paperclipai/paperclip/para-memory-files",
+          "paperclipai/optional/software-development/prepare-mcp-integration",
+          "paperclipai/bundled/quality/qa-acceptance",
+          "paperclipai/optional/finance/ramp",
+          "paperclipai/bundled/paperclip-operations/reflection-coach",
+          "paperclipai/optional/content/release-announcement",
+          "paperclipai/optional/content/simplified-english",
+          "paperclipai/bundled/paperclip-operations/status-card-query",
+          "paperclipai/bundled/paperclip-operations/summarize-status",
+          "paperclipai/bundled/paperclip-operations/task-planning",
+          "paperclipai/bundled/product/wireframe"
+        ]
+      },
+      "instructionsFilePath": "C:/Users/Jonat/algoalpha/agents/quantitative-trader/AGENTS.md",
+      "dangerouslyBypassApprovalsAndSandbox": false
+    },
+    "runtimeConfig": {
+      "heartbeat": {
+        "enabled": false,
+        "maxConcurrentRuns": 20
+      }
+    },
+    "defaultEnvironmentId": null,
+    "budgetMonthlyCents": 0,
+    "spentMonthlyCents": 0,
+    "pauseReason": null,
+    "pausedAt": null,
+    "errorReason": null,
+    "permissions": {
+      "canCreateAgents": false,
+      "canCreateSkills": true
+    },
+    "lastHeartbeatAt": null,
+    "metadata": {
+      "firmRoleSlug": "quantitative-trader",
+      "paperTradingOnly": true
+    },
+    "createdAt": "2026-09-22T14:36:07.714Z",
+    "updatedAt": "2026-09-22T19:24:00.514Z",
+    "urlKey": "quantitative-trader",
+    "orgChainHealth": {
+      "status": "healthy",
+      "reason": "healthy",
+      "fullChain": [
+        {
+          "id": "5cab51d9-bc95-4d87-b6ad-55192d185a8a",
+          "companyId": "3b1d401d-7010-4eed-acd1-be7d52372c07",
+          "name": "Quantitative Trader",
+          "status": "idle",
+          "reportsTo": "9ecfbe59-069d-41c6-900d-0a55c2f37ced",
+          "depth": 0,
+          "relation": "self"
+        },
+        {
+          "id": "9ecfbe59-069d-41c6-900d-0a55c2f37ced",
+          "companyId": "3b1d401d-7010-4eed-acd1-be7d52372c07",
+          "name": "CEO",
+          "status": "idle",
+          "reportsTo": null,
+          "depth": 1,
+          "relation": "ancestor"
+        }
+      ],
+      "firstInvalidAncestor": null,
+      "invalidAncestors": [],
+      "repairGuidance": null,
+      "pausedAncestors": [],
+      "escalationWarning": null
+    }
+  },
+  {
+    "id": "a08fb5a4-d158-4a2e-937d-112e3b34757c",
+    "companyId": "3b1d401d-7010-4eed-acd1-be7d52372c07",
+    "name": "Trading Operations",
+    "role": "general",
+    "title": "Trading Operations",
+    "icon": null,
+    "status": "idle",
+    "reportsTo": "9ecfbe59-069d-41c6-900d-0a55c2f37ced",
+    "capabilities": "Lead simulated trade lifecycle, reconciliation, corporate-action treatment and booking controls. No connection to custodians, brokers or settlement services.",
+    "adapterType": "codex_local",
+    "adapterConfig": {
+      "cwd": "C:/Users/Jonat/algoalpha",
+      "engine": "auto",
+      "search": true,
+      "paperclipSkillSync": {
+        "desiredSkills": [
+          "paperclipai/optional/browser/agent-browser",
+          "paperclipai/optional/product/design-critique",
+          "paperclipai/bundled/docs/doc-maintenance",
+          "paperclipai/bundled/software-development/github-pr-workflow",
+          "paperclipai/bundled/paperclip-operations/issue-triage",
+          "paperclipai/optional/research/last30days",
+          "paperclipai/paperclip/paperclip",
+          "paperclipai/paperclip/paperclip-board",
+          "paperclipai/bundled/product/paperclip-capsules",
+          "paperclipai/paperclip/paperclip-converting-plans-to-tasks",
+          "paperclipai/paperclip/paperclip-create-agent",
+          "paperclipai/paperclip/para-memory-files",
+          "paperclipai/optional/software-development/prepare-mcp-integration",
+          "paperclipai/bundled/quality/qa-acceptance",
+          "paperclipai/optional/finance/ramp",
+          "paperclipai/bundled/paperclip-operations/reflection-coach",
+          "paperclipai/optional/content/release-announcement",
+          "paperclipai/optional/content/simplified-english",
+          "paperclipai/bundled/paperclip-operations/status-card-query",
+          "paperclipai/bundled/paperclip-operations/summarize-status",
+          "paperclipai/bundled/paperclip-operations/task-planning",
+          "paperclipai/bundled/product/wireframe"
+        ]
+      },
+      "instructionsFilePath": "C:/Users/Jonat/algoalpha/agents/trading-operations/AGENTS.md",
+      "dangerouslyBypassApprovalsAndSandbox": false
+    },
+    "runtimeConfig": {
+      "heartbeat": {
+        "enabled": false,
+        "maxConcurrentRuns": 20
+      }
+    },
+    "defaultEnvironmentId": null,
+    "budgetMonthlyCents": 0,
+    "spentMonthlyCents": 0,
+    "pauseReason": null,
+    "pausedAt": null,
+    "errorReason": null,
+    "permissions": {
+      "canCreateAgents": false,
+      "canCreateSkills": true
+    },
+    "lastHeartbeatAt": null,
+    "metadata": {
+      "firmRoleSlug": "trading-operations",
+      "paperTradingOnly": true
+    },
+    "createdAt": "2026-09-22T14:36:12.544Z",
+    "updatedAt": "2026-09-22T19:24:02.912Z",
+    "urlKey": "trading-operations",
+    "orgChainHealth": {
+      "status": "healthy",
+      "reason": "healthy",
+      "fullChain": [
+        {
+          "id": "a08fb5a4-d158-4a2e-937d-112e3b34757c",
+          "companyId": "3b1d401d-7010-4eed-acd1-be7d52372c07",
+          "name": "Trading Operations",
+          "status": "idle",
+          "reportsTo": "9ecfbe59-069d-41c6-900d-0a55c2f37ced",
+          "depth": 0,
+          "relation": "self"
+        },
+        {
+          "id": "9ecfbe59-069d-41c6-900d-0a55c2f37ced",
+          "companyId": "3b1d401d-7010-4eed-acd1-be7d52372c07",
+          "name": "CEO",
+          "status": "idle",
+          "reportsTo": null,
+          "depth": 1,
+          "relation": "ancestor"
+        }
+      ],
+      "firstInvalidAncestor": null,
+      "invalidAncestors": [],
+      "repairGuidance": null,
+      "pausedAncestors": [],
+      "escalationWarning": null
+    }
+  },
+  {
+    "id": "d20fff00-9815-45ab-bb9d-eff698937909",
+    "companyId": "3b1d401d-7010-4eed-acd1-be7d52372c07",
+    "name": "Fundamental Research Analyst",
+    "role": "general",
+    "title": "Fundamental Research Analyst",
+    "icon": null,
+    "status": "idle",
+    "reportsTo": "46d53bec-928a-41fc-86ed-a8bd5f90330c",
+    "capabilities": "Analyse financial statements, valuation, industries and management using lawful public sources; produce testable investment theses.",
+    "adapterType": "codex_local",
+    "adapterConfig": {
+      "cwd": "C:/Users/Jonat/algoalpha",
+      "engine": "auto",
+      "search": true,
+      "paperclipSkillSync": {
+        "desiredSkills": [
+          "paperclipai/optional/browser/agent-browser",
+          "paperclipai/optional/product/design-critique",
+          "paperclipai/bundled/docs/doc-maintenance",
+          "paperclipai/bundled/software-development/github-pr-workflow",
+          "paperclipai/bundled/paperclip-operations/issue-triage",
+          "paperclipai/optional/research/last30days",
+          "paperclipai/paperclip/paperclip",
+          "paperclipai/paperclip/paperclip-board",
+          "paperclipai/bundled/product/paperclip-capsules",
+          "paperclipai/paperclip/paperclip-converting-plans-to-tasks",
+          "paperclipai/paperclip/paperclip-create-agent",
+          "paperclipai/paperclip/para-memory-files",
+          "paperclipai/optional/software-development/prepare-mcp-integration",
+          "paperclipai/bundled/quality/qa-acceptance",
+          "paperclipai/optional/finance/ramp",
+          "paperclipai/bundled/paperclip-operations/reflection-coach",
+          "paperclipai/optional/content/release-announcement",
+          "paperclipai/optional/content/simplified-english",
+          "paperclipai/bundled/paperclip-operations/status-card-query",
+          "paperclipai/bundled/paperclip-operations/summarize-status",
+          "paperclipai/bundled/paperclip-operations/task-planning",
+          "paperclipai/bundled/product/wireframe"
+        ]
+      },
+      "instructionsFilePath": "C:/Users/Jonat/algoalpha/agents/fundamental-research-analyst/AGENTS.md",
+      "dangerouslyBypassApprovalsAndSandbox": false
+    },
+    "runtimeConfig": {
+      "heartbeat": {
+        "enabled": false,
+        "maxConcurrentRuns": 20
+      }
+    },
+    "defaultEnvironmentId": null,
+    "budgetMonthlyCents": 0,
+    "spentMonthlyCents": 0,
+    "pauseReason": null,
+    "pausedAt": null,
+    "errorReason": null,
+    "permissions": {
+      "canCreateAgents": false,
+      "canCreateSkills": true
+    },
+    "lastHeartbeatAt": null,
+    "metadata": {
+      "firmRoleSlug": "fundamental-research-analyst",
+      "paperTradingOnly": true
+    },
+    "createdAt": "2026-09-22T14:36:11.260Z",
+    "updatedAt": "2026-09-22T19:24:07.507Z",
+    "urlKey": "fundamental-research-analyst",
+    "orgChainHealth": {
+      "status": "healthy",
+      "reason": "healthy",
+      "fullChain": [
+        {
+          "id": "d20fff00-9815-45ab-bb9d-eff698937909",
+          "companyId": "3b1d401d-7010-4eed-acd1-be7d52372c07",
+          "name": "Fundamental Research Analyst",
+          "status": "idle",
+          "reportsTo": "46d53bec-928a-41fc-86ed-a8bd5f90330c",
+          "depth": 0,
+          "relation": "self"
+        },
+        {
+          "id": "46d53bec-928a-41fc-86ed-a8bd5f90330c",
+          "companyId": "3b1d401d-7010-4eed-acd1-be7d52372c07",
+          "name": "Quantitative Researcher",
+          "status": "idle",
+          "reportsTo": "9ecfbe59-069d-41c6-900d-0a55c2f37ced",
+          "depth": 1,
+          "relation": "ancestor"
+        },
+        {
+          "id": "9ecfbe59-069d-41c6-900d-0a55c2f37ced",
+          "companyId": "3b1d401d-7010-4eed-acd1-be7d52372c07",
+          "name": "CEO",
+          "status": "idle",
+          "reportsTo": null,
+          "depth": 2,
+          "relation": "ancestor"
+        }
+      ],
+      "firstInvalidAncestor": null,
+      "invalidAncestors": [],
+      "repairGuidance": null,
+      "pausedAncestors": [],
+      "escalationWarning": null
+    }
+  },
+  {
+    "id": "9ecfbe59-069d-41c6-900d-0a55c2f37ced",
+    "companyId": "3b1d401d-7010-4eed-acd1-be7d52372c07",
+    "name": "CEO",
+    "role": "ceo",
+    "title": "CEO",
+    "icon": null,
+    "status": "idle",
+    "reportsTo": null,
+    "capabilities": "Triage assigned work, delegate to specialists, enforce research then independent backtest then risk review then paper simulation. Report to owner. Never approve live trading or change thresholds.",
+    "adapterType": "codex_local",
+    "adapterConfig": {
+      "cwd": "C:/Users/Jonat/algoalpha",
+      "engine": "auto",
+      "search": true,
+      "paperclipSkillSync": {
+        "desiredSkills": [
+          "paperclipai/paperclip/paperclip",
+          "paperclipai/paperclip/paperclip-board",
+          "paperclipai/paperclip/paperclip-converting-plans-to-tasks",
+          "paperclipai/paperclip/paperclip-create-agent",
+          "paperclipai/paperclip/para-memory-files",
+          "paperclipai/optional/browser/agent-browser",
+          "paperclipai/optional/product/design-critique",
+          "paperclipai/bundled/docs/doc-maintenance",
+          "paperclipai/bundled/software-development/github-pr-workflow",
+          "paperclipai/bundled/paperclip-operations/issue-triage",
+          "paperclipai/optional/research/last30days",
+          "paperclipai/bundled/product/paperclip-capsules",
+          "paperclipai/optional/software-development/prepare-mcp-integration",
+          "paperclipai/bundled/quality/qa-acceptance",
+          "paperclipai/optional/finance/ramp",
+          "paperclipai/bundled/paperclip-operations/reflection-coach",
+          "paperclipai/optional/content/release-announcement",
+          "paperclipai/optional/content/simplified-english",
+          "paperclipai/bundled/paperclip-operations/status-card-query",
+          "paperclipai/bundled/paperclip-operations/summarize-status",
+          "paperclipai/bundled/paperclip-operations/task-planning",
+          "paperclipai/bundled/product/wireframe"
+        ]
+      },
+      "instructionsFilePath": "C:/Users/Jonat/algoalpha/agents/ceo/AGENTS.md",
+      "dangerouslyBypassApprovalsAndSandbox": false
+    },
+    "runtimeConfig": {
+      "heartbeat": {
+        "enabled": false,
+        "maxConcurrentRuns": 20
+      }
+    },
+    "defaultEnvironmentId": null,
+    "budgetMonthlyCents": 0,
+    "spentMonthlyCents": 0,
+    "pauseReason": null,
+    "pausedAt": null,
+    "errorReason": null,
+    "permissions": {
+      "canAssignTasks": true,
+      "canCreateAgents": true,
+      "canCreateSkills": true
+    },
+    "lastHeartbeatAt": null,
+    "metadata": {
+      "firmRoleSlug": "ceo",
+      "paperTradingOnly": true
+    },
+    "createdAt": "2026-09-22T14:36:06.976Z",
+    "updatedAt": "2026-09-22T19:24:11.926Z",
+    "urlKey": "ceo",
+    "orgChainHealth": {
+      "status": "healthy",
+      "reason": "healthy",
+      "fullChain": [
+        {
+          "id": "9ecfbe59-069d-41c6-900d-0a55c2f37ced",
+          "companyId": "3b1d401d-7010-4eed-acd1-be7d52372c07",
+          "name": "CEO",
+          "status": "idle",
+          "reportsTo": null,
+          "depth": 0,
+          "relation": "self"
+        }
+      ],
+      "firstInvalidAncestor": null,
+      "invalidAncestors": [],
+      "repairGuidance": null,
+      "pausedAncestors": [],
+      "escalationWarning": null
+    }
+  },
+  {
+    "id": "23977d52-a520-4218-a8ee-3f0d47b1d841",
+    "companyId": "3b1d401d-7010-4eed-acd1-be7d52372c07",
+    "name": "Machine Learning Engineer",
+    "role": "general",
+    "title": "Machine Learning Engineer",
+    "icon": null,
+    "status": "idle",
+    "reportsTo": "e3ea9802-b22f-472f-8139-4f70a33ce978",
+    "capabilities": "Build reproducible feature pipelines, model packaging, evaluation, paper inference and controlled retraining.",
+    "adapterType": "codex_local",
+    "adapterConfig": {
+      "cwd": "C:/Users/Jonat/algoalpha",
+      "engine": "auto",
+      "search": true,
+      "paperclipSkillSync": {
+        "desiredSkills": [
+          "paperclipai/optional/browser/agent-browser",
+          "paperclipai/optional/product/design-critique",
+          "paperclipai/bundled/docs/doc-maintenance",
+          "paperclipai/bundled/software-development/github-pr-workflow",
+          "paperclipai/bundled/paperclip-operations/issue-triage",
+          "paperclipai/optional/research/last30days",
+          "paperclipai/paperclip/paperclip",
+          "paperclipai/paperclip/paperclip-board",
+          "paperclipai/bundled/product/paperclip-capsules",
+          "paperclipai/paperclip/paperclip-converting-plans-to-tasks",
+          "paperclipai/paperclip/paperclip-create-agent",
+          "paperclipai/paperclip/para-memory-files",
+          "paperclipai/optional/software-development/prepare-mcp-integration",
+          "paperclipai/bundled/quality/qa-acceptance",
+          "paperclipai/optional/finance/ramp",
+          "paperclipai/bundled/paperclip-operations/reflection-coach",
+          "paperclipai/optional/content/release-announcement",
+          "paperclipai/optional/content/simplified-english",
+          "paperclipai/bundled/paperclip-operations/status-card-query",
+          "paperclipai/bundled/paperclip-operations/summarize-status",
+          "paperclipai/bundled/paperclip-operations/task-planning",
+          "paperclipai/bundled/product/wireframe"
+        ]
+      },
+      "instructionsFilePath": "C:/Users/Jonat/algoalpha/agents/machine-learning-engineer/AGENTS.md",
+      "dangerouslyBypassApprovalsAndSandbox": false
+    },
+    "runtimeConfig": {
+      "heartbeat": {
+        "enabled": false,
+        "maxConcurrentRuns": 20
+      }
+    },
+    "defaultEnvironmentId": null,
+    "budgetMonthlyCents": 0,
+    "spentMonthlyCents": 0,
+    "pauseReason": null,
+    "pausedAt": null,
+    "errorReason": null,
+    "permissions": {
+      "canCreateAgents": false,
+      "canCreateSkills": true
+    },
+    "lastHeartbeatAt": null,
+    "metadata": {
+      "firmRoleSlug": "machine-learning-engineer",
+      "paperTradingOnly": true
+    },
+    "createdAt": "2026-09-22T14:36:16.910Z",
+    "updatedAt": "2026-09-22T19:24:16.527Z",
+    "urlKey": "machine-learning-engineer",
+    "orgChainHealth": {
+      "status": "healthy",
+      "reason": "healthy",
+      "fullChain": [
+        {
+          "id": "23977d52-a520-4218-a8ee-3f0d47b1d841",
+          "companyId": "3b1d401d-7010-4eed-acd1-be7d52372c07",
+          "name": "Machine Learning Engineer",
+          "status": "idle",
+          "reportsTo": "e3ea9802-b22f-472f-8139-4f70a33ce978",
+          "depth": 0,
+          "relation": "self"
+        },
+        {
+          "id": "e3ea9802-b22f-472f-8139-4f70a33ce978",
+          "companyId": "3b1d401d-7010-4eed-acd1-be7d52372c07",
+          "name": "Software Engineer",
+          "status": "idle",
+          "reportsTo": "9ecfbe59-069d-41c6-900d-0a55c2f37ced",
+          "depth": 1,
+          "relation": "ancestor"
+        },
+        {
+          "id": "9ecfbe59-069d-41c6-900d-0a55c2f37ced",
+          "companyId": "3b1d401d-7010-4eed-acd1-be7d52372c07",
+          "name": "CEO",
+          "status": "idle",
+          "reportsTo": null,
+          "depth": 2,
+          "relation": "ancestor"
+        }
+      ],
+      "firstInvalidAncestor": null,
+      "invalidAncestors": [],
+      "repairGuidance": null,
+      "pausedAncestors": [],
+      "escalationWarning": null
+    }
+  },
+  {
+    "id": "7ed34a3d-9811-4d32-bcf4-3cbb6245e7a9",
+    "companyId": "3b1d401d-7010-4eed-acd1-be7d52372c07",
+    "name": "Operations Specialist",
+    "role": "general",
+    "title": "Operations Specialist",
+    "icon": null,
+    "status": "idle",
+    "reportsTo": "a08fb5a4-d158-4a2e-937d-112e3b34757c",
+    "capabilities": "Operate assigned paper booking, reconciliation and issue-resolution procedures with complete audit logs.",
+    "adapterType": "codex_local",
+    "adapterConfig": {
+      "cwd": "C:/Users/Jonat/algoalpha",
+      "engine": "auto",
+      "search": true,
+      "paperclipSkillSync": {
+        "desiredSkills": [
+          "paperclipai/optional/browser/agent-browser",
+          "paperclipai/optional/product/design-critique",
+          "paperclipai/bundled/docs/doc-maintenance",
+          "paperclipai/bundled/software-development/github-pr-workflow",
+          "paperclipai/bundled/paperclip-operations/issue-triage",
+          "paperclipai/optional/research/last30days",
+          "paperclipai/paperclip/paperclip",
+          "paperclipai/paperclip/paperclip-board",
+          "paperclipai/bundled/product/paperclip-capsules",
+          "paperclipai/paperclip/paperclip-converting-plans-to-tasks",
+          "paperclipai/paperclip/paperclip-create-agent",
+          "paperclipai/paperclip/para-memory-files",
+          "paperclipai/optional/software-development/prepare-mcp-integration",
+          "paperclipai/bundled/quality/qa-acceptance",
+          "paperclipai/optional/finance/ramp",
+          "paperclipai/bundled/paperclip-operations/reflection-coach",
+          "paperclipai/optional/content/release-announcement",
+          "paperclipai/optional/content/simplified-english",
+          "paperclipai/bundled/paperclip-operations/status-card-query",
+          "paperclipai/bundled/paperclip-operations/summarize-status",
+          "paperclipai/bundled/paperclip-operations/task-planning",
+          "paperclipai/bundled/product/wireframe"
+        ]
+      },
+      "instructionsFilePath": "C:/Users/Jonat/algoalpha/agents/operations-specialist/AGENTS.md",
+      "dangerouslyBypassApprovalsAndSandbox": false
+    },
+    "runtimeConfig": {
+      "heartbeat": {
+        "enabled": false,
+        "maxConcurrentRuns": 20
+      }
+    },
+    "defaultEnvironmentId": null,
+    "budgetMonthlyCents": 0,
+    "spentMonthlyCents": 0,
+    "pauseReason": null,
+    "pausedAt": null,
+    "errorReason": null,
+    "permissions": {
+      "canCreateAgents": false,
+      "canCreateSkills": true
+    },
+    "lastHeartbeatAt": null,
+    "metadata": {
+      "firmRoleSlug": "operations-specialist",
+      "paperTradingOnly": true
+    },
+    "createdAt": "2026-09-22T14:36:33.149Z",
+    "updatedAt": "2026-09-22T19:24:21.133Z",
+    "urlKey": "operations-specialist",
+    "orgChainHealth": {
+      "status": "healthy",
+      "reason": "healthy",
+      "fullChain": [
+        {
+          "id": "7ed34a3d-9811-4d32-bcf4-3cbb6245e7a9",
+          "companyId": "3b1d401d-7010-4eed-acd1-be7d52372c07",
+          "name": "Operations Specialist",
+          "status": "idle",
+          "reportsTo": "a08fb5a4-d158-4a2e-937d-112e3b34757c",
+          "depth": 0,
+          "relation": "self"
+        },
+        {
+          "id": "a08fb5a4-d158-4a2e-937d-112e3b34757c",
+          "companyId": "3b1d401d-7010-4eed-acd1-be7d52372c07",
+          "name": "Trading Operations",
+          "status": "idle",
+          "reportsTo": "9ecfbe59-069d-41c6-900d-0a55c2f37ced",
+          "depth": 1,
+          "relation": "ancestor"
+        },
+        {
+          "id": "9ecfbe59-069d-41c6-900d-0a55c2f37ced",
+          "companyId": "3b1d401d-7010-4eed-acd1-be7d52372c07",
+          "name": "CEO",
+          "status": "idle",
+          "reportsTo": null,
+          "depth": 2,
+          "relation": "ancestor"
+        }
+      ],
+      "firstInvalidAncestor": null,
+      "invalidAncestors": [],
+      "repairGuidance": null,
+      "pausedAncestors": [],
+      "escalationWarning": null
+    }
+  },
+  {
+    "id": "443a0a29-4ddb-4b19-bf74-b4909b58161e",
+    "companyId": "3b1d401d-7010-4eed-acd1-be7d52372c07",
+    "name": "Communications",
+    "role": "general",
+    "title": "Communications",
+    "icon": null,
+    "status": "idle",
+    "reportsTo": "9ecfbe59-069d-41c6-900d-0a55c2f37ced",
+    "capabilities": "Draft internal research updates and incident summaries. No external publication or messaging without explicit owner instruction.",
+    "adapterType": "codex_local",
+    "adapterConfig": {
+      "cwd": "C:/Users/Jonat/algoalpha",
+      "engine": "auto",
+      "search": true,
+      "paperclipSkillSync": {
+        "desiredSkills": [
+          "paperclipai/optional/browser/agent-browser",
+          "paperclipai/optional/product/design-critique",
+          "paperclipai/bundled/docs/doc-maintenance",
+          "paperclipai/bundled/software-development/github-pr-workflow",
+          "paperclipai/bundled/paperclip-operations/issue-triage",
+          "paperclipai/optional/research/last30days",
+          "paperclipai/paperclip/paperclip",
+          "paperclipai/paperclip/paperclip-board",
+          "paperclipai/bundled/product/paperclip-capsules",
+          "paperclipai/paperclip/paperclip-converting-plans-to-tasks",
+          "paperclipai/paperclip/paperclip-create-agent",
+          "paperclipai/paperclip/para-memory-files",
+          "paperclipai/optional/software-development/prepare-mcp-integration",
+          "paperclipai/bundled/quality/qa-acceptance",
+          "paperclipai/optional/finance/ramp",
+          "paperclipai/bundled/paperclip-operations/reflection-coach",
+          "paperclipai/optional/content/release-announcement",
+          "paperclipai/optional/content/simplified-english",
+          "paperclipai/bundled/paperclip-operations/status-card-query",
+          "paperclipai/bundled/paperclip-operations/summarize-status",
+          "paperclipai/bundled/paperclip-operations/task-planning",
+          "paperclipai/bundled/product/wireframe"
+        ]
+      },
+      "instructionsFilePath": "C:/Users/Jonat/algoalpha/agents/communications/AGENTS.md",
+      "dangerouslyBypassApprovalsAndSandbox": false
+    },
+    "runtimeConfig": {
+      "heartbeat": {
+        "enabled": false,
+        "maxConcurrentRuns": 20
+      }
+    },
+    "defaultEnvironmentId": null,
+    "budgetMonthlyCents": 0,
+    "spentMonthlyCents": 0,
+    "pauseReason": null,
+    "pausedAt": null,
+    "errorReason": null,
+    "permissions": {
+      "canCreateAgents": false,
+      "canCreateSkills": true
+    },
+    "lastHeartbeatAt": null,
+    "metadata": {
+      "firmRoleSlug": "communications",
+      "paperTradingOnly": true
+    },
+    "createdAt": "2026-09-22T14:36:37.251Z",
+    "updatedAt": "2026-09-22T19:25:25.085Z",
+    "urlKey": "communications",
+    "orgChainHealth": {
+      "status": "healthy",
+      "reason": "healthy",
+      "fullChain": [
+        {
+          "id": "443a0a29-4ddb-4b19-bf74-b4909b58161e",
+          "companyId": "3b1d401d-7010-4eed-acd1-be7d52372c07",
+          "name": "Communications",
+          "status": "idle",
+          "reportsTo": "9ecfbe59-069d-41c6-900d-0a55c2f37ced",
+          "depth": 0,
+          "relation": "self"
+        },
+        {
+          "id": "9ecfbe59-069d-41c6-900d-0a55c2f37ced",
+          "companyId": "3b1d401d-7010-4eed-acd1-be7d52372c07",
+          "name": "CEO",
+          "status": "idle",
+          "reportsTo": null,
+          "depth": 1,
+          "relation": "ancestor"
+        }
+      ],
+      "firstInvalidAncestor": null,
+      "invalidAncestors": [],
+      "repairGuidance": null,
+      "pausedAncestors": [],
+      "escalationWarning": null
+    }
+  },
+  {
+    "id": "85eb111a-54b4-403b-8bb6-f456c327ad13",
+    "companyId": "3b1d401d-7010-4eed-acd1-be7d52372c07",
+    "name": "Data Engineer",
+    "role": "general",
+    "title": "Data Engineer",
+    "icon": null,
+    "status": "idle",
+    "reportsTo": "e3ea9802-b22f-472f-8139-4f70a33ce978",
+    "capabilities": "Deliver validated historical datasets, ETL, provenance, point-in-time correctness, corporate-action handling and access documentation.",
+    "adapterType": "codex_local",
+    "adapterConfig": {
+      "cwd": "C:/Users/Jonat/algoalpha",
+      "engine": "auto",
+      "search": true,
+      "paperclipSkillSync": {
+        "desiredSkills": [
+          "paperclipai/optional/browser/agent-browser",
+          "paperclipai/optional/product/design-critique",
+          "paperclipai/bundled/docs/doc-maintenance",
+          "paperclipai/bundled/software-development/github-pr-workflow",
+          "paperclipai/bundled/paperclip-operations/issue-triage",
+          "paperclipai/optional/research/last30days",
+          "paperclipai/paperclip/paperclip",
+          "paperclipai/paperclip/paperclip-board",
+          "paperclipai/bundled/product/paperclip-capsules",
+          "paperclipai/paperclip/paperclip-converting-plans-to-tasks",
+          "paperclipai/paperclip/paperclip-create-agent",
+          "paperclipai/paperclip/para-memory-files",
+          "paperclipai/optional/software-development/prepare-mcp-integration",
+          "paperclipai/bundled/quality/qa-acceptance",
+          "paperclipai/optional/finance/ramp",
+          "paperclipai/bundled/paperclip-operations/reflection-coach",
+          "paperclipai/optional/content/release-announcement",
+          "paperclipai/optional/content/simplified-english",
+          "paperclipai/bundled/paperclip-operations/status-card-query",
+          "paperclipai/bundled/paperclip-operations/summarize-status",
+          "paperclipai/bundled/paperclip-operations/task-planning",
+          "paperclipai/bundled/product/wireframe"
+        ]
+      },
+      "instructionsFilePath": "C:/Users/Jonat/algoalpha/agents/data-engineer/AGENTS.md",
+      "dangerouslyBypassApprovalsAndSandbox": false
+    },
+    "runtimeConfig": {
+      "heartbeat": {
+        "enabled": false,
+        "maxConcurrentRuns": 20
+      }
+    },
+    "defaultEnvironmentId": null,
+    "budgetMonthlyCents": 0,
+    "spentMonthlyCents": 0,
+    "pauseReason": null,
+    "pausedAt": null,
+    "errorReason": null,
+    "permissions": {
+      "canCreateAgents": false,
+      "canCreateSkills": true
+    },
+    "lastHeartbeatAt": null,
+    "metadata": {
+      "firmRoleSlug": "data-engineer",
+      "paperTradingOnly": true
+    },
+    "createdAt": "2026-09-22T14:36:17.808Z",
+    "updatedAt": "2026-09-22T19:24:27.660Z",
+    "urlKey": "data-engineer",
+    "orgChainHealth": {
+      "status": "healthy",
+      "reason": "healthy",
+      "fullChain": [
+        {
+          "id": "85eb111a-54b4-403b-8bb6-f456c327ad13",
+          "companyId": "3b1d401d-7010-4eed-acd1-be7d52372c07",
+          "name": "Data Engineer",
+          "status": "idle",
+          "reportsTo": "e3ea9802-b22f-472f-8139-4f70a33ce978",
+          "depth": 0,
+          "relation": "self"
+        },
+        {
+          "id": "e3ea9802-b22f-472f-8139-4f70a33ce978",
+          "companyId": "3b1d401d-7010-4eed-acd1-be7d52372c07",
+          "name": "Software Engineer",
+          "status": "idle",
+          "reportsTo": "9ecfbe59-069d-41c6-900d-0a55c2f37ced",
+          "depth": 1,
+          "relation": "ancestor"
+        },
+        {
+          "id": "9ecfbe59-069d-41c6-900d-0a55c2f37ced",
+          "companyId": "3b1d401d-7010-4eed-acd1-be7d52372c07",
+          "name": "CEO",
+          "status": "idle",
+          "reportsTo": null,
+          "depth": 2,
+          "relation": "ancestor"
+        }
+      ],
+      "firstInvalidAncestor": null,
+      "invalidAncestors": [],
+      "repairGuidance": null,
+      "pausedAncestors": [],
+      "escalationWarning": null
+    }
+  },
+  {
+    "id": "e3ea9802-b22f-472f-8139-4f70a33ce978",
+    "companyId": "3b1d401d-7010-4eed-acd1-be7d52372c07",
+    "name": "Software Engineer",
+    "role": "general",
+    "title": "Software Engineer",
+    "icon": null,
+    "status": "idle",
+    "reportsTo": "9ecfbe59-069d-41c6-900d-0a55c2f37ced",
+    "capabilities": "Lead development of correct, reproducible research, pricing, risk and paper simulation software. No broker or exchange execution connectivity.",
+    "adapterType": "codex_local",
+    "adapterConfig": {
+      "cwd": "C:/Users/Jonat/algoalpha",
+      "engine": "auto",
+      "search": true,
+      "paperclipSkillSync": {
+        "desiredSkills": [
+          "paperclipai/optional/browser/agent-browser",
+          "paperclipai/optional/product/design-critique",
+          "paperclipai/bundled/docs/doc-maintenance",
+          "paperclipai/bundled/software-development/github-pr-workflow",
+          "paperclipai/bundled/paperclip-operations/issue-triage",
+          "paperclipai/optional/research/last30days",
+          "paperclipai/paperclip/paperclip",
+          "paperclipai/paperclip/paperclip-board",
+          "paperclipai/bundled/product/paperclip-capsules",
+          "paperclipai/paperclip/paperclip-converting-plans-to-tasks",
+          "paperclipai/paperclip/paperclip-create-agent",
+          "paperclipai/paperclip/para-memory-files",
+          "paperclipai/optional/software-development/prepare-mcp-integration",
+          "paperclipai/bundled/quality/qa-acceptance",
+          "paperclipai/optional/finance/ramp",
+          "paperclipai/bundled/paperclip-operations/reflection-coach",
+          "paperclipai/optional/content/release-announcement",
+          "paperclipai/optional/content/simplified-english",
+          "paperclipai/bundled/paperclip-operations/status-card-query",
+          "paperclipai/bundled/paperclip-operations/summarize-status",
+          "paperclipai/bundled/paperclip-operations/task-planning",
+          "paperclipai/bundled/product/wireframe"
+        ]
+      },
+      "instructionsFilePath": "C:/Users/Jonat/algoalpha/agents/software-engineer/AGENTS.md",
+      "dangerouslyBypassApprovalsAndSandbox": false
+    },
+    "runtimeConfig": {
+      "heartbeat": {
+        "enabled": false,
+        "maxConcurrentRuns": 20
+      }
+    },
+    "defaultEnvironmentId": null,
+    "budgetMonthlyCents": 0,
+    "spentMonthlyCents": 0,
+    "pauseReason": null,
+    "pausedAt": null,
+    "errorReason": null,
+    "permissions": {
+      "canCreateAgents": false,
+      "canCreateSkills": true
+    },
+    "lastHeartbeatAt": "2026-09-22T14:38:47.580Z",
+    "metadata": {
+      "firmRoleSlug": "software-engineer",
+      "paperTradingOnly": true
+    },
+    "createdAt": "2026-09-22T14:36:13.713Z",
+    "updatedAt": "2026-09-22T19:25:07.775Z",
+    "urlKey": "software-engineer",
+    "orgChainHealth": {
+      "status": "healthy",
+      "reason": "healthy",
+      "fullChain": [
+        {
+          "id": "e3ea9802-b22f-472f-8139-4f70a33ce978",
+          "companyId": "3b1d401d-7010-4eed-acd1-be7d52372c07",
+          "name": "Software Engineer",
+          "status": "idle",
+          "reportsTo": "9ecfbe59-069d-41c6-900d-0a55c2f37ced",
+          "depth": 0,
+          "relation": "self"
+        },
+        {
+          "id": "9ecfbe59-069d-41c6-900d-0a55c2f37ced",
+          "companyId": "3b1d401d-7010-4eed-acd1-be7d52372c07",
+          "name": "CEO",
+          "status": "idle",
+          "reportsTo": null,
+          "depth": 1,
+          "relation": "ancestor"
+        }
+      ],
+      "firstInvalidAncestor": null,
+      "invalidAncestors": [],
+      "repairGuidance": null,
+      "pausedAncestors": [],
+      "escalationWarning": null
+    }
+  },
+  {
+    "id": "229da861-af1e-4734-8b93-aa6b7769917d",
+    "companyId": "3b1d401d-7010-4eed-acd1-be7d52372c07",
+    "name": "Systems Engineer",
+    "role": "general",
+    "title": "Systems Engineer",
+    "icon": null,
+    "status": "idle",
+    "reportsTo": "e7f5692a-deda-4554-a929-be132d2c6ca8",
+    "capabilities": "Plan and maintain approved computing environments, storage and performance for local research; avoid unrelated system modifications.",
+    "adapterType": "codex_local",
+    "adapterConfig": {
+      "cwd": "C:/Users/Jonat/algoalpha",
+      "engine": "auto",
+      "search": true,
+      "paperclipSkillSync": {
+        "desiredSkills": [
+          "paperclipai/optional/browser/agent-browser",
+          "paperclipai/optional/product/design-critique",
+          "paperclipai/bundled/docs/doc-maintenance",
+          "paperclipai/bundled/software-development/github-pr-workflow",
+          "paperclipai/bundled/paperclip-operations/issue-triage",
+          "paperclipai/optional/research/last30days",
+          "paperclipai/paperclip/paperclip",
+          "paperclipai/paperclip/paperclip-board",
+          "paperclipai/bundled/product/paperclip-capsules",
+          "paperclipai/paperclip/paperclip-converting-plans-to-tasks",
+          "paperclipai/paperclip/paperclip-create-agent",
+          "paperclipai/paperclip/para-memory-files",
+          "paperclipai/optional/software-development/prepare-mcp-integration",
+          "paperclipai/bundled/quality/qa-acceptance",
+          "paperclipai/optional/finance/ramp",
+          "paperclipai/bundled/paperclip-operations/reflection-coach",
+          "paperclipai/optional/content/release-announcement",
+          "paperclipai/optional/content/simplified-english",
+          "paperclipai/bundled/paperclip-operations/status-card-query",
+          "paperclipai/bundled/paperclip-operations/summarize-status",
+          "paperclipai/bundled/paperclip-operations/task-planning",
+          "paperclipai/bundled/product/wireframe"
+        ]
+      },
+      "instructionsFilePath": "C:/Users/Jonat/algoalpha/agents/systems-engineer/AGENTS.md",
+      "dangerouslyBypassApprovalsAndSandbox": false
+    },
+    "runtimeConfig": {
+      "heartbeat": {
+        "enabled": false,
+        "maxConcurrentRuns": 20
+      }
+    },
+    "defaultEnvironmentId": null,
+    "budgetMonthlyCents": 0,
+    "spentMonthlyCents": 0,
+    "pauseReason": null,
+    "pausedAt": null,
+    "errorReason": null,
+    "permissions": {
+      "canCreateAgents": false,
+      "canCreateSkills": true
+    },
+    "lastHeartbeatAt": null,
+    "metadata": {
+      "firmRoleSlug": "systems-engineer",
+      "paperTradingOnly": true
+    },
+    "createdAt": "2026-09-22T14:36:19.485Z",
+    "updatedAt": "2026-09-22T19:24:31.717Z",
+    "urlKey": "systems-engineer",
+    "orgChainHealth": {
+      "status": "healthy",
+      "reason": "healthy",
+      "fullChain": [
+        {
+          "id": "229da861-af1e-4734-8b93-aa6b7769917d",
+          "companyId": "3b1d401d-7010-4eed-acd1-be7d52372c07",
+          "name": "Systems Engineer",
+          "status": "idle",
+          "reportsTo": "e7f5692a-deda-4554-a929-be132d2c6ca8",
+          "depth": 0,
+          "relation": "self"
+        },
+        {
+          "id": "e7f5692a-deda-4554-a929-be132d2c6ca8",
+          "companyId": "3b1d401d-7010-4eed-acd1-be7d52372c07",
+          "name": "Infrastructure Engineer",
+          "status": "idle",
+          "reportsTo": "e3ea9802-b22f-472f-8139-4f70a33ce978",
+          "depth": 1,
+          "relation": "ancestor"
+        },
+        {
+          "id": "e3ea9802-b22f-472f-8139-4f70a33ce978",
+          "companyId": "3b1d401d-7010-4eed-acd1-be7d52372c07",
+          "name": "Software Engineer",
+          "status": "idle",
+          "reportsTo": "9ecfbe59-069d-41c6-900d-0a55c2f37ced",
+          "depth": 2,
+          "relation": "ancestor"
+        },
+        {
+          "id": "9ecfbe59-069d-41c6-900d-0a55c2f37ced",
+          "companyId": "3b1d401d-7010-4eed-acd1-be7d52372c07",
+          "name": "CEO",
+          "status": "idle",
+          "reportsTo": null,
+          "depth": 3,
+          "relation": "ancestor"
+        }
+      ],
+      "firstInvalidAncestor": null,
+      "invalidAncestors": [],
+      "repairGuidance": null,
+      "pausedAncestors": [],
+      "escalationWarning": null
+    }
+  },
+  {
+    "id": "56a5a903-bec7-4597-845a-62e166ddb271",
+    "companyId": "3b1d401d-7010-4eed-acd1-be7d52372c07",
+    "name": "Office Management",
+    "role": "general",
+    "title": "Office Management",
+    "icon": null,
+    "status": "idle",
+    "reportsTo": "9ecfbe59-069d-41c6-900d-0a55c2f37ced",
+    "capabilities": "Coordinate virtual workplace documentation and hypothetical logistics planning; no vendor commitments.",
+    "adapterType": "codex_local",
+    "adapterConfig": {
+      "cwd": "C:/Users/Jonat/algoalpha",
+      "engine": "auto",
+      "search": true,
+      "paperclipSkillSync": {
+        "desiredSkills": [
+          "paperclipai/optional/browser/agent-browser",
+          "paperclipai/optional/product/design-critique",
+          "paperclipai/bundled/docs/doc-maintenance",
+          "paperclipai/bundled/software-development/github-pr-workflow",
+          "paperclipai/bundled/paperclip-operations/issue-triage",
+          "paperclipai/optional/research/last30days",
+          "paperclipai/paperclip/paperclip",
+          "paperclipai/paperclip/paperclip-board",
+          "paperclipai/bundled/product/paperclip-capsules",
+          "paperclipai/paperclip/paperclip-converting-plans-to-tasks",
+          "paperclipai/paperclip/paperclip-create-agent",
+          "paperclipai/paperclip/para-memory-files",
+          "paperclipai/optional/software-development/prepare-mcp-integration",
+          "paperclipai/bundled/quality/qa-acceptance",
+          "paperclipai/optional/finance/ramp",
+          "paperclipai/bundled/paperclip-operations/reflection-coach",
+          "paperclipai/optional/content/release-announcement",
+          "paperclipai/optional/content/simplified-english",
+          "paperclipai/bundled/paperclip-operations/status-card-query",
+          "paperclipai/bundled/paperclip-operations/summarize-status",
+          "paperclipai/bundled/paperclip-operations/task-planning",
+          "paperclipai/bundled/product/wireframe"
+        ]
+      },
+      "instructionsFilePath": "C:/Users/Jonat/algoalpha/agents/office-management/AGENTS.md",
+      "dangerouslyBypassApprovalsAndSandbox": false
+    },
+    "runtimeConfig": {
+      "heartbeat": {
+        "enabled": false,
+        "maxConcurrentRuns": 20
+      }
+    },
+    "defaultEnvironmentId": null,
+    "budgetMonthlyCents": 0,
+    "spentMonthlyCents": 0,
+    "pauseReason": null,
+    "pausedAt": null,
+    "errorReason": null,
+    "permissions": {
+      "canCreateAgents": false,
+      "canCreateSkills": true
+    },
+    "lastHeartbeatAt": null,
+    "metadata": {
+      "firmRoleSlug": "office-management",
+      "paperTradingOnly": true
+    },
+    "createdAt": "2026-09-22T14:37:12.100Z",
+    "updatedAt": "2026-09-22T19:24:33.916Z",
+    "urlKey": "office-management",
+    "orgChainHealth": {
+      "status": "healthy",
+      "reason": "healthy",
+      "fullChain": [
+        {
+          "id": "56a5a903-bec7-4597-845a-62e166ddb271",
+          "companyId": "3b1d401d-7010-4eed-acd1-be7d52372c07",
+          "name": "Office Management",
+          "status": "idle",
+          "reportsTo": "9ecfbe59-069d-41c6-900d-0a55c2f37ced",
+          "depth": 0,
+          "relation": "self"
+        },
+        {
+          "id": "9ecfbe59-069d-41c6-900d-0a55c2f37ced",
+          "companyId": "3b1d401d-7010-4eed-acd1-be7d52372c07",
+          "name": "CEO",
+          "status": "idle",
+          "reportsTo": null,
+          "depth": 1,
+          "relation": "ancestor"
+        }
+      ],
+      "firstInvalidAncestor": null,
+      "invalidAncestors": [],
+      "repairGuidance": null,
+      "pausedAncestors": [],
+      "escalationWarning": null
+    }
+  },
+  {
+    "id": "92562d14-83ac-4754-b26c-538113e4b673",
+    "companyId": "3b1d401d-7010-4eed-acd1-be7d52372c07",
+    "name": "Network Engineer",
+    "role": "general",
+    "title": "Network Engineer",
+    "icon": null,
+    "status": "idle",
+    "reportsTo": "e7f5692a-deda-4554-a929-be132d2c6ca8",
+    "capabilities": "Assess local network reliability, latency and redundancy for research systems. Plan only for external infrastructure; no live trading connectivity.",
+    "adapterType": "codex_local",
+    "adapterConfig": {
+      "cwd": "C:/Users/Jonat/algoalpha",
+      "engine": "auto",
+      "search": true,
+      "paperclipSkillSync": {
+        "desiredSkills": [
+          "paperclipai/optional/browser/agent-browser",
+          "paperclipai/optional/product/design-critique",
+          "paperclipai/bundled/docs/doc-maintenance",
+          "paperclipai/bundled/software-development/github-pr-workflow",
+          "paperclipai/bundled/paperclip-operations/issue-triage",
+          "paperclipai/optional/research/last30days",
+          "paperclipai/paperclip/paperclip",
+          "paperclipai/paperclip/paperclip-board",
+          "paperclipai/bundled/product/paperclip-capsules",
+          "paperclipai/paperclip/paperclip-converting-plans-to-tasks",
+          "paperclipai/paperclip/paperclip-create-agent",
+          "paperclipai/paperclip/para-memory-files",
+          "paperclipai/optional/software-development/prepare-mcp-integration",
+          "paperclipai/bundled/quality/qa-acceptance",
+          "paperclipai/optional/finance/ramp",
+          "paperclipai/bundled/paperclip-operations/reflection-coach",
+          "paperclipai/optional/content/release-announcement",
+          "paperclipai/optional/content/simplified-english",
+          "paperclipai/bundled/paperclip-operations/status-card-query",
+          "paperclipai/bundled/paperclip-operations/summarize-status",
+          "paperclipai/bundled/paperclip-operations/task-planning",
+          "paperclipai/bundled/product/wireframe"
+        ]
+      },
+      "instructionsFilePath": "C:/Users/Jonat/algoalpha/agents/network-engineer/AGENTS.md",
+      "dangerouslyBypassApprovalsAndSandbox": false
+    },
+    "runtimeConfig": {
+      "heartbeat": {
+        "enabled": false,
+        "maxConcurrentRuns": 20
+      }
+    },
+    "defaultEnvironmentId": null,
+    "budgetMonthlyCents": 0,
+    "spentMonthlyCents": 0,
+    "pauseReason": null,
+    "pausedAt": null,
+    "errorReason": null,
+    "permissions": {
+      "canCreateAgents": false,
+      "canCreateSkills": true
+    },
+    "lastHeartbeatAt": null,
+    "metadata": {
+      "firmRoleSlug": "network-engineer",
+      "paperTradingOnly": true
+    },
+    "createdAt": "2026-09-22T14:36:18.652Z",
+    "updatedAt": "2026-09-22T19:24:38.332Z",
+    "urlKey": "network-engineer",
+    "orgChainHealth": {
+      "status": "healthy",
+      "reason": "healthy",
+      "fullChain": [
+        {
+          "id": "92562d14-83ac-4754-b26c-538113e4b673",
+          "companyId": "3b1d401d-7010-4eed-acd1-be7d52372c07",
+          "name": "Network Engineer",
+          "status": "idle",
+          "reportsTo": "e7f5692a-deda-4554-a929-be132d2c6ca8",
+          "depth": 0,
+          "relation": "self"
+        },
+        {
+          "id": "e7f5692a-deda-4554-a929-be132d2c6ca8",
+          "companyId": "3b1d401d-7010-4eed-acd1-be7d52372c07",
+          "name": "Infrastructure Engineer",
+          "status": "idle",
+          "reportsTo": "e3ea9802-b22f-472f-8139-4f70a33ce978",
+          "depth": 1,
+          "relation": "ancestor"
+        },
+        {
+          "id": "e3ea9802-b22f-472f-8139-4f70a33ce978",
+          "companyId": "3b1d401d-7010-4eed-acd1-be7d52372c07",
+          "name": "Software Engineer",
+          "status": "idle",
+          "reportsTo": "9ecfbe59-069d-41c6-900d-0a55c2f37ced",
+          "depth": 2,
+          "relation": "ancestor"
+        },
+        {
+          "id": "9ecfbe59-069d-41c6-900d-0a55c2f37ced",
+          "companyId": "3b1d401d-7010-4eed-acd1-be7d52372c07",
+          "name": "CEO",
+          "status": "idle",
+          "reportsTo": null,
+          "depth": 3,
+          "relation": "ancestor"
+        }
+      ],
+      "firstInvalidAncestor": null,
+      "invalidAncestors": [],
+      "repairGuidance": null,
+      "pausedAncestors": [],
+      "escalationWarning": null
+    }
+  },
+  {
+    "id": "3d7711d3-9058-41ed-9f08-c42f74848f12",
+    "companyId": "3b1d401d-7010-4eed-acd1-be7d52372c07",
+    "name": "Validation Agent",
+    "role": "general",
+    "title": "Validation Agent",
+    "icon": null,
+    "status": "idle",
+    "reportsTo": "9ecfbe59-069d-41c6-900d-0a55c2f37ced",
+    "capabilities": "Strategy Killer: independently seek data leakage, regime dependence, fee/slippage failure and capacity limits. Reject incomplete evidence. Validation veto blocks capital allocation and cannot be overruled by the CEO or Portfolio Manager. Preserve every failed experiment.",
+    "adapterType": "codex_local",
+    "adapterConfig": {
+      "cwd": "C:/Users/Jonat/algoalpha",
+      "engine": "auto",
+      "search": true,
+      "paperclipSkillSync": {
+        "desiredSkills": [
+          "paperclipai/optional/browser/agent-browser",
+          "paperclipai/optional/product/design-critique",
+          "paperclipai/bundled/docs/doc-maintenance",
+          "paperclipai/bundled/software-development/github-pr-workflow",
+          "paperclipai/bundled/paperclip-operations/issue-triage",
+          "paperclipai/optional/research/last30days",
+          "paperclipai/paperclip/paperclip",
+          "paperclipai/paperclip/paperclip-board",
+          "paperclipai/bundled/product/paperclip-capsules",
+          "paperclipai/paperclip/paperclip-converting-plans-to-tasks",
+          "paperclipai/paperclip/paperclip-create-agent",
+          "paperclipai/paperclip/para-memory-files",
+          "paperclipai/optional/software-development/prepare-mcp-integration",
+          "paperclipai/bundled/quality/qa-acceptance",
+          "paperclipai/optional/finance/ramp",
+          "paperclipai/bundled/paperclip-operations/reflection-coach",
+          "paperclipai/optional/content/release-announcement",
+          "paperclipai/optional/content/simplified-english",
+          "paperclipai/bundled/paperclip-operations/status-card-query",
+          "paperclipai/bundled/paperclip-operations/summarize-status",
+          "paperclipai/bundled/paperclip-operations/task-planning",
+          "paperclipai/bundled/product/wireframe"
+        ]
+      },
+      "instructionsFilePath": "C:/Users/Jonat/algoalpha/agents/validation/AGENTS.md",
+      "dangerouslyBypassApprovalsAndSandbox": false
+    },
+    "runtimeConfig": {
+      "heartbeat": {
+        "enabled": false,
+        "maxConcurrentRuns": 20
+      }
+    },
+    "defaultEnvironmentId": null,
+    "budgetMonthlyCents": 0,
+    "spentMonthlyCents": 0,
+    "pauseReason": null,
+    "pausedAt": null,
+    "errorReason": null,
+    "permissions": {
+      "canCreateAgents": false,
+      "canCreateSkills": true
+    },
+    "lastHeartbeatAt": null,
+    "metadata": {
+      "firmRoleSlug": "validation",
+      "paperTradingOnly": true
+    },
+    "createdAt": "2026-09-22T18:53:48.929Z",
+    "updatedAt": "2026-09-22T19:25:31.809Z",
+    "urlKey": "validation-agent",
+    "orgChainHealth": {
+      "status": "healthy",
+      "reason": "healthy",
+      "fullChain": [
+        {
+          "id": "3d7711d3-9058-41ed-9f08-c42f74848f12",
+          "companyId": "3b1d401d-7010-4eed-acd1-be7d52372c07",
+          "name": "Validation Agent",
+          "status": "idle",
+          "reportsTo": "9ecfbe59-069d-41c6-900d-0a55c2f37ced",
+          "depth": 0,
+          "relation": "self"
+        },
+        {
+          "id": "9ecfbe59-069d-41c6-900d-0a55c2f37ced",
+          "companyId": "3b1d401d-7010-4eed-acd1-be7d52372c07",
+          "name": "CEO",
+          "status": "idle",
+          "reportsTo": null,
+          "depth": 1,
+          "relation": "ancestor"
+        }
+      ],
+      "firstInvalidAncestor": null,
+      "invalidAncestors": [],
+      "repairGuidance": null,
+      "pausedAncestors": [],
+      "escalationWarning": null
+    }
+  },
+  {
+    "id": "c3b5adec-b311-4fe1-866d-22e2a5487cbc",
+    "companyId": "3b1d401d-7010-4eed-acd1-be7d52372c07",
+    "name": "Human Resources",
+    "role": "general",
+    "title": "Human Resources",
+    "icon": null,
+    "status": "idle",
+    "reportsTo": "9ecfbe59-069d-41c6-900d-0a55c2f37ced",
+    "capabilities": "Maintain agent role definitions, performance review criteria and internal workload practices. Planning only; no employment actions.",
+    "adapterType": "codex_local",
+    "adapterConfig": {
+      "cwd": "C:/Users/Jonat/algoalpha",
+      "engine": "auto",
+      "search": true,
+      "paperclipSkillSync": {
+        "desiredSkills": [
+          "paperclipai/optional/browser/agent-browser",
+          "paperclipai/optional/product/design-critique",
+          "paperclipai/bundled/docs/doc-maintenance",
+          "paperclipai/bundled/software-development/github-pr-workflow",
+          "paperclipai/bundled/paperclip-operations/issue-triage",
+          "paperclipai/optional/research/last30days",
+          "paperclipai/paperclip/paperclip",
+          "paperclipai/paperclip/paperclip-board",
+          "paperclipai/bundled/product/paperclip-capsules",
+          "paperclipai/paperclip/paperclip-converting-plans-to-tasks",
+          "paperclipai/paperclip/paperclip-create-agent",
+          "paperclipai/paperclip/para-memory-files",
+          "paperclipai/optional/software-development/prepare-mcp-integration",
+          "paperclipai/bundled/quality/qa-acceptance",
+          "paperclipai/optional/finance/ramp",
+          "paperclipai/bundled/paperclip-operations/reflection-coach",
+          "paperclipai/optional/content/release-announcement",
+          "paperclipai/optional/content/simplified-english",
+          "paperclipai/bundled/paperclip-operations/status-card-query",
+          "paperclipai/bundled/paperclip-operations/summarize-status",
+          "paperclipai/bundled/paperclip-operations/task-planning",
+          "paperclipai/bundled/product/wireframe"
+        ]
+      },
+      "instructionsFilePath": "C:/Users/Jonat/algoalpha/agents/human-resources/AGENTS.md",
+      "dangerouslyBypassApprovalsAndSandbox": false
+    },
+    "runtimeConfig": {
+      "heartbeat": {
+        "enabled": false,
+        "maxConcurrentRuns": 20
+      }
+    },
+    "defaultEnvironmentId": null,
+    "budgetMonthlyCents": 0,
+    "spentMonthlyCents": 0,
+    "pauseReason": null,
+    "pausedAt": null,
+    "errorReason": null,
+    "permissions": {
+      "canCreateAgents": false,
+      "canCreateSkills": true
+    },
+    "lastHeartbeatAt": null,
+    "metadata": {
+      "firmRoleSlug": "human-resources",
+      "paperTradingOnly": true
+    },
+    "createdAt": "2026-09-22T14:36:34.592Z",
+    "updatedAt": "2026-09-22T19:24:43.508Z",
+    "urlKey": "human-resources",
+    "orgChainHealth": {
+      "status": "healthy",
+      "reason": "healthy",
+      "fullChain": [
+        {
+          "id": "c3b5adec-b311-4fe1-866d-22e2a5487cbc",
+          "companyId": "3b1d401d-7010-4eed-acd1-be7d52372c07",
+          "name": "Human Resources",
+          "status": "idle",
+          "reportsTo": "9ecfbe59-069d-41c6-900d-0a55c2f37ced",
+          "depth": 0,
+          "relation": "self"
+        },
+        {
+          "id": "9ecfbe59-069d-41c6-900d-0a55c2f37ced",
+          "companyId": "3b1d401d-7010-4eed-acd1-be7d52372c07",
+          "name": "CEO",
+          "status": "idle",
+          "reportsTo": null,
+          "depth": 1,
+          "relation": "ancestor"
+        }
+      ],
+      "firstInvalidAncestor": null,
+      "invalidAncestors": [],
+      "repairGuidance": null,
+      "pausedAncestors": [],
+      "escalationWarning": null
+    }
+  },
+  {
+    "id": "e13b50ea-46d1-42f8-bc13-70763f0c759f",
+    "companyId": "3b1d401d-7010-4eed-acd1-be7d52372c07",
+    "name": "Cost Optimiser",
+    "role": "general",
+    "title": "Cost Optimiser",
+    "icon": null,
+    "status": "idle",
+    "reportsTo": "5ed56bac-12cf-4d2d-980d-daeb47fa4380",
+    "capabilities": "Review run costs and recommend prompt reuse and bounded task batching. Never reduce independent risk review, reproducibility, logging or audit records.",
+    "adapterType": "codex_local",
+    "adapterConfig": {
+      "cwd": "C:/Users/Jonat/algoalpha",
+      "engine": "auto",
+      "search": true,
+      "paperclipSkillSync": {
+        "desiredSkills": [
+          "paperclipai/optional/browser/agent-browser",
+          "paperclipai/optional/product/design-critique",
+          "paperclipai/bundled/docs/doc-maintenance",
+          "paperclipai/bundled/software-development/github-pr-workflow",
+          "paperclipai/bundled/paperclip-operations/issue-triage",
+          "paperclipai/optional/research/last30days",
+          "paperclipai/paperclip/paperclip",
+          "paperclipai/paperclip/paperclip-board",
+          "paperclipai/bundled/product/paperclip-capsules",
+          "paperclipai/paperclip/paperclip-converting-plans-to-tasks",
+          "paperclipai/paperclip/paperclip-create-agent",
+          "paperclipai/paperclip/para-memory-files",
+          "paperclipai/optional/software-development/prepare-mcp-integration",
+          "paperclipai/bundled/quality/qa-acceptance",
+          "paperclipai/optional/finance/ramp",
+          "paperclipai/bundled/paperclip-operations/reflection-coach",
+          "paperclipai/optional/content/release-announcement",
+          "paperclipai/optional/content/simplified-english",
+          "paperclipai/bundled/paperclip-operations/status-card-query",
+          "paperclipai/bundled/paperclip-operations/summarize-status",
+          "paperclipai/bundled/paperclip-operations/task-planning",
+          "paperclipai/bundled/product/wireframe"
+        ]
+      },
+      "instructionsFilePath": "C:/Users/Jonat/algoalpha/agents/cost-optimizer/AGENTS.md",
+      "dangerouslyBypassApprovalsAndSandbox": false
+    },
+    "runtimeConfig": {
+      "heartbeat": {
+        "enabled": false,
+        "maxConcurrentRuns": 20
+      }
+    },
+    "defaultEnvironmentId": null,
+    "budgetMonthlyCents": 0,
+    "spentMonthlyCents": 0,
+    "pauseReason": null,
+    "pausedAt": null,
+    "errorReason": null,
+    "permissions": {
+      "canCreateAgents": false,
+      "canCreateSkills": true
+    },
+    "lastHeartbeatAt": null,
+    "metadata": {
+      "firmRoleSlug": "cost-optimizer",
+      "paperTradingOnly": true
+    },
+    "createdAt": "2026-09-22T14:37:16.020Z",
+    "updatedAt": "2026-09-22T19:24:47.923Z",
+    "urlKey": "cost-optimiser",
+    "orgChainHealth": {
+      "status": "healthy",
+      "reason": "healthy",
+      "fullChain": [
+        {
+          "id": "e13b50ea-46d1-42f8-bc13-70763f0c759f",
+          "companyId": "3b1d401d-7010-4eed-acd1-be7d52372c07",
+          "name": "Cost Optimiser",
+          "status": "idle",
+          "reportsTo": "5ed56bac-12cf-4d2d-980d-daeb47fa4380",
+          "depth": 0,
+          "relation": "self"
+        },
+        {
+          "id": "5ed56bac-12cf-4d2d-980d-daeb47fa4380",
+          "companyId": "3b1d401d-7010-4eed-acd1-be7d52372c07",
+          "name": "Finance",
+          "status": "idle",
+          "reportsTo": "9ecfbe59-069d-41c6-900d-0a55c2f37ced",
+          "depth": 1,
+          "relation": "ancestor"
+        },
+        {
+          "id": "9ecfbe59-069d-41c6-900d-0a55c2f37ced",
+          "companyId": "3b1d401d-7010-4eed-acd1-be7d52372c07",
+          "name": "CEO",
+          "status": "idle",
+          "reportsTo": null,
+          "depth": 2,
+          "relation": "ancestor"
+        }
+      ],
+      "firstInvalidAncestor": null,
+      "invalidAncestors": [],
+      "repairGuidance": null,
+      "pausedAncestors": [],
+      "escalationWarning": null
+    }
+  },
+  {
+    "id": "64d03f12-4b3e-4391-af6d-ebd311ee174e",
+    "companyId": "3b1d401d-7010-4eed-acd1-be7d52372c07",
+    "name": "Building Operations",
+    "role": "general",
+    "title": "Building Operations",
+    "icon": null,
+    "status": "idle",
+    "reportsTo": "56a5a903-bec7-4597-845a-62e166ddb271",
+    "capabilities": "Document hypothetical power, cooling, access and continuity requirements; no physical-system control.",
+    "adapterType": "codex_local",
+    "adapterConfig": {
+      "cwd": "C:/Users/Jonat/algoalpha",
+      "engine": "auto",
+      "search": true,
+      "paperclipSkillSync": {
+        "desiredSkills": [
+          "paperclipai/optional/browser/agent-browser",
+          "paperclipai/optional/product/design-critique",
+          "paperclipai/bundled/docs/doc-maintenance",
+          "paperclipai/bundled/software-development/github-pr-workflow",
+          "paperclipai/bundled/paperclip-operations/issue-triage",
+          "paperclipai/optional/research/last30days",
+          "paperclipai/paperclip/paperclip",
+          "paperclipai/paperclip/paperclip-board",
+          "paperclipai/bundled/product/paperclip-capsules",
+          "paperclipai/paperclip/paperclip-converting-plans-to-tasks",
+          "paperclipai/paperclip/paperclip-create-agent",
+          "paperclipai/paperclip/para-memory-files",
+          "paperclipai/optional/software-development/prepare-mcp-integration",
+          "paperclipai/bundled/quality/qa-acceptance",
+          "paperclipai/optional/finance/ramp",
+          "paperclipai/bundled/paperclip-operations/reflection-coach",
+          "paperclipai/optional/content/release-announcement",
+          "paperclipai/optional/content/simplified-english",
+          "paperclipai/bundled/paperclip-operations/status-card-query",
+          "paperclipai/bundled/paperclip-operations/summarize-status",
+          "paperclipai/bundled/paperclip-operations/task-planning",
+          "paperclipai/bundled/product/wireframe"
+        ]
+      },
+      "instructionsFilePath": "C:/Users/Jonat/algoalpha/agents/building-operations/AGENTS.md",
+      "dangerouslyBypassApprovalsAndSandbox": false
+    },
+    "runtimeConfig": {
+      "heartbeat": {
+        "enabled": false,
+        "maxConcurrentRuns": 20
+      }
+    },
+    "defaultEnvironmentId": null,
+    "budgetMonthlyCents": 0,
+    "spentMonthlyCents": 0,
+    "pauseReason": null,
+    "pausedAt": null,
+    "errorReason": null,
+    "permissions": {
+      "canCreateAgents": false,
+      "canCreateSkills": true
+    },
+    "lastHeartbeatAt": null,
+    "metadata": {
+      "firmRoleSlug": "building-operations",
+      "paperTradingOnly": true
+    },
+    "createdAt": "2026-09-22T14:37:13.303Z",
+    "updatedAt": "2026-09-22T19:24:52.134Z",
+    "urlKey": "building-operations",
+    "orgChainHealth": {
+      "status": "healthy",
+      "reason": "healthy",
+      "fullChain": [
+        {
+          "id": "64d03f12-4b3e-4391-af6d-ebd311ee174e",
+          "companyId": "3b1d401d-7010-4eed-acd1-be7d52372c07",
+          "name": "Building Operations",
+          "status": "idle",
+          "reportsTo": "56a5a903-bec7-4597-845a-62e166ddb271",
+          "depth": 0,
+          "relation": "self"
+        },
+        {
+          "id": "56a5a903-bec7-4597-845a-62e166ddb271",
+          "companyId": "3b1d401d-7010-4eed-acd1-be7d52372c07",
+          "name": "Office Management",
+          "status": "idle",
+          "reportsTo": "9ecfbe59-069d-41c6-900d-0a55c2f37ced",
+          "depth": 1,
+          "relation": "ancestor"
+        },
+        {
+          "id": "9ecfbe59-069d-41c6-900d-0a55c2f37ced",
+          "companyId": "3b1d401d-7010-4eed-acd1-be7d52372c07",
+          "name": "CEO",
+          "status": "idle",
+          "reportsTo": null,
+          "depth": 2,
+          "relation": "ancestor"
+        }
+      ],
+      "firstInvalidAncestor": null,
+      "invalidAncestors": [],
+      "repairGuidance": null,
+      "pausedAncestors": [],
+      "escalationWarning": null
+    }
+  },
+  {
+    "id": "8643d4c6-ed11-4f18-b3bc-8a5357b0fe2d",
+    "companyId": "3b1d401d-7010-4eed-acd1-be7d52372c07",
+    "name": "Cybersecurity Engineer",
+    "role": "general",
+    "title": "Cybersecurity Engineer",
+    "icon": null,
+    "status": "idle",
+    "reportsTo": "9ecfbe59-069d-41c6-900d-0a55c2f37ced",
+    "capabilities": "Review local research security, permissions and dependency risks. Perform defensive reviews only; no intrusive testing without explicit owner scope.",
+    "adapterType": "codex_local",
+    "adapterConfig": {
+      "cwd": "C:/Users/Jonat/algoalpha",
+      "engine": "auto",
+      "search": true,
+      "paperclipSkillSync": {
+        "desiredSkills": [
+          "paperclipai/optional/browser/agent-browser",
+          "paperclipai/optional/product/design-critique",
+          "paperclipai/bundled/docs/doc-maintenance",
+          "paperclipai/bundled/software-development/github-pr-workflow",
+          "paperclipai/bundled/paperclip-operations/issue-triage",
+          "paperclipai/optional/research/last30days",
+          "paperclipai/paperclip/paperclip",
+          "paperclipai/paperclip/paperclip-board",
+          "paperclipai/bundled/product/paperclip-capsules",
+          "paperclipai/paperclip/paperclip-converting-plans-to-tasks",
+          "paperclipai/paperclip/paperclip-create-agent",
+          "paperclipai/paperclip/para-memory-files",
+          "paperclipai/optional/software-development/prepare-mcp-integration",
+          "paperclipai/bundled/quality/qa-acceptance",
+          "paperclipai/optional/finance/ramp",
+          "paperclipai/bundled/paperclip-operations/reflection-coach",
+          "paperclipai/optional/content/release-announcement",
+          "paperclipai/optional/content/simplified-english",
+          "paperclipai/bundled/paperclip-operations/status-card-query",
+          "paperclipai/bundled/paperclip-operations/summarize-status",
+          "paperclipai/bundled/paperclip-operations/task-planning",
+          "paperclipai/bundled/product/wireframe"
+        ]
+      },
+      "instructionsFilePath": "C:/Users/Jonat/algoalpha/agents/cybersecurity-engineer/AGENTS.md",
+      "dangerouslyBypassApprovalsAndSandbox": false
+    },
+    "runtimeConfig": {
+      "heartbeat": {
+        "enabled": false,
+        "maxConcurrentRuns": 20
+      }
+    },
+    "defaultEnvironmentId": null,
+    "budgetMonthlyCents": 0,
+    "spentMonthlyCents": 0,
+    "pauseReason": null,
+    "pausedAt": null,
+    "errorReason": null,
+    "permissions": {
+      "canCreateAgents": false,
+      "canCreateSkills": true
+    },
+    "lastHeartbeatAt": null,
+    "metadata": {
+      "firmRoleSlug": "cybersecurity-engineer",
+      "paperTradingOnly": true
+    },
+    "createdAt": "2026-09-22T14:36:21.224Z",
+    "updatedAt": "2026-09-22T19:24:56.928Z",
+    "urlKey": "cybersecurity-engineer",
+    "orgChainHealth": {
+      "status": "healthy",
+      "reason": "healthy",
+      "fullChain": [
+        {
+          "id": "8643d4c6-ed11-4f18-b3bc-8a5357b0fe2d",
+          "companyId": "3b1d401d-7010-4eed-acd1-be7d52372c07",
+          "name": "Cybersecurity Engineer",
+          "status": "idle",
+          "reportsTo": "9ecfbe59-069d-41c6-900d-0a55c2f37ced",
+          "depth": 0,
+          "relation": "self"
+        },
+        {
+          "id": "9ecfbe59-069d-41c6-900d-0a55c2f37ced",
+          "companyId": "3b1d401d-7010-4eed-acd1-be7d52372c07",
+          "name": "CEO",
+          "status": "idle",
+          "reportsTo": null,
+          "depth": 1,
+          "relation": "ancestor"
+        }
+      ],
+      "firstInvalidAncestor": null,
+      "invalidAncestors": [],
+      "repairGuidance": null,
+      "pausedAncestors": [],
+      "escalationWarning": null
+    }
+  },
+  {
+    "id": "c880723b-b05c-497d-a56f-ba7ba4551c78",
+    "companyId": "3b1d401d-7010-4eed-acd1-be7d52372c07",
+    "name": "Quantitative Analyst",
+    "role": "general",
+    "title": "Quantitative Analyst",
+    "icon": null,
+    "status": "idle",
+    "reportsTo": "46d53bec-928a-41fc-86ed-a8bd5f90330c",
+    "capabilities": "Develop and validate pricing, covariance, factor, Monte Carlo and stress models with numerical checks and explicit assumptions.",
+    "adapterType": "codex_local",
+    "adapterConfig": {
+      "cwd": "C:/Users/Jonat/algoalpha",
+      "engine": "auto",
+      "search": true,
+      "paperclipSkillSync": {
+        "desiredSkills": [
+          "paperclipai/optional/browser/agent-browser",
+          "paperclipai/optional/product/design-critique",
+          "paperclipai/bundled/docs/doc-maintenance",
+          "paperclipai/bundled/software-development/github-pr-workflow",
+          "paperclipai/bundled/paperclip-operations/issue-triage",
+          "paperclipai/optional/research/last30days",
+          "paperclipai/paperclip/paperclip",
+          "paperclipai/paperclip/paperclip-board",
+          "paperclipai/bundled/product/paperclip-capsules",
+          "paperclipai/paperclip/paperclip-converting-plans-to-tasks",
+          "paperclipai/paperclip/paperclip-create-agent",
+          "paperclipai/paperclip/para-memory-files",
+          "paperclipai/optional/software-development/prepare-mcp-integration",
+          "paperclipai/bundled/quality/qa-acceptance",
+          "paperclipai/optional/finance/ramp",
+          "paperclipai/bundled/paperclip-operations/reflection-coach",
+          "paperclipai/optional/content/release-announcement",
+          "paperclipai/optional/content/simplified-english",
+          "paperclipai/bundled/paperclip-operations/status-card-query",
+          "paperclipai/bundled/paperclip-operations/summarize-status",
+          "paperclipai/bundled/paperclip-operations/task-planning",
+          "paperclipai/bundled/product/wireframe"
+        ]
+      },
+      "instructionsFilePath": "C:/Users/Jonat/algoalpha/agents/quantitative-analyst/AGENTS.md",
+      "dangerouslyBypassApprovalsAndSandbox": false
+    },
+    "runtimeConfig": {
+      "heartbeat": {
+        "enabled": false,
+        "maxConcurrentRuns": 20
+      }
+    },
+    "defaultEnvironmentId": null,
+    "budgetMonthlyCents": 0,
+    "spentMonthlyCents": 0,
+    "pauseReason": null,
+    "pausedAt": null,
+    "errorReason": null,
+    "permissions": {
+      "canCreateAgents": false,
+      "canCreateSkills": true
+    },
+    "lastHeartbeatAt": null,
+    "metadata": {
+      "firmRoleSlug": "quantitative-analyst",
+      "paperTradingOnly": true
+    },
+    "createdAt": "2026-09-22T14:36:23.016Z",
+    "updatedAt": "2026-09-22T19:25:14.281Z",
+    "urlKey": "quantitative-analyst",
+    "orgChainHealth": {
+      "status": "healthy",
+      "reason": "healthy",
+      "fullChain": [
+        {
+          "id": "c880723b-b05c-497d-a56f-ba7ba4551c78",
+          "companyId": "3b1d401d-7010-4eed-acd1-be7d52372c07",
+          "name": "Quantitative Analyst",
+          "status": "idle",
+          "reportsTo": "46d53bec-928a-41fc-86ed-a8bd5f90330c",
+          "depth": 0,
+          "relation": "self"
+        },
+        {
+          "id": "46d53bec-928a-41fc-86ed-a8bd5f90330c",
+          "companyId": "3b1d401d-7010-4eed-acd1-be7d52372c07",
+          "name": "Quantitative Researcher",
+          "status": "idle",
+          "reportsTo": "9ecfbe59-069d-41c6-900d-0a55c2f37ced",
+          "depth": 1,
+          "relation": "ancestor"
+        },
+        {
+          "id": "9ecfbe59-069d-41c6-900d-0a55c2f37ced",
+          "companyId": "3b1d401d-7010-4eed-acd1-be7d52372c07",
+          "name": "CEO",
+          "status": "idle",
+          "reportsTo": null,
+          "depth": 2,
+          "relation": "ancestor"
+        }
+      ],
+      "firstInvalidAncestor": null,
+      "invalidAncestors": [],
+      "repairGuidance": null,
+      "pausedAncestors": [],
+      "escalationWarning": null
+    }
+  },
+  {
+    "id": "46d53bec-928a-41fc-86ed-a8bd5f90330c",
+    "companyId": "3b1d401d-7010-4eed-acd1-be7d52372c07",
+    "name": "Quantitative Researcher",
+    "role": "general",
+    "title": "Quantitative Researcher",
+    "icon": null,
+    "status": "idle",
+    "reportsTo": "9ecfbe59-069d-41c6-900d-0a55c2f37ced",
+    "capabilities": "Lead strategy discovery, exact testable hypotheses, lawful source review, feature engineering and statistical modelling. Record evidence quality and avoid promotional claims.",
+    "adapterType": "codex_local",
+    "adapterConfig": {
+      "cwd": "C:/Users/Jonat/algoalpha",
+      "engine": "auto",
+      "search": true,
+      "paperclipSkillSync": {
+        "desiredSkills": [
+          "paperclipai/paperclip/paperclip",
+          "paperclipai/paperclip/para-memory-files",
+          "paperclipai/paperclip/paperclip-board",
+          "paperclipai/paperclip/paperclip-converting-plans-to-tasks",
+          "paperclipai/paperclip/paperclip-create-agent",
+          "paperclipai/optional/browser/agent-browser",
+          "paperclipai/optional/product/design-critique",
+          "paperclipai/bundled/docs/doc-maintenance",
+          "paperclipai/bundled/software-development/github-pr-workflow",
+          "paperclipai/bundled/paperclip-operations/issue-triage",
+          "paperclipai/optional/research/last30days",
+          "paperclipai/bundled/product/paperclip-capsules",
+          "paperclipai/optional/software-development/prepare-mcp-integration",
+          "paperclipai/bundled/quality/qa-acceptance",
+          "paperclipai/optional/finance/ramp",
+          "paperclipai/bundled/paperclip-operations/reflection-coach",
+          "paperclipai/optional/content/release-announcement",
+          "paperclipai/optional/content/simplified-english",
+          "paperclipai/bundled/paperclip-operations/status-card-query",
+          "paperclipai/bundled/paperclip-operations/summarize-status",
+          "paperclipai/bundled/paperclip-operations/task-planning",
+          "paperclipai/bundled/product/wireframe"
+        ]
+      },
+      "instructionsFilePath": "C:/Users/Jonat/algoalpha/agents/quantitative-researcher/AGENTS.md",
+      "dangerouslyBypassApprovalsAndSandbox": false
+    },
+    "runtimeConfig": {
+      "heartbeat": {
+        "enabled": false,
+        "maxConcurrentRuns": 20
+      }
+    },
+    "defaultEnvironmentId": null,
+    "budgetMonthlyCents": 0,
+    "spentMonthlyCents": 0,
+    "pauseReason": null,
+    "pausedAt": null,
+    "errorReason": null,
+    "permissions": {
+      "canAssignTasks": true,
+      "canCreateAgents": true,
+      "canCreateSkills": true
+    },
+    "lastHeartbeatAt": null,
+    "metadata": {
+      "firmRoleSlug": "quantitative-researcher",
+      "paperTradingOnly": true
+    },
+    "createdAt": "2026-09-22T14:36:08.529Z",
+    "updatedAt": "2026-09-22T19:25:18.674Z",
+    "urlKey": "quantitative-researcher",
+    "orgChainHealth": {
+      "status": "healthy",
+      "reason": "healthy",
+      "fullChain": [
+        {
+          "id": "46d53bec-928a-41fc-86ed-a8bd5f90330c",
+          "companyId": "3b1d401d-7010-4eed-acd1-be7d52372c07",
+          "name": "Quantitative Researcher",
+          "status": "idle",
+          "reportsTo": "9ecfbe59-069d-41c6-900d-0a55c2f37ced",
+          "depth": 0,
+          "relation": "self"
+        },
+        {
+          "id": "9ecfbe59-069d-41c6-900d-0a55c2f37ced",
+          "companyId": "3b1d401d-7010-4eed-acd1-be7d52372c07",
+          "name": "CEO",
+          "status": "idle",
+          "reportsTo": null,
+          "depth": 1,
+          "relation": "ancestor"
+        }
+      ],
+      "firstInvalidAncestor": null,
+      "invalidAncestors": [],
+      "repairGuidance": null,
+      "pausedAncestors": [],
+      "escalationWarning": null
+    }
+  },
+  {
+    "id": "e92c1c50-69ee-417e-bd76-ce2c2a8181d3",
+    "companyId": "3b1d401d-7010-4eed-acd1-be7d52372c07",
+    "name": "Trade Support",
+    "role": "general",
+    "title": "Trade Support",
+    "icon": null,
+    "status": "idle",
+    "reportsTo": "a08fb5a4-d158-4a2e-937d-112e3b34757c",
+    "capabilities": "Triage paper execution and booking incidents, reconcile evidence and coordinate repair.",
+    "adapterType": "codex_local",
+    "adapterConfig": {
+      "cwd": "C:/Users/Jonat/algoalpha",
+      "engine": "auto",
+      "search": true,
+      "paperclipSkillSync": {
+        "desiredSkills": [
+          "paperclipai/optional/browser/agent-browser",
+          "paperclipai/optional/product/design-critique",
+          "paperclipai/bundled/docs/doc-maintenance",
+          "paperclipai/bundled/software-development/github-pr-workflow",
+          "paperclipai/bundled/paperclip-operations/issue-triage",
+          "paperclipai/optional/research/last30days",
+          "paperclipai/paperclip/paperclip",
+          "paperclipai/paperclip/paperclip-board",
+          "paperclipai/bundled/product/paperclip-capsules",
+          "paperclipai/paperclip/paperclip-converting-plans-to-tasks",
+          "paperclipai/paperclip/paperclip-create-agent",
+          "paperclipai/paperclip/para-memory-files",
+          "paperclipai/optional/software-development/prepare-mcp-integration",
+          "paperclipai/bundled/quality/qa-acceptance",
+          "paperclipai/optional/finance/ramp",
+          "paperclipai/bundled/paperclip-operations/reflection-coach",
+          "paperclipai/optional/content/release-announcement",
+          "paperclipai/optional/content/simplified-english",
+          "paperclipai/bundled/paperclip-operations/status-card-query",
+          "paperclipai/bundled/paperclip-operations/summarize-status",
+          "paperclipai/bundled/paperclip-operations/task-planning",
+          "paperclipai/bundled/product/wireframe"
+        ]
+      },
+      "instructionsFilePath": "C:/Users/Jonat/algoalpha/agents/trade-support/AGENTS.md",
+      "dangerouslyBypassApprovalsAndSandbox": false
+    },
+    "runtimeConfig": {
+      "heartbeat": {
+        "enabled": false,
+        "maxConcurrentRuns": 20
+      }
+    },
+    "defaultEnvironmentId": null,
+    "budgetMonthlyCents": 0,
+    "spentMonthlyCents": 0,
+    "pauseReason": null,
+    "pausedAt": null,
+    "errorReason": null,
+    "permissions": {
+      "canCreateAgents": false,
+      "canCreateSkills": true
+    },
+    "lastHeartbeatAt": null,
+    "metadata": {
+      "firmRoleSlug": "trade-support",
+      "paperTradingOnly": true
+    },
+    "createdAt": "2026-09-22T14:36:33.879Z",
+    "updatedAt": "2026-09-22T19:25:20.889Z",
+    "urlKey": "trade-support",
+    "orgChainHealth": {
+      "status": "healthy",
+      "reason": "healthy",
+      "fullChain": [
+        {
+          "id": "e92c1c50-69ee-417e-bd76-ce2c2a8181d3",
+          "companyId": "3b1d401d-7010-4eed-acd1-be7d52372c07",
+          "name": "Trade Support",
+          "status": "idle",
+          "reportsTo": "a08fb5a4-d158-4a2e-937d-112e3b34757c",
+          "depth": 0,
+          "relation": "self"
+        },
+        {
+          "id": "a08fb5a4-d158-4a2e-937d-112e3b34757c",
+          "companyId": "3b1d401d-7010-4eed-acd1-be7d52372c07",
+          "name": "Trading Operations",
+          "status": "idle",
+          "reportsTo": "9ecfbe59-069d-41c6-900d-0a55c2f37ced",
+          "depth": 1,
+          "relation": "ancestor"
+        },
+        {
+          "id": "9ecfbe59-069d-41c6-900d-0a55c2f37ced",
+          "companyId": "3b1d401d-7010-4eed-acd1-be7d52372c07",
+          "name": "CEO",
+          "status": "idle",
+          "reportsTo": null,
+          "depth": 2,
+          "relation": "ancestor"
+        }
+      ],
+      "firstInvalidAncestor": null,
+      "invalidAncestors": [],
+      "repairGuidance": null,
+      "pausedAncestors": [],
+      "escalationWarning": null
+    }
+  },
+  {
+    "id": "687a7f62-b5d8-4524-95f0-432aea6168df",
+    "companyId": "3b1d401d-7010-4eed-acd1-be7d52372c07",
+    "name": "Machine Learning Researcher",
+    "role": "general",
+    "title": "Machine Learning Researcher",
+    "icon": null,
+    "status": "idle",
+    "reportsTo": "46d53bec-928a-41fc-86ed-a8bd5f90330c",
+    "capabilities": "Research forecasting, liquidity, representation learning and execution models. Establish simple baselines, prevent leakage and document overfitting controls.",
+    "adapterType": "codex_local",
+    "adapterConfig": {
+      "cwd": "C:/Users/Jonat/algoalpha",
+      "engine": "auto",
+      "search": true,
+      "paperclipSkillSync": {
+        "desiredSkills": [
+          "paperclipai/optional/browser/agent-browser",
+          "paperclipai/optional/product/design-critique",
+          "paperclipai/bundled/docs/doc-maintenance",
+          "paperclipai/bundled/software-development/github-pr-workflow",
+          "paperclipai/bundled/paperclip-operations/issue-triage",
+          "paperclipai/optional/research/last30days",
+          "paperclipai/paperclip/paperclip",
+          "paperclipai/paperclip/paperclip-board",
+          "paperclipai/bundled/product/paperclip-capsules",
+          "paperclipai/paperclip/paperclip-converting-plans-to-tasks",
+          "paperclipai/paperclip/paperclip-create-agent",
+          "paperclipai/paperclip/para-memory-files",
+          "paperclipai/optional/software-development/prepare-mcp-integration",
+          "paperclipai/bundled/quality/qa-acceptance",
+          "paperclipai/optional/finance/ramp",
+          "paperclipai/bundled/paperclip-operations/reflection-coach",
+          "paperclipai/optional/content/release-announcement",
+          "paperclipai/optional/content/simplified-english",
+          "paperclipai/bundled/paperclip-operations/status-card-query",
+          "paperclipai/bundled/paperclip-operations/summarize-status",
+          "paperclipai/bundled/paperclip-operations/task-planning",
+          "paperclipai/bundled/product/wireframe"
+        ]
+      },
+      "instructionsFilePath": "C:/Users/Jonat/algoalpha/agents/machine-learning-researcher/AGENTS.md",
+      "dangerouslyBypassApprovalsAndSandbox": false
+    },
+    "runtimeConfig": {
+      "heartbeat": {
+        "enabled": false,
+        "maxConcurrentRuns": 20
+      }
+    },
+    "defaultEnvironmentId": null,
+    "budgetMonthlyCents": 0,
+    "spentMonthlyCents": 0,
+    "pauseReason": null,
+    "pausedAt": null,
+    "errorReason": null,
+    "permissions": {
+      "canCreateAgents": false,
+      "canCreateSkills": true
+    },
+    "lastHeartbeatAt": null,
+    "metadata": {
+      "firmRoleSlug": "machine-learning-researcher",
+      "paperTradingOnly": true
+    },
+    "createdAt": "2026-09-22T14:36:09.447Z",
+    "updatedAt": "2026-09-22T19:25:27.420Z",
+    "urlKey": "machine-learning-researcher",
+    "orgChainHealth": {
+      "status": "healthy",
+      "reason": "healthy",
+      "fullChain": [
+        {
+          "id": "687a7f62-b5d8-4524-95f0-432aea6168df",
+          "companyId": "3b1d401d-7010-4eed-acd1-be7d52372c07",
+          "name": "Machine Learning Researcher",
+          "status": "idle",
+          "reportsTo": "46d53bec-928a-41fc-86ed-a8bd5f90330c",
+          "depth": 0,
+          "relation": "self"
+        },
+        {
+          "id": "46d53bec-928a-41fc-86ed-a8bd5f90330c",
+          "companyId": "3b1d401d-7010-4eed-acd1-be7d52372c07",
+          "name": "Quantitative Researcher",
+          "status": "idle",
+          "reportsTo": "9ecfbe59-069d-41c6-900d-0a55c2f37ced",
+          "depth": 1,
+          "relation": "ancestor"
+        },
+        {
+          "id": "9ecfbe59-069d-41c6-900d-0a55c2f37ced",
+          "companyId": "3b1d401d-7010-4eed-acd1-be7d52372c07",
+          "name": "CEO",
+          "status": "idle",
+          "reportsTo": null,
+          "depth": 2,
+          "relation": "ancestor"
+        }
+      ],
+      "firstInvalidAncestor": null,
+      "invalidAncestors": [],
+      "repairGuidance": null,
+      "pausedAncestors": [],
+      "escalationWarning": null
+    }
+  },
+  {
+    "id": "9bf35b42-07c3-48be-a3f0-b44ac960782a",
+    "companyId": "3b1d401d-7010-4eed-acd1-be7d52372c07",
+    "name": "Reporting Agent",
+    "role": "general",
+    "title": "Reporting Agent",
+    "icon": null,
+    "status": "idle",
+    "reportsTo": "9ecfbe59-069d-41c6-900d-0a55c2f37ced",
+    "capabilities": "Publish internal reproducible research reports, assumptions, provenance, fills, exposures, risk results and committee decisions. Distinguish synthetic engineering outputs from empirical results. No external publication without owner instruction.",
+    "adapterType": "codex_local",
+    "adapterConfig": {
+      "cwd": "C:/Users/Jonat/algoalpha",
+      "engine": "auto",
+      "search": true,
+      "paperclipSkillSync": {
+        "desiredSkills": [
+          "paperclipai/optional/browser/agent-browser",
+          "paperclipai/optional/product/design-critique",
+          "paperclipai/bundled/docs/doc-maintenance",
+          "paperclipai/bundled/software-development/github-pr-workflow",
+          "paperclipai/bundled/paperclip-operations/issue-triage",
+          "paperclipai/optional/research/last30days",
+          "paperclipai/paperclip/paperclip",
+          "paperclipai/paperclip/paperclip-board",
+          "paperclipai/bundled/product/paperclip-capsules",
+          "paperclipai/paperclip/paperclip-converting-plans-to-tasks",
+          "paperclipai/paperclip/paperclip-create-agent",
+          "paperclipai/paperclip/para-memory-files",
+          "paperclipai/optional/software-development/prepare-mcp-integration",
+          "paperclipai/bundled/quality/qa-acceptance",
+          "paperclipai/optional/finance/ramp",
+          "paperclipai/bundled/paperclip-operations/reflection-coach",
+          "paperclipai/optional/content/release-announcement",
+          "paperclipai/optional/content/simplified-english",
+          "paperclipai/bundled/paperclip-operations/status-card-query",
+          "paperclipai/bundled/paperclip-operations/summarize-status",
+          "paperclipai/bundled/paperclip-operations/task-planning",
+          "paperclipai/bundled/product/wireframe"
+        ]
+      },
+      "instructionsFilePath": "C:/Users/Jonat/algoalpha/agents/reporting/AGENTS.md",
+      "dangerouslyBypassApprovalsAndSandbox": false
+    },
+    "runtimeConfig": {
+      "heartbeat": {
+        "enabled": false,
+        "maxConcurrentRuns": 20
+      }
+    },
+    "defaultEnvironmentId": null,
+    "budgetMonthlyCents": 0,
+    "spentMonthlyCents": 0,
+    "pauseReason": null,
+    "pausedAt": null,
+    "errorReason": null,
+    "permissions": {
+      "canCreateAgents": false,
+      "canCreateSkills": true
+    },
+    "lastHeartbeatAt": null,
+    "metadata": {
+      "firmRoleSlug": "reporting",
+      "paperTradingOnly": true
+    },
+    "createdAt": "2026-09-22T18:53:50.107Z",
+    "updatedAt": "2026-09-22T19:25:35.867Z",
+    "urlKey": "reporting-agent",
+    "orgChainHealth": {
+      "status": "healthy",
+      "reason": "healthy",
+      "fullChain": [
+        {
+          "id": "9bf35b42-07c3-48be-a3f0-b44ac960782a",
+          "companyId": "3b1d401d-7010-4eed-acd1-be7d52372c07",
+          "name": "Reporting Agent",
+          "status": "idle",
+          "reportsTo": "9ecfbe59-069d-41c6-900d-0a55c2f37ced",
+          "depth": 0,
+          "relation": "self"
+        },
+        {
+          "id": "9ecfbe59-069d-41c6-900d-0a55c2f37ced",
+          "companyId": "3b1d401d-7010-4eed-acd1-be7d52372c07",
+          "name": "CEO",
+          "status": "idle",
+          "reportsTo": null,
+          "depth": 1,
+          "relation": "ancestor"
+        }
+      ],
+      "firstInvalidAncestor": null,
+      "invalidAncestors": [],
+      "repairGuidance": null,
+      "pausedAncestors": [],
+      "escalationWarning": null
+    }
+  }
+]

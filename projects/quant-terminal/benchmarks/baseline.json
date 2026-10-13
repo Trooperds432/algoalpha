@@ -1,0 +1,30 @@
+{
+  "environment": {
+    "machine": "AMD64",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "processor": "Intel64 Family 6 Model 197 Stepping 2, GenuineIntel",
+    "python": "3.13.15"
+  },
+  "fixture": {
+    "bars": 780,
+    "csv_sha256": "8b38775899ddceafd36e0f544646a3f0e935d44367eb4ee6c3f9ac1dfe8d934f",
+    "end": "2026-01-06T21:00:00+00:00",
+    "kind": "deterministic-flat-price-XNYS-1m",
+    "snapshot_content_hash": "33aa47f856c7b6220f37b7f2112d3c6f1a6b470eb64ec3a2e6d665a845cf84cc",
+    "start": "2026-01-05T14:30:00+00:00"
+  },
+  "measurements": {
+    "backtest_python_peak_bytes": 2025875,
+    "backtest_seconds": 0.5625107998494059,
+    "csv_import_python_peak_bytes": 6015127,
+    "csv_import_seconds": 0.51173340016976,
+    "event_bars_per_second": 1386.6400435490657,
+    "optimization_python_peak_bytes": 2494156,
+    "optimization_seconds": 3.1185269998386502,
+    "optimization_trials_per_second": 0.9619926331101887,
+    "query_python_peak_bytes": 2282247,
+    "query_seconds": 0.34258730011060834
+  },
+  "schema_version": 1,
+  "scope": "single-process in-memory campaign; no M8 durable writes or UI/API overhead"
+}

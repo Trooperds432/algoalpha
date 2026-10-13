@@ -1,0 +1,6 @@
+{
+  "case": "140000-character CSV field under member byte cap",
+  "outcome": "bounded ValueError rejection; no campaign abort",
+  "scope": "receipt verifier only",
+  "tests": "25 dispatcher tests passed; independent original reproduction retained in review"
+}

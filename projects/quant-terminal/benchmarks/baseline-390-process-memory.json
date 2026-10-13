@@ -1,0 +1,38 @@
+{
+  "environment": {
+    "machine": "AMD64",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "processor": "Intel64 Family 6 Model 197 Stepping 2, GenuineIntel",
+    "python": "3.13.15"
+  },
+  "fixture": {
+    "bars": 390,
+    "csv_sha256": "a5847d6a216550f687fcc3c8ab5c2015c5a7d9e0cec7e515dd3612360c532cc7",
+    "end": "2026-01-05T21:00:00+00:00",
+    "kind": "deterministic-flat-price-XNYS-1m",
+    "snapshot_content_hash": "0dfee2f2b134f286930cda998f813faed959da79c196a0e7973808687855f9bb",
+    "start": "2026-01-05T14:30:00+00:00"
+  },
+  "measurements": {
+    "backtest_process_peak_working_set_bytes": 94343168,
+    "backtest_python_peak_bytes": 1072963,
+    "backtest_seconds": 0.26897570001892745,
+    "backtest_working_set_checkpoint_bytes": 90255360,
+    "csv_import_process_peak_working_set_bytes": 88018944,
+    "csv_import_python_peak_bytes": 4276984,
+    "csv_import_seconds": 0.4034826001152396,
+    "csv_import_working_set_checkpoint_bytes": 88018944,
+    "event_bars_per_second": 1449.945106463358,
+    "optimization_process_peak_working_set_bytes": 96432128,
+    "optimization_python_peak_bytes": 1357274,
+    "optimization_seconds": 0.805709500098601,
+    "optimization_trials_per_second": 3.723426370959839,
+    "optimization_working_set_checkpoint_bytes": 93540352,
+    "query_process_peak_working_set_bytes": 94150656,
+    "query_python_peak_bytes": 1324680,
+    "query_seconds": 0.23530640010721982,
+    "query_working_set_checkpoint_bytes": 91246592
+  },
+  "schema_version": 2,
+  "scope": "single-process in-memory campaign; no M8 durable writes or UI/API overhead"
+}

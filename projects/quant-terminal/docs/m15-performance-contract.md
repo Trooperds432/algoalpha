@@ -1,0 +1,7 @@
+# M15 performance and scalability contract
+
+M15 measures the trusted research path before making optimisations. The benchmark fixture is synthetic, deterministic and local. The harness must record environment details, workload sizes, timings for snapshot loading, event throughput, complete backtest execution and optimisation throughput, plus process memory. Repeated samples and a machine-readable baseline must make changes comparable without presenting a single timing as a universal service level.
+
+An optimisation is eligible only when profiling identifies its cost in the measured path. NumPy, Polars, Numba, process parallelism and vectorisation are options, not requirements. The event-driven engine remains the financial authority; a fast path must preserve event order, fill timing, ledger amounts, position and cash state, metrics and result fingerprints under the same data and assumptions. Avoid changing decimal financial values to binary floats for speed. A benchmark improvement alone never justifies altered semantics.
+
+The M15 gate requires a reproducible baseline, focused profiler evidence, performance comparison after any change, existing golden and property tests, full project checks, and an independent review of both economic equivalence and claimed speedup. If no safe bottleneck is demonstrated, the milestone may close with a documented measured baseline and explicit decision not to optimise. The release remains a local research terminal; no broker route or order submission is introduced.

@@ -1,0 +1,1018 @@
+{
+  "agent_id": "838871e1-8f00-425c-b99b-7d3dddbe21cc",
+  "issue_id": "739daa4a-c82f-4d93-be73-49dc653172fb",
+  "paperclip_run_id": "f58e8e86-c37f-4fa3-bd57-9feeed394305",
+  "selected_run_id": "run-dcb6e4abe8564d598b79a2af7f026a6a",
+  "recorded_at": "2026-10-06T11:39:25.307483+00:00",
+  "http_interactions": [
+    {
+      "timestamp": "2026-10-06T11:39:25.189025+00:00",
+      "method": "GET",
+      "url": "http://127.0.0.1:8765/health",
+      "status": 200,
+      "sha256": "849f6f3f3f0d8e7c926729f285c59746d1db5add8a8aa7670f2e2d4371072ba6",
+      "body": {
+        "broker_orders_enabled": false,
+        "mode": "research",
+        "status": "ok"
+      },
+      "response_bytes_base64": "eyJicm9rZXJfb3JkZXJzX2VuYWJsZWQiOmZhbHNlLCJtb2RlIjoicmVzZWFyY2giLCJzdGF0dXMiOiJvayJ9"
+    },
+    {
+      "timestamp": "2026-10-06T11:39:25.243263+00:00",
+      "method": "GET",
+      "url": "http://127.0.0.1:8765/runs",
+      "status": 200,
+      "sha256": "915a511f68fd7c10df927870531864f4661fa12f17a1f05aafec7cfdfebfbb2c",
+      "body": [
+        {
+          "artifacts": [
+            {
+              "name": "report-bundle.zip",
+              "sha256": "a70b6a8776f6b3ff67ed4094691ee0afd692df37ddeb0f2a4d1f32ba88474017",
+              "size_bytes": 523803
+            },
+            {
+              "name": "source-bundle.zip",
+              "sha256": "12fcf84c574b44ab0ae47f6cc8c941e909220557b08960c81cfc1b5fe4e93f2d",
+              "size_bytes": 980929
+            },
+            {
+              "name": "strategy-source.py",
+              "sha256": "9c443815b801407b1ffc406d0d4e476eafe81c3e533cae7635868fca31361831",
+              "size_bytes": 8603
+            }
+          ],
+          "config": {
+            "analytics_settings": {
+              "annual_mar": "0",
+              "annual_risk_free_rate": "0",
+              "annualization": 252,
+              "risk_of_ruin": null,
+              "var_confidences": [
+                "0.95",
+                "0.99",
+                "0.999"
+              ]
+            },
+            "backtest_settings": {
+              "allow_short": false,
+              "allow_zero_costs": false,
+              "boundary_liquidation": false,
+              "max_order_notional": "1000000",
+              "short_assumption": null
+            },
+            "benchmark": {
+              "instrument_id": "ETF-DEMO"
+            },
+            "currency": "USD",
+            "datasets": [
+              {
+                "content_hash": "8df310773a9d303299dda28c6632f4a36cefa15ef975a0a6c66a095d5b2a04c7",
+                "input_hash": "de212095d7fdb2ccf1b5507061c7543a19f1ba4ac929de6921cf718950c6f8bc",
+                "instrument_ids": [
+                  "ETF-DEMO"
+                ],
+                "row_count": 43,
+                "snapshot_id": "26c1cf1b4e3b43c5188e7625c21cfd842d0331d64b5d61abab418a11bb33ecd7"
+              }
+            ],
+            "dependency_lock_hash": "debd1525a6d342409d95db7eb33bba95323ff2241935c9eaecfb8b2b2b794877",
+            "end": "2026-09-01T00:00:00+00:00",
+            "engine_version": "1.0.0rc1",
+            "execution_assumptions": {
+              "commission": {
+                "kind": "per_unit",
+                "minimum": null,
+                "per_unit_rate": "0.1"
+              },
+              "commission_model_repr": "PerUnitCommission(per_unit_rate=Decimal('0.1'), minimum=None)",
+              "maximum_participation": "0.01",
+              "slippage": {
+                "kind": "fixed",
+                "value": "0.01"
+              },
+              "slippage_model_repr": "ConfiguredSlippage(kind=<SlippageKind.FIXED: 'fixed'>, value=Decimal('0.01'))",
+              "zero_cost_assumption": null
+            },
+            "git_commit": null,
+            "initial_capital": "10000",
+            "parameters": {
+              "instrument_id": "ETF-DEMO",
+              "quantity": "10"
+            },
+            "project_source_hash": "12fcf84c574b44ab0ae47f6cc8c941e909220557b08960c81cfc1b5fe4e93f2d",
+            "seed": 20260927,
+            "start": "2026-07-01T00:00:00+00:00",
+            "strategy_id": "builtin.buy_and_hold.v1",
+            "strategy_name": "buy_and_hold",
+            "strategy_source_hash": "9c443815b801407b1ffc406d0d4e476eafe81c3e533cae7635868fca31361831"
+          },
+          "created_at": "2026-10-02T21:17:31.241208+00:00",
+          "input_fingerprint": "566a4133622db0c51cc8dd8a34037e420d2fa123405cda0b0a846ffa8e5abc68",
+          "metrics": {
+            "alpha": {
+              "observations": 0,
+              "reason": "M5 benchmark is price-only and lacks a compatible total-return session series",
+              "status": "unavailable",
+              "unit": "ratio",
+              "value": null
+            },
+            "annualized_arithmetic_return": {
+              "observations": 43,
+              "reason": null,
+              "status": "available",
+              "unit": "fraction_per_year",
+              "value": "0.08009466081060733341207083087717119"
+            },
+            "annualized_volatility": {
+              "observations": 43,
+              "reason": null,
+              "status": "available",
+              "unit": "fraction_per_year",
+              "value": "0.02845842705926333535965712971177927"
+            },
+            "average_gross_exposure": {
+              "observations": 44,
+              "reason": null,
+              "status": "available",
+              "unit": "USD",
+              "value": "1012.136363636363636363636363636364"
+            },
+            "average_gross_leverage": {
+              "observations": 44,
+              "reason": null,
+              "status": "available",
+              "unit": "multiple",
+              "value": "0.1003450844953871871994037445413188"
+            },
+            "average_holding_days": {
+              "observations": 0,
+              "reason": "no closed matched trades",
+              "status": "unavailable",
+              "unit": "days",
+              "value": null
+            },
+            "average_loss": {
+              "observations": 0,
+              "reason": "no losing trades",
+              "status": "unavailable",
+              "unit": "USD",
+              "value": null
+            },
+            "average_mae_per_unit": {
+              "observations": 0,
+              "reason": "no closed trade marks",
+              "status": "unavailable",
+              "unit": "USD",
+              "value": null
+            },
+            "average_mfe_per_unit": {
+              "observations": 0,
+              "reason": "no closed trade marks",
+              "status": "unavailable",
+              "unit": "USD",
+              "value": null
+            },
+            "average_net_exposure": {
+              "observations": 44,
+              "reason": null,
+              "status": "available",
+              "unit": "USD",
+              "value": "1012.136363636363636363636363636364"
+            },
+            "average_net_leverage": {
+              "observations": 44,
+              "reason": null,
+              "status": "available",
+              "unit": "multiple",
+              "value": "0.1003450844953871871994037445413188"
+            },
+            "average_win": {
+              "observations": 0,
+              "reason": "no winning trades",
+              "status": "unavailable",
+              "unit": "USD",
+              "value": null
+            },
+            "best_trade": {
+              "observations": 0,
+              "reason": "no closed matched trades",
+              "status": "unavailable",
+              "unit": "USD",
+              "value": null
+            },
+            "beta": {
+              "observations": 0,
+              "reason": "M5 benchmark is price-only and lacks a compatible total-return session series",
+              "status": "unavailable",
+              "unit": "ratio",
+              "value": null
+            },
+            "breakeven_trades": {
+              "observations": 0,
+              "reason": null,
+              "status": "available",
+              "unit": "trades",
+              "value": "0"
+            },
+            "cagr": {
+              "observations": 43,
+              "reason": null,
+              "status": "available",
+              "unit": "fraction_per_year",
+              "value": "0.083398107482581609928190403109212"
+            },
+            "calmar": {
+              "observations": 43,
+              "reason": null,
+              "status": "available",
+              "unit": "ratio",
+              "value": "18.25131322209566976056739063174207"
+            },
+            "commissions": {
+              "observations": 1,
+              "reason": null,
+              "status": "available",
+              "unit": "USD",
+              "value": "1"
+            },
+            "down_capture": {
+              "observations": 0,
+              "reason": "M5 benchmark is price-only and lacks a compatible total-return session series",
+              "status": "unavailable",
+              "unit": "ratio",
+              "value": null
+            },
+            "drawdown_duration_days": {
+              "observations": 44,
+              "reason": null,
+              "status": "available",
+              "unit": "days",
+              "value": "10"
+            },
+            "drawdown_duration_sessions": {
+              "observations": 44,
+              "reason": null,
+              "status": "available",
+              "unit": "sessions",
+              "value": "6"
+            },
+            "excess_kurtosis": {
+              "observations": 43,
+              "reason": null,
+              "status": "available",
+              "unit": "ratio",
+              "value": "3.631884747386214608783458555877277"
+            },
+            "expectancy": {
+              "observations": 0,
+              "reason": "no closed matched trades",
+              "status": "unavailable",
+              "unit": "USD",
+              "value": null
+            },
+            "expected_shortfall_95": {
+              "observations": 43,
+              "reason": "requires at least 20 returns and 5 expected tail observations",
+              "status": "insufficient_sample",
+              "unit": "loss_fraction",
+              "value": "0.004562862853186357909896974624225705"
+            },
+            "expected_shortfall_99": {
+              "observations": 43,
+              "reason": "requires at least 20 returns and 5 expected tail observations",
+              "status": "insufficient_sample",
+              "unit": "loss_fraction",
+              "value": "0.0045694305098888436360746605211137"
+            },
+            "expected_shortfall_99.9": {
+              "observations": 43,
+              "reason": "requires at least 20 returns and 5 expected tail observations",
+              "status": "insufficient_sample",
+              "unit": "loss_fraction",
+              "value": "0.0045694305098888436360746605211137"
+            },
+            "information_ratio": {
+              "observations": 0,
+              "reason": "M5 benchmark is price-only and lacks a compatible total-return session series",
+              "status": "unavailable",
+              "unit": "ratio",
+              "value": null
+            },
+            "loss_rate": {
+              "observations": 0,
+              "reason": "no closed matched trades",
+              "status": "unavailable",
+              "unit": "fraction",
+              "value": null
+            },
+            "max_consecutive_losses": {
+              "observations": 0,
+              "reason": null,
+              "status": "available",
+              "unit": "trades",
+              "value": "0"
+            },
+            "max_consecutive_wins": {
+              "observations": 0,
+              "reason": null,
+              "status": "available",
+              "unit": "trades",
+              "value": "0"
+            },
+            "maximum_drawdown": {
+              "observations": 44,
+              "reason": null,
+              "status": "available",
+              "unit": "fraction",
+              "value": "0.0045694305098888436360746605211137"
+            },
+            "median_trade": {
+              "observations": 0,
+              "reason": "no closed matched trades",
+              "status": "unavailable",
+              "unit": "USD",
+              "value": null
+            },
+            "omega": {
+              "observations": 43,
+              "reason": null,
+              "status": "available",
+              "unit": "ratio",
+              "value": "1.601035810665574111165101052362071"
+            },
+            "payoff_ratio": {
+              "observations": 0,
+              "reason": "requires nonzero mean losses and winning trades",
+              "status": "unavailable",
+              "unit": "ratio",
+              "value": null
+            },
+            "profit_factor": {
+              "observations": 0,
+              "reason": "no losing trades",
+              "status": "unavailable",
+              "unit": "ratio",
+              "value": null
+            },
+            "recovery_time_days": {
+              "observations": 44,
+              "reason": null,
+              "status": "available",
+              "unit": "days",
+              "value": "10"
+            },
+            "risk_of_ruin": {
+              "observations": 0,
+              "reason": "explicit risk-of-ruin assumptions were not supplied",
+              "status": "unavailable",
+              "unit": "probability",
+              "value": null
+            },
+            "sharpe": {
+              "observations": 43,
+              "reason": null,
+              "status": "available",
+              "unit": "ratio",
+              "value": "2.814444404949506548286648794884191"
+            },
+            "skew": {
+              "observations": 43,
+              "reason": null,
+              "status": "available",
+              "unit": "ratio",
+              "value": "-2.362172514904961629320586465468968"
+            },
+            "slippage_cost": {
+              "observations": 1,
+              "reason": null,
+              "status": "available",
+              "unit": "USD",
+              "value": "0.1"
+            },
+            "sortino": {
+              "observations": 43,
+              "reason": null,
+              "status": "available",
+              "unit": "ratio",
+              "value": "3.253486046099018630113062348351"
+            },
+            "tail_ratio_95_5": {
+              "observations": 43,
+              "reason": null,
+              "status": "available",
+              "unit": "ratio",
+              "value": "0.2194693411783753703453368126282465"
+            },
+            "total_cost": {
+              "observations": 1,
+              "reason": null,
+              "status": "available",
+              "unit": "USD",
+              "value": "1.1"
+            },
+            "total_return": {
+              "observations": 43,
+              "reason": null,
+              "status": "available",
+              "unit": "fraction",
+              "value": "0.01369"
+            },
+            "tracking_error": {
+              "observations": 0,
+              "reason": "M5 benchmark is price-only and lacks a compatible total-return session series",
+              "status": "unavailable",
+              "unit": "ratio",
+              "value": null
+            },
+            "trade_count": {
+              "observations": 0,
+              "reason": null,
+              "status": "available",
+              "unit": "trades",
+              "value": "0"
+            },
+            "turnover": {
+              "observations": 1,
+              "reason": null,
+              "status": "available",
+              "unit": "multiple",
+              "value": "0.09662387692135665330116475096476441"
+            },
+            "ulcer_index": {
+              "observations": 44,
+              "reason": null,
+              "status": "available",
+              "unit": "fraction",
+              "value": "0.002191060849806184591876473283993636"
+            },
+            "up_capture": {
+              "observations": 0,
+              "reason": "M5 benchmark is price-only and lacks a compatible total-return session series",
+              "status": "unavailable",
+              "unit": "ratio",
+              "value": null
+            },
+            "var_95": {
+              "observations": 43,
+              "reason": "requires at least 20 returns and 5 expected tail observations",
+              "status": "insufficient_sample",
+              "unit": "loss_fraction",
+              "value": "0.00454666988747388453956156320466815"
+            },
+            "var_99": {
+              "observations": 43,
+              "reason": "requires at least 20 returns and 5 expected tail observations",
+              "status": "insufficient_sample",
+              "unit": "loss_fraction",
+              "value": "0.004564866015191672963106775339608334"
+            },
+            "var_99.9": {
+              "observations": 43,
+              "reason": "requires at least 20 returns and 5 expected tail observations",
+              "status": "insufficient_sample",
+              "unit": "loss_fraction",
+              "value": "0.004568974060419126568777872002963163"
+            },
+            "win_rate": {
+              "observations": 0,
+              "reason": "no closed matched trades",
+              "status": "unavailable",
+              "unit": "fraction",
+              "value": null
+            },
+            "worst_trade": {
+              "observations": 0,
+              "reason": "no closed matched trades",
+              "status": "unavailable",
+              "unit": "USD",
+              "value": null
+            }
+          },
+          "python_version": "3.13.15",
+          "result_fingerprint": "62be7eaa06ceaad6f2fa83c6f13deb9c9a6a774103dc6e4ec7b778251fb9431c",
+          "run_id": "run-dcb6e4abe8564d598b79a2af7f026a6a",
+          "runtime_metadata": {
+            "adapter": "application-runtime-v1",
+            "platform": "Windows"
+          },
+          "schema_version": 1,
+          "tags": []
+        }
+      ],
+      "response_bytes_base64": "W3siYXJ0aWZhY3RzIjpbeyJuYW1lIjoicmVwb3J0LWJ1bmRsZS56aXAiLCJzaGEyNTYiOiJhNzBiNmE4Nzc2ZjZiM2ZmNjdlZDQwOTQ2OTFlZTBhZmQ2OTJkZjM3ZGRlYjBmMmE0ZDFmMzJiYTg4NDc0MDE3Iiwic2l6ZV9ieXRlcyI6NTIzODAzfSx7Im5hbWUiOiJzb3VyY2UtYnVuZGxlLnppcCIsInNoYTI1NiI6IjEyZmNmODRjNTc0YjQ0YWIwYWU0N2Y2Y2M4Yzk0MWU5MDkyMjA1NTdiMDg5NjBjODFjZmMxYjVmZTRlOTNmMmQiLCJzaXplX2J5dGVzIjo5ODA5Mjl9LHsibmFtZSI6InN0cmF0ZWd5LXNvdXJjZS5weSIsInNoYTI1NiI6IjljNDQzODE1YjgwMTQwN2IxZmZjNDA2ZDBkNGU0NzZlYWZlODFjM2U1MzNjYWU3NjM1ODY4ZmNhMzEzNjE4MzEiLCJzaXplX2J5dGVzIjo4NjAzfV0sImNvbmZpZyI6eyJhbmFseXRpY3Nfc2V0dGluZ3MiOnsiYW5udWFsX21hciI6IjAiLCJhbm51YWxfcmlza19mcmVlX3JhdGUiOiIwIiwiYW5udWFsaXphdGlvbiI6MjUyLCJyaXNrX29mX3J1aW4iOm51bGwsInZhcl9jb25maWRlbmNlcyI6WyIwLjk1IiwiMC45OSIsIjAuOTk5Il19LCJiYWNrdGVzdF9zZXR0aW5ncyI6eyJhbGxvd19zaG9ydCI6ZmFsc2UsImFsbG93X3plcm9fY29zdHMiOmZhbHNlLCJib3VuZGFyeV9saXF1aWRhdGlvbiI6ZmFsc2UsIm1heF9vcmRlcl9ub3Rpb25hbCI6IjEwMDAwMDAiLCJzaG9ydF9hc3N1bXB0aW9uIjpudWxsfSwiYmVuY2htYXJrIjp7Imluc3RydW1lbnRfaWQiOiJFVEYtREVNTyJ9LCJjdXJyZW5jeSI6IlVTRCIsImRhdGFzZXRzIjpbeyJjb250ZW50X2hhc2giOiI4ZGYzMTA3NzNhOWQzMDMyOTlkZGEyOGM2NjMyZjRhMzZjZWZhMTVlZjk3NWEwYTZjNjZhMDk1ZDViMmEwNGM3IiwiaW5wdXRfaGFzaCI6ImRlMjEyMDk1ZDdmZGIyY2NmMWI1NTA3MDYxYzc1NDNhMTlmMWJhNGFjOTI5ZGU2OTIxY2Y3MTg5NTBjNmY4YmMiLCJpbnN0cnVtZW50X2lkcyI6WyJFVEYtREVNTyJdLCJyb3dfY291bnQiOjQzLCJzbmFwc2hvdF9pZCI6IjI2YzFjZjFiNGUzYjQzYzUxODhlNzYyNWMyMWNmZDg0MmQwMzMxZDY0YjVkNjFhYmFiNDE4YTExYmIzM2VjZDcifV0sImRlcGVuZGVuY3lfbG9ja19oYXNoIjoiZGViZDE1MjVhNmQzNDI0MDlkOTVkYjdlYjMzYmJhOTUzMjNmZjIyNDE5MzVjOWVhZWNmYjhiMmIyYjc5NDg3NyIsImVuZCI6IjIwMjYtMDktMDFUMDA6MDA6MDArMDA6MDAiLCJlbmdpbmVfdmVyc2lvbiI6IjEuMC4wcmMxIiwiZXhlY3V0aW9uX2Fzc3VtcHRpb25zIjp7ImNvbW1pc3Npb24iOnsia2luZCI6InBlcl91bml0IiwibWluaW11bSI6bnVsbCwicGVyX3VuaXRfcmF0ZSI6IjAuMSJ9LCJjb21taXNzaW9uX21vZGVsX3JlcHIiOiJQZXJVbml0Q29tbWlzc2lvbihwZXJfdW5pdF9yYXRlPURlY2ltYWwoJzAuMScpLCBtaW5pbXVtPU5vbmUpIiwibWF4aW11bV9wYXJ0aWNpcGF0aW9uIjoiMC4wMSIsInNsaXBwYWdlIjp7ImtpbmQiOiJmaXhlZCIsInZhbHVlIjoiMC4wMSJ9LCJzbGlwcGFnZV9tb2RlbF9yZXByIjoiQ29uZmlndXJlZFNsaXBwYWdlKGtpbmQ9PFNsaXBwYWdlS2luZC5GSVhFRDogJ2ZpeGVkJz4sIHZhbHVlPURlY2ltYWwoJzAuMDEnKSkiLCJ6ZXJvX2Nvc3RfYXNzdW1wdGlvbiI6bnVsbH0sImdpdF9jb21taXQiOm51bGwsImluaXRpYWxfY2FwaXRhbCI6IjEwMDAwIiwicGFyYW1ldGVycyI6eyJpbnN0cnVtZW50X2lkIjoiRVRGLURFTU8iLCJxdWFudGl0eSI6IjEwIn0sInByb2plY3Rfc291cmNlX2hhc2giOiIxMmZjZjg0YzU3NGI0NGFiMGFlNDdmNmNjOGM5NDFlOTA5MjIwNTU3YjA4OTYwYzgxY2ZjMWI1ZmU0ZTkzZjJkIiwic2VlZCI6MjAyNjA5MjcsInN0YXJ0IjoiMjAyNi0wNy0wMVQwMDowMDowMCswMDowMCIsInN0cmF0ZWd5X2lkIjoiYnVpbHRpbi5idXlfYW5kX2hvbGQudjEiLCJzdHJhdGVneV9uYW1lIjoiYnV5X2FuZF9ob2xkIiwic3RyYXRlZ3lfc291cmNlX2hhc2giOiI5YzQ0MzgxNWI4MDE0MDdiMWZmYzQwNmQwZDRlNDc2ZWFmZTgxYzNlNTMzY2FlNzYzNTg2OGZjYTMxMzYxODMxIn0sImNyZWF0ZWRfYXQiOiIyMDI2LTEwLTAyVDIxOjE3OjMxLjI0MTIwOCswMDowMCIsImlucHV0X2ZpbmdlcnByaW50IjoiNTY2YTQxMzM2MjJkYjBjNTFjYzhkZDhhMzQwMzdlNDIwZDJmYTEyMzQwNWNkYTBiMGE4NDZmZmE4ZTVhYmM2OCIsIm1ldHJpY3MiOnsiYWxwaGEiOnsib2JzZXJ2YXRpb25zIjowLCJyZWFzb24iOiJNNSBiZW5jaG1hcmsgaXMgcHJpY2Utb25seSBhbmQgbGFja3MgYSBjb21wYXRpYmxlIHRvdGFsLXJldHVybiBzZXNzaW9uIHNlcmllcyIsInN0YXR1cyI6InVuYXZhaWxhYmxlIiwidW5pdCI6InJhdGlvIiwidmFsdWUiOm51bGx9LCJhbm51YWxpemVkX2FyaXRobWV0aWNfcmV0dXJuIjp7Im9ic2VydmF0aW9ucyI6NDMsInJlYXNvbiI6bnVsbCwic3RhdHVzIjoiYXZhaWxhYmxlIiwidW5pdCI6ImZyYWN0aW9uX3Blcl95ZWFyIiwidmFsdWUiOiIwLjA4MDA5NDY2MDgxMDYwNzMzMzQxMjA3MDgzMDg3NzE3MTE5In0sImFubnVhbGl6ZWRfdm9sYXRpbGl0eSI6eyJvYnNlcnZhdGlvbnMiOjQzLCJyZWFzb24iOm51bGwsInN0YXR1cyI6ImF2YWlsYWJsZSIsInVuaXQiOiJmcmFjdGlvbl9wZXJfeWVhciIsInZhbHVlIjoiMC4wMjg0NTg0MjcwNTkyNjMzMzUzNTk2NTcxMjk3MTE3NzkyNyJ9LCJhdmVyYWdlX2dyb3NzX2V4cG9zdXJlIjp7Im9ic2VydmF0aW9ucyI6NDQsInJlYXNvbiI6bnVsbCwic3RhdHVzIjoiYXZhaWxhYmxlIiwidW5pdCI6IlVTRCIsInZhbHVlIjoiMTAxMi4xMzYzNjM2MzYzNjM2MzYzNjM2MzYzNjM2MzYzNjQifSwiYXZlcmFnZV9ncm9zc19sZXZlcmFnZSI6eyJvYnNlcnZhdGlvbnMiOjQ0LCJyZWFzb24iOm51bGwsInN0YXR1cyI6ImF2YWlsYWJsZSIsInVuaXQiOiJtdWx0aXBsZSIsInZhbHVlIjoiMC4xMDAzNDUwODQ0OTUzODcxODcxOTk0MDM3NDQ1NDEzMTg4In0sImF2ZXJhZ2VfaG9sZGluZ19kYXlzIjp7Im9ic2VydmF0aW9ucyI6MCwicmVhc29uIjoibm8gY2xvc2VkIG1hdGNoZWQgdHJhZGVzIiwic3RhdHVzIjoidW5hdmFpbGFibGUiLCJ1bml0IjoiZGF5cyIsInZhbHVlIjpudWxsfSwiYXZlcmFnZV9sb3NzIjp7Im9ic2VydmF0aW9ucyI6MCwicmVhc29uIjoibm8gbG9zaW5nIHRyYWRlcyIsInN0YXR1cyI6InVuYXZhaWxhYmxlIiwidW5pdCI6IlVTRCIsInZhbHVlIjpudWxsfSwiYXZlcmFnZV9tYWVfcGVyX3VuaXQiOnsib2JzZXJ2YXRpb25zIjowLCJyZWFzb24iOiJubyBjbG9zZWQgdHJhZGUgbWFya3MiLCJzdGF0dXMiOiJ1bmF2YWlsYWJsZSIsInVuaXQiOiJVU0QiLCJ2YWx1ZSI6bnVsbH0sImF2ZXJhZ2VfbWZlX3Blcl91bml0Ijp7Im9ic2VydmF0aW9ucyI6MCwicmVhc29uIjoibm8gY2xvc2VkIHRyYWRlIG1hcmtzIiwic3RhdHVzIjoidW5hdmFpbGFibGUiLCJ1bml0IjoiVVNEIiwidmFsdWUiOm51bGx9LCJhdmVyYWdlX25ldF9leHBvc3VyZSI6eyJvYnNlcnZhdGlvbnMiOjQ0LCJyZWFzb24iOm51bGwsInN0YXR1cyI6ImF2YWlsYWJsZSIsInVuaXQiOiJVU0QiLCJ2YWx1ZSI6IjEwMTIuMTM2MzYzNjM2MzYzNjM2MzYzNjM2MzYzNjM2MzY0In0sImF2ZXJhZ2VfbmV0X2xldmVyYWdlIjp7Im9ic2VydmF0aW9ucyI6NDQsInJlYXNvbiI6bnVsbCwic3RhdHVzIjoiYXZhaWxhYmxlIiwidW5pdCI6Im11bHRpcGxlIiwidmFsdWUiOiIwLjEwMDM0NTA4NDQ5NTM4NzE4NzE5OTQwMzc0NDU0MTMxODgifSwiYXZlcmFnZV93aW4iOnsib2JzZXJ2YXRpb25zIjowLCJyZWFzb24iOiJubyB3aW5uaW5nIHRyYWRlcyIsInN0YXR1cyI6InVuYXZhaWxhYmxlIiwidW5pdCI6IlVTRCIsInZhbHVlIjpudWxsfSwiYmVzdF90cmFkZSI6eyJvYnNlcnZhdGlvbnMiOjAsInJlYXNvbiI6Im5vIGNsb3NlZCBtYXRjaGVkIHRyYWRlcyIsInN0YXR1cyI6InVuYXZhaWxhYmxlIiwidW5pdCI6IlVTRCIsInZhbHVlIjpudWxsfSwiYmV0YSI6eyJvYnNlcnZhdGlvbnMiOjAsInJlYXNvbiI6Ik01IGJlbmNobWFyayBpcyBwcmljZS1vbmx5IGFuZCBsYWNrcyBhIGNvbXBhdGlibGUgdG90YWwtcmV0dXJuIHNlc3Npb24gc2VyaWVzIiwic3RhdHVzIjoidW5hdmFpbGFibGUiLCJ1bml0IjoicmF0aW8iLCJ2YWx1ZSI6bnVsbH0sImJyZWFrZXZlbl90cmFkZXMiOnsib2JzZXJ2YXRpb25zIjowLCJyZWFzb24iOm51bGwsInN0YXR1cyI6ImF2YWlsYWJsZSIsInVuaXQiOiJ0cmFkZXMiLCJ2YWx1ZSI6IjAifSwiY2FnciI6eyJvYnNlcnZhdGlvbnMiOjQzLCJyZWFzb24iOm51bGwsInN0YXR1cyI6ImF2YWlsYWJsZSIsInVuaXQiOiJmcmFjdGlvbl9wZXJfeWVhciIsInZhbHVlIjoiMC4wODMzOTgxMDc0ODI1ODE2MDk5MjgxOTA0MDMxMDkyMTIifSwiY2FsbWFyIjp7Im9ic2VydmF0aW9ucyI6NDMsInJlYXNvbiI6bnVsbCwic3RhdHVzIjoiYXZhaWxhYmxlIiwidW5pdCI6InJhdGlvIiwidmFsdWUiOiIxOC4yNTEzMTMyMjIwOTU2Njk3NjA1NjczOTA2MzE3NDIwNyJ9LCJjb21taXNzaW9ucyI6eyJvYnNlcnZhdGlvbnMiOjEsInJlYXNvbiI6bnVsbCwic3RhdHVzIjoiYXZhaWxhYmxlIiwidW5pdCI6IlVTRCIsInZhbHVlIjoiMSJ9LCJkb3duX2NhcHR1cmUiOnsib2JzZXJ2YXRpb25zIjowLCJyZWFzb24iOiJNNSBiZW5jaG1hcmsgaXMgcHJpY2Utb25seSBhbmQgbGFja3MgYSBjb21wYXRpYmxlIHRvdGFsLXJldHVybiBzZXNzaW9uIHNlcmllcyIsInN0YXR1cyI6InVuYXZhaWxhYmxlIiwidW5pdCI6InJhdGlvIiwidmFsdWUiOm51bGx9LCJkcmF3ZG93bl9kdXJhdGlvbl9kYXlzIjp7Im9ic2VydmF0aW9ucyI6NDQsInJlYXNvbiI6bnVsbCwic3RhdHVzIjoiYXZhaWxhYmxlIiwidW5pdCI6ImRheXMiLCJ2YWx1ZSI6IjEwIn0sImRyYXdkb3duX2R1cmF0aW9uX3Nlc3Npb25zIjp7Im9ic2VydmF0aW9ucyI6NDQsInJlYXNvbiI6bnVsbCwic3RhdHVzIjoiYXZhaWxhYmxlIiwidW5pdCI6InNlc3Npb25zIiwidmFsdWUiOiI2In0sImV4Y2Vzc19rdXJ0b3NpcyI6eyJvYnNlcnZhdGlvbnMiOjQzLCJyZWFzb24iOm51bGwsInN0YXR1cyI6ImF2YWlsYWJsZSIsInVuaXQiOiJyYXRpbyIsInZhbHVlIjoiMy42MzE4ODQ3NDczODYyMTQ2MDg3ODM0NTg1NTU4NzcyNzcifSwiZXhwZWN0YW5jeSI6eyJvYnNlcnZhdGlvbnMiOjAsInJlYXNvbiI6Im5vIGNsb3NlZCBtYXRjaGVkIHRyYWRlcyIsInN0YXR1cyI6InVuYXZhaWxhYmxlIiwidW5pdCI6IlVTRCIsInZhbHVlIjpudWxsfSwiZXhwZWN0ZWRfc2hvcnRmYWxsXzk1Ijp7Im9ic2VydmF0aW9ucyI6NDMsInJlYXNvbiI6InJlcXVpcmVzIGF0IGxlYXN0IDIwIHJldHVybnMgYW5kIDUgZXhwZWN0ZWQgdGFpbCBvYnNlcnZhdGlvbnMiLCJzdGF0dXMiOiJpbnN1ZmZpY2llbnRfc2FtcGxlIiwidW5pdCI6Imxvc3NfZnJhY3Rpb24iLCJ2YWx1ZSI6IjAuMDA0NTYyODYyODUzMTg2MzU3OTA5ODk2OTc0NjI0MjI1NzA1In0sImV4cGVjdGVkX3Nob3J0ZmFsbF85OSI6eyJvYnNlcnZhdGlvbnMiOjQzLCJyZWFzb24iOiJyZXF1aXJlcyBhdCBsZWFzdCAyMCByZXR1cm5zIGFuZCA1IGV4cGVjdGVkIHRhaWwgb2JzZXJ2YXRpb25zIiwic3RhdHVzIjoiaW5zdWZmaWNpZW50X3NhbXBsZSIsInVuaXQiOiJsb3NzX2ZyYWN0aW9uIiwidmFsdWUiOiIwLjAwNDU2OTQzMDUwOTg4ODg0MzYzNjA3NDY2MDUyMTExMzcifSwiZXhwZWN0ZWRfc2hvcnRmYWxsXzk5LjkiOnsib2JzZXJ2YXRpb25zIjo0MywicmVhc29uIjoicmVxdWlyZXMgYXQgbGVhc3QgMjAgcmV0dXJucyBhbmQgNSBleHBlY3RlZCB0YWlsIG9ic2VydmF0aW9ucyIsInN0YXR1cyI6Imluc3VmZmljaWVudF9zYW1wbGUiLCJ1bml0IjoibG9zc19mcmFjdGlvbiIsInZhbHVlIjoiMC4wMDQ1Njk0MzA1MDk4ODg4NDM2MzYwNzQ2NjA1MjExMTM3In0sImluZm9ybWF0aW9uX3JhdGlvIjp7Im9ic2VydmF0aW9ucyI6MCwicmVhc29uIjoiTTUgYmVuY2htYXJrIGlzIHByaWNlLW9ubHkgYW5kIGxhY2tzIGEgY29tcGF0aWJsZSB0b3RhbC1yZXR1cm4gc2Vzc2lvbiBzZXJpZXMiLCJzdGF0dXMiOiJ1bmF2YWlsYWJsZSIsInVuaXQiOiJyYXRpbyIsInZhbHVlIjpudWxsfSwibG9zc19yYXRlIjp7Im9ic2VydmF0aW9ucyI6MCwicmVhc29uIjoibm8gY2xvc2VkIG1hdGNoZWQgdHJhZGVzIiwic3RhdHVzIjoidW5hdmFpbGFibGUiLCJ1bml0IjoiZnJhY3Rpb24iLCJ2YWx1ZSI6bnVsbH0sIm1heF9jb25zZWN1dGl2ZV9sb3NzZXMiOnsib2JzZXJ2YXRpb25zIjowLCJyZWFzb24iOm51bGwsInN0YXR1cyI6ImF2YWlsYWJsZSIsInVuaXQiOiJ0cmFkZXMiLCJ2YWx1ZSI6IjAifSwibWF4X2NvbnNlY3V0aXZlX3dpbnMiOnsib2JzZXJ2YXRpb25zIjowLCJyZWFzb24iOm51bGwsInN0YXR1cyI6ImF2YWlsYWJsZSIsInVuaXQiOiJ0cmFkZXMiLCJ2YWx1ZSI6IjAifSwibWF4aW11bV9kcmF3ZG93biI6eyJvYnNlcnZhdGlvbnMiOjQ0LCJyZWFzb24iOm51bGwsInN0YXR1cyI6ImF2YWlsYWJsZSIsInVuaXQiOiJmcmFjdGlvbiIsInZhbHVlIjoiMC4wMDQ1Njk0MzA1MDk4ODg4NDM2MzYwNzQ2NjA1MjExMTM3In0sIm1lZGlhbl90cmFkZSI6eyJvYnNlcnZhdGlvbnMiOjAsInJlYXNvbiI6Im5vIGNsb3NlZCBtYXRjaGVkIHRyYWRlcyIsInN0YXR1cyI6InVuYXZhaWxhYmxlIiwidW5pdCI6IlVTRCIsInZhbHVlIjpudWxsfSwib21lZ2EiOnsib2JzZXJ2YXRpb25zIjo0MywicmVhc29uIjpudWxsLCJzdGF0dXMiOiJhdmFpbGFibGUiLCJ1bml0IjoicmF0aW8iLCJ2YWx1ZSI6IjEuNjAxMDM1ODEwNjY1NTc0MTExMTY1MTAxMDUyMzYyMDcxIn0sInBheW9mZl9yYXRpbyI6eyJvYnNlcnZhdGlvbnMiOjAsInJlYXNvbiI6InJlcXVpcmVzIG5vbnplcm8gbWVhbiBsb3NzZXMgYW5kIHdpbm5pbmcgdHJhZGVzIiwic3RhdHVzIjoidW5hdmFpbGFibGUiLCJ1bml0IjoicmF0aW8iLCJ2YWx1ZSI6bnVsbH0sInByb2ZpdF9mYWN0b3IiOnsib2JzZXJ2YXRpb25zIjowLCJyZWFzb24iOiJubyBsb3NpbmcgdHJhZGVzIiwic3RhdHVzIjoidW5hdmFpbGFibGUiLCJ1bml0IjoicmF0aW8iLCJ2YWx1ZSI6bnVsbH0sInJlY292ZXJ5X3RpbWVfZGF5cyI6eyJvYnNlcnZhdGlvbnMiOjQ0LCJyZWFzb24iOm51bGwsInN0YXR1cyI6ImF2YWlsYWJsZSIsInVuaXQiOiJkYXlzIiwidmFsdWUiOiIxMCJ9LCJyaXNrX29mX3J1aW4iOnsib2JzZXJ2YXRpb25zIjowLCJyZWFzb24iOiJleHBsaWNpdCByaXNrLW9mLXJ1aW4gYXNzdW1wdGlvbnMgd2VyZSBub3Qgc3VwcGxpZWQiLCJzdGF0dXMiOiJ1bmF2YWlsYWJsZSIsInVuaXQiOiJwcm9iYWJpbGl0eSIsInZhbHVlIjpudWxsfSwic2hhcnBlIjp7Im9ic2VydmF0aW9ucyI6NDMsInJlYXNvbiI6bnVsbCwic3RhdHVzIjoiYXZhaWxhYmxlIiwidW5pdCI6InJhdGlvIiwidmFsdWUiOiIyLjgxNDQ0NDQwNDk0OTUwNjU0ODI4NjY0ODc5NDg4NDE5MSJ9LCJza2V3Ijp7Im9ic2VydmF0aW9ucyI6NDMsInJlYXNvbiI6bnVsbCwic3RhdHVzIjoiYXZhaWxhYmxlIiwidW5pdCI6InJhdGlvIiwidmFsdWUiOiItMi4zNjIxNzI1MTQ5MDQ5NjE2MjkzMjA1ODY0NjU0Njg5NjgifSwic2xpcHBhZ2VfY29zdCI6eyJvYnNlcnZhdGlvbnMiOjEsInJlYXNvbiI6bnVsbCwic3RhdHVzIjoiYXZhaWxhYmxlIiwidW5pdCI6IlVTRCIsInZhbHVlIjoiMC4xIn0sInNvcnRpbm8iOnsib2JzZXJ2YXRpb25zIjo0MywicmVhc29uIjpudWxsLCJzdGF0dXMiOiJhdmFpbGFibGUiLCJ1bml0IjoicmF0aW8iLCJ2YWx1ZSI6IjMuMjUzNDg2MDQ2MDk5MDE4NjMwMTEzMDYyMzQ4MzUxIn0sInRhaWxfcmF0aW9fOTVfNSI6eyJvYnNlcnZhdGlvbnMiOjQzLCJyZWFzb24iOm51bGwsInN0YXR1cyI6ImF2YWlsYWJsZSIsInVuaXQiOiJyYXRpbyIsInZhbHVlIjoiMC4yMTk0NjkzNDExNzgzNzUzNzAzNDUzMzY4MTI2MjgyNDY1In0sInRvdGFsX2Nvc3QiOnsib2JzZXJ2YXRpb25zIjoxLCJyZWFzb24iOm51bGwsInN0YXR1cyI6ImF2YWlsYWJsZSIsInVuaXQiOiJVU0QiLCJ2YWx1ZSI6IjEuMSJ9LCJ0b3RhbF9yZXR1cm4iOnsib2JzZXJ2YXRpb25zIjo0MywicmVhc29uIjpudWxsLCJzdGF0dXMiOiJhdmFpbGFibGUiLCJ1bml0IjoiZnJhY3Rpb24iLCJ2YWx1ZSI6IjAuMDEzNjkifSwidHJhY2tpbmdfZXJyb3IiOnsib2JzZXJ2YXRpb25zIjowLCJyZWFzb24iOiJNNSBiZW5jaG1hcmsgaXMgcHJpY2Utb25seSBhbmQgbGFja3MgYSBjb21wYXRpYmxlIHRvdGFsLXJldHVybiBzZXNzaW9uIHNlcmllcyIsInN0YXR1cyI6InVuYXZhaWxhYmxlIiwidW5pdCI6InJhdGlvIiwidmFsdWUiOm51bGx9LCJ0cmFkZV9jb3VudCI6eyJvYnNlcnZhdGlvbnMiOjAsInJlYXNvbiI6bnVsbCwic3RhdHVzIjoiYXZhaWxhYmxlIiwidW5pdCI6InRyYWRlcyIsInZhbHVlIjoiMCJ9LCJ0dXJub3ZlciI6eyJvYnNlcnZhdGlvbnMiOjEsInJlYXNvbiI6bnVsbCwic3RhdHVzIjoiYXZhaWxhYmxlIiwidW5pdCI6Im11bHRpcGxlIiwidmFsdWUiOiIwLjA5NjYyMzg3NjkyMTM1NjY1MzMwMTE2NDc1MDk2NDc2NDQxIn0sInVsY2VyX2luZGV4Ijp7Im9ic2VydmF0aW9ucyI6NDQsInJlYXNvbiI6bnVsbCwic3RhdHVzIjoiYXZhaWxhYmxlIiwidW5pdCI6ImZyYWN0aW9uIiwidmFsdWUiOiIwLjAwMjE5MTA2MDg0OTgwNjE4NDU5MTg3NjQ3MzI4Mzk5MzYzNiJ9LCJ1cF9jYXB0dXJlIjp7Im9ic2VydmF0aW9ucyI6MCwicmVhc29uIjoiTTUgYmVuY2htYXJrIGlzIHByaWNlLW9ubHkgYW5kIGxhY2tzIGEgY29tcGF0aWJsZSB0b3RhbC1yZXR1cm4gc2Vzc2lvbiBzZXJpZXMiLCJzdGF0dXMiOiJ1bmF2YWlsYWJsZSIsInVuaXQiOiJyYXRpbyIsInZhbHVlIjpudWxsfSwidmFyXzk1Ijp7Im9ic2VydmF0aW9ucyI6NDMsInJlYXNvbiI6InJlcXVpcmVzIGF0IGxlYXN0IDIwIHJldHVybnMgYW5kIDUgZXhwZWN0ZWQgdGFpbCBvYnNlcnZhdGlvbnMiLCJzdGF0dXMiOiJpbnN1ZmZpY2llbnRfc2FtcGxlIiwidW5pdCI6Imxvc3NfZnJhY3Rpb24iLCJ2YWx1ZSI6IjAuMDA0NTQ2NjY5ODg3NDczODg0NTM5NTYxNTYzMjA0NjY4MTUifSwidmFyXzk5Ijp7Im9ic2VydmF0aW9ucyI6NDMsInJlYXNvbiI6InJlcXVpcmVzIGF0IGxlYXN0IDIwIHJldHVybnMgYW5kIDUgZXhwZWN0ZWQgdGFpbCBvYnNlcnZhdGlvbnMiLCJzdGF0dXMiOiJpbnN1ZmZpY2llbnRfc2FtcGxlIiwidW5pdCI6Imxvc3NfZnJhY3Rpb24iLCJ2YWx1ZSI6IjAuMDA0NTY0ODY2MDE1MTkxNjcyOTYzMTA2Nzc1MzM5NjA4MzM0In0sInZhcl85OS45Ijp7Im9ic2VydmF0aW9ucyI6NDMsInJlYXNvbiI6InJlcXVpcmVzIGF0IGxlYXN0IDIwIHJldHVybnMgYW5kIDUgZXhwZWN0ZWQgdGFpbCBvYnNlcnZhdGlvbnMiLCJzdGF0dXMiOiJpbnN1ZmZpY2llbnRfc2FtcGxlIiwidW5pdCI6Imxvc3NfZnJhY3Rpb24iLCJ2YWx1ZSI6IjAuMDA0NTY4OTc0MDYwNDE5MTI2NTY4Nzc3ODcyMDAyOTYzMTYzIn0sIndpbl9yYXRlIjp7Im9ic2VydmF0aW9ucyI6MCwicmVhc29uIjoibm8gY2xvc2VkIG1hdGNoZWQgdHJhZGVzIiwic3RhdHVzIjoidW5hdmFpbGFibGUiLCJ1bml0IjoiZnJhY3Rpb24iLCJ2YWx1ZSI6bnVsbH0sIndvcnN0X3RyYWRlIjp7Im9ic2VydmF0aW9ucyI6MCwicmVhc29uIjoibm8gY2xvc2VkIG1hdGNoZWQgdHJhZGVzIiwic3RhdHVzIjoidW5hdmFpbGFibGUiLCJ1bml0IjoiVVNEIiwidmFsdWUiOm51bGx9fSwicHl0aG9uX3ZlcnNpb24iOiIzLjEzLjE1IiwicmVzdWx0X2ZpbmdlcnByaW50IjoiNjJiZTdlYWEwNmNlYWFkNmYyZmE4M2M2ZjEzZGViOWM5YTZhNzc0MTAzZGM2ZTRlYzdiNzc4MjUxZmI5NDMxYyIsInJ1bl9pZCI6InJ1bi1kY2I2ZTRhYmU4NTY0ZDU5OGI3OWEyYWY3ZjAyNmE2YSIsInJ1bnRpbWVfbWV0YWRhdGEiOnsiYWRhcHRlciI6ImFwcGxpY2F0aW9uLXJ1bnRpbWUtdjEiLCJwbGF0Zm9ybSI6IldpbmRvd3MifSwic2NoZW1hX3ZlcnNpb24iOjEsInRhZ3MiOltdfV0="
+    },
+    {
+      "timestamp": "2026-10-06T11:39:25.306844+00:00",
+      "method": "GET",
+      "url": "http://127.0.0.1:8765/runs/run-dcb6e4abe8564d598b79a2af7f026a6a",
+      "status": 200,
+      "sha256": "16c72ce69ef28fde0327747b278196f5bdf6cedf635bd234d6c4170a30007035",
+      "body": {
+        "artifacts": [
+          {
+            "name": "report-bundle.zip",
+            "sha256": "a70b6a8776f6b3ff67ed4094691ee0afd692df37ddeb0f2a4d1f32ba88474017",
+            "size_bytes": 523803
+          },
+          {
+            "name": "source-bundle.zip",
+            "sha256": "12fcf84c574b44ab0ae47f6cc8c941e909220557b08960c81cfc1b5fe4e93f2d",
+            "size_bytes": 980929
+          },
+          {
+            "name": "strategy-source.py",
+            "sha256": "9c443815b801407b1ffc406d0d4e476eafe81c3e533cae7635868fca31361831",
+            "size_bytes": 8603
+          }
+        ],
+        "config": {
+          "analytics_settings": {
+            "annual_mar": "0",
+            "annual_risk_free_rate": "0",
+            "annualization": 252,
+            "risk_of_ruin": null,
+            "var_confidences": [
+              "0.95",
+              "0.99",
+              "0.999"
+            ]
+          },
+          "backtest_settings": {
+            "allow_short": false,
+            "allow_zero_costs": false,
+            "boundary_liquidation": false,
+            "max_order_notional": "1000000",
+            "short_assumption": null
+          },
+          "benchmark": {
+            "instrument_id": "ETF-DEMO"
+          },
+          "currency": "USD",
+          "datasets": [
+            {
+              "content_hash": "8df310773a9d303299dda28c6632f4a36cefa15ef975a0a6c66a095d5b2a04c7",
+              "input_hash": "de212095d7fdb2ccf1b5507061c7543a19f1ba4ac929de6921cf718950c6f8bc",
+              "instrument_ids": [
+                "ETF-DEMO"
+              ],
+              "row_count": 43,
+              "snapshot_id": "26c1cf1b4e3b43c5188e7625c21cfd842d0331d64b5d61abab418a11bb33ecd7"
+            }
+          ],
+          "dependency_lock_hash": "debd1525a6d342409d95db7eb33bba95323ff2241935c9eaecfb8b2b2b794877",
+          "end": "2026-09-01T00:00:00+00:00",
+          "engine_version": "1.0.0rc1",
+          "execution_assumptions": {
+            "commission": {
+              "kind": "per_unit",
+              "minimum": null,
+              "per_unit_rate": "0.1"
+            },
+            "commission_model_repr": "PerUnitCommission(per_unit_rate=Decimal('0.1'), minimum=None)",
+            "maximum_participation": "0.01",
+            "slippage": {
+              "kind": "fixed",
+              "value": "0.01"
+            },
+            "slippage_model_repr": "ConfiguredSlippage(kind=<SlippageKind.FIXED: 'fixed'>, value=Decimal('0.01'))",
+            "zero_cost_assumption": null
+          },
+          "git_commit": null,
+          "initial_capital": "10000",
+          "parameters": {
+            "instrument_id": "ETF-DEMO",
+            "quantity": "10"
+          },
+          "project_source_hash": "12fcf84c574b44ab0ae47f6cc8c941e909220557b08960c81cfc1b5fe4e93f2d",
+          "seed": 20260927,
+          "start": "2026-07-01T00:00:00+00:00",
+          "strategy_id": "builtin.buy_and_hold.v1",
+          "strategy_name": "buy_and_hold",
+          "strategy_source_hash": "9c443815b801407b1ffc406d0d4e476eafe81c3e533cae7635868fca31361831"
+        },
+        "created_at": "2026-10-02T21:17:31.241208+00:00",
+        "input_fingerprint": "566a4133622db0c51cc8dd8a34037e420d2fa123405cda0b0a846ffa8e5abc68",
+        "metrics": {
+          "alpha": {
+            "observations": 0,
+            "reason": "M5 benchmark is price-only and lacks a compatible total-return session series",
+            "status": "unavailable",
+            "unit": "ratio",
+            "value": null
+          },
+          "annualized_arithmetic_return": {
+            "observations": 43,
+            "reason": null,
+            "status": "available",
+            "unit": "fraction_per_year",
+            "value": "0.08009466081060733341207083087717119"
+          },
+          "annualized_volatility": {
+            "observations": 43,
+            "reason": null,
+            "status": "available",
+            "unit": "fraction_per_year",
+            "value": "0.02845842705926333535965712971177927"
+          },
+          "average_gross_exposure": {
+            "observations": 44,
+            "reason": null,
+            "status": "available",
+            "unit": "USD",
+            "value": "1012.136363636363636363636363636364"
+          },
+          "average_gross_leverage": {
+            "observations": 44,
+            "reason": null,
+            "status": "available",
+            "unit": "multiple",
+            "value": "0.1003450844953871871994037445413188"
+          },
+          "average_holding_days": {
+            "observations": 0,
+            "reason": "no closed matched trades",
+            "status": "unavailable",
+            "unit": "days",
+            "value": null
+          },
+          "average_loss": {
+            "observations": 0,
+            "reason": "no losing trades",
+            "status": "unavailable",
+            "unit": "USD",
+            "value": null
+          },
+          "average_mae_per_unit": {
+            "observations": 0,
+            "reason": "no closed trade marks",
+            "status": "unavailable",
+            "unit": "USD",
+            "value": null
+          },
+          "average_mfe_per_unit": {
+            "observations": 0,
+            "reason": "no closed trade marks",
+            "status": "unavailable",
+            "unit": "USD",
+            "value": null
+          },
+          "average_net_exposure": {
+            "observations": 44,
+            "reason": null,
+            "status": "available",
+            "unit": "USD",
+            "value": "1012.136363636363636363636363636364"
+          },
+          "average_net_leverage": {
+            "observations": 44,
+            "reason": null,
+            "status": "available",
+            "unit": "multiple",
+            "value": "0.1003450844953871871994037445413188"
+          },
+          "average_win": {
+            "observations": 0,
+            "reason": "no winning trades",
+            "status": "unavailable",
+            "unit": "USD",
+            "value": null
+          },
+          "best_trade": {
+            "observations": 0,
+            "reason": "no closed matched trades",
+            "status": "unavailable",
+            "unit": "USD",
+            "value": null
+          },
+          "beta": {
+            "observations": 0,
+            "reason": "M5 benchmark is price-only and lacks a compatible total-return session series",
+            "status": "unavailable",
+            "unit": "ratio",
+            "value": null
+          },
+          "breakeven_trades": {
+            "observations": 0,
+            "reason": null,
+            "status": "available",
+            "unit": "trades",
+            "value": "0"
+          },
+          "cagr": {
+            "observations": 43,
+            "reason": null,
+            "status": "available",
+            "unit": "fraction_per_year",
+            "value": "0.083398107482581609928190403109212"
+          },
+          "calmar": {
+            "observations": 43,
+            "reason": null,
+            "status": "available",
+            "unit": "ratio",
+            "value": "18.25131322209566976056739063174207"
+          },
+          "commissions": {
+            "observations": 1,
+            "reason": null,
+            "status": "available",
+            "unit": "USD",
+            "value": "1"
+          },
+          "down_capture": {
+            "observations": 0,
+            "reason": "M5 benchmark is price-only and lacks a compatible total-return session series",
+            "status": "unavailable",
+            "unit": "ratio",
+            "value": null
+          },
+          "drawdown_duration_days": {
+            "observations": 44,
+            "reason": null,
+            "status": "available",
+            "unit": "days",
+            "value": "10"
+          },
+          "drawdown_duration_sessions": {
+            "observations": 44,
+            "reason": null,
+            "status": "available",
+            "unit": "sessions",
+            "value": "6"
+          },
+          "excess_kurtosis": {
+            "observations": 43,
+            "reason": null,
+            "status": "available",
+            "unit": "ratio",
+            "value": "3.631884747386214608783458555877277"
+          },
+          "expectancy": {
+            "observations": 0,
+            "reason": "no closed matched trades",
+            "status": "unavailable",
+            "unit": "USD",
+            "value": null
+          },
+          "expected_shortfall_95": {
+            "observations": 43,
+            "reason": "requires at least 20 returns and 5 expected tail observations",
+            "status": "insufficient_sample",
+            "unit": "loss_fraction",
+            "value": "0.004562862853186357909896974624225705"
+          },
+          "expected_shortfall_99": {
+            "observations": 43,
+            "reason": "requires at least 20 returns and 5 expected tail observations",
+            "status": "insufficient_sample",
+            "unit": "loss_fraction",
+            "value": "0.0045694305098888436360746605211137"
+          },
+          "expected_shortfall_99.9": {
+            "observations": 43,
+            "reason": "requires at least 20 returns and 5 expected tail observations",
+            "status": "insufficient_sample",
+            "unit": "loss_fraction",
+            "value": "0.0045694305098888436360746605211137"
+          },
+          "information_ratio": {
+            "observations": 0,
+            "reason": "M5 benchmark is price-only and lacks a compatible total-return session series",
+            "status": "unavailable",
+            "unit": "ratio",
+            "value": null
+          },
+          "loss_rate": {
+            "observations": 0,
+            "reason": "no closed matched trades",
+            "status": "unavailable",
+            "unit": "fraction",
+            "value": null
+          },
+          "max_consecutive_losses": {
+            "observations": 0,
+            "reason": null,
+            "status": "available",
+            "unit": "trades",
+            "value": "0"
+          },
+          "max_consecutive_wins": {
+            "observations": 0,
+            "reason": null,
+            "status": "available",
+            "unit": "trades",
+            "value": "0"
+          },
+          "maximum_drawdown": {
+            "observations": 44,
+            "reason": null,
+            "status": "available",
+            "unit": "fraction",
+            "value": "0.0045694305098888436360746605211137"
+          },
+          "median_trade": {
+            "observations": 0,
+            "reason": "no closed matched trades",
+            "status": "unavailable",
+            "unit": "USD",
+            "value": null
+          },
+          "omega": {
+            "observations": 43,
+            "reason": null,
+            "status": "available",
+            "unit": "ratio",
+            "value": "1.601035810665574111165101052362071"
+          },
+          "payoff_ratio": {
+            "observations": 0,
+            "reason": "requires nonzero mean losses and winning trades",
+            "status": "unavailable",
+            "unit": "ratio",
+            "value": null
+          },
+          "profit_factor": {
+            "observations": 0,
+            "reason": "no losing trades",
+            "status": "unavailable",
+            "unit": "ratio",
+            "value": null
+          },
+          "recovery_time_days": {
+            "observations": 44,
+            "reason": null,
+            "status": "available",
+            "unit": "days",
+            "value": "10"
+          },
+          "risk_of_ruin": {
+            "observations": 0,
+            "reason": "explicit risk-of-ruin assumptions were not supplied",
+            "status": "unavailable",
+            "unit": "probability",
+            "value": null
+          },
+          "sharpe": {
+            "observations": 43,
+            "reason": null,
+            "status": "available",
+            "unit": "ratio",
+            "value": "2.814444404949506548286648794884191"
+          },
+          "skew": {
+            "observations": 43,
+            "reason": null,
+            "status": "available",
+            "unit": "ratio",
+            "value": "-2.362172514904961629320586465468968"
+          },
+          "slippage_cost": {
+            "observations": 1,
+            "reason": null,
+            "status": "available",
+            "unit": "USD",
+            "value": "0.1"
+          },
+          "sortino": {
+            "observations": 43,
+            "reason": null,
+            "status": "available",
+            "unit": "ratio",
+            "value": "3.253486046099018630113062348351"
+          },
+          "tail_ratio_95_5": {
+            "observations": 43,
+            "reason": null,
+            "status": "available",
+            "unit": "ratio",
+            "value": "0.2194693411783753703453368126282465"
+          },
+          "total_cost": {
+            "observations": 1,
+            "reason": null,
+            "status": "available",
+            "unit": "USD",
+            "value": "1.1"
+          },
+          "total_return": {
+            "observations": 43,
+            "reason": null,
+            "status": "available",
+            "unit": "fraction",
+            "value": "0.01369"
+          },
+          "tracking_error": {
+            "observations": 0,
+            "reason": "M5 benchmark is price-only and lacks a compatible total-return session series",
+            "status": "unavailable",
+            "unit": "ratio",
+            "value": null
+          },
+          "trade_count": {
+            "observations": 0,
+            "reason": null,
+            "status": "available",
+            "unit": "trades",
+            "value": "0"
+          },
+          "turnover": {
+            "observations": 1,
+            "reason": null,
+            "status": "available",
+            "unit": "multiple",
+            "value": "0.09662387692135665330116475096476441"
+          },
+          "ulcer_index": {
+            "observations": 44,
+            "reason": null,
+            "status": "available",
+            "unit": "fraction",
+            "value": "0.002191060849806184591876473283993636"
+          },
+          "up_capture": {
+            "observations": 0,
+            "reason": "M5 benchmark is price-only and lacks a compatible total-return session series",
+            "status": "unavailable",
+            "unit": "ratio",
+            "value": null
+          },
+          "var_95": {
+            "observations": 43,
+            "reason": "requires at least 20 returns and 5 expected tail observations",
+            "status": "insufficient_sample",
+            "unit": "loss_fraction",
+            "value": "0.00454666988747388453956156320466815"
+          },
+          "var_99": {
+            "observations": 43,
+            "reason": "requires at least 20 returns and 5 expected tail observations",
+            "status": "insufficient_sample",
+            "unit": "loss_fraction",
+            "value": "0.004564866015191672963106775339608334"
+          },
+          "var_99.9": {
+            "observations": 43,
+            "reason": "requires at least 20 returns and 5 expected tail observations",
+            "status": "insufficient_sample",
+            "unit": "loss_fraction",
+            "value": "0.004568974060419126568777872002963163"
+          },
+          "win_rate": {
+            "observations": 0,
+            "reason": "no closed matched trades",
+            "status": "unavailable",
+            "unit": "fraction",
+            "value": null
+          },
+          "worst_trade": {
+            "observations": 0,
+            "reason": "no closed matched trades",
+            "status": "unavailable",
+            "unit": "USD",
+            "value": null
+          }
+        },
+        "python_version": "3.13.15",
+        "result_fingerprint": "62be7eaa06ceaad6f2fa83c6f13deb9c9a6a774103dc6e4ec7b778251fb9431c",
+        "run_id": "run-dcb6e4abe8564d598b79a2af7f026a6a",
+        "runtime_metadata": {
+          "adapter": "application-runtime-v1",
+          "platform": "Windows"
+        },
+        "schema_version": 1,
+        "tags": []
+      },
+      "response_bytes_base64": "eyJhcnRpZmFjdHMiOlt7Im5hbWUiOiJyZXBvcnQtYnVuZGxlLnppcCIsInNoYTI1NiI6ImE3MGI2YTg3NzZmNmIzZmY2N2VkNDA5NDY5MWVlMGFmZDY5MmRmMzdkZGViMGYyYTRkMWYzMmJhODg0NzQwMTciLCJzaXplX2J5dGVzIjo1MjM4MDN9LHsibmFtZSI6InNvdXJjZS1idW5kbGUuemlwIiwic2hhMjU2IjoiMTJmY2Y4NGM1NzRiNDRhYjBhZTQ3ZjZjYzhjOTQxZTkwOTIyMDU1N2IwODk2MGM4MWNmYzFiNWZlNGU5M2YyZCIsInNpemVfYnl0ZXMiOjk4MDkyOX0seyJuYW1lIjoic3RyYXRlZ3ktc291cmNlLnB5Iiwic2hhMjU2IjoiOWM0NDM4MTViODAxNDA3YjFmZmM0MDZkMGQ0ZTQ3NmVhZmU4MWMzZTUzM2NhZTc2MzU4NjhmY2EzMTM2MTgzMSIsInNpemVfYnl0ZXMiOjg2MDN9XSwiY29uZmlnIjp7ImFuYWx5dGljc19zZXR0aW5ncyI6eyJhbm51YWxfbWFyIjoiMCIsImFubnVhbF9yaXNrX2ZyZWVfcmF0ZSI6IjAiLCJhbm51YWxpemF0aW9uIjoyNTIsInJpc2tfb2ZfcnVpbiI6bnVsbCwidmFyX2NvbmZpZGVuY2VzIjpbIjAuOTUiLCIwLjk5IiwiMC45OTkiXX0sImJhY2t0ZXN0X3NldHRpbmdzIjp7ImFsbG93X3Nob3J0IjpmYWxzZSwiYWxsb3dfemVyb19jb3N0cyI6ZmFsc2UsImJvdW5kYXJ5X2xpcXVpZGF0aW9uIjpmYWxzZSwibWF4X29yZGVyX25vdGlvbmFsIjoiMTAwMDAwMCIsInNob3J0X2Fzc3VtcHRpb24iOm51bGx9LCJiZW5jaG1hcmsiOnsiaW5zdHJ1bWVudF9pZCI6IkVURi1ERU1PIn0sImN1cnJlbmN5IjoiVVNEIiwiZGF0YXNldHMiOlt7ImNvbnRlbnRfaGFzaCI6IjhkZjMxMDc3M2E5ZDMwMzI5OWRkYTI4YzY2MzJmNGEzNmNlZmExNWVmOTc1YTBhNmM2NmEwOTVkNWIyYTA0YzciLCJpbnB1dF9oYXNoIjoiZGUyMTIwOTVkN2ZkYjJjY2YxYjU1MDcwNjFjNzU0M2ExOWYxYmE0YWM5MjlkZTY5MjFjZjcxODk1MGM2ZjhiYyIsImluc3RydW1lbnRfaWRzIjpbIkVURi1ERU1PIl0sInJvd19jb3VudCI6NDMsInNuYXBzaG90X2lkIjoiMjZjMWNmMWI0ZTNiNDNjNTE4OGU3NjI1YzIxY2ZkODQyZDAzMzFkNjRiNWQ2MWFiYWI0MThhMTFiYjMzZWNkNyJ9XSwiZGVwZW5kZW5jeV9sb2NrX2hhc2giOiJkZWJkMTUyNWE2ZDM0MjQwOWQ5NWRiN2ViMzNiYmE5NTMyM2ZmMjI0MTkzNWM5ZWFlY2ZiOGIyYjJiNzk0ODc3IiwiZW5kIjoiMjAyNi0wOS0wMVQwMDowMDowMCswMDowMCIsImVuZ2luZV92ZXJzaW9uIjoiMS4wLjByYzEiLCJleGVjdXRpb25fYXNzdW1wdGlvbnMiOnsiY29tbWlzc2lvbiI6eyJraW5kIjoicGVyX3VuaXQiLCJtaW5pbXVtIjpudWxsLCJwZXJfdW5pdF9yYXRlIjoiMC4xIn0sImNvbW1pc3Npb25fbW9kZWxfcmVwciI6IlBlclVuaXRDb21taXNzaW9uKHBlcl91bml0X3JhdGU9RGVjaW1hbCgnMC4xJyksIG1pbmltdW09Tm9uZSkiLCJtYXhpbXVtX3BhcnRpY2lwYXRpb24iOiIwLjAxIiwic2xpcHBhZ2UiOnsia2luZCI6ImZpeGVkIiwidmFsdWUiOiIwLjAxIn0sInNsaXBwYWdlX21vZGVsX3JlcHIiOiJDb25maWd1cmVkU2xpcHBhZ2Uoa2luZD08U2xpcHBhZ2VLaW5kLkZJWEVEOiAnZml4ZWQnPiwgdmFsdWU9RGVjaW1hbCgnMC4wMScpKSIsInplcm9fY29zdF9hc3N1bXB0aW9uIjpudWxsfSwiZ2l0X2NvbW1pdCI6bnVsbCwiaW5pdGlhbF9jYXBpdGFsIjoiMTAwMDAiLCJwYXJhbWV0ZXJzIjp7Imluc3RydW1lbnRfaWQiOiJFVEYtREVNTyIsInF1YW50aXR5IjoiMTAifSwicHJvamVjdF9zb3VyY2VfaGFzaCI6IjEyZmNmODRjNTc0YjQ0YWIwYWU0N2Y2Y2M4Yzk0MWU5MDkyMjA1NTdiMDg5NjBjODFjZmMxYjVmZTRlOTNmMmQiLCJzZWVkIjoyMDI2MDkyNywic3RhcnQiOiIyMDI2LTA3LTAxVDAwOjAwOjAwKzAwOjAwIiwic3RyYXRlZ3lfaWQiOiJidWlsdGluLmJ1eV9hbmRfaG9sZC52MSIsInN0cmF0ZWd5X25hbWUiOiJidXlfYW5kX2hvbGQiLCJzdHJhdGVneV9zb3VyY2VfaGFzaCI6IjljNDQzODE1YjgwMTQwN2IxZmZjNDA2ZDBkNGU0NzZlYWZlODFjM2U1MzNjYWU3NjM1ODY4ZmNhMzEzNjE4MzEifSwiY3JlYXRlZF9hdCI6IjIwMjYtMTAtMDJUMjE6MTc6MzEuMjQxMjA4KzAwOjAwIiwiaW5wdXRfZmluZ2VycHJpbnQiOiI1NjZhNDEzMzYyMmRiMGM1MWNjOGRkOGEzNDAzN2U0MjBkMmZhMTIzNDA1Y2RhMGIwYTg0NmZmYThlNWFiYzY4IiwibWV0cmljcyI6eyJhbHBoYSI6eyJvYnNlcnZhdGlvbnMiOjAsInJlYXNvbiI6Ik01IGJlbmNobWFyayBpcyBwcmljZS1vbmx5IGFuZCBsYWNrcyBhIGNvbXBhdGlibGUgdG90YWwtcmV0dXJuIHNlc3Npb24gc2VyaWVzIiwic3RhdHVzIjoidW5hdmFpbGFibGUiLCJ1bml0IjoicmF0aW8iLCJ2YWx1ZSI6bnVsbH0sImFubnVhbGl6ZWRfYXJpdGhtZXRpY19yZXR1cm4iOnsib2JzZXJ2YXRpb25zIjo0MywicmVhc29uIjpudWxsLCJzdGF0dXMiOiJhdmFpbGFibGUiLCJ1bml0IjoiZnJhY3Rpb25fcGVyX3llYXIiLCJ2YWx1ZSI6IjAuMDgwMDk0NjYwODEwNjA3MzMzNDEyMDcwODMwODc3MTcxMTkifSwiYW5udWFsaXplZF92b2xhdGlsaXR5Ijp7Im9ic2VydmF0aW9ucyI6NDMsInJlYXNvbiI6bnVsbCwic3RhdHVzIjoiYXZhaWxhYmxlIiwidW5pdCI6ImZyYWN0aW9uX3Blcl95ZWFyIiwidmFsdWUiOiIwLjAyODQ1ODQyNzA1OTI2MzMzNTM1OTY1NzEyOTcxMTc3OTI3In0sImF2ZXJhZ2VfZ3Jvc3NfZXhwb3N1cmUiOnsib2JzZXJ2YXRpb25zIjo0NCwicmVhc29uIjpudWxsLCJzdGF0dXMiOiJhdmFpbGFibGUiLCJ1bml0IjoiVVNEIiwidmFsdWUiOiIxMDEyLjEzNjM2MzYzNjM2MzYzNjM2MzYzNjM2MzYzNjM2NCJ9LCJhdmVyYWdlX2dyb3NzX2xldmVyYWdlIjp7Im9ic2VydmF0aW9ucyI6NDQsInJlYXNvbiI6bnVsbCwic3RhdHVzIjoiYXZhaWxhYmxlIiwidW5pdCI6Im11bHRpcGxlIiwidmFsdWUiOiIwLjEwMDM0NTA4NDQ5NTM4NzE4NzE5OTQwMzc0NDU0MTMxODgifSwiYXZlcmFnZV9ob2xkaW5nX2RheXMiOnsib2JzZXJ2YXRpb25zIjowLCJyZWFzb24iOiJubyBjbG9zZWQgbWF0Y2hlZCB0cmFkZXMiLCJzdGF0dXMiOiJ1bmF2YWlsYWJsZSIsInVuaXQiOiJkYXlzIiwidmFsdWUiOm51bGx9LCJhdmVyYWdlX2xvc3MiOnsib2JzZXJ2YXRpb25zIjowLCJyZWFzb24iOiJubyBsb3NpbmcgdHJhZGVzIiwic3RhdHVzIjoidW5hdmFpbGFibGUiLCJ1bml0IjoiVVNEIiwidmFsdWUiOm51bGx9LCJhdmVyYWdlX21hZV9wZXJfdW5pdCI6eyJvYnNlcnZhdGlvbnMiOjAsInJlYXNvbiI6Im5vIGNsb3NlZCB0cmFkZSBtYXJrcyIsInN0YXR1cyI6InVuYXZhaWxhYmxlIiwidW5pdCI6IlVTRCIsInZhbHVlIjpudWxsfSwiYXZlcmFnZV9tZmVfcGVyX3VuaXQiOnsib2JzZXJ2YXRpb25zIjowLCJyZWFzb24iOiJubyBjbG9zZWQgdHJhZGUgbWFya3MiLCJzdGF0dXMiOiJ1bmF2YWlsYWJsZSIsInVuaXQiOiJVU0QiLCJ2YWx1ZSI6bnVsbH0sImF2ZXJhZ2VfbmV0X2V4cG9zdXJlIjp7Im9ic2VydmF0aW9ucyI6NDQsInJlYXNvbiI6bnVsbCwic3RhdHVzIjoiYXZhaWxhYmxlIiwidW5pdCI6IlVTRCIsInZhbHVlIjoiMTAxMi4xMzYzNjM2MzYzNjM2MzYzNjM2MzYzNjM2MzYzNjQifSwiYXZlcmFnZV9uZXRfbGV2ZXJhZ2UiOnsib2JzZXJ2YXRpb25zIjo0NCwicmVhc29uIjpudWxsLCJzdGF0dXMiOiJhdmFpbGFibGUiLCJ1bml0IjoibXVsdGlwbGUiLCJ2YWx1ZSI6IjAuMTAwMzQ1MDg0NDk1Mzg3MTg3MTk5NDAzNzQ0NTQxMzE4OCJ9LCJhdmVyYWdlX3dpbiI6eyJvYnNlcnZhdGlvbnMiOjAsInJlYXNvbiI6Im5vIHdpbm5pbmcgdHJhZGVzIiwic3RhdHVzIjoidW5hdmFpbGFibGUiLCJ1bml0IjoiVVNEIiwidmFsdWUiOm51bGx9LCJiZXN0X3RyYWRlIjp7Im9ic2VydmF0aW9ucyI6MCwicmVhc29uIjoibm8gY2xvc2VkIG1hdGNoZWQgdHJhZGVzIiwic3RhdHVzIjoidW5hdmFpbGFibGUiLCJ1bml0IjoiVVNEIiwidmFsdWUiOm51bGx9LCJiZXRhIjp7Im9ic2VydmF0aW9ucyI6MCwicmVhc29uIjoiTTUgYmVuY2htYXJrIGlzIHByaWNlLW9ubHkgYW5kIGxhY2tzIGEgY29tcGF0aWJsZSB0b3RhbC1yZXR1cm4gc2Vzc2lvbiBzZXJpZXMiLCJzdGF0dXMiOiJ1bmF2YWlsYWJsZSIsInVuaXQiOiJyYXRpbyIsInZhbHVlIjpudWxsfSwiYnJlYWtldmVuX3RyYWRlcyI6eyJvYnNlcnZhdGlvbnMiOjAsInJlYXNvbiI6bnVsbCwic3RhdHVzIjoiYXZhaWxhYmxlIiwidW5pdCI6InRyYWRlcyIsInZhbHVlIjoiMCJ9LCJjYWdyIjp7Im9ic2VydmF0aW9ucyI6NDMsInJlYXNvbiI6bnVsbCwic3RhdHVzIjoiYXZhaWxhYmxlIiwidW5pdCI6ImZyYWN0aW9uX3Blcl95ZWFyIiwidmFsdWUiOiIwLjA4MzM5ODEwNzQ4MjU4MTYwOTkyODE5MDQwMzEwOTIxMiJ9LCJjYWxtYXIiOnsib2JzZXJ2YXRpb25zIjo0MywicmVhc29uIjpudWxsLCJzdGF0dXMiOiJhdmFpbGFibGUiLCJ1bml0IjoicmF0aW8iLCJ2YWx1ZSI6IjE4LjI1MTMxMzIyMjA5NTY2OTc2MDU2NzM5MDYzMTc0MjA3In0sImNvbW1pc3Npb25zIjp7Im9ic2VydmF0aW9ucyI6MSwicmVhc29uIjpudWxsLCJzdGF0dXMiOiJhdmFpbGFibGUiLCJ1bml0IjoiVVNEIiwidmFsdWUiOiIxIn0sImRvd25fY2FwdHVyZSI6eyJvYnNlcnZhdGlvbnMiOjAsInJlYXNvbiI6Ik01IGJlbmNobWFyayBpcyBwcmljZS1vbmx5IGFuZCBsYWNrcyBhIGNvbXBhdGlibGUgdG90YWwtcmV0dXJuIHNlc3Npb24gc2VyaWVzIiwic3RhdHVzIjoidW5hdmFpbGFibGUiLCJ1bml0IjoicmF0aW8iLCJ2YWx1ZSI6bnVsbH0sImRyYXdkb3duX2R1cmF0aW9uX2RheXMiOnsib2JzZXJ2YXRpb25zIjo0NCwicmVhc29uIjpudWxsLCJzdGF0dXMiOiJhdmFpbGFibGUiLCJ1bml0IjoiZGF5cyIsInZhbHVlIjoiMTAifSwiZHJhd2Rvd25fZHVyYXRpb25fc2Vzc2lvbnMiOnsib2JzZXJ2YXRpb25zIjo0NCwicmVhc29uIjpudWxsLCJzdGF0dXMiOiJhdmFpbGFibGUiLCJ1bml0Ijoic2Vzc2lvbnMiLCJ2YWx1ZSI6IjYifSwiZXhjZXNzX2t1cnRvc2lzIjp7Im9ic2VydmF0aW9ucyI6NDMsInJlYXNvbiI6bnVsbCwic3RhdHVzIjoiYXZhaWxhYmxlIiwidW5pdCI6InJhdGlvIiwidmFsdWUiOiIzLjYzMTg4NDc0NzM4NjIxNDYwODc4MzQ1ODU1NTg3NzI3NyJ9LCJleHBlY3RhbmN5Ijp7Im9ic2VydmF0aW9ucyI6MCwicmVhc29uIjoibm8gY2xvc2VkIG1hdGNoZWQgdHJhZGVzIiwic3RhdHVzIjoidW5hdmFpbGFibGUiLCJ1bml0IjoiVVNEIiwidmFsdWUiOm51bGx9LCJleHBlY3RlZF9zaG9ydGZhbGxfOTUiOnsib2JzZXJ2YXRpb25zIjo0MywicmVhc29uIjoicmVxdWlyZXMgYXQgbGVhc3QgMjAgcmV0dXJucyBhbmQgNSBleHBlY3RlZCB0YWlsIG9ic2VydmF0aW9ucyIsInN0YXR1cyI6Imluc3VmZmljaWVudF9zYW1wbGUiLCJ1bml0IjoibG9zc19mcmFjdGlvbiIsInZhbHVlIjoiMC4wMDQ1NjI4NjI4NTMxODYzNTc5MDk4OTY5NzQ2MjQyMjU3MDUifSwiZXhwZWN0ZWRfc2hvcnRmYWxsXzk5Ijp7Im9ic2VydmF0aW9ucyI6NDMsInJlYXNvbiI6InJlcXVpcmVzIGF0IGxlYXN0IDIwIHJldHVybnMgYW5kIDUgZXhwZWN0ZWQgdGFpbCBvYnNlcnZhdGlvbnMiLCJzdGF0dXMiOiJpbnN1ZmZpY2llbnRfc2FtcGxlIiwidW5pdCI6Imxvc3NfZnJhY3Rpb24iLCJ2YWx1ZSI6IjAuMDA0NTY5NDMwNTA5ODg4ODQzNjM2MDc0NjYwNTIxMTEzNyJ9LCJleHBlY3RlZF9zaG9ydGZhbGxfOTkuOSI6eyJvYnNlcnZhdGlvbnMiOjQzLCJyZWFzb24iOiJyZXF1aXJlcyBhdCBsZWFzdCAyMCByZXR1cm5zIGFuZCA1IGV4cGVjdGVkIHRhaWwgb2JzZXJ2YXRpb25zIiwic3RhdHVzIjoiaW5zdWZmaWNpZW50X3NhbXBsZSIsInVuaXQiOiJsb3NzX2ZyYWN0aW9uIiwidmFsdWUiOiIwLjAwNDU2OTQzMDUwOTg4ODg0MzYzNjA3NDY2MDUyMTExMzcifSwiaW5mb3JtYXRpb25fcmF0aW8iOnsib2JzZXJ2YXRpb25zIjowLCJyZWFzb24iOiJNNSBiZW5jaG1hcmsgaXMgcHJpY2Utb25seSBhbmQgbGFja3MgYSBjb21wYXRpYmxlIHRvdGFsLXJldHVybiBzZXNzaW9uIHNlcmllcyIsInN0YXR1cyI6InVuYXZhaWxhYmxlIiwidW5pdCI6InJhdGlvIiwidmFsdWUiOm51bGx9LCJsb3NzX3JhdGUiOnsib2JzZXJ2YXRpb25zIjowLCJyZWFzb24iOiJubyBjbG9zZWQgbWF0Y2hlZCB0cmFkZXMiLCJzdGF0dXMiOiJ1bmF2YWlsYWJsZSIsInVuaXQiOiJmcmFjdGlvbiIsInZhbHVlIjpudWxsfSwibWF4X2NvbnNlY3V0aXZlX2xvc3NlcyI6eyJvYnNlcnZhdGlvbnMiOjAsInJlYXNvbiI6bnVsbCwic3RhdHVzIjoiYXZhaWxhYmxlIiwidW5pdCI6InRyYWRlcyIsInZhbHVlIjoiMCJ9LCJtYXhfY29uc2VjdXRpdmVfd2lucyI6eyJvYnNlcnZhdGlvbnMiOjAsInJlYXNvbiI6bnVsbCwic3RhdHVzIjoiYXZhaWxhYmxlIiwidW5pdCI6InRyYWRlcyIsInZhbHVlIjoiMCJ9LCJtYXhpbXVtX2RyYXdkb3duIjp7Im9ic2VydmF0aW9ucyI6NDQsInJlYXNvbiI6bnVsbCwic3RhdHVzIjoiYXZhaWxhYmxlIiwidW5pdCI6ImZyYWN0aW9uIiwidmFsdWUiOiIwLjAwNDU2OTQzMDUwOTg4ODg0MzYzNjA3NDY2MDUyMTExMzcifSwibWVkaWFuX3RyYWRlIjp7Im9ic2VydmF0aW9ucyI6MCwicmVhc29uIjoibm8gY2xvc2VkIG1hdGNoZWQgdHJhZGVzIiwic3RhdHVzIjoidW5hdmFpbGFibGUiLCJ1bml0IjoiVVNEIiwidmFsdWUiOm51bGx9LCJvbWVnYSI6eyJvYnNlcnZhdGlvbnMiOjQzLCJyZWFzb24iOm51bGwsInN0YXR1cyI6ImF2YWlsYWJsZSIsInVuaXQiOiJyYXRpbyIsInZhbHVlIjoiMS42MDEwMzU4MTA2NjU1NzQxMTExNjUxMDEwNTIzNjIwNzEifSwicGF5b2ZmX3JhdGlvIjp7Im9ic2VydmF0aW9ucyI6MCwicmVhc29uIjoicmVxdWlyZXMgbm9uemVybyBtZWFuIGxvc3NlcyBhbmQgd2lubmluZyB0cmFkZXMiLCJzdGF0dXMiOiJ1bmF2YWlsYWJsZSIsInVuaXQiOiJyYXRpbyIsInZhbHVlIjpudWxsfSwicHJvZml0X2ZhY3RvciI6eyJvYnNlcnZhdGlvbnMiOjAsInJlYXNvbiI6Im5vIGxvc2luZyB0cmFkZXMiLCJzdGF0dXMiOiJ1bmF2YWlsYWJsZSIsInVuaXQiOiJyYXRpbyIsInZhbHVlIjpudWxsfSwicmVjb3ZlcnlfdGltZV9kYXlzIjp7Im9ic2VydmF0aW9ucyI6NDQsInJlYXNvbiI6bnVsbCwic3RhdHVzIjoiYXZhaWxhYmxlIiwidW5pdCI6ImRheXMiLCJ2YWx1ZSI6IjEwIn0sInJpc2tfb2ZfcnVpbiI6eyJvYnNlcnZhdGlvbnMiOjAsInJlYXNvbiI6ImV4cGxpY2l0IHJpc2stb2YtcnVpbiBhc3N1bXB0aW9ucyB3ZXJlIG5vdCBzdXBwbGllZCIsInN0YXR1cyI6InVuYXZhaWxhYmxlIiwidW5pdCI6InByb2JhYmlsaXR5IiwidmFsdWUiOm51bGx9LCJzaGFycGUiOnsib2JzZXJ2YXRpb25zIjo0MywicmVhc29uIjpudWxsLCJzdGF0dXMiOiJhdmFpbGFibGUiLCJ1bml0IjoicmF0aW8iLCJ2YWx1ZSI6IjIuODE0NDQ0NDA0OTQ5NTA2NTQ4Mjg2NjQ4Nzk0ODg0MTkxIn0sInNrZXciOnsib2JzZXJ2YXRpb25zIjo0MywicmVhc29uIjpudWxsLCJzdGF0dXMiOiJhdmFpbGFibGUiLCJ1bml0IjoicmF0aW8iLCJ2YWx1ZSI6Ii0yLjM2MjE3MjUxNDkwNDk2MTYyOTMyMDU4NjQ2NTQ2ODk2OCJ9LCJzbGlwcGFnZV9jb3N0Ijp7Im9ic2VydmF0aW9ucyI6MSwicmVhc29uIjpudWxsLCJzdGF0dXMiOiJhdmFpbGFibGUiLCJ1bml0IjoiVVNEIiwidmFsdWUiOiIwLjEifSwic29ydGlubyI6eyJvYnNlcnZhdGlvbnMiOjQzLCJyZWFzb24iOm51bGwsInN0YXR1cyI6ImF2YWlsYWJsZSIsInVuaXQiOiJyYXRpbyIsInZhbHVlIjoiMy4yNTM0ODYwNDYwOTkwMTg2MzAxMTMwNjIzNDgzNTEifSwidGFpbF9yYXRpb185NV81Ijp7Im9ic2VydmF0aW9ucyI6NDMsInJlYXNvbiI6bnVsbCwic3RhdHVzIjoiYXZhaWxhYmxlIiwidW5pdCI6InJhdGlvIiwidmFsdWUiOiIwLjIxOTQ2OTM0MTE3ODM3NTM3MDM0NTMzNjgxMjYyODI0NjUifSwidG90YWxfY29zdCI6eyJvYnNlcnZhdGlvbnMiOjEsInJlYXNvbiI6bnVsbCwic3RhdHVzIjoiYXZhaWxhYmxlIiwidW5pdCI6IlVTRCIsInZhbHVlIjoiMS4xIn0sInRvdGFsX3JldHVybiI6eyJvYnNlcnZhdGlvbnMiOjQzLCJyZWFzb24iOm51bGwsInN0YXR1cyI6ImF2YWlsYWJsZSIsInVuaXQiOiJmcmFjdGlvbiIsInZhbHVlIjoiMC4wMTM2OSJ9LCJ0cmFja2luZ19lcnJvciI6eyJvYnNlcnZhdGlvbnMiOjAsInJlYXNvbiI6Ik01IGJlbmNobWFyayBpcyBwcmljZS1vbmx5IGFuZCBsYWNrcyBhIGNvbXBhdGlibGUgdG90YWwtcmV0dXJuIHNlc3Npb24gc2VyaWVzIiwic3RhdHVzIjoidW5hdmFpbGFibGUiLCJ1bml0IjoicmF0aW8iLCJ2YWx1ZSI6bnVsbH0sInRyYWRlX2NvdW50Ijp7Im9ic2VydmF0aW9ucyI6MCwicmVhc29uIjpudWxsLCJzdGF0dXMiOiJhdmFpbGFibGUiLCJ1bml0IjoidHJhZGVzIiwidmFsdWUiOiIwIn0sInR1cm5vdmVyIjp7Im9ic2VydmF0aW9ucyI6MSwicmVhc29uIjpudWxsLCJzdGF0dXMiOiJhdmFpbGFibGUiLCJ1bml0IjoibXVsdGlwbGUiLCJ2YWx1ZSI6IjAuMDk2NjIzODc2OTIxMzU2NjUzMzAxMTY0NzUwOTY0NzY0NDEifSwidWxjZXJfaW5kZXgiOnsib2JzZXJ2YXRpb25zIjo0NCwicmVhc29uIjpudWxsLCJzdGF0dXMiOiJhdmFpbGFibGUiLCJ1bml0IjoiZnJhY3Rpb24iLCJ2YWx1ZSI6IjAuMDAyMTkxMDYwODQ5ODA2MTg0NTkxODc2NDczMjgzOTkzNjM2In0sInVwX2NhcHR1cmUiOnsib2JzZXJ2YXRpb25zIjowLCJyZWFzb24iOiJNNSBiZW5jaG1hcmsgaXMgcHJpY2Utb25seSBhbmQgbGFja3MgYSBjb21wYXRpYmxlIHRvdGFsLXJldHVybiBzZXNzaW9uIHNlcmllcyIsInN0YXR1cyI6InVuYXZhaWxhYmxlIiwidW5pdCI6InJhdGlvIiwidmFsdWUiOm51bGx9LCJ2YXJfOTUiOnsib2JzZXJ2YXRpb25zIjo0MywicmVhc29uIjoicmVxdWlyZXMgYXQgbGVhc3QgMjAgcmV0dXJucyBhbmQgNSBleHBlY3RlZCB0YWlsIG9ic2VydmF0aW9ucyIsInN0YXR1cyI6Imluc3VmZmljaWVudF9zYW1wbGUiLCJ1bml0IjoibG9zc19mcmFjdGlvbiIsInZhbHVlIjoiMC4wMDQ1NDY2Njk4ODc0NzM4ODQ1Mzk1NjE1NjMyMDQ2NjgxNSJ9LCJ2YXJfOTkiOnsib2JzZXJ2YXRpb25zIjo0MywicmVhc29uIjoicmVxdWlyZXMgYXQgbGVhc3QgMjAgcmV0dXJucyBhbmQgNSBleHBlY3RlZCB0YWlsIG9ic2VydmF0aW9ucyIsInN0YXR1cyI6Imluc3VmZmljaWVudF9zYW1wbGUiLCJ1bml0IjoibG9zc19mcmFjdGlvbiIsInZhbHVlIjoiMC4wMDQ1NjQ4NjYwMTUxOTE2NzI5NjMxMDY3NzUzMzk2MDgzMzQifSwidmFyXzk5LjkiOnsib2JzZXJ2YXRpb25zIjo0MywicmVhc29uIjoicmVxdWlyZXMgYXQgbGVhc3QgMjAgcmV0dXJucyBhbmQgNSBleHBlY3RlZCB0YWlsIG9ic2VydmF0aW9ucyIsInN0YXR1cyI6Imluc3VmZmljaWVudF9zYW1wbGUiLCJ1bml0IjoibG9zc19mcmFjdGlvbiIsInZhbHVlIjoiMC4wMDQ1Njg5NzQwNjA0MTkxMjY1Njg3Nzc4NzIwMDI5NjMxNjMifSwid2luX3JhdGUiOnsib2JzZXJ2YXRpb25zIjowLCJyZWFzb24iOiJubyBjbG9zZWQgbWF0Y2hlZCB0cmFkZXMiLCJzdGF0dXMiOiJ1bmF2YWlsYWJsZSIsInVuaXQiOiJmcmFjdGlvbiIsInZhbHVlIjpudWxsfSwid29yc3RfdHJhZGUiOnsib2JzZXJ2YXRpb25zIjowLCJyZWFzb24iOiJubyBjbG9zZWQgbWF0Y2hlZCB0cmFkZXMiLCJzdGF0dXMiOiJ1bmF2YWlsYWJsZSIsInVuaXQiOiJVU0QiLCJ2YWx1ZSI6bnVsbH19LCJweXRob25fdmVyc2lvbiI6IjMuMTMuMTUiLCJyZXN1bHRfZmluZ2VycHJpbnQiOiI2MmJlN2VhYTA2Y2VhYWQ2ZjJmYTgzYzZmMTNkZWI5YzlhNmE3NzQxMDNkYzZlNGVjN2I3NzgyNTFmYjk0MzFjIiwicnVuX2lkIjoicnVuLWRjYjZlNGFiZTg1NjRkNTk4Yjc5YTJhZjdmMDI2YTZhIiwicnVudGltZV9tZXRhZGF0YSI6eyJhZGFwdGVyIjoiYXBwbGljYXRpb24tcnVudGltZS12MSIsInBsYXRmb3JtIjoiV2luZG93cyJ9LCJzY2hlbWFfdmVyc2lvbiI6MSwidGFncyI6W119"
+    }
+  ],
+  "requirement": "CTO change-management requirement: a retrieved research run must expose consistent source, dependency, dataset and result provenance plus explicit metric validity, and operational health must not be treated as release authorization.",
+  "failure_case": "A release consumer interprets health=ok and a numeric Sharpe or tail-risk value as final-release approval despite unresolved gates and insufficient sample evidence.",
+  "finding": "Partial: observed list/detail provenance is consistent and insufficient-sample/unavailable metrics are explicit. Health reports process health only; none of the three response bodies provides a release gate decision or approval audit trail. Local milestone records keep M16/M21/M22 in_progress. This is a release-consumer integration gap, not evidence that the health endpoint violates its documented contract.",
+  "limitations": [
+    "Only one existing trusted synthetic research run was inspected; no campaign or strategy was executed.",
+    "Manifest hashes were compared as returned metadata, not recomputed from downloaded source/report/dataset artifacts; hashes do not prove publisher authenticity.",
+    "No operational log, approval history, containment, backup recovery, workload benchmark, GUI or current installed-source equivalence was verified.",
+    "Sample 2026-07-01 through 2026-09-01 has 43 rows; it does not establish six months testing, OOS validation or 30 days actual paper simulation.",
+    "Annualization=252 and annual risk-free rate=0 are recorded; sampling frequency and drawdown algorithm were not independently established in this review. No economic or strategy eligibility verdict.",
+    "M21 report dated through its 2026-10-02 evidence is historical context, not a fresh rerun; local milestone state was read on this run.",
+    "Only local authorized synthetic research evidence was used; no external market data source or publication was accessed."
+  ],
+  "gate_status": {
+    "16": "in_progress",
+    "21": "in_progress",
+    "22": "in_progress"
+  },
+  "specification_verdict": "Partial",
+  "engineering_quality_verdict": "Partial",
+  "recommendation": "Coordinator should require an explicit versioned release decision linked to independent gate evidence; never derive release readiness from /health or metric values. Keep final release withheld pending gate closure.",
+  "checks": {
+    "list_detail_equal": true,
+    "source_hash_reference_equal": true,
+    "strategy_hash_reference_equal": true,
+    "invalid_metric_status_preserved": true
+  },
+  "severity": "medium",
+  "confidence": "high for observed response scope; no claim about uninspected interfaces"
+}

@@ -1,0 +1,13 @@
+{
+  "at": "2026-10-06T20:40:47.887403+00:00",
+  "audit": "C:\\Users\\Jonat\\algoalpha\\runtime\\m22-owner-20261006T204047Z-2b17c5f0\\audit.jsonl",
+  "public_admission_enabled": false,
+  "source_hashes": {
+    "src\\quant_terminal\\sandbox\\podman.py": "2de3bd3aaf936961b583d8bacd374177986e20b90f829e9cfce95b1502646e88",
+    "src\\quant_terminal\\sandbox\\wsl_keeper.py": "ca65b496401e0a1e07a7b2355fe513c46c10dd7b59ebf7a425d7acac3465bdb0",
+    "src\\quant_terminal\\sandbox\\runtime_owner.py": "1056fddcb0f26b0dce53153e2d07db0338d926a10bb7003e95c5d2aa846659c6"
+  },
+  "result": "failed",
+  "reason": "ownership_lock_unavailable",
+  "cleanup_failure": "ownership_lock_unavailable"
+}

@@ -1,0 +1,46 @@
+﻿{
+    "schemaVersion":  1,
+    "observedAtUtc":  "2026-09-27",
+    "companyId":  "3b1d401d-7010-4eed-acd1-be7d52372c07",
+    "projectId":  "d0eefc92-3d3a-4862-acf7-31e4fee95a56",
+    "role":  "11.7 Robustness Tester",
+    "agentId":  "47eecbe8-27d4-4a23-8d92-13509b5fce20",
+    "issueIdentifier":  "ALG-110",
+    "issueId":  "7d358c4f-c338-42bb-acef-2eb7dc55cb8b",
+    "workspaceId":  "d297ca3f-313a-4fb8-a9d1-bb8c00e25639",
+    "adapterType":  "codex_local",
+    "readiness":  {
+                      "dangerouslyBypassApprovalsAndSandbox":  false,
+                      "effectiveBrokerOrTradingToolNames":  [
+
+                                                            ],
+                      "paused":  false,
+                      "activeTaskSessionsBeforeDispatch":  0,
+                      "agentWasIdleBeforeDispatch":  true,
+                      "agentErrorPresent":  false
+                  },
+    "activation":  {
+                       "forceFreshSession":  false,
+                       "wakeSource":  "on_demand",
+                       "wakeReason":  "issue_execution_deferred",
+                       "wakeResponse":  "deferred",
+                       "explicitWakeStartedDuplicate":  false,
+                       "issuePatchedToTodo":  true,
+                       "triggerDetail":  "manual",
+                       "wakeEndpoint":  "/api/agents/{id}/wakeup"
+                   },
+    "actualRun":  {
+                      "runContextMatchedBoundedPrompt":  true,
+                      "startedAtUtc":  "2026-09-27T17:58:13.377Z",
+                      "errorPresent":  false,
+                      "runId":  "0dd43920-0fc2-4a3a-be7a-3b315b1c3284",
+                      "finishedAtUtc":  "2026-09-27T17:59:09.172Z",
+                      "status":  "succeeded"
+                  },
+    "finalIssueStatus":  "blocked",
+    "blocker":  "Paperclip system disposition required; system comments state the issue cannot continue without a board disposition.",
+    "expectedArtifact":  "docs/agent-contributions/11-7.md",
+    "artifactProduced":  false,
+    "claim":  "No completed role contribution/review is evidenced. Do not count this run as acceptance.",
+    "followUp":  "No further wake or disposition action performed."
+}

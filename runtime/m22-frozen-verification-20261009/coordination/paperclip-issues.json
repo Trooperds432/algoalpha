@@ -1,0 +1,2222 @@
+[
+  {
+    "agentId": "9ecfbe59-069d-41c6-900d-0a55c2f37ced",
+    "roleCode": "3.1",
+    "issueId": "82c85da8-ceaf-4ec8-9806-bff06e40a69c",
+    "identifier": "ALG-3"
+  },
+  {
+    "agentId": "e018ba52-0d91-4198-8a85-9b7d7dfb3576",
+    "roleCode": "3.2",
+    "issueId": "831ad07f-3f06-49d2-940a-a227a0a308dc",
+    "identifier": "ALG-4"
+  },
+  {
+    "agentId": "1253f521-078d-4f68-82e8-626eda5925e8",
+    "roleCode": "3.3",
+    "issueId": "cefc0dcd-cfde-4486-a18f-47a1fbd1ff51",
+    "identifier": "ALG-5"
+  },
+  {
+    "agentId": "838871e1-8f00-425c-b99b-7d3dddbe21cc",
+    "roleCode": "3.4",
+    "issueId": "b4747add-4270-481d-8151-59f691c34fe0",
+    "identifier": "ALG-6"
+  },
+  {
+    "agentId": "0d594786-fd73-4c67-854f-66d02f517c82",
+    "roleCode": "3.5",
+    "issueId": "cc5ed634-fa8d-4cc9-9a0c-31148c2a18f0",
+    "identifier": "ALG-7"
+  },
+  {
+    "agentId": "593c9b7b-a543-4e0c-9eae-cc28dd8ed04e",
+    "roleCode": "3.6",
+    "issueId": "d27b3aa7-5da7-4c66-aa00-4d978a1d12b5",
+    "identifier": "ALG-8"
+  },
+  {
+    "agentId": "5ed56bac-12cf-4d2d-980d-daeb47fa4380",
+    "roleCode": "3.7",
+    "issueId": "250d2b62-0828-436b-ae7b-b1f2227e60c0",
+    "identifier": "ALG-9"
+  },
+  {
+    "agentId": "b6d88baf-13aa-49c3-9731-caf291e480e0",
+    "roleCode": "3.8",
+    "issueId": "5e400ddc-ea58-4a97-aa24-e74cd1684745",
+    "identifier": "ALG-10"
+  },
+  {
+    "agentId": "71e8e56e-fb2c-429c-94ab-25658e17308c",
+    "roleCode": "4.1",
+    "issueId": "9451a825-23b0-46f4-8435-1c1cfd3e3449",
+    "identifier": "ALG-11"
+  },
+  {
+    "agentId": "75315315-9bba-44a3-a0b4-7b7fd84f9fe2",
+    "roleCode": "4.2",
+    "issueId": "4b623620-6622-4638-84b3-ba3994a85162",
+    "identifier": "ALG-12"
+  },
+  {
+    "agentId": "207f62e3-cf4a-4186-9b0c-84c37a870809",
+    "roleCode": "4.3",
+    "issueId": "5aaba7b0-d447-424c-bff0-4261dc4953ca",
+    "identifier": "ALG-13"
+  },
+  {
+    "agentId": "e35a5ddd-3654-4373-bac4-dc4e8e23ed2c",
+    "roleCode": "4.4",
+    "issueId": "1287d62f-dc7b-4a16-9615-3cb65e177f5d",
+    "identifier": "ALG-14"
+  },
+  {
+    "agentId": "69e9c7d6-f5dc-4ca1-baec-f95eb4bae6fa",
+    "roleCode": "4.5",
+    "issueId": "fc3a3b35-4291-4921-b3fe-d1ba5899dc09",
+    "identifier": "ALG-15"
+  },
+  {
+    "agentId": "db72e09b-1273-4b5b-b2f5-2da2f95de2e9",
+    "roleCode": "4.6",
+    "issueId": "a27c5bf6-fb54-4dbc-9b3f-89efcf32d497",
+    "identifier": "ALG-16"
+  },
+  {
+    "agentId": "55097e5d-7b99-4dfc-8d55-248317ebbd66",
+    "roleCode": "4.7",
+    "issueId": "ad9e83d6-f2c9-4b88-a69a-ddd2fcb3012e",
+    "identifier": "ALG-17"
+  },
+  {
+    "agentId": "c7555051-af5b-42f6-abce-f9c5dfde5edb",
+    "roleCode": "4.8",
+    "issueId": "f6ecc008-6e02-465a-8d31-eac571f66680",
+    "identifier": "ALG-18"
+  },
+  {
+    "agentId": "1e78976d-c852-460f-9ec7-c764b0c06457",
+    "roleCode": "4.9",
+    "issueId": "85745a44-9679-4c46-b041-0e8002caa8e3",
+    "identifier": "ALG-19"
+  },
+  {
+    "agentId": "969df8f0-a120-440d-86c4-daa0a2d0b200",
+    "roleCode": "4.10",
+    "issueId": "43002ef2-4075-42ef-9c0c-0ee95f51ed4b",
+    "identifier": "ALG-20"
+  },
+  {
+    "agentId": "efa6c34e-9fae-4ec0-9b73-615ffc72e965",
+    "roleCode": "4.11",
+    "issueId": "f89f7c83-e4c1-475d-8ac9-e2d0743a4667",
+    "identifier": "ALG-21"
+  },
+  {
+    "agentId": "7ab9dd43-4f8c-41b6-ae7c-ab2ed51de676",
+    "roleCode": "4.12",
+    "issueId": "7ce4e06a-7b8c-4006-b76a-95ab738c1ca5",
+    "identifier": "ALG-22"
+  },
+  {
+    "agentId": "f4bf3ea4-a3f4-4bf3-b863-fbe1d294d3fa",
+    "roleCode": "4.13",
+    "issueId": "f8d774bf-207a-4ea5-bf68-78a9bbfb3932",
+    "identifier": "ALG-23"
+  },
+  {
+    "agentId": "5c1d3174-02eb-41b1-b6f5-5a77bd5f3502",
+    "roleCode": "4.14",
+    "issueId": "81666611-b85a-4b1b-b9da-fbf240d14c96",
+    "identifier": "ALG-24"
+  },
+  {
+    "agentId": "46d53bec-928a-41fc-86ed-a8bd5f90330c",
+    "roleCode": "5.1",
+    "issueId": "ad55ff78-31bc-4142-8433-691fda2ccb8f",
+    "identifier": "ALG-25"
+  },
+  {
+    "agentId": "42ef6e28-f718-466d-a15a-808046f0d834",
+    "roleCode": "5.2",
+    "issueId": "3885b7f1-8cb0-4e54-901f-77d4f1bc9849",
+    "identifier": "ALG-26"
+  },
+  {
+    "agentId": "c310b045-c0a4-441d-90d2-8b85e56715d3",
+    "roleCode": "5.3",
+    "issueId": "ec5e641e-22cb-4e97-86b7-5cb574ceff00",
+    "identifier": "ALG-27"
+  },
+  {
+    "agentId": "c92ff256-0705-48e8-ba08-94c6938ba3e9",
+    "roleCode": "5.4",
+    "issueId": "052630a8-2d24-43dd-9c57-418219121e9b",
+    "identifier": "ALG-28"
+  },
+  {
+    "agentId": "043c7b60-3e6c-48c3-a3f8-903246ff31c9",
+    "roleCode": "5.5",
+    "issueId": "b4e74849-b4e1-4ee8-b8e6-adf4080c6823",
+    "identifier": "ALG-29"
+  },
+  {
+    "agentId": "c6e550ff-c65a-4b13-84a2-4589e47a319a",
+    "roleCode": "5.6",
+    "issueId": "4a543959-a469-49db-b5a3-9272e305b6f8",
+    "identifier": "ALG-30"
+  },
+  {
+    "agentId": "d7c85845-89ea-430d-9c59-b15ebdd74733",
+    "roleCode": "5.7",
+    "issueId": "a5740fad-12de-4638-abe2-d6ee7434fc4d",
+    "identifier": "ALG-31"
+  },
+  {
+    "agentId": "260a8298-e47e-4cb2-880f-b320de626ce5",
+    "roleCode": "5.8",
+    "issueId": "8ed81234-a35c-4c64-9eea-1509df8e3b42",
+    "identifier": "ALG-32"
+  },
+  {
+    "agentId": "fabf5ce4-286a-4f82-97ad-58dad5931f18",
+    "roleCode": "5.9",
+    "issueId": "c12a858a-7a96-472a-b700-a484f8ab62c3",
+    "identifier": "ALG-33"
+  },
+  {
+    "agentId": "6f6dabfc-5cf3-43cd-8cc9-44b9b0fb1b8d",
+    "roleCode": "5.10",
+    "issueId": "40315ffe-b5a0-4d38-81a8-122c476f2253",
+    "identifier": "ALG-34"
+  },
+  {
+    "agentId": "687a7f62-b5d8-4524-95f0-432aea6168df",
+    "roleCode": "5.11",
+    "issueId": "e85f1f8b-24d3-4d23-856c-214ce46b4d50",
+    "identifier": "ALG-35"
+  },
+  {
+    "agentId": "985eb8ac-418e-4373-b75d-b06575fe91e8",
+    "roleCode": "5.12",
+    "issueId": "ae7dc7e2-a567-453f-a648-fe0d26395fc2",
+    "identifier": "ALG-36"
+  },
+  {
+    "agentId": "e7d5f441-486c-444c-863f-e53fb70bbcdc",
+    "roleCode": "5.13",
+    "issueId": "70205ef1-b6df-436a-a566-3ec2906cdf4f",
+    "identifier": "ALG-37"
+  },
+  {
+    "agentId": "58b3d28f-faf2-4e08-9ca9-869f7524ca33",
+    "roleCode": "5.14",
+    "issueId": "f3c5e147-7133-421f-8eb6-84b301f389ad",
+    "identifier": "ALG-38"
+  },
+  {
+    "agentId": "f0af4745-fb7e-42c1-a4cf-d861bd6aa3b7",
+    "roleCode": "5.15",
+    "issueId": "530c1c3c-f61d-448f-b2f1-04b2cf6bbffa",
+    "identifier": "ALG-39"
+  },
+  {
+    "agentId": "abbef82f-2e24-4bfb-9675-11f34a325499",
+    "roleCode": "5.16",
+    "issueId": "c176b5a8-029d-41e9-80a1-c0a32c6a41d4",
+    "identifier": "ALG-40"
+  },
+  {
+    "agentId": "8e0fc772-7734-4fb5-92a2-701cf4bbdcf1",
+    "roleCode": "5.17",
+    "issueId": "5e6e75b7-1724-4909-afbf-f5a945579ff1",
+    "identifier": "ALG-41"
+  },
+  {
+    "agentId": "cb223307-7c04-4d77-b705-fae3aa76534b",
+    "roleCode": "5.18",
+    "issueId": "b3164b35-ff3d-4d0d-86ab-a1b1ecbce12f",
+    "identifier": "ALG-42"
+  },
+  {
+    "agentId": "12c4906d-58b6-43a9-8f2c-911468c09e89",
+    "roleCode": "5.19",
+    "issueId": "341b1f8a-8146-4d5c-a0f6-7de6d9108b84",
+    "identifier": "ALG-43"
+  },
+  {
+    "agentId": "d20fff00-9815-45ab-bb9d-eff698937909",
+    "roleCode": "6.1",
+    "issueId": "86da2a54-6923-46da-9bc7-053e8fddf8b6",
+    "identifier": "ALG-44"
+  },
+  {
+    "agentId": "0ba4cafc-6e0a-4c65-98e2-e18d6fcd1dae",
+    "roleCode": "6.2",
+    "issueId": "1a1f2ffa-6833-4dfb-b1ac-d2450040c594",
+    "identifier": "ALG-45"
+  },
+  {
+    "agentId": "1bb3b676-7f69-4564-aa1a-6b633f839878",
+    "roleCode": "6.3",
+    "issueId": "b9203817-46ba-400f-914f-9706cbd89b19",
+    "identifier": "ALG-46"
+  },
+  {
+    "agentId": "3fc49623-f125-41a8-83bb-d608804503ba",
+    "roleCode": "6.4",
+    "issueId": "a8303d70-a8dd-453c-9e73-bd3c2ba83442",
+    "identifier": "ALG-47"
+  },
+  {
+    "agentId": "c156113c-f7f7-4790-9385-212266e8bf97",
+    "roleCode": "6.5",
+    "issueId": "95c5586a-9237-4c02-9401-600ff3507378",
+    "identifier": "ALG-48"
+  },
+  {
+    "agentId": "0c9de6da-7524-4a4f-92af-230b7f37ea25",
+    "roleCode": "6.6",
+    "issueId": "df40fbb2-513a-45fc-b75b-23c6a5acb671",
+    "identifier": "ALG-49"
+  },
+  {
+    "agentId": "d84396b8-26c1-4081-8424-26a3fdf71693",
+    "roleCode": "6.7",
+    "issueId": "0e0d47d0-1eda-4dc2-9c88-2fcf6c7d6868",
+    "identifier": "ALG-50"
+  },
+  {
+    "agentId": "48b078d7-0d9c-4bb1-adc5-47bb5bc2d372",
+    "roleCode": "6.8",
+    "issueId": "9214d8af-dfa8-4ba4-abbf-7a874649f25f",
+    "identifier": "ALG-51"
+  },
+  {
+    "agentId": "f2734c35-4b88-4e82-bd65-3579d0248bd4",
+    "roleCode": "6.9",
+    "issueId": "de6226eb-4f5e-4b30-80c6-a88b93608722",
+    "identifier": "ALG-52"
+  },
+  {
+    "agentId": "403db3cc-d779-41aa-a309-cbcb9cf9cb57",
+    "roleCode": "7.1",
+    "issueId": "994f23a5-370b-4670-86ed-d70cec193b28",
+    "identifier": "ALG-53"
+  },
+  {
+    "agentId": "85eb111a-54b4-403b-8bb6-f456c327ad13",
+    "roleCode": "7.2",
+    "issueId": "88f55042-04dc-4536-818d-7b82a8837fd0",
+    "identifier": "ALG-54"
+  },
+  {
+    "agentId": "de48a187-04d2-4821-85f0-f6b7b9ba5dcf",
+    "roleCode": "7.3",
+    "issueId": "f77c67fe-130f-4203-b5d1-7d84b51a10f6",
+    "identifier": "ALG-55"
+  },
+  {
+    "agentId": "7b999f77-b3f3-4b86-be71-ef0810e1b37d",
+    "roleCode": "7.4",
+    "issueId": "1d200085-0a78-4707-933b-716954fe226e",
+    "identifier": "ALG-56"
+  },
+  {
+    "agentId": "a6396a82-f5cc-4abb-ad22-0c84518f47d8",
+    "roleCode": "7.5",
+    "issueId": "32021f5e-bb30-4851-8f50-8abd5a5ac482",
+    "identifier": "ALG-57"
+  },
+  {
+    "agentId": "192c5bef-fcdc-46eb-bfe5-b149022e9c47",
+    "roleCode": "7.6",
+    "issueId": "3f8fd929-c9f9-4261-850e-f004976e717b",
+    "identifier": "ALG-58"
+  },
+  {
+    "agentId": "32d94ac5-8205-4e3e-9330-163360149519",
+    "roleCode": "7.7",
+    "issueId": "67edd5d8-f29c-445d-b674-1cae5e8ff4ac",
+    "identifier": "ALG-59"
+  },
+  {
+    "agentId": "757c9c5b-c3ab-4150-9fd8-0f7c79fc0980",
+    "roleCode": "7.8",
+    "issueId": "a7314f4a-1cc0-4e79-85fa-26846f0439e6",
+    "identifier": "ALG-60"
+  },
+  {
+    "agentId": "bfda6dca-3d76-404e-8b41-46324eb54cca",
+    "roleCode": "7.9",
+    "issueId": "c22adc52-9f0c-42ed-8cbc-24d91f8f7a12",
+    "identifier": "ALG-61"
+  },
+  {
+    "agentId": "9c2d9aa3-1012-4829-8844-5770ce2af45c",
+    "roleCode": "7.10",
+    "issueId": "a655e492-228a-4aec-b0d9-741a96febf89",
+    "identifier": "ALG-62"
+  },
+  {
+    "agentId": "902470b0-8a0f-4770-a37c-3bc04216e555",
+    "roleCode": "7.11",
+    "issueId": "09caf3f4-d2d3-4c1d-aa6e-3c703e7190bb",
+    "identifier": "ALG-63"
+  },
+  {
+    "agentId": "5cab51d9-bc95-4d87-b6ad-55192d185a8a",
+    "roleCode": "8.1",
+    "issueId": "db8f9342-10d3-43ab-b136-14a84a386125",
+    "identifier": "ALG-64"
+  },
+  {
+    "agentId": "848d90f5-e2b3-49eb-bdb9-4c212109a0f4",
+    "roleCode": "8.2",
+    "issueId": "d6587229-7076-4bfe-a442-f8375581ab50",
+    "identifier": "ALG-65"
+  },
+  {
+    "agentId": "cffa9b10-ec23-4bb0-9b15-27a5e88d1ccf",
+    "roleCode": "8.3",
+    "issueId": "4973c149-f011-42d7-8313-36fef4b19ade",
+    "identifier": "ALG-66"
+  },
+  {
+    "agentId": "2b917383-1be0-47a4-82b6-3e818a7273da",
+    "roleCode": "8.4",
+    "issueId": "e0e3bfd7-447d-4937-98b6-2da70c7f5a70",
+    "identifier": "ALG-67"
+  },
+  {
+    "agentId": "6109b930-bf48-4dab-aa9d-7548eb358a62",
+    "roleCode": "8.5",
+    "issueId": "963a74ab-85e0-40c4-a1bc-dd71f926bce8",
+    "identifier": "ALG-68"
+  },
+  {
+    "agentId": "2b2cf555-1e23-4ef0-bcfd-ac7f27999f3b",
+    "roleCode": "8.6",
+    "issueId": "fd6c1567-d166-485d-a870-fc53f5cee21f",
+    "identifier": "ALG-69"
+  },
+  {
+    "agentId": "ce714c08-e9d8-45bf-b710-cfc0b90779b2",
+    "roleCode": "8.7",
+    "issueId": "57cbd976-b90b-4bb6-8fcf-f757cc2ab36d",
+    "identifier": "ALG-70"
+  },
+  {
+    "agentId": "fe635ca3-dd06-4e30-9782-f2ca7aa1e297",
+    "roleCode": "8.8",
+    "issueId": "156e8737-1886-4142-b0ff-d0dec74edf07",
+    "identifier": "ALG-71"
+  },
+  {
+    "agentId": "a9b40bcd-4fd1-47fa-8cee-d0d6f56e7d99",
+    "roleCode": "8.9",
+    "issueId": "858aa199-c0a9-4157-8b67-f1ca0241f709",
+    "identifier": "ALG-72"
+  },
+  {
+    "agentId": "212ce742-8694-4b4c-bab9-6444d3ef60cd",
+    "roleCode": "8.10",
+    "issueId": "752c0e06-10db-4290-af25-83f2fd3f2584",
+    "identifier": "ALG-73"
+  },
+  {
+    "agentId": "11292298-a77f-4ae6-95a1-b4b5eb148eb7",
+    "roleCode": "8.11",
+    "issueId": "925473dc-2421-4b92-9cb2-6aa40af37b8d",
+    "identifier": "ALG-74"
+  },
+  {
+    "agentId": "6ce8ece8-9f16-499c-9e3d-43864d8e155a",
+    "roleCode": "8.12",
+    "issueId": "9a24e1dc-83e8-4c76-b79b-dfc36445ccaa",
+    "identifier": "ALG-75"
+  },
+  {
+    "agentId": "6b4c1517-b5a4-4c28-abd3-fa799a300e95",
+    "roleCode": "8.13",
+    "issueId": "66647e8f-35a2-4194-968d-aa93fb62eb3b",
+    "identifier": "ALG-76"
+  },
+  {
+    "agentId": "2a3bafde-52b5-404b-9a25-e78ca06d1a61",
+    "roleCode": "9.1",
+    "issueId": "466dd192-1c44-4724-af79-d33f2815e903",
+    "identifier": "ALG-77"
+  },
+  {
+    "agentId": "b5f2054a-e1cd-46ea-b801-6a1c2e3b7fe1",
+    "roleCode": "9.2",
+    "issueId": "37eeadb5-5758-46f5-87c5-3f3476ffa3a1",
+    "identifier": "ALG-78"
+  },
+  {
+    "agentId": "047b3876-3a93-4b69-ac49-3de802b7d561",
+    "roleCode": "9.3",
+    "issueId": "05b90500-1c13-41fb-a5bd-a3dfc4d18656",
+    "identifier": "ALG-79"
+  },
+  {
+    "agentId": "9117bad2-31f1-4ad9-8f01-3373ebc3cc74",
+    "roleCode": "9.4",
+    "issueId": "b2745e68-8d1f-4e6d-9487-4cc11c357e87",
+    "identifier": "ALG-80"
+  },
+  {
+    "agentId": "9dc49c33-9259-4189-9af5-341cd23284c2",
+    "roleCode": "9.5",
+    "issueId": "ce722ff5-4aa0-4143-b94d-68cfb35cd7d4",
+    "identifier": "ALG-81"
+  },
+  {
+    "agentId": "ba80db09-b863-4848-af0e-3ab7fd56d21c",
+    "roleCode": "9.6",
+    "issueId": "735da571-8ac0-4493-a9be-d7e76790e46a",
+    "identifier": "ALG-82"
+  },
+  {
+    "agentId": "0c5d5ccb-ab39-466a-abf8-d0b587f48620",
+    "roleCode": "9.7",
+    "issueId": "63b3a4e9-b2e8-4263-9221-1b06529d5bf2",
+    "identifier": "ALG-83"
+  },
+  {
+    "agentId": "8b84eec2-53c9-40ae-9510-8abdced5d515",
+    "roleCode": "9.8",
+    "issueId": "f3a58d41-e7c7-44f8-aecd-e67ccd53a8de",
+    "identifier": "ALG-84"
+  },
+  {
+    "agentId": "82195d42-7369-423c-b485-4057032eab09",
+    "roleCode": "9.9",
+    "issueId": "328f592f-6200-451d-8295-632c5d5d8df4",
+    "identifier": "ALG-85"
+  },
+  {
+    "agentId": "04ab23cf-9759-46ff-9494-9772d6c3ddca",
+    "roleCode": "9.10",
+    "issueId": "50957194-5770-4232-bc13-e5194a1d1830",
+    "identifier": "ALG-86"
+  },
+  {
+    "agentId": "b5c244b2-7082-45f4-8296-a8d4df68d37d",
+    "roleCode": "9.11",
+    "issueId": "723f1609-081c-4bdd-a8a2-ae3176afcb3b",
+    "identifier": "ALG-87"
+  },
+  {
+    "agentId": "f87ffab5-39bc-4344-8927-bf46388fe723",
+    "roleCode": "9.12",
+    "issueId": "4cfb9e9e-0d0d-46b0-a6c5-61fc67809eb1",
+    "identifier": "ALG-88"
+  },
+  {
+    "agentId": "9886456a-f268-4b42-8675-009102c908cc",
+    "roleCode": "9.13",
+    "issueId": "8ccae1b9-7b2d-4e8d-beed-4902effa38dc",
+    "identifier": "ALG-89"
+  },
+  {
+    "agentId": "b26a8edf-ec97-4fc8-ab30-0ff0e22374bb",
+    "roleCode": "9.14",
+    "issueId": "12d0a0bf-f328-4fd7-bcfa-f041fd462f83",
+    "identifier": "ALG-90"
+  },
+  {
+    "agentId": "cd6e2321-5900-44a2-a3c5-bfb1a61dfe2d",
+    "roleCode": "10.1",
+    "issueId": "fad0b0a6-b718-4df2-8a2e-9573de5a9faf",
+    "identifier": "ALG-91"
+  },
+  {
+    "agentId": "05a67e09-6c41-422b-99ab-f533bc080188",
+    "roleCode": "10.2",
+    "issueId": "f39535fe-4a37-4e59-b2e4-328583f20460",
+    "identifier": "ALG-92"
+  },
+  {
+    "agentId": "66053fc6-073d-4704-adbf-a9bb222f0127",
+    "roleCode": "10.3",
+    "issueId": "ac78ba74-949c-48c1-b6c4-2288c448d602",
+    "identifier": "ALG-93"
+  },
+  {
+    "agentId": "0e0e9ad3-beb1-4386-9a23-5af284b8fdd1",
+    "roleCode": "10.4",
+    "issueId": "5b200eb0-7bdd-4d84-b40f-e041e54426c4",
+    "identifier": "ALG-94"
+  },
+  {
+    "agentId": "2f8a7462-52ad-42b9-a349-7ad93344216f",
+    "roleCode": "10.5",
+    "issueId": "d8c2de6a-7e9f-42e1-a283-1a79506680fb",
+    "identifier": "ALG-95"
+  },
+  {
+    "agentId": "1fca7877-0769-43b0-a3b4-58cb33b4f2c6",
+    "roleCode": "10.6",
+    "issueId": "b3daa48e-f38d-43b8-ae7d-f3ae0c2651e9",
+    "identifier": "ALG-96"
+  },
+  {
+    "agentId": "e28f2531-dca5-4202-ac14-aaf0452e4e0d",
+    "roleCode": "10.7",
+    "issueId": "0dc25646-bbb7-49ba-b8de-7409877545e3",
+    "identifier": "ALG-97"
+  },
+  {
+    "agentId": "77dd806c-6abc-49e6-9aab-98e7844db417",
+    "roleCode": "10.8",
+    "issueId": "a6dd35c3-3500-404b-a492-c255a3b353b6",
+    "identifier": "ALG-98"
+  },
+  {
+    "agentId": "f98ad962-672a-4f30-9473-ae9c24ef90eb",
+    "roleCode": "10.9",
+    "issueId": "6637e2dc-908b-4090-aa0b-c9e397b7578e",
+    "identifier": "ALG-99"
+  },
+  {
+    "agentId": "84e5fca9-cc11-47e8-9857-aa42faddfe0c",
+    "roleCode": "10.10",
+    "issueId": "a65329f1-f0bb-4791-8312-492632778c67",
+    "identifier": "ALG-100"
+  },
+  {
+    "agentId": "3d7c97f6-f1b1-4c76-8703-33252f52ea14",
+    "roleCode": "10.11",
+    "issueId": "2f86af60-7873-4836-9a63-b9b7a25b87e1",
+    "identifier": "ALG-101"
+  },
+  {
+    "agentId": "aa007a62-fe9c-44d7-822a-9c4e3a786fec",
+    "roleCode": "10.12",
+    "issueId": "1077dd15-5488-4910-8b11-beac90cb601f",
+    "identifier": "ALG-102"
+  },
+  {
+    "agentId": "33761d28-4b7c-4f53-a0af-d85c4a147e35",
+    "roleCode": "10.13",
+    "issueId": "b2e31541-f76c-4049-b580-3aa4d62e14d5",
+    "identifier": "ALG-103"
+  },
+  {
+    "agentId": "5193cebc-aec5-4b6b-aa68-ea7e87241e97",
+    "roleCode": "11.1",
+    "issueId": "040441a9-4aa8-472e-8dd3-fa4190492c03",
+    "identifier": "ALG-104"
+  },
+  {
+    "agentId": "3d7711d3-9058-41ed-9f08-c42f74848f12",
+    "roleCode": "11.2",
+    "issueId": "b124f7ca-49bc-4229-bf76-3899ac76cf90",
+    "identifier": "ALG-105"
+  },
+  {
+    "agentId": "6a103650-96e5-40f6-8ff5-ebca07ae3a1c",
+    "roleCode": "11.3",
+    "issueId": "c6d1c557-5bc0-4b2e-a6b6-52e321d7925b",
+    "identifier": "ALG-106"
+  },
+  {
+    "agentId": "6345fbf6-ffe9-41bf-a4e4-81d7b705d3a2",
+    "roleCode": "11.4",
+    "issueId": "ba98c1f5-cc9e-4505-9cc0-763c6c60e900",
+    "identifier": "ALG-107"
+  },
+  {
+    "agentId": "5341516f-ca52-4780-9988-a66b2cef7740",
+    "roleCode": "11.5",
+    "issueId": "a04718bd-76a9-495b-8adb-748e3bf4da6a",
+    "identifier": "ALG-108"
+  },
+  {
+    "agentId": "37773985-8c17-412e-8a83-6240acc847c8",
+    "roleCode": "11.6",
+    "issueId": "ff7368f1-53a9-40f1-81f1-f1582b06a95d",
+    "identifier": "ALG-109"
+  },
+  {
+    "agentId": "47eecbe8-27d4-4a23-8d92-13509b5fce20",
+    "roleCode": "11.7",
+    "issueId": "7d358c4f-c338-42bb-acef-2eb7dc55cb8b",
+    "identifier": "ALG-110"
+  },
+  {
+    "agentId": "aa847b19-07d5-4001-834b-59df21bba219",
+    "roleCode": "11.8",
+    "issueId": "dbf2c721-d490-41e3-9c1b-cbbb3f736012",
+    "identifier": "ALG-111"
+  },
+  {
+    "agentId": "1464f89e-f4ae-41c3-ab27-5136eb673583",
+    "roleCode": "11.9",
+    "issueId": "f336fcf2-6146-4236-a3b0-2e8de54d42e8",
+    "identifier": "ALG-112"
+  },
+  {
+    "agentId": "f10cd5ee-6bb7-45a3-9456-551436b6a539",
+    "roleCode": "11.10",
+    "issueId": "4acb070a-8bac-4475-bc29-0497244812af",
+    "identifier": "ALG-113"
+  },
+  {
+    "agentId": "fb4fdfd1-4ec3-46b2-bfbd-1965d0e14595",
+    "roleCode": "12.1",
+    "issueId": "8f399c07-bd64-4a68-a756-70fe899e04b0",
+    "identifier": "ALG-114"
+  },
+  {
+    "agentId": "e3ea9802-b22f-472f-8139-4f70a33ce978",
+    "roleCode": "12.2",
+    "issueId": "547b0b45-6e5d-4ec8-9ef2-34d5667b9d4e",
+    "identifier": "ALG-115"
+  },
+  {
+    "agentId": "ff2bfb4d-0b69-4860-9968-688e94b93f55",
+    "roleCode": "12.3",
+    "issueId": "d53069a1-0f42-4094-be86-8e0ad8f11f13",
+    "identifier": "ALG-116"
+  },
+  {
+    "agentId": "ca084d85-9bfb-4151-b563-e4484c3344e4",
+    "roleCode": "12.4",
+    "issueId": "65e167f0-1fae-413b-9e4f-80a8acc5f4b9",
+    "identifier": "ALG-117"
+  },
+  {
+    "agentId": "e7f5692a-deda-4554-a929-be132d2c6ca8",
+    "roleCode": "12.5",
+    "issueId": "ca69b9ff-7533-4829-a66d-e3bec5410433",
+    "identifier": "ALG-118"
+  },
+  {
+    "agentId": "f2616edd-0ef4-4562-8432-8eaa8a4c4f45",
+    "roleCode": "12.6",
+    "issueId": "6b473c37-3616-4611-b3bc-25b8ea174c67",
+    "identifier": "ALG-119"
+  },
+  {
+    "agentId": "2344f6a0-4077-4268-a18f-3a8f62878a01",
+    "roleCode": "12.7",
+    "issueId": "9f85d005-d59d-4457-a6a8-7e1c2e7c3892",
+    "identifier": "ALG-120"
+  },
+  {
+    "agentId": "229da861-af1e-4734-8b93-aa6b7769917d",
+    "roleCode": "12.8",
+    "issueId": "f86db1cc-5895-47bc-8c3a-60534aa02e88",
+    "identifier": "ALG-121"
+  },
+  {
+    "agentId": "92562d14-83ac-4754-b26c-538113e4b673",
+    "roleCode": "12.9",
+    "issueId": "72817e01-4c82-488f-bf6c-b3f61a56e436",
+    "identifier": "ALG-122"
+  },
+  {
+    "agentId": "8643d4c6-ed11-4f18-b3bc-8a5357b0fe2d",
+    "roleCode": "12.10",
+    "issueId": "63b78126-f4f2-4b64-b5f7-5adae273c6aa",
+    "identifier": "ALG-123"
+  },
+  {
+    "agentId": "1a9d383d-6309-4e6b-8f16-f0682f328633",
+    "roleCode": "12.11",
+    "issueId": "67f67317-806e-4c95-8766-bc0213f8ef15",
+    "identifier": "ALG-124"
+  },
+  {
+    "agentId": "4598441b-2658-4590-a8b2-c612cc29b14a",
+    "roleCode": "12.12",
+    "issueId": "1a9f5e90-8297-4c89-abbe-759610e87d80",
+    "identifier": "ALG-125"
+  },
+  {
+    "agentId": "7c83d0f2-ed1b-41a3-8c02-cf532e1c8f72",
+    "roleCode": "12.13",
+    "issueId": "f8715d35-f790-4887-8af0-5f8d44a607ae",
+    "identifier": "ALG-126"
+  },
+  {
+    "agentId": "a4ff78ad-4c8e-4fb7-a8d3-1182fdb13f4e",
+    "roleCode": "12.14",
+    "issueId": "54f361a8-3f5a-4ca8-a9a5-082ee130041c",
+    "identifier": "ALG-127"
+  },
+  {
+    "agentId": "480eb596-36a4-421e-982d-6227e50bbe89",
+    "roleCode": "12.15",
+    "issueId": "0c701b61-72e3-4c52-a2e5-695a198b86a5",
+    "identifier": "ALG-128"
+  },
+  {
+    "agentId": "410329ff-d1f6-484b-a9a3-509783e00f5a",
+    "roleCode": "13.1",
+    "issueId": "eedb40f3-7141-44bc-aada-161d0d76dffe",
+    "identifier": "ALG-129"
+  },
+  {
+    "agentId": "3a3905cd-3590-48e4-a42b-6d3f5d44b0b8",
+    "roleCode": "13.2",
+    "issueId": "da711786-f99d-4f7a-a524-78f9ab783479",
+    "identifier": "ALG-130"
+  },
+  {
+    "agentId": "83bce5a3-454a-402a-89be-e774710772f8",
+    "roleCode": "13.3",
+    "issueId": "ced896d5-590b-4d63-a2e1-901672b766f0",
+    "identifier": "ALG-131"
+  },
+  {
+    "agentId": "44337f5e-fd53-485d-9632-ff2188ec1bb7",
+    "roleCode": "13.4",
+    "issueId": "c54510c2-887c-4f9c-8d75-26376f2437ef",
+    "identifier": "ALG-132"
+  },
+  {
+    "agentId": "e13b50ea-46d1-42f8-bc13-70763f0c759f",
+    "roleCode": "13.5",
+    "issueId": "b0aeec2d-8505-4014-a7c2-9cbc0393d6c9",
+    "identifier": "ALG-133"
+  },
+  {
+    "agentId": "a1a91b22-ba08-4627-bc03-82b0165aaaa8",
+    "roleCode": "13.6",
+    "issueId": "865761d6-d562-4f8b-8d54-41b3d5bf2274",
+    "identifier": "ALG-134"
+  },
+  {
+    "agentId": "a5e312d4-c833-49e7-a45e-9531aebd8e3a",
+    "roleCode": "13.7",
+    "issueId": "76aac9d1-a171-4b69-9de8-f2200ff18e25",
+    "identifier": "ALG-135"
+  },
+  {
+    "agentId": "cf62a0c1-83d1-4a6b-aea4-f6c31db62dd5",
+    "roleCode": "13.8",
+    "issueId": "165fae76-f3ee-41c1-9ef6-c296d6ea8583",
+    "identifier": "ALG-136"
+  },
+  {
+    "agentId": "b3b4561a-04e6-4505-8178-ab0123f7f080",
+    "roleCode": "13.9",
+    "issueId": "ab827cde-9987-4545-b3bf-aa69903c95a2",
+    "identifier": "ALG-137"
+  },
+  {
+    "agentId": "072b539b-f0fd-4ff5-b393-f8c6e6b2a0fa",
+    "roleCode": "13.10",
+    "issueId": "ce68eed4-f977-4149-a650-9742a37a80e3",
+    "identifier": "ALG-138"
+  },
+  {
+    "agentId": "1e7d8c3f-35f0-4211-aec8-757039d6b5ba",
+    "roleCode": "13.11",
+    "issueId": "3ec1619d-2c95-4768-ab67-2965351de343",
+    "identifier": "ALG-139"
+  },
+  {
+    "agentId": "afcbd5b6-7062-49aa-8f2c-007edbb1ead4",
+    "roleCode": "13.12",
+    "issueId": "7f16bd17-6703-43e6-b40a-7e9d94fb0549",
+    "identifier": "ALG-140"
+  },
+  {
+    "agentId": "9ef86ead-3131-4980-9bf0-bd505d5765e6",
+    "roleCode": "14.1",
+    "issueId": "c02818f6-5487-4204-b15e-9388e03c7a44",
+    "identifier": "ALG-141"
+  },
+  {
+    "agentId": "8b1ef8f0-1693-4d35-bfc2-a882f8c37f70",
+    "roleCode": "14.2",
+    "issueId": "3cbd6920-786d-4390-bf1e-b93c6b907aa4",
+    "identifier": "ALG-142"
+  },
+  {
+    "agentId": "38c82923-9f78-4fe1-bcf4-fd0b354242c3",
+    "roleCode": "14.3",
+    "issueId": "a3b76992-7529-4e09-bad9-3ad4d9776968",
+    "identifier": "ALG-143"
+  },
+  {
+    "agentId": "9e74b44a-6ed2-4918-9382-e53178129b1c",
+    "roleCode": "14.4",
+    "issueId": "bc558a7d-2b8b-4215-8f00-5c27b8e8c250",
+    "identifier": "ALG-144"
+  },
+  {
+    "agentId": "cd523810-d899-4770-a281-d7607f59f0c9",
+    "roleCode": "14.5",
+    "issueId": "0f94e7dd-d24e-49cf-ad07-d73aec44b3cb",
+    "identifier": "ALG-145"
+  },
+  {
+    "agentId": "f83f627d-e792-4f04-b56c-cab538d92cac",
+    "roleCode": "14.6",
+    "issueId": "721691ec-03a4-44b2-8cdf-95a1a0a4480e",
+    "identifier": "ALG-146"
+  },
+  {
+    "agentId": "b44d2835-fbd0-4d19-b83c-14d82c39403f",
+    "roleCode": "14.7",
+    "issueId": "b73a07c5-17b2-4d76-b8d3-a22fcb4e7106",
+    "identifier": "ALG-147"
+  },
+  {
+    "agentId": "443a0a29-4ddb-4b19-bf74-b4909b58161e",
+    "roleCode": "14.8",
+    "issueId": "89f995a9-d20b-4a7b-ba68-c869f0862b11",
+    "identifier": "ALG-148"
+  },
+  {
+    "agentId": "e2a19471-9176-4e6e-926f-31cdf023f9dc",
+    "roleCode": "14.9",
+    "issueId": "d38f44b1-4698-43a8-8560-6484e98bfa01",
+    "identifier": "ALG-149"
+  },
+  {
+    "agentId": "a08fb5a4-d158-4a2e-937d-112e3b34757c",
+    "roleCode": "15.1",
+    "issueId": "f24c9766-cf83-45d1-93a0-13b32eeb9388",
+    "identifier": "ALG-150"
+  },
+  {
+    "agentId": "b3c675e2-1bc6-482c-8cfb-25b27ed3cf1d",
+    "roleCode": "15.2",
+    "issueId": "d7e010dc-df1e-4913-b49c-19a702c79b9a",
+    "identifier": "ALG-151"
+  },
+  {
+    "agentId": "7ed34a3d-9811-4d32-bcf4-3cbb6245e7a9",
+    "roleCode": "15.3",
+    "issueId": "45c30af2-998e-4f55-b2a0-9a3cad2fa6b1",
+    "identifier": "ALG-152"
+  },
+  {
+    "agentId": "78ebc96e-7794-4153-9532-9d7499c0f773",
+    "roleCode": "15.4",
+    "issueId": "ebe49e9d-14f5-4c1a-864b-effa610f3c96",
+    "identifier": "ALG-153"
+  },
+  {
+    "agentId": "db731fd6-de4e-4a71-90ab-d3d2c95adfb5",
+    "roleCode": "15.5",
+    "issueId": "3145893d-e573-4f47-b1bf-59cd1ededa22",
+    "identifier": "ALG-154"
+  },
+  {
+    "agentId": "85fc2491-6896-4f36-b136-487252bd2bc9",
+    "roleCode": "15.6",
+    "issueId": "c8bbf34f-2760-4050-a6a7-50f402ac47f7",
+    "identifier": "ALG-155"
+  },
+  {
+    "agentId": "3644397d-d59b-46a7-b312-5d43b65a54b9",
+    "roleCode": "15.7",
+    "issueId": "327cd5f5-e44f-4f99-9c66-ed74e423ee6a",
+    "identifier": "ALG-156"
+  },
+  {
+    "agentId": "751b4ae2-235d-4611-83e8-f4375a8f0ee3",
+    "roleCode": "15.8",
+    "issueId": "ab03a40f-918f-47d8-942c-7765c9ff47c8",
+    "identifier": "ALG-157"
+  },
+  {
+    "agentId": "9bf35b42-07c3-48be-a3f0-b44ac960782a",
+    "roleCode": "15.9",
+    "issueId": "2e3901d5-6657-442b-8cdc-1c55bab80424",
+    "identifier": "ALG-158"
+  },
+  {
+    "agentId": "3a7f3428-4452-4ef6-9443-aef22b225b58",
+    "roleCode": "15.10",
+    "issueId": "d2b5eecd-0667-45e5-bfe8-cf2176839184",
+    "identifier": "ALG-159"
+  },
+  {
+    "agentId": "b9fc419d-84e1-4b76-91f2-cdc70eaa478a",
+    "roleCode": "16.1",
+    "issueId": "c8870862-c195-455b-a569-d5d86368aefa",
+    "identifier": "ALG-160"
+  },
+  {
+    "agentId": "87c6cbe3-0e12-40c1-b4cf-6d0c7d7aa062",
+    "roleCode": "16.2",
+    "issueId": "b07552ea-4def-4bb4-b455-b4434cfd8095",
+    "identifier": "ALG-161"
+  },
+  {
+    "agentId": "209656b8-1208-447f-b849-15a223a837b2",
+    "roleCode": "16.3",
+    "issueId": "e2a235ee-68ac-4469-a06c-df489716ee2e",
+    "identifier": "ALG-162"
+  },
+  {
+    "agentId": "351c52f9-1e7f-4146-96ee-6952b3bf1430",
+    "roleCode": "16.4",
+    "issueId": "ccfa7a95-aed2-4d96-b241-b060c4f592f5",
+    "identifier": "ALG-163"
+  },
+  {
+    "agentId": "e97f42b6-26c5-40dc-bf2a-4ceaa07649ad",
+    "roleCode": "16.5",
+    "issueId": "d1cb4462-f761-43ca-853a-c61a59d8ba58",
+    "identifier": "ALG-164"
+  },
+  {
+    "agentId": "1ab64003-175e-4131-8566-c4c757f5add2",
+    "roleCode": "16.6",
+    "issueId": "b39ce959-a4b2-4fe4-975a-dd0c6a3bcf21",
+    "identifier": "ALG-165"
+  },
+  {
+    "agentId": "e6daa38c-5b07-4fa0-9ee9-fbe3dc8822df",
+    "roleCode": "16.7",
+    "issueId": "d53178ca-876b-4402-abe2-dfc5a84ba23f",
+    "identifier": "ALG-166"
+  },
+  {
+    "agentId": "56a5a903-bec7-4597-845a-62e166ddb271",
+    "roleCode": "17.1",
+    "issueId": "82d6cc72-8441-4de3-89f4-3a19a3abebd7",
+    "identifier": "ALG-167"
+  },
+  {
+    "agentId": "1b5faef5-dd53-4c37-995f-e3eecff946ba",
+    "roleCode": "17.2",
+    "issueId": "96697925-2ff1-46a1-8ec5-0cead4e9df4c",
+    "identifier": "ALG-168"
+  },
+  {
+    "agentId": "895e4865-3899-42bf-a13d-7f906daefe1d",
+    "roleCode": "17.3",
+    "issueId": "4de7d4cb-2fd3-44eb-ad9d-b5d552171cf2",
+    "identifier": "ALG-169"
+  },
+  {
+    "agentId": "33f9af32-1d42-4971-bc70-146a4f413fa8",
+    "roleCode": "17.4",
+    "issueId": "cea81748-ccc1-4188-99ac-2734c61071ce",
+    "identifier": "ALG-170"
+  },
+  {
+    "agentId": "66706073-4600-4355-a8d6-f78c334928b4",
+    "roleCode": "17.5",
+    "issueId": "e554878a-f245-4ebb-924b-801896a24d1c",
+    "identifier": "ALG-171"
+  },
+  {
+    "agentId": "bbb574b9-030c-4bfd-9b94-31306ea6a6fd",
+    "roleCode": "18.1",
+    "issueId": "c9270c73-3161-4463-8a69-ea3cd69f823d",
+    "identifier": "ALG-172"
+  },
+  {
+    "agentId": "c3b5adec-b311-4fe1-866d-22e2a5487cbc",
+    "roleCode": "18.2",
+    "issueId": "719d6ba7-6c9a-4c33-8534-7da3e9e76b4f",
+    "identifier": "ALG-173"
+  },
+  {
+    "agentId": "db228207-621f-4594-b4ee-ab52294cdbf4",
+    "roleCode": "18.3",
+    "issueId": "2490f530-3666-4937-976e-9007aee23672",
+    "identifier": "ALG-174"
+  },
+  {
+    "agentId": "875078f8-76bc-48fe-8afd-08b99019b817",
+    "roleCode": "18.4",
+    "issueId": "80e0b267-d033-4800-9f15-68b8b986f9d1",
+    "identifier": "ALG-175"
+  },
+  {
+    "agentId": "24292ddb-e76c-4359-816b-7a7d5b17d44c",
+    "roleCode": "18.5",
+    "issueId": "e2dc8230-4834-4b12-acb2-b8d3f554d554",
+    "identifier": "ALG-176"
+  },
+  {
+    "agentId": "ab6bc132-30ae-4358-b9e0-b7d77fb67975",
+    "roleCode": "19.1",
+    "issueId": "9a207e60-90cd-4e03-8e2a-1d88e14deae7",
+    "identifier": "ALG-177"
+  },
+  {
+    "agentId": "609c9c33-575e-4a5a-9877-d560a9b70943",
+    "roleCode": "19.2",
+    "issueId": "7bae070f-7c45-4ec1-bd29-2fc7c6e7439a",
+    "identifier": "ALG-178"
+  },
+  {
+    "agentId": "b46e0996-d46d-4563-b376-c632ea24b17e",
+    "roleCode": "19.3",
+    "issueId": "dcbc8296-f038-4801-aa45-e1ed30e8b387",
+    "identifier": "ALG-179"
+  },
+  {
+    "agentId": "e1fc44e8-5706-48e0-ab0b-3e1e9fb20278",
+    "roleCode": "19.4",
+    "issueId": "f6adbd6d-14be-4ef4-8a12-bebf730cc3b4",
+    "identifier": "ALG-180"
+  },
+  {
+    "agentId": "677fe60f-f3a9-4499-a182-32ed94fa9f31",
+    "roleCode": "19.5",
+    "issueId": "a9023894-12c3-468a-a548-85752ece1b42",
+    "identifier": "ALG-181"
+  },
+  {
+    "agentId": "9dc05d86-334a-4229-be29-bdf60f10ee44",
+    "roleCode": "19.6",
+    "issueId": "82da9123-2fac-4d65-ae75-37f0c326f05c",
+    "identifier": "ALG-182"
+  },
+  {
+    "agentId": "66bdae1c-e400-42eb-ad91-04e71b195f63",
+    "roleCode": "19.7",
+    "issueId": "5ac4bcb5-d9a9-4b80-ae2b-d7a86239bc8c",
+    "identifier": "ALG-183"
+  },
+  {
+    "agentId": "46b55ec1-af2b-4923-9dac-0942d37542e6",
+    "roleCode": "19.8",
+    "issueId": "44f9926f-a94d-4890-b44d-217bc10bec4a",
+    "identifier": "ALG-184"
+  },
+  {
+    "agentId": "138ff836-1b23-48b2-b62e-e31289bb1cb2",
+    "roleCode": "19.9",
+    "issueId": "f9aa98e9-8a3e-4b08-a02d-cabc6afd42df",
+    "identifier": "ALG-185"
+  },
+  {
+    "agentId": "6412644f-0234-4dbe-b089-c74ac346dcf7",
+    "roleCode": "19.10",
+    "issueId": "97bb4012-5e27-467c-88dd-14a5d1aab217",
+    "identifier": "ALG-186"
+  },
+  {
+    "agentId": "38359ebb-b3c5-4b6d-92c6-6ff26a2414d6",
+    "roleCode": "19.11",
+    "issueId": "c2ba0f2c-eaa7-4fbb-b28c-73d331b82c47",
+    "identifier": "ALG-187"
+  },
+  {
+    "agentId": "9cc1cfcb-fc5d-49b7-9d72-3f9a1da6677c",
+    "roleCode": "19.12",
+    "issueId": "2051a20d-4000-48fd-96e7-ab1f21c59eac",
+    "identifier": "ALG-188"
+  },
+  {
+    "agentId": "6a6a4a89-c07a-4e77-a9c9-80d2c97ebc8f",
+    "roleCode": "19.13",
+    "issueId": "f6b66aed-c350-44be-ad34-b478275ed8e0",
+    "identifier": "ALG-189"
+  },
+  {
+    "agentId": "2f7ef8de-5f1e-4c6b-b05d-0401c15ec915",
+    "roleCode": "19.14",
+    "issueId": "b11abe9d-836e-499e-99da-4943bc0c1070",
+    "identifier": "ALG-190"
+  },
+  {
+    "agentId": "0f702998-a426-4f39-8b39-5a139c4741d7",
+    "roleCode": "19.15",
+    "issueId": "7ace8d0e-b038-4ae9-9fd2-35d76281872f",
+    "identifier": "ALG-191"
+  },
+  {
+    "agentId": "472ca222-9d98-413a-a28f-ead6c4f69f2c",
+    "roleCode": "19.16",
+    "issueId": "25fa9864-c3ba-42c6-8501-f6f49a61c7d9",
+    "identifier": "ALG-192"
+  },
+  {
+    "agentId": "c7079dfe-3abe-430d-b85f-511b8c2273d3",
+    "roleCode": "19.17",
+    "issueId": "8fdca64a-c8cd-4e23-b2c5-9f3473a167bc",
+    "identifier": "ALG-193"
+  },
+  {
+    "agentId": "0f20454c-b7d8-48d0-91f3-e52303613771",
+    "roleCode": "19.18",
+    "issueId": "9d26ac0f-2b37-48a6-a83b-73ba095ac911",
+    "identifier": "ALG-194"
+  },
+  {
+    "agentId": "23977d52-a520-4218-a8ee-3f0d47b1d841",
+    "roleCode": "20.1",
+    "issueId": "e1928763-cedf-457c-98ca-51b58450a8fb",
+    "identifier": "ALG-195"
+  },
+  {
+    "agentId": "c880723b-b05c-497d-a56f-ba7ba4551c78",
+    "roleCode": "20.2",
+    "issueId": "40f43249-b011-46f1-9dbe-dd1ce6b134e7",
+    "identifier": "ALG-196"
+  },
+  {
+    "agentId": "cc1d87c4-9f76-4647-af73-ca7dc6e70823",
+    "roleCode": "20.3",
+    "issueId": "b5847800-59e6-498f-874a-082579eec3b2",
+    "identifier": "ALG-197"
+  },
+  {
+    "agentId": "92c58a75-5f68-402e-97cc-241422f3dbd2",
+    "roleCode": "20.4",
+    "issueId": "4a6cf500-ac63-4979-b88d-30142326b11c",
+    "identifier": "ALG-198"
+  },
+  {
+    "agentId": "1e612b1a-fea5-4e35-8bba-3225a649d666",
+    "roleCode": "20.5",
+    "issueId": "1be06181-554c-41ab-af93-ec0823c02a59",
+    "identifier": "ALG-199"
+  },
+  {
+    "agentId": "6708e6cd-c880-4a17-9c45-57cb820b42f0",
+    "roleCode": "21.1",
+    "issueId": "6232a2ba-b3ae-4a9b-a041-8bd145cf315d",
+    "identifier": "ALG-200"
+  },
+  {
+    "agentId": "c68a65ea-2743-4e58-b94d-50762e091f3b",
+    "roleCode": "21.2",
+    "issueId": "415d87b5-e17a-4fa0-aa1f-36f43cec127a",
+    "identifier": "ALG-201"
+  },
+  {
+    "agentId": "82e00f2e-d124-45f5-8ea3-fe2445162131",
+    "roleCode": "21.3",
+    "issueId": "41f4fbd7-f29f-43f1-b4a9-1167861cd4bc",
+    "identifier": "ALG-202"
+  },
+  {
+    "agentId": "6697c6d2-1cfc-4f0d-81bd-89ff04e8ca0d",
+    "roleCode": "21.4",
+    "issueId": "23862309-6c5a-4d78-8ec7-4b5bcb3528d1",
+    "identifier": "ALG-203"
+  },
+  {
+    "agentId": "559faf4a-2ca9-4b7e-98cb-95388932c764",
+    "roleCode": "22.1",
+    "issueId": "1e930f61-a182-4029-8a60-2718fcc95b10",
+    "identifier": "ALG-204"
+  },
+  {
+    "agentId": "fb8f832d-b1a0-407d-ade1-a695c79d4482",
+    "roleCode": "22.2",
+    "issueId": "bf59012a-75e7-442b-983a-31594c1939cb",
+    "identifier": "ALG-205"
+  },
+  {
+    "agentId": "8114879e-d6f8-4c48-89ac-78ed9b01b73b",
+    "roleCode": "22.3",
+    "issueId": "bb2b2e58-9432-4ab2-bb57-8796cb1268f2",
+    "identifier": "ALG-206"
+  },
+  {
+    "agentId": "8b6f3a36-9664-4876-9885-35b4f507bd72",
+    "roleCode": "22.4",
+    "issueId": "0fbdf24f-0ccd-4682-8213-3415c7f86acc",
+    "identifier": "ALG-207"
+  },
+  {
+    "agentId": "fbba9c2c-f815-4ec2-9100-f45b8471ea8e",
+    "roleCode": "22.5",
+    "issueId": "9a1275ba-6d36-4947-a784-d390a119c2cc",
+    "identifier": "ALG-208"
+  },
+  {
+    "agentId": "d8166568-991a-40aa-b845-52644e621216",
+    "roleCode": "23.1",
+    "issueId": "e05a3dd8-d3b6-43ae-a9c6-7d9a6dbd15dc",
+    "identifier": "ALG-209"
+  },
+  {
+    "agentId": "b961fdab-1c1a-4674-8a9a-888e9d675908",
+    "roleCode": "23.2",
+    "issueId": "ef22c34c-fa54-4dd5-a91b-410dbd3a1ce6",
+    "identifier": "ALG-210"
+  },
+  {
+    "agentId": "5cccd6cc-6df8-4ed1-a566-627214eed5e5",
+    "roleCode": "23.3",
+    "issueId": "e3623c17-005b-4655-8835-03e0e2458748",
+    "identifier": "ALG-211"
+  },
+  {
+    "agentId": "ab9a341c-8e49-43ca-b22c-ab2d9ca86f7f",
+    "roleCode": "23.4",
+    "issueId": "d35b51f3-1612-45ba-b440-bb9ccb08ff64",
+    "identifier": "ALG-212"
+  },
+  {
+    "agentId": "dee8add1-4af8-4bb1-a59b-f0e3e0c7114e",
+    "roleCode": "23.5",
+    "issueId": "5d91c9f3-4493-41ef-9ebc-e57b0bcb0736",
+    "identifier": "ALG-213"
+  },
+  {
+    "agentId": "b921369f-b7e8-479f-9315-1aeb68b6eab1",
+    "roleCode": "24.1",
+    "issueId": "af817925-1d83-4e76-bdb9-4ec72fd7ce0e",
+    "identifier": "ALG-214"
+  },
+  {
+    "agentId": "503f3101-0d40-4d71-a95f-053350c28199",
+    "roleCode": "24.2",
+    "issueId": "c640b01b-6dc3-499b-830d-efb7be8f5dd2",
+    "identifier": "ALG-215"
+  },
+  {
+    "agentId": "3746b855-ef2f-4de7-ae83-3171eb219003",
+    "roleCode": "24.3",
+    "issueId": "5adce22e-bf30-435d-ad41-fae15986a7da",
+    "identifier": "ALG-216"
+  },
+  {
+    "agentId": "423abda2-8479-48ce-9935-d55a64dca930",
+    "roleCode": "24.4",
+    "issueId": "23d5777d-3830-477a-a05f-26551f9b22ef",
+    "identifier": "ALG-217"
+  },
+  {
+    "agentId": "fa3a161c-69ba-483e-8a73-6d307ec4dc49",
+    "roleCode": "24.5",
+    "issueId": "4ae1b15e-9591-4420-9dba-ab9d0923496f",
+    "identifier": "ALG-218"
+  },
+  {
+    "agentId": "2e3b0626-fcf7-4297-9111-9ff3b8263d17",
+    "roleCode": "25.1",
+    "issueId": "d5678758-7b4c-4187-a761-6c10570e6204",
+    "identifier": "ALG-219"
+  },
+  {
+    "agentId": "d76d0b45-4718-4f14-b765-00d9aca73479",
+    "roleCode": "25.2",
+    "issueId": "c39c161f-aad6-4e44-9979-ff4ac4497690",
+    "identifier": "ALG-220"
+  },
+  {
+    "agentId": "a5e95f4a-73fc-4957-931f-db760c7f934b",
+    "roleCode": "25.3",
+    "issueId": "eebd4555-b5d9-4018-b113-919d1f4c8229",
+    "identifier": "ALG-221"
+  },
+  {
+    "agentId": "29c430b3-3a11-44e6-835a-02852ba1b071",
+    "roleCode": "25.4",
+    "issueId": "377eee99-c742-4002-aa99-69f1f69030d2",
+    "identifier": "ALG-222"
+  },
+  {
+    "agentId": "f62b7487-0e56-4db7-9abb-3915bc3f3180",
+    "roleCode": "25.5",
+    "issueId": "31bcdab1-5690-4076-8b3b-f278db916a97",
+    "identifier": "ALG-223"
+  },
+  {
+    "agentId": "15dafd4b-3bdf-4cc0-8983-0e7c4c170ea8",
+    "roleCode": "26.1",
+    "issueId": "4a045d01-6086-48ce-864c-aced7245cb33",
+    "identifier": "ALG-224"
+  },
+  {
+    "agentId": "413fafb2-c9c4-4b03-b574-c5467fc512d2",
+    "roleCode": "26.2",
+    "issueId": "51e80dd4-4540-45e7-8f0c-d2630f6900a2",
+    "identifier": "ALG-225"
+  },
+  {
+    "agentId": "3afc441b-a39c-4ef2-8cd7-6cbb63779856",
+    "roleCode": "26.3",
+    "issueId": "f0bade02-3ad8-4cdb-b68b-f01bc814edc4",
+    "identifier": "ALG-226"
+  },
+  {
+    "agentId": "2d41db75-b4a5-49f5-bcc5-752bb3ed850b",
+    "roleCode": "27.1",
+    "issueId": "2f072b32-1768-4951-9d98-37c689fea548",
+    "identifier": "ALG-227"
+  },
+  {
+    "agentId": "d7ce69c3-648a-4428-9b99-0b2862725a6d",
+    "roleCode": "27.2",
+    "issueId": "479f2142-ce80-4869-8571-3cf6a86ae898",
+    "identifier": "ALG-228"
+  },
+  {
+    "agentId": "842ba10c-9d29-4da5-8db5-364c479da8c5",
+    "roleCode": "27.3",
+    "issueId": "c9760e44-59ff-48a5-bce8-a2a1525a6ca4",
+    "identifier": "ALG-229"
+  },
+  {
+    "agentId": "083f0ec4-4a80-4d95-b57e-7ed5825e3dd0",
+    "roleCode": "27.4",
+    "issueId": "33df301a-2a1c-49e5-8b21-a4d23bd4f364",
+    "identifier": "ALG-230"
+  },
+  {
+    "agentId": "53d57855-3088-46f4-a3af-920aac15f294",
+    "roleCode": "27.5",
+    "issueId": "ded55824-0de8-4328-8e25-4aa19681ccf4",
+    "identifier": "ALG-231"
+  },
+  {
+    "agentId": "bbaf81d6-0e31-4450-8b85-7d75b935a545",
+    "roleCode": "27.6",
+    "issueId": "12a54cc6-7dcd-42ff-b712-2f47ef211bdd",
+    "identifier": "ALG-232"
+  },
+  {
+    "agentId": "cffc3aae-389f-4641-866b-fcb619325c76",
+    "roleCode": "28.1",
+    "issueId": "a80e1da9-041f-441c-a2f6-5622bf3f8897",
+    "identifier": "ALG-233"
+  },
+  {
+    "agentId": "63cbd4fb-48f4-4144-bad0-f6d55a7c0289",
+    "roleCode": "28.2",
+    "issueId": "82f9f79c-d852-493b-918b-e1771b96e113",
+    "identifier": "ALG-234"
+  },
+  {
+    "agentId": "a7a1a223-1bf5-4cfd-8c30-f9f87c9d0669",
+    "roleCode": "28.3",
+    "issueId": "a7c45cdb-1870-484d-abe1-e8e7174af072",
+    "identifier": "ALG-235"
+  },
+  {
+    "agentId": "09e557b7-84bb-43cf-840d-9374707ccbe7",
+    "roleCode": "28.4",
+    "issueId": "a5c64a11-d72d-49fc-8f6a-66e6691cf014",
+    "identifier": "ALG-236"
+  },
+  {
+    "agentId": "b53acc9d-5a52-46e8-856d-76297a1eb93a",
+    "roleCode": "28.5",
+    "issueId": "e8937c6e-eaea-4520-80f7-4ce6eea884d1",
+    "identifier": "ALG-237"
+  },
+  {
+    "agentId": "11a9984e-81ae-4a01-8869-0b68cc2b1bb3",
+    "roleCode": "29.1",
+    "issueId": "fbb9b862-9a6d-4729-83f5-6bb60239b193",
+    "identifier": "ALG-238"
+  },
+  {
+    "agentId": "30a94917-925d-41ae-b8b2-753637be9fd3",
+    "roleCode": "29.2",
+    "issueId": "3970d060-19e3-4c90-9b91-ff4c4822f7e4",
+    "identifier": "ALG-239"
+  },
+  {
+    "agentId": "1d8c4cd7-4982-4e80-83dd-6737c704c825",
+    "roleCode": "29.3",
+    "issueId": "80d40028-b3c2-4a31-ab88-50cb1d1f97cb",
+    "identifier": "ALG-240"
+  },
+  {
+    "agentId": "e09273ea-9e64-493a-85e9-16021ad5c418",
+    "roleCode": "29.4",
+    "issueId": "bd7e5299-06b8-48d5-a11f-c16acb435eab",
+    "identifier": "ALG-241"
+  },
+  {
+    "agentId": "19debc36-338b-4e5e-ab6f-e0f22b295f79",
+    "roleCode": "29.5",
+    "issueId": "55b3518d-eb3d-4bf5-ba16-6e5802eccb60",
+    "identifier": "ALG-242"
+  },
+  {
+    "agentId": "5b8a07a7-2566-4b90-9fd8-62d2c34087b9",
+    "roleCode": "30.1",
+    "issueId": "3cfe12a2-6045-409a-82b6-4b0f7ed49094",
+    "identifier": "ALG-243"
+  },
+  {
+    "agentId": "3619c8b2-64aa-4019-aaf6-5aab32c98fc9",
+    "roleCode": "30.2",
+    "issueId": "caa3f743-24ad-46ba-beea-937278ee5c7d",
+    "identifier": "ALG-244"
+  },
+  {
+    "agentId": "e92c1c50-69ee-417e-bd76-ce2c2a8181d3",
+    "roleCode": "30.3",
+    "issueId": "82fd6026-ab05-4fe9-80d1-f953c0bd4768",
+    "identifier": "ALG-245"
+  },
+  {
+    "agentId": "4da3f034-b08d-457d-8866-7dbe1bc34ecf",
+    "roleCode": "30.4",
+    "issueId": "6d3b95fc-bd5b-4a6b-b03c-191b723c6c4a",
+    "identifier": "ALG-246"
+  },
+  {
+    "agentId": "37b87bb8-1a48-4752-ac22-1bba88cd0beb",
+    "roleCode": "30.5",
+    "issueId": "2ccfe751-311c-470f-b81f-a3de559e14f7",
+    "identifier": "ALG-247"
+  },
+  {
+    "agentId": "19a68332-3e6a-4abd-8816-6505dee7fe50",
+    "roleCode": "30.6",
+    "issueId": "9a5bb67f-46f5-4249-ac4d-08762ed441c9",
+    "identifier": "ALG-248"
+  },
+  {
+    "agentId": "dae91b9d-04f9-4a12-8d19-1ca0c24f981d",
+    "roleCode": "30.7",
+    "issueId": "e85644d3-0818-40d0-bf04-9499a5e67b8c",
+    "identifier": "ALG-249"
+  },
+  {
+    "agentId": "2c825fc2-998b-42c3-914f-a96845fa037c",
+    "roleCode": "31.1",
+    "issueId": "dbae8631-f7fb-4221-8a17-ace8b85089d9",
+    "identifier": "ALG-250"
+  },
+  {
+    "agentId": "f8c1fd93-2ae1-413c-a8dd-d0807525529e",
+    "roleCode": "31.2",
+    "issueId": "bfca0d30-0674-4a39-b3d5-99e337f75912",
+    "identifier": "ALG-251"
+  },
+  {
+    "agentId": "70abf466-69a1-41e7-9f0b-60c20c7e4275",
+    "roleCode": "31.3",
+    "issueId": "5d68b768-8245-43ff-9901-33199b8894c2",
+    "identifier": "ALG-252"
+  },
+  {
+    "agentId": "2aae45b8-a616-4c07-a77e-f1894215b80b",
+    "roleCode": "32.1",
+    "issueId": "4b229d2f-4e3a-4beb-b5a1-42832ba62be5",
+    "identifier": "ALG-253"
+  },
+  {
+    "agentId": "38077063-a54c-49d2-94ae-484df2ae34bc",
+    "roleCode": "32.2",
+    "issueId": "8ece8438-41bc-46fe-921a-01ec7e55806f",
+    "identifier": "ALG-254"
+  },
+  {
+    "agentId": "b60a4221-23bf-4a5f-a5fa-e73824735daa",
+    "roleCode": "32.3",
+    "issueId": "f8e4258c-05f6-4117-971f-ea2aa1085543",
+    "identifier": "ALG-255"
+  },
+  {
+    "agentId": "c1076224-6208-444c-be37-996239356df0",
+    "roleCode": "33.1",
+    "issueId": "f5d9e7e2-1778-4de6-8dcd-9b5f91a7da7d",
+    "identifier": "ALG-256"
+  },
+  {
+    "agentId": "4aecd150-e084-4fd6-9ac8-feace6925d5f",
+    "roleCode": "33.2",
+    "issueId": "9f9c8d99-0328-4c86-a02b-f9f4f5b65eb4",
+    "identifier": "ALG-257"
+  },
+  {
+    "agentId": "551d0f16-75c1-49ed-a48c-b6a136a805b7",
+    "roleCode": "33.3",
+    "issueId": "cd48151e-ed49-4e13-bd7a-ce06e504673b",
+    "identifier": "ALG-258"
+  },
+  {
+    "agentId": "7300e5ba-beb4-455a-bdca-bda5651d63c6",
+    "roleCode": "33.4",
+    "issueId": "004f58f4-8dc3-4b05-8d9b-986bd2a9a109",
+    "identifier": "ALG-259"
+  },
+  {
+    "agentId": "276f1c5e-2b8f-4305-b5fa-cd19a6b07583",
+    "roleCode": "33.5",
+    "issueId": "5441466f-ab09-4e20-b73c-b114e97e929a",
+    "identifier": "ALG-260"
+  },
+  {
+    "agentId": "24395ed9-c13c-49d7-ad13-52c7e6f2d79b",
+    "roleCode": "34.1",
+    "issueId": "12ca5afe-f666-4963-832c-7e9d466e0662",
+    "identifier": "ALG-261"
+  },
+  {
+    "agentId": "c57de79b-f29f-4ddb-b818-3de41f730f10",
+    "roleCode": "34.2",
+    "issueId": "1768ede3-0d8b-4886-8087-f0ecf9417b7a",
+    "identifier": "ALG-262"
+  },
+  {
+    "agentId": "12e30197-90f9-4218-920b-d2c9a6f15fc8",
+    "roleCode": "34.3",
+    "issueId": "129d9992-e14c-4114-856c-ca547aa207a4",
+    "identifier": "ALG-263"
+  },
+  {
+    "agentId": "9e3dc1c1-0ad2-400b-bb04-95bf6ba1c22a",
+    "roleCode": "35.1",
+    "issueId": "d8bfbedb-9ec1-49df-b4a6-2f03072ebf1d",
+    "identifier": "ALG-264"
+  },
+  {
+    "agentId": "a2bf0b1f-c18f-4197-93d6-6ac3531c9857",
+    "roleCode": "35.2",
+    "issueId": "70b741d6-2efc-4f6e-a988-505126414d39",
+    "identifier": "ALG-265"
+  },
+  {
+    "agentId": "9ddcf77e-3fa7-43fd-ac5d-c26531c56633",
+    "roleCode": "35.3",
+    "issueId": "1ef73e6c-6234-4ff0-a83f-8ad27397ddfb",
+    "identifier": "ALG-266"
+  },
+  {
+    "agentId": "3ba591c8-95cd-41c5-9cb2-9c401269e6b2",
+    "roleCode": "36.1",
+    "issueId": "740ea047-4617-4144-b0c0-182524d08466",
+    "identifier": "ALG-267"
+  },
+  {
+    "agentId": "fca3a383-35bf-486a-8a10-43b891264bfb",
+    "roleCode": "36.2",
+    "issueId": "919620fa-4299-43fe-88a6-8c6dd07132a3",
+    "identifier": "ALG-268"
+  },
+  {
+    "agentId": "8867db56-8067-4f5a-a928-198216143003",
+    "roleCode": "36.3",
+    "issueId": "85127bf4-cc58-4723-9d93-f814ae2b05c4",
+    "identifier": "ALG-269"
+  },
+  {
+    "agentId": "64d03f12-4b3e-4391-af6d-ebd311ee174e",
+    "roleCode": "36.4",
+    "issueId": "3ceb355a-d78f-4e5a-8560-18fde9fb5532",
+    "identifier": "ALG-270"
+  },
+  {
+    "agentId": "49e2d426-c4df-4af2-8cc3-f0318f4d0ac2",
+    "roleCode": "37.1",
+    "issueId": "47836ed7-1101-4a99-a80a-a7cca38ea63c",
+    "identifier": "ALG-271"
+  },
+  {
+    "agentId": "e211a3db-44ef-44be-ac03-c18e83e48a63",
+    "roleCode": "37.2",
+    "issueId": "01745ada-be74-4628-a94d-8b51d02b4e21",
+    "identifier": "ALG-272"
+  },
+  {
+    "agentId": "02376456-b463-46bb-878a-20b2f16c71fc",
+    "roleCode": "37.3",
+    "issueId": "29d23572-df5f-4010-8817-e10ef86fbeba",
+    "identifier": "ALG-273"
+  },
+  {
+    "agentId": "d5d21c88-4830-4a8f-9f42-273ff6894fad",
+    "roleCode": "38.1",
+    "issueId": "cf7bf40a-8443-44e5-86f0-8832f31f63dc",
+    "identifier": "ALG-274"
+  },
+  {
+    "agentId": "0994d2b2-440f-4892-b9a5-04eb581d2c9f",
+    "roleCode": "38.2",
+    "issueId": "baddaed3-e396-4eeb-a510-e5e95cbc6a60",
+    "identifier": "ALG-275"
+  },
+  {
+    "agentId": "14bf84c6-f200-4f94-be1c-04261a5a3012",
+    "roleCode": "38.3",
+    "issueId": "f9a1b24d-77e7-4607-99af-591296822139",
+    "identifier": "ALG-276"
+  },
+  {
+    "agentId": "bad0238a-5279-446f-911b-d7ea04101a04",
+    "roleCode": "38.4",
+    "issueId": "29c11807-77e9-45ea-91c4-ea93fa3e0440",
+    "identifier": "ALG-277"
+  },
+  {
+    "agentId": "fdb3ae51-4ed4-457e-8851-a00a7ab292d3",
+    "roleCode": "38.5",
+    "issueId": "07946569-e7cc-4fd3-b29b-fd463feae921",
+    "identifier": "ALG-278"
+  },
+  {
+    "agentId": "d1d0adb2-1c8c-4681-87d0-c69b78829d89",
+    "roleCode": "38.6",
+    "issueId": "e636450f-8434-4654-89af-98553d56d2f5",
+    "identifier": "ALG-279"
+  },
+  {
+    "agentId": "6aaf6664-e5e5-4556-854f-4f2d660a0c8f",
+    "roleCode": "39.1",
+    "issueId": "e3592b44-b60a-405c-9781-75104d86800f",
+    "identifier": "ALG-280"
+  },
+  {
+    "agentId": "949703c4-6348-4477-a246-3b1741e85a56",
+    "roleCode": "39.2",
+    "issueId": "c8706194-4c0f-4920-b7c1-3ac4f879b8b2",
+    "identifier": "ALG-281"
+  },
+  {
+    "agentId": "c0eb8ff4-fccb-4440-b1f4-554e6334600c",
+    "roleCode": "39.3",
+    "issueId": "c902e329-32ed-43e0-8c47-27c8bf009529",
+    "identifier": "ALG-282"
+  },
+  {
+    "agentId": "ced85fee-f84f-4dbf-abce-534365c68204",
+    "roleCode": "39.4",
+    "issueId": "a4021f03-2581-4dbc-becf-a2fc63c40a87",
+    "identifier": "ALG-283"
+  },
+  {
+    "agentId": "18c6b550-26c0-469b-a2ea-eef4b3f73a37",
+    "roleCode": "40.1",
+    "issueId": "ba5e27e1-e871-494b-a7f7-76a01dbf620e",
+    "identifier": "ALG-284"
+  },
+  {
+    "agentId": "d67fa27f-309a-4ba0-8396-41d596af38c1",
+    "roleCode": "40.2",
+    "issueId": "8d33d840-3e4b-443d-9332-195423806330",
+    "identifier": "ALG-285"
+  },
+  {
+    "agentId": "0029799c-f44b-44c4-a664-91a89c95c594",
+    "roleCode": "40.3",
+    "issueId": "a2596eed-ee62-4db7-bada-dd6bae900673",
+    "identifier": "ALG-286"
+  },
+  {
+    "agentId": "3d157153-187b-47b9-9653-7f72a0cb00ff",
+    "roleCode": "40.4",
+    "issueId": "4f5b20a6-0140-4da8-ad91-84dae832cc46",
+    "identifier": "ALG-287"
+  },
+  {
+    "agentId": "9aa458f8-9078-4dbb-9e27-62f5c50abcd1",
+    "roleCode": "40.5",
+    "issueId": "47608213-e9f7-4be7-80f1-c3cdafc81c63",
+    "identifier": "ALG-288"
+  },
+  {
+    "agentId": "dcd6e1c7-6b74-4c21-9d23-0fc3e586d0b3",
+    "roleCode": "40.6",
+    "issueId": "c77bf6e9-295d-4926-b00b-bcb9a36ef7ca",
+    "identifier": "ALG-289"
+  },
+  {
+    "agentId": "f257fcc5-64f8-4d79-8858-72fc6bcaf6fa",
+    "roleCode": "41.1",
+    "issueId": "47590d14-1e1d-4afa-9546-271b15b02335",
+    "identifier": "ALG-290"
+  },
+  {
+    "agentId": "6d8e27a4-ba45-4ad4-bca0-210dd2de0b4d",
+    "roleCode": "41.2",
+    "issueId": "58bf3ac8-9bdd-4f2d-afe1-6eb0b9445c1f",
+    "identifier": "ALG-291"
+  },
+  {
+    "agentId": "3e98b953-79c7-4df7-b1fa-212d940766ab",
+    "roleCode": "41.3",
+    "issueId": "71048ad3-e20f-4492-87b9-a9c5b111cd91",
+    "identifier": "ALG-292"
+  },
+  {
+    "agentId": "673d43cd-2822-4d73-a208-3e03f5e64a4c",
+    "roleCode": "41.4",
+    "issueId": "a0441943-07da-422e-8c57-dd835d746f17",
+    "identifier": "ALG-293"
+  },
+  {
+    "agentId": "58f36319-93ea-4d5d-8127-e7244ba977f5",
+    "roleCode": "41.5",
+    "issueId": "0b7751fd-0c69-4ed6-ab05-e5eb182b00ed",
+    "identifier": "ALG-294"
+  },
+  {
+    "agentId": "f7bf43ca-15cd-4b4d-b8ec-eef5eef72a7b",
+    "roleCode": "41.6",
+    "issueId": "ba2fc872-a617-43e0-bcc3-09869a8441e3",
+    "identifier": "ALG-295"
+  },
+  {
+    "agentId": "309801d7-0b6d-44b5-aa19-2296a26fe444",
+    "roleCode": "42.1",
+    "issueId": "973e5a42-34cd-4599-8828-398378580d0c",
+    "identifier": "ALG-296"
+  },
+  {
+    "agentId": "11f339ce-2111-4d01-a7a5-101dce84c87f",
+    "roleCode": "42.2",
+    "issueId": "6283cf9c-aefc-4273-9d5d-dff735cc0d73",
+    "identifier": "ALG-297"
+  },
+  {
+    "agentId": "0070c93b-9425-4d25-b70e-9972a1b1fddd",
+    "roleCode": "42.3",
+    "issueId": "8acd6990-9855-4149-a39f-6ba6451d8033",
+    "identifier": "ALG-298"
+  },
+  {
+    "agentId": "358b04ab-a2ed-438d-bc15-657e02e018c9",
+    "roleCode": "42.4",
+    "issueId": "6c80de7c-989f-45c0-a83d-c079e8c5a565",
+    "identifier": "ALG-299"
+  },
+  {
+    "agentId": "77340330-c8e9-47ee-aa4c-171138c53bab",
+    "roleCode": "42.5",
+    "issueId": "bcf80173-65f0-44eb-980d-6688095485ea",
+    "identifier": "ALG-300"
+  },
+  {
+    "agentId": "9db10cfd-f3cd-41e7-af3a-95ff8cc5f2ca",
+    "roleCode": "42.6",
+    "issueId": "9f75effa-a7b7-4e19-8964-bd05d8bbad0b",
+    "identifier": "ALG-301"
+  },
+  {
+    "agentId": "13db3bdb-43df-41e5-868a-cce89264c32c",
+    "roleCode": "42.7",
+    "issueId": "f045495d-30e1-4d2f-af9c-d10fe8cea4fa",
+    "identifier": "ALG-302"
+  },
+  {
+    "agentId": "64b40327-a3f5-4419-908c-695fff917335",
+    "roleCode": "43.1",
+    "issueId": "788057f8-01c0-4b44-8b0f-67ee88d5b3c4",
+    "identifier": "ALG-303"
+  },
+  {
+    "agentId": "210fd3a4-816a-41ce-9a55-d541b448cbfe",
+    "roleCode": "43.2",
+    "issueId": "2d9e9bac-c04a-454b-8219-0c85c35cbdf4",
+    "identifier": "ALG-304"
+  },
+  {
+    "agentId": "e7b34473-bdc1-4ef1-be5d-360e84bbd381",
+    "roleCode": "43.3",
+    "issueId": "83e3b9fe-5f4d-4581-ad66-1afd030e9e82",
+    "identifier": "ALG-305"
+  },
+  {
+    "agentId": "97f61ad6-7d5f-4d52-b96f-fc1285f42848",
+    "roleCode": "43.4",
+    "issueId": "cc8508e1-2e8b-4d8e-9c5d-d2b21598117b",
+    "identifier": "ALG-306"
+  },
+  {
+    "agentId": "6c08b1e7-6736-46c5-96aa-4d90321d86e9",
+    "roleCode": "43.5",
+    "issueId": "72f8236c-cb7e-4501-a442-d95dbae05520",
+    "identifier": "ALG-307"
+  },
+  {
+    "agentId": "6a1cd501-bda8-42eb-bc9b-3efbd0c1f2ba",
+    "roleCode": "43.6",
+    "issueId": "3691c267-9c37-48d4-9a67-0f4a6f70059a",
+    "identifier": "ALG-308"
+  },
+  {
+    "agentId": "ddad796e-064c-42bd-8490-4f192e1e7405",
+    "roleCode": "43.7",
+    "issueId": "daf16780-e754-4df8-9e2d-a595efab4fba",
+    "identifier": "ALG-309"
+  },
+  {
+    "agentId": "10e7815a-e285-40a7-b3ed-b5ddde2dab0b",
+    "roleCode": "44.1",
+    "issueId": "271b958c-0f09-4c4a-ae77-22435a5544f5",
+    "identifier": "ALG-310"
+  },
+  {
+    "agentId": "2f303f48-9382-43be-a047-7fc1c6af2f5f",
+    "roleCode": "44.2",
+    "issueId": "23e818db-6a97-4e86-a8ee-1f27422f1687",
+    "identifier": "ALG-311"
+  },
+  {
+    "agentId": "000a1e42-8526-4adf-a57b-d57170892001",
+    "roleCode": "44.3",
+    "issueId": "9726162c-bc35-4139-98d5-45de8f88c703",
+    "identifier": "ALG-312"
+  },
+  {
+    "agentId": "ff091358-d060-4a1b-95a7-27511abcecc7",
+    "roleCode": "44.4",
+    "issueId": "91217e02-b36d-48af-a223-9cd162a72976",
+    "identifier": "ALG-313"
+  },
+  {
+    "agentId": "108dbac1-8565-4131-9c4f-38cf5744ff20",
+    "roleCode": "44.5",
+    "issueId": "dfbc1850-6a17-4e94-bfb3-eb3f2bc0b5b5",
+    "identifier": "ALG-314"
+  },
+  {
+    "agentId": "c83ff159-a1ff-434b-a772-b711c21047d8",
+    "roleCode": "44.6",
+    "issueId": "6e3f9abf-5bf4-40a6-89e7-3691cf32c406",
+    "identifier": "ALG-315"
+  },
+  {
+    "agentId": "6e10a751-2a97-4ac9-9dde-2f4cfa097e6f",
+    "roleCode": "44.7",
+    "issueId": "04223b47-22c8-4f1a-89e5-3e8cf9b07110",
+    "identifier": "ALG-316"
+  },
+  {
+    "agentId": "ff703c1d-1ccf-49ac-aca2-37cb41d3f41f",
+    "roleCode": "45.1",
+    "issueId": "06449d50-c6fc-41ab-8f09-995e0051ff01",
+    "identifier": "ALG-317"
+  },
+  {
+    "agentId": "373a58d6-9bff-467e-a9b3-0034b4cd8b2c",
+    "roleCode": "45.2",
+    "issueId": "5249d8b8-d7fe-470f-a39b-a9eddb0795d0",
+    "identifier": "ALG-318"
+  },
+  {
+    "agentId": "656a3baf-2eb5-41ec-897e-118d16042fd2",
+    "roleCode": "45.3",
+    "issueId": "5f49743d-a093-4daa-a1a3-bb0b38499b54",
+    "identifier": "ALG-319"
+  },
+  {
+    "agentId": "ee3277c4-bf36-4770-b904-5b4dca422ba1",
+    "roleCode": "45.4",
+    "issueId": "ad927d10-5a9a-450d-87b9-98fee2896df8",
+    "identifier": "ALG-320"
+  },
+  {
+    "agentId": "94f24b8f-8d5b-40e6-a708-e3c221869255",
+    "roleCode": "45.5",
+    "issueId": "673043ac-9c51-4582-b750-75834347c3e8",
+    "identifier": "ALG-321"
+  },
+  {
+    "agentId": "d2147a3f-19cb-45c0-a492-116fb8f85997",
+    "roleCode": "45.6",
+    "issueId": "ca56241f-03f6-4931-a11b-741ab3e3e78a",
+    "identifier": "ALG-322"
+  },
+  {
+    "agentId": "8f3bcbc4-9134-422f-b57b-f2fc8a5bf635",
+    "roleCode": "45.7",
+    "issueId": "ff6134c8-2bb1-4db2-8234-9c17eaac7776",
+    "identifier": "ALG-323"
+  },
+  {
+    "agentId": "e3beb9eb-f5a2-4f97-8bde-5e6079f9de77",
+    "roleCode": "45.8",
+    "issueId": "6fbd95e1-3829-4d37-a69d-ecc74955af4b",
+    "identifier": "ALG-324"
+  },
+  {
+    "agentId": "104368f3-f625-45ae-963b-8c5f3d50cc51",
+    "roleCode": "46.1",
+    "issueId": "2c2d8142-4587-4b4e-8fda-399d52cd2581",
+    "identifier": "ALG-325"
+  },
+  {
+    "agentId": "60203249-52df-4678-9596-2140b0f5220b",
+    "roleCode": "46.2",
+    "issueId": "4cfea14e-4451-4934-b625-e11096a2fb16",
+    "identifier": "ALG-326"
+  },
+  {
+    "agentId": "6b3362b0-dea6-4f3e-ba7a-4fafe39cf650",
+    "roleCode": "46.3",
+    "issueId": "f1cb0bea-88ef-4dd2-b2e9-1f7b24821d85",
+    "identifier": "ALG-327"
+  },
+  {
+    "agentId": "c0721e11-0e24-45a8-b4e6-95e06cabe981",
+    "roleCode": "46.4",
+    "issueId": "ffdaf59a-9eb0-4b78-b04c-27c7bd70430c",
+    "identifier": "ALG-328"
+  },
+  {
+    "agentId": "f51352dd-e91c-495d-978b-927d96259a05",
+    "roleCode": "46.5",
+    "issueId": "9b6adcf2-4abd-4cb4-a407-5ea8f4f1c81a",
+    "identifier": "ALG-329"
+  },
+  {
+    "agentId": "9104fcc3-726b-4cb0-b51f-9b7d426e7f02",
+    "roleCode": "47.1",
+    "issueId": "e3ba1059-e967-4dd2-b94b-77e08b27f416",
+    "identifier": "ALG-330"
+  },
+  {
+    "agentId": "f8743591-5cf3-4bbb-8760-af90ac4cb5af",
+    "roleCode": "47.2",
+    "issueId": "e2dd6ea2-c5c8-493f-8534-34cab26f8f27",
+    "identifier": "ALG-331"
+  },
+  {
+    "agentId": "960198db-8a15-4a70-bb0a-1ae973b70b60",
+    "roleCode": "47.3",
+    "issueId": "a76d3a5a-0b23-4fd5-9188-f6f062cdb069",
+    "identifier": "ALG-332"
+  },
+  {
+    "agentId": "565b2b0c-402a-4d17-99d5-b36aed85c2b8",
+    "roleCode": "47.4",
+    "issueId": "ac73441d-86e2-4c28-ad4d-fb92c4178bc2",
+    "identifier": "ALG-333"
+  },
+  {
+    "agentId": "57972269-26ee-405c-a5d4-a2e8bc3d9603",
+    "roleCode": "47.5",
+    "issueId": "5350fd0e-1ab0-490c-ae13-c1e1aa3bc7ad",
+    "identifier": "ALG-334"
+  },
+  {
+    "agentId": "361aee09-3826-4d80-bdde-e991dedd5a61",
+    "roleCode": "47.6",
+    "issueId": "5a8f30b6-d915-4f27-ba51-861483610886",
+    "identifier": "ALG-335"
+  },
+  {
+    "agentId": "fadf819f-9485-4fd8-ab65-4c7c6bf921f3",
+    "roleCode": "48.1",
+    "issueId": "3e985ade-bd54-4b51-a88a-08ad82e96459",
+    "identifier": "ALG-336"
+  },
+  {
+    "agentId": "acb1c4d9-0e87-4e4b-bd14-cf43d7d7f1d0",
+    "roleCode": "48.2",
+    "issueId": "cac1a8d8-f027-4e2a-959d-8c3359de724b",
+    "identifier": "ALG-337"
+  },
+  {
+    "agentId": "7f5c9d10-d150-4bbc-8690-95d0d0124422",
+    "roleCode": "48.3",
+    "issueId": "6d67241d-a9fa-49a2-96e3-f6fc3a17c26e",
+    "identifier": "ALG-338"
+  },
+  {
+    "agentId": "ad464107-b218-48bd-a1e9-276a954637a8",
+    "roleCode": "48.4",
+    "issueId": "b1946933-7a29-43dd-83f1-e3ecb24bb424",
+    "identifier": "ALG-339"
+  },
+  {
+    "agentId": "62969dc0-bf9a-4ec2-8024-1ce495b2f3d8",
+    "roleCode": "48.5",
+    "issueId": "e66a5109-b44c-43cf-8f09-67ab132271b2",
+    "identifier": "ALG-340"
+  },
+  {
+    "agentId": "541c2557-af2a-49fe-9510-b34a0419c6a6",
+    "roleCode": "48.6",
+    "issueId": "aab13f3b-8822-492e-acd0-cf09604a54d4",
+    "identifier": "ALG-341"
+  },
+  {
+    "agentId": "fba61015-1aa1-4a68-b42f-3c6b286621aa",
+    "roleCode": "49.1",
+    "issueId": "fa3db49b-5bff-4c7b-ae1f-bbf3d918ec20",
+    "identifier": "ALG-342"
+  },
+  {
+    "agentId": "45faaf92-1c44-45d8-942c-63ff7e9f5e7c",
+    "roleCode": "49.2",
+    "issueId": "d40231f8-61a4-48af-adea-cab379fe8879",
+    "identifier": "ALG-343"
+  },
+  {
+    "agentId": "5ac327c7-39a4-4dec-8093-4414192dfb3a",
+    "roleCode": "49.3",
+    "issueId": "04774bba-f271-4a44-9475-ba86a97c6f72",
+    "identifier": "ALG-344"
+  },
+  {
+    "agentId": "98b1889c-5ae0-4566-9aaa-e1dd2e350a00",
+    "roleCode": "49.4",
+    "issueId": "1ce06fee-4640-44b5-a8b7-fdab97ab0762",
+    "identifier": "ALG-345"
+  },
+  {
+    "agentId": "fc512aaf-6979-4d54-a7d5-567c22accf11",
+    "roleCode": "49.5",
+    "issueId": "0696f12a-f23e-4e4f-91bb-b795e864f15c",
+    "identifier": "ALG-346"
+  },
+  {
+    "agentId": "f17b7f93-1503-4785-bba6-416832e674a0",
+    "roleCode": "50.1",
+    "issueId": "e082cb83-3999-4054-8d00-9e873f2cc87b",
+    "identifier": "ALG-347"
+  },
+  {
+    "agentId": "705cfc13-d5ac-42f3-9c8f-13437a908318",
+    "roleCode": "50.2",
+    "issueId": "80b2813c-6113-4a8c-8cb3-7eb270dfc454",
+    "identifier": "ALG-348"
+  },
+  {
+    "agentId": "3234dba3-fc61-428a-9c29-68808b047245",
+    "roleCode": "50.3",
+    "issueId": "84d5a7c8-46ad-4d6c-9f39-57c1914bc021",
+    "identifier": "ALG-349"
+  },
+  {
+    "agentId": "0b245957-ef66-4b1d-a468-433404533e76",
+    "roleCode": "50.4",
+    "issueId": "a352e0be-4b92-446e-9f43-c5cd86a83721",
+    "identifier": "ALG-350"
+  },
+  {
+    "agentId": "ddd570e8-b1c9-47b5-8c01-7ae63ea0e52a",
+    "roleCode": "50.5",
+    "issueId": "3fb1dfce-eab9-4670-99e4-85ea8755e25a",
+    "identifier": "ALG-351"
+  },
+  {
+    "agentId": "c1ce5de3-a229-4d5d-b5d6-5205eab7b8e2",
+    "roleCode": "50.6",
+    "issueId": "d5475330-3f16-4c0c-81f5-eedbc58c9f1e",
+    "identifier": "ALG-352"
+  },
+  {
+    "agentId": "5d75fc3c-23b3-4560-9e83-1fd85a05d005",
+    "roleCode": "50.7",
+    "issueId": "c66fc15a-cca9-4d20-a072-54ccb0a31489",
+    "identifier": "ALG-353"
+  },
+  {
+    "agentId": "858c5a53-0ff8-44fa-a0a3-bf2e14e0537f",
+    "roleCode": "50.8",
+    "issueId": "3e9ffa4f-1d2f-4421-b65c-b038c6df0c76",
+    "identifier": "ALG-354"
+  },
+  {
+    "agentId": "65818e4b-71f7-4653-815d-e7853735c6d2",
+    "roleCode": "50.9",
+    "issueId": "f08c5f9c-b24e-4255-a1f8-bd9bfdf48740",
+    "identifier": "ALG-355"
+  },
+  {
+    "agentId": "5201f7ea-3538-4b37-a884-5b4295e437d6",
+    "roleCode": "50.10",
+    "issueId": "31ac31b3-8c75-4c56-bbd1-e0277711d0ff",
+    "identifier": "ALG-356"
+  },
+  {
+    "agentId": "c3e0e007-66d7-4217-99bd-6e862634de8c",
+    "roleCode": "50.11",
+    "issueId": "400b5414-101d-4e90-8642-88f2bcd1e622",
+    "identifier": "ALG-357"
+  },
+  {
+    "agentId": "f02dfee8-b59d-4ead-bf54-722cf95d35b8",
+    "roleCode": "50.12",
+    "issueId": "c1b369fe-cd5c-4135-9ed4-cf91b29db6f8",
+    "identifier": "ALG-358"
+  },
+  {
+    "agentId": "492359aa-3604-4e98-8152-da894be0736b",
+    "roleCode": "51.1",
+    "issueId": "b166e81e-c6c8-4bd4-8fc9-b6c07d1b84e3",
+    "identifier": "ALG-359"
+  },
+  {
+    "agentId": "a8c7f1d7-b668-4b56-bc09-da3ef5ab006d",
+    "roleCode": "51.2",
+    "issueId": "f37f7f2f-a23c-4672-a82a-74507a934516",
+    "identifier": "ALG-360"
+  },
+  {
+    "agentId": "16ca3046-a550-4d36-9598-58b133b597d5",
+    "roleCode": "52.1",
+    "issueId": "bbbbf96c-c1be-47f1-8927-95c191c39e20",
+    "identifier": "ALG-361"
+  },
+  {
+    "agentId": "39d887e3-e79e-4e79-9d7e-641790d211f5",
+    "roleCode": "52.2",
+    "issueId": "e9ca2fea-1eeb-40b1-bfe8-c22a683e0038",
+    "identifier": "ALG-362"
+  },
+  {
+    "agentId": "85624f2e-e502-42a6-9f5c-a7a262985329",
+    "roleCode": "52.3",
+    "issueId": "b3e57bc0-a5f7-406c-8584-9b00fd804985",
+    "identifier": "ALG-363"
+  },
+  {
+    "agentId": "31e0f91f-5c26-4350-9682-d6e2dba29df2",
+    "roleCode": "52.4",
+    "issueId": "3d0d6ee5-f814-4511-a367-f8ddf217d666",
+    "identifier": "ALG-364"
+  },
+  {
+    "agentId": "156f3053-a041-4ddc-be63-5abb98fd3a8f",
+    "roleCode": "52.5",
+    "issueId": "c9822326-26ad-4762-b71b-a55d11c75b72",
+    "identifier": "ALG-365"
+  },
+  {
+    "agentId": "8cd29d89-77da-4e04-8ec0-ffe4acfe9be5",
+    "roleCode": "52.6",
+    "issueId": "d651ef34-c351-48e5-957c-4ac0863e0baa",
+    "identifier": "ALG-366"
+  },
+  {
+    "agentId": "4b5674a2-462a-41f7-94f4-c6d1e2968640",
+    "roleCode": "53.1",
+    "issueId": "b953d4d2-b013-420a-a585-818cffdbf9ce",
+    "identifier": "ALG-367"
+  },
+  {
+    "agentId": "5530d998-804a-4c33-8afd-35963ef95f5f",
+    "roleCode": "53.2",
+    "issueId": "d4f00f49-f429-4881-b0a5-1f36b34f793b",
+    "identifier": "ALG-368"
+  },
+  {
+    "agentId": "36f48d15-c0b3-4ba2-8d3d-2d09069f8241",
+    "roleCode": "54.1",
+    "issueId": "4a41e469-ee85-43bb-864e-5de5ed37cbd6",
+    "identifier": "ALG-369"
+  },
+  {
+    "agentId": "63dc69ba-40e2-4f35-8974-2a8f6847403b",
+    "roleCode": "54.2",
+    "issueId": "950bed76-33a6-4c8d-8eb0-06a23467ad77",
+    "identifier": "ALG-370"
+  },
+  {
+    "agentId": "e3d88731-ca6c-44fe-a3df-cac90a23e773",
+    "roleCode": "55.1",
+    "issueId": "2ff43fa5-263a-44d5-b151-78ae4d2da48a",
+    "identifier": "ALG-371"
+  },
+  {
+    "agentId": "012348e8-120e-464d-b4e6-5a90bbd62d0d",
+    "roleCode": "55.2",
+    "issueId": "4084d5aa-046a-4ab2-9a50-29089d4b643e",
+    "identifier": "ALG-372"
+  }
+]

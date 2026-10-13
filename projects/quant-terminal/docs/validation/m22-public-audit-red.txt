@@ -1,0 +1,111 @@
+FFFF                                                                     [100%]
+================================== FAILURES ===================================
+_______________ test_rejected_source_is_audited_without_source ________________
+
+tmp_path = WindowsPath('C:/Users/Jonat/AppData/Local/Temp/pytest-of-Jonat/pytest-471/test_rejected_source_is_audite0')
+monkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x0000021070C508A0>
+
+    def test_rejected_source_is_audited_without_source(tmp_path, monkeypatch):
+        root, gateway, packet, _ = setup(tmp_path, monkeypatch)
+        packet['source_package']['dependencies'] = ['SECRET_UNTRUSTED']
+        with gateway:
+            with pytest.raises(DomainError):
+                gateway.submit(packet)
+>           lines = gateway.config.audit_path.read_text().splitlines()
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests\integration\test_public_security_audit.py:15: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+..\..\..\AppData\Local\Programs\Python\Python313\Lib\pathlib\_local.py:546: in read_text
+    return PathBase.read_text(self, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\..\AppData\Local\Programs\Python\Python313\Lib\pathlib\_abc.py:632: in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors, newline=newline) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = WindowsPath('C:/Users/Jonat/AppData/Local/Temp/pytest-of-Jonat/pytest-471/test_rejected_source_is_audite0/audit.jsonl')
+mode = 'r', buffering = -1, encoding = 'locale', errors = None, newline = None
+
+    def open(self, mode='r', buffering=-1, encoding=None,
+             errors=None, newline=None):
+        """
+        Open the file pointed to by this path and return a file object, as
+        the built-in open() function does.
+        """
+        if "b" not in mode:
+            encoding = io.text_encoding(encoding)
+>       return io.open(self, mode, buffering, encoding, errors, newline)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       FileNotFoundError: [Errno 2] No such file or directory: 'C:\\Users\\Jonat\\AppData\\Local\\Temp\\pytest-of-Jonat\\pytest-471\\test_rejected_source_is_audite0\\audit.jsonl'
+
+..\..\..\AppData\Local\Programs\Python\Python313\Lib\pathlib\_local.py:537: FileNotFoundError
+___________ test_admission_audit_failure_prevents_queue_and_latches ___________
+
+tmp_path = WindowsPath('C:/Users/Jonat/AppData/Local/Temp/pytest-of-Jonat/pytest-471/test_admission_audit_failure_p0')
+monkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x0000021070C52EA0>
+
+    def test_admission_audit_failure_prevents_queue_and_latches(tmp_path, monkeypatch):
+        root, gateway, packet, _ = setup(tmp_path, monkeypatch)
+        with gateway:
+            gateway.config.audit_path.mkdir()
+>           with pytest.raises(DomainError, match='audit'):
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E           Failed: DID NOT RAISE DomainError
+
+tests\integration\test_public_security_audit.py:29: Failed
+_______________ test_cancel_audit_failure_preserves_queued_job ________________
+
+tmp_path = WindowsPath('C:/Users/Jonat/AppData/Local/Temp/pytest-of-Jonat/pytest-471/test_cancel_audit_failure_pres0')
+monkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x0000021070CBE7B0>
+
+    def test_cancel_audit_failure_preserves_queued_job(tmp_path, monkeypatch):
+        root, gateway, packet, _ = setup(tmp_path, monkeypatch)
+        with gateway:
+            monkeypatch.setattr(gateway.scheduler.store, 'has_queued', lambda: False)
+            job = gateway.submit(packet)
+>           gateway.config.audit_path.unlink()
+
+tests\integration\test_public_security_audit.py:40: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = WindowsPath('C:/Users/Jonat/AppData/Local/Temp/pytest-of-Jonat/pytest-471/test_cancel_audit_failure_pres0/audit.jsonl')
+missing_ok = False
+
+    def unlink(self, missing_ok=False):
+        """
+        Remove this file or link.
+        If the path is a directory, use rmdir() instead.
+        """
+        try:
+>           os.unlink(self)
+E           FileNotFoundError: [WinError 2] The system cannot find the file specified: 'C:\\Users\\Jonat\\AppData\\Local\\Temp\\pytest-of-Jonat\\pytest-471\\test_cancel_audit_failure_pres0\\audit.jsonl'
+
+..\..\..\AppData\Local\Programs\Python\Python313\Lib\pathlib\_local.py:746: FileNotFoundError
+_____________________ test_parser_rejections_are_audited ______________________
+
+tmp_path = WindowsPath('C:/Users/Jonat/AppData/Local/Temp/pytest-of-Jonat/pytest-471/test_parser_rejections_are_aud0')
+monkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x0000021070D5E470>
+
+    def test_parser_rejections_are_audited(tmp_path, monkeypatch):
+        root, gateway, _, _ = setup(tmp_path, monkeypatch)
+        with TestClient(create_app(root, PROJECT, isolated_gateway=gateway), base_url='http://127.0.0.1') as client:
+>           assert client.post('/sandbox/strategies', content='{').status_code == 422
+E           AssertionError: assert 415 == 422
+E            +  where 415 = <Response [415 Unsupported Media Type]>.status_code
+E            +    where <Response [415 Unsupported Media Type]> = post('/sandbox/strategies', content='{')
+E            +      where post = <starlette.testclient.TestClient object at 0x000002107119CAD0>.post
+
+tests\integration\test_public_security_audit.py:51: AssertionError
+============================== warnings summary ===============================
+.venv\Lib\site-packages\fastapi\testclient.py:1
+  C:\Users\Jonat\algoalpha\projects\quant-terminal\.venv\Lib\site-packages\fastapi\testclient.py:1: StarletteDeprecationWarning: Using `httpx` with `starlette.testclient` is deprecated; install `httpx2` instead.
+    from starlette.testclient import TestClient as TestClient  # noqa
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+=========================== short test summary info ===========================
+FAILED tests/integration/test_public_security_audit.py::test_rejected_source_is_audited_without_source
+FAILED tests/integration/test_public_security_audit.py::test_admission_audit_failure_prevents_queue_and_latches
+FAILED tests/integration/test_public_security_audit.py::test_cancel_audit_failure_preserves_queued_job
+FAILED tests/integration/test_public_security_audit.py::test_parser_rejections_are_audited
+4 failed, 1 warning in 3.51s

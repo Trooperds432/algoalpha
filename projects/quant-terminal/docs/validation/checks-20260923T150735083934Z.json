@@ -1,0 +1,81 @@
+{
+  "at": "20260923T150735083934Z",
+  "python": "3.13.15 (tags/v3.13.15:4061bc4, Aug  5 2026, 13:05:39) [MSC v.1944 64 bit (AMD64)]",
+  "files": {
+    "src\\quant_terminal\\__init__.py": "fac90e3e4543031b65eaf1b3022920e7453b55549874d953504fca4017c0af0f",
+    "src\\quant_terminal\\config.py": "70ac764303cc8643be25bafc60b652ea43beb4c4f4a466b021e5381372450ac8",
+    "src\\quant_terminal\\core\\__init__.py": "89d45cf461972de09c433a629a8c967b49afa141946c08faa541a1b4ddec23e6",
+    "src\\quant_terminal\\core\\clock.py": "c5c5cc9a9a6558f3829fd6e26b7558cbc995b26951957a237a13b2a825cf0008",
+    "src\\quant_terminal\\core\\enums.py": "ff555bf1355e38b0ab144a0d889757a76cc0cc9b431d64868b73761626be3a50",
+    "src\\quant_terminal\\core\\events.py": "a41fa16b325325b1058648a650d73d332667eda4ac5a9f332bbd88615babc84b",
+    "src\\quant_terminal\\core\\exceptions.py": "879dcbacef34305cc520d42986f8fa11c89e8f885043d2845a783d7943dfd711",
+    "src\\quant_terminal\\core\\identifiers.py": "443c98476bdb0ff8b5f2b38179abbd6056c37c317903f9669a1f8129cca60d84",
+    "src\\quant_terminal\\core\\serialization.py": "3e462da3f422033f0620d8c9cafa0c401790e14ed17eaebb8be3a0d7dc3e469a",
+    "src\\quant_terminal\\logging.py": "18d1199874e705790971ef0d3bf61f4413c4bd4ee0fbf40ec4d9be6ea461fd4e",
+    "tests\\integration\\test_foundation.py": "45ce6ccc1031bffc99816c06ea161b3747a1260e689b5d1ab617e43124e67163",
+    "tests\\unit\\test_config_logging.py": "a6cddd6d62de8bad7ec5946fa347b3578a2519d67f06bcebc2d81a3be55e0df3",
+    "tests\\unit\\test_core.py": "eb4e61bdb3760675072ce149f45555204f86e73d2a48f18b8a829726c7c71e6c"
+  },
+  "results": [
+    {
+      "command": [
+        "C:\\Users\\Jonat\\algoalpha\\projects\\quant-terminal\\.venv\\Scripts\\python.exe",
+        "-m",
+        "ruff",
+        "check",
+        "src",
+        "tests"
+      ],
+      "exit_code": 0,
+      "stdout": "All checks passed!\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "C:\\Users\\Jonat\\algoalpha\\projects\\quant-terminal\\.venv\\Scripts\\python.exe",
+        "-m",
+        "ruff",
+        "format",
+        "--check",
+        "src",
+        "tests"
+      ],
+      "exit_code": 0,
+      "stdout": "13 files already formatted\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "C:\\Users\\Jonat\\algoalpha\\projects\\quant-terminal\\.venv\\Scripts\\python.exe",
+        "-m",
+        "mypy",
+        "src"
+      ],
+      "exit_code": 0,
+      "stdout": "Success: no issues found in 10 source files\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "C:\\Users\\Jonat\\algoalpha\\projects\\quant-terminal\\.venv\\Scripts\\python.exe",
+        "-m",
+        "pytest",
+        "-q"
+      ],
+      "exit_code": 0,
+      "stdout": "........................                                                 [100%]\n24 passed in 0.36s\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "C:\\Users\\Jonat\\algoalpha\\projects\\quant-terminal\\.venv\\Scripts\\python.exe",
+        "-m",
+        "pip",
+        "check"
+      ],
+      "exit_code": 0,
+      "stdout": "No broken requirements found.\n",
+      "stderr": ""
+    }
+  ]
+}

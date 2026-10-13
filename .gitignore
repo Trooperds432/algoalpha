@@ -1,0 +1,55 @@
+# Machine-local Paperclip instance: live database, AI logins, secrets, codex-home auth
+.paperclip/
+
+# Secrets / credentials (never commit)
+.env
+.env.*
+**/secrets/
+**/ai-local-logins/
+**/codex-home/
+auth.json
+*credentials*
+*.pem
+*.key
+
+# Local Claude/agent settings
+.claude/settings.local.json
+.playwright-mcp/
+
+# Dependencies and virtual environments (reinstall on the new device)
+node_modules/
+.venv/
+.venv-*/
+venv/
+
+# Python / test caches
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.hypothesis/
+*.egg-info/
+
+# Build outputs
+dist/
+projects/quant-terminal/build/
+projects/quant-terminal/tmp/
+
+# Transient SQLite sidecar files (the .sqlite experiment records themselves are kept)
+*.db-journal
+*.db-wal
+*.db-shm
+*.sqlite-journal
+*.sqlite-wal
+*.sqlite-shm
+
+# OS noise
+Thumbs.db
+desktop.ini
+.DS_Store
+
+# Locked runtime files
+*.lock
+!uv.lock
+!requirements-dev.lock

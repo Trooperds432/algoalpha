@@ -1,0 +1,12 @@
+{
+  "baselineIndependentlyAccepted": 99,
+  "reviews": [
+    {
+      "roleCode": "10.11",
+      "runId": "a1ebdb2d-0585-40a9-b605-aec03beaf925",
+      "report": "docs/validation/m22-independent-findings-10-11-20261013.json",
+      "integrationPending": true
+    }
+  ],
+  "finalReleaseApproved": false
+}

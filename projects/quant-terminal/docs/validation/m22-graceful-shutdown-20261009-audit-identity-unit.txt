@@ -1,0 +1,5 @@
+.............................s.....ss                                    [100%]
+=========================== short test summary info ===========================
+SKIPPED [1] tests\unit\test_sandbox_podman.py:679: Windows host does not grant symlink creation privilege
+SKIPPED [2] tests\unit\test_sandbox_podman.py:741: POSIX permissions control
+34 passed, 3 skipped in 5.96s

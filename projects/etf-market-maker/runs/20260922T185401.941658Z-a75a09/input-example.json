@@ -1,0 +1,33 @@
+{
+  "base_nav": 100,
+  "currency": "USD",
+  "underlying_assets": [
+    {
+      "symbol": "0",
+      "weight": 0.25,
+      "price": 100.4,
+      "reference_price": 100,
+      "fx": 1,
+      "reference_fx": 1,
+      "timestamp": "2025-01-01T00:00:00Z"
+    },
+    {
+      "symbol": "1",
+      "weight": 0.25,
+      "price": 100.2,
+      "reference_price": 100,
+      "fx": 1,
+      "reference_fx": 1,
+      "timestamp": "2025-01-01T00:00:00Z"
+    },
+    {
+      "symbol": "2",
+      "weight": 0.5,
+      "price": 100.2,
+      "reference_price": 100,
+      "fx": 1,
+      "reference_fx": 1,
+      "timestamp": "2025-01-01T00:00:00Z"
+    }
+  ]
+}

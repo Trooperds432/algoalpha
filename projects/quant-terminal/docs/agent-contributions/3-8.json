@@ -1,0 +1,51 @@
+{
+  "agent_id": "b6d88baf-13aa-49c3-9731-caf291e480e0",
+  "issue_id": "d3a55e37-80ed-4a33-9ed9-996aaf118446",
+  "paperclip_run_id": "d9354a0b-7777-4a21-bd2d-fe9c2b1edba7",
+  "selected_run_id": null,
+  "recorded_at": "2026-10-03T19:11:50.643680+00:00",
+  "http_interactions": [
+    {
+      "timestamp": "2026-10-03T19:11:46.569703+00:00",
+      "method": "GET",
+      "url": "http://127.0.0.1:8765/health",
+      "status": null,
+      "sha256": null,
+      "body": null,
+      "error": "<urlopen error [WinError 10061] No connection could be made because the target machine actively refused it>"
+    },
+    {
+      "timestamp": "2026-10-03T19:11:48.620276+00:00",
+      "method": "GET",
+      "url": "http://127.0.0.1:8765/runs",
+      "status": null,
+      "sha256": null,
+      "body": null,
+      "error": "<urlopen error [WinError 10061] No connection could be made because the target machine actively refused it>"
+    }
+  ],
+  "requirement": "CDO data lineage: a retrievable released run must bind metrics to immutable dataset snapshot IDs, content hashes, row counts, instruments, sample interval, analytics settings and execution assumptions (M8 contract), allowing reproducible research review.",
+  "failure_case": "Required terminal service unavailable: both GET /health and GET /runs refused the connection (WinError 10061); no run ID returned, so dependent run-detail GET cannot be constructed honestly.",
+  "finding": {
+    "verdict": "inconclusive",
+    "severity": "high for this acceptance task",
+    "confidence": "high for observed unavailability only",
+    "classification": "environment limitation",
+    "recommendation": "Release coordinator/service owner restores the authorized local terminal. CDO then resumes the three GETs and inspects dataset lineage, metric conventions, costs and audit evidence before issuing a role verdict. No runtime modification is authorized in this issue."
+  },
+  "limitations": [
+    "No HTTP response bytes exist for failed connections; status, SHA256 and parsed body are null, not invented.",
+    "Initial health attempt also failed with WinError 10061; it aborted before recording a timestamp. The timestamped bounded checks here preserve the failure with structured evidence.",
+    "No manifest or metrics were returned or inspected; no selected run, data sample dates, licensing validation, point-in-time validation or transaction-cost verification is claimed.",
+    "M21 release report is documentary evidence, not a fresh rerun. Milestone state records M16, M21 and M22 in_progress.",
+    "No strategy execution, broker access, external research, campaign rerun or final-release/eligibility approval."
+  ],
+  "documents_reviewed": [
+    "AGENTS.md",
+    "docs/roadmap.md",
+    "coordination/milestone-state.json",
+    "docs/m22-acceptance-contract.md",
+    "docs/validation/m21-release-hardening.md",
+    "docs/m8-experiment-contract.md"
+  ]
+}

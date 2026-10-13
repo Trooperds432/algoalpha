@@ -1,0 +1,11 @@
+﻿{
+    "firm_name":  "AlgoAlpha",
+    "firm_slug":  "algoalpha",
+    "goals":  "Quantitative research using advanced mathematical models to seek a durable edge and consistent benchmark outperformance over decades; Renaissance Technologies is an aspiration, not an expected performance claim.",
+    "strategy_summary":  "Build strategies from scratch.",
+    "risk_profile":  "Owner-defined staged discovery, promotion, and final paper simulation thresholds.",
+    "benchmark":  "Unspecified: research must propose an appropriate benchmark before comparative evaluation.",
+    "team":  "Custom institutional role catalogue provided by owner; preserve mandates and independent risk oversight.",
+    "creation_timestamp":  "2026-09-22T14:31:27.4540827Z",
+    "paper_trading_only":  true
+}

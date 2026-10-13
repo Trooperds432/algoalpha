@@ -1,0 +1,13 @@
+{
+  "agentId": "e7f5692a-deda-4554-a929-be132d2c6ca8",
+  "roleCode": "12.5",
+  "issueId": "0e6a5bff-30c5-46db-a151-8f3aa9850405",
+  "identifier": "ALG-443",
+  "artifact": "docs/agent-contributions/12-5.md",
+  "status": "coordinator_integrating",
+  "scope": "internal runtime owner implementation; independent integration/review pending",
+  "actualRunId": "7bad6659-96ec-4f58-a959-f262b240c5d0",
+  "originalRunStatus": "failed_acpx_terminal_limit",
+  "stoppedResumedRunId": "0c1a4ec1-a6ea-49a5-b8c5-96227c4414c1",
+  "handover": "Coordinator takes exclusive source/test integration ownership; resumed writer stopped to prevent overlap. Independent review found teardown proof defect; source contribution not yet accepted."
+}

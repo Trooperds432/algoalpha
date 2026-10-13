@@ -1,0 +1,46 @@
+.........................................F..                             [100%]
+================================== FAILURES ===================================
+__________ test_queued_job_is_not_hidden_by_newer_cancelled_history ___________
+
+tmp_path = WindowsPath('C:/Users/Jonat/AppData/Local/Temp/pytest-of-Jonat/pytest-486/test_queued_job_is_not_hidden_0')
+monkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x0000018ADFB91860>
+
+    def test_queued_job_is_not_hidden_by_newer_cancelled_history(tmp_path, monkeypatch):
+        import threading
+    
+        _, gateway, packet, _ = setup(tmp_path, monkeypatch)
+        start = threading.Event()
+        loop = gateway._loop
+        monkeypatch.setattr(gateway, "_loop", lambda: (start.wait(), loop()))
+        with gateway:
+            try:
+                oldest = gateway.submit(packet)
+                stored = gateway.scheduler.store.get(oldest["id"])
+                for _ in range(100):
+                    job = gateway.scheduler.store._enqueue(stored["kind"], stored["request"])
+                    gateway.scheduler.cancel(job["id"])
+                assert all(job["status"] == "cancelled" for job in gateway.scheduler.store.list())
+            finally:
+                start.set()
+            deadline = time.monotonic() + 10
+            while time.monotonic() < deadline:
+                result = gateway.scheduler.store.get(oldest["id"])
+                if result["status"] == "succeeded":
+                    break
+                time.sleep(0.05)
+>           assert result["status"] == "succeeded"
+E           AssertionError: assert 'failed' == 'succeeded'
+E             
+E             - succeeded
+E             + failed
+
+tests\integration\test_isolated_gateway.py:277: AssertionError
+============================== warnings summary ===============================
+.venv\Lib\site-packages\fastapi\testclient.py:1
+  C:\Users\Jonat\algoalpha\projects\quant-terminal\.venv\Lib\site-packages\fastapi\testclient.py:1: StarletteDeprecationWarning: Using `httpx` with `starlette.testclient` is deprecated; install `httpx2` instead.
+    from starlette.testclient import TestClient as TestClient  # noqa
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+=========================== short test summary info ===========================
+FAILED tests/integration/test_isolated_gateway.py::test_queued_job_is_not_hidden_by_newer_cancelled_history
+1 failed, 43 passed, 1 warning in 28.83s

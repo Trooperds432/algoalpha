@@ -1,0 +1,106 @@
+{
+  "runtime_report": "docs/validation/m22-real-gateway-20261008T195348Z.json",
+  "source_hashes_match": true,
+  "audit_path": "C:\\Users\\Jonat\\algoalpha\\runtime\\m22-gateway-20261008T195348Z-281f07ab\\audit.jsonl",
+  "audit_sha256": "1db4bc2ac2c3026420b161c2a5cdab37d97cab68553406e5f13b286eea39b0a9",
+  "public_events": [
+    {
+      "backend": "podman",
+      "backend_identity_sha256": "34742565afd541623b37aac659cc1f643833231b837eab6de70f17620dff7110",
+      "backend_version": "5.8.8",
+      "budget": {
+        "cpu_seconds": 3,
+        "memory_bytes": 64000000,
+        "open_files": 32,
+        "output_bytes": 4096,
+        "process_count": 4,
+        "scratch_bytes": 0,
+        "scratch_files": 0,
+        "wall_seconds": 5
+      },
+      "engine_version": "1.0.0rc1",
+      "event": "public_admission_decision",
+      "image": "sha256:083a4ee8f04d4e4c91bc735931eccd5780c8e4e8ba7acfae04b6234fc573fc29",
+      "job_id": "3cbc5cfd94ca4d569535501b74c2d099",
+      "phase": "decision_before_commit",
+      "reason": "admit",
+      "source_sha256": "e6b6ada2860fbc700bf266120abc0c0cde2c0117e482add0edf45bda30657a2a",
+      "target_status": "queued",
+      "timestamp": "2026-10-08T19:54:01.128209+00:00"
+    },
+    {
+      "backend": "podman",
+      "backend_identity_sha256": "34742565afd541623b37aac659cc1f643833231b837eab6de70f17620dff7110",
+      "backend_version": "5.8.8",
+      "budget": {
+        "cpu_seconds": 3,
+        "memory_bytes": 64000000,
+        "open_files": 32,
+        "output_bytes": 4096,
+        "process_count": 4,
+        "scratch_bytes": 0,
+        "scratch_files": 0,
+        "wall_seconds": 5
+      },
+      "engine_version": "1.0.0rc1",
+      "event": "public_admission_decision",
+      "image": "sha256:083a4ee8f04d4e4c91bc735931eccd5780c8e4e8ba7acfae04b6234fc573fc29",
+      "job_id": "a15ee49058994f8a9295e4d036bf2a3a",
+      "phase": "decision_before_commit",
+      "reason": "admit",
+      "source_sha256": "62f5e0863c3d353c2115d74e9ff65190d5718f1d0a3e4b69456b37620a07f4fb",
+      "target_status": "queued",
+      "timestamp": "2026-10-08T19:54:24.306720+00:00"
+    },
+    {
+      "backend": "podman",
+      "backend_identity_sha256": "34742565afd541623b37aac659cc1f643833231b837eab6de70f17620dff7110",
+      "backend_version": "5.8.8",
+      "budget": {
+        "cpu_seconds": 3,
+        "memory_bytes": 64000000,
+        "open_files": 32,
+        "output_bytes": 4096,
+        "process_count": 4,
+        "scratch_bytes": 0,
+        "scratch_files": 0,
+        "wall_seconds": 5
+      },
+      "engine_version": "1.0.0rc1",
+      "event": "public_cancel_decision",
+      "image": "sha256:083a4ee8f04d4e4c91bc735931eccd5780c8e4e8ba7acfae04b6234fc573fc29",
+      "job_id": "a15ee49058994f8a9295e4d036bf2a3a",
+      "phase": "decision_before_commit",
+      "reason": "cancel",
+      "source_sha256": "62f5e0863c3d353c2115d74e9ff65190d5718f1d0a3e4b69456b37620a07f4fb",
+      "target_status": "cancelling",
+      "timestamp": "2026-10-08T19:54:29.823316+00:00"
+    },
+    {
+      "backend": "podman",
+      "backend_identity_sha256": "34742565afd541623b37aac659cc1f643833231b837eab6de70f17620dff7110",
+      "backend_version": "5.8.8",
+      "budget": {
+        "cpu_seconds": 3,
+        "memory_bytes": 64000000,
+        "open_files": 32,
+        "output_bytes": 4096,
+        "process_count": 4,
+        "scratch_bytes": 0,
+        "scratch_files": 0,
+        "wall_seconds": 5
+      },
+      "engine_version": "1.0.0rc1",
+      "event": "public_admission_decision",
+      "image": "sha256:083a4ee8f04d4e4c91bc735931eccd5780c8e4e8ba7acfae04b6234fc573fc29",
+      "job_id": "e8f0f6a78e914d4f8f9c1e7efc76a744",
+      "phase": "decision_before_commit",
+      "reason": "admit",
+      "source_sha256": "e6b6ada2860fbc700bf266120abc0c0cde2c0117e482add0edf45bda30657a2a",
+      "target_status": "queued",
+      "timestamp": "2026-10-08T19:54:45.605051+00:00"
+    }
+  ],
+  "inventory": [],
+  "final_release": false
+}

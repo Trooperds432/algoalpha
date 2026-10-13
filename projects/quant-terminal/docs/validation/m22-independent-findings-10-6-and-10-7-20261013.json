@@ -1,0 +1,51 @@
+{
+  "at": "2026-10-13T10:39:03.120956+00:00",
+  "reviewer": "/root/consolidated_release",
+  "verdict": "both bounded reviews accepted separately",
+  "identityEvidence": "Fresh exact live agent/assignee/context issue, succeeded/done, aware timestamps in own windows, artifact hashes and exact three HTTP bodies/bytes verified.",
+  "reproduction": "10.6 drawdown fraction conversion .45694305%, duration/recovery metadata and unavailable fields verified; owner thresholds bytes/hash/body match. Independent fixtures:10% two-day unrecovered and25% three-day recovered; selected raw NAV not recomputed.10.7 gross/net average equality; concentration weight.1 normalizes to1 with HHI1/effective holdings1; zero risky weight rejects. Four source/doc hashes current.",
+  "roles": [
+    {
+      "roleCode": "10.6",
+      "identifier": "ALG-550",
+      "agentId": "1fca7877-0769-43b0-a3b4-58cb33b4f2c6",
+      "runId": "d30047a4-2515-4459-b181-9583dc311dd3",
+      "issueId": "b2a6adbc-0b60-4a65-8472-b766a033db61",
+      "startedAt": "2026-10-13T10:33:17.880Z",
+      "finishedAt": "2026-10-13T10:36:15.648Z",
+      "freshRootVerification": {
+        "runId": "d30047a4-2515-4459-b181-9583dc311dd3",
+        "issueId": "b2a6adbc-0b60-4a65-8472-b766a033db61",
+        "artifact": "docs\\agent-contributions\\m22\\retry-2\\10-6.md",
+        "artifactSha256": "e021b327403c6eff60bf90a29b1caff6143b187f11c50ea754f5d0765659bdfe",
+        "interactionArtifact": "docs\\agent-contributions\\m22\\retry-2\\10-6.json",
+        "interactionSha256": "1480d4d272e9bd68d562f161476545ab6339676e6bbf623bd7a783150e5d5987",
+        "verifiedAt": "2026-10-13T10:39:02.890374+00:00",
+        "scope": "identity/files/actual HTTP evidence verified; role finding needs independent review"
+      },
+      "independentScope": "Bounded participation accepted with partial monitoring verdict: drawdown disclosure and recovery examples verified; no selected raw-NAV recomputation or rolling-alert enforcement."
+    },
+    {
+      "roleCode": "10.7",
+      "identifier": "ALG-551",
+      "agentId": "e28f2531-dca5-4202-ac14-aaf0452e4e0d",
+      "runId": "5cd249e6-d982-41a3-974d-bcf5c0780e2b",
+      "issueId": "51f9c98d-465a-440d-8cf6-f1fe01b92d59",
+      "startedAt": "2026-10-13T10:33:18.095Z",
+      "finishedAt": "2026-10-13T10:36:05.418Z",
+      "freshRootVerification": {
+        "runId": "5cd249e6-d982-41a3-974d-bcf5c0780e2b",
+        "issueId": "51f9c98d-465a-440d-8cf6-f1fe01b92d59",
+        "artifact": "docs\\agent-contributions\\m22\\retry-2\\10-7.md",
+        "artifactSha256": "c60bf8e6bc0e82f043899669c7a52dd77828d642d7baa6eb37e9335042e761bc",
+        "interactionArtifact": "docs\\agent-contributions\\m22\\retry-2\\10-7.json",
+        "interactionSha256": "72e92b67eb8c697f5cdad17fa562584ddd59438a90e7519600730e4675ee5354",
+        "verifiedAt": "2026-10-13T10:39:03.120849+00:00",
+        "scope": "identity/files/actual HTTP evidence verified; role finding needs independent review"
+      },
+      "independentScope": "Long-only gross/net equality and risky-weight concentration/zero-weight rejection independently reproduced; no peak leverage or classifications/limit enforcement."
+    }
+  ],
+  "limits": "Shared prior-candidate synthetic fixture; no rolling monitoring, alerts, current underwater state, peak leverage, classifications or risk-limit enforcement. Failed ALG-548/549 excluded.",
+  "finalReleaseApproved": false
+}

@@ -1,0 +1,31 @@
+{
+  "at": "2026-10-09T19:58:19.196706+00:00",
+  "clean_install": "C:\\Users\\Jonat\\algoalpha\\runtime\\m22-clean-install-20261009",
+  "archive": "C:\\Users\\Jonat\\algoalpha\\runtime\\quant-terminal-m22-20261009-audit-identity.zip",
+  "archive_sha256": "5c8c4f454c23c5df5d27b21e42fcf82921daccf6b36345bdb79292e97b3db97c",
+  "final_release": false,
+  "result": "failed",
+  "http_smoke": {
+    "/health": {
+      "status": 200,
+      "sha256": "849f6f3f3f0d8e7c926729f285c59746d1db5add8a8aa7670f2e2d4371072ba6"
+    },
+    "/ready": {
+      "status": 200,
+      "sha256": "3757e738ad1e5c143439cc27ac07016fa988e8e86b6d0b1fa2147add27503260"
+    },
+    "/sandbox/capabilities": {
+      "status": 200,
+      "sha256": "69524e14013ad9d628196667a40403522c572bce358bc1b785562df9fb028f0e"
+    },
+    "/ui/": {
+      "status": 200,
+      "sha256": "68c87a5f60e88a7e13a6d7797c91330b9e8d3d3376caf1125179f4a117053f78"
+    }
+  },
+  "installed_source_hashes_match": true,
+  "replay_exit_code": 1,
+  "replay_stderr": "{\"error\":\"DomainError\",\"message\":\"Project root must identify the executing source tree\"}\n",
+  "failure_type": "AssertionError",
+  "failure_reason": "{\"error\":\"DomainError\",\"message\":\"Project root must identify the executing source tree\"}\n"
+}

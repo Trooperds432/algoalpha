@@ -1,0 +1,36 @@
+{
+  "created_at": "2026-09-22T18:56:22.489453+00:00",
+  "seed": 7,
+  "count": 1000,
+  "epochs": 10,
+  "phase": "discovery",
+  "source_hashes": {
+    "C:\\Users\\Jonat\\algoalpha\\projects\\etf-market-maker\\desk.py": "55e754168559565559b1f7b61a0dd9f2482f2f7a77a7115b76371f6916c2e3f6",
+    "C:\\Users\\Jonat\\algoalpha\\projects\\etf-market-maker\\flow_models.py": "7d0d9b8e1a464b6f89c9d9d14c71e645a85da9758f6138f034434cb5d7ed241f",
+    "C:\\Users\\Jonat\\algoalpha\\projects\\etf-market-maker\\risk_governance.py": "30f3a9c7ba0409945b5d74ee50b9de45dff8df99748f64179a8aaf47249695c1",
+    "C:\\Users\\Jonat\\algoalpha\\projects\\etf-market-maker\\run.py": "3977a7278649538f289ce13a27f484f4b68faf4d496ed20c6af7f62028b926e1",
+    "C:\\Users\\Jonat\\algoalpha\\config\\risk-thresholds.json": "adb241a825a79449b6ea815ee67a1cf0bf41c560498d35759f3e85eaa7ce5f99"
+  },
+  "numpy_version": "2.5.2",
+  "output_dir": "C:\\Users\\Jonat\\algoalpha\\projects\\etf-market-maker\\runs\\20260922T185622.489453Z-2aab64",
+  "artifacts": [
+    "agent-messages.jsonl",
+    "capacity.json",
+    "capital.json",
+    "cost-sensitivity.json",
+    "equity.csv",
+    "fair-value.json",
+    "fills.csv",
+    "input-example.json",
+    "inventory.json",
+    "models",
+    "order-flow.json",
+    "quotes.json",
+    "report.html",
+    "report.json",
+    "risk.json",
+    "stress.json",
+    "synthetic-events.jsonl",
+    "validation.json"
+  ]
+}

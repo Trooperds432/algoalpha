@@ -1,0 +1,14 @@
+{
+  "startedAt": "2026-10-13T10:44:40.636713+00:00",
+  "baselineAttemptRecords": 163,
+  "baselineEvidenceVerified": 99,
+  "baselineIndependentlyAccepted": 99,
+  "maxNewAssignments": 20,
+  "maxActiveEmployees": 2,
+  "minutes": 90,
+  "targetAttemptRecordCount": 183,
+  "coordinatorToolSession": 38746,
+  "state": "active",
+  "reviewIntegration": "Queue independent read-only decisions in separate reports; mutate receipts/progress only after coordinator lease free.",
+  "finalReleaseApproved": false
+}

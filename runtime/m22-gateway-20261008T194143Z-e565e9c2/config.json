@@ -1,0 +1,1 @@
+{"image": "sha256:083a4ee8f04d4e4c91bc735931eccd5780c8e4e8ba7acfae04b6234fc573fc29", "seccomp_profile": "/home/user/algoalpha-seccomp.json", "audit_path": "C:\\Users\\Jonat\\algoalpha\\runtime\\m22-gateway-20261008T194143Z-e565e9c2\\audit.jsonl", "acceptance_path": "C:\\Users\\Jonat\\algoalpha\\runtime\\m22-gateway-20261008T194143Z-e565e9c2\\receipt.json"}

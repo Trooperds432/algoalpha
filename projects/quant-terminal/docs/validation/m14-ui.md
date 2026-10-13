@@ -1,0 +1,11 @@
+# M14 research terminal UI validation
+
+Status: **PASS** (2026-09-30).
+
+The built React interface is served by the loopback M13 API at `/ui/`. It contains Dashboard, Strategies, Data, Backtests, Optimisation, Walk Forward, Monte Carlo and Experiments workspaces. The browser is a client of recorded API values and has no brokerage order route. The local synthetic 43-session ETF-DEMO state was used to exercise backtest, optimisation, walk-forward, Monte Carlo and comparison workflows; the initial browser walkthrough is recorded in the M14 work notes and the independent QA report at `docs/agent-contributions/27-4.md`.
+
+The first independent review blocked acceptance on three findings. QA-M14-01: comparison rounded nonzero `loss_fraction` to zero and hid insufficient-sample status. QA-M14-02: Plotly omitted report axis labels. QA-M14-03: opening a prior run lost its associated job journal. All three were corrected and reproduced in the browser against the existing synthetic state. Expected shortfall 95 now shows 0.46% and 0.23% with `insufficient_sample` and the full reason; equity, underwater and benchmark charts render UTC time/NAV, UTC session/Drawdown fraction, and UTC time/Normalized value axis labels; the prior backtest's Logs view shows one event with its correct job ID and succeeded status. A 1280 px report view exposed overflow from its details grid; a min-width grid correction eliminated it (document scroll width and client width both 1265 px).
+
+Fresh frontend production build and 12 tests passed on 2026-09-30. The full Python check passed: Ruff lint/format, mypy for 67 source files, 253 tests passed, two Windows symlink capability skips, and dependency consistency. Evidence: `docs/validation/checks-20260930T194806922490Z.json`. The frontend build emits a Plotly bundle-size warning, not a failed check.
+
+The bounded independent retest passed all three original Paperclip QA defects and the 1280 px layout check. Its exact rendered-browser and API evidence is in `docs/validation/m14-independent-retest.md`. The reviewer was a Codex subagent; no new Paperclip employee run is claimed. M14 acceptance is limited to a local synthetic research terminal, with no broker execution or validated trading edge.

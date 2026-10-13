@@ -1,0 +1,1616 @@
+[
+  {
+    "id": "7a5e4274-efb5-4ff1-a195-3fcb592e1ca6",
+    "companyId": "3b1d401d-7010-4eed-acd1-be7d52372c07",
+    "folderId": null,
+    "folderPath": null,
+    "key": "paperclipai/optional/browser/agent-browser",
+    "slug": "agent-browser",
+    "name": "agent-browser",
+    "description": "Drive a real browser to inspect or interact with a web page or app — navigate, take screenshots, read console and network, fill simple forms — for verification tasks, not unattended automation.",
+    "sourceType": "catalog",
+    "sourceLocator": "C:\\Users\\Jonat\\algoalpha\\.paperclip\\instances\\default\\skills\\3b1d401d-7010-4eed-acd1-be7d52372c07\\__catalog__\\agent-browser--1ffa5880cd",
+    "sourceRef": "sha256:eabb2c9f7b5e1a27ebb1e05a711d61433a266478154cd671a685e99e67aadea2",
+    "trustLevel": "markdown_only",
+    "compatibility": "compatible",
+    "fileInventory": [
+      {
+        "path": "SKILL.md",
+        "kind": "skill"
+      }
+    ],
+    "iconUrl": null,
+    "color": null,
+    "tagline": "Drive a real browser to inspect or interact with a web page or app — navigate, take screenshots, read console and networ",
+    "authorName": "Paperclip",
+    "homepageUrl": null,
+    "categories": [
+      "browser",
+      "puppeteer",
+      "playwright",
+      "verification"
+    ],
+    "sharingScope": "company",
+    "publicShareToken": null,
+    "forkedFromSkillId": null,
+    "forkedFromCompanyId": null,
+    "starCount": 0,
+    "installCount": 1,
+    "forkCount": 0,
+    "currentVersionId": null,
+    "createdAt": "2026-09-22T14:47:54.234Z",
+    "updatedAt": "2026-09-22T19:22:53.961Z",
+    "attachedAgentCount": 42,
+    "editable": false,
+    "editableReason": "This skill source is read-only.",
+    "sourceLabel": "C:\\Users\\Jonat\\algoalpha\\.paperclip\\instances\\default\\skills\\3b1d401d-7010-4eed-acd1-be7d52372c07\\__catalog__\\agent-browser--1ffa5880cd",
+    "sourceBadge": "catalog",
+    "sourcePath": null,
+    "catalogKind": "optional",
+    "originHash": "sha256:eabb2c9f7b5e1a27ebb1e05a711d61433a266478154cd671a685e99e67aadea2",
+    "packageName": "@paperclipai/skills-catalog",
+    "packageVersion": "0.3.1"
+  },
+  {
+    "id": "15b9b86a-9bf9-4edb-b5fd-03017d932da1",
+    "companyId": "3b1d401d-7010-4eed-acd1-be7d52372c07",
+    "folderId": "59249614-563d-4f72-807f-26ee60e1b59c",
+    "folderPath": "bundled/paperclip-core",
+    "key": "paperclipai/paperclip/agentmail",
+    "slug": "agentmail",
+    "name": "agentmail",
+    "description": "Use your assigned AgentMail inbox to read email tasks, explicitly send or reply, and check delivery. Provided automatically by your inbox assignment.",
+    "sourceType": "local_path",
+    "sourceLocator": "C:\\Users\\Jonat\\AppData\\Local\\npm-cache\\_npx\\43414d9b790239bb\\node_modules\\@paperclipai\\server\\skills\\agentmail",
+    "sourceRef": null,
+    "trustLevel": "markdown_only",
+    "compatibility": "compatible",
+    "fileInventory": [
+      {
+        "path": "SKILL.md",
+        "kind": "skill"
+      }
+    ],
+    "iconUrl": null,
+    "color": null,
+    "tagline": null,
+    "authorName": null,
+    "homepageUrl": null,
+    "categories": [],
+    "sharingScope": "company",
+    "publicShareToken": null,
+    "forkedFromSkillId": null,
+    "forkedFromCompanyId": null,
+    "starCount": 0,
+    "installCount": 1,
+    "forkCount": 0,
+    "currentVersionId": null,
+    "createdAt": "2026-09-22T14:36:06.818Z",
+    "updatedAt": "2026-09-22T14:36:06.816Z",
+    "attachedAgentCount": 0,
+    "editable": false,
+    "editableReason": "Bundled Paperclip skills are read-only.",
+    "sourceLabel": "Paperclip bundled",
+    "sourceBadge": "paperclip",
+    "sourcePath": null,
+    "catalogKind": null,
+    "originHash": null,
+    "packageName": null,
+    "packageVersion": null
+  },
+  {
+    "id": "1aba4658-e839-45f6-8416-647c87d14075",
+    "companyId": "3b1d401d-7010-4eed-acd1-be7d52372c07",
+    "folderId": null,
+    "folderPath": null,
+    "key": "paperclipai/optional/product/design-critique",
+    "slug": "design-critique",
+    "name": "design-critique",
+    "description": "Give a structured product design critique — user job clarity, hierarchy, affordance, error states, accessibility, and consistency — focused on what to change, in what order, and why.",
+    "sourceType": "catalog",
+    "sourceLocator": "C:\\Users\\Jonat\\algoalpha\\.paperclip\\instances\\default\\skills\\3b1d401d-7010-4eed-acd1-be7d52372c07\\__catalog__\\design-critique--9e260a5f5d",
+    "sourceRef": "sha256:429f94df398a0697042b5bbe4755b1ff1a230aa5f41d99118ad37493ac65d21c",
+    "trustLevel": "markdown_only",
+    "compatibility": "compatible",
+    "fileInventory": [
+      {
+        "path": "SKILL.md",
+        "kind": "skill"
+      }
+    ],
+    "iconUrl": null,
+    "color": null,
+    "tagline": "Give a structured product design critique — user job clarity, hierarchy, affordance, error states, accessibility, and co",
+    "authorName": "Paperclip",
+    "homepageUrl": null,
+    "categories": [
+      "design",
+      "product",
+      "ux",
+      "review"
+    ],
+    "sharingScope": "company",
+    "publicShareToken": null,
+    "forkedFromSkillId": null,
+    "forkedFromCompanyId": null,
+    "starCount": 0,
+    "installCount": 1,
+    "forkCount": 0,
+    "currentVersionId": null,
+    "createdAt": "2026-09-22T19:22:54.707Z",
+    "updatedAt": "2026-09-22T19:22:54.713Z",
+    "attachedAgentCount": 0,
+    "editable": false,
+    "editableReason": "This skill source is read-only.",
+    "sourceLabel": "C:\\Users\\Jonat\\algoalpha\\.paperclip\\instances\\default\\skills\\3b1d401d-7010-4eed-acd1-be7d52372c07\\__catalog__\\design-critique--9e260a5f5d",
+    "sourceBadge": "catalog",
+    "sourcePath": null,
+    "catalogKind": "optional",
+    "originHash": "sha256:429f94df398a0697042b5bbe4755b1ff1a230aa5f41d99118ad37493ac65d21c",
+    "packageName": "@paperclipai/skills-catalog",
+    "packageVersion": "0.3.1"
+  },
+  {
+    "id": "15f9b790-6f60-4b77-b8fe-de62e1100eb8",
+    "companyId": "3b1d401d-7010-4eed-acd1-be7d52372c07",
+    "folderId": "df13b662-14d9-4b1f-b84f-a61a3d867938",
+    "folderPath": "bundled/docs",
+    "key": "paperclipai/bundled/docs/doc-maintenance",
+    "slug": "doc-maintenance",
+    "name": "doc-maintenance",
+    "description": "Keep project docs aligned with recent code and feature changes — detect drift, update affected pages, and add release-relevant notes without rewriting unchanged sections.",
+    "sourceType": "catalog",
+    "sourceLocator": "C:\\Users\\Jonat\\algoalpha\\.paperclip\\instances\\default\\skills\\3b1d401d-7010-4eed-acd1-be7d52372c07\\__catalog__\\doc-maintenance--8a1a257305",
+    "sourceRef": "sha256:2e02299210fd17c1fe1867b4ee8c144a11b6fe1fe481f83b8268cfbaaf10f9aa",
+    "trustLevel": "markdown_only",
+    "compatibility": "compatible",
+    "fileInventory": [
+      {
+        "path": "SKILL.md",
+        "kind": "skill"
+      }
+    ],
+    "iconUrl": null,
+    "color": null,
+    "tagline": "Keep project docs aligned with recent code and feature changes — detect drift, update affected pages, and add release-re",
+    "authorName": "Paperclip",
+    "homepageUrl": null,
+    "categories": [
+      "docs",
+      "documentation",
+      "release-notes"
+    ],
+    "sharingScope": "company",
+    "publicShareToken": null,
+    "forkedFromSkillId": null,
+    "forkedFromCompanyId": null,
+    "starCount": 0,
+    "installCount": 1,
+    "forkCount": 0,
+    "currentVersionId": null,
+    "createdAt": "2026-09-22T19:22:55.510Z",
+    "updatedAt": "2026-09-22T19:22:55.513Z",
+    "attachedAgentCount": 0,
+    "editable": false,
+    "editableReason": "This skill source is read-only.",
+    "sourceLabel": "C:\\Users\\Jonat\\algoalpha\\.paperclip\\instances\\default\\skills\\3b1d401d-7010-4eed-acd1-be7d52372c07\\__catalog__\\doc-maintenance--8a1a257305",
+    "sourceBadge": "catalog",
+    "sourcePath": null,
+    "catalogKind": "bundled",
+    "originHash": "sha256:2e02299210fd17c1fe1867b4ee8c144a11b6fe1fe481f83b8268cfbaaf10f9aa",
+    "packageName": "@paperclipai/skills-catalog",
+    "packageVersion": "0.3.1"
+  },
+  {
+    "id": "6232baf9-3071-4c3e-bdc4-5af11a6c8d64",
+    "companyId": "3b1d401d-7010-4eed-acd1-be7d52372c07",
+    "folderId": "07558f6a-4ef8-433b-a9a5-1b9582cbce43",
+    "folderPath": "bundled/software-development",
+    "key": "paperclipai/bundled/software-development/github-pr-workflow",
+    "slug": "github-pr-workflow",
+    "name": "github-pr-workflow",
+    "description": "Prepare a GitHub pull request from a feature branch — branch hygiene, commit shape, title/body, verification notes, screenshots for UI work, and replies to review comments.",
+    "sourceType": "catalog",
+    "sourceLocator": "C:\\Users\\Jonat\\algoalpha\\.paperclip\\instances\\default\\skills\\3b1d401d-7010-4eed-acd1-be7d52372c07\\__catalog__\\github-pr-workflow--43d4ea0362",
+    "sourceRef": "sha256:90f278c89aa0711be150c1cd2456ca25620d02f36995b113ca9837d756a37f6c",
+    "trustLevel": "markdown_only",
+    "compatibility": "compatible",
+    "fileInventory": [
+      {
+        "path": "SKILL.md",
+        "kind": "skill"
+      }
+    ],
+    "iconUrl": null,
+    "color": null,
+    "tagline": "Prepare a GitHub pull request from a feature branch — branch hygiene, commit shape, title/body, verification notes, scre",
+    "authorName": "Paperclip",
+    "homepageUrl": null,
+    "categories": [
+      "github",
+      "pull-requests",
+      "code-review",
+      "release",
+      "software-development"
+    ],
+    "sharingScope": "company",
+    "publicShareToken": null,
+    "forkedFromSkillId": null,
+    "forkedFromCompanyId": null,
+    "starCount": 0,
+    "installCount": 1,
+    "forkCount": 0,
+    "currentVersionId": null,
+    "createdAt": "2026-09-22T19:22:56.267Z",
+    "updatedAt": "2026-09-22T19:22:56.271Z",
+    "attachedAgentCount": 0,
+    "editable": false,
+    "editableReason": "This skill source is read-only.",
+    "sourceLabel": "C:\\Users\\Jonat\\algoalpha\\.paperclip\\instances\\default\\skills\\3b1d401d-7010-4eed-acd1-be7d52372c07\\__catalog__\\github-pr-workflow--43d4ea0362",
+    "sourceBadge": "catalog",
+    "sourcePath": null,
+    "catalogKind": "bundled",
+    "originHash": "sha256:90f278c89aa0711be150c1cd2456ca25620d02f36995b113ca9837d756a37f6c",
+    "packageName": "@paperclipai/skills-catalog",
+    "packageVersion": "0.3.1"
+  },
+  {
+    "id": "160d9c18-caa5-43e1-aa90-85dbd1ec72e9",
+    "companyId": "3b1d401d-7010-4eed-acd1-be7d52372c07",
+    "folderId": "d45da644-4792-4627-83d6-83db236a3c61",
+    "folderPath": "bundled/paperclip-operations",
+    "key": "paperclipai/bundled/paperclip-operations/issue-triage",
+    "slug": "issue-triage",
+    "name": "issue-triage",
+    "description": "Triage Paperclip inbox issues that are stale, blocked, in-review, or assigned-but-not-progressing, and decide a single next action per issue (resume, reassign, unblock, escalate, or close).",
+    "sourceType": "catalog",
+    "sourceLocator": "C:\\Users\\Jonat\\algoalpha\\.paperclip\\instances\\default\\skills\\3b1d401d-7010-4eed-acd1-be7d52372c07\\__catalog__\\issue-triage--527450ed81",
+    "sourceRef": "sha256:88dc13560371fb364963782cb4f6eeb4090fcde92ee3774479428ed6b90e11c1",
+    "trustLevel": "markdown_only",
+    "compatibility": "compatible",
+    "fileInventory": [
+      {
+        "path": "SKILL.md",
+        "kind": "skill"
+      }
+    ],
+    "iconUrl": null,
+    "color": null,
+    "tagline": "Triage Paperclip inbox issues that are stale, blocked, in-review, or assigned-but-not-progressing, and decide a single n",
+    "authorName": "Paperclip",
+    "homepageUrl": null,
+    "categories": [
+      "paperclip",
+      "triage",
+      "inbox",
+      "workflow",
+      "paperclip-operations"
+    ],
+    "sharingScope": "company",
+    "publicShareToken": null,
+    "forkedFromSkillId": null,
+    "forkedFromCompanyId": null,
+    "starCount": 0,
+    "installCount": 1,
+    "forkCount": 0,
+    "currentVersionId": null,
+    "createdAt": "2026-09-22T19:22:57.069Z",
+    "updatedAt": "2026-09-22T19:22:57.073Z",
+    "attachedAgentCount": 0,
+    "editable": false,
+    "editableReason": "This skill source is read-only.",
+    "sourceLabel": "C:\\Users\\Jonat\\algoalpha\\.paperclip\\instances\\default\\skills\\3b1d401d-7010-4eed-acd1-be7d52372c07\\__catalog__\\issue-triage--527450ed81",
+    "sourceBadge": "catalog",
+    "sourcePath": null,
+    "catalogKind": "bundled",
+    "originHash": "sha256:88dc13560371fb364963782cb4f6eeb4090fcde92ee3774479428ed6b90e11c1",
+    "packageName": "@paperclipai/skills-catalog",
+    "packageVersion": "0.3.1"
+  },
+  {
+    "id": "a4e351b7-fe8d-4407-b305-c6616dacd78c",
+    "companyId": "3b1d401d-7010-4eed-acd1-be7d52372c07",
+    "folderId": null,
+    "folderPath": null,
+    "key": "paperclipai/optional/research/last30days",
+    "slug": "last30days",
+    "name": "last30days",
+    "description": "Research what people actually say about any topic in the last 30 days. Pulls posts and engagement from Reddit, X, YouTube, TikTok, Hacker News, Polymarket, GitHub, and the web.",
+    "sourceType": "catalog",
+    "sourceLocator": "C:\\Users\\Jonat\\algoalpha\\.paperclip\\instances\\default\\skills\\3b1d401d-7010-4eed-acd1-be7d52372c07\\__catalog__\\last30days--d3b1147cc2",
+    "sourceRef": "sha256:9e11e9d2ed3d2062273d131a826cdeedea39bdd269063e2f73ca7f218770c769",
+    "trustLevel": "scripts_executables",
+    "compatibility": "compatible",
+    "fileInventory": [
+      {
+        "path": "SKILL.md",
+        "kind": "skill"
+      },
+      {
+        "path": "agents/openai.yaml",
+        "kind": "other"
+      },
+      {
+        "path": "references/save-html-brief.md",
+        "kind": "reference"
+      },
+      {
+        "path": "scripts/briefing.py",
+        "kind": "script"
+      },
+      {
+        "path": "scripts/compare.sh",
+        "kind": "script"
+      },
+      {
+        "path": "scripts/last30days.py",
+        "kind": "script"
+      },
+      {
+        "path": "scripts/lib/__init__.py",
+        "kind": "script"
+      },
+      {
+        "path": "scripts/lib/bird_x.py",
+        "kind": "script"
+      },
+      {
+        "path": "scripts/lib/bluesky.py",
+        "kind": "script"
+      },
+      {
+        "path": "scripts/lib/categories.py",
+        "kind": "script"
+      },
+      {
+        "path": "scripts/lib/chrome_cookies.py",
+        "kind": "script"
+      },
+      {
+        "path": "scripts/lib/cluster.py",
+        "kind": "script"
+      },
+      {
+        "path": "scripts/lib/competitors.py",
+        "kind": "script"
+      },
+      {
+        "path": "scripts/lib/cookie_extract.py",
+        "kind": "script"
+      },
+      {
+        "path": "scripts/lib/dates.py",
+        "kind": "script"
+      },
+      {
+        "path": "scripts/lib/dedupe.py",
+        "kind": "script"
+      },
+      {
+        "path": "scripts/lib/digg.py",
+        "kind": "script"
+      },
+      {
+        "path": "scripts/lib/entity_extract.py",
+        "kind": "script"
+      },
+      {
+        "path": "scripts/lib/env.py",
+        "kind": "script"
+      },
+      {
+        "path": "scripts/lib/fanout.py",
+        "kind": "script"
+      },
+      {
+        "path": "scripts/lib/fusion.py",
+        "kind": "script"
+      },
+      {
+        "path": "scripts/lib/github.py",
+        "kind": "script"
+      },
+      {
+        "path": "scripts/lib/grounding.py",
+        "kind": "script"
+      },
+      {
+        "path": "scripts/lib/hackernews.py",
+        "kind": "script"
+      },
+      {
+        "path": "scripts/lib/html_render.py",
+        "kind": "script"
+      },
+      {
+        "path": "scripts/lib/http.py",
+        "kind": "script"
+      },
+      {
+        "path": "scripts/lib/instagram.py",
+        "kind": "script"
+      },
+      {
+        "path": "scripts/lib/log.py",
+        "kind": "script"
+      },
+      {
+        "path": "scripts/lib/normalize.py",
+        "kind": "script"
+      },
+      {
+        "path": "scripts/lib/perplexity.py",
+        "kind": "script"
+      },
+      {
+        "path": "scripts/lib/pinterest.py",
+        "kind": "script"
+      },
+      {
+        "path": "scripts/lib/pipeline.py",
+        "kind": "script"
+      },
+      {
+        "path": "scripts/lib/planner.py",
+        "kind": "script"
+      },
+      {
+        "path": "scripts/lib/polymarket.py",
+        "kind": "script"
+      },
+      {
+        "path": "scripts/lib/preflight.py",
+        "kind": "script"
+      },
+      {
+        "path": "scripts/lib/providers.py",
+        "kind": "script"
+      },
+      {
+        "path": "scripts/lib/quality_nudge.py",
+        "kind": "script"
+      },
+      {
+        "path": "scripts/lib/query.py",
+        "kind": "script"
+      },
+      {
+        "path": "scripts/lib/reddit_enrich.py",
+        "kind": "script"
+      },
+      {
+        "path": "scripts/lib/reddit_public.py",
+        "kind": "script"
+      },
+      {
+        "path": "scripts/lib/reddit.py",
+        "kind": "script"
+      },
+      {
+        "path": "scripts/lib/relevance.py",
+        "kind": "script"
+      },
+      {
+        "path": "scripts/lib/render.py",
+        "kind": "script"
+      },
+      {
+        "path": "scripts/lib/rerank.py",
+        "kind": "script"
+      },
+      {
+        "path": "scripts/lib/resolve.py",
+        "kind": "script"
+      },
+      {
+        "path": "scripts/lib/safari_cookies.py",
+        "kind": "script"
+      },
+      {
+        "path": "scripts/lib/schema.py",
+        "kind": "script"
+      },
+      {
+        "path": "scripts/lib/setup_wizard.py",
+        "kind": "script"
+      },
+      {
+        "path": "scripts/lib/signals.py",
+        "kind": "script"
+      },
+      {
+        "path": "scripts/lib/skill_meta.py",
+        "kind": "script"
+      },
+      {
+        "path": "scripts/lib/snippet.py",
+        "kind": "script"
+      },
+      {
+        "path": "scripts/lib/subproc.py",
+        "kind": "script"
+      },
+      {
+        "path": "scripts/lib/threads.py",
+        "kind": "script"
+      },
+      {
+        "path": "scripts/lib/tiktok.py",
+        "kind": "script"
+      },
+      {
+        "path": "scripts/lib/truthsocial.py",
+        "kind": "script"
+      },
+      {
+        "path": "scripts/lib/ui.py",
+        "kind": "script"
+      },
+      {
+        "path": "scripts/lib/vendor/bird-search/bird-search.mjs",
+        "kind": "script"
+      },
+      {
+        "path": "scripts/lib/vendor/bird-search/lib/cookies.js",
+        "kind": "script"
+      },
+      {
+        "path": "scripts/lib/vendor/bird-search/lib/features.json",
+        "kind": "script"
+      },
+      {
+        "path": "scripts/lib/vendor/bird-search/lib/paginate-cursor.js",
+        "kind": "script"
+      },
+      {
+        "path": "scripts/lib/vendor/bird-search/lib/query-ids.json",
+        "kind": "script"
+      },
+      {
+        "path": "scripts/lib/vendor/bird-search/lib/runtime-features.js",
+        "kind": "script"
+      },
+      {
+        "path": "scripts/lib/vendor/bird-search/lib/runtime-query-ids.js",
+        "kind": "script"
+      },
+      {
+        "path": "scripts/lib/vendor/bird-search/lib/twitter-client-base.js",
+        "kind": "script"
+      },
+      {
+        "path": "scripts/lib/vendor/bird-search/lib/twitter-client-constants.js",
+        "kind": "script"
+      },
+      {
+        "path": "scripts/lib/vendor/bird-search/lib/twitter-client-features.js",
+        "kind": "script"
+      },
+      {
+        "path": "scripts/lib/vendor/bird-search/lib/twitter-client-search.js",
+        "kind": "script"
+      },
+      {
+        "path": "scripts/lib/vendor/bird-search/lib/twitter-client-types.js",
+        "kind": "script"
+      },
+      {
+        "path": "scripts/lib/vendor/bird-search/lib/twitter-client-utils.js",
+        "kind": "script"
+      },
+      {
+        "path": "scripts/lib/vendor/bird-search/LICENSE",
+        "kind": "script"
+      },
+      {
+        "path": "scripts/lib/vendor/bird-search/package.json",
+        "kind": "script"
+      },
+      {
+        "path": "scripts/lib/xai_x.py",
+        "kind": "script"
+      },
+      {
+        "path": "scripts/lib/xiaohongshu_api.py",
+        "kind": "script"
+      },
+      {
+        "path": "scripts/lib/xquik.py",
+        "kind": "script"
+      },
+      {
+        "path": "scripts/lib/xurl_x.py",
+        "kind": "script"
+      },
+      {
+        "path": "scripts/lib/youtube_yt.py",
+        "kind": "script"
+      },
+      {
+        "path": "scripts/setup-keychain.sh",
+        "kind": "script"
+      },
+      {
+        "path": "scripts/store.py",
+        "kind": "script"
+      },
+      {
+        "path": "scripts/watchlist.py",
+        "kind": "script"
+      }
+    ],
+    "iconUrl": null,
+    "color": null,
+    "tagline": "Research what people actually say about any topic in the last 30 days. Pulls posts and engagement from Reddit, X, YouTub",
+    "authorName": "mvanhorn",
+    "homepageUrl": "https://github.com/mvanhorn/last30days-skill",
+    "categories": [
+      "research",
+      "last-30-days",
+      "social-media",
+      "trends",
+      "citations",
+      "reddit",
+      "x",
+      "youtube"
+    ],
+    "sharingScope": "company",
+    "publicShareToken": null,
+    "forkedFromSkillId": null,
+    "forkedFromCompanyId": null,
+    "starCount": 0,
+    "installCount": 1,
+    "forkCount": 0,
+    "currentVersionId": null,
+    "createdAt": "2026-09-22T19:23:14.831Z",
+    "updatedAt": "2026-09-22T19:23:14.900Z",
+    "attachedAgentCount": 0,
+    "editable": false,
+    "editableReason": "This skill source is read-only.",
+    "sourceLabel": "C:\\Users\\Jonat\\algoalpha\\.paperclip\\instances\\default\\skills\\3b1d401d-7010-4eed-acd1-be7d52372c07\\__catalog__\\last30days--d3b1147cc2",
+    "sourceBadge": "catalog",
+    "sourcePath": null,
+    "catalogKind": "optional",
+    "originHash": "sha256:9e11e9d2ed3d2062273d131a826cdeedea39bdd269063e2f73ca7f218770c769",
+    "packageName": "@paperclipai/skills-catalog",
+    "packageVersion": "0.3.1"
+  },
+  {
+    "id": "1474d0a7-19b4-4ae0-b8c7-a42537a42f4d",
+    "companyId": "3b1d401d-7010-4eed-acd1-be7d52372c07",
+    "folderId": "59249614-563d-4f72-807f-26ee60e1b59c",
+    "folderPath": "bundled/paperclip-core",
+    "key": "paperclipai/paperclip/paperclip",
+    "slug": "paperclip",
+    "name": "paperclip",
+    "description": "Interact with the Paperclip control plane API for task coordination and governance. Use when checking assignments, updating issue status, posting comments, delegating work, managing routines, or calling Paperclip API endpoints.",
+    "sourceType": "local_path",
+    "sourceLocator": "C:\\Users\\Jonat\\AppData\\Local\\npm-cache\\_npx\\43414d9b790239bb\\node_modules\\@paperclipai\\server\\skills\\paperclip",
+    "sourceRef": null,
+    "trustLevel": "scripts_executables",
+    "compatibility": "compatible",
+    "fileInventory": [
+      {
+        "path": "references/api-reference.md",
+        "kind": "reference"
+      },
+      {
+        "path": "references/artifacts.md",
+        "kind": "reference"
+      },
+      {
+        "path": "references/cases.md",
+        "kind": "reference"
+      },
+      {
+        "path": "references/company-skills.md",
+        "kind": "reference"
+      },
+      {
+        "path": "references/issue-workspaces.md",
+        "kind": "reference"
+      },
+      {
+        "path": "references/routines.md",
+        "kind": "reference"
+      },
+      {
+        "path": "references/workflows.md",
+        "kind": "reference"
+      },
+      {
+        "path": "scripts/paperclip-upload-artifact.sh",
+        "kind": "script"
+      },
+      {
+        "path": "SKILL.md",
+        "kind": "skill"
+      }
+    ],
+    "iconUrl": null,
+    "color": null,
+    "tagline": null,
+    "authorName": null,
+    "homepageUrl": null,
+    "categories": [],
+    "sharingScope": "company",
+    "publicShareToken": null,
+    "forkedFromSkillId": null,
+    "forkedFromCompanyId": null,
+    "starCount": 0,
+    "installCount": 1,
+    "forkCount": 0,
+    "currentVersionId": null,
+    "createdAt": "2026-09-22T14:36:06.836Z",
+    "updatedAt": "2026-09-22T14:36:06.834Z",
+    "attachedAgentCount": 2,
+    "editable": false,
+    "editableReason": "Bundled Paperclip skills are read-only.",
+    "sourceLabel": "Paperclip bundled",
+    "sourceBadge": "paperclip",
+    "sourcePath": null,
+    "catalogKind": null,
+    "originHash": null,
+    "packageName": null,
+    "packageVersion": null
+  },
+  {
+    "id": "b549657f-21a8-42e3-abf7-7a17ff3c79cd",
+    "companyId": "3b1d401d-7010-4eed-acd1-be7d52372c07",
+    "folderId": "59249614-563d-4f72-807f-26ee60e1b59c",
+    "folderPath": "bundled/paperclip-core",
+    "key": "paperclipai/paperclip/paperclip-board",
+    "slug": "paperclip-board",
+    "name": "paperclip-board",
+    "description": "Manage a Paperclip company as a board member via chat. Use when the user wants onboarding, company or agent management, approvals, task monitoring, cost oversight, or work product review in the Paperclip control plane.",
+    "sourceType": "local_path",
+    "sourceLocator": "C:\\Users\\Jonat\\AppData\\Local\\npm-cache\\_npx\\43414d9b790239bb\\node_modules\\@paperclipai\\server\\skills\\paperclip-board",
+    "sourceRef": null,
+    "trustLevel": "markdown_only",
+    "compatibility": "compatible",
+    "fileInventory": [
+      {
+        "path": "SKILL.md",
+        "kind": "skill"
+      }
+    ],
+    "iconUrl": null,
+    "color": null,
+    "tagline": null,
+    "authorName": null,
+    "homepageUrl": null,
+    "categories": [],
+    "sharingScope": "company",
+    "publicShareToken": null,
+    "forkedFromSkillId": null,
+    "forkedFromCompanyId": null,
+    "starCount": 0,
+    "installCount": 1,
+    "forkCount": 0,
+    "currentVersionId": null,
+    "createdAt": "2026-09-22T14:36:06.853Z",
+    "updatedAt": "2026-09-22T14:36:06.852Z",
+    "attachedAgentCount": 2,
+    "editable": false,
+    "editableReason": "Bundled Paperclip skills are read-only.",
+    "sourceLabel": "Paperclip bundled",
+    "sourceBadge": "paperclip",
+    "sourcePath": null,
+    "catalogKind": null,
+    "originHash": null,
+    "packageName": null,
+    "packageVersion": null
+  },
+  {
+    "id": "e879cbd5-5420-47b0-b9df-cf8f1b2109da",
+    "companyId": "3b1d401d-7010-4eed-acd1-be7d52372c07",
+    "folderId": "29d7baca-3810-4bd4-9c48-7308dc0e6d59",
+    "folderPath": "bundled/product",
+    "key": "paperclipai/bundled/product/paperclip-capsules",
+    "slug": "paperclip-capsules",
+    "name": "paperclip-capsules",
+    "description": "Generate, implement, or review Paperclip capsule visuals. Use for capsule art, agent capsules, heartbeat status capsules, identicons, capsule banks, or brand-usage validation.",
+    "sourceType": "catalog",
+    "sourceLocator": "C:\\Users\\Jonat\\algoalpha\\.paperclip\\instances\\default\\skills\\3b1d401d-7010-4eed-acd1-be7d52372c07\\__catalog__\\paperclip-capsules--fa1d1c93d9",
+    "sourceRef": "sha256:a2b26cf6895affeeb70c85567a061094450a59bd3c4fdcf28ee65858599ac12c",
+    "trustLevel": "markdown_only",
+    "compatibility": "compatible",
+    "fileInventory": [
+      {
+        "path": "SKILL.md",
+        "kind": "skill"
+      },
+      {
+        "path": "references/generator-workflows.md",
+        "kind": "reference"
+      },
+      {
+        "path": "references/hero-capsule-bank.md",
+        "kind": "reference"
+      },
+      {
+        "path": "references/identicon-prototyper.md",
+        "kind": "reference"
+      },
+      {
+        "path": "references/individual-status-capsules.md",
+        "kind": "reference"
+      }
+    ],
+    "iconUrl": null,
+    "color": null,
+    "tagline": "Generate, implement, or review Paperclip capsule visuals. Use for capsule art, agent capsules, heartbeat status capsules",
+    "authorName": "Paperclip",
+    "homepageUrl": null,
+    "categories": [
+      "paperclip",
+      "brand",
+      "capsules",
+      "agents",
+      "visual-design",
+      "hyperframes",
+      "product"
+    ],
+    "sharingScope": "company",
+    "publicShareToken": null,
+    "forkedFromSkillId": null,
+    "forkedFromCompanyId": null,
+    "starCount": 0,
+    "installCount": 1,
+    "forkCount": 0,
+    "currentVersionId": null,
+    "createdAt": "2026-09-22T19:23:16.098Z",
+    "updatedAt": "2026-09-22T19:23:16.106Z",
+    "attachedAgentCount": 0,
+    "editable": false,
+    "editableReason": "This skill source is read-only.",
+    "sourceLabel": "C:\\Users\\Jonat\\algoalpha\\.paperclip\\instances\\default\\skills\\3b1d401d-7010-4eed-acd1-be7d52372c07\\__catalog__\\paperclip-capsules--fa1d1c93d9",
+    "sourceBadge": "catalog",
+    "sourcePath": null,
+    "catalogKind": "bundled",
+    "originHash": "sha256:a2b26cf6895affeeb70c85567a061094450a59bd3c4fdcf28ee65858599ac12c",
+    "packageName": "@paperclipai/skills-catalog",
+    "packageVersion": "0.3.1"
+  },
+  {
+    "id": "aa6df627-9f84-4b23-9a0d-bdb588e8198a",
+    "companyId": "3b1d401d-7010-4eed-acd1-be7d52372c07",
+    "folderId": "59249614-563d-4f72-807f-26ee60e1b59c",
+    "folderPath": "bundled/paperclip-core",
+    "key": "paperclipai/paperclip/paperclip-converting-plans-to-tasks",
+    "slug": "paperclip-converting-plans-to-tasks",
+    "name": "paperclip-converting-plans-to-tasks",
+    "description": "Convert Paperclip plans into executable issue graphs. Use when asked to plan, scope, or break down Paperclip company work into assigned tasks with specialty fit, dependencies, blockers, and parallelization.",
+    "sourceType": "local_path",
+    "sourceLocator": "C:\\Users\\Jonat\\AppData\\Local\\npm-cache\\_npx\\43414d9b790239bb\\node_modules\\@paperclipai\\server\\skills\\paperclip-converting-plans-to-tasks",
+    "sourceRef": null,
+    "trustLevel": "markdown_only",
+    "compatibility": "compatible",
+    "fileInventory": [
+      {
+        "path": "SKILL.md",
+        "kind": "skill"
+      }
+    ],
+    "iconUrl": null,
+    "color": null,
+    "tagline": null,
+    "authorName": null,
+    "homepageUrl": null,
+    "categories": [],
+    "sharingScope": "company",
+    "publicShareToken": null,
+    "forkedFromSkillId": null,
+    "forkedFromCompanyId": null,
+    "starCount": 0,
+    "installCount": 1,
+    "forkCount": 0,
+    "currentVersionId": null,
+    "createdAt": "2026-09-22T14:36:06.863Z",
+    "updatedAt": "2026-09-22T14:36:06.862Z",
+    "attachedAgentCount": 2,
+    "editable": false,
+    "editableReason": "Bundled Paperclip skills are read-only.",
+    "sourceLabel": "Paperclip bundled",
+    "sourceBadge": "paperclip",
+    "sourcePath": null,
+    "catalogKind": null,
+    "originHash": null,
+    "packageName": null,
+    "packageVersion": null
+  },
+  {
+    "id": "ad05eb02-fa72-4823-b9cc-82549d4fff04",
+    "companyId": "3b1d401d-7010-4eed-acd1-be7d52372c07",
+    "folderId": "59249614-563d-4f72-807f-26ee60e1b59c",
+    "folderPath": "bundled/paperclip-core",
+    "key": "paperclipai/paperclip/paperclip-create-agent",
+    "slug": "paperclip-create-agent",
+    "name": "paperclip-create-agent",
+    "description": "Create new agents in Paperclip with governance-aware hiring. Use when you need to inspect adapter configuration options, compare existing agent configs, draft a new agent prompt/config, and submit a hire request.",
+    "sourceType": "local_path",
+    "sourceLocator": "C:\\Users\\Jonat\\AppData\\Local\\npm-cache\\_npx\\43414d9b790239bb\\node_modules\\@paperclipai\\server\\skills\\paperclip-create-agent",
+    "sourceRef": null,
+    "trustLevel": "markdown_only",
+    "compatibility": "compatible",
+    "fileInventory": [
+      {
+        "path": "references/agent-instruction-templates.md",
+        "kind": "reference"
+      },
+      {
+        "path": "references/agents/coder.md",
+        "kind": "reference"
+      },
+      {
+        "path": "references/agents/qa.md",
+        "kind": "reference"
+      },
+      {
+        "path": "references/agents/securityengineer.md",
+        "kind": "reference"
+      },
+      {
+        "path": "references/agents/uxdesigner.md",
+        "kind": "reference"
+      },
+      {
+        "path": "references/api-reference.md",
+        "kind": "reference"
+      },
+      {
+        "path": "references/baseline-role-guide.md",
+        "kind": "reference"
+      },
+      {
+        "path": "references/draft-review-checklist.md",
+        "kind": "reference"
+      },
+      {
+        "path": "SKILL.md",
+        "kind": "skill"
+      }
+    ],
+    "iconUrl": null,
+    "color": null,
+    "tagline": null,
+    "authorName": null,
+    "homepageUrl": null,
+    "categories": [],
+    "sharingScope": "company",
+    "publicShareToken": null,
+    "forkedFromSkillId": null,
+    "forkedFromCompanyId": null,
+    "starCount": 0,
+    "installCount": 1,
+    "forkCount": 0,
+    "currentVersionId": null,
+    "createdAt": "2026-09-22T14:36:06.874Z",
+    "updatedAt": "2026-09-22T14:36:06.873Z",
+    "attachedAgentCount": 2,
+    "editable": false,
+    "editableReason": "Bundled Paperclip skills are read-only.",
+    "sourceLabel": "Paperclip bundled",
+    "sourceBadge": "paperclip",
+    "sourcePath": null,
+    "catalogKind": null,
+    "originHash": null,
+    "packageName": null,
+    "packageVersion": null
+  },
+  {
+    "id": "aef2de7f-4510-4775-92b4-17e0cbc444fb",
+    "companyId": "3b1d401d-7010-4eed-acd1-be7d52372c07",
+    "folderId": "59249614-563d-4f72-807f-26ee60e1b59c",
+    "folderPath": "bundled/paperclip-core",
+    "key": "paperclipai/paperclip/para-memory-files",
+    "slug": "para-memory-files",
+    "name": "para-memory-files",
+    "description": "Use a file-based PARA memory system to store, retrieve, and organize durable knowledge across sessions. Trigger on saving facts, daily notes, entity records, weekly synthesis, recall, tacit user patterns, or plan memory.",
+    "sourceType": "local_path",
+    "sourceLocator": "C:\\Users\\Jonat\\AppData\\Local\\npm-cache\\_npx\\43414d9b790239bb\\node_modules\\@paperclipai\\server\\skills\\para-memory-files",
+    "sourceRef": null,
+    "trustLevel": "markdown_only",
+    "compatibility": "compatible",
+    "fileInventory": [
+      {
+        "path": "references/schemas.md",
+        "kind": "reference"
+      },
+      {
+        "path": "SKILL.md",
+        "kind": "skill"
+      }
+    ],
+    "iconUrl": null,
+    "color": null,
+    "tagline": null,
+    "authorName": null,
+    "homepageUrl": null,
+    "categories": [],
+    "sharingScope": "company",
+    "publicShareToken": null,
+    "forkedFromSkillId": null,
+    "forkedFromCompanyId": null,
+    "starCount": 0,
+    "installCount": 1,
+    "forkCount": 0,
+    "currentVersionId": null,
+    "createdAt": "2026-09-22T14:36:06.885Z",
+    "updatedAt": "2026-09-22T14:36:06.884Z",
+    "attachedAgentCount": 2,
+    "editable": false,
+    "editableReason": "Bundled Paperclip skills are read-only.",
+    "sourceLabel": "Paperclip bundled",
+    "sourceBadge": "paperclip",
+    "sourcePath": null,
+    "catalogKind": null,
+    "originHash": null,
+    "packageName": null,
+    "packageVersion": null
+  },
+  {
+    "id": "a93588af-050d-41f0-9c37-c227738558e9",
+    "companyId": "3b1d401d-7010-4eed-acd1-be7d52372c07",
+    "folderId": null,
+    "folderPath": null,
+    "key": "paperclipai/optional/software-development/prepare-mcp-integration",
+    "slug": "prepare-mcp-integration",
+    "name": "prepare-mcp-integration",
+    "description": "Prepare MCP/vendor integrations through cited research, a content PR, exact-revision human approval, and one governed Paperclip connector PR per approved connection. Use for new integration research and delivery; not for ad hoc connector coding that bypasses the playbooks.",
+    "sourceType": "catalog",
+    "sourceLocator": "C:\\Users\\Jonat\\algoalpha\\.paperclip\\instances\\default\\skills\\3b1d401d-7010-4eed-acd1-be7d52372c07\\__catalog__\\prepare-mcp-integration--ba9ce8d383",
+    "sourceRef": "sha256:84f2a28d7d004393719684f2b435e5ee01ddc58591e0dfeb73d72c7605db7f49",
+    "trustLevel": "markdown_only",
+    "compatibility": "compatible",
+    "fileInventory": [
+      {
+        "path": "SKILL.md",
+        "kind": "skill"
+      },
+      {
+        "path": "examples/notion-mcp-research-gate.md",
+        "kind": "markdown"
+      }
+    ],
+    "iconUrl": null,
+    "color": null,
+    "tagline": "Prepare MCP/vendor integrations through cited research, a content PR, exact-revision human approval, and one governed Pa",
+    "authorName": "Paperclip",
+    "homepageUrl": null,
+    "categories": [
+      "mcp",
+      "integrations",
+      "connectors",
+      "research",
+      "github",
+      "human-approval",
+      "software-development"
+    ],
+    "sharingScope": "company",
+    "publicShareToken": null,
+    "forkedFromSkillId": null,
+    "forkedFromCompanyId": null,
+    "starCount": 0,
+    "installCount": 1,
+    "forkCount": 0,
+    "currentVersionId": null,
+    "createdAt": "2026-09-22T19:23:17.690Z",
+    "updatedAt": "2026-09-22T19:23:17.696Z",
+    "attachedAgentCount": 0,
+    "editable": false,
+    "editableReason": "This skill source is read-only.",
+    "sourceLabel": "C:\\Users\\Jonat\\algoalpha\\.paperclip\\instances\\default\\skills\\3b1d401d-7010-4eed-acd1-be7d52372c07\\__catalog__\\prepare-mcp-integration--ba9ce8d383",
+    "sourceBadge": "catalog",
+    "sourcePath": null,
+    "catalogKind": "optional",
+    "originHash": "sha256:84f2a28d7d004393719684f2b435e5ee01ddc58591e0dfeb73d72c7605db7f49",
+    "packageName": "@paperclipai/skills-catalog",
+    "packageVersion": "0.3.1"
+  },
+  {
+    "id": "61229d70-10db-4b63-b936-df499f26ba76",
+    "companyId": "3b1d401d-7010-4eed-acd1-be7d52372c07",
+    "folderId": "35f13448-2ea6-4d00-886d-62671ae29e30",
+    "folderPath": "bundled/quality",
+    "key": "paperclipai/bundled/quality/qa-acceptance",
+    "slug": "qa-acceptance",
+    "name": "qa-acceptance",
+    "description": "Produce QA acceptance criteria and a manual validation plan for a feature change — golden path, edge cases, error states, performance limits, and explicit pass/fail evidence.",
+    "sourceType": "catalog",
+    "sourceLocator": "C:\\Users\\Jonat\\algoalpha\\.paperclip\\instances\\default\\skills\\3b1d401d-7010-4eed-acd1-be7d52372c07\\__catalog__\\qa-acceptance--243dd1d7bf",
+    "sourceRef": "sha256:32372dacaf62e93454b9855968c4eec96456ba78b509f450b3dfaa48e31ef356",
+    "trustLevel": "markdown_only",
+    "compatibility": "compatible",
+    "fileInventory": [
+      {
+        "path": "SKILL.md",
+        "kind": "skill"
+      }
+    ],
+    "iconUrl": null,
+    "color": null,
+    "tagline": "Produce QA acceptance criteria and a manual validation plan for a feature change — golden path, edge cases, error states",
+    "authorName": "Paperclip",
+    "homepageUrl": null,
+    "categories": [
+      "qa",
+      "acceptance",
+      "validation",
+      "testing",
+      "quality"
+    ],
+    "sharingScope": "company",
+    "publicShareToken": null,
+    "forkedFromSkillId": null,
+    "forkedFromCompanyId": null,
+    "starCount": 0,
+    "installCount": 1,
+    "forkCount": 0,
+    "currentVersionId": null,
+    "createdAt": "2026-09-22T19:23:19.253Z",
+    "updatedAt": "2026-09-22T19:23:19.260Z",
+    "attachedAgentCount": 0,
+    "editable": false,
+    "editableReason": "This skill source is read-only.",
+    "sourceLabel": "C:\\Users\\Jonat\\algoalpha\\.paperclip\\instances\\default\\skills\\3b1d401d-7010-4eed-acd1-be7d52372c07\\__catalog__\\qa-acceptance--243dd1d7bf",
+    "sourceBadge": "catalog",
+    "sourcePath": null,
+    "catalogKind": "bundled",
+    "originHash": "sha256:32372dacaf62e93454b9855968c4eec96456ba78b509f450b3dfaa48e31ef356",
+    "packageName": "@paperclipai/skills-catalog",
+    "packageVersion": "0.3.1"
+  },
+  {
+    "id": "a57999bb-741c-40d5-9359-276473798b0c",
+    "companyId": "3b1d401d-7010-4eed-acd1-be7d52372c07",
+    "folderId": null,
+    "folderPath": null,
+    "key": "paperclipai/optional/finance/ramp",
+    "slug": "ramp",
+    "name": "ramp",
+    "description": "Fetch and follow Ramp's published agent playbooks inside Paperclip, with mandatory approval gates for spend, incorporation, cards, account setup, and other financial actions.",
+    "sourceType": "catalog",
+    "sourceLocator": "C:\\Users\\Jonat\\algoalpha\\.paperclip\\instances\\default\\skills\\3b1d401d-7010-4eed-acd1-be7d52372c07\\__catalog__\\ramp--3f59af91ab",
+    "sourceRef": "sha256:276d85e98a4732f278204e26438aa95fde158dd2d15c1e427c4c7c7d492e769d",
+    "trustLevel": "markdown_only",
+    "compatibility": "compatible",
+    "fileInventory": [
+      {
+        "path": "SKILL.md",
+        "kind": "skill"
+      }
+    ],
+    "iconUrl": null,
+    "color": null,
+    "tagline": "Fetch and follow Ramp's published agent playbooks inside Paperclip, with mandatory approval gates for spend, incorporati",
+    "authorName": "Paperclip",
+    "homepageUrl": null,
+    "categories": [
+      "ramp",
+      "finance",
+      "spend",
+      "approvals",
+      "agent-cards"
+    ],
+    "sharingScope": "company",
+    "publicShareToken": null,
+    "forkedFromSkillId": null,
+    "forkedFromCompanyId": null,
+    "starCount": 0,
+    "installCount": 1,
+    "forkCount": 0,
+    "currentVersionId": null,
+    "createdAt": "2026-09-22T19:23:20.547Z",
+    "updatedAt": "2026-09-22T19:23:20.551Z",
+    "attachedAgentCount": 0,
+    "editable": false,
+    "editableReason": "This skill source is read-only.",
+    "sourceLabel": "C:\\Users\\Jonat\\algoalpha\\.paperclip\\instances\\default\\skills\\3b1d401d-7010-4eed-acd1-be7d52372c07\\__catalog__\\ramp--3f59af91ab",
+    "sourceBadge": "catalog",
+    "sourcePath": null,
+    "catalogKind": "optional",
+    "originHash": "sha256:276d85e98a4732f278204e26438aa95fde158dd2d15c1e427c4c7c7d492e769d",
+    "packageName": "@paperclipai/skills-catalog",
+    "packageVersion": "0.3.1"
+  },
+  {
+    "id": "59da846c-ae30-4298-ad29-eddba54a8e0c",
+    "companyId": "3b1d401d-7010-4eed-acd1-be7d52372c07",
+    "folderId": "d45da644-4792-4627-83d6-83db236a3c61",
+    "folderPath": "bundled/paperclip-operations",
+    "key": "paperclipai/bundled/paperclip-operations/reflection-coach",
+    "slug": "reflection-coach",
+    "name": "reflection-coach",
+    "description": "Reflect on another agent's recent execution record and propose the smallest durable instruction, skill, or tool-description change. Use for evidence-backed coaching proposals, never hot-swaps.",
+    "sourceType": "catalog",
+    "sourceLocator": "C:\\Users\\Jonat\\algoalpha\\.paperclip\\instances\\default\\skills\\3b1d401d-7010-4eed-acd1-be7d52372c07\\__catalog__\\reflection-coach--aa25458030",
+    "sourceRef": "sha256:f2592d81f616628a3eba92636616424f2eed82ec22bb504240a58f6be115e407",
+    "trustLevel": "markdown_only",
+    "compatibility": "compatible",
+    "fileInventory": [
+      {
+        "path": "SKILL.md",
+        "kind": "skill"
+      }
+    ],
+    "iconUrl": null,
+    "color": null,
+    "tagline": "Reflect on another agent's recent execution record and propose the smallest durable instruction, skill, or tool-descript",
+    "authorName": "Paperclip",
+    "homepageUrl": null,
+    "categories": [
+      "paperclip",
+      "reflection",
+      "coaching",
+      "agents",
+      "skills",
+      "paperclip-operations"
+    ],
+    "sharingScope": "company",
+    "publicShareToken": null,
+    "forkedFromSkillId": null,
+    "forkedFromCompanyId": null,
+    "starCount": 0,
+    "installCount": 1,
+    "forkCount": 0,
+    "currentVersionId": null,
+    "createdAt": "2026-09-22T19:23:21.789Z",
+    "updatedAt": "2026-09-22T19:23:21.791Z",
+    "attachedAgentCount": 0,
+    "editable": false,
+    "editableReason": "This skill source is read-only.",
+    "sourceLabel": "C:\\Users\\Jonat\\algoalpha\\.paperclip\\instances\\default\\skills\\3b1d401d-7010-4eed-acd1-be7d52372c07\\__catalog__\\reflection-coach--aa25458030",
+    "sourceBadge": "catalog",
+    "sourcePath": null,
+    "catalogKind": "bundled",
+    "originHash": "sha256:f2592d81f616628a3eba92636616424f2eed82ec22bb504240a58f6be115e407",
+    "packageName": "@paperclipai/skills-catalog",
+    "packageVersion": "0.3.1"
+  },
+  {
+    "id": "50c29738-9762-4973-9ad6-50478cfd1e58",
+    "companyId": "3b1d401d-7010-4eed-acd1-be7d52372c07",
+    "folderId": null,
+    "folderPath": null,
+    "key": "paperclipai/optional/content/release-announcement",
+    "slug": "release-announcement",
+    "name": "release-announcement",
+    "description": "Write a release announcement — changelog, blog post, in-app note, or social post — that leads with user impact, names the audience, and includes upgrade/migration steps without filler.",
+    "sourceType": "catalog",
+    "sourceLocator": "C:\\Users\\Jonat\\algoalpha\\.paperclip\\instances\\default\\skills\\3b1d401d-7010-4eed-acd1-be7d52372c07\\__catalog__\\release-announcement--457569c95d",
+    "sourceRef": "sha256:efe8ea89b552df95222609867c9c75f1b40e16f457d34e7e4a124f54daa33efa",
+    "trustLevel": "markdown_only",
+    "compatibility": "compatible",
+    "fileInventory": [
+      {
+        "path": "SKILL.md",
+        "kind": "skill"
+      }
+    ],
+    "iconUrl": null,
+    "color": null,
+    "tagline": "Write a release announcement — changelog, blog post, in-app note, or social post — that leads with user impact, names th",
+    "authorName": "Paperclip",
+    "homepageUrl": null,
+    "categories": [
+      "release",
+      "changelog",
+      "announcement",
+      "communication",
+      "content"
+    ],
+    "sharingScope": "company",
+    "publicShareToken": null,
+    "forkedFromSkillId": null,
+    "forkedFromCompanyId": null,
+    "starCount": 0,
+    "installCount": 1,
+    "forkCount": 0,
+    "currentVersionId": null,
+    "createdAt": "2026-09-22T19:23:22.758Z",
+    "updatedAt": "2026-09-22T19:23:22.761Z",
+    "attachedAgentCount": 0,
+    "editable": false,
+    "editableReason": "This skill source is read-only.",
+    "sourceLabel": "C:\\Users\\Jonat\\algoalpha\\.paperclip\\instances\\default\\skills\\3b1d401d-7010-4eed-acd1-be7d52372c07\\__catalog__\\release-announcement--457569c95d",
+    "sourceBadge": "catalog",
+    "sourcePath": null,
+    "catalogKind": "optional",
+    "originHash": "sha256:efe8ea89b552df95222609867c9c75f1b40e16f457d34e7e4a124f54daa33efa",
+    "packageName": "@paperclipai/skills-catalog",
+    "packageVersion": "0.3.1"
+  },
+  {
+    "id": "18d752e3-a4aa-4e31-9794-1815ffbb0659",
+    "companyId": "3b1d401d-7010-4eed-acd1-be7d52372c07",
+    "folderId": null,
+    "folderPath": null,
+    "key": "paperclipai/optional/content/simplified-english",
+    "slug": "simplified-english",
+    "name": "simplified-english",
+    "description": "Write user-facing comments, plans, and documents in ASD-STE100 Simplified Technical English — short, unambiguous sentences with approved words and one meaning each — so readers understand them the first time.",
+    "sourceType": "catalog",
+    "sourceLocator": "C:\\Users\\Jonat\\algoalpha\\.paperclip\\instances\\default\\skills\\3b1d401d-7010-4eed-acd1-be7d52372c07\\__catalog__\\simplified-english--9876d8956d",
+    "sourceRef": "sha256:642321f40d51e0125df05c6fbace49aeb07ec30392058756909c259c9c5eac6a",
+    "trustLevel": "markdown_only",
+    "compatibility": "compatible",
+    "fileInventory": [
+      {
+        "path": "SKILL.md",
+        "kind": "skill"
+      }
+    ],
+    "iconUrl": null,
+    "color": null,
+    "tagline": "Write user-facing comments, plans, and documents in ASD-STE100 Simplified Technical English — short, unambiguous sentenc",
+    "authorName": "Paperclip",
+    "homepageUrl": null,
+    "categories": [
+      "writing",
+      "communication",
+      "clarity",
+      "style",
+      "content"
+    ],
+    "sharingScope": "company",
+    "publicShareToken": null,
+    "forkedFromSkillId": null,
+    "forkedFromCompanyId": null,
+    "starCount": 0,
+    "installCount": 1,
+    "forkCount": 0,
+    "currentVersionId": null,
+    "createdAt": "2026-09-22T19:23:23.725Z",
+    "updatedAt": "2026-09-22T19:23:23.728Z",
+    "attachedAgentCount": 0,
+    "editable": false,
+    "editableReason": "This skill source is read-only.",
+    "sourceLabel": "C:\\Users\\Jonat\\algoalpha\\.paperclip\\instances\\default\\skills\\3b1d401d-7010-4eed-acd1-be7d52372c07\\__catalog__\\simplified-english--9876d8956d",
+    "sourceBadge": "catalog",
+    "sourcePath": null,
+    "catalogKind": "optional",
+    "originHash": "sha256:642321f40d51e0125df05c6fbace49aeb07ec30392058756909c259c9c5eac6a",
+    "packageName": "@paperclipai/skills-catalog",
+    "packageVersion": "0.3.1"
+  },
+  {
+    "id": "2e9b5a2f-9df7-4acf-8864-2c0ed21820dd",
+    "companyId": "3b1d401d-7010-4eed-acd1-be7d52372c07",
+    "folderId": "d45da644-4792-4627-83d6-83db236a3c61",
+    "folderPath": "bundled/paperclip-operations",
+    "key": "paperclipai/bundled/paperclip-operations/status-card-query",
+    "slug": "status-card-query",
+    "name": "status-card-query",
+    "description": "Create and maintain agent-authored Paperclip status cards, or compile a prose interest prompt into bounded CompanySearchQuery objects and write the first summary from the assigned Summarizer run.",
+    "sourceType": "catalog",
+    "sourceLocator": "C:\\Users\\Jonat\\algoalpha\\.paperclip\\instances\\default\\skills\\3b1d401d-7010-4eed-acd1-be7d52372c07\\__catalog__\\status-card-query--5374d5ae20",
+    "sourceRef": "sha256:2b6e53bf8491f027afdbd6961ad84f677cfd385a0a6a73616ea84111ca8886ed",
+    "trustLevel": "markdown_only",
+    "compatibility": "compatible",
+    "fileInventory": [
+      {
+        "path": "SKILL.md",
+        "kind": "skill"
+      }
+    ],
+    "iconUrl": null,
+    "color": null,
+    "tagline": "Create and maintain agent-authored Paperclip status cards, or compile a prose interest prompt into bounded CompanySearch",
+    "authorName": "Paperclip",
+    "homepageUrl": null,
+    "categories": [
+      "paperclip",
+      "status",
+      "search",
+      "reporting",
+      "operations",
+      "paperclip-operations"
+    ],
+    "sharingScope": "company",
+    "publicShareToken": null,
+    "forkedFromSkillId": null,
+    "forkedFromCompanyId": null,
+    "starCount": 0,
+    "installCount": 1,
+    "forkCount": 0,
+    "currentVersionId": null,
+    "createdAt": "2026-09-22T19:23:24.657Z",
+    "updatedAt": "2026-09-22T19:23:24.660Z",
+    "attachedAgentCount": 0,
+    "editable": false,
+    "editableReason": "This skill source is read-only.",
+    "sourceLabel": "C:\\Users\\Jonat\\algoalpha\\.paperclip\\instances\\default\\skills\\3b1d401d-7010-4eed-acd1-be7d52372c07\\__catalog__\\status-card-query--5374d5ae20",
+    "sourceBadge": "catalog",
+    "sourcePath": null,
+    "catalogKind": "bundled",
+    "originHash": "sha256:2b6e53bf8491f027afdbd6961ad84f677cfd385a0a6a73616ea84111ca8886ed",
+    "packageName": "@paperclipai/skills-catalog",
+    "packageVersion": "0.3.1"
+  },
+  {
+    "id": "c78c1168-7e54-4c2e-8e8a-a1cf24834d5c",
+    "companyId": "3b1d401d-7010-4eed-acd1-be7d52372c07",
+    "folderId": "d45da644-4792-4627-83d6-83db236a3c61",
+    "folderPath": "bundled/paperclip-operations",
+    "key": "paperclipai/bundled/paperclip-operations/summarize-status",
+    "slug": "summarize-status",
+    "name": "summarize-status",
+    "description": "Write a short, colloquial summary for a Paperclip summary slot: open with the 1–3 specific, concrete actions the reader needs to take right now to unblock the work, then a brief plain-language status, streaming progress as it works.",
+    "sourceType": "catalog",
+    "sourceLocator": "C:\\Users\\Jonat\\algoalpha\\.paperclip\\instances\\default\\skills\\3b1d401d-7010-4eed-acd1-be7d52372c07\\__catalog__\\summarize-status--61a9e96dc6",
+    "sourceRef": "sha256:3e49ee2b8d83d1371fb0f59197bb96c46b64f722540405f46d4a5a756fbe1b89",
+    "trustLevel": "markdown_only",
+    "compatibility": "compatible",
+    "fileInventory": [
+      {
+        "path": "SKILL.md",
+        "kind": "skill"
+      }
+    ],
+    "iconUrl": null,
+    "color": null,
+    "tagline": "Write a short, colloquial summary for a Paperclip summary slot: open with the 1–3 specific, concrete actions the reader ",
+    "authorName": "Paperclip",
+    "homepageUrl": null,
+    "categories": [
+      "paperclip",
+      "summary",
+      "status",
+      "reporting",
+      "operations",
+      "paperclip-operations"
+    ],
+    "sharingScope": "company",
+    "publicShareToken": null,
+    "forkedFromSkillId": null,
+    "forkedFromCompanyId": null,
+    "starCount": 0,
+    "installCount": 1,
+    "forkCount": 0,
+    "currentVersionId": null,
+    "createdAt": "2026-09-22T19:23:25.569Z",
+    "updatedAt": "2026-09-22T19:23:25.574Z",
+    "attachedAgentCount": 0,
+    "editable": false,
+    "editableReason": "This skill source is read-only.",
+    "sourceLabel": "C:\\Users\\Jonat\\algoalpha\\.paperclip\\instances\\default\\skills\\3b1d401d-7010-4eed-acd1-be7d52372c07\\__catalog__\\summarize-status--61a9e96dc6",
+    "sourceBadge": "catalog",
+    "sourcePath": null,
+    "catalogKind": "bundled",
+    "originHash": "sha256:3e49ee2b8d83d1371fb0f59197bb96c46b64f722540405f46d4a5a756fbe1b89",
+    "packageName": "@paperclipai/skills-catalog",
+    "packageVersion": "0.3.1"
+  },
+  {
+    "id": "22165479-0e91-4c1b-bf59-ce94f11361ff",
+    "companyId": "3b1d401d-7010-4eed-acd1-be7d52372c07",
+    "folderId": "d45da644-4792-4627-83d6-83db236a3c61",
+    "folderPath": "bundled/paperclip-operations",
+    "key": "paperclipai/bundled/paperclip-operations/task-planning",
+    "slug": "task-planning",
+    "name": "task-planning",
+    "description": "Turn a Paperclip issue or request into a structured implementation plan with child task graph, blockers, owners, and acceptance criteria, then save it as the issue `plan` document.",
+    "sourceType": "catalog",
+    "sourceLocator": "C:\\Users\\Jonat\\algoalpha\\.paperclip\\instances\\default\\skills\\3b1d401d-7010-4eed-acd1-be7d52372c07\\__catalog__\\task-planning--b6efa0a667",
+    "sourceRef": "sha256:487c3116eead89fef4f71c984329c41836bd69951b7ef9ed8736c69435e02438",
+    "trustLevel": "markdown_only",
+    "compatibility": "compatible",
+    "fileInventory": [
+      {
+        "path": "SKILL.md",
+        "kind": "skill"
+      }
+    ],
+    "iconUrl": null,
+    "color": null,
+    "tagline": "Turn a Paperclip issue or request into a structured implementation plan with child task graph, blockers, owners, and acc",
+    "authorName": "Paperclip",
+    "homepageUrl": null,
+    "categories": [
+      "paperclip",
+      "planning",
+      "issues",
+      "delegation",
+      "paperclip-operations"
+    ],
+    "sharingScope": "company",
+    "publicShareToken": null,
+    "forkedFromSkillId": null,
+    "forkedFromCompanyId": null,
+    "starCount": 0,
+    "installCount": 1,
+    "forkCount": 0,
+    "currentVersionId": null,
+    "createdAt": "2026-09-22T19:23:26.448Z",
+    "updatedAt": "2026-09-22T19:23:26.453Z",
+    "attachedAgentCount": 0,
+    "editable": false,
+    "editableReason": "This skill source is read-only.",
+    "sourceLabel": "C:\\Users\\Jonat\\algoalpha\\.paperclip\\instances\\default\\skills\\3b1d401d-7010-4eed-acd1-be7d52372c07\\__catalog__\\task-planning--b6efa0a667",
+    "sourceBadge": "catalog",
+    "sourcePath": null,
+    "catalogKind": "bundled",
+    "originHash": "sha256:487c3116eead89fef4f71c984329c41836bd69951b7ef9ed8736c69435e02438",
+    "packageName": "@paperclipai/skills-catalog",
+    "packageVersion": "0.3.1"
+  },
+  {
+    "id": "be2b428c-c3bd-41fb-9810-52daeae6c74d",
+    "companyId": "3b1d401d-7010-4eed-acd1-be7d52372c07",
+    "folderId": "29d7baca-3810-4bd4-9c48-7308dc0e6d59",
+    "folderPath": "bundled/product",
+    "key": "paperclipai/bundled/product/wireframe",
+    "slug": "wireframe",
+    "name": "wireframe",
+    "description": "Produce low-fidelity black-and-white UI wireframes as SVGs or viewer pages. Use when asked to wireframe, sketch a screen, draft a layout, make a low-fi mockup, or publish wireframes.",
+    "sourceType": "catalog",
+    "sourceLocator": "C:\\Users\\Jonat\\algoalpha\\.paperclip\\instances\\default\\skills\\3b1d401d-7010-4eed-acd1-be7d52372c07\\__catalog__\\wireframe--9113fc45b9",
+    "sourceRef": "sha256:7106d84fc9db2053090f692706e41cfc586e7dd85a44f568e3319c4eefbdde46",
+    "trustLevel": "assets",
+    "compatibility": "compatible",
+    "fileInventory": [
+      {
+        "path": "SKILL.md",
+        "kind": "skill"
+      },
+      {
+        "path": "assets/site-template.html",
+        "kind": "asset"
+      },
+      {
+        "path": "assets/template-mobile.svg",
+        "kind": "asset"
+      },
+      {
+        "path": "assets/template.svg",
+        "kind": "asset"
+      },
+      {
+        "path": "references/components.md",
+        "kind": "reference"
+      },
+      {
+        "path": "references/examples.md",
+        "kind": "reference"
+      },
+      {
+        "path": "references/grid-system.md",
+        "kind": "reference"
+      }
+    ],
+    "iconUrl": null,
+    "color": null,
+    "tagline": "Produce low-fidelity black-and-white UI wireframes as SVGs or viewer pages. Use when asked to wireframe, sketch a screen",
+    "authorName": "Paperclip",
+    "homepageUrl": null,
+    "categories": [
+      "design",
+      "wireframe",
+      "ux",
+      "prototyping",
+      "svg",
+      "product"
+    ],
+    "sharingScope": "company",
+    "publicShareToken": null,
+    "forkedFromSkillId": null,
+    "forkedFromCompanyId": null,
+    "starCount": 0,
+    "installCount": 1,
+    "forkCount": 0,
+    "currentVersionId": null,
+    "createdAt": "2026-09-22T19:23:27.626Z",
+    "updatedAt": "2026-09-22T19:23:27.635Z",
+    "attachedAgentCount": 0,
+    "editable": false,
+    "editableReason": "This skill source is read-only.",
+    "sourceLabel": "C:\\Users\\Jonat\\algoalpha\\.paperclip\\instances\\default\\skills\\3b1d401d-7010-4eed-acd1-be7d52372c07\\__catalog__\\wireframe--9113fc45b9",
+    "sourceBadge": "catalog",
+    "sourcePath": null,
+    "catalogKind": "bundled",
+    "originHash": "sha256:7106d84fc9db2053090f692706e41cfc586e7dd85a44f568e3319c4eefbdde46",
+    "packageName": "@paperclipai/skills-catalog",
+    "packageVersion": "0.3.1"
+  }
+]

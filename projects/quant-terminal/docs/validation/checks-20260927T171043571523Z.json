@@ -1,0 +1,139 @@
+{
+  "at": "20260927T171043571523Z",
+  "python": "3.13.15 (tags/v3.13.15:4061bc4, Aug  5 2026, 13:05:39) [MSC v.1944 64 bit (AMD64)]",
+  "files": {
+    "src\\quant_terminal\\__init__.py": "fac90e3e4543031b65eaf1b3022920e7453b55549874d953504fca4017c0af0f",
+    "src\\quant_terminal\\accounting\\__init__.py": "69f4f70af807453ea9173f03b66376552390a27b55a8dcd91b7cf5d154f31671",
+    "src\\quant_terminal\\accounting\\ledger.py": "9b4b8d2fe5376752cbd96dba0578f3bfd1dbe7e8ccbecf7c0c23a284a5646664",
+    "src\\quant_terminal\\analytics\\__init__.py": "f4d0bad2e34b429727f76cb80764d3c46451d1e5bd70c2b6b79ad0291b123d12",
+    "src\\quant_terminal\\analytics\\metrics.py": "b8da2cd837176d08a2625fc91e5b48197784afaeef06a72a7eaf4b39af61656c",
+    "src\\quant_terminal\\backtesting\\__init__.py": "39eeb64f3e88adfaf47c87696a11642b337e0850226d972956fd5d46dcc8c5e5",
+    "src\\quant_terminal\\backtesting\\engine.py": "856d061f69475d4e1cfbc2828527e578cc8a3b59f7de9fc7f52014ce7b7f207d",
+    "src\\quant_terminal\\backtesting\\models.py": "97ea279af8c6944b61066de0d120f07363387b6c72067e085e18676f1b3fb45f",
+    "src\\quant_terminal\\backtesting\\strategies.py": "dc36b25b797a69030cfc2cc7e7f783c92799228df11355a3513cedfbff6d84d4",
+    "src\\quant_terminal\\config.py": "70ac764303cc8643be25bafc60b652ea43beb4c4f4a466b021e5381372450ac8",
+    "src\\quant_terminal\\core\\__init__.py": "89d45cf461972de09c433a629a8c967b49afa141946c08faa541a1b4ddec23e6",
+    "src\\quant_terminal\\core\\clock.py": "002333d02c512d125875930c28444bab379593da57258f53333722105a3bd5b3",
+    "src\\quant_terminal\\core\\enums.py": "ff555bf1355e38b0ab144a0d889757a76cc0cc9b431d64868b73761626be3a50",
+    "src\\quant_terminal\\core\\events.py": "a41fa16b325325b1058648a650d73d332667eda4ac5a9f332bbd88615babc84b",
+    "src\\quant_terminal\\core\\exceptions.py": "879dcbacef34305cc520d42986f8fa11c89e8f885043d2845a783d7943dfd711",
+    "src\\quant_terminal\\core\\identifiers.py": "443c98476bdb0ff8b5f2b38179abbd6056c37c317903f9669a1f8129cca60d84",
+    "src\\quant_terminal\\core\\serialization.py": "3e462da3f422033f0620d8c9cafa0c401790e14ed17eaebb8be3a0d7dc3e469a",
+    "src\\quant_terminal\\data\\__init__.py": "f37ecf92786ce13fe600b21d210ae9314f4485af24d2902f7408cbcec6956ce6",
+    "src\\quant_terminal\\data\\calendar.py": "6400d1922270962e0877ad5454c0e22ce45035dd6684525eaf9d360f02bdf4d3",
+    "src\\quant_terminal\\data\\feed.py": "0b1f838db447b27759bc3f388c1879b746b4aa6c8b3a493154db9512e2a9979b",
+    "src\\quant_terminal\\data\\model.py": "48e4e93874db8729b1b1366b11f85f42821eae7fcca0840a0e71adc585a207fc",
+    "src\\quant_terminal\\data\\storage.py": "e58e1a0473e26547545039eb3511602ba9d732cf4feb8f0182e95ebd9d9d10c3",
+    "src\\quant_terminal\\execution\\__init__.py": "3f15627c63b3e367ed02b8010f29ae0c5fe6ad2cb41044c988c354af1b3c560f",
+    "src\\quant_terminal\\execution\\fills.py": "50cf9744a6e1ad543c029a469fc9a8c15b539f6a24cc0643d0c0542d3948bdc3",
+    "src\\quant_terminal\\execution\\models.py": "fd6e5b492378e03716221eef317c6cc0ad82758b2a4a14578be18f6e74f8243d",
+    "src\\quant_terminal\\execution\\simulator.py": "baf5ae3cb24f7a60fdbb98603fa8c55bb3ecd818a8fd6d6a4c6f57c26f694831",
+    "src\\quant_terminal\\experiments\\__init__.py": "221786585043d2f6146195565e0c68ab64557238f21797f6f1450bd978f69e37",
+    "src\\quant_terminal\\experiments\\models.py": "45410ecf5d36982fc4cbf14527af3fd8931c3f28d3de49500cf730caf0912244",
+    "src\\quant_terminal\\experiments\\source.py": "be1770ebdb406ee74024be083b54b03abe27bd450cfabfd18ec2c4250d153b18",
+    "src\\quant_terminal\\experiments\\store.py": "c00e345057989799433e7a769b937126155176487b19d06ca0fddfa6091bfd41",
+    "src\\quant_terminal\\logging.py": "18d1199874e705790971ef0d3bf61f4413c4bd4ee0fbf40ec4d9be6ea461fd4e",
+    "src\\quant_terminal\\monte_carlo\\__init__.py": "8540d3229d657c29934fcfa5c711507e28bbf70df9731b2e62ec2a73ef275de6",
+    "src\\quant_terminal\\monte_carlo\\engine.py": "770483b55352e7f7e991bde407277663380e49596fc16957c1fda5d13e005e53",
+    "src\\quant_terminal\\monte_carlo\\models.py": "ebf25ad1e2917b3b5e6681c1592db52ca15b9ece820744de43a64e25b153ccb9",
+    "src\\quant_terminal\\optimization\\__init__.py": "c5e5bde038648483b8b67f49631392f56b14d692eb5f997519969a324bf6b915",
+    "src\\quant_terminal\\optimization\\analysis.py": "00e5496bec84c36aca4326d2cc4f6432187b0151f7ffe466f445f198c0935e1e",
+    "src\\quant_terminal\\optimization\\engine.py": "e0116a339cd56eab98f9dee933236fdec64ba3cd4a9bc4440a85952acbcd8159",
+    "src\\quant_terminal\\optimization\\journal.py": "b6dd4825eb635d03f30bf903256a0c10896e2af2f247a29498b0153c985ec961",
+    "src\\quant_terminal\\optimization\\models.py": "47be098ce8a7e78fb1e6859824079106c4a12aedc5de71eeeca14afff33ee78e",
+    "src\\quant_terminal\\orders\\__init__.py": "da65f90112fdd75ce09e89c7e9a2f8fb40e6656ca7dd6a36aa3763e4bb4b8e0a",
+    "src\\quant_terminal\\orders\\lifecycle.py": "8a64ab935d3783fd56609566075b95b36688c3449c50e6f463591ca2cd6ebac2",
+    "src\\quant_terminal\\orders\\models.py": "dfef1973616fcf90ee4ffd4cd125bb9297f0f9eb4dee1a39812ca0882f8f5aed",
+    "src\\quant_terminal\\reporting\\__init__.py": "24fc3176094162755ff03aa7044145f144f888866e1a3a7385fc52f5442e9c60",
+    "src\\quant_terminal\\reporting\\builder.py": "2fae3f4df54824485c45cb70a30ff4ec36c73f5546b8e58c3acab3d0cf2f69af",
+    "src\\quant_terminal\\reporting\\export.py": "c4c3260557731508aaf7777ebe93082882c9de6f1e7e5bb3737846f3b25cfe4e",
+    "src\\quant_terminal\\reporting\\html.py": "96e9d3819861456952ee59b727d1723f40e8cf9c8fa9042c2977f25bbac2da9c",
+    "src\\quant_terminal\\reporting\\models.py": "d08d48af7788305557ffdd7e974880a209801ee1fbb9275172a90d76ea12ced6",
+    "src\\quant_terminal\\reporting\\utils.py": "309a0bda4c3c287aa483dd34393404ca6934a4fd490471c2d7681ddb9740f012",
+    "src\\quant_terminal\\robustness\\__init__.py": "23ad1fe9cd00333ba92861b17892c1795d63ff0fe239bcdb38950b6f67815194",
+    "src\\quant_terminal\\robustness\\sharpe.py": "a7cd2abee604308f70463156372c9509ba015e26e072fab29e198d979388e483",
+    "src\\quant_terminal\\walk_forward\\__init__.py": "cfcd3896e662c356726c65a03eb93c99b88fc4fc748a79bdf673979818fbb0d2",
+    "src\\quant_terminal\\walk_forward\\engine.py": "0bc007a6a442bafa9053a226d45c933206cfc033ccb8af40f6803c8ab71f8d06",
+    "src\\quant_terminal\\walk_forward\\models.py": "2a342ab41c8a1150535180349314f1ef754d79890ab736a39a31fb165f8e6fe4",
+    "tests\\integration\\test_data_feed.py": "8f8b2c089b174169cc3995499d9adf9fcf2b1cc6b063474a917fdf11f4a45257",
+    "tests\\integration\\test_data_storage.py": "bd037133a67b6a8623aab6d3ce7685486ee2d5c852bd41924f8d23651360fe9f",
+    "tests\\integration\\test_event_backtest.py": "8ae6990ba2e9416082250f018ac2c70e2a20b0c010909e0e7e4c8606c38c1a68",
+    "tests\\integration\\test_experiments.py": "f12719a2cb2ddac0f437e0fbe1c5825feffb5254b8952e173b4d419329c45967",
+    "tests\\integration\\test_foundation.py": "45ce6ccc1031bffc99816c06ea161b3747a1260e689b5d1ab617e43124e67163",
+    "tests\\unit\\test_accounting_ledger.py": "1f9f69bfd1e829546d8b1fd8a0ba8f2179669637d520a8bbb8069ba25744d97d",
+    "tests\\unit\\test_analytics_metrics.py": "f5feb0e3f4716773f2436279179ab10f17169cc1be3159b3877c3bfd4799d0ed",
+    "tests\\unit\\test_config_logging.py": "a6cddd6d62de8bad7ec5946fa347b3578a2519d67f06bcebc2d81a3be55e0df3",
+    "tests\\unit\\test_core.py": "5c67d333b573b55e0b89d22bf7186b3fd2d816e779cd1e65f113f13601f91ba3",
+    "tests\\unit\\test_data_model_calendar.py": "1228db5537ffbead297d0b2f4f2b26fb15147a643cbb328b2839d60445d7e2f2",
+    "tests\\unit\\test_experiment_models.py": "c3e15ef961642c9757f353d26e6f76e40fcc57c0a302cd279df22248292ad308",
+    "tests\\unit\\test_experiment_source.py": "22f0ac89bdd56903f804f89ccdd8d97a0530be96e7af5283b1ef6bc2b491d98d",
+    "tests\\unit\\test_historical_execution.py": "e2f43e44efb2ec8bd957c63078f8721986b74317c3e8cf9ef86a8f8cd6595326",
+    "tests\\unit\\test_monte_carlo.py": "a31cc06f787e891da167c92dd1ac59a0ad3bcb2c32b848f64483569f764209fd",
+    "tests\\unit\\test_optimization.py": "7b803eb4b4c8b60e0cb5f6a3e5968e0ffc74ef213ea7a861242311fbc9b0e2e2",
+    "tests\\unit\\test_reporting.py": "6bb9445b28c7a59f3397af3d5f92b622d086144c72eb75bd72c9164ddc9a7531",
+    "tests\\unit\\test_robustness_sharpe.py": "6b389e55ca9d39ad2fb7bf633eee7472e7eebde5c7c704ff3aac60a8e478d6a2",
+    "tests\\unit\\test_walk_forward.py": "8602ce06d42cd26a892ef334c62fbfc1a5c489cdd8b6b43dd137bc7c51541489"
+  },
+  "results": [
+    {
+      "command": [
+        "C:\\Users\\Jonat\\algoalpha\\projects\\quant-terminal\\.venv\\Scripts\\python.exe",
+        "-m",
+        "ruff",
+        "check",
+        "src",
+        "tests"
+      ],
+      "exit_code": 0,
+      "stdout": "All checks passed!\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "C:\\Users\\Jonat\\algoalpha\\projects\\quant-terminal\\.venv\\Scripts\\python.exe",
+        "-m",
+        "ruff",
+        "format",
+        "--check",
+        "src",
+        "tests"
+      ],
+      "exit_code": 0,
+      "stdout": "71 files already formatted\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "C:\\Users\\Jonat\\algoalpha\\projects\\quant-terminal\\.venv\\Scripts\\python.exe",
+        "-m",
+        "mypy",
+        "src"
+      ],
+      "exit_code": 0,
+      "stdout": "Success: no issues found in 53 source files\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "C:\\Users\\Jonat\\algoalpha\\projects\\quant-terminal\\.venv\\Scripts\\python.exe",
+        "-m",
+        "pytest",
+        "-q"
+      ],
+      "exit_code": 0,
+      "stdout": ".....................................s.................................. [ 36%]\n..................................................................s..... [ 73%]\n.....................................................                    [100%]\n=========================== short test summary info ===========================\nSKIPPED [1] tests\\integration\\test_experiments.py:400: Symlink creation is unavailable on this Windows account\nSKIPPED [1] tests\\unit\\test_experiment_source.py:72: Symlink creation is unavailable on this Windows account\n195 passed, 2 skipped in 10.35s\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "C:\\Users\\Jonat\\algoalpha\\projects\\quant-terminal\\.venv\\Scripts\\python.exe",
+        "-m",
+        "pip",
+        "check"
+      ],
+      "exit_code": 0,
+      "stdout": "No broken requirements found.\n",
+      "stderr": ""
+    }
+  ]
+}

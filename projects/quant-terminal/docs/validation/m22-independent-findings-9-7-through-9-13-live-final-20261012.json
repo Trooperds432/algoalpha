@@ -1,0 +1,164 @@
+{
+  "at": "2026-10-12T20:37:06.465887+00:00",
+  "reviewer": "/root/consolidated_release",
+  "verdict": "seven separate bounded findings accepted",
+  "supersedesPendingIdentityCheck": "docs/validation/m22-independent-findings-9-7-through-9-13-20261012.json",
+  "independentEvidence": "Reviewer independently reproduced each scoped case, checked exact source/artifact/HTTP bytes and fresh live status, identity and aware timestamp windows. Prior4HTTP records for9.10/9.11 independently belong to cancelled same-agent/issue runs;4fresh records belong to latest succeeded runs. Shared synthetic43bar sample; broader role capabilities partial. Reviewer harness NAV typo corrected without product changes; failure retained in original report.",
+  "roles": [
+    {
+      "roleCode": "9.7",
+      "identifier": "ALG-532",
+      "agentId": "0c5d5ccb-ab39-466a-abf8-d0b587f48620",
+      "actualRunId": "abc874f7-08a7-4793-ba62-89cd83da0866",
+      "issueId": "bed092d0-d864-40b2-b7bd-20661431edcd",
+      "runStatus": "succeeded",
+      "issueStatus": "done",
+      "startedAt": "2026-10-11T20:35:07.966Z",
+      "finishedAt": "2026-10-11T20:36:57.051Z",
+      "freshRootVerification": {
+        "runId": "abc874f7-08a7-4793-ba62-89cd83da0866",
+        "issueId": "bed092d0-d864-40b2-b7bd-20661431edcd",
+        "artifact": "docs\\agent-contributions\\9-7.md",
+        "artifactSha256": "0cc1c30495809cce4f99b29cfd28e92dfa4a2bac3aa841c3f0da9eff863c2c8d",
+        "interactionArtifact": "docs\\agent-contributions\\9-7.json",
+        "interactionSha256": "aa79903144170990449f8b85e6264fc09d78a3296401c79def5a5146d12fc2cc",
+        "verifiedAt": "2026-10-12T20:37:04.898943+00:00",
+        "scope": "identity/files/actual HTTP evidence verified; role finding needs independent review"
+      },
+      "independentScope": "Shared participation capacity, zero-volume and duplicate-bar rejection reproduced; liquidity forecasts unproved."
+    },
+    {
+      "roleCode": "9.8",
+      "identifier": "ALG-534",
+      "agentId": "8b84eec2-53c9-40ae-9510-8abdced5d515",
+      "actualRunId": "ebf7ff16-1af4-42b6-97d7-984a8cb638b1",
+      "issueId": "cc6a389c-09f4-4b72-aec3-5c77648ba7e2",
+      "runStatus": "succeeded",
+      "issueStatus": "done",
+      "startedAt": "2026-10-12T13:55:03.379Z",
+      "finishedAt": "2026-10-12T13:58:01.028Z",
+      "freshRootVerification": {
+        "runId": "ebf7ff16-1af4-42b6-97d7-984a8cb638b1",
+        "issueId": "cc6a389c-09f4-4b72-aec3-5c77648ba7e2",
+        "artifact": "docs\\agent-contributions\\m22\\retry-2\\9-8.md",
+        "artifactSha256": "b4e9b37c99030560540025946043c2b7fa99697d5207c5b3290793f0b5d2ed3d",
+        "interactionArtifact": "docs\\agent-contributions\\m22\\retry-2\\9-8.json",
+        "interactionSha256": "e4dbcb8475473dfb309791006efe4519e6fa7fabb2ed52984983fd36110987c8",
+        "verifiedAt": "2026-10-12T20:37:05.094130+00:00",
+        "scope": "identity/files/actual HTTP evidence verified; role finding needs independent review"
+      },
+      "independentScope": "ALG-534 retry only: observable-bar rejection and exact fill ledger reproduced; close proxy is not midpoint markout."
+    },
+    {
+      "roleCode": "9.9",
+      "identifier": "ALG-535",
+      "agentId": "82195d42-7369-423c-b485-4057032eab09",
+      "actualRunId": "402bfbee-0d29-494b-b776-d12cc06a126d",
+      "issueId": "205f33c0-bee8-400a-9913-08390f3b2208",
+      "runStatus": "succeeded",
+      "issueStatus": "done",
+      "startedAt": "2026-10-12T13:55:03.529Z",
+      "finishedAt": "2026-10-12T13:58:13.734Z",
+      "freshRootVerification": {
+        "runId": "402bfbee-0d29-494b-b776-d12cc06a126d",
+        "issueId": "205f33c0-bee8-400a-9913-08390f3b2208",
+        "artifact": "docs\\agent-contributions\\9-9.md",
+        "artifactSha256": "7d634db41f274dd27cd727862866f8419ff7eaff45774cb9f9e0135784d16f5a",
+        "interactionArtifact": "docs\\agent-contributions\\9-9.json",
+        "interactionSha256": "36246ea4ea00e3b07c1cc6caa4d7272665d27444c1cd802722ced61fe230a12f",
+        "verifiedAt": "2026-10-12T20:37:05.264806+00:00",
+        "scope": "identity/files/actual HTTP evidence verified; role finding needs independent review"
+      },
+      "independentScope": "Inventory/exposure reduction, exact ledger and atomic oversell rejection reproduced; factor hedge effectiveness unproved."
+    },
+    {
+      "roleCode": "9.10",
+      "identifier": "ALG-536",
+      "agentId": "04ab23cf-9759-46ff-9494-9772d6c3ddca",
+      "actualRunId": "5ab98d41-df5f-46ca-ac3a-b07967db176d",
+      "issueId": "e6551c3e-7caa-412a-85d4-b0ee2d64b301",
+      "runStatus": "succeeded",
+      "issueStatus": "done",
+      "startedAt": "2026-10-12T14:06:11.977Z",
+      "finishedAt": "2026-10-12T14:09:00.703Z",
+      "freshRootVerification": {
+        "runId": "5ab98d41-df5f-46ca-ac3a-b07967db176d",
+        "issueId": "e6551c3e-7caa-412a-85d4-b0ee2d64b301",
+        "artifact": "docs\\agent-contributions\\9-10.md",
+        "artifactSha256": "8ff2746c6c163729564d6fb145ae21ce48dc21b0b48072733e8a7c8267e91457",
+        "interactionArtifact": "docs\\agent-contributions\\9-10.json",
+        "interactionSha256": "e0b6da2e7fac918cb813bc5e61eba75a79d18ea548c0c35d917f2e24057f40a1",
+        "verifiedAt": "2026-10-12T20:37:05.659094+00:00",
+        "scope": "identity/files/actual HTTP evidence verified; role finding needs independent review"
+      },
+      "independentScope": "Stored fill costs,44 NAV reconciliations and undefined alpha/beta verified; no creation/redemption action tested."
+    },
+    {
+      "roleCode": "9.11",
+      "identifier": "ALG-537",
+      "agentId": "b5c244b2-7082-45f4-8296-a8d4df68d37d",
+      "actualRunId": "62efe99b-dbae-4705-9771-ec530658a8cb",
+      "issueId": "b75a2c47-e65e-4402-9412-01cfd3ac6b6f",
+      "runStatus": "succeeded",
+      "issueStatus": "done",
+      "startedAt": "2026-10-12T14:06:11.882Z",
+      "finishedAt": "2026-10-12T14:08:58.263Z",
+      "freshRootVerification": {
+        "runId": "62efe99b-dbae-4705-9771-ec530658a8cb",
+        "issueId": "b75a2c47-e65e-4402-9412-01cfd3ac6b6f",
+        "artifact": "docs\\agent-contributions\\9-11.md",
+        "artifactSha256": "2397e83fe36007d4d18a7eb7826975da74c1a0cc4177735a656653452c7149f8",
+        "interactionArtifact": "docs\\agent-contributions\\9-11.json",
+        "interactionSha256": "0c989881d72002ca22695d70654e9956deba00b7f5b16765d73ff6770b2d247e",
+        "verifiedAt": "2026-10-12T20:37:06.045539+00:00",
+        "scope": "identity/files/actual HTTP evidence verified; role finding needs independent review"
+      },
+      "independentScope": "Reported fill replay and atomic duplicate-fill rejection reproduced; AP service/settlement unproved."
+    },
+    {
+      "roleCode": "9.12",
+      "identifier": "ALG-538",
+      "agentId": "f87ffab5-39bc-4344-8927-bf46388fe723",
+      "actualRunId": "aa5d6704-501e-4c9e-9f37-b27b387eff0e",
+      "issueId": "fc51eb30-b636-4a4b-a23f-06820a3af502",
+      "runStatus": "succeeded",
+      "issueStatus": "done",
+      "startedAt": "2026-10-12T14:09:46.403Z",
+      "finishedAt": "2026-10-12T14:12:45.695Z",
+      "freshRootVerification": {
+        "runId": "aa5d6704-501e-4c9e-9f37-b27b387eff0e",
+        "issueId": "fc51eb30-b636-4a4b-a23f-06820a3af502",
+        "artifact": "docs\\agent-contributions\\9-12.md",
+        "artifactSha256": "da9b23816c683856faaca810de099b0c2fe1dffe5c806453fd4261a854102be6",
+        "interactionArtifact": "docs\\agent-contributions\\9-12.json",
+        "interactionSha256": "13f4ceef2e9c304445f9820502ebdcde99b8ca7c312141a034466edce4a174c1",
+        "verifiedAt": "2026-10-12T20:37:06.254296+00:00",
+        "scope": "identity/files/actual HTTP evidence verified; role finding needs independent review"
+      },
+      "independentScope": "Limit protection, nonpositive-price rejection and downloaded report bytes verified; no calibrated impact forecast."
+    },
+    {
+      "roleCode": "9.13",
+      "identifier": "ALG-539",
+      "agentId": "9886456a-f268-4b42-8675-009102c908cc",
+      "actualRunId": "b8e21788-c2fb-4731-9b63-9f66d95f919c",
+      "issueId": "a532e337-f0ac-4a4a-be3a-77647ade77bf",
+      "runStatus": "succeeded",
+      "issueStatus": "done",
+      "startedAt": "2026-10-12T14:09:46.543Z",
+      "finishedAt": "2026-10-12T14:13:55.269Z",
+      "freshRootVerification": {
+        "runId": "b8e21788-c2fb-4731-9b63-9f66d95f919c",
+        "issueId": "a532e337-f0ac-4a4a-be3a-77647ade77bf",
+        "artifact": "docs\\agent-contributions\\9-13.md",
+        "artifactSha256": "da95d61a1b5caad231bbf1c13bd7fcb45875331792979e35c173135ab415be7c",
+        "interactionArtifact": "docs\\agent-contributions\\9-13.json",
+        "interactionSha256": "ae90d8d33a765c734b4677bab87287b8e66e59c83decd65cfc8834e9b48c1cc4",
+        "verifiedAt": "2026-10-12T20:37:06.465729+00:00",
+        "scope": "identity/files/actual HTTP evidence verified; role finding needs independent review"
+      },
+      "independentScope": "Market fill costs and atomic duplicate-fill rejection reproduced; no venue comparison or improvement measurement."
+    }
+  ],
+  "finalReleaseApproved": false
+}

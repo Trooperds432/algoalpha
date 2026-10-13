@@ -1,0 +1,35 @@
+{
+  "var": {
+    "95": 40.07504223204582,
+    "99": 76.70296911772543,
+    "99.9": 119.62020236393339
+  },
+  "es": {
+    "95": 59.75314818922934,
+    "99": 94.67334867241402,
+    "99.9": 119.62020236393339
+  },
+  "tail_uncertainty": {
+    "95": {
+      "observed_tail_count": 50,
+      "expected_tail_count": 49.950000000000045,
+      "insufficient_tail_sample": false,
+      "note": "Fewer than 20 expected tail observations is unstable; ties do not add tail resolution."
+    },
+    "99": {
+      "observed_tail_count": 10,
+      "expected_tail_count": 9.990000000000009,
+      "insufficient_tail_sample": true,
+      "note": "Fewer than 20 expected tail observations is unstable; ties do not add tail resolution."
+    },
+    "99.9": {
+      "observed_tail_count": 1,
+      "expected_tail_count": 0.9990000000000009,
+      "insufficient_tail_sample": true,
+      "note": "Fewer than 20 expected tail observations is unstable; ties do not add tail resolution."
+    }
+  },
+  "sample_count": 999,
+  "horizon": "one synthetic second; no time scaling",
+  "method": "Empirical nearest-rank loss quantile; ES averages losses >= quantile"
+}

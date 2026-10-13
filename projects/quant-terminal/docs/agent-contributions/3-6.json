@@ -1,0 +1,74 @@
+{
+  "agent_id": "593c9b7b-a543-4e0c-9eae-cc28dd8ed04e",
+  "issue_id": "9feb54a6-6f4a-4e14-894f-f79a3e5c10f4",
+  "paperclip_run_id": "663b2fd7-1c5e-4bc6-be83-04303e73fbe0",
+  "selected_run_id": null,
+  "recorded_at": "2026-10-03T19:06:58.121419+00:00",
+  "http_interactions": [
+    {
+      "timestamp": "2026-10-03T19:06:54.048805+00:00",
+      "method": "GET",
+      "url": "http://127.0.0.1:8765/health",
+      "status": null,
+      "sha256": null,
+      "body": null,
+      "error": "<urlopen error [WinError 10061] No connection could be made because the target machine actively refused it>"
+    },
+    {
+      "timestamp": "2026-10-03T19:06:56.112816+00:00",
+      "method": "GET",
+      "url": "http://127.0.0.1:8765/runs",
+      "status": null,
+      "sha256": null,
+      "body": null,
+      "error": "<urlopen error [WinError 10061] No connection could be made because the target machine actively refused it>"
+    }
+  ],
+  "finding": {
+    "verdict": "inconclusive",
+    "severity": "medium",
+    "confidence": "high for observed access failure; runtime cause unknown",
+    "specification": "Required live auditability cannot be verified.",
+    "engineering_quality": "Environment/access limitation; not enough evidence to attribute an implementation defect.",
+    "recommendation": "Keep ALG-387 blocked. CEO/M22 coordinator must restore the assigned read-only terminal at 127.0.0.1:8765 and wake this issue; CCO then repeats the three required GETs and completes manifest/metrics review. Retain M16/M21 and final-release restrictions."
+  },
+  "requirement": "A compliance reviewer must be able to retrieve a registered run and trace its manifest, metrics, costs and provenance to explicit release gates, without interpreting synthetic research or HTTP availability as trading or professional approval.",
+  "failure_case": "Terminal evidence unavailable: GET /health and /runs return connection refusal (WinError 10061), so no returned run_id exists and GET /runs/<returned run_id> cannot be constructed honestly.",
+  "limitations": [
+    "No HTTP response bytes were received; status, sha256 and body are null, not fabricated empty-response hashes.",
+    "The first uninstrumented /health attempt also failed with WinError 10061; its exact UTC timestamp was not captured. The timestamped attempts below are retained separately.",
+    "No returned manifest, metrics or runtime audit trail could be inspected. Local M21 records are historical context, not substitute live evidence.",
+    "No campaign, six-month historical test, out-of-sample assessment, 30-day actual simulation or strategy eligibility was established.",
+    "No external research, legal determination, professional approval, broker access, runtime change or source modification was performed."
+  ],
+  "evidence_files": [
+    {
+      "path": "AGENTS.md",
+      "sha256": "d398555f69969844dcea96f91e90e1a3f80ba6a5221a72f39e4a298b81da980c"
+    },
+    {
+      "path": "docs/roadmap.md",
+      "sha256": "a1030c6ac7ba9fc514629cbf951004bc09da7f38def5fb2070d761f40e76e277"
+    },
+    {
+      "path": "coordination/milestone-state.json",
+      "sha256": "369afbed18ff44547a5b6ecf143c0755ff8814d79753c229d1757e1c90f0feb2"
+    },
+    {
+      "path": "docs/m22-acceptance-contract.md",
+      "sha256": "ec0e811c5988a74e04ea067aeba13d416c1b88486cd2da9e22133aec8ef7683f"
+    },
+    {
+      "path": "docs/validation/m21-release-hardening.md",
+      "sha256": "ca63eb7ac8930b079e40bd5d48a623886c048220c004d1e7bd9f948f7a1e9b6f"
+    },
+    {
+      "path": "docs/validation/m21-independent-review.md",
+      "sha256": "54ff60945e92761c2004250812a475fc0140da5c73a3c8b9f9b7465e386da562"
+    },
+    {
+      "path": "docs/validation/m21-lifecycle-artifacts.json",
+      "sha256": "be80ad45f9c00e0f98a79f1d2aa1d19bc75c94427329b9c3f54273040bec66c1"
+    }
+  ]
+}

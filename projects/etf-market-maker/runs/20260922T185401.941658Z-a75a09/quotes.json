@@ -1,0 +1,38 @@
+{
+  "normal": {
+    "enabled": true,
+    "bid": 99.94,
+    "ask": 100.06,
+    "reservation_price": 100.0,
+    "spread": 0.12000000000000455,
+    "bid_enabled": true,
+    "ask_enabled": true
+  },
+  "high_volatility": {
+    "enabled": true,
+    "bid": 99.79,
+    "ask": 100.21,
+    "reservation_price": 100.0,
+    "spread": 0.4200000000000017,
+    "bid_enabled": true,
+    "ask_enabled": true
+  },
+  "long": {
+    "enabled": true,
+    "bid": 99.9,
+    "ask": 100.02,
+    "reservation_price": 99.96,
+    "spread": 0.11999999999999034,
+    "bid_enabled": true,
+    "ask_enabled": true
+  },
+  "short": {
+    "enabled": true,
+    "bid": 99.98,
+    "ask": 100.1,
+    "reservation_price": 100.04,
+    "spread": 0.12000000000000455,
+    "bid_enabled": true,
+    "ask_enabled": true
+  }
+}

@@ -1,0 +1,15 @@
+FF                                                                       [100%]
+================================== FAILURES ===================================
+______ test_audit_preserves_verified_identity_after_readiness_revocation ______
+tests\unit\test_sandbox_podman.py:196: in test_audit_preserves_verified_identity_after_readiness_revocation
+    assert event["version"] == verified["version"] == "5.8.8"
+E   AssertionError: assert None == '5.8.8'
+________ test_unverified_or_failed_probe_never_creates_audit_identity _________
+tests\unit\test_sandbox_podman.py:218: in test_unverified_or_failed_probe_never_creates_audit_identity
+    assert initial["identity_status"] == "unverified"
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+E   KeyError: 'identity_status'
+=========================== short test summary info ===========================
+FAILED tests/unit/test_sandbox_podman.py::test_audit_preserves_verified_identity_after_readiness_revocation
+FAILED tests/unit/test_sandbox_podman.py::test_unverified_or_failed_probe_never_creates_audit_identity
+2 failed, 34 deselected in 0.97s

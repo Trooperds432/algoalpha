@@ -1,0 +1,10 @@
+{
+  "at": "2026-10-08T19:07:46.373767+00:00",
+  "clean_install": "C:\\Users\\Jonat\\algoalpha\\runtime\\m22-qualified-clean-install-20261008",
+  "archive": "C:\\Users\\Jonat\\algoalpha\\runtime\\quant-terminal-m22-20261008-qualified.zip",
+  "archive_sha256": "261de2a82067a11093231e6f54d1463a98bf040dad2dd1ef453d705a21f18709",
+  "final_release": false,
+  "result": "failed",
+  "failure_type": "URLError",
+  "failure_reason": "<urlopen error [WinError 10061] No connection could be made because the target machine actively refused it>"
+}

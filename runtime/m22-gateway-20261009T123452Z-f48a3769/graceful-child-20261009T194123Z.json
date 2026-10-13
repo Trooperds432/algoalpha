@@ -1,0 +1,14 @@
+{
+  "returned_at": "2026-10-09T19:41:57.123683+00:00",
+  "trigger": {
+    "requested_at": "2026-10-09T19:41:50.312896+00:00"
+  },
+  "server_started": true,
+  "gateway_failure": null,
+  "gateway_thread_alive": false,
+  "scheduler_failure": null,
+  "scheduler_started": false,
+  "owner_retained": false,
+  "active_retained": false,
+  "scheduler_lease_retained": false
+}

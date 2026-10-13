@@ -1,0 +1,75 @@
+{
+  "hostile_suite_outcome": "passed",
+  "milestone_gate_requires_independent_review": true,
+  "tests": 30,
+  "failures": 0,
+  "skips": 0,
+  "passed": 30,
+  "duration_seconds": 166.852,
+  "host": "Windows 11 / Python 3.13.15",
+  "backend_version": "5.8.8",
+  "rootless": true,
+  "seccomp": true,
+  "cgroup_version": "v2",
+  "image": "sha256:083a4ee8f04d4e4c91bc735931eccd5780c8e4e8ba7acfae04b6234fc573fc29",
+  "seccomp_profile": "/home/user/algoalpha-seccomp.json",
+  "source_sha256": {
+    "src/quant_terminal/sandbox/podman.py": "0be83c9aa0d0ada8ef0eaebbf061c6574f130100836925ab53399e1d0ab8b681",
+    "src/quant_terminal/sandbox/protocol.py": "caa9342eb746f6eb38ff12bc7d4ad751310a415a573228195d1037c4c7c86394",
+    "src/quant_terminal/sandbox/strategy_worker.py": "0e5dbe5c41d1ad49df2cf87e5f4d58d66128538b483490d40107d477238cc94b",
+    "tests/security/test_m16_hostile.py": "19d52299f6cf2899a42cb0c311cfa10736b24c37d3616839597a2c33296d6fe4"
+  },
+  "hostile_source_host_execution": false,
+  "remaining_owner_labelled_containers": [],
+  "evidence": [
+    "docs\\validation\\m16-hostile-run-20261001C.xml",
+    "docs/validation/m16-hostile-run-20261001C.txt"
+  ],
+  "verified": [
+    "Concurrent two real strategy containers observed together",
+    "Cancellation follows observed running strategy and descendants",
+    "Abrupt launcher death reaps before three seconds despite ten-second conmon budget",
+    "All resource and filesystem/network/native and child attacks contained",
+    "Worker buffered stdout redaction fix validated",
+    "Audit failure blocks admission"
+  ],
+  "limits": {
+    "wall_seconds": 5,
+    "cpu_seconds": 3,
+    "memory_bytes": 64000000,
+    "process_count": 4,
+    "open_files": 32,
+    "scratch_bytes": 0,
+    "scratch_files": 0,
+    "output_bytes": 4096
+  },
+  "parentdeath_limits": {
+    "wall_seconds": 10,
+    "reap_seconds": 3
+  },
+  "command": "QT_M16_HOSTILE=RUN_IN_VERIFIED_PODMAN QT_M16_IMAGE=sha256:083a4ee8f04d4e4c91bc735931eccd5780c8e4e8ba7acfae04b6234fc573fc29 QT_M16_SECCOMP_PROFILE=/home/user/algoalpha-seccomp.json .venv/Scripts/python.exe -m pytest tests/security/test_m16_hostile.py -v --tb=short --junitxml=docs/validation/m16-hostile-run-20261001C.xml",
+  "limitations": [
+    "Public arbitrary-source admission remains disabled; public adapter/accounting/regression gate requires separate evidence",
+    "No supported alternate platform or backend is claimed",
+    "Zero writable scratch only; positive scratch rejects"
+  ],
+  "audit_samples_supplemental_run": {
+    "passed": 2,
+    "deselected": 28,
+    "reason": "Independenttemp root retains audit files despite concurrent default pytest retention cleanup",
+    "evidence": [
+      "docs/validation/m16-hostile-audit-supplement-C.txt",
+      "docs/validation/m16-hostile-audit-supplement-C.xml",
+      "docs\\validation\\m16-hostile-run-20261001C-audit.jsonl",
+      "docs\\validation\\m16-hostile-run-20261001C-parentdeath-audit.jsonl"
+    ]
+  },
+  "milestone_gate": "not_passed",
+  "unresolved_lifecycle_finding": {
+    "severity": "high",
+    "observation": "Preserved supplemental parent-death audit has watchdog_parent_death followed by watchdog_failure after approximately five seconds, with no independent cleanup or termination event before trusted reconciliation",
+    "test_gap": "Original test proved no running container within three seconds but reconciled before independent cleanup audit completed; must strengthen audit completion check before reconciliation",
+    "possible_cause": "Concurrent reconciliation may race watchdog removal, or watchdog removal command timeout; requires diagnosis",
+    "evidence": "docs/validation/m16-hostile-run-20261001C-parentdeath-audit.jsonl"
+  }
+}

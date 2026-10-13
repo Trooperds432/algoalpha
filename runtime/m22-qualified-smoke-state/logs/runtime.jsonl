@@ -1,0 +1,5 @@
+{"event": "http.request", "fields": {"duration_ns": 358208400, "status": 200}, "timestamp": "2026-10-08T19:08:28.583594+00:00"}
+{"event": "http.request", "fields": {"duration_ns": 3174300, "status": 200}, "timestamp": "2026-10-08T19:08:28.590296+00:00"}
+{"event": "http.request", "fields": {"duration_ns": 9171800, "status": 200}, "timestamp": "2026-10-08T19:08:28.602333+00:00"}
+{"event": "http.request", "fields": {"duration_ns": 1777800, "status": 200}, "timestamp": "2026-10-08T19:08:28.605550+00:00"}
+{"event": "http.request", "fields": {"duration_ns": 246131500, "status": 200}, "timestamp": "2026-10-08T19:08:28.853769+00:00"}

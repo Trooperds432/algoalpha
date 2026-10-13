@@ -1,0 +1,34 @@
+{
+  "gate": "not_passed",
+  "tests": 30,
+  "failures": 2,
+  "skips": 0,
+  "passed": 28,
+  "duration_seconds": 133.393,
+  "backend": "Podman 5.8.3 WSL2 Linux",
+  "image": "sha256:d0e7be621e8522748273ceb2b87f8758dbb2fd2280bef93f19f1e35c9f795747",
+  "seccomp_profile": "/home/user/algoalpha-seccomp.json",
+  "hostile_source_host_execution": false,
+  "failures_summary": [
+    "Concurrent backend capability probes failed podman_command_failed",
+    "Sticky cleanup health correctly blocked subsequent redaction submission"
+  ],
+  "evidence": [
+    "docs\\validation\\m16-hostile-run-20261001A.xml",
+    "docs/validation/m16-hostile-run-20261001A.txt"
+  ],
+  "limits": {
+    "wall_seconds": 5,
+    "cpu_seconds": 3,
+    "memory_bytes": 64000000,
+    "process_count": 4,
+    "open_files": 32,
+    "scratch_bytes": 0,
+    "scratch_files": 0,
+    "output_bytes": 4096
+  },
+  "limitations": [
+    "First cancellation timer could expire during capability probe; fixture subsequently strengthened to observed running strategy",
+    "First parent-death fixture proved bounded conmon lifetime only; strengthened to immediate watchdog three-second boundary"
+  ]
+}

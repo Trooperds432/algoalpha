@@ -1,0 +1,1 @@
+{"backend": "podman", "event": "capability_probe", "image": "sha256:083a4ee8f04d4e4c91bc735931eccd5780c8e4e8ba7acfae04b6234fc573fc29", "image_provenance": {}, "outcome": "failed", "reason": "cgroup_limits_unverified", "timestamp": "2026-10-03T11:55:49.686862+00:00", "version": "5.8.8"}

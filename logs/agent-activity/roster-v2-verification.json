@@ -1,0 +1,2603 @@
+{
+  "source": "C:/Users/Jonat/Downloads/Global_Asset_Management_Firm_Expanded_Job_Descriptions_UPDATED_V2.txt",
+  "sourceSha256": "cbb3921f564bbaa2c5ddcd9be6b297342cdd9aa571c7a498ed9be90f2c893e35",
+  "startedAt": "2026-09-23T10:02:56.452Z",
+  "originalCount": 45,
+  "targetCount": 370,
+  "roles": [
+    {
+      "code": "3.1",
+      "id": "9ecfbe59-069d-41c6-900d-0a55c2f37ced",
+      "name": "Chief Executive Officer — CEO",
+      "previousSlug": "ceo",
+      "action": "updated"
+    },
+    {
+      "code": "3.2",
+      "id": "e018ba52-0d91-4198-8a85-9b7d7dfb3576",
+      "name": "Chief Investment Officer — CIO",
+      "previousSlug": null,
+      "action": "added"
+    },
+    {
+      "code": "3.3",
+      "id": "1253f521-078d-4f68-82e8-626eda5925e8",
+      "name": "Chief Operating Officer — COO",
+      "previousSlug": null,
+      "action": "added"
+    },
+    {
+      "code": "3.4",
+      "id": "838871e1-8f00-425c-b99b-7d3dddbe21cc",
+      "name": "Chief Technology Officer — CTO",
+      "previousSlug": null,
+      "action": "added"
+    },
+    {
+      "code": "3.5",
+      "id": "0d594786-fd73-4c67-854f-66d02f517c82",
+      "name": "Chief Risk Officer — CRO",
+      "previousSlug": null,
+      "action": "added"
+    },
+    {
+      "code": "3.6",
+      "id": "593c9b7b-a543-4e0c-9eae-cc28dd8ed04e",
+      "name": "Chief Compliance Officer — CCO",
+      "previousSlug": null,
+      "action": "added"
+    },
+    {
+      "code": "3.7",
+      "id": "5ed56bac-12cf-4d2d-980d-daeb47fa4380",
+      "name": "Chief Financial Officer — CFO",
+      "previousSlug": "finance",
+      "action": "updated"
+    },
+    {
+      "code": "3.8",
+      "id": "b6d88baf-13aa-49c3-9731-caf291e480e0",
+      "name": "Chief Data Officer — CDO",
+      "previousSlug": null,
+      "action": "added"
+    },
+    {
+      "code": "4.1",
+      "id": "71e8e56e-fb2c-429c-94ab-25658e17308c",
+      "name": "Global Portfolio Manager",
+      "previousSlug": "portfolio-manager",
+      "action": "updated"
+    },
+    {
+      "code": "4.2",
+      "id": "75315315-9bba-44a3-a0b4-7b7fd84f9fe2",
+      "name": "Equities Portfolio Manager",
+      "previousSlug": null,
+      "action": "added"
+    },
+    {
+      "code": "4.3",
+      "id": "207f62e3-cf4a-4186-9b0c-84c37a870809",
+      "name": "Futures Portfolio Manager",
+      "previousSlug": null,
+      "action": "added"
+    },
+    {
+      "code": "4.4",
+      "id": "e35a5ddd-3654-4373-bac4-dc4e8e23ed2c",
+      "name": "Options Portfolio Manager",
+      "previousSlug": null,
+      "action": "added"
+    },
+    {
+      "code": "4.5",
+      "id": "69e9c7d6-f5dc-4ca1-baec-f95eb4bae6fa",
+      "name": "ETF Portfolio Manager",
+      "previousSlug": null,
+      "action": "added"
+    },
+    {
+      "code": "4.6",
+      "id": "db72e09b-1273-4b5b-b2f5-2da2f95de2e9",
+      "name": "Fixed Income Portfolio Manager",
+      "previousSlug": null,
+      "action": "added"
+    },
+    {
+      "code": "4.7",
+      "id": "55097e5d-7b99-4dfc-8d55-248317ebbd66",
+      "name": "Macro Portfolio Manager",
+      "previousSlug": null,
+      "action": "added"
+    },
+    {
+      "code": "4.8",
+      "id": "c7555051-af5b-42f6-abce-f9c5dfde5edb",
+      "name": "Volatility Portfolio Manager",
+      "previousSlug": null,
+      "action": "added"
+    },
+    {
+      "code": "4.9",
+      "id": "1e78976d-c852-460f-9ec7-c764b0c06457",
+      "name": "Commodities Portfolio Manager",
+      "previousSlug": null,
+      "action": "added"
+    },
+    {
+      "code": "4.10",
+      "id": "969df8f0-a120-440d-86c4-daa0a2d0b200",
+      "name": "Crypto Portfolio Manager",
+      "previousSlug": null,
+      "action": "added"
+    },
+    {
+      "code": "4.11",
+      "id": "efa6c34e-9fae-4ec0-9b73-615ffc72e965",
+      "name": "Capital Allocation Manager",
+      "previousSlug": null,
+      "action": "added"
+    },
+    {
+      "code": "4.12",
+      "id": "7ab9dd43-4f8c-41b6-ae7c-ab2ed51de676",
+      "name": "Portfolio Construction Manager",
+      "previousSlug": null,
+      "action": "added"
+    },
+    {
+      "code": "4.13",
+      "id": "f4bf3ea4-a3f4-4bf3-b863-fbe1d294d3fa",
+      "name": "Strategy Allocation Manager",
+      "previousSlug": null,
+      "action": "added"
+    },
+    {
+      "code": "4.14",
+      "id": "5c1d3174-02eb-41b1-b6f5-5a77bd5f3502",
+      "name": "Portfolio Optimisation Manager",
+      "previousSlug": null,
+      "action": "added"
+    },
+    {
+      "code": "5.1",
+      "id": "46d53bec-928a-41fc-86ed-a8bd5f90330c",
+      "name": "Quantitative Research Director",
+      "previousSlug": "quantitative-researcher",
+      "action": "updated"
+    },
+    {
+      "code": "5.2",
+      "id": "42ef6e28-f718-466d-a15a-808046f0d834",
+      "name": "Alpha Researcher",
+      "previousSlug": null,
+      "action": "added"
+    },
+    {
+      "code": "5.3",
+      "id": "c310b045-c0a4-441d-90d2-8b85e56715d3",
+      "name": "Statistical Arbitrage Researcher",
+      "previousSlug": null,
+      "action": "added"
+    },
+    {
+      "code": "5.4",
+      "id": "c92ff256-0705-48e8-ba08-94c6938ba3e9",
+      "name": "Mean Reversion Researcher",
+      "previousSlug": null,
+      "action": "added"
+    },
+    {
+      "code": "5.5",
+      "id": "043c7b60-3e6c-48c3-a3f8-903246ff31c9",
+      "name": "Momentum Researcher",
+      "previousSlug": null,
+      "action": "added"
+    },
+    {
+      "code": "5.6",
+      "id": "c6e550ff-c65a-4b13-84a2-4589e47a319a",
+      "name": "Volatility Researcher",
+      "previousSlug": null,
+      "action": "added"
+    },
+    {
+      "code": "5.7",
+      "id": "d7c85845-89ea-430d-9c59-b15ebdd74733",
+      "name": "Options Researcher",
+      "previousSlug": null,
+      "action": "added"
+    },
+    {
+      "code": "5.8",
+      "id": "260a8298-e47e-4cb2-880f-b320de626ce5",
+      "name": "ETF Researcher",
+      "previousSlug": null,
+      "action": "added"
+    },
+    {
+      "code": "5.9",
+      "id": "fabf5ce4-286a-4f82-97ad-58dad5931f18",
+      "name": "Regime Detection Researcher",
+      "previousSlug": null,
+      "action": "added"
+    },
+    {
+      "code": "5.10",
+      "id": "6f6dabfc-5cf3-43cd-8cc9-44b9b0fb1b8d",
+      "name": "Factor Researcher",
+      "previousSlug": null,
+      "action": "added"
+    },
+    {
+      "code": "5.11",
+      "id": "687a7f62-b5d8-4524-95f0-432aea6168df",
+      "name": "Machine Learning Researcher",
+      "previousSlug": "machine-learning-researcher",
+      "action": "updated"
+    },
+    {
+      "code": "5.12",
+      "id": "985eb8ac-418e-4373-b75d-b06575fe91e8",
+      "name": "Market Microstructure Researcher",
+      "previousSlug": null,
+      "action": "added"
+    },
+    {
+      "code": "5.13",
+      "id": "e7d5f441-486c-444c-863f-e53fb70bbcdc",
+      "name": "Alternative Data Researcher",
+      "previousSlug": null,
+      "action": "added"
+    },
+    {
+      "code": "5.14",
+      "id": "58b3d28f-faf2-4e08-9ca9-869f7524ca33",
+      "name": "Time Series Researcher",
+      "previousSlug": null,
+      "action": "added"
+    },
+    {
+      "code": "5.15",
+      "id": "f0af4745-fb7e-42c1-a4cf-d861bd6aa3b7",
+      "name": "Signal Combination Researcher",
+      "previousSlug": null,
+      "action": "added"
+    },
+    {
+      "code": "5.16",
+      "id": "abbef82f-2e24-4bfb-9675-11f34a325499",
+      "name": "Feature Engineering Researcher",
+      "previousSlug": null,
+      "action": "added"
+    },
+    {
+      "code": "5.17",
+      "id": "8e0fc772-7734-4fb5-92a2-701cf4bbdcf1",
+      "name": "Research Replication Agent",
+      "previousSlug": null,
+      "action": "added"
+    },
+    {
+      "code": "5.18",
+      "id": "cb223307-7c04-4d77-b705-fae3aa76534b",
+      "name": "Research Peer Reviewer",
+      "previousSlug": null,
+      "action": "added"
+    },
+    {
+      "code": "5.19",
+      "id": "12c4906d-58b6-43a9-8f2c-911468c09e89",
+      "name": "Research Librarian",
+      "previousSlug": null,
+      "action": "added"
+    },
+    {
+      "code": "6.1",
+      "id": "d20fff00-9815-45ab-bb9d-eff698937909",
+      "name": "Equity Analyst",
+      "previousSlug": "fundamental-research-analyst",
+      "action": "updated"
+    },
+    {
+      "code": "6.2",
+      "id": "0ba4cafc-6e0a-4c65-98e2-e18d6fcd1dae",
+      "name": "Sector Analyst",
+      "previousSlug": null,
+      "action": "added"
+    },
+    {
+      "code": "6.3",
+      "id": "1bb3b676-7f69-4564-aa1a-6b633f839878",
+      "name": "Macro Research Analyst",
+      "previousSlug": null,
+      "action": "added"
+    },
+    {
+      "code": "6.4",
+      "id": "3fc49623-f125-41a8-83bb-d608804503ba",
+      "name": "Earnings Analyst",
+      "previousSlug": null,
+      "action": "added"
+    },
+    {
+      "code": "6.5",
+      "id": "c156113c-f7f7-4790-9385-212266e8bf97",
+      "name": "Industry Analyst",
+      "previousSlug": null,
+      "action": "added"
+    },
+    {
+      "code": "6.6",
+      "id": "0c9de6da-7524-4a4f-92af-230b7f37ea25",
+      "name": "News Intelligence Analyst",
+      "previousSlug": null,
+      "action": "added"
+    },
+    {
+      "code": "6.7",
+      "id": "d84396b8-26c1-4081-8424-26a3fdf71693",
+      "name": "Corporate Actions Researcher",
+      "previousSlug": null,
+      "action": "added"
+    },
+    {
+      "code": "6.8",
+      "id": "48b078d7-0d9c-4bb1-adc5-47bb5bc2d372",
+      "name": "Credit Research Analyst",
+      "previousSlug": null,
+      "action": "added"
+    },
+    {
+      "code": "6.9",
+      "id": "f2734c35-4b88-4e82-bd65-3579d0248bd4",
+      "name": "Event Driven Researcher",
+      "previousSlug": null,
+      "action": "added"
+    },
+    {
+      "code": "7.1",
+      "id": "403db3cc-d779-41aa-a309-cbcb9cf9cb57",
+      "name": "Data Acquisition Agent",
+      "previousSlug": null,
+      "action": "added"
+    },
+    {
+      "code": "7.2",
+      "id": "85eb111a-54b4-403b-8bb6-f456c327ad13",
+      "name": "Market Data Engineer",
+      "previousSlug": "data-engineer",
+      "action": "updated"
+    },
+    {
+      "code": "7.3",
+      "id": "de48a187-04d2-4821-85f0-f6b7b9ba5dcf",
+      "name": "Reference Data Manager",
+      "previousSlug": null,
+      "action": "added"
+    },
+    {
+      "code": "7.4",
+      "id": "7b999f77-b3f3-4b86-be71-ef0810e1b37d",
+      "name": "Corporate Actions Manager",
+      "previousSlug": null,
+      "action": "added"
+    },
+    {
+      "code": "7.5",
+      "id": "a6396a82-f5cc-4abb-ad22-0c84518f47d8",
+      "name": "Feature Store Manager",
+      "previousSlug": null,
+      "action": "added"
+    },
+    {
+      "code": "7.6",
+      "id": "192c5bef-fcdc-46eb-bfe5-b149022e9c47",
+      "name": "Data QA Agent",
+      "previousSlug": null,
+      "action": "added"
+    },
+    {
+      "code": "7.7",
+      "id": "32d94ac5-8205-4e3e-9330-163360149519",
+      "name": "Data Integrity Auditor",
+      "previousSlug": null,
+      "action": "added"
+    },
+    {
+      "code": "7.8",
+      "id": "757c9c5b-c3ab-4150-9fd8-0f7c79fc0980",
+      "name": "Alternative Data Pipeline Agent",
+      "previousSlug": null,
+      "action": "added"
+    },
+    {
+      "code": "7.9",
+      "id": "bfda6dca-3d76-404e-8b41-46324eb54cca",
+      "name": "Data Vendor Manager",
+      "previousSlug": null,
+      "action": "added"
+    },
+    {
+      "code": "7.10",
+      "id": "9c2d9aa3-1012-4829-8844-5770ce2af45c",
+      "name": "Historical Database Manager",
+      "previousSlug": null,
+      "action": "added"
+    },
+    {
+      "code": "7.11",
+      "id": "902470b0-8a0f-4770-a37c-3bc04216e555",
+      "name": "Tick Data Specialist",
+      "previousSlug": null,
+      "action": "added"
+    },
+    {
+      "code": "8.1",
+      "id": "5cab51d9-bc95-4d87-b6ad-55192d185a8a",
+      "name": "Quantitative Trader",
+      "previousSlug": "quantitative-trader",
+      "action": "updated"
+    },
+    {
+      "code": "8.2",
+      "id": "848d90f5-e2b3-49eb-bdb9-4c212109a0f4",
+      "name": "Systematic Trader",
+      "previousSlug": null,
+      "action": "added"
+    },
+    {
+      "code": "8.3",
+      "id": "cffa9b10-ec23-4bb0-9b15-27a5e88d1ccf",
+      "name": "Futures Trader",
+      "previousSlug": null,
+      "action": "added"
+    },
+    {
+      "code": "8.4",
+      "id": "2b917383-1be0-47a4-82b6-3e818a7273da",
+      "name": "Equity Trader",
+      "previousSlug": null,
+      "action": "added"
+    },
+    {
+      "code": "8.5",
+      "id": "6109b930-bf48-4dab-aa9d-7548eb358a62",
+      "name": "ETF Trader",
+      "previousSlug": null,
+      "action": "added"
+    },
+    {
+      "code": "8.6",
+      "id": "2b2cf555-1e23-4ef0-bcfd-ac7f27999f3b",
+      "name": "Options Trader",
+      "previousSlug": null,
+      "action": "added"
+    },
+    {
+      "code": "8.7",
+      "id": "ce714c08-e9d8-45bf-b710-cfc0b90779b2",
+      "name": "Market Making Trader",
+      "previousSlug": null,
+      "action": "added"
+    },
+    {
+      "code": "8.8",
+      "id": "fe635ca3-dd06-4e30-9782-f2ca7aa1e297",
+      "name": "Statistical Arbitrage Trader",
+      "previousSlug": null,
+      "action": "added"
+    },
+    {
+      "code": "8.9",
+      "id": "a9b40bcd-4fd1-47fa-8cee-d0d6f56e7d99",
+      "name": "Volatility Trader",
+      "previousSlug": null,
+      "action": "added"
+    },
+    {
+      "code": "8.10",
+      "id": "212ce742-8694-4b4c-bab9-6444d3ef60cd",
+      "name": "Execution Trader",
+      "previousSlug": "execution",
+      "action": "updated"
+    },
+    {
+      "code": "8.11",
+      "id": "11292298-a77f-4ae6-95a1-b4b5eb148eb7",
+      "name": "Smart Order Router",
+      "previousSlug": null,
+      "action": "added"
+    },
+    {
+      "code": "8.12",
+      "id": "6ce8ece8-9f16-499c-9e3d-43864d8e155a",
+      "name": "Liquidity Manager",
+      "previousSlug": null,
+      "action": "added"
+    },
+    {
+      "code": "8.13",
+      "id": "6b4c1517-b5a4-4c28-abd3-fa799a300e95",
+      "name": "Trade Surveillance Agent [8.13]",
+      "previousSlug": null,
+      "action": "added"
+    },
+    {
+      "code": "9.1",
+      "id": "2a3bafde-52b5-404b-9a25-e78ca06d1a61",
+      "name": "Exchange Connectivity Manager",
+      "previousSlug": null,
+      "action": "added"
+    },
+    {
+      "code": "9.2",
+      "id": "b5f2054a-e1cd-46ea-b801-6a1c2e3b7fe1",
+      "name": "Market Maker",
+      "previousSlug": null,
+      "action": "added"
+    },
+    {
+      "code": "9.3",
+      "id": "047b3876-3a93-4b69-ac49-3de802b7d561",
+      "name": "Bid Offer Optimiser",
+      "previousSlug": null,
+      "action": "added"
+    },
+    {
+      "code": "9.4",
+      "id": "9117bad2-31f1-4ad9-8f01-3373ebc3cc74",
+      "name": "Inventory Manager",
+      "previousSlug": null,
+      "action": "added"
+    },
+    {
+      "code": "9.5",
+      "id": "9dc49c33-9259-4189-9af5-341cd23284c2",
+      "name": "Quote Manager",
+      "previousSlug": null,
+      "action": "added"
+    },
+    {
+      "code": "9.6",
+      "id": "ba80db09-b863-4848-af0e-3ab7fd56d21c",
+      "name": "Spread Controller",
+      "previousSlug": null,
+      "action": "added"
+    },
+    {
+      "code": "9.7",
+      "id": "0c5d5ccb-ab39-466a-abf8-d0b587f48620",
+      "name": "Liquidity Forecasting Agent",
+      "previousSlug": null,
+      "action": "added"
+    },
+    {
+      "code": "9.8",
+      "id": "8b84eec2-53c9-40ae-9510-8abdced5d515",
+      "name": "Adverse Selection Detector",
+      "previousSlug": null,
+      "action": "added"
+    },
+    {
+      "code": "9.9",
+      "id": "82195d42-7369-423c-b485-4057032eab09",
+      "name": "Hedging Agent",
+      "previousSlug": null,
+      "action": "added"
+    },
+    {
+      "code": "9.10",
+      "id": "04ab23cf-9759-46ff-9494-9772d6c3ddca",
+      "name": "ETF Creation Redemption Agent",
+      "previousSlug": null,
+      "action": "added"
+    },
+    {
+      "code": "9.11",
+      "id": "b5c244b2-7082-45f4-8296-a8d4df68d37d",
+      "name": "AP Relationship Manager",
+      "previousSlug": null,
+      "action": "added"
+    },
+    {
+      "code": "9.12",
+      "id": "f87ffab5-39bc-4344-8927-bf46388fe723",
+      "name": "Market Impact Forecaster",
+      "previousSlug": null,
+      "action": "added"
+    },
+    {
+      "code": "9.13",
+      "id": "9886456a-f268-4b42-8675-009102c908cc",
+      "name": "Execution Quality Analyst",
+      "previousSlug": null,
+      "action": "added"
+    },
+    {
+      "code": "9.14",
+      "id": "b26a8edf-ec97-4fc8-ab30-0ff0e22374bb",
+      "name": "Transaction Cost Analyst",
+      "previousSlug": null,
+      "action": "added"
+    },
+    {
+      "code": "10.1",
+      "id": "cd6e2321-5900-44a2-a3c5-bfb1a61dfe2d",
+      "name": "Enterprise Risk Manager",
+      "previousSlug": "risk-management",
+      "action": "updated"
+    },
+    {
+      "code": "10.2",
+      "id": "05a67e09-6c41-422b-99ab-f533bc080188",
+      "name": "Portfolio Risk Quant",
+      "previousSlug": null,
+      "action": "added"
+    },
+    {
+      "code": "10.3",
+      "id": "66053fc6-073d-4704-adbf-a9bb222f0127",
+      "name": "VaR Engine",
+      "previousSlug": null,
+      "action": "added"
+    },
+    {
+      "code": "10.4",
+      "id": "0e0e9ad3-beb1-4386-9a23-5af284b8fdd1",
+      "name": "Stress Testing Agent",
+      "previousSlug": null,
+      "action": "added"
+    },
+    {
+      "code": "10.5",
+      "id": "2f8a7462-52ad-42b9-a349-7ad93344216f",
+      "name": "Scenario Analysis Agent",
+      "previousSlug": null,
+      "action": "added"
+    },
+    {
+      "code": "10.6",
+      "id": "1fca7877-0769-43b0-a3b4-58cb33b4f2c6",
+      "name": "Drawdown Monitoring Agent",
+      "previousSlug": null,
+      "action": "added"
+    },
+    {
+      "code": "10.7",
+      "id": "e28f2531-dca5-4202-ac14-aaf0452e4e0d",
+      "name": "Exposure Manager",
+      "previousSlug": null,
+      "action": "added"
+    },
+    {
+      "code": "10.8",
+      "id": "77dd806c-6abc-49e6-9aab-98e7844db417",
+      "name": "Factor Exposure Agent",
+      "previousSlug": null,
+      "action": "added"
+    },
+    {
+      "code": "10.9",
+      "id": "f98ad962-672a-4f30-9473-ae9c24ef90eb",
+      "name": "Tail Risk Manager",
+      "previousSlug": null,
+      "action": "added"
+    },
+    {
+      "code": "10.10",
+      "id": "84e5fca9-cc11-47e8-9857-aa42faddfe0c",
+      "name": "Correlation Monitoring Agent",
+      "previousSlug": null,
+      "action": "added"
+    },
+    {
+      "code": "10.11",
+      "id": "3d7c97f6-f1b1-4c76-8703-33252f52ea14",
+      "name": "Liquidity Risk Agent",
+      "previousSlug": null,
+      "action": "added"
+    },
+    {
+      "code": "10.12",
+      "id": "aa007a62-fe9c-44d7-822a-9c4e3a786fec",
+      "name": "Counterparty Risk Agent",
+      "previousSlug": null,
+      "action": "added"
+    },
+    {
+      "code": "10.13",
+      "id": "33761d28-4b7c-4f53-a0af-d85c4a147e35",
+      "name": "Risk Reporting Agent",
+      "previousSlug": null,
+      "action": "added"
+    },
+    {
+      "code": "11.1",
+      "id": "5193cebc-aec5-4b6b-aa68-ea7e87241e97",
+      "name": "Independent Backtest Agent",
+      "previousSlug": "backtest",
+      "action": "updated"
+    },
+    {
+      "code": "11.2",
+      "id": "3d7711d3-9058-41ed-9f08-c42f74848f12",
+      "name": "Strategy Challenger",
+      "previousSlug": "validation",
+      "action": "updated"
+    },
+    {
+      "code": "11.3",
+      "id": "6a103650-96e5-40f6-8ff5-ebca07ae3a1c",
+      "name": "Research Validation Agent",
+      "previousSlug": null,
+      "action": "added"
+    },
+    {
+      "code": "11.4",
+      "id": "6345fbf6-ffe9-41bf-a4e4-81d7b705d3a2",
+      "name": "Walk Forward Validation Agent",
+      "previousSlug": null,
+      "action": "added"
+    },
+    {
+      "code": "11.5",
+      "id": "5341516f-ca52-4780-9988-a66b2cef7740",
+      "name": "Overfitting Detector",
+      "previousSlug": null,
+      "action": "added"
+    },
+    {
+      "code": "11.6",
+      "id": "37773985-8c17-412e-8a83-6240acc847c8",
+      "name": "Data Leakage Detector",
+      "previousSlug": null,
+      "action": "added"
+    },
+    {
+      "code": "11.7",
+      "id": "47eecbe8-27d4-4a23-8d92-13509b5fce20",
+      "name": "Robustness Tester",
+      "previousSlug": null,
+      "action": "added"
+    },
+    {
+      "code": "11.8",
+      "id": "aa847b19-07d5-4001-834b-59df21bba219",
+      "name": "Statistical Significance Validator",
+      "previousSlug": null,
+      "action": "added"
+    },
+    {
+      "code": "11.9",
+      "id": "1464f89e-f4ae-41c3-ab27-5136eb673583",
+      "name": "Model Approval Agent",
+      "previousSlug": null,
+      "action": "added"
+    },
+    {
+      "code": "11.10",
+      "id": "f10cd5ee-6bb7-45a3-9456-551436b6a539",
+      "name": "Model Governance Agent",
+      "previousSlug": null,
+      "action": "added"
+    },
+    {
+      "code": "12.1",
+      "id": "fb4fdfd1-4ec3-46b2-bfbd-1965d0e14595",
+      "name": "Chief Architect",
+      "previousSlug": null,
+      "action": "added"
+    },
+    {
+      "code": "12.2",
+      "id": "e3ea9802-b22f-472f-8139-4f70a33ce978",
+      "name": "Software Engineer",
+      "previousSlug": "software-engineer",
+      "action": "updated"
+    },
+    {
+      "code": "12.3",
+      "id": "ff2bfb4d-0b69-4860-9968-688e94b93f55",
+      "name": "Quant Developer",
+      "previousSlug": null,
+      "action": "added"
+    },
+    {
+      "code": "12.4",
+      "id": "ca084d85-9bfb-4151-b563-e4484c3344e4",
+      "name": "Research Platform Engineer",
+      "previousSlug": null,
+      "action": "added"
+    },
+    {
+      "code": "12.5",
+      "id": "e7f5692a-deda-4554-a929-be132d2c6ca8",
+      "name": "Infrastructure Engineer",
+      "previousSlug": "infrastructure-engineer",
+      "action": "updated"
+    },
+    {
+      "code": "12.6",
+      "id": "f2616edd-0ef4-4562-8432-8eaa8a4c4f45",
+      "name": "Site Reliability Engineer",
+      "previousSlug": "site-reliability-engineer",
+      "action": "updated"
+    },
+    {
+      "code": "12.7",
+      "id": "2344f6a0-4077-4268-a18f-3a8f62878a01",
+      "name": "DevOps Engineer",
+      "previousSlug": null,
+      "action": "added"
+    },
+    {
+      "code": "12.8",
+      "id": "229da861-af1e-4734-8b93-aa6b7769917d",
+      "name": "Cloud Engineer",
+      "previousSlug": "systems-engineer",
+      "action": "updated"
+    },
+    {
+      "code": "12.9",
+      "id": "92562d14-83ac-4754-b26c-538113e4b673",
+      "name": "Networking Engineer",
+      "previousSlug": "network-engineer",
+      "action": "updated"
+    },
+    {
+      "code": "12.10",
+      "id": "8643d4c6-ed11-4f18-b3bc-8a5357b0fe2d",
+      "name": "Security Engineer",
+      "previousSlug": "cybersecurity-engineer",
+      "action": "updated"
+    },
+    {
+      "code": "12.11",
+      "id": "1a9d383d-6309-4e6b-8f16-f0682f328633",
+      "name": "Performance Optimisation Engineer",
+      "previousSlug": null,
+      "action": "added"
+    },
+    {
+      "code": "12.12",
+      "id": "4598441b-2658-4590-a8b2-c612cc29b14a",
+      "name": "Deployment Engineer",
+      "previousSlug": null,
+      "action": "added"
+    },
+    {
+      "code": "12.13",
+      "id": "7c83d0f2-ed1b-41a3-8c02-cf532e1c8f72",
+      "name": "API Engineer",
+      "previousSlug": null,
+      "action": "added"
+    },
+    {
+      "code": "12.14",
+      "id": "a4ff78ad-4c8e-4fb7-a8d3-1182fdb13f4e",
+      "name": "Database Engineer",
+      "previousSlug": null,
+      "action": "added"
+    },
+    {
+      "code": "12.15",
+      "id": "480eb596-36a4-421e-982d-6227e50bbe89",
+      "name": "Monitoring Engineer",
+      "previousSlug": null,
+      "action": "added"
+    },
+    {
+      "code": "13.1",
+      "id": "410329ff-d1f6-484b-a9a3-509783e00f5a",
+      "name": "Agent Orchestrator",
+      "previousSlug": null,
+      "action": "added"
+    },
+    {
+      "code": "13.2",
+      "id": "3a3905cd-3590-48e4-a42b-6d3f5d44b0b8",
+      "name": "Multi-Agent Coordinator",
+      "previousSlug": null,
+      "action": "added"
+    },
+    {
+      "code": "13.3",
+      "id": "83bce5a3-454a-402a-89be-e774710772f8",
+      "name": "Agent Auditor",
+      "previousSlug": null,
+      "action": "added"
+    },
+    {
+      "code": "13.4",
+      "id": "44337f5e-fd53-485d-9632-ff2188ec1bb7",
+      "name": "Agent Performance Manager",
+      "previousSlug": null,
+      "action": "added"
+    },
+    {
+      "code": "13.5",
+      "id": "e13b50ea-46d1-42f8-bc13-70763f0c759f",
+      "name": "Agent Cost Controller",
+      "previousSlug": "cost-optimizer",
+      "action": "updated"
+    },
+    {
+      "code": "13.6",
+      "id": "a1a91b22-ba08-4627-bc03-82b0165aaaa8",
+      "name": "Agent Memory Manager",
+      "previousSlug": null,
+      "action": "added"
+    },
+    {
+      "code": "13.7",
+      "id": "a5e312d4-c833-49e7-a45e-9531aebd8e3a",
+      "name": "Prompt Engineer",
+      "previousSlug": null,
+      "action": "added"
+    },
+    {
+      "code": "13.8",
+      "id": "cf62a0c1-83d1-4a6b-aea4-f6c31db62dd5",
+      "name": "Tool Verification Agent",
+      "previousSlug": null,
+      "action": "added"
+    },
+    {
+      "code": "13.9",
+      "id": "b3b4561a-04e6-4505-8178-ab0123f7f080",
+      "name": "Hallucination Detection Agent",
+      "previousSlug": null,
+      "action": "added"
+    },
+    {
+      "code": "13.10",
+      "id": "072b539b-f0fd-4ff5-b393-f8c6e6b2a0fa",
+      "name": "AI Governance Agent",
+      "previousSlug": null,
+      "action": "added"
+    },
+    {
+      "code": "13.11",
+      "id": "1e7d8c3f-35f0-4211-aec8-757039d6b5ba",
+      "name": "Model Selection Agent",
+      "previousSlug": null,
+      "action": "added"
+    },
+    {
+      "code": "13.12",
+      "id": "afcbd5b6-7062-49aa-8f2c-007edbb1ead4",
+      "name": "Knowledge Graph Manager",
+      "previousSlug": null,
+      "action": "added"
+    },
+    {
+      "code": "14.1",
+      "id": "9ef86ead-3131-4980-9bf0-bd505d5765e6",
+      "name": "Compliance Analyst",
+      "previousSlug": "compliance-officer",
+      "action": "updated"
+    },
+    {
+      "code": "14.2",
+      "id": "8b1ef8f0-1693-4d35-bfc2-a882f8c37f70",
+      "name": "Regulatory Monitoring Agent",
+      "previousSlug": null,
+      "action": "added"
+    },
+    {
+      "code": "14.3",
+      "id": "38c82923-9f78-4fe1-bcf4-fd0b354242c3",
+      "name": "Trade Surveillance Agent [14.3]",
+      "previousSlug": null,
+      "action": "added"
+    },
+    {
+      "code": "14.4",
+      "id": "9e74b44a-6ed2-4918-9382-e53178129b1c",
+      "name": "Market Abuse Detector",
+      "previousSlug": null,
+      "action": "added"
+    },
+    {
+      "code": "14.5",
+      "id": "cd523810-d899-4770-a281-d7607f59f0c9",
+      "name": "AML Agent",
+      "previousSlug": null,
+      "action": "added"
+    },
+    {
+      "code": "14.6",
+      "id": "f83f627d-e792-4f04-b56c-cab538d92cac",
+      "name": "KYC Agent",
+      "previousSlug": null,
+      "action": "added"
+    },
+    {
+      "code": "14.7",
+      "id": "b44d2835-fbd0-4d19-b83c-14d82c39403f",
+      "name": "Legal Counsel",
+      "previousSlug": "legal-counsel",
+      "action": "updated"
+    },
+    {
+      "code": "14.8",
+      "id": "443a0a29-4ddb-4b19-bf74-b4909b58161e",
+      "name": "Documentation Agent",
+      "previousSlug": "communications",
+      "action": "updated"
+    },
+    {
+      "code": "14.9",
+      "id": "e2a19471-9176-4e6e-926f-31cdf023f9dc",
+      "name": "Audit Preparation Agent",
+      "previousSlug": null,
+      "action": "added"
+    },
+    {
+      "code": "15.1",
+      "id": "a08fb5a4-d158-4a2e-937d-112e3b34757c",
+      "name": "Trade Operations Manager",
+      "previousSlug": "trading-operations",
+      "action": "updated"
+    },
+    {
+      "code": "15.2",
+      "id": "b3c675e2-1bc6-482c-8cfb-25b27ed3cf1d",
+      "name": "Settlement Agent",
+      "previousSlug": null,
+      "action": "added"
+    },
+    {
+      "code": "15.3",
+      "id": "7ed34a3d-9811-4d32-bcf4-3cbb6245e7a9",
+      "name": "Reconciliation Agent",
+      "previousSlug": "operations-specialist",
+      "action": "updated"
+    },
+    {
+      "code": "15.4",
+      "id": "78ebc96e-7794-4153-9532-9d7499c0f773",
+      "name": "Cash Management Agent",
+      "previousSlug": null,
+      "action": "added"
+    },
+    {
+      "code": "15.5",
+      "id": "db731fd6-de4e-4a71-90ab-d3d2c95adfb5",
+      "name": "Treasury Agent",
+      "previousSlug": "treasury",
+      "action": "updated"
+    },
+    {
+      "code": "15.6",
+      "id": "85fc2491-6896-4f36-b136-487252bd2bc9",
+      "name": "Accounting Agent",
+      "previousSlug": "accounting",
+      "action": "updated"
+    },
+    {
+      "code": "15.7",
+      "id": "3644397d-d59b-46a7-b312-5d43b65a54b9",
+      "name": "PnL Controller",
+      "previousSlug": null,
+      "action": "added"
+    },
+    {
+      "code": "15.8",
+      "id": "751b4ae2-235d-4611-83e8-f4375a8f0ee3",
+      "name": "Fund Administrator",
+      "previousSlug": null,
+      "action": "added"
+    },
+    {
+      "code": "15.9",
+      "id": "9bf35b42-07c3-48be-a3f0-b44ac960782a",
+      "name": "Investor Reporting Agent",
+      "previousSlug": "reporting",
+      "action": "updated"
+    },
+    {
+      "code": "15.10",
+      "id": "3a7f3428-4452-4ef6-9443-aef22b225b58",
+      "name": "Performance Attribution Agent",
+      "previousSlug": "operations-analyst",
+      "action": "updated"
+    },
+    {
+      "code": "16.1",
+      "id": "b9fc419d-84e1-4b76-91f2-cdc70eaa478a",
+      "name": "Security Operations Centre Agent",
+      "previousSlug": null,
+      "action": "added"
+    },
+    {
+      "code": "16.2",
+      "id": "87c6cbe3-0e12-40c1-b4cf-6d0c7d7aa062",
+      "name": "Threat Intelligence Agent",
+      "previousSlug": null,
+      "action": "added"
+    },
+    {
+      "code": "16.3",
+      "id": "209656b8-1208-447f-b849-15a223a837b2",
+      "name": "Vulnerability Scanner",
+      "previousSlug": null,
+      "action": "added"
+    },
+    {
+      "code": "16.4",
+      "id": "351c52f9-1e7f-4146-96ee-6952b3bf1430",
+      "name": "Incident Response Agent",
+      "previousSlug": null,
+      "action": "added"
+    },
+    {
+      "code": "16.5",
+      "id": "e97f42b6-26c5-40dc-bf2a-4ceaa07649ad",
+      "name": "Penetration Testing Agent",
+      "previousSlug": null,
+      "action": "added"
+    },
+    {
+      "code": "16.6",
+      "id": "1ab64003-175e-4131-8566-c4c757f5add2",
+      "name": "Access Control Auditor",
+      "previousSlug": null,
+      "action": "added"
+    },
+    {
+      "code": "16.7",
+      "id": "e6daa38c-5b07-4fa0-9ee9-fbe3dc8822df",
+      "name": "Secrets Management Agent",
+      "previousSlug": null,
+      "action": "added"
+    },
+    {
+      "code": "17.1",
+      "id": "56a5a903-bec7-4597-845a-62e166ddb271",
+      "name": "Chief of Staff Agent [17.1]",
+      "previousSlug": "office-management",
+      "action": "updated"
+    },
+    {
+      "code": "17.2",
+      "id": "1b5faef5-dd53-4c37-995f-e3eecff946ba",
+      "name": "Investment Committee Agent",
+      "previousSlug": null,
+      "action": "added"
+    },
+    {
+      "code": "17.3",
+      "id": "895e4865-3899-42bf-a13d-7f906daefe1d",
+      "name": "Risk Committee Agent",
+      "previousSlug": null,
+      "action": "added"
+    },
+    {
+      "code": "17.4",
+      "id": "33f9af32-1d42-4971-bc70-146a4f413fa8",
+      "name": "Capital Allocation Committee Agent",
+      "previousSlug": null,
+      "action": "added"
+    },
+    {
+      "code": "17.5",
+      "id": "66706073-4600-4355-a8d6-f78c334928b4",
+      "name": "Governance Committee Agent",
+      "previousSlug": null,
+      "action": "added"
+    },
+    {
+      "code": "18.1",
+      "id": "bbb574b9-030c-4bfd-9b94-31306ea6a6fd",
+      "name": "Chief Information Security Officer (CISO)",
+      "previousSlug": null,
+      "action": "added"
+    },
+    {
+      "code": "18.2",
+      "id": "c3b5adec-b311-4fe1-866d-22e2a5487cbc",
+      "name": "Chief Human Resources Officer (CHRO)",
+      "previousSlug": "human-resources",
+      "action": "updated"
+    },
+    {
+      "code": "18.3",
+      "id": "db228207-621f-4594-b4ee-ab52294cdbf4",
+      "name": "General Counsel / Chief Legal Officer",
+      "previousSlug": null,
+      "action": "added"
+    },
+    {
+      "code": "18.4",
+      "id": "875078f8-76bc-48fe-8afd-08b99019b817",
+      "name": "Chief Client and Product Officer",
+      "previousSlug": null,
+      "action": "added"
+    },
+    {
+      "code": "18.5",
+      "id": "24292ddb-e76c-4359-816b-7a7d5b17d44c",
+      "name": "Chief Audit Executive",
+      "previousSlug": null,
+      "action": "added"
+    },
+    {
+      "code": "19.1",
+      "id": "ab6bc132-30ae-4358-b9e0-b7d77fb67975",
+      "name": "Head of Portfolio Management",
+      "previousSlug": null,
+      "action": "added"
+    },
+    {
+      "code": "19.2",
+      "id": "609c9c33-575e-4a5a-9877-d560a9b70943",
+      "name": "Senior / Lead Portfolio Manager",
+      "previousSlug": null,
+      "action": "added"
+    },
+    {
+      "code": "19.3",
+      "id": "b46e0996-d46d-4563-b376-c632ea24b17e",
+      "name": "Assistant Portfolio Manager",
+      "previousSlug": null,
+      "action": "added"
+    },
+    {
+      "code": "19.4",
+      "id": "e1fc44e8-5706-48e0-ab0b-3e1e9fb20278",
+      "name": "Portfolio Analyst",
+      "previousSlug": null,
+      "action": "added"
+    },
+    {
+      "code": "19.5",
+      "id": "677fe60f-f3a9-4499-a182-32ed94fa9f31",
+      "name": "Multi-Asset Portfolio Manager",
+      "previousSlug": null,
+      "action": "added"
+    },
+    {
+      "code": "19.6",
+      "id": "9dc05d86-334a-4229-be29-bdf60f10ee44",
+      "name": "Quantitative / Systematic Portfolio Manager",
+      "previousSlug": null,
+      "action": "added"
+    },
+    {
+      "code": "19.7",
+      "id": "66bdae1c-e400-42eb-ad91-04e71b195f63",
+      "name": "Long/Short Equity Portfolio Manager",
+      "previousSlug": null,
+      "action": "added"
+    },
+    {
+      "code": "19.8",
+      "id": "46b55ec1-af2b-4923-9dac-0942d37542e6",
+      "name": "Foreign Exchange Portfolio Manager",
+      "previousSlug": null,
+      "action": "added"
+    },
+    {
+      "code": "19.9",
+      "id": "138ff836-1b23-48b2-b62e-e31289bb1cb2",
+      "name": "Credit Portfolio Manager",
+      "previousSlug": null,
+      "action": "added"
+    },
+    {
+      "code": "19.10",
+      "id": "6412644f-0234-4dbe-b089-c74ac346dcf7",
+      "name": "Portfolio Implementation Manager",
+      "previousSlug": null,
+      "action": "added"
+    },
+    {
+      "code": "19.11",
+      "id": "38359ebb-b3c5-4b6d-92c6-6ff26a2414d6",
+      "name": "Portfolio Rebalancing Manager",
+      "previousSlug": null,
+      "action": "added"
+    },
+    {
+      "code": "19.12",
+      "id": "9cc1cfcb-fc5d-49b7-9d72-3f9a1da6677c",
+      "name": "Portfolio Hedging / Overlay Manager",
+      "previousSlug": null,
+      "action": "added"
+    },
+    {
+      "code": "19.13",
+      "id": "6a6a4a89-c07a-4e77-a9c9-80d2c97ebc8f",
+      "name": "Portfolio Cash and Liquidity Manager",
+      "previousSlug": null,
+      "action": "added"
+    },
+    {
+      "code": "19.14",
+      "id": "2f7ef8de-5f1e-4c6b-b05d-0401c15ec915",
+      "name": "Portfolio Capacity Manager [19.14]",
+      "previousSlug": null,
+      "action": "added"
+    },
+    {
+      "code": "19.15",
+      "id": "0f702998-a426-4f39-8b39-5a139c4741d7",
+      "name": "Strategic and Tactical Asset Allocation Manager",
+      "previousSlug": null,
+      "action": "added"
+    },
+    {
+      "code": "19.16",
+      "id": "472ca222-9d98-413a-a28f-ead6c4f69f2c",
+      "name": "Index / Passive Portfolio Manager",
+      "previousSlug": null,
+      "action": "added"
+    },
+    {
+      "code": "19.17",
+      "id": "c7079dfe-3abe-430d-b85f-511b8c2273d3",
+      "name": "Investment Mandate Manager",
+      "previousSlug": null,
+      "action": "added"
+    },
+    {
+      "code": "19.18",
+      "id": "0f20454c-b7d8-48d0-91f3-e52303613771",
+      "name": "Portfolio Transition Manager",
+      "previousSlug": null,
+      "action": "added"
+    },
+    {
+      "code": "20.1",
+      "id": "23977d52-a520-4218-a8ee-3f0d47b1d841",
+      "name": "Head of Research Engineering",
+      "previousSlug": "machine-learning-engineer",
+      "action": "updated"
+    },
+    {
+      "code": "20.2",
+      "id": "c880723b-b05c-497d-a56f-ba7ba4551c78",
+      "name": "Derivatives Pricing and Greeks Quant",
+      "previousSlug": "quantitative-analyst",
+      "action": "updated"
+    },
+    {
+      "code": "20.3",
+      "id": "cc1d87c4-9f76-4647-af73-ca7dc6e70823",
+      "name": "Market Simulator / Limit-Order-Book Researcher",
+      "previousSlug": null,
+      "action": "added"
+    },
+    {
+      "code": "20.4",
+      "id": "92c58a75-5f68-402e-97cc-241422f3dbd2",
+      "name": "Research Experimentation and Multiple-Testing Specialist",
+      "previousSlug": null,
+      "action": "added"
+    },
+    {
+      "code": "20.5",
+      "id": "1e612b1a-fea5-4e35-8bba-3225a649d666",
+      "name": "Short-Selling and Securities Lending Researcher",
+      "previousSlug": null,
+      "action": "added"
+    },
+    {
+      "code": "21.1",
+      "id": "6708e6cd-c880-4a17-9c45-57cb820b42f0",
+      "name": "Head of Fundamental Research",
+      "previousSlug": "fundamental-researcher",
+      "action": "updated"
+    },
+    {
+      "code": "21.2",
+      "id": "c68a65ea-2743-4e58-b94d-50762e091f3b",
+      "name": "Investment Stewardship and Proxy Voting Analyst",
+      "previousSlug": null,
+      "action": "added"
+    },
+    {
+      "code": "21.3",
+      "id": "82e00f2e-d124-45f5-8ea3-fe2445162131",
+      "name": "Political and Geopolitical Risk Analyst",
+      "previousSlug": null,
+      "action": "added"
+    },
+    {
+      "code": "21.4",
+      "id": "6697c6d2-1cfc-4f0d-81bd-89ff04e8ca0d",
+      "name": "Supply Chain and Channel Checks Analyst",
+      "previousSlug": null,
+      "action": "added"
+    },
+    {
+      "code": "22.1",
+      "id": "559faf4a-2ca9-4b7e-98cb-95388932c764",
+      "name": "Data Platform Architect",
+      "previousSlug": null,
+      "action": "added"
+    },
+    {
+      "code": "22.2",
+      "id": "fb8f832d-b1a0-407d-ade1-a695c79d4482",
+      "name": "Point-in-Time Data and Revision Specialist",
+      "previousSlug": null,
+      "action": "added"
+    },
+    {
+      "code": "22.3",
+      "id": "8114879e-d6f8-4c48-89ac-78ed9b01b73b",
+      "name": "Data Entitlements and Licensing Officer",
+      "previousSlug": null,
+      "action": "added"
+    },
+    {
+      "code": "22.4",
+      "id": "8b6f3a36-9664-4876-9885-35b4f507bd72",
+      "name": "Data Observability and Incident Engineer",
+      "previousSlug": null,
+      "action": "added"
+    },
+    {
+      "code": "22.5",
+      "id": "fbba9c2c-f815-4ec2-9100-f45b8471ea8e",
+      "name": "Entity Resolution and Corporate Hierarchy Analyst",
+      "previousSlug": null,
+      "action": "added"
+    },
+    {
+      "code": "23.1",
+      "id": "d8166568-991a-40aa-b845-52644e621216",
+      "name": "Head of Trading / Trading Desk Supervisor",
+      "previousSlug": null,
+      "action": "added"
+    },
+    {
+      "code": "23.2",
+      "id": "b961fdab-1c1a-4674-8a9a-888e9d675908",
+      "name": "Pre-Trade Risk Gateway Engineer / Controller",
+      "previousSlug": null,
+      "action": "added"
+    },
+    {
+      "code": "23.3",
+      "id": "5cccd6cc-6df8-4ed1-a566-627214eed5e5",
+      "name": "Trading Kill-Switch and Incident Controller",
+      "previousSlug": null,
+      "action": "added"
+    },
+    {
+      "code": "23.4",
+      "id": "ab9a341c-8e49-43ca-b22c-ab2d9ca86f7f",
+      "name": "Prime Brokerage and Clearing Relationship Manager",
+      "previousSlug": null,
+      "action": "added"
+    },
+    {
+      "code": "23.5",
+      "id": "dee8add1-4af8-4bb1-a59b-f0e3e0c7114e",
+      "name": "Trade and Order Management System Product Owner",
+      "previousSlug": "product-manager",
+      "action": "updated"
+    },
+    {
+      "code": "24.1",
+      "id": "b921369f-b7e8-479f-9315-1aeb68b6eab1",
+      "name": "Market-Making Desk Head / Principal Supervisor",
+      "previousSlug": null,
+      "action": "added"
+    },
+    {
+      "code": "24.2",
+      "id": "503f3101-0d40-4d71-a95f-053350c28199",
+      "name": "Fair-Value and Theoretical Pricing Quant",
+      "previousSlug": null,
+      "action": "added"
+    },
+    {
+      "code": "24.3",
+      "id": "3746b855-ef2f-4de7-ae83-3171eb219003",
+      "name": "Real-Time Pre-Trade and Inventory Limit Controller",
+      "previousSlug": null,
+      "action": "added"
+    },
+    {
+      "code": "24.4",
+      "id": "423abda2-8479-48ce-9935-d55a64dca930",
+      "name": "Exchange Membership and Venue Rules Specialist",
+      "previousSlug": null,
+      "action": "added"
+    },
+    {
+      "code": "24.5",
+      "id": "fa3a161c-69ba-483e-8a73-6d307ec4dc49",
+      "name": "Stock Loan and Locate Specialist",
+      "previousSlug": null,
+      "action": "added"
+    },
+    {
+      "code": "25.1",
+      "id": "2e3b0626-fcf7-4297-9111-9ff3b8263d17",
+      "name": "Head of Market Risk",
+      "previousSlug": null,
+      "action": "added"
+    },
+    {
+      "code": "25.2",
+      "id": "d76d0b45-4718-4f14-b765-00d9aca73479",
+      "name": "Intraday and Market Access Risk Officer",
+      "previousSlug": null,
+      "action": "added"
+    },
+    {
+      "code": "25.3",
+      "id": "a5e95f4a-73fc-4957-931f-db760c7f934b",
+      "name": "Margin, Collateral and Wrong-Way Risk Analyst",
+      "previousSlug": null,
+      "action": "added"
+    },
+    {
+      "code": "25.4",
+      "id": "29c430b3-3a11-44e6-835a-02852ba1b071",
+      "name": "Independent Model Risk Manager",
+      "previousSlug": null,
+      "action": "added"
+    },
+    {
+      "code": "25.5",
+      "id": "f62b7487-0e56-4db7-9abb-3915bc3f3180",
+      "name": "Investment Risk Limits and Breach Manager",
+      "previousSlug": null,
+      "action": "added"
+    },
+    {
+      "code": "26.1",
+      "id": "15dafd4b-3bdf-4cc0-8983-0e7c4c170ea8",
+      "name": "Independent Pricing Model Validator",
+      "previousSlug": null,
+      "action": "added"
+    },
+    {
+      "code": "26.2",
+      "id": "413fafb2-c9c4-4b03-b574-c5467fc512d2",
+      "name": "Paper-Trading / Shadow-Book Validation Agent",
+      "previousSlug": null,
+      "action": "added"
+    },
+    {
+      "code": "26.3",
+      "id": "3afc441b-a39c-4ef2-8cd7-6cbb63779856",
+      "name": "Post-Deployment Model Drift and Revalidation Agent",
+      "previousSlug": null,
+      "action": "added"
+    },
+    {
+      "code": "27.1",
+      "id": "2d41db75-b4a5-49f5-bcc5-752bb3ed850b",
+      "name": "Trading Systems Engineer",
+      "previousSlug": "production-engineer",
+      "action": "updated"
+    },
+    {
+      "code": "27.2",
+      "id": "d7ce69c3-648a-4428-9b99-0b2862725a6d",
+      "name": "Simulation / Backtesting Engine Engineer",
+      "previousSlug": null,
+      "action": "added"
+    },
+    {
+      "code": "27.3",
+      "id": "842ba10c-9d29-4da5-8db5-364c479da8c5",
+      "name": "Production Portfolio and Risk Platform Engineer",
+      "previousSlug": null,
+      "action": "added"
+    },
+    {
+      "code": "27.4",
+      "id": "083f0ec4-4a80-4d95-b57e-7ed5825e3dd0",
+      "name": "Quality Assurance / Automated Testing Engineer",
+      "previousSlug": null,
+      "action": "added"
+    },
+    {
+      "code": "27.5",
+      "id": "53d57855-3088-46f4-a3af-920aac15f294",
+      "name": "Disaster Recovery and Business Continuity Engineer",
+      "previousSlug": "facilities-engineer",
+      "action": "updated"
+    },
+    {
+      "code": "27.6",
+      "id": "bbaf81d6-0e31-4450-8b85-7d75b935a545",
+      "name": "Time Synchronisation and Latency Engineer",
+      "previousSlug": null,
+      "action": "added"
+    },
+    {
+      "code": "28.1",
+      "id": "cffc3aae-389f-4641-866b-fcb619325c76",
+      "name": "AI Systems Lead / Human Agent Owner",
+      "previousSlug": null,
+      "action": "added"
+    },
+    {
+      "code": "28.2",
+      "id": "63cbd4fb-48f4-4144-bad0-f6d55a7c0289",
+      "name": "Agent Evaluation and Red-Team Specialist",
+      "previousSlug": null,
+      "action": "added"
+    },
+    {
+      "code": "28.3",
+      "id": "a7a1a223-1bf5-4cfd-8c30-f9f87c9d0669",
+      "name": "AI Tool Permission and Transaction Guard Agent",
+      "previousSlug": null,
+      "action": "added"
+    },
+    {
+      "code": "28.4",
+      "id": "09e557b7-84bb-43cf-840d-9374707ccbe7",
+      "name": "AI Incident and Rollback Manager",
+      "previousSlug": null,
+      "action": "added"
+    },
+    {
+      "code": "28.5",
+      "id": "b53acc9d-5a52-46e8-856d-76297a1eb93a",
+      "name": "Retrieval and Evidence Provenance Engineer",
+      "previousSlug": null,
+      "action": "added"
+    },
+    {
+      "code": "29.1",
+      "id": "11a9984e-81ae-4a01-8869-0b68cc2b1bb3",
+      "name": "Head of Financial Crime and Sanctions",
+      "previousSlug": null,
+      "action": "added"
+    },
+    {
+      "code": "29.2",
+      "id": "30a94917-925d-41ae-b8b2-753637be9fd3",
+      "name": "Conflicts of Interest and MNPI Control Officer",
+      "previousSlug": null,
+      "action": "added"
+    },
+    {
+      "code": "29.3",
+      "id": "1d8c4cd7-4982-4e80-83dd-6737c704c825",
+      "name": "Regulatory Reporting and Books-and-Records Officer",
+      "previousSlug": null,
+      "action": "added"
+    },
+    {
+      "code": "29.4",
+      "id": "e09273ea-9e64-493a-85e9-16021ad5c418",
+      "name": "Financial Promotions and Performance Advertising Reviewer",
+      "previousSlug": null,
+      "action": "added"
+    },
+    {
+      "code": "29.5",
+      "id": "19debc36-338b-4e5e-ab6f-e0f22b295f79",
+      "name": "Privacy and Data Protection Officer",
+      "previousSlug": null,
+      "action": "added"
+    },
+    {
+      "code": "30.1",
+      "id": "5b8a07a7-2566-4b90-9fd8-62d2c34087b9",
+      "name": "Fund Valuation / NAV Control Manager",
+      "previousSlug": null,
+      "action": "added"
+    },
+    {
+      "code": "30.2",
+      "id": "3619c8b2-64aa-4019-aaf6-5aab32c98fc9",
+      "name": "Collateral and Margin Operations Manager",
+      "previousSlug": null,
+      "action": "added"
+    },
+    {
+      "code": "30.3",
+      "id": "e92c1c50-69ee-417e-bd76-ce2c2a8181d3",
+      "name": "Trade Confirmation and Lifecycle Specialist",
+      "previousSlug": "trade-support",
+      "action": "updated"
+    },
+    {
+      "code": "30.4",
+      "id": "4da3f034-b08d-457d-8866-7dbe1bc34ecf",
+      "name": "Custody and Client-Asset Oversight Manager",
+      "previousSlug": null,
+      "action": "added"
+    },
+    {
+      "code": "30.5",
+      "id": "37b87bb8-1a48-4752-ac22-1bba88cd0beb",
+      "name": "Fund Subscription, Redemption and Investor Register Manager",
+      "previousSlug": null,
+      "action": "added"
+    },
+    {
+      "code": "30.6",
+      "id": "19a68332-3e6a-4abd-8816-6505dee7fe50",
+      "name": "Fund Fees and Expense Allocation Controller",
+      "previousSlug": null,
+      "action": "added"
+    },
+    {
+      "code": "30.7",
+      "id": "dae91b9d-04f9-4a12-8d19-1ca0c24f981d",
+      "name": "Securities Lending and Corporate Action Operations Specialist",
+      "previousSlug": null,
+      "action": "added"
+    },
+    {
+      "code": "31.1",
+      "id": "2c825fc2-998b-42c3-914f-a96845fa037c",
+      "name": "Cybersecurity Governance, Risk and Compliance Lead",
+      "previousSlug": null,
+      "action": "added"
+    },
+    {
+      "code": "31.2",
+      "id": "f8c1fd93-2ae1-413c-a8dd-d0807525529e",
+      "name": "Identity and Privileged Access Engineer",
+      "previousSlug": null,
+      "action": "added"
+    },
+    {
+      "code": "31.3",
+      "id": "70abf466-69a1-41e7-9f0b-60c20c7e4275",
+      "name": "Business Resilience and Cyber Recovery Lead",
+      "previousSlug": null,
+      "action": "added"
+    },
+    {
+      "code": "32.1",
+      "id": "2aae45b8-a616-4c07-a77e-f1894215b80b",
+      "name": "Board Audit Committee and Independent Audit Liaison",
+      "previousSlug": null,
+      "action": "added"
+    },
+    {
+      "code": "32.2",
+      "id": "38077063-a54c-49d2-94ae-484df2ae34bc",
+      "name": "Valuation Committee Coordinator",
+      "previousSlug": null,
+      "action": "added"
+    },
+    {
+      "code": "32.3",
+      "id": "b60a4221-23bf-4a5f-a5fa-e73824735daa",
+      "name": "New Business and Product Approval Committee Agent",
+      "previousSlug": null,
+      "action": "added"
+    },
+    {
+      "code": "33.1",
+      "id": "c1076224-6208-444c-be37-996239356df0",
+      "name": "Head of Institutional Client Relations",
+      "previousSlug": "institutional-sales-trading",
+      "action": "updated"
+    },
+    {
+      "code": "33.2",
+      "id": "4aecd150-e084-4fd6-9ac8-feace6925d5f",
+      "name": "Investor Relations / Fundraising Director",
+      "previousSlug": null,
+      "action": "added"
+    },
+    {
+      "code": "33.3",
+      "id": "551d0f16-75c1-49ed-a48c-b6a136a805b7",
+      "name": "Client Onboarding and Mandate Implementation Manager",
+      "previousSlug": null,
+      "action": "added"
+    },
+    {
+      "code": "33.4",
+      "id": "7300e5ba-beb4-455a-bdca-bda5651d63c6",
+      "name": "Client Reporting and Performance Specialist",
+      "previousSlug": null,
+      "action": "added"
+    },
+    {
+      "code": "33.5",
+      "id": "276f1c5e-2b8f-4305-b5fa-cd19a6b07583",
+      "name": "Requests for Proposal / Due Diligence Questionnaire Manager",
+      "previousSlug": null,
+      "action": "added"
+    },
+    {
+      "code": "34.1",
+      "id": "24395ed9-c13c-49d7-ad13-52c7e6f2d79b",
+      "name": "Head of Investment Products",
+      "previousSlug": "strategy-product",
+      "action": "updated"
+    },
+    {
+      "code": "34.2",
+      "id": "c57de79b-f29f-4ddb-b818-3de41f730f10",
+      "name": "Fund Structuring and Domiciliation Specialist",
+      "previousSlug": null,
+      "action": "added"
+    },
+    {
+      "code": "34.3",
+      "id": "12e30197-90f9-4218-920b-d2c9a6f15fc8",
+      "name": "Product Governance and Suitability Specialist",
+      "previousSlug": null,
+      "action": "added"
+    },
+    {
+      "code": "35.1",
+      "id": "9e3dc1c1-0ad2-400b-bb04-95bf6ba1c22a",
+      "name": "Head of Internal Audit / Chief Audit Executive Delegate",
+      "previousSlug": null,
+      "action": "added"
+    },
+    {
+      "code": "35.2",
+      "id": "a2bf0b1f-c18f-4197-93d6-6ac3531c9857",
+      "name": "Investment and Trading Internal Auditor",
+      "previousSlug": null,
+      "action": "added"
+    },
+    {
+      "code": "35.3",
+      "id": "9ddcf77e-3fa7-43fd-ac5d-c26531c56633",
+      "name": "Technology and AI Internal Auditor",
+      "previousSlug": null,
+      "action": "added"
+    },
+    {
+      "code": "36.1",
+      "id": "3ba591c8-95cd-41c5-9cb2-9c401269e6b2",
+      "name": "Talent Acquisition and Workforce Planning Manager",
+      "previousSlug": "recruiting",
+      "action": "updated"
+    },
+    {
+      "code": "36.2",
+      "id": "fca3a383-35bf-486a-8a10-43b891264bfb",
+      "name": "Compensation, Benefits and Incentive Risk Manager",
+      "previousSlug": null,
+      "action": "added"
+    },
+    {
+      "code": "36.3",
+      "id": "8867db56-8067-4f5a-a928-198216143003",
+      "name": "Learning, Certification and Conduct Manager",
+      "previousSlug": "hospitality",
+      "action": "updated"
+    },
+    {
+      "code": "36.4",
+      "id": "64d03f12-4b3e-4391-af6d-ebd311ee174e",
+      "name": "Business Continuity and Facilities Manager",
+      "previousSlug": "building-operations",
+      "action": "updated"
+    },
+    {
+      "code": "37.1",
+      "id": "49e2d426-c4df-4af2-8cc3-f0318f4d0ac2",
+      "name": "Financial Planning and Analysis (FP&A) Manager",
+      "previousSlug": "business-analyst",
+      "action": "updated"
+    },
+    {
+      "code": "37.2",
+      "id": "e211a3db-44ef-44be-ac03-c18e83e48a63",
+      "name": "Corporate Tax and Fund Tax Manager",
+      "previousSlug": null,
+      "action": "added"
+    },
+    {
+      "code": "37.3",
+      "id": "02376456-b463-46bb-878a-20b2f16c71fc",
+      "name": "Regulatory Capital and Liquidity Controller",
+      "previousSlug": null,
+      "action": "added"
+    },
+    {
+      "code": "38.1",
+      "id": "d5d21c88-4830-4a8f-9f42-273ff6894fad",
+      "name": "Research Synthesis Agent",
+      "previousSlug": "research-analyst",
+      "action": "updated"
+    },
+    {
+      "code": "38.2",
+      "id": "0994d2b2-440f-4892-b9a5-04eb581d2c9f",
+      "name": "Alpha Decay Monitor",
+      "previousSlug": null,
+      "action": "added"
+    },
+    {
+      "code": "38.3",
+      "id": "14bf84c6-f200-4f94-be1c-04261a5a3012",
+      "name": "Crowding Analyst",
+      "previousSlug": null,
+      "action": "added"
+    },
+    {
+      "code": "38.4",
+      "id": "bad0238a-5279-446f-911b-d7ea04101a04",
+      "name": "Capacity Researcher",
+      "previousSlug": null,
+      "action": "added"
+    },
+    {
+      "code": "38.5",
+      "id": "fdb3ae51-4ed4-457e-8851-a00a7ab292d3",
+      "name": "Regime Forecasting Specialist",
+      "previousSlug": null,
+      "action": "added"
+    },
+    {
+      "code": "38.6",
+      "id": "d1d0adb2-1c8c-4681-87d0-c69b78829d89",
+      "name": "Cross-Asset Signal Researcher",
+      "previousSlug": null,
+      "action": "added"
+    },
+    {
+      "code": "39.1",
+      "id": "6aaf6664-e5e5-4556-854f-4f2d660a0c8f",
+      "name": "Portfolio Capacity Manager [39.1]",
+      "previousSlug": null,
+      "action": "added"
+    },
+    {
+      "code": "39.2",
+      "id": "949703c4-6348-4477-a246-3b1741e85a56",
+      "name": "Capital Efficiency Optimiser",
+      "previousSlug": null,
+      "action": "added"
+    },
+    {
+      "code": "39.3",
+      "id": "c0eb8ff4-fccb-4440-b1f4-554e6334600c",
+      "name": "Portfolio Turnover Controller",
+      "previousSlug": null,
+      "action": "added"
+    },
+    {
+      "code": "39.4",
+      "id": "ced85fee-f84f-4dbf-abce-534365c68204",
+      "name": "Portfolio Crowding Manager",
+      "previousSlug": null,
+      "action": "added"
+    },
+    {
+      "code": "40.1",
+      "id": "18c6b550-26c0-469b-a2ea-eef4b3f73a37",
+      "name": "Exchange Microstructure Specialist",
+      "previousSlug": null,
+      "action": "added"
+    },
+    {
+      "code": "40.2",
+      "id": "d67fa27f-309a-4ba0-8396-41d596af38c1",
+      "name": "Latency Arbitrage Researcher",
+      "previousSlug": null,
+      "action": "added"
+    },
+    {
+      "code": "40.3",
+      "id": "0029799c-f44b-44c4-a664-91a89c95c594",
+      "name": "Venue Analysis Agent",
+      "previousSlug": null,
+      "action": "added"
+    },
+    {
+      "code": "40.4",
+      "id": "3d157153-187b-47b9-9653-7f72a0cb00ff",
+      "name": "Order Book Intelligence Agent",
+      "previousSlug": null,
+      "action": "added"
+    },
+    {
+      "code": "40.5",
+      "id": "9aa458f8-9078-4dbb-9e27-62f5c50abcd1",
+      "name": "Queue Position Forecasting Agent",
+      "previousSlug": null,
+      "action": "added"
+    },
+    {
+      "code": "40.6",
+      "id": "dcd6e1c7-6b74-4c21-9d23-0fc3e586d0b3",
+      "name": "Execution Simulation Agent",
+      "previousSlug": null,
+      "action": "added"
+    },
+    {
+      "code": "41.1",
+      "id": "f257fcc5-64f8-4d79-8858-72fc6bcaf6fa",
+      "name": "Concentration Risk Specialist",
+      "previousSlug": null,
+      "action": "added"
+    },
+    {
+      "code": "41.2",
+      "id": "6d8e27a4-ba45-4ad4-bca0-210dd2de0b4d",
+      "name": "Model Risk Manager",
+      "previousSlug": null,
+      "action": "added"
+    },
+    {
+      "code": "41.3",
+      "id": "3e98b953-79c7-4df7-b1fa-212d940766ab",
+      "name": "Liquidity Stress Testing Specialist",
+      "previousSlug": null,
+      "action": "added"
+    },
+    {
+      "code": "41.4",
+      "id": "673d43cd-2822-4d73-a208-3e03f5e64a4c",
+      "name": "Contagion Risk Analyst",
+      "previousSlug": null,
+      "action": "added"
+    },
+    {
+      "code": "41.5",
+      "id": "58f36319-93ea-4d5d-8127-e7244ba977f5",
+      "name": "Black Swan Simulation Agent",
+      "previousSlug": null,
+      "action": "added"
+    },
+    {
+      "code": "41.6",
+      "id": "f7bf43ca-15cd-4b4d-b8ec-eef5eef72a7b",
+      "name": "Recovery Planning Agent",
+      "previousSlug": null,
+      "action": "added"
+    },
+    {
+      "code": "42.1",
+      "id": "309801d7-0b6d-44b5-aa19-2296a26fe444",
+      "name": "Strategy Health Monitor",
+      "previousSlug": null,
+      "action": "added"
+    },
+    {
+      "code": "42.2",
+      "id": "11f339ce-2111-4d01-a7a5-101dce84c87f",
+      "name": "Feature Drift Detector",
+      "previousSlug": null,
+      "action": "added"
+    },
+    {
+      "code": "42.3",
+      "id": "0070c93b-9425-4d25-b70e-9972a1b1fddd",
+      "name": "Model Drift Detector",
+      "previousSlug": null,
+      "action": "added"
+    },
+    {
+      "code": "42.4",
+      "id": "358b04ab-a2ed-438d-bc15-657e02e018c9",
+      "name": "Live vs Backtest Comparator",
+      "previousSlug": null,
+      "action": "added"
+    },
+    {
+      "code": "42.5",
+      "id": "77340330-c8e9-47ee-aa4c-171138c53bab",
+      "name": "Production Incident Investigator",
+      "previousSlug": null,
+      "action": "added"
+    },
+    {
+      "code": "42.6",
+      "id": "9db10cfd-f3cd-41e7-af3a-95ff8cc5f2ca",
+      "name": "Alpha Stability Analyst",
+      "previousSlug": null,
+      "action": "added"
+    },
+    {
+      "code": "42.7",
+      "id": "13db3bdb-43df-41e5-868a-cce89264c32c",
+      "name": "Strategy Retirement Manager",
+      "previousSlug": null,
+      "action": "added"
+    },
+    {
+      "code": "43.1",
+      "id": "64b40327-a3f5-4419-908c-695fff917335",
+      "name": "Agent Behaviour Auditor",
+      "previousSlug": null,
+      "action": "added"
+    },
+    {
+      "code": "43.2",
+      "id": "210fd3a4-816a-41ce-9a55-d541b448cbfe",
+      "name": "Agent Red Team Specialist",
+      "previousSlug": null,
+      "action": "added"
+    },
+    {
+      "code": "43.3",
+      "id": "e7b34473-bdc1-4ef1-be5d-360e84bbd381",
+      "name": "Agent Alignment Evaluator",
+      "previousSlug": null,
+      "action": "added"
+    },
+    {
+      "code": "43.4",
+      "id": "97f61ad6-7d5f-4d52-b96f-fc1285f42848",
+      "name": "Autonomous Decision Reviewer",
+      "previousSlug": null,
+      "action": "added"
+    },
+    {
+      "code": "43.5",
+      "id": "6c08b1e7-6736-46c5-96aa-4d90321d86e9",
+      "name": "Tool Access Governance Agent",
+      "previousSlug": null,
+      "action": "added"
+    },
+    {
+      "code": "43.6",
+      "id": "6a1cd501-bda8-42eb-bc9b-3efbd0c1f2ba",
+      "name": "Agent Reputation Scorer",
+      "previousSlug": null,
+      "action": "added"
+    },
+    {
+      "code": "43.7",
+      "id": "ddad796e-064c-42bd-8490-4f192e1e7405",
+      "name": "Multi-Agent Conflict Resolver",
+      "previousSlug": null,
+      "action": "added"
+    },
+    {
+      "code": "44.1",
+      "id": "10e7815a-e285-40a7-b3ed-b5ddde2dab0b",
+      "name": "Data Observability Engineer",
+      "previousSlug": null,
+      "action": "added"
+    },
+    {
+      "code": "44.2",
+      "id": "2f303f48-9382-43be-a047-7fc1c6af2f5f",
+      "name": "Point-in-Time Data Specialist",
+      "previousSlug": null,
+      "action": "added"
+    },
+    {
+      "code": "44.3",
+      "id": "000a1e42-8526-4adf-a57b-d57170892001",
+      "name": "Data Lineage Manager",
+      "previousSlug": null,
+      "action": "added"
+    },
+    {
+      "code": "44.4",
+      "id": "ff091358-d060-4a1b-95a7-27511abcecc7",
+      "name": "Entity Resolution Specialist",
+      "previousSlug": null,
+      "action": "added"
+    },
+    {
+      "code": "44.5",
+      "id": "108dbac1-8565-4131-9c4f-38cf5744ff20",
+      "name": "Alternative Data Compliance Officer",
+      "previousSlug": null,
+      "action": "added"
+    },
+    {
+      "code": "44.6",
+      "id": "c83ff159-a1ff-434b-a772-b711c21047d8",
+      "name": "Data Provenance Auditor",
+      "previousSlug": null,
+      "action": "added"
+    },
+    {
+      "code": "44.7",
+      "id": "6e10a751-2a97-4ac9-9dde-2f4cfa097e6f",
+      "name": "Synthetic Data Validation Agent",
+      "previousSlug": null,
+      "action": "added"
+    },
+    {
+      "code": "45.1",
+      "id": "ff703c1d-1ccf-49ac-aca2-37cb41d3f41f",
+      "name": "Inventory Risk Quant",
+      "previousSlug": null,
+      "action": "added"
+    },
+    {
+      "code": "45.2",
+      "id": "373a58d6-9bff-467e-a9b3-0034b4cd8b2c",
+      "name": "ETF Arbitrage Specialist",
+      "previousSlug": null,
+      "action": "added"
+    },
+    {
+      "code": "45.3",
+      "id": "656a3baf-2eb5-41ec-897e-118d16042fd2",
+      "name": "Creation/Redemption Coordinator",
+      "previousSlug": null,
+      "action": "added"
+    },
+    {
+      "code": "45.4",
+      "id": "ee3277c4-bf36-4770-b904-5b4dca422ba1",
+      "name": "Quote Toxicity Monitor",
+      "previousSlug": null,
+      "action": "added"
+    },
+    {
+      "code": "45.5",
+      "id": "94f24b8f-8d5b-40e6-a708-e3c221869255",
+      "name": "Adverse Selection Quant",
+      "previousSlug": null,
+      "action": "added"
+    },
+    {
+      "code": "45.6",
+      "id": "d2147a3f-19cb-45c0-a492-116fb8f85997",
+      "name": "Internalisation Engine Manager",
+      "previousSlug": null,
+      "action": "added"
+    },
+    {
+      "code": "45.7",
+      "id": "8f3bcbc4-9134-422f-b57b-f2fc8a5bf635",
+      "name": "Securities Lending Specialist",
+      "previousSlug": null,
+      "action": "added"
+    },
+    {
+      "code": "45.8",
+      "id": "e3beb9eb-f5a2-4f97-8bde-5e6079f9de77",
+      "name": "Borrow Availability Forecast Agent",
+      "previousSlug": null,
+      "action": "added"
+    },
+    {
+      "code": "46.1",
+      "id": "104368f3-f625-45ae-963b-8c5f3d50cc51",
+      "name": "Prime Broker Manager",
+      "previousSlug": null,
+      "action": "added"
+    },
+    {
+      "code": "46.2",
+      "id": "60203249-52df-4678-9596-2140b0f5220b",
+      "name": "Financing Optimiser",
+      "previousSlug": null,
+      "action": "added"
+    },
+    {
+      "code": "46.3",
+      "id": "6b3362b0-dea6-4f3e-ba7a-4fafe39cf650",
+      "name": "Securities Borrow Manager",
+      "previousSlug": null,
+      "action": "added"
+    },
+    {
+      "code": "46.4",
+      "id": "c0721e11-0e24-45a8-b4e6-95e06cabe981",
+      "name": "Margin Optimiser",
+      "previousSlug": null,
+      "action": "added"
+    },
+    {
+      "code": "46.5",
+      "id": "f51352dd-e91c-495d-978b-927d96259a05",
+      "name": "Balance Sheet Efficiency Manager",
+      "previousSlug": null,
+      "action": "added"
+    },
+    {
+      "code": "47.1",
+      "id": "9104fcc3-726b-4cb0-b51f-9b7d426e7f02",
+      "name": "Red Team Operator",
+      "previousSlug": null,
+      "action": "added"
+    },
+    {
+      "code": "47.2",
+      "id": "f8743591-5cf3-4bbb-8760-af90ac4cb5af",
+      "name": "Threat Hunting Specialist",
+      "previousSlug": null,
+      "action": "added"
+    },
+    {
+      "code": "47.3",
+      "id": "960198db-8a15-4a70-bb0a-1ae973b70b60",
+      "name": "Access Governance Manager",
+      "previousSlug": null,
+      "action": "added"
+    },
+    {
+      "code": "47.4",
+      "id": "565b2b0c-402a-4d17-99d5-b36aed85c2b8",
+      "name": "Secrets Management Officer",
+      "previousSlug": null,
+      "action": "added"
+    },
+    {
+      "code": "47.5",
+      "id": "57972269-26ee-405c-a5d4-a2e8bc3d9603",
+      "name": "Security Incident Commander",
+      "previousSlug": null,
+      "action": "added"
+    },
+    {
+      "code": "47.6",
+      "id": "361aee09-3826-4d80-bdde-e991dedd5a61",
+      "name": "Model Security Specialist",
+      "previousSlug": null,
+      "action": "added"
+    },
+    {
+      "code": "48.1",
+      "id": "fadf819f-9485-4fd8-ab65-4c7c6bf921f3",
+      "name": "Chief of Staff Agent [48.1]",
+      "previousSlug": null,
+      "action": "added"
+    },
+    {
+      "code": "48.2",
+      "id": "acb1c4d9-0e87-4e4b-bd14-cf43d7d7f1d0",
+      "name": "Investment Committee Chair",
+      "previousSlug": null,
+      "action": "added"
+    },
+    {
+      "code": "48.3",
+      "id": "7f5c9d10-d150-4bbc-8690-95d0d0124422",
+      "name": "Risk Committee Chair",
+      "previousSlug": null,
+      "action": "added"
+    },
+    {
+      "code": "48.4",
+      "id": "ad464107-b218-48bd-a1e9-276a954637a8",
+      "name": "Technology Governance Chair",
+      "previousSlug": null,
+      "action": "added"
+    },
+    {
+      "code": "48.5",
+      "id": "62969dc0-bf9a-4ec2-8024-1ce495b2f3d8",
+      "name": "Model Approval Board",
+      "previousSlug": null,
+      "action": "added"
+    },
+    {
+      "code": "48.6",
+      "id": "541c2557-af2a-49fe-9510-b34a0419c6a6",
+      "name": "Incident Review Board",
+      "previousSlug": null,
+      "action": "added"
+    },
+    {
+      "code": "49.1",
+      "id": "fba61015-1aa1-4a68-b42f-3c6b286621aa",
+      "name": "Quant Audit Specialist",
+      "previousSlug": null,
+      "action": "added"
+    },
+    {
+      "code": "49.2",
+      "id": "45faaf92-1c44-45d8-942c-63ff7e9f5e7c",
+      "name": "Trading Audit Specialist",
+      "previousSlug": null,
+      "action": "added"
+    },
+    {
+      "code": "49.3",
+      "id": "5ac327c7-39a4-4dec-8093-4414192dfb3a",
+      "name": "Technology Audit Specialist",
+      "previousSlug": null,
+      "action": "added"
+    },
+    {
+      "code": "49.4",
+      "id": "98b1889c-5ae0-4566-9aaa-e1dd2e350a00",
+      "name": "AI Systems Auditor",
+      "previousSlug": null,
+      "action": "added"
+    },
+    {
+      "code": "49.5",
+      "id": "fc512aaf-6979-4d54-a7d5-567c22accf11",
+      "name": "Operational Audit Specialist",
+      "previousSlug": null,
+      "action": "added"
+    },
+    {
+      "code": "50.1",
+      "id": "f17b7f93-1503-4785-bba6-416832e674a0",
+      "name": "Behavioural Finance Researcher",
+      "previousSlug": null,
+      "action": "added"
+    },
+    {
+      "code": "50.2",
+      "id": "705cfc13-d5ac-42f3-9c8f-13437a908318",
+      "name": "Geopolitical Intelligence Analyst",
+      "previousSlug": null,
+      "action": "added"
+    },
+    {
+      "code": "50.3",
+      "id": "3234dba3-fc61-428a-9c29-68808b047245",
+      "name": "Satellite Data Specialist",
+      "previousSlug": null,
+      "action": "added"
+    },
+    {
+      "code": "50.4",
+      "id": "0b245957-ef66-4b1d-a468-433404533e76",
+      "name": "Shipping & Logistics Analyst",
+      "previousSlug": null,
+      "action": "added"
+    },
+    {
+      "code": "50.5",
+      "id": "ddd570e8-b1c9-47b5-8c01-7ae63ea0e52a",
+      "name": "Weather Risk Analyst",
+      "previousSlug": null,
+      "action": "added"
+    },
+    {
+      "code": "50.6",
+      "id": "c1ce5de3-a229-4d5d-b5d6-5205eab7b8e2",
+      "name": "Energy Markets Specialist",
+      "previousSlug": null,
+      "action": "added"
+    },
+    {
+      "code": "50.7",
+      "id": "5d75fc3c-23b3-4560-9e83-1fd85a05d005",
+      "name": "Volatility Surface Researcher",
+      "previousSlug": null,
+      "action": "added"
+    },
+    {
+      "code": "50.8",
+      "id": "858c5a53-0ff8-44fa-a0a3-bf2e14e0537f",
+      "name": "Derivatives Structuring Specialist",
+      "previousSlug": null,
+      "action": "added"
+    },
+    {
+      "code": "50.9",
+      "id": "65818e4b-71f7-4653-815d-e7853735c6d2",
+      "name": "Macro Regime Forecaster",
+      "previousSlug": null,
+      "action": "added"
+    },
+    {
+      "code": "50.10",
+      "id": "5201f7ea-3538-4b37-a884-5b4295e437d6",
+      "name": "Corporate Actions Arbitrage Specialist",
+      "previousSlug": null,
+      "action": "added"
+    },
+    {
+      "code": "50.11",
+      "id": "c3e0e007-66d7-4217-99bd-6e862634de8c",
+      "name": "Merger Arbitrage Specialist",
+      "previousSlug": null,
+      "action": "added"
+    },
+    {
+      "code": "50.12",
+      "id": "f02dfee8-b59d-4ead-bf54-722cf95d35b8",
+      "name": "Event-Driven Strategist",
+      "previousSlug": null,
+      "action": "added"
+    },
+    {
+      "code": "51.1",
+      "id": "492359aa-3604-4e98-8152-da894be0736b",
+      "name": "Chief Data Scientist",
+      "previousSlug": "data-scientist",
+      "action": "updated"
+    },
+    {
+      "code": "51.2",
+      "id": "a8c7f1d7-b668-4b56-bc09-da3ef5ab006d",
+      "name": "Chief Economist",
+      "previousSlug": null,
+      "action": "added"
+    },
+    {
+      "code": "52.1",
+      "id": "16ca3046-a550-4d36-9598-58b133b597d5",
+      "name": "Research Portfolio Manager",
+      "previousSlug": null,
+      "action": "added"
+    },
+    {
+      "code": "52.2",
+      "id": "39d887e3-e79e-4e79-9d7e-641790d211f5",
+      "name": "Alpha Factory Manager",
+      "previousSlug": null,
+      "action": "added"
+    },
+    {
+      "code": "52.3",
+      "id": "85624f2e-e502-42a6-9f5c-a7a262985329",
+      "name": "Strategy Marketplace Manager",
+      "previousSlug": null,
+      "action": "added"
+    },
+    {
+      "code": "52.4",
+      "id": "31e0f91f-5c26-4350-9682-d6e2dba29df2",
+      "name": "Market Ecology Researcher",
+      "previousSlug": null,
+      "action": "added"
+    },
+    {
+      "code": "52.5",
+      "id": "156f3053-a041-4ddc-be63-5abb98fd3a8f",
+      "name": "Transaction Network Researcher",
+      "previousSlug": null,
+      "action": "added"
+    },
+    {
+      "code": "52.6",
+      "id": "8cd29d89-77da-4e04-8ec0-ffe4acfe9be5",
+      "name": "Cross-Strategy Dependency Researcher",
+      "previousSlug": null,
+      "action": "added"
+    },
+    {
+      "code": "53.1",
+      "id": "4b5674a2-462a-41f7-94f4-c6d1e2968640",
+      "name": "Treasury Repo Specialist / Repo Financing Specialist",
+      "previousSlug": null,
+      "action": "added"
+    },
+    {
+      "code": "53.2",
+      "id": "5530d998-804a-4c33-8afd-35963ef95f5f",
+      "name": "Funding Liquidity Trader",
+      "previousSlug": null,
+      "action": "added"
+    },
+    {
+      "code": "54.1",
+      "id": "36f48d15-c0b3-4ba2-8d3d-2d09069f8241",
+      "name": "Autonomous Workflow Designer",
+      "previousSlug": null,
+      "action": "added"
+    },
+    {
+      "code": "54.2",
+      "id": "63dc69ba-40e2-4f35-8974-2a8f6847403b",
+      "name": "Institutional Memory Curator",
+      "previousSlug": null,
+      "action": "added"
+    },
+    {
+      "code": "55.1",
+      "id": "e3d88731-ca6c-44fe-a3df-cac90a23e773",
+      "name": "Board Risk Secretary",
+      "previousSlug": null,
+      "action": "added"
+    },
+    {
+      "code": "55.2",
+      "id": "012348e8-120e-464d-b4e6-5a90bbd62d0d",
+      "name": "Regulatory Affairs Director",
+      "previousSlug": null,
+      "action": "added"
+    }
+  ],
+  "finishedAt": "2026-09-23T10:02:56.620Z",
+  "verifiedCount": 370,
+  "skillsPerAgent": 22,
+  "preservedOriginalIds": 45
+}

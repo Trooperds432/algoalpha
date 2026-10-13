@@ -1,0 +1,116 @@
+{
+  "scenarios": [
+    {
+      "name": "COVID_inspired_down",
+      "etf_return": -0.32999999999999996,
+      "hedge_return": -0.3,
+      "basis_divergence": -0.02999999999999997,
+      "spread_multiplier": 4.0,
+      "liquidity_multiplier": 0.3,
+      "mark_to_market_pnl": 16065.984170851523,
+      "liquidation_cost": 626.382175590931,
+      "net_pnl": 15439.601995260593
+    },
+    {
+      "name": "COVID_inspired_up",
+      "etf_return": 0.32999999999999996,
+      "hedge_return": 0.3,
+      "basis_divergence": 0.02999999999999997,
+      "spread_multiplier": 4.0,
+      "liquidity_multiplier": 0.3,
+      "mark_to_market_pnl": -16065.984170851523,
+      "liquidation_cost": 626.382175590931,
+      "net_pnl": -16692.366346442454
+    },
+    {
+      "name": "2008_inspired_down",
+      "etf_return": -0.5,
+      "hedge_return": -0.45,
+      "basis_divergence": -0.04999999999999999,
+      "spread_multiplier": 5.0,
+      "liquidity_multiplier": 0.2,
+      "mark_to_market_pnl": 24406.043617491097,
+      "liquidation_cost": 1060.8728292329956,
+      "net_pnl": 23345.170788258103
+    },
+    {
+      "name": "2008_inspired_up",
+      "etf_return": 0.5,
+      "hedge_return": 0.45,
+      "basis_divergence": 0.04999999999999999,
+      "spread_multiplier": 5.0,
+      "liquidity_multiplier": 0.2,
+      "mark_to_market_pnl": -24406.043617491097,
+      "liquidation_cost": 1060.8728292329956,
+      "net_pnl": -25466.91644672409
+    },
+    {
+      "name": "flash_crash_inspired_down",
+      "etf_return": -0.18,
+      "hedge_return": -0.12,
+      "basis_divergence": -0.06,
+      "spread_multiplier": 8.0,
+      "liquidity_multiplier": 0.1,
+      "mark_to_market_pnl": 9374.240335993201,
+      "liquidation_cost": 3031.293053545586,
+      "net_pnl": 6342.947282447615
+    },
+    {
+      "name": "flash_crash_inspired_up",
+      "etf_return": 0.18,
+      "hedge_return": 0.12,
+      "basis_divergence": 0.06,
+      "spread_multiplier": 8.0,
+      "liquidity_multiplier": 0.1,
+      "mark_to_market_pnl": -9374.240335993201,
+      "liquidation_cost": 3031.293053545586,
+      "net_pnl": -12405.533389538788
+    },
+    {
+      "name": "Volmageddon_inspired_down",
+      "etf_return": -0.14,
+      "hedge_return": -0.1,
+      "basis_divergence": -0.04000000000000001,
+      "spread_multiplier": 6.0,
+      "liquidity_multiplier": 0.25,
+      "mark_to_market_pnl": 7197.7322242333785,
+      "liquidation_cost": 1072.962916063676,
+      "net_pnl": 6124.7693081697025
+    },
+    {
+      "name": "Volmageddon_inspired_up",
+      "etf_return": 0.14,
+      "hedge_return": 0.1,
+      "basis_divergence": 0.04000000000000001,
+      "spread_multiplier": 6.0,
+      "liquidity_multiplier": 0.25,
+      "mark_to_market_pnl": -7197.7322242333785,
+      "liquidation_cost": 1072.962916063676,
+      "net_pnl": -8270.695140297055
+    },
+    {
+      "name": "liquidity_shock_down",
+      "etf_return": -0.05,
+      "hedge_return": -0.03,
+      "basis_divergence": -0.020000000000000004,
+      "spread_multiplier": 3.0,
+      "liquidity_multiplier": 0.5,
+      "mark_to_market_pnl": 2650.627445212112,
+      "liquidation_cost": 336.396979015919,
+      "net_pnl": 2314.230466196193
+    },
+    {
+      "name": "liquidity_shock_up",
+      "etf_return": 0.05,
+      "hedge_return": 0.03,
+      "basis_divergence": 0.020000000000000004,
+      "spread_multiplier": 3.0,
+      "liquidity_multiplier": 0.5,
+      "mark_to_market_pnl": -2650.627445212112,
+      "liquidation_cost": 336.396979015919,
+      "net_pnl": -2987.024424228031
+    }
+  ],
+  "methodology": "Hypothetical event-inspired scenarios, NOT historical replay; both directions; full forced liquidation",
+  "limitation": "Linear depth-impact toy model; basket tracking, borrow and market closure risk are not fully modelled"
+}

@@ -1,0 +1,6 @@
+{
+  "operation": "risk_parity",
+  "inputs": {
+    "covariance": [["0.04", "0"], ["0", "0.09"]]
+  }
+}

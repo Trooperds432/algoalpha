@@ -1,0 +1,16 @@
+
+=================================== ERRORS ====================================
+_________ ERROR collecting tests/integration/test_isolated_runtime.py _________
+ImportError while importing test module 'C:\Users\Jonat\algoalpha\projects\quant-terminal\tests\integration\test_isolated_runtime.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+..\..\..\AppData\Local\Programs\Python\Python313\Lib\importlib\__init__.py:88: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+tests\integration\test_isolated_runtime.py:13: in <module>
+    from quant_terminal.application.isolated_runtime import IsolatedResearchRuntime
+E   ModuleNotFoundError: No module named 'quant_terminal.application.isolated_runtime'
+=========================== short test summary info ===========================
+ERROR tests/integration/test_isolated_runtime.py
+!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!
+1 error in 0.44s

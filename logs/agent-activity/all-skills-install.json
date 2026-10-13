@@ -1,0 +1,292 @@
+{
+  "at": "2026-09-22T19:23:27.692Z",
+  "installs": [
+    {
+      "key": "paperclipai/optional/browser/agent-browser",
+      "action": "unchanged",
+      "warnings": [
+        "Skill content references network-capable commands or URLs.",
+        "Skill content references environment variables or secret-like values."
+      ]
+    },
+    {
+      "key": "paperclipai/optional/product/design-critique",
+      "action": "created",
+      "warnings": []
+    },
+    {
+      "key": "paperclipai/bundled/docs/doc-maintenance",
+      "action": "created",
+      "warnings": []
+    },
+    {
+      "key": "paperclipai/bundled/software-development/github-pr-workflow",
+      "action": "created",
+      "warnings": []
+    },
+    {
+      "key": "paperclipai/bundled/paperclip-operations/issue-triage",
+      "action": "created",
+      "warnings": []
+    },
+    {
+      "key": "paperclipai/optional/research/last30days",
+      "action": "created",
+      "warnings": [
+        "Markdown link target is missing: url",
+        "Markdown link target is missing: url",
+        "Markdown link target is missing: url",
+        "Markdown link target is missing: url",
+        "Markdown link target is missing: url",
+        "Markdown link target is missing: url",
+        "Markdown link target is missing: url",
+        "Markdown link target is missing: url",
+        "Markdown link target is missing: url",
+        "Markdown link target is missing: url",
+        "Skill content references network-capable commands or URLs.",
+        "Skill content references network-capable commands or URLs.",
+        "Skill content references network-capable commands or URLs.",
+        "Skill content references network-capable commands or URLs.",
+        "Skill content references network-capable commands or URLs.",
+        "Skill content references network-capable commands or URLs.",
+        "Skill content references network-capable commands or URLs.",
+        "Skill content references network-capable commands or URLs.",
+        "Skill content references network-capable commands or URLs.",
+        "Skill content references network-capable commands or URLs.",
+        "Skill content references network-capable commands or URLs.",
+        "Skill content references network-capable commands or URLs.",
+        "Skill content references network-capable commands or URLs.",
+        "Skill content references network-capable commands or URLs.",
+        "Skill content references network-capable commands or URLs.",
+        "Skill content references network-capable commands or URLs.",
+        "Skill content references network-capable commands or URLs.",
+        "Skill content references network-capable commands or URLs.",
+        "Skill content references network-capable commands or URLs.",
+        "Skill content references network-capable commands or URLs.",
+        "Skill content references network-capable commands or URLs.",
+        "Skill content references network-capable commands or URLs.",
+        "Skill content references network-capable commands or URLs.",
+        "Skill content references network-capable commands or URLs.",
+        "Skill content references network-capable commands or URLs.",
+        "Skill content references network-capable commands or URLs.",
+        "Skill content references network-capable commands or URLs.",
+        "Skill content references network-capable commands or URLs.",
+        "Skill content references network-capable commands or URLs.",
+        "Skill content references network-capable commands or URLs.",
+        "Skill content references network-capable commands or URLs.",
+        "Skill content references network-capable commands or URLs.",
+        "Skill content references network-capable commands or URLs.",
+        "Skill content references network-capable commands or URLs.",
+        "Skill content references network-capable commands or URLs.",
+        "Skill content references network-capable commands or URLs.",
+        "Skill content references network-capable commands or URLs.",
+        "Skill content references network-capable commands or URLs.",
+        "Skill includes a other file.",
+        "Skill includes a script file.",
+        "Skill includes a script file.",
+        "Skill includes a script file.",
+        "Skill includes a script file.",
+        "Skill includes a script file.",
+        "Skill includes a script file.",
+        "Skill includes a script file.",
+        "Skill includes a script file.",
+        "Skill includes a script file.",
+        "Skill includes a script file.",
+        "Skill includes a script file.",
+        "Skill includes a script file.",
+        "Skill includes a script file.",
+        "Skill includes a script file.",
+        "Skill includes a script file.",
+        "Skill includes a script file.",
+        "Skill includes a script file.",
+        "Skill includes a script file.",
+        "Skill includes a script file.",
+        "Skill includes a script file.",
+        "Skill includes a script file.",
+        "Skill includes a script file.",
+        "Skill includes a script file.",
+        "Skill includes a script file.",
+        "Skill includes a script file.",
+        "Skill includes a script file.",
+        "Skill includes a script file.",
+        "Skill includes a script file.",
+        "Skill includes a script file.",
+        "Skill includes a script file.",
+        "Skill includes a script file.",
+        "Skill includes a script file.",
+        "Skill includes a script file.",
+        "Skill includes a script file.",
+        "Skill includes a script file.",
+        "Skill includes a script file.",
+        "Skill includes a script file.",
+        "Skill includes a script file.",
+        "Skill includes a script file.",
+        "Skill includes a script file.",
+        "Skill includes a script file.",
+        "Skill includes a script file.",
+        "Skill includes a script file.",
+        "Skill includes a script file.",
+        "Skill includes a script file.",
+        "Skill includes a script file.",
+        "Skill includes a script file.",
+        "Skill includes a script file.",
+        "Skill includes a script file.",
+        "Skill includes a script file.",
+        "Skill includes a script file.",
+        "Skill includes a script file.",
+        "Skill includes a script file.",
+        "Skill includes a script file.",
+        "Skill includes a script file.",
+        "Skill includes a script file.",
+        "Skill includes a script file.",
+        "Skill includes a script file.",
+        "Skill includes a script file.",
+        "Skill includes a script file.",
+        "Skill includes a script file.",
+        "Skill includes a script file.",
+        "Skill includes a script file.",
+        "Skill includes a script file.",
+        "Skill includes a script file.",
+        "Skill includes a script file.",
+        "Skill includes a script file.",
+        "Skill includes a script file.",
+        "Skill includes a script file.",
+        "Skill includes a script file.",
+        "Skill includes a script file.",
+        "Skill includes a script file.",
+        "Skill includes a script file.",
+        "Skill includes a script file.",
+        "Skill includes a script file.",
+        "Skill includes a script file.",
+        "Skill content references environment variables or secret-like values.",
+        "Skill content references environment variables or secret-like values.",
+        "Skill content references environment variables or secret-like values.",
+        "Skill content references environment variables or secret-like values.",
+        "Skill content references environment variables or secret-like values.",
+        "Skill content references environment variables or secret-like values.",
+        "Skill content references environment variables or secret-like values.",
+        "Skill content references environment variables or secret-like values.",
+        "Skill content references environment variables or secret-like values.",
+        "Skill content references environment variables or secret-like values.",
+        "Skill content references environment variables or secret-like values.",
+        "Skill content references environment variables or secret-like values.",
+        "Skill content references environment variables or secret-like values.",
+        "Skill content references environment variables or secret-like values.",
+        "Skill content references environment variables or secret-like values.",
+        "Skill content references environment variables or secret-like values.",
+        "Skill content references environment variables or secret-like values.",
+        "Skill content references environment variables or secret-like values.",
+        "Skill content references environment variables or secret-like values.",
+        "Skill content references environment variables or secret-like values.",
+        "Skill content references environment variables or secret-like values.",
+        "Skill content references environment variables or secret-like values.",
+        "Skill content references environment variables or secret-like values.",
+        "Skill content references environment variables or secret-like values.",
+        "Skill content references environment variables or secret-like values.",
+        "Skill content references environment variables or secret-like values.",
+        "Skill content references environment variables or secret-like values.",
+        "Skill content references environment variables or secret-like values.",
+        "Skill content references environment variables or secret-like values.",
+        "Skill content references environment variables or secret-like values.",
+        "Skill content references environment variables or secret-like values.",
+        "Skill content references environment variables or secret-like values.",
+        "Skill content references environment variables or secret-like values.",
+        "Skill content references environment variables or secret-like values.",
+        "Skill content references environment variables or secret-like values.",
+        "Skill content references environment variables or secret-like values.",
+        "Skill content references environment variables or secret-like values.",
+        "Skill content references environment variables or secret-like values.",
+        "Skill content references environment variables or secret-like values.",
+        "Skill content references environment variables or secret-like values.",
+        "Skill content references environment variables or secret-like values."
+      ]
+    },
+    {
+      "key": "paperclipai/bundled/product/paperclip-capsules",
+      "action": "created",
+      "warnings": [
+        "Skill content references environment variables or secret-like values."
+      ]
+    },
+    {
+      "key": "paperclipai/optional/software-development/prepare-mcp-integration",
+      "action": "created",
+      "warnings": [
+        "Skill content references network-capable commands or URLs.",
+        "Skill content references network-capable commands or URLs.",
+        "Skill content references environment variables or secret-like values."
+      ]
+    },
+    {
+      "key": "paperclipai/bundled/quality/qa-acceptance",
+      "action": "created",
+      "warnings": []
+    },
+    {
+      "key": "paperclipai/optional/finance/ramp",
+      "action": "created",
+      "warnings": [
+        "Skill content references network-capable commands or URLs."
+      ]
+    },
+    {
+      "key": "paperclipai/bundled/paperclip-operations/reflection-coach",
+      "action": "created",
+      "warnings": [
+        "Markdown link target is missing: /PAP/issues/PAP-NNN",
+        "Markdown link target is missing: /PAP/issues/PAP-MMM",
+        "Markdown link target is missing: /PAP/issues/PAP-XXX",
+        "Markdown link target is missing: /PAP/issues/PAP-YYY",
+        "Skill content references network-capable commands or URLs."
+      ]
+    },
+    {
+      "key": "paperclipai/optional/content/release-announcement",
+      "action": "created",
+      "warnings": [
+        "Markdown link target is missing: link",
+        "Markdown link target is missing: link",
+        "Markdown link target is missing: link",
+        "Skill content references network-capable commands or URLs."
+      ]
+    },
+    {
+      "key": "paperclipai/optional/content/simplified-english",
+      "action": "created",
+      "warnings": []
+    },
+    {
+      "key": "paperclipai/bundled/paperclip-operations/status-card-query",
+      "action": "created",
+      "warnings": [
+        "Skill content references network-capable commands or URLs."
+      ]
+    },
+    {
+      "key": "paperclipai/bundled/paperclip-operations/summarize-status",
+      "action": "created",
+      "warnings": [
+        "Skill content references network-capable commands or URLs.",
+        "Skill content references environment variables or secret-like values."
+      ]
+    },
+    {
+      "key": "paperclipai/bundled/paperclip-operations/task-planning",
+      "action": "created",
+      "warnings": []
+    },
+    {
+      "key": "paperclipai/bundled/product/wireframe",
+      "action": "created",
+      "warnings": [
+        "Skill includes a asset file.",
+        "Skill includes a asset file.",
+        "Skill includes a asset file.",
+        "Skill content references network-capable commands or URLs.",
+        "Skill content references network-capable commands or URLs.",
+        "Skill content references environment variables or secret-like values.",
+        "Skill content references environment variables or secret-like values."
+      ]
+    }
+  ]
+}

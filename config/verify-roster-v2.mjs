@@ -1,0 +1,30 @@
+import fs from 'node:fs';
+import assert from 'node:assert/strict';
+const root='C:/Users/Jonat/algoalpha';
+const read=p=>JSON.parse(fs.readFileSync(root+'/'+p,'utf8'));
+const team=read('config/team-plan.json'),ids=read('config/agent-ids.json');
+const response=await fetch('http://127.0.0.1:3100/api/companies/3b1d401d-7010-4eed-acd1-be7d52372c07/agents');assert.equal(response.status,200);
+const agents=await response.json();
+const source=fs.readFileSync('C:/Users/Jonat/Downloads/Global_Asset_Management_Firm_Expanded_Job_Descriptions_UPDATED_V2.txt','utf8');
+const codes=[...source.matchAll(/^(\d+\.\d+) (.+)\r?$/gm)].map(m=>m[1]);
+assert.equal(agents.length,370);assert.equal(team.length,370);assert.equal(new Set(agents.map(a=>a.name)).size,370);
+assert.deepEqual([...agents.map(a=>a.metadata.rosterV2.code)].sort(),codes.sort());
+const original=read('logs/agent-activity/roster-v2-backup/agents.json');
+for(const a of original)assert(agents.some(x=>x.id===a.id));
+const lines=['# AlgoAlpha roster: 370 agents','','Source: Global_Asset_Management_Firm_Expanded_Job_Descriptions_UPDATED_V2.txt','','45 existing agent identities preserved; 325 new agents added. Reassigned titles are shown below. Section numbers distinguish repeated titles.','', '| Source role | Agent | Previous title | Administrative manager | Agent ID |','|---|---|---|---|---|'];
+for(const r of team){
+ const a=agents.find(x=>x.id===ids[r.slug]);assert.equal(a.capabilities,r.mandate);assert.equal(a.adapterConfig.dangerouslyBypassApprovalsAndSandbox,false);assert.equal(a.adapterConfig.paperclipSkillSync.desiredSkills.length,22);
+ const manager=agents.find(x=>x.id===a.reportsTo);
+ assert.equal(a.reportsTo,r.reports_to==='board'?null:ids[r.reports_to]);
+ let instructions=fs.readFileSync(a.adapterConfig.instructionsFilePath,'utf8');assert(instructions.includes(r.mandate));
+ instructions=instructions.split('\n## Roster routing\n')[0];
+ instructions+='\n## Roster routing\nAdministrative manager: '+(manager?manager.name+' ('+manager.id+')':'Board / owner')+'.\nSee config/team-plan.json and config/agent-ids.json for all 370 role definitions and routing IDs. Preserve independent challenge and source committee escalation rights.\n';
+ if(r.slug==='ceo')instructions+='\n### Complete agent routing directory\n'+team.map(t=>'- '+t.source_role+' '+t.name+': '+ids[t.slug]).join('\n')+'\n';
+ fs.writeFileSync(a.adapterConfig.instructionsFilePath,instructions);
+ lines.push('| '+r.source_role+' | '+a.name.replaceAll('|','/')+' | '+(original.find(x=>x.id===a.id)?.name??'New')+' | '+(manager?.name??'Board / owner')+' | '+a.id+' |');
+}
+fs.writeFileSync(root+'/logs/agent-activity/roster-v2-summary.md',lines.join('\n')+'\n');
+const rp=root+'/README.md';let text=fs.readFileSync(rp,'utf8').replace('the firm now has 45 agents','the firm had 45 agents before the expanded V2 roster');
+if(!text.includes('## Expanded V2 roster'))text+='\n## Expanded V2 roster\n\nAlgoAlpha now has 370 agents mapped one-to-one to the owner-supplied V2 role list. The original 45 agent IDs and histories are preserved, and 325 agents were added. Full descriptions and reporting lines are in config/team-plan.json; the reassignment audit is in logs/agent-activity/roster-v2-summary.md. All 370 have the existing 22-skill configuration. This roster update does not start agent work or trading.\n';
+fs.writeFileSync(rp,text);
+console.log('Independent verification passed: exactly 370 source roles and agents, 45 original IDs preserved, descriptions and 22 skills checked.');

@@ -1,0 +1,21 @@
+{
+  "id": "3b1d401d-7010-4eed-acd1-be7d52372c07",
+  "name": "AlgoAlpha",
+  "description": "Paper-only quantitative research firm. Advanced mathematical and ML research with independent staged risk gates. No live financial accounts or execution.",
+  "status": "active",
+  "issuePrefix": "ALG",
+  "issueCounter": 0,
+  "budgetMonthlyCents": 0,
+  "spentMonthlyCents": 0,
+  "defaultResponsibleUserId": "local-board",
+  "requireBoardApprovalForNewAgents": false,
+  "interactionResolverGovernance": {},
+  "feedbackDataSharingEnabled": false,
+  "feedbackDataSharingConsentAt": null,
+  "feedbackDataSharingConsentByUserId": null,
+  "feedbackDataSharingTermsVersion": null,
+  "logoAssetId": null,
+  "createdAt": "2026-09-22T14:35:20.112Z",
+  "updatedAt": "2026-09-22T14:35:20.112Z",
+  "logoUrl": null
+}

@@ -1,0 +1,20 @@
+[
+  {
+    "name": "base",
+    "fee_bps": 0.5,
+    "slippage_bps": 1.0,
+    "net_mtm_pnl": 3089.118951136945
+  },
+  {
+    "name": "higher_friction",
+    "fee_bps": 2.0,
+    "slippage_bps": 5.0,
+    "net_mtm_pnl": 2466.97614443372
+  },
+  {
+    "name": "severe_friction",
+    "fee_bps": 10.0,
+    "slippage_bps": 20.0,
+    "net_mtm_pnl": 1062.3003830423113
+  }
+]

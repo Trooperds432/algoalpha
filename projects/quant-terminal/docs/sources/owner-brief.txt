@@ -1,0 +1,1992 @@
+PROJECT NAME
+Quantitative Research & Trading Terminal
+
+MISSION
+Build a professional-grade, Python-native quantitative trading research terminal
+that provides a workflow comparable to MultiCharts/AmiBroker for systematic
+strategy research while using modern Python architecture.
+
+The system must allow users to:
+
+1. Write trading strategies in Python.
+2. Backtest them against historical data.
+3. Model realistic execution.
+4. Analyse portfolio and trade performance.
+5. Optimise strategy parameters.
+6. Perform rolling and anchored walk-forward optimisation.
+7. Perform Monte Carlo and robustness analysis.
+8. Compare experiments.
+9. Detect overfitting and common backtesting biases.
+10. Produce professional quantitative reports.
+11. Eventually run the same strategy through paper and live broker adapters.
+
+The product should ultimately combine:
+
+MultiCharts/AmiBroker-style research workflow
++
+Python quantitative ecosystem
++
+LEAN-style execution/reality modelling
++
+vectorbt-style high-throughput research
++
+pyfolio-style analytics/tear sheets.
+
+============================================================
+I. ENGINEERING METHODOLOGY
+============================================================
+
+Use the following development methodology throughout the project.
+
+PRIMARY DEVELOPMENT MODEL
+
+Use:
+
+Agile incremental development
++
+milestone stage gates
++
+Clean Architecture
++
+Domain-Driven Design
++
+Test-Driven Development
++
+continuous integration
++
+quantitative validation.
+
+Do NOT attempt to build the entire application simultaneously.
+
+Complete one milestone at a time.
+
+Every milestone follows:
+
+PLAN
+→
+SPECIFY
+→
+TEST DESIGN
+→
+IMPLEMENT
+→
+UNIT TEST
+→
+INTEGRATION TEST
+→
+QUANTITATIVE VALIDATION
+→
+DOCUMENT
+→
+REVIEW
+→
+GATE
+
+Do not begin the next milestone until the current milestone's gate passes.
+
+For every milestone:
+
+1. Restate its objective.
+2. Identify architectural components affected.
+3. Define interfaces before implementation.
+4. Define invariants.
+5. Write tests before or alongside production code.
+6. Implement the smallest correct version.
+7. Run the complete test suite.
+8. Benchmark if performance-sensitive.
+9. Document important assumptions.
+10. Update architecture documentation.
+11. Produce a milestone completion report.
+12. Stop and request approval before beginning the next milestone unless
+   explicitly instructed to continue automatically.
+
+============================================================
+II. NON-NEGOTIABLE ENGINEERING PRINCIPLES
+============================================================
+
+PRINCIPLE 1 — CORRECTNESS BEFORE SPEED
+
+A slow correct backtest is more valuable than a fast incorrect backtest.
+
+Never optimise code before establishing reference behaviour.
+
+PRINCIPLE 2 — STRATEGIES EXPRESS INTENT
+
+Strategies must never directly modify:
+
+cash,
+positions,
+fills,
+portfolio NAV,
+commissions,
+margin,
+or broker state.
+
+A strategy may generate an OrderIntent.
+
+The execution system determines what actually happens.
+
+Required conceptual flow:
+
+Market Data
+    ↓
+Strategy
+    ↓
+Order Intent
+    ↓
+Risk Validation
+    ↓
+Broker / Execution Simulator
+    ↓
+Order
+    ↓
+Fill(s)
+    ↓
+Portfolio Accounting
+    ↓
+NAV / Positions / Cash
+    ↓
+Analytics
+
+PRINCIPLE 3 — SINGLE STRATEGY API
+
+The same strategy interface should eventually support:
+
+historical backtesting,
+optimisation,
+walk-forward testing,
+paper trading,
+live trading.
+
+Do not create separate strategy implementations for these modes.
+
+PRINCIPLE 4 — REPRODUCIBILITY
+
+Every experiment must be reproducible.
+
+Every run must record:
+
+run_id
+strategy identifier
+strategy source hash
+Git commit
+engine version
+dataset version
+data snapshot
+parameters
+start/end date
+initial capital
+random seed
+execution assumptions
+commission model
+slippage model
+calendar
+timezone
+Python version
+dependency/environment version
+timestamp
+machine/runtime metadata where appropriate.
+
+PRINCIPLE 5 — IMMUTABLE ECONOMIC RECORDS
+
+Orders, fills, trades and experiment metadata should be immutable once written.
+
+Corrections should create new events rather than silently rewriting history.
+
+PRINCIPLE 6 — NO LOOK-AHEAD
+
+The strategy must never be able to access information unavailable at the
+simulated timestamp.
+
+Enforce this architecturally rather than relying on strategy authors to behave.
+
+PRINCIPLE 7 — SEPARATION OF CONCERNS
+
+Maintain separate modules for:
+
+data
+strategy runtime
+execution
+brokerage
+portfolio/accounting
+risk
+backtesting
+optimisation
+walk-forward
+Monte Carlo
+analytics
+reporting
+experiments
+API
+UI
+live trading.
+
+PRINCIPLE 8 — EXPLICIT ASSUMPTIONS
+
+Never silently choose financial conventions.
+
+Examples:
+
+Sharpe annualisation
+risk-free rate
+trade matching method
+turnover definition
+slippage reference price
+fill timing
+corporate action treatment
+timezone
+calendar
+VaR convention.
+
+These must be configurable or explicitly documented.
+
+PRINCIPLE 9 — NO FALSE PRECISION
+
+Results produced using OHLCV bars must not pretend to know intrabar event
+ordering unless a documented assumption/model determines it.
+
+PRINCIPLE 10 — BACKTEST/PAPER/LIVE PARITY
+
+Architect interfaces so that historical execution and live execution can
+implement the same contracts.
+
+============================================================
+III. RECOMMENDED TECHNOLOGY STACK
+============================================================
+
+Use Python as the primary platform.
+
+Backend:
+Python 3.12+ where dependency compatibility permits
+
+API:
+FastAPI
+Pydantic
+
+Numerics:
+NumPy
+SciPy
+
+Tabular processing:
+Polars and/or pandas
+
+Acceleration:
+Numba initially
+Rust/C++ only for demonstrated bottlenecks
+
+Historical data:
+Apache Parquet
+
+Analytical querying:
+DuckDB
+
+Metadata:
+PostgreSQL for production
+SQLite may be used during early development
+
+Live time-series/events:
+PostgreSQL/TimescaleDB when needed
+
+Optimisation:
+native grid/random implementation first
+Optuna later
+
+Charts:
+Plotly
+
+Frontend:
+React
+TypeScript
+
+Frontend charting:
+Plotly.js and/or a suitable financial chart component
+
+Testing:
+pytest
+Hypothesis/property-based testing
+
+Code quality:
+ruff
+mypy/pyright
+pre-commit
+
+Packaging:
+uv or equivalent locked environment
+
+Containers:
+Docker
+
+CI:
+GitHub Actions or equivalent
+
+Do not introduce distributed systems until workloads justify them.
+
+============================================================
+IV. TARGET ARCHITECTURE
+============================================================
+
+Create approximately the following repository structure:
+
+quant_terminal/
+│
+├── apps/
+│   ├── api/
+│   ├── web/
+│   └── cli/
+│
+├── src/quant_terminal/
+│   │
+│   ├── core/
+│   │   ├── clock.py
+│   │   ├── events.py
+│   │   ├── identifiers.py
+│   │   ├── enums.py
+│   │   └── exceptions.py
+│   │
+│   ├── data/
+│   │   ├── models.py
+│   │   ├── feeds.py
+│   │   ├── loaders.py
+│   │   ├── calendars.py
+│   │   ├── corporate_actions.py
+│   │   ├── validation.py
+│   │   └── storage/
+│   │
+│   ├── strategy/
+│   │   ├── base.py
+│   │   ├── context.py
+│   │   ├── parameters.py
+│   │   └── runtime.py
+│   │
+│   ├── orders/
+│   │   ├── models.py
+│   │   ├── lifecycle.py
+│   │   └── matching.py
+│   │
+│   ├── execution/
+│   │   ├── broker.py
+│   │   ├── fills.py
+│   │   ├── slippage.py
+│   │   ├── commissions.py
+│   │   └── liquidity.py
+│   │
+│   ├── portfolio/
+│   │   ├── portfolio.py
+│   │   ├── positions.py
+│   │   ├── accounting.py
+│   │   ├── cash.py
+│   │   └── valuation.py
+│   │
+│   ├── risk/
+│   │   ├── pretrade.py
+│   │   ├── limits.py
+│   │   ├── leverage.py
+│   │   └── margin.py
+│   │
+│   ├── engine/
+│   │   ├── backtest.py
+│   │   ├── event_loop.py
+│   │   └── result.py
+│   │
+│   ├── analytics/
+│   │   ├── returns.py
+│   │   ├── performance.py
+│   │   ├── drawdowns.py
+│   │   ├── trades.py
+│   │   ├── risk.py
+│   │   ├── benchmark.py
+│   │   └── attribution.py
+│   │
+│   ├── optimization/
+│   │   ├── objective.py
+│   │   ├── search_space.py
+│   │   ├── grid.py
+│   │   ├── random.py
+│   │   └── runner.py
+│   │
+│   ├── walkforward/
+│   │   ├── windows.py
+│   │   ├── runner.py
+│   │   └── analysis.py
+│   │
+│   ├── montecarlo/
+│   │   ├── bootstrap.py
+│   │   ├── block_bootstrap.py
+│   │   ├── execution.py
+│   │   └── analysis.py
+│   │
+│   ├── experiments/
+│   │   ├── manifest.py
+│   │   ├── repository.py
+│   │   ├── comparison.py
+│   │   └── artifacts.py
+│   │
+│   ├── reporting/
+│   │   ├── reports.py
+│   │   ├── charts.py
+│   │   └── exporters.py
+│   │
+│   └── adapters/
+│       ├── brokers/
+│       ├── data/
+│       └── engines/
+│
+├── strategies/
+├── datasets/
+├── configs/
+├── notebooks/
+├── docs/
+│   ├── architecture/
+│   ├── financial_conventions/
+│   ├── adr/
+│   └── validation/
+│
+├── tests/
+│   ├── unit/
+│   ├── property/
+│   ├── integration/
+│   ├── regression/
+│   └── differential/
+│
+├── benchmarks/
+├── docker/
+└── pyproject.toml
+
+Do not force this exact structure where there is a strong engineering reason to
+change it.
+
+Any significant architectural change requires an Architecture Decision Record.
+
+============================================================
+V. CORE DOMAIN INTERFACES
+============================================================
+
+Design explicit contracts approximately equivalent to:
+
+Strategy
+DataFeed
+Clock
+Broker
+ExecutionModel
+CommissionModel
+SlippageModel
+FillModel
+Portfolio
+Position
+RiskManager
+BacktestEngine
+BacktestResult
+Optimizer
+WalkForwardEngine
+MonteCarloEngine
+MetricsEngine
+ExperimentRepository
+ReportGenerator.
+
+Example Strategy interface:
+
+class Strategy(ABC):
+
+    def initialize(self, context):
+        ...
+
+    def on_bar(self, context, data):
+        ...
+
+    def on_order_update(self, context, order):
+        ...
+
+    def on_fill(self, context, fill):
+        ...
+
+    def on_end(self, context):
+        ...
+
+Do not expose future data through context or data.
+
+============================================================
+VI. GLOBAL DEFINITION OF DONE
+============================================================
+
+A milestone is NOT complete merely because the application runs.
+
+Every milestone must satisfy:
+
+[ ] Requirements implemented
+[ ] Public interfaces documented
+[ ] Type checking passes
+[ ] Linting passes
+[ ] Unit tests pass
+[ ] Integration tests pass
+[ ] Relevant property tests pass
+[ ] No unexplained test skips
+[ ] Financial calculations independently validated
+[ ] Edge cases tested
+[ ] Error handling implemented
+[ ] Logging implemented
+[ ] Documentation updated
+[ ] ADR created for major architectural decisions
+[ ] Reproducible example added where appropriate
+[ ] Previous milestone tests still pass
+[ ] No critical/high security defects
+[ ] Performance regression checked where applicable
+[ ] Milestone report produced
+
+============================================================
+VII. MILESTONE ROADMAP
+============================================================
+
+
+############################################################
+MILESTONE 0 — PRODUCT SPECIFICATION AND ARCHITECTURAL BASELINE
+############################################################
+
+OBJECTIVE
+
+Turn the concept into a precise engineering specification before implementing
+financial logic.
+
+DELIVERABLES
+
+Create:
+
+docs/product_requirements.md
+docs/system_architecture.md
+docs/domain_model.md
+docs/backtesting_conventions.md
+docs/testing_strategy.md
+docs/security_model.md
+docs/data_model.md
+docs/roadmap.md
+
+Define:
+
+asset classes supported by MVP
+bar frequencies
+strategy lifecycle
+order lifecycle
+portfolio accounting conventions
+timestamps
+timezone policy
+execution timing
+benchmark handling
+transaction-cost conventions
+trade reconstruction
+randomness policy
+data versioning.
+
+MVP ASSET SCOPE
+
+Initially support:
+
+equities
+ETFs
+daily bars
+minute bars.
+
+Do not initially support:
+
+options
+full futures infrastructure
+tick/L2 simulation
+HFT
+multi-broker live trading.
+
+ARCHITECTURE REVIEW
+
+Produce diagrams showing:
+
+strategy → execution → portfolio
+historical data flow
+experiment orchestration
+optimisation flow
+walk-forward flow
+Monte Carlo flow
+reporting flow.
+
+EXIT GATE
+
+No implementation beyond scaffolding until financial and architectural
+conventions are documented.
+
+
+############################################################
+MILESTONE 1 — PROJECT FOUNDATION AND DOMAIN MODEL
+############################################################
+
+OBJECTIVE
+
+Create a reliable software foundation.
+
+IMPLEMENT
+
+repository structure
+dependency management
+CI
+linting
+type checking
+logging
+configuration
+domain identifiers
+timestamps
+event base classes
+exceptions
+deterministic simulation clock.
+
+Introduce immutable identifiers for:
+
+RunId
+StrategyId
+OrderId
+FillId
+InstrumentId.
+
+Create core domain objects.
+
+TEST
+
+serialization
+timestamp ordering
+identifier uniqueness
+configuration validation
+deterministic clock behaviour.
+
+EXIT GATE
+
+CI must run automatically and pass.
+
+
+############################################################
+MILESTONE 2 — HISTORICAL DATA ENGINE
+############################################################
+
+OBJECTIVE
+
+Create trustworthy point-in-time market-data infrastructure.
+
+IMPLEMENT
+
+OHLCV schema
+instrument metadata
+Parquet storage
+DuckDB queries
+CSV/Parquet import
+market calendars
+timezone normalization
+missing-data detection
+duplicate detection
+schema validation
+data version/hash
+corporate-action architecture.
+
+Data API must enforce historical visibility.
+
+At simulated time t, requesting future data must fail.
+
+TEST
+
+duplicate timestamps
+missing bars
+out-of-order timestamps
+timezone conversion
+market holidays
+invalid OHLC
+negative volume
+future-data access.
+
+INVARIANTS
+
+high >= max(open, close, low)
+low <= min(open, close, high)
+
+where applicable.
+
+EXIT GATE
+
+A known dataset can be loaded reproducibly and queried without future leakage.
+
+
+############################################################
+MILESTONE 3 — PORTFOLIO AND ACCOUNTING ENGINE
+############################################################
+
+OBJECTIVE
+
+Implement financially correct portfolio bookkeeping independently of trading
+strategies.
+
+IMPLEMENT
+
+cash ledger
+positions
+average entry price and/or lot model
+realised P&L
+unrealised P&L
+market value
+NAV
+long exposure
+short exposure
+gross exposure
+net exposure
+leverage.
+
+CORE INVARIANT
+
+NAV =
+cash
++
+sum(position market values)
+
+subject to instrument-specific treatment.
+
+TEST MANUALLY CALCULATED SCENARIOS
+
+long entry/exit
+short entry/cover
+partial exit
+multiple fills
+position reversal
+fees
+cash changes
+mark-to-market.
+
+Use Decimal or a documented numerical policy where financial precision requires
+it.
+
+EXIT GATE
+
+Every accounting fixture must reconcile exactly within documented tolerance.
+
+
+############################################################
+MILESTONE 4 — ORDER MANAGEMENT AND EXECUTION SIMULATOR
+############################################################
+
+OBJECTIVE
+
+Build the historical broker.
+
+IMPLEMENT ORDER TYPES
+
+Market
+Limit
+Stop
+Stop-Limit
+
+Implement states:
+
+CREATED
+SUBMITTED
+ACCEPTED
+PARTIALLY_FILLED
+FILLED
+CANCELLED
+REJECTED
+EXPIRED.
+
+Separate:
+
+Order
+Fill
+Trade.
+
+One order may produce multiple fills.
+
+IMPLEMENT PLUGGABLE MODELS
+
+CommissionModel
+SlippageModel
+FillModel.
+
+Initial slippage models:
+
+none
+fixed
+basis-point
+simple volume-share.
+
+Support configurable assumptions for OHLC bar execution.
+
+TEST
+
+partial fills
+limit conditions
+stop triggering
+gaps
+buy/sell slippage direction
+commission calculation
+cancelled orders
+rejected orders.
+
+EXIT GATE
+
+Hand-calculated order scenarios exactly reproduce expected fills and accounting.
+
+
+############################################################
+MILESTONE 5 — EVENT-DRIVEN BACKTEST ENGINE
+############################################################
+
+OBJECTIVE
+
+Connect data, strategy, execution and accounting into the first complete
+backtester.
+
+PROCESS
+
+Clock
+→
+Market Event
+→
+Strategy
+→
+Order Intent
+→
+Risk Check
+→
+Broker
+→
+Fill
+→
+Portfolio
+→
+Result Recorder.
+
+Implement BacktestResult containing:
+
+NAV
+returns
+cash
+positions
+orders
+fills
+trades
+costs
+exposures
+benchmark
+metadata.
+
+Create example strategies:
+
+BuyAndHold
+MovingAverageCross
+SimpleMomentum.
+
+CRITICAL TEST
+
+Prove that strategies cannot observe t+1 while processing t.
+
+EXIT GATE
+
+A deterministic buy-and-hold example produces independently verified results.
+
+
+############################################################
+MILESTONE 6 — PERFORMANCE AND RISK ANALYTICS
+############################################################
+
+OBJECTIVE
+
+Build an independent analytics library operating only on BacktestResult.
+
+IMPLEMENT ESSENTIAL METRICS
+
+total return
+CAGR
+annualised return
+annualised volatility
+Sharpe
+Sortino
+Calmar
+maximum drawdown
+drawdown duration
+recovery time
+win rate
+loss rate
+profit factor
+expectancy
+payoff ratio
+average win
+average loss
+median trade
+best trade
+worst trade
+trade count
+average holding period
+exposure
+turnover
+gross/net leverage
+commissions
+slippage cost.
+
+IMPLEMENT SECONDARY METRICS
+
+Omega
+Ulcer Index
+VaR
+CVaR / Expected Shortfall
+skew
+kurtosis
+tail ratio
+consecutive wins/losses
+MAE
+MFE
+risk of ruin where assumptions are explicit.
+
+BENCHMARK ANALYTICS
+
+alpha
+beta
+tracking error
+information ratio
+up/down capture.
+
+Every metric must have:
+
+documented mathematical definition
+annualisation convention
+edge-case behaviour
+unit tests using independently calculated fixtures.
+
+Do not blindly rely on third-party library outputs.
+
+EXIT GATE
+
+Metrics agree with independent reference calculations within documented
+tolerance.
+
+
+############################################################
+MILESTONE 7 — PROFESSIONAL BACKTEST REPORT
+############################################################
+
+OBJECTIVE
+
+Create a MultiCharts-style quantitative result analysis experience.
+
+REPORT SECTIONS
+
+Summary
+Performance
+Risk
+Trading Statistics
+Drawdowns
+Execution Costs
+Exposure
+Benchmark Comparison
+Trades
+Orders
+Fills.
+
+CHARTS
+
+equity curve
+log equity
+benchmark comparison
+underwater chart
+drawdown duration
+rolling volatility
+rolling Sharpe
+monthly returns
+annual returns
+return distribution
+trade P&L distribution
+MAE/MFE
+exposure
+leverage
+turnover.
+
+EXPORT
+
+HTML
+JSON
+CSV
+Parquet
+
+PDF can follow after HTML correctness is established.
+
+EXIT GATE
+
+A backtest can be understood completely without inspecting raw program state.
+
+
+############################################################
+MILESTONE 8 — EXPERIMENT MANAGEMENT AND REPRODUCIBILITY
+############################################################
+
+OBJECTIVE
+
+Turn individual backtests into reproducible quantitative experiments.
+
+Create an immutable ExperimentManifest.
+
+Record:
+
+code hash
+Git commit
+engine version
+data hash/version
+configuration
+parameters
+seed
+execution assumptions
+environment.
+
+Implement:
+
+experiment search
+tagging
+comparison
+rerun
+clone configuration
+artifact storage.
+
+CRITICAL TEST
+
+Run the identical experiment twice.
+
+Results must be identical within defined deterministic tolerance.
+
+EXIT GATE
+
+Any historical result can be traced to the code, data and configuration that
+generated it.
+
+
+############################################################
+MILESTONE 9 — PARAMETER OPTIMISATION ENGINE
+############################################################
+
+OBJECTIVE
+
+Support systematic parameter search without contaminating strategy code.
+
+INITIAL METHODS
+
+grid search
+random search.
+
+Later adapters may support:
+
+Optuna/TPE
+Bayesian optimisation
+CMA-ES
+genetic algorithms
+differential evolution.
+
+SUPPORT OBJECTIVES
+
+Sharpe
+Sortino
+CAGR
+Calmar
+profit factor
+drawdown
+custom objective.
+
+SUPPORT CONSTRAINTS
+
+minimum trades
+maximum drawdown
+maximum turnover
+maximum leverage
+minimum exposure.
+
+Store ALL trials, not merely the winner.
+
+VISUALISE
+
+parameter heatmaps
+response surfaces
+parameter distributions
+metric distributions
+neighbouring parameter stability.
+
+CRITICAL RULE
+
+Never imply that the parameter set with maximum in-sample Sharpe is necessarily
+the best strategy.
+
+EXIT GATE
+
+Optimisation results are completely reproducible and every trial is retained.
+
+
+############################################################
+MILESTONE 10 — WALK-FORWARD OPTIMISATION
+############################################################
+
+OBJECTIVE
+
+Implement genuine out-of-sample validation.
+
+SUPPORT
+
+rolling windows
+anchored/expanding windows.
+
+For each window:
+
+1. Define IS period.
+2. Optimise using IS data only.
+3. Freeze selected parameters.
+4. Run OOS period.
+5. Record results.
+6. Advance window.
+
+Never expose OOS observations to the optimiser.
+
+Produce:
+
+window table
+selected parameters per window
+IS statistics
+OOS statistics
+stitched OOS-only equity curve
+parameter stability chart
+performance degradation analysis.
+
+CRITICAL TEST
+
+Instrument the data layer to prove the optimiser never requests OOS data.
+
+EXIT GATE
+
+Stitched walk-forward equity contains only observations generated out of sample.
+
+
+############################################################
+MILESTONE 11 — MONTE CARLO AND ROBUSTNESS ENGINE
+############################################################
+
+OBJECTIVE
+
+Measure strategy uncertainty rather than presenting one historical path as
+deterministic.
+
+IMPLEMENT
+
+trade bootstrap
+IID return bootstrap
+block bootstrap.
+
+Later add:
+
+parameter perturbation
+execution/slippage perturbation
+residual bootstrap
+correlated multivariate paths.
+
+OUTPUT DISTRIBUTIONS
+
+terminal wealth
+CAGR
+Sharpe
+maximum drawdown
+CVaR
+drawdown duration
+risk of ruin where appropriate.
+
+DISPLAY
+
+5th
+25th
+50th
+75th
+95th
+
+percentiles.
+
+CHARTS
+
+fan chart
+terminal wealth distribution
+MDD histogram
+MDD CDF
+Sharpe distribution
+risk-of-ruin analysis.
+
+REPRODUCIBILITY
+
+Every simulation must accept and store a random seed.
+
+EXIT GATE
+
+Identical seeds and configuration reproduce identical simulation results.
+
+
+############################################################
+MILESTONE 12 — ROBUSTNESS AND OVERFITTING TOOLKIT
+############################################################
+
+OBJECTIVE
+
+Make the platform actively expose fragile strategies.
+
+IMPLEMENT
+
+parameter sensitivity
+neighbourhood stability
+cost sensitivity
+slippage sensitivity
+execution delay tests
+start-date perturbation
+end-date perturbation
+subperiod analysis
+regime analysis
+asset/universe perturbation.
+
+Investigate and design support for:
+
+bootstrap confidence intervals
+multiple-hypothesis testing
+data-snooping controls
+Deflated Sharpe Ratio
+Probabilistic Sharpe Ratio
+White's Reality Check where justified
+purged/embargoed validation for ML workflows.
+
+Do not implement a statistic merely because it sounds sophisticated.
+
+Document assumptions and supporting methodology first.
+
+EXIT GATE
+
+A user can distinguish a broad robust parameter region from a narrow isolated
+optimum.
+
+
+############################################################
+MILESTONE 13 — TERMINAL API AND CLI
+############################################################
+
+OBJECTIVE
+
+Expose all research operations independently of the GUI.
+
+API RESOURCES
+
+POST /backtests
+POST /optimisations
+POST /walk-forwards
+POST /monte-carlo
+
+GET /runs/{id}
+GET /runs/{id}/metrics
+GET /runs/{id}/trades
+GET /runs/{id}/orders
+GET /runs/{id}/fills
+GET /runs/{id}/equity
+GET /runs/{id}/artifacts.
+
+CLI EXAMPLES
+
+quant backtest ...
+quant optimize ...
+quant walk-forward ...
+quant monte-carlo ...
+quant report ...
+quant compare ...
+
+Long-running operations should use job IDs.
+
+EXIT GATE
+
+Everything essential can be operated without the graphical interface.
+
+
+############################################################
+MILESTONE 14 — PROFESSIONAL TERMINAL UI
+############################################################
+
+OBJECTIVE
+
+Build the MultiCharts-inspired research interface.
+
+PRIMARY WORKSPACES
+
+Dashboard
+Strategies
+Data
+Backtests
+Optimisation
+Walk Forward
+Monte Carlo
+Experiments.
+
+BACKTEST SCREEN
+
+Left:
+configuration.
+
+Centre:
+equity/performance charts.
+
+Right:
+summary statistics.
+
+Bottom tabs:
+
+Overview
+Trades
+Orders
+Fills
+Positions
+Drawdowns
+Monthly Returns
+Execution
+Logs.
+
+OPTIMISATION SCREEN
+
+parameter definitions
+objective
+constraints
+progress
+trial table
+heatmaps
+response surfaces.
+
+WALK-FORWARD SCREEN
+
+timeline
+IS/OOS windows
+selected parameters
+window metrics
+stitched OOS equity.
+
+MONTE CARLO SCREEN
+
+fan chart
+percentile controls
+terminal wealth
+drawdown distributions
+risk statistics.
+
+EXPERIMENT COMPARISON
+
+Allow multiple runs to be compared without declaring a strategy "best".
+
+EXIT GATE
+
+GUI operations must call the same application/API services as the CLI.
+
+No duplicate business logic may exist in the frontend.
+
+
+############################################################
+MILESTONE 15 — PERFORMANCE AND SCALABILITY
+############################################################
+
+OBJECTIVE
+
+Optimise only after correctness has been established.
+
+PROFILE FIRST.
+
+Measure:
+
+data-loading time
+event throughput
+memory consumption
+backtest runtime
+optimisation throughput.
+
+Then optimise demonstrated bottlenecks using:
+
+NumPy
+Polars
+Numba
+parallel worker processes.
+
+Consider a vectorised fast path for strategies whose semantics permit it.
+
+Do not change event-driven semantics merely to improve benchmark numbers.
+
+Create benchmark datasets and store performance baselines.
+
+EXIT GATE
+
+No optimisation may change verified financial results.
+
+
+############################################################
+MILESTONE 16 — SECURITY AND STRATEGY SANDBOX
+############################################################
+
+OBJECTIVE
+
+Prepare the architecture for safely running arbitrary Python strategies.
+
+Strategies should eventually execute in isolated processes or containers.
+
+Implement/design:
+
+CPU limits
+memory limits
+timeouts
+restricted filesystem
+dependency isolation
+network restrictions
+controlled secrets
+process termination
+audit logging.
+
+Never expose broker credentials directly to strategy code.
+
+EXIT GATE
+
+A crashing or maliciously resource-intensive strategy cannot crash the main
+terminal or expose secrets.
+
+
+############################################################
+MILESTONE 17 — PAPER TRADING
+############################################################
+
+OBJECTIVE
+
+Prove that the historical architecture extends to realtime operation.
+
+Implement:
+
+realtime DataFeed
+PaperBroker
+live clock
+persistent order state
+reconnect handling
+position reconciliation
+stale-data detection
+duplicate-event protection.
+
+The strategy interface must remain unchanged.
+
+TEST
+
+disconnect
+reconnect
+duplicate fill
+missing update
+out-of-order update
+stale market data
+process restart.
+
+EXIT GATE
+
+Paper sessions can restart and reconstruct state without silently corrupting
+portfolio accounting.
+
+
+############################################################
+MILESTONE 18 — LIVE BROKER ARCHITECTURE
+############################################################
+
+OBJECTIVE
+
+Add one broker correctly rather than many brokers poorly.
+
+Create:
+
+BrokerAdapter interface
+authentication abstraction
+order mapping
+broker status mapping
+fill reconciliation
+position reconciliation
+heartbeat
+rate-limit handling.
+
+Add pre-trade risk controls:
+
+maximum position
+maximum order value
+maximum gross exposure
+maximum net exposure
+maximum leverage
+daily loss limit
+drawdown limit
+stale-data block
+duplicate-order protection
+kill switch.
+
+LIVE MODE MUST BE VISUALLY AND OPERATIONALLY DISTINCT.
+
+EXIT GATE
+
+Live deployment is not approved until paper-trading fault tests pass.
+
+
+############################################################
+MILESTONE 19 — ADVANCED PORTFOLIO AND RISK RESEARCH
+############################################################
+
+After the core terminal is stable, add modular support for:
+
+volatility targeting
+risk parity
+mean-variance optimisation
+Black-Litterman
+factor models
+factor exposure
+factor attribution
+risk contribution
+portfolio stress tests
+scenario analysis
+correlation regimes
+concentration analysis
+liquidity/capacity analysis.
+
+
+############################################################
+MILESTONE 20 — ADVANCED ASSET CLASSES
+############################################################
+
+Only after core accounting is stable, progressively add:
+
+multi-currency accounting
+FX
+futures
+continuous-contract handling
+contract multipliers
+futures margin
+borrow availability
+short-borrow fees
+financing
+options
+Greeks
+options margin.
+
+Each asset class requires independent validation fixtures.
+
+Do not simply reuse equity assumptions.
+
+
+############################################################
+MILESTONE 21 — PRODUCTION RELEASE HARDENING
+############################################################
+
+OBJECTIVE
+
+Convert the system from a development project into a releasable application.
+
+COMPLETE
+
+security review
+dependency audit
+database migrations
+backup/restore tests
+crash recovery
+structured logging
+metrics
+health checks
+error monitoring
+performance tests
+load tests
+installation process
+upgrade process
+documentation
+sample strategies
+tutorials.
+
+Create:
+
+Release Candidate 1
+
+and freeze features.
+
+Perform regression testing.
+
+Resolve critical/high defects.
+
+Then create:
+
+v1.0.0
+
+============================================================
+VIII. QUANTITATIVE VALIDATION REQUIREMENTS
+============================================================
+
+Throughout development maintain a Golden Test Suite.
+
+Create tiny deterministic market datasets where results can be calculated by
+hand.
+
+Example:
+
+Date       Open High Low Close
+Day 1      100  102  99 101
+Day 2      102  105 101 104
+...
+
+Calculate manually:
+
+orders
+fills
+cash
+position
+realised P&L
+unrealised P&L
+NAV
+returns
+drawdown
+fees.
+
+The engine must reproduce them.
+
+Also perform differential testing against mature frameworks where semantics can
+be matched.
+
+Candidates:
+
+LEAN
+Backtrader
+Zipline-reloaded.
+
+Do not assume disagreement automatically means this engine is wrong.
+
+First identify differences in:
+
+fill timing
+price selection
+corporate actions
+commission
+slippage
+calendar
+trade matching.
+
+Document every discrepancy.
+
+============================================================
+IX. BACKTESTING BIAS DEFENCES
+============================================================
+
+The system must explicitly protect against:
+
+look-ahead bias
+survivorship bias
+selection bias
+data snooping
+timestamp leakage
+future universe membership
+incorrect corporate actions
+incorrect dividend handling
+unrealistic fills
+zero-cost assumptions
+optimisation overfitting
+ML train/test leakage.
+
+Every dataset should eventually expose metadata indicating whether it is:
+
+point-in-time
+survivorship-bias-free
+split-adjusted
+dividend-adjusted
+raw
+total-return.
+
+Never silently mix conventions.
+
+============================================================
+X. FEATURES NOT TO BUILD EARLY
+============================================================
+
+Do NOT prioritise:
+
+HFT
+nanosecond execution
+L2/L3 order books
+queue-position modelling
+complex options margin
+20 broker integrations
+microservices for every component
+Kubernetes
+AI-generated strategies
+social trading
+mobile applications
+cloud multi-tenancy
+extensive alternative-data infrastructure
+complex ML pipelines
+decorative dashboards.
+
+These must not distract from simulator correctness.
+
+============================================================
+XI. ARCHITECTURAL REFERENCES
+============================================================
+
+Study architectural concepts from:
+
+QuantConnect LEAN
+Backtrader
+Zipline-reloaded
+vectorbt
+pyfolio-reloaded
+empyrical-reloaded
+bt
+QuantRocket
+AmiBroker
+MultiCharts.
+
+Study different systems for different reasons.
+
+LEAN:
+execution/reality modelling and engine architecture.
+
+Backtrader:
+compact Python event-driven architecture.
+
+Zipline:
+strategy API and event/data semantics.
+
+vectorbt:
+high-throughput parameter research.
+
+pyfolio/empyrical:
+analytics and reporting.
+
+AmiBroker:
+optimisation, walk-forward and Monte Carlo workflow.
+
+MultiCharts:
+professional terminal workflow.
+
+Do not copy source code without checking licensing.
+
+Use architectural ideas rather than blindly reproducing implementations.
+
+============================================================
+XII. ARCHITECTURE DECISION RECORDS
+============================================================
+
+Any important technical decision requires an ADR.
+
+Examples:
+
+ADR-001 Python-first architecture
+ADR-002 Event-driven core
+ADR-003 Parquet historical storage
+ADR-004 DuckDB analytical querying
+ADR-005 PostgreSQL experiment metadata
+ADR-006 Immutable fill ledger
+ADR-007 Execution-model architecture
+ADR-008 React frontend
+ADR-009 Experiment reproducibility model
+ADR-010 Strategy sandboxing.
+
+Each ADR contains:
+
+Context
+Decision
+Alternatives
+Advantages
+Disadvantages
+Consequences.
+
+============================================================
+XIII. QUALITY TARGETS
+============================================================
+
+Target:
+
+100% tests passing.
+
+High coverage on financial-domain code.
+
+Coverage percentage itself is NOT the objective.
+
+Critical accounting, execution and metrics logic should approach exhaustive
+branch/edge-case testing.
+
+No unresolved critical/high severity security issues.
+
+No silent numerical exceptions.
+
+No future-data access.
+
+No nondeterministic experiment results unless explicitly configured.
+
+No result should exist without experiment provenance.
+
+============================================================
+XIV. CODING AGENT OPERATING RULES
+============================================================
+
+When implementing a milestone:
+
+DO NOT immediately write large quantities of code.
+
+First output:
+
+1. Milestone objective
+2. Existing architecture assessment
+3. Requirements
+4. Proposed interfaces
+5. Domain invariants
+6. Failure modes
+7. Test plan
+8. Files to create/change
+9. Implementation sequence
+10. Acceptance criteria.
+
+Then implement.
+
+After implementation output:
+
+MILESTONE COMPLETION REPORT
+
+Status:
+PASS / CONDITIONAL PASS / FAIL
+
+Implemented:
+...
+
+Tests added:
+...
+
+Tests executed:
+...
+
+Results:
+...
+
+Coverage of critical behaviour:
+...
+
+Performance:
+...
+
+Known limitations:
+...
+
+Technical debt introduced:
+...
+
+Security considerations:
+...
+
+Financial assumptions:
+...
+
+Documentation updated:
+...
+
+ADR changes:
+...
+
+Acceptance criteria:
+[PASS/FAIL] ...
+
+Recommendation:
+READY FOR NEXT MILESTONE
+or
+NOT READY.
+
+Never mark a milestone complete if tests are failing.
+
+Never hide failures to continue development.
+
+============================================================
+XV. FINAL PRODUCT ACCEPTANCE TEST
+============================================================
+
+Before v1.0, demonstrate one strategy through the complete research lifecycle:
+
+Python Strategy
+      ↓
+Historical Dataset
+      ↓
+Backtest
+      ↓
+Execution Simulation
+      ↓
+Portfolio Accounting
+      ↓
+Performance Report
+      ↓
+Parameter Optimisation
+      ↓
+Walk-Forward Optimisation
+      ↓
+OOS Equity Curve
+      ↓
+Monte Carlo Analysis
+      ↓
+Robustness Analysis
+      ↓
+Experiment Comparison
+      ↓
+HTML Research Report.
+
+Then demonstrate:
+
+same Strategy
+      ↓
+Paper Broker
+
+without modifying strategy business logic.
+
+The release cannot be called v1.0 unless this end-to-end test passes.
+
+============================================================
+XVI. DEFINITION OF SUCCESS
+============================================================
+
+The finished application should answer, reproducibly:
+
+"What would this strategy have done?"
+
+"Exactly how were orders filled?"
+
+"What assumptions produced this result?"
+
+"What did commissions and slippage cost?"
+
+"How much risk did the strategy take?"
+
+"How severe and long were its drawdowns?"
+
+"Are results stable across parameter choices?"
+
+"Did performance survive out-of-sample testing?"
+
+"How sensitive is it to costs and execution?"
+
+"What range of outcomes does Monte Carlo imply?"
+
+"Can I reproduce this exact experiment?"
+
+"Can I compare it with another experiment?"
+
+"Can the same strategy run in paper/live mode without being rewritten?"
+
+If the terminal cannot answer these questions, it is not yet complete.
+
+How I would actually sequence the project
+
+I would treat the roadmap as four releases rather than one enormous build.
+
+Release 0.1 — Trusted Backtester should cover Milestones 0–8. This is the most important release. By its end, you should be able to write a Python strategy, run it on point-in-time historical data, simulate orders and costs, obtain a correct portfolio ledger, calculate professional statistics, generate a tear sheet, and reproduce the run exactly. Do not build the polished React terminal until this works.
+
+Release 0.2 — Quant Research Terminal should cover Milestones 9–14. This adds optimisation, walk-forward analysis, Monte Carlo, robustness analysis, the API/CLI and finally the professional GUI. This is where the application starts to resemble your intended "MultiCharts for Python" product.
+
+Release 0.5 — Research-to-Trading Platform should cover Milestones 15–18. Only here would I spend significant effort on speed, sandbox arbitrary Python strategies, introduce realtime infrastructure, paper trading and then one live broker adapter.
+
+Release 1.0 — Professional Quant Platform covers Milestones 19–21 selectively. Portfolio optimisation, factor analytics, additional asset classes, institutional risk controls and production hardening become modular extensions rather than changes to the core engine.
+
+The critical point is that v0.1 should already be useful. If you stop development there temporarily, you still have a rigorous Python backtester rather than half of an enormous trading platform.
+
+One addition I would make to the research blueprint
+
+Create a "Golden Quant Test Suite" from the first week and treat it almost like a second product. For example, maintain 20–50 tiny artificial markets covering gaps, splits, dividends, shorts, partial fills, stop orders, limit orders, zero-volatility returns, complete losses, missing bars, leverage and pathological drawdowns. Each fixture should contain mathematically predetermined expected orders, fills, cash, positions, NAV and metrics.
+
+Then require:
+
+No change to the engine, optimiser, data system or accounting system may merge if any Golden Quant fixture changes without an explicit explanation and approval.
+
+That will protect you against one of the most dangerous failure modes in quantitative software: improving or refactoring something and unknowingly changing historical results.
+
+I would also maintain a second differential validation suite against LEAN/Backtrader for deliberately simple strategies where execution assumptions can be made identical. Your own engine remains authoritative for your specified semantics, but unexplained disagreement becomes a defect investigation.
+
+Finally, I would not use MATLAB as the application foundation. Keep the architecture Python-native and introduce MATLAB later behind a ModelAdapter if you want MATLAB models to supply forecasts, covariance matrices, optimisation results or signals. That preserves the value of MATLAB without forcing every backtest through a Python↔MATLAB boundary. This is consistent with the architectural conclusion of the research you commissioned.
+
+The strongest first target is therefore Milestone 0 → Milestone 8, with no live trading at all. Once those gates pass, you have established the trustworthy computational core on which everything else depends.

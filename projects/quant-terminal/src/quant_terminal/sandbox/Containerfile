@@ -1,0 +1,11 @@
+# Supply a digest-pinned Python base explicitly: --build-arg BASE_IMAGE=...@sha256:...
+# No base default exists, so an unconfigured build fails closed.
+ARG BASE_IMAGE
+FROM ${BASE_IMAGE}
+
+COPY src/quant_terminal/sandbox/strategy_worker.py /opt/algoalpha/strategy_worker.py
+COPY src/quant_terminal/sandbox/protocol.py /opt/algoalpha/quant_terminal/sandbox/protocol.py
+
+USER 65532:65532
+WORKDIR /tmp
+ENTRYPOINT ["/usr/local/bin/python", "-I", "-S", "/opt/algoalpha/strategy_worker.py"]

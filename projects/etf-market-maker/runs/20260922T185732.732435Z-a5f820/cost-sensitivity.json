@@ -1,0 +1,26 @@
+[
+  {
+    "name": "base",
+    "fee_bps": 0.5,
+    "slippage_bps": 1.0,
+    "net_mtm_pnl": 3089.118951136945,
+    "fills": 669,
+    "method": "Rerun with cost-aware quotes; fill paths may differ"
+  },
+  {
+    "name": "higher_friction",
+    "fee_bps": 2.0,
+    "slippage_bps": 5.0,
+    "net_mtm_pnl": 2466.97614443372,
+    "fills": 520,
+    "method": "Rerun with cost-aware quotes; fill paths may differ"
+  },
+  {
+    "name": "severe_friction",
+    "fee_bps": 10.0,
+    "slippage_bps": 20.0,
+    "net_mtm_pnl": 1062.3003830423113,
+    "fills": 56,
+    "method": "Rerun with cost-aware quotes; fill paths may differ"
+  }
+]

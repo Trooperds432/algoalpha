@@ -1,0 +1,2165 @@
+PAGE 1
+Building a Python-Native Quantitative Trading
+Terminal: Architecture, Platform Landscape and
+Implementation Blueprint
+Executive summary
+The strongest design for the terminal you describe is a Python-first, event-driven quantitative
+research and trading platform with a vectorised acceleration layer, rather than a MATLAB-first
+application. The core should expose one strategy interface that can run against historical data, walk-
+forward windows, parameter-search jobs, Monte Carlo paths, paper trading and—later—the same live
+broker adapters. This is broadly the architectural lesson visible across LEAN/QuantConnect, Backtrader ,
+Zipline and QuantRocket: separate the strategy from data, brokerage/execution simulation, portfolio
+accounting and reporting. LEAN, in particular , explicitly separates fill, slippage, fee, buying-power and
+brokerage models instead of embedding these assumptions inside strategy code. 
+Recommendation: build in Python, with MATLAB supported only as an optional research/model
+integration layer . MATLAB is an excellent numerical research environment and can call Python directly or
+out-of-process, but making it the centre of a terminal whose defining feature is “run arbitrary Python
+algorithms” adds licensing, deployment and language-boundary complexity without a compensating
+advantage. MathWorks itself supports direct Python calls, pyrun , pyrunfile , DataFrame/table
+interchange and out-of-process Python execution, which makes MATLAB better suited here as an
+optional client rather than the execution kernel. 
+The recommended system is not purely vectorised and not purely event-driven:
+Use an event-driven engine for execution-sensitive backtests, order state, partial fills, market/
+limit/stop orders, margin, paper trading and eventual live operation.
+Use a vectorised engine or vectorised analysis path for signal research and thousands of
+parameter combinations. Vectorbt demonstrates the huge computational advantage of array/
+Numba-style testing, while Backtrader , Zipline and LEAN illustrate the richer semantics
+obtainable from an event engine. 
+Keep optimisation, walk-forward validation and Monte Carlo orchestration outside the
+individual strategy, so any strategy can be subjected to the same research protocol.
+Record every run as an immutable experiment containing configuration, code/data version,
+random seed, fills, trades, positions, equity and analytics. This makes a result reproducible rather
+than merely visually attractive.
+Start with daily/minute equities and ETFs, market/limit/stop orders, realistic costs, multi-asset
+portfolios, parameter optimisation, walk-forward testing, Monte Carlo and comprehensive
+analytics. Do not begin with HFT, tick-level limit-order-book simulation, options margin or twenty
+broker integrations.
+A credible MVP is approximately 12–16 full-time engineer-weeks for one strong Python developer,
+assuming bar-based equities/ETFs and no production live trading. A robust paper/live release is more
+reasonably 20–30 engineer-weeks because reconciliation, connectivity failures, broker semantics,
+1
+2
+• 
+• 
+3
+• 
+• 
+• 
+1
+PAGE 2
+operational controls and deployment are substantially harder than historical simulation. These are
+engineering estimates, not vendor estimates.
+The commercial comparison also suggests there is a genuine niche for what you are proposing.
+MultiCharts currently has native strategy backtesting, genetic optimisation, walk-forward analysis,
+Portfolio Trader and automated trading, while its Python support is still advertised as a beta. AmiBroker
+has unusually mature native optimisation, walk-forward and Monte Carlo analysis, but uses AFL rather
+than Python. QuantConnect/LEAN has arguably the strongest open execution/modelling foundation
+and Python support, but its hosted optimisation workflow is currently centred on grid search and leaves
+richer walk-forward/Monte Carlo research protocols to the user . QuantRocket is probably the closest
+existing Python-centric architectural analogue: it supports multiple Python backtesters, live trading,
+parameter scans and explicit rolling/expanding walk-forward machine-learning workflows. 
+The resulting product should feel like this:
+MultiCharts/AmiBroker research workflow + Python ecosystem + LEAN-style market
+modelling + vectorbt-style high-throughput research + pyfolio-style tear sheets.
+That combination is more compelling than cloning any single existing platform.
+Platform landscape
+The comparison below reflects publicly documented capabilities available as of 16 September 2026.
+“Native” means the platform has an explicit first-class workflow for the capability; “custom” means it is
+feasible in code but is not a first-class tool comparable with AmiBroker's walk-forward or Monte Carlo
+windows.
+Legend: ● first-class/native; ◐ available through custom code, an extension or adjacent component; —
+absent/not applicable; ⚠ legacy/archived.
+Platform Data sources Languages Live trading Optimisation Walk-forward Monte
+Carlo
+Portfolio-
+level
+backtest
+MultiCharts
+Large broker/
+data-feed
+catalogue
+including IBKR,
+TradeStation,
+Binance,
+Coinbase,
+Kraken,
+Rithmic,
+Bloomberg,
+IQFeed,
+dxFeed and
+others. 
+PowerLanguage/
+EasyLanguage-
+compatible; .NET
+languages; 
+Python beta. 
+● ● standard +
+genetic ●
+◐ not a
+prominent
+first-class
+current
+workflow
+● Portfolio
+Trader
+4
+5
+6
+2
+PAGE 3
+Platform Data sources Languages Live trading Optimisation Walk-forward Monte
+Carlo
+Portfolio-
+level
+backtest
+QuantConnect
+Cloud
+Hosted
+equities,
+indices, FX,
+crypto, futures,
+options and
+alternative
+datasets;
+brokerage
+feeds for live
+use. 
+Python, C# ●
+● cloud
+optimisation;
+current
+documentation
+identifies grid
+search as the
+cloud strategy. 
+◐ custom ◐ custom/
+research ●
+Backtrader
+User feeds
+plus
+documented
+CSV/Yahoo-
+style feeds and
+broker
+integrations;
+historically IB/
+OANDA/live-
+feed support. 
+Python
+●/◐ broker-
+store
+dependent
+●
+multiprocessing
+strategy
+optimisation. 
+◐ custom ◐ custom ● multiple
+feeds/assets
+Zipline /
+Zipline
+Reloaded
+Data bundles
+and user-
+supplied data;
+QuantRocket
+provides
+enhanced
+datasets/
+integration. 
+Python
+— in core
+Reloaded; ◐
+through
+QuantRocket
+◐ custom ◐ custom ◐ custom ●
+Catalyst
+Cryptocurrency
+exchange
+feeds including
+Binance/
+Bitfinex/
+Bittrex/
+Poloniex
+historically
+Python ⚠ historical ◐ ◐ ◐ ● crypto
+LEAN engine
+Extensible data
+interfaces and
+QuantConnect
+ecosystem;
+local/on-prem
+use supported.
+C# engine;
+Python and C#
+algorithms
+●
+◐
+orchestration/
+custom locally
+◐ ◐
+●
+sophisticated
+multi-asset
+modelling
+7
+8
+9
+10
+11
+12
+3
+PAGE 4
+Platform Data sources Languages Live trading Optimisation Walk-forward Monte
+Carlo
+Portfolio-
+level
+backtest
+QuantRocket
+QuantRocket,
+EDI, Sharadar ,
+IBKR and other
+global
+datasets; user-
+extensible
+collection. 
+Python
+● IBKR/
+Alpaca
+currently
+highlighted
+● Moonshot
+parameter
+scans
+●
+MoonshotML
+rolling/
+expanding
+WFO
+◐ custom ●
+TradeStation
+TradeStation
+market data/
+brokerage; API
+streams
+historical/
+realtime data. 
+EasyLanguage
+natively; REST/
+FIX API usable
+from Python/C#/
+C++ etc. 
+● ●
+● Walk-
+Forward
+Optimizer . ◐
+● strategy/
+account
+oriented
+AmiBroker
+Plugin-based
+databases/
+feeds and
+imported data
+AFL
+●/◐ via
+brokerage/
+plugin
+automation
+● exhaustive
++ smart
+optimisation
+including PSO/
+CMA-ES
+● ●
+● portfolio
+backtester . 
+AlgoTrader /
+current
+Wyden
+Current Wyden
+product
+connects
+institutional
+digital-asset
+venues,
+brokers and
+OTC
+counterparties.
+Current product
+positioned as an
+institutional
+platform rather
+than an end-
+user strategy
+language
+●
+— current
+product not
+positioned
+around retail
+strategy
+optimisation
+— — ◐ execution/
+risk platform
+bt
+Any suitably
+shaped pandas
+price data
+Python — ◐ loop
+externally ◐
+◐ includes
+random-
+strategy/
+benchmark
+facilities,
+not a
+complete
+path
+engine
+● portfolio
+hierarchy. 
+13
+14
+15
+16
+17
+18
+19
+4
+PAGE 5
+Platform Data sources Languages Live trading Optimisation Walk-forward Monte
+Carlo
+Portfolio-
+level
+backtest
+pyfolio /
+pyfolio-
+reloaded
+Consumes
+returns,
+positions,
+transactions
+and
+benchmark
+data
+Python — — —
+◐
+statistical/
+bootstrap
+analysis
+rather than
+trading
+simulation
+Analytics
+only. 
+vectorbt
+Python data
+adapters/
+custom arrays
+Python/NumPy/
+Numba; newer
+implementation
+includes
+accelerated
+kernels
+— as a full
+OSS broker
+engine
+●
+exceptionally
+strong
+parameter-
+array
+evaluation
+◐ custom
+split logic
+◐ flexible
+custom
+simulation
+● cash-
+sharing/
+grouped
+portfolios. 
+Catalyst deserves special treatment rather than being treated as a current competitor: its GitHub
+repository was archived and made read-only in November 2022, and the project states that active
+maintenance had already ceased earlier . It remains useful source material for how a Zipline-derived
+crypto system was structured, but it would be a poor dependency for a new 2026 terminal. 
+“AlgoTrader” has also materially changed context. The old AlgoTrader domain now directs users to 
+Wyden, which is marketed as an institutional digital-asset trade-lifecycle/OEMS platform connecting
+dozens of venues rather than as the general-purpose strategy research/backtesting framework
+normally meant by historical references to AlgoTrader . Treat it as a current institutional execution
+competitor , not as a realistic base for this project. 
+The execution/modelling comparison is more important than the headline “supports backtests”,
+because a backtest that cannot model fills, costs, margin and portfolio state correctly is not the same
+product.
+Platform Transaction-
+cost model Slippage Margin/
+leverage
+Orders/
+execution
+Metrics and
+reporting Visualisation Licence / cost
+MultiCharts
+●
+commission
+configurable
+● configurable
+slippage
+● broker/
+strategy
+dependent
+Rich
+discretionary
++ automated
+order/
+execution
+workflow
+Strategy
+Performance
+Report, trade/
+system
+statistics.
+Backtests
+explicitly
+account for
+commission,
+slippage, capital
+and trade size. 
+Excellent
+desktop
+charting,
+portfolio/
+report UI
+Proprietary
+paid desktop
+product
+20
+21
+22
+18
+23
+5
+PAGE 6
+Platform Transaction-
+cost model Slippage Margin/
+leverage
+Orders/
+execution
+Metrics and
+reporting Visualisation Licence / cost
+QuantConnect ● modular
+FeeModel
+● modular
+SlippageModel
+●
+BuyingPower/
+Margin
+models
+Rich order/
+brokerage
+models
+Large result-
+statistics/report
+suite
+Equity, charts,
+optimisation
+parameter
+charts/
+heatmaps,
+PDF reports. 
+Cloud has
+free tier plus
+paid
+research/live/
+compute/
+data
+offerings. 
+Backtrader
+●
+commission
+schemes
+● broker
+slippage/fillers
+●
+commission/
+margin/
+leverage
+concepts
+Market,
+Limit, Stop,
+StopLimit,
+bracket/
+trailing
+facilities. 
+Analyzer
+framework
+Matplotlib
+plotting GPL-3.0. 
+Zipline
+Reloaded
+●
+commission
+models
+● slippage
+models
+◐ basic
+controls rather
+than LEAN-
+level
+brokerage
+margin
+Market/
+limit/stop/
+stop-limit
+style event
+engine
+Performance
+DataFrames;
+pairs naturally
+with pyfolio
+Matplotlib/
+PyData
+ecosystem
+Apache-2.0
+family;
+community-
+maintained
+Reloaded
+fork; original
+Zipline was
+Apache-2.0. 
+Catalyst ● Zipline-
+derived ●
+◐ crypto/
+exchange-
+specific
+Exchange-
+oriented
+crypto
+orders
+Zipline-derived Python
+plotting
+Apache-2.0;
+archived. 
+LEAN ● plug-in
+FeeModel
+● constant,
+volume-share,
+market-
+impact etc.
+●
+sophisticated
+security/
+buying-power
+models
+Broad multi-
+asset order
+semantics
+and
+brokerage
+models
+●
+Custom
+algorithm
+charts +
+QuantConnect
+reporting
+Open-source
+LEAN;
+Apache-2.0;
+commercial
+cloud/
+Enterprise
+products
+around it. 
+24
+25
+26
+27
+28
+22
+29
+6
+PAGE 7
+Platform Transaction-
+cost model Slippage Margin/
+leverage
+Orders/
+execution
+Metrics and
+reporting Visualisation Licence / cost
+QuantRocket
+● backend-
+specific/
+custom
+● backend-
+specific
+● broker/
+backtester
+dependent
+Zipline/
+Moonshot/
+live blotter
+Live P&L and
+implementation-
+shortfall
+monitoring
+Jupyter/
+pyfolio and
+platform
+charts
+Free learning
+tier; paid
+licence
+required for
+complete/
+current
+datasets and
+live trading. 
+TradeStation
+● strategy/
+broker cost
+settings
+● modelling
+available
+● real
+brokerage
+buying power/
+margin
+Market plus
+advanced
+API orders
+including
+bracket,
+OCO, OSO
+and multi-
+leg options. 
+Mature Strategy
+Performance
+tools
+Strong
+desktop
+charts
+Proprietary
+brokerage
+platform;
+Fintech API
+itself is
+currently
+advertised
+without an
+API access
+charge,
+subject to
+onboarding;
+brokerage/
+data charges
+remain
+separate. 
+AmiBroker
+●
+backtester
+configurable
+●
+programmable
+approximation
+● account-
+margin
+settings
+Signal/
+backtester
+model;
+broker
+automation
+possible
+Strong
+portfolio/trade
+statistics, MAE/
+MFE
+Strong
+desktop
+reports/charts
+Perpetual
+proprietary
+licences
+currently 
+US$299
+Standard,
+US$379
+Professional,
+US$499
+Ultimate
+Pack Pro. 
+Wyden Execution/
+TCA oriented
+Real execution
+context
+Institutional
+risk controls
+OEMS/
+exchange/
+broker
+execution
+Trading/risk/
+reporting
+Institutional
+UI
+Proprietary/
+contact sales.
+13
+30
+31
+32
+18
+7
+PAGE 8
+Platform Transaction-
+cost model Slippage Margin/
+leverage
+Orders/
+execution
+Metrics and
+reporting Visualisation Licence / cost
+bt
+●
+CostModel,
+including
+richer
+impact-style
+models
+◐ represented
+through costs
+rather than
+exchange
+simulator
+— no
+brokerage-
+margin engine
+Weight/
+allocation
+rather than
+detailed
+OMS
+Uses ffn
+statistics;
+weight/turnover
+tracking
+Charts/
+statistics MIT. 
+pyfolio
+Analyses
+transactions/
+capacity; not
+execution
+Measures
+realised effects
+rather than
+simulating
+orders
+— —
+Excellent tear
+sheets, risk,
+positions,
+round trips,
+transactions
+Excellent
+static tear
+sheets
+Apache-2.0. 
+vectorbt
+● fees/fixed
+fees
+configurable
+● simulation
+slippage
+◐ portfolio
+leverage
+concepts but
+not a full
+broker
+margin/risk
+system
+High-speed
+simulated
+orders, less
+OMS-centric
+than LEAN
+Extensive
+portfolio
+statistics
+Strong
+interactive
+plotting
+Distributed
+under 
+Apache 2.0
+with
+Commons
+Clause,
+which is
+more
+restrictive
+than ordinary
+Apache-2.0
+and should
+be reviewed
+before
+commercial
+reuse. 
+Two conclusions follow from this comparison.
+First, AmiBroker is the benchmark for the research workflow you are trying to reproduce: optimise,
+walk forward, Monte Carlo, inspect results. Its walk-forward facility supports in-sample/out-of-sample
+windows and combines OOS results, while its Monte Carlo analyser explicitly resamples trade lists or
+portfolio-equity changes and can generate distributions of outcomes. 
+Second, LEAN is the better benchmark for market mechanics. Its “reality modelling” deliberately
+decomposes execution assumptions into fill, slippage, fee, brokerage, buying power , settlement, short
+availability, margin-interest and other models. That decomposition is precisely how your own engine
+should be structured. 
+Your terminal can therefore differentiate by combining those two philosophies while making Python
+the strategy language.
+Analytics and risk engine
+The analytics layer should be a completely independent package:
+19
+33
+34
+35
+36
+8
+PAGE 9
+strategy -> orders/fills/positions/NAV -> analytics
+It should not calculate statistics by reading internal strategy variables. That lets the same analytics run
+on historical backtests, Monte Carlo paths, imported broker statements, paper portfolios and live
+accounts. Pyfolio and Empyrical follow this separation: pyfolio consumes returns, positions and
+transactions to produce tear sheets, while Empyrical packages reusable risk/performance functions. 
+Define a canonical result object with at least:
+BacktestResult
+nav
+returns
+cash
+positions
+exposures
+orders
+fills
+trades
+costs
+benchmark_returns
+metadata
+The distinction between orders, fills and trades is important. An order can generate multiple partial
+fills; a “trade” should be a reconstructed economic position/round trip, while fill-level records remain
+immutable.
+The core statistics should have explicit definitions rather than copying whichever convention a library
+happens to use.
+Metric Recommended definition Minimum required
+inputs
+Period return , adjusted appropriately for
+external cash flows
+NAV , deposits/
+withdrawals
+Cumulative return Return series
+CAGR Initial/final NAV, elapsed
+years
+Annualised
+volatility
+Period returns, periods/
+year 
+Win rate Closed-trade P&L
+Loss rate Closed-trade P&L
+37
+r=t V/V −t t−1 1 V
+t
+(1+∏t=1
+T r)−t 1
+V /V −( T 0)1/Y 1
+σ =ann σ(r) 
+t A A
+N /N 
+profitable closed
+N /N 
+losing closed
+9
+PAGE 10
+Metric Recommended definition Minimum required
+inputs
+Profit factor
+Net or gross trade P&L;
+convention must be
+labelled
+Average win/loss Mean positive/negative closed-trade P&L Trade ledger
+Expectancy Win probability, average
+win/loss
+Trade-level P&L ,  long and 
+ short
+Matched entry/exit fills,
+qty, costs
+Maximum
+drawdown NAV series
+Drawdown
+duration Time from prior high-water mark until recovery NAV + timestamps
+Sharpe Returns, periodic risk-
+free return
+Sortino Returns, minimum
+acceptable return 
+Calmar CAGR, maximum
+drawdown
+Historical VaR , using loss Return/P&L sample,
+confidence 
+CVaR / Expected
+Shortfall
+ in the continuous
+case Tail losses
+Gross leverage Positions, prices, NAV
+Net leverage Positions, prices, NAV
+Turnover
+Recommended one-way weight convention 
+, or traded-notional/NAV;
+report which
+Positions/weights or fills
+Slippage cost Fill price, reference
+price, side, quantity
+Commission/fees Fill-level fee ledger
+Implementation
+shortfall
+Decision/arrival-price portfolio value versus
+actual executed result Decision prices, fills, fees
+MAE Worst unrealised P&L reached during each trade Intratrade prices + trade
+positions
+MFE Best unrealised P&L reached during each trade Intratrade prices + trade
+positions
+∣ P&L ∣∑ i
+−
+P&L ∑ i
++
+p −wWˉ p∣ ∣l Lˉ
+sq(P −exit P )−entry costs s=+1
+−1
+D=t 1− ; MDD=max V 
+u≤t u
+V 
+t maxD
+t t
+ As(r −r )t f,t
+r −r 
+t f,t
+ A min(r −T ,0)N
+1 ∑ t t 2
+r −T 
+t t
+T
+∣MDD∣
+CAGR
+VaR =α Q (L)α L=−r α
+ES =α E[L∣L≥VaR ]α
+NAV
+∣MV ∣∑i i
+NAV
+MV ∑i i
+0.5 ∣w −∑i i,t w ∣i,t−
+q s (P −∑j j j j
+exec P )j
+ref
+C ∑j j
+10
+PAGE 11
+Metric Recommended definition Minimum required
+inputs
+Exposure Long, short, gross and net market-value/NAV
+ratios Positions, prices, NAV
+Beta Portfolio + benchmark
+returns
+Information ratio Portfolio and
+benchmark
+Tracking error Portfolio and
+benchmark
+Skew/kurtosis Sample moments of return distribution Return series
+Empyrical and pyfolio are particularly useful reference implementations for annualisation conventions,
+drawdown, Sharpe, downside-risk calculations, VaR-style statistics, transactions and tear-sheet
+construction. Pyfolio's timeseries.py  explicitly imports its turnover implementation and
+annualisation constants, while its plotting and tear-sheet modules separate calculation from
+presentation. 
+“Win rate” and “hit rate” should not silently be synonyms. I would define win rate as the fraction of
+completed trades with positive net P&L, while “signal hit rate” measures whether a prediction had the
+correct sign:
+That prevents ambiguous reports.
+Costs should also be decomposed rather than represented by a single percentage:
+LEAN's decomposition of fee, slippage, fill, buying-power and margin-related models is a particularly
+good template here. 
+For slippage, support progressively richer models:
+for fixed slippage;
+for a simple volume-share model; and later nonlinear impact such as
+Cov(r ,r )/Var(r )p m m
+ /s(r −Ar −r 
+p b p r )b
+s(r −p r ) 
+b A
+38
+HitRate= 1 sign( )=sign(r) .
+N
+1
+t
+∑ [ r^t t ]
+C =total C +commission C +exchange/regulatory C +spread C +slippage C +marketimpact C +borrow C .financing
+39
+P =fill P +reference s⋅δ
+δ =k 
+V
+∣Q∣
+δ ∝σ .
+ADV
+∣Q∣
+11
+PAGE 12
+QuantConnect's current LEAN documentation exposes null, constant, volume-share and market-impact
+slippage models, which is a good minimum taxonomy. 
+The walk-forward engine should treat optimisation as a nested process rather than merely repeatedly
+rerunning a strategy. For window :
+followed by:
+Then concatenate only the OOS segments:
+Support both rolling:
+IS: 2015----------2019 | OOS: 2020
+    IS: 2016----------2020 | OOS: 2021
+and anchored:
+IS: 2015----------2019 | OOS: 2020
+IS: 2015---------------2020 | OOS: 2021
+AmiBroker's native implementation provides precisely this moving/anchored IS/OOS concept and a
+combined OOS equity summary, while QuantRocket's MoonshotML explicitly supports rolling and
+expanding walk-forward optimisation. 
+Your optimiser should support:
+but also constrained objectives such as:
+subject to
+Do not optimise solely for one maximum Sharpe point. Store the entire response surface, parameter
+stability and neighbouring solutions. QuantConnect itself warns about optimisation/overfitting
+concerns, while AmiBroker's inclusion of walk-forward testing alongside optimisation reflects why
+parameter search and validation must remain separate processes. 
+The optimisation subsystem should eventually expose:
+40
+k
+θ =k
+∗ arg J R (θ) ,θ
+max ( IS,k )
+R =OOS,k Backtest θ ,D .( k
+∗
+OOS,k)
+R =WF R ∥R ∥⋯∥R .OOS,1 OOS,2 OOS,K
+41
+ J(θ)=θ
+max Sharpe(θ)
+CAGR(θ)θ
+max
+MDD(θ)≤20%, Turnover(θ)≤4, N ≥trades 100.
+42
+12
+PAGE 13
+Grid
+Random
+Latin hypercube
+CMA-ES
+Genetic algorithm
+Differential evolution
+Bayesian/TPE
+Multi-objective Pareto
+Optuna is a strong Python component for the later stages because its current project explicitly supports
+Python-defined search spaces, efficient search/pruning and parallel optimisation. 
+The Monte Carlo engine should contain several methods because they answer different questions:
+Simulation What is resampled/generated Main use
+Trade bootstrap Completed trade P&Ls Sequence/dependency sensitivity
+Equity-change
+bootstrap Portfolio-period returns Whole-portfolio risk
+IID return bootstrap Individual returns Simple sampling uncertainty
+Block bootstrap Blocks of consecutive returns Better preservation of serial
+dependence
+Parametric univariate Fitted return distribution Distributional scenario modelling
+Multivariate
+correlated
+Asset return vectors / covariance
+model Portfolio/path allocation testing
+Residual bootstrap Model residuals Forecast/model uncertainty
+Parameter
+perturbation Strategy parameters Parameter fragility
+Execution Monte
+Carlo Fill/slippage/latency assumptions Execution uncertainty
+Combined pathwise Returns + rebalance + costs +
+sizing Full strategy robustness
+AmiBroker is a useful design reference because its Monte Carlo facility can bootstrap the trade list or
+portfolio-equity changes rather than being limited to a generic random-return chart. 
+For each Monte Carlo experiment, show distributions of:
+along with percentile equity bands:
+43
+44
+V , CAGR, MDD, Sharpe, ES , ruin probability,T 95
+Q (V), Q (V), Q (V), Q (V), Q (V).5% t 25% t 50% t 75% t 95% t
+13
+PAGE 14
+That gives the user a probability distribution around a strategy rather than the dangerous illusion that
+one historical equity curve is a deterministic forecast.
+Architecture and technology decision
+The central design principle should be:
+A strategy expresses intent; the engine owns market mechanics.
+A strategy should say:
+context.order_target_percent("SPY", 0.50)
+not:
+# strategy manually modifies cash, calculates commission,
+# assumes it filled itself and updates positions
+Orders flow through a broker/execution model, which generates fills, which change the portfolio. This
+mirrors the event-driven separation in mature frameworks such as LEAN, Zipline and Backtrader . 
+A recommended architecture is:
+This gives you six deliberately separate domains:
+45
+Web
+Terminal
+/
+Desktop
+Shell
+CLI
+/
+Python
+SDK
+/
+Jupyter
+FastAPI
+Control
+API
+Experiment
+Manager
+Live
+Session
+Manager
+Job
+Orchestrator
+Walk-Forward
+Controller
+Optimisation
+Controller
+Monte
+Carlo
+Controller
+Backtest
+Worker
+Pool
+Sandboxed
+Python
+Strategy
+Event-Driven
+Engine
+Data
+Service
+Order
+/
+Execution
+Simulator
+Portfolio
++
+Accounting
+Risk
+/
+Margin
+Controls
+Immutable
+Event
+/
+Fill
+Ledger
+Analytics
+Engine
+Report
+Generator
+Run
+&
+Artifact
+Store
+Realtime
+Feed
+Strategy
+Process
+Broker
+Adapter
+Live
+Order
+/
+Fill
+Ledger
+Parquet
+Data
+Lake
+PostgreSQL
+/
+TimescaleDB
+Experiment
+Metadata
+DB
+14
+PAGE 15
+Data knows bars, ticks, corporate actions, metadata, sessions and calendars.
+Strategy runtime knows strategy callbacks and state but should not own cash or broker state.
+Execution/brokerage knows orders, fills, spread, slippage, commission and order lifecycle.
+Portfolio/risk knows cash, positions, NAV, margin, leverage and limits.
+Experiment orchestration knows walk-forward windows, parameter sets and Monte Carlo paths.
+Analytics/reporting knows the resulting return/trade/fill/position series.
+That separation is one of the most important decisions in the entire project.
+A sensible event model is:
+MarketEvent
+TimerEvent
+CorporateActionEvent
+OrderIntent
+OrderSubmitted
+OrderAccepted
+OrderRejected
+OrderCancelled
+FillEvent
+FundingEvent
+BorrowFeeEvent
+MarginCallEvent
+The event ledger should be append-only so the state of a portfolio can be reconstructed from events.
+This is particularly valuable for live/paper equivalence and debugging.
+The same interface should be used across modes:
+15
+PAGE 16
+Therefore switching:
+mode: backtest
+to:
+mode: paper
+does not require rewriting the trading algorithm.
+Python versus MATLAB versus hybrid
+Criterion Python MATLAB Hybrid
+Running arbitrary
+Python strategies Excellent Indirect Good
+Quant/open-source
+ecosystem Excellent Strong proprietary
+finance toolboxes
+Excellent but
+duplicated
+Existing backtest code
+to study
+LEAN Python API, Zipline,
+Backtrader, vectorbt, bt
+Smaller ecosystem
+for trading engines Both
+Broker/API ecosystem Excellent Possible but less
+natural
+Python side
+handles it
+Numerical/statistical
+research Excellent Excellent Excellent
+Distributed
+optimisation Excellent ecosystem
+Good with
+appropriate
+toolboxes
+Good
+Desktop numerical UI Good Excellent App
+Designer workflow Good
+Python
+Strategy
+Broker
+Interface
+HistoricalBroker
+PaperBroker
+LiveBroker
+16
+PAGE 17
+Criterion Python MATLAB Hybrid
+Web/API deployment Excellent Possible but less
+natural Python best
+Runtime/licensing
+friction Low Commercial
+licensing/toolboxes Higher
+Realtime service
+architecture Natural Possible More operational
+complexity
+User's requested
+Python-algorithm
+model
+Direct fit Poorer fit Direct on Python
+side
+MATLAB is not incapable of this. MATLAB is a sophisticated numerical environment, integrates with
+Python and has an extensible toolbox ecosystem.  The issue is architectural fit. The product itself is
+intended to be a Python strategy host. Running a Python execution kernel underneath a MATLAB
+desktop application creates two runtime environments, two dependency systems, repeated data
+conversion and an extra licence consideration.
+Accordingly:
+Use Python as the platform. Support MATLAB later through an adapter for researchers who want to
+calculate a signal, covariance forecast or optimisation model in MATLAB.
+For example:
+MATLAB research model
+       ↓
+signal / weights / forecast
+       ↓
+terminal Python API
+       ↓
+backtest / optimisation / report
+or:
+Python strategy
+       ↓
+MATLAB model function
+       ↓
+prediction
+       ↓
+Python engine
+MathWorks officially supports calls in both directions, including separate-process Python execution, so
+such an adapter is technically realistic. 
+Recommended Python stack
+2
+46
+17
+PAGE 18
+Layer MVP choice Scale-up choice
+Language Python Python orchestration + Rust/C++ hot paths
+if required
+Arrays/numerics NumPy, SciPy Same
+Tabular research pandas or Polars Polars/Arrow where throughput warrants
+Acceleration Numba Numba/Rust/C++
+API FastAPI + Pydantic Same behind gateway
+CLI Typer Same
+Historical storage Parquet + DuckDB Object-store Parquet + query engine
+Metadata SQLite initially PostgreSQL
+Realtime time-
+series optional initially PostgreSQL/TimescaleDB
+Cache In-process Redis
+Jobs multiprocessing /
+ProcessPool Ray/Dask/Kubernetes workers
+Optimisation Grid/random initially Optuna + evolutionary algorithms
+Static plotting Matplotlib Same
+Interactive charts Plotly Plotly/React
+MVP UI Streamlit/Dash or minimal
+React React/TypeScript
+Reporting Jinja2 HTML + JSON/CSV HTML/PDF + artefact service
+Packaging uv /locked Python env +
+Docker Docker/Kubernetes
+Timescale's current documentation describes hypertables as PostgreSQL tables enhanced for real-time
+time-series/event analytics; this makes PostgreSQL/Timescale attractive for live ticks, orders and
+execution events, while ordinary Parquet is simpler and cheaper for immutable historical research data. 
+QuantRocket independently illustrates that same architectural split: it deploys as Docker containers on
+laptop, server or cloud, stores realtime data in TimescaleDB, exposes WebSocket streaming and
+supports Python/Jupyter workflows around several backtesting engines. 
+For the API, use resource-oriented asynchronous jobs:
+POST /v1/backtests
+POST /v1/optimisations
+POST /v1/walk-forwards
+POST /v1/monte-carlo
+47
+13
+18
+PAGE 19
+GET  /v1/runs/{run_id}
+GET  /v1/runs/{run_id}/metrics
+GET  /v1/runs/{run_id}/trades
+GET  /v1/runs/{run_id}/equity
+GET  /v1/runs/{run_id}/artifacts
+POST /v1/live-sessions
+POST /v1/live-sessions/{id}/stop
+WS   /v1/live-sessions/{id}/events
+A request might be:
+{
+"strategy": "strategies.momentum:MomentumStrategy",
+"dataset": "us_equities_1d",
+"start": "2012-01-01",
+"end": "2025-12-31",
+"initial_cash": 100000,
+"parameters": {
+"fast": 20,
+"slow": 100
+},
+"execution_model": {
+"commission_bps": 1.0,
+"slippage_model": "volume_share"
+}
+}
+The backtest returns immediately with:
+{
+"run_id": "bt_01K...",
+"status": "queued"
+}
+and reports progress through HTTP polling or WebSocket/SSE.
+Every run should carry a manifest:
+run_id: bt_01K...
+strategy_sha256: ...
+git_commit: ...
+data_snapshot: ...
+engine_version: ...
+python_version: ...
+19
+PAGE 20
+parameters: ...
+random_seed: 12345
+calendar: XNYS
+timezone: UTC
+commission_model: ...
+slippage_model: ...
+created_at: ...
+That experiment provenance is a major quality difference between a serious quant terminal and a
+collection of notebooks.
+Codebases and modules worth studying
+Do not simply choose one library and copy its architecture wholesale. Study different repositories for
+different problems.
+Repository Specific modules/files to study What to learn
+QuantConnect/
+LEAN
+Engine/AlgorithmManager.cs ; 
+Engine/Engine.cs ; Engine/
+DataFeeds/ ; Engine/
+TransactionHandlers/ ; Common/
+Orders/ ; Common/Securities/
+Event loop, live/backtest
+abstraction, order lifecycle,
+brokerage models, fill/
+slippage/buying-power
+decomposition
+Backtrader
+backtrader/cerebro.py ; 
+strategy.py ; brokers/bbroker.py ; 
+comminfo.py ; analyzers/ ; sizers/
+Compact Python event
+architecture, broker
+simulator , analyzers, sizing
+and optimisation
+Zipline Reloaded
+zipline/algorithm.py ; finance/
+blotter/ ; finance/slippage.py ; 
+finance/commission.py ; metrics/ ; 
+data/bundles/
+Clean Python algorithm API,
+data bundles, blotter
+concepts, trading calendars
+and pipeline philosophy
+vectorbt portfolio core; portfolio Numba kernels;
+order records; stats builder
+Vectorisation, parameter
+broadcasting and high-
+throughput simulation
+pyfolio-reloaded
+pyfolio/timeseries.py ; tears.py ; 
+plotting.py ; round_trips.py ; 
+txn.py
+Analytics/report
+architecture, round trips,
+turnover , risk visualisation
+empyrical-
+reloaded performance/risk-statistics functions
+Small, testable metric
+functions and annualisation
+conventions
+bt bt/backtest.py ; bt/core.py ; bt/
+algos.py
+Portfolio trees, composable
+allocation algorithms,
+transaction-cost
+abstractions
+20
+PAGE 21
+Repository Specific modules/files to study What to learn
+Catalyst exchange and finance layers
+Historical example of
+adapting Zipline concepts to
+crypto; educational only
+because project is archived
+QuantRocket/
+Moonshot
+concepts
+Moonshot strategy pipeline and
+MoonshotML workflow
+Vectorised cross-sectional
+backtesting plus walk-
+forward ML orchestration
+LEAN's Engine/AlgorithmManager.cs  is particularly worth reading. The repository places the 
+AlgorithmManager  inside the engine and passes the live/backtest mode into it, while the engine
+launcher composes handlers around the manager; that is a useful reference for keeping strategy
+execution separate from the rest of the terminal. 
+Then study LEAN's documented “reality models” in parallel with the source. Its architecture recognises
+Fill, Slippage, Fee, Brokerage, Buying Power , Settlement, short-availability and other security-specific
+models rather than treating execution as one monolithic function. 
+Backtrader's Cerebro  is useful for almost the opposite reason: it is conceptually compact. Official
+documentation describes Cerebro as the central component that collects data feeds, strategies,
+observers, analyzers and writers, then executes either backtesting or live workflows.  That makes it
+an excellent educational reference for your first Python engine.
+Zipline is worth studying for API ergonomics. Its core is explicitly event-driven, integrates results
+through pandas and was designed so scientific libraries such as SciPy, statsmodels, scikit-learn and
+Matplotlib could be used around an algorithm.  Current zipline-reloaded  keeps that model
+alive, while QuantRocket demonstrates how Zipline can be embedded inside a broader trading terminal
+and extended to live operation. 
+For your reporting subsystem, pyfolio may be the most immediately reusable intellectual reference. The
+maintained pyfolio-reloaded  project describes its central concept as a set of tear sheets
+combining plots and summary statistics.  The original modules remain especially instructive:
+pyfolio/timeseries.py  contains risk/time-series statistics and turnover integration. 
+pyfolio/tears.py  coordinates the report/tear-sheet layers rather than cramming all calculations
+into plotting functions. 
+pyfolio/plotting.py  provides the chart layer separately. 
+Empyrical-reloaded is then worth studying as the lower-level metrics package; it explicitly describes
+itself as common financial risk/performance metrics used by Zipline and pyfolio. 
+Vectorbt should influence the optimisation execution path, not necessarily your brokerage
+architecture. Its fundamental trick is to represent many parameter combinations as arrays and
+accelerate portfolio simulation instead of launching a full Python event loop for every strategy/
+parameter combination.  A sophisticated terminal could therefore expose two engines:
+48
+49
+50
+11
+20
+51
+52
+53
+54
+55
+21
+PAGE 22
+engine="vectorized"
+for suitable research strategies, and:
+engine="event"
+for execution-sensitive simulations.
+A common strategy definition could compile/adapt to either where possible.
+There is an important licensing implication. Backtrader is GPL-3.0.  Pyfolio and the original
+Quantopian stack use Apache-2.0 licences. bt  uses MIT.  Vectorbt's current distribution uses
+Apache 2.0 plus the Commons Clause rather than plain Apache-2.0. 
+Therefore, study architecture rather than indiscriminately copying implementation. A proprietary
+commercial terminal in particular should have its dependency and source-code licence obligations
+reviewed before distribution.
+Delivery roadmap, testing and user experience
+A sensible implementation sequence is to make every milestone independently useful.
+The calendar dates are illustrative; effort is the meaningful part.
+Milestone Deliverable Approx. solo
+effort
+Foundation Package structure, schemas, configuration,
+deterministic clock 1–2 weeks
+Data CSV/Parquet ingestion, bars, symbols, calendars, splits/
+dividends 1–2 weeks
+Accounting Cash, positions, average price/lots, NAV, realised/
+unrealised P&L 1–2 weeks
+Execution engine Event loop, market/limit/stop, fills, costs, slippage 2–3 weeks
+Analytics Requested metrics + trade ledger + HTML report 1–2 weeks
+27
+56 57
+58
+04 Oct
+11 Oct
+18 Oct
+25 Oct
+01 Nov
+08 Nov
+15 Nov
+22 Nov
+29 Nov
+06 Dec
+13 Dec
+20 Dec
+27 Dec
+03 Jan
+10 Jan
+17 Jan
+24 Jan
+31 Jan
+07 Feb
+14 Feb
+Domain model and project contracts
+Data layer and calendars
+Event loop and portfolio accounting
+Orders fills costs and slippage
+Metrics and tear-sheet analytics
+Optimisation framework
+CLI and experiment management
+Walk-forward controller
+Monte Carlo engine
+Web dashboard and reports
+Paper broker and realtime feed
+First live broker adapter
+Production hardening
+Foundation
+Engine
+Research
+Terminal
+Trading
+Quantitative Terminal — Suggested Build Sequence
+22
+PAGE 23
+Milestone Deliverable Approx. solo
+effort
+Optimiser Grid/random, constraints, parallel jobs, parameter
+surfaces 1 week
+Walk-forward Rolling/anchored IS/OOS and stitched OOS curve 1 week
+Monte Carlo Trade/return bootstrap, path reports 1 week
+Terminal UX CLI plus browser dashboard 1–2 weeks
+Paper/live Streaming feed, broker adapter , reconciliation 3–5 weeks
+Production
+hardening Security, recovery, observability, deployment 2–4 weeks
+Some work overlaps, so those rows should not simply be summed mechanically.
+The MVP boundary should be firm. I recommend:
+In MVP Deliberately after MVP
+Python strategy SDK HFT
+Daily/minute OHLCV Full L2/L3 order book
+Equities/ETFs Options Greeks/margin
+Multi-asset portfolio Complex futures rolling
+Market/limit/stop Every broker-native advanced order
+Commission + fixed/volume slippage Queue-position microstructure
+Long/short + leverage constraints Prime-broker financing
+Deterministic backtester Distributed live cluster
+Requested performance metrics Full factor-risk system
+Grid/random optimisation Bayesian/genetic optimisation
+Rolling/anchored WFO Purged combinatorial CV
+Trade/return Monte Carlo Sophisticated stochastic market generator
+HTML/CSV/JSON reports Enterprise report builder
+CLI + local web UI Multi-user tenancy
+Paper execution Multi-broker production execution
+That MVP would already be a serious quantitative-finance project.
+The CLI should be sufficiently complete that the GUI is optional:
+23
+PAGE 24
+qt data ingest prices.parquet --dataset us_equities_1d
+qt backtest strategies/momentum.py \
+--config configs/momentum.yml
+qt optimise strategies/momentum.py \
+--method grid \
+--objective sharpe
+qt walk-forward strategies/momentum.py \
+--train 3y \
+--test 6m \
+--mode rolling
+qt monte-carlo run_01KABC \
+--method block-bootstrap \
+--paths 10000
+qt report run_01KABC \
+--format html
+qt live strategies/momentum.py \
+--broker paper
+The UI should expose the same operations rather than implementing a second workflow.
+A practical terminal layout would have:
+┌────────────────────────────────────────────────────────────┐
+│ Strategies | Data | Backtests | Optimisation | Live       │
+├─────────────────┬──────────────────────────────────────────┤
+│ Run parameters  │ Equity Curve                             │
+│                 │                                          │
+│ Date range      │                 /\                       │
+│ Capital         │           /\   /  \___                  │
+│ Commission      │      ____/  \_/       \__               │
+│ Slippage        │ ____/                               ...   │
+│ Parameters      │                                          │
+├─────────────────┼──────────────────────────────────────────┤
+│ Summary         │ Drawdown                                 │
+│ CAGR            │                                          │
+│ Sharpe          │     \___      ___                       │
+│ Sortino         │         \____/   \_____                 │
+│ Max DD          │                                          │
+│ Profit Factor   │                                          │
+├─────────────────┴──────────────────────────────────────────┤
+│ Trades | Orders | Fills | Positions | Monthly Returns     │
+└────────────────────────────────────────────────────────────┘
+24
+PAGE 25
+Every backtest report should include, at minimum:
+Performance overview: starting/final capital, total return, CAGR, volatility, Sharpe, Sortino, Calmar , max
+drawdown, VaR/CVaR, benchmark alpha/beta where applicable.
+Trading statistics: total trades, winners/losers, win rate, profit factor , expectancy, average/median
+trade, best/worst trade, average holding period, long/short attribution, MAE/MFE.
+Execution: gross versus net P&L, commissions, slippage, spread/impact estimates, turnover , fill count
+and implementation shortfall.
+Portfolio: exposure, gross/net leverage, positions, concentration, asset contribution and correlation.
+Robustness: IS/OOS statistics, parameter sensitivity, walk-forward windows and Monte Carlo
+percentiles.
+Required charts should include:
+Visualisation Why it matters
+Equity curve vs benchmark Core wealth progression
+Log equity curve More meaningful over long compounding periods
+Underwater/drawdown chart Loss magnitude and duration
+Rolling volatility Changing risk
+Rolling Sharpe Time stability
+Daily/weekly/monthly return histogram Distribution
+Q-Q plot Tail/non-normality diagnostic
+Monthly return heatmap Regime/seasonality view
+Annual return bars Year-to-year consistency
+Trade P&L histogram Trade distribution
+Cumulative trade P&L Trade-level evolution
+MAE versus final P&L scatter Stop-loss/sizing diagnosis
+MFE versus final P&L scatter Exit-efficiency diagnosis
+Holding-time distribution Strategy behaviour
+Long versus short attribution Directional decomposition
+Exposure/leverage timeline Hidden risk
+Turnover timeline Cost sensitivity
+Slippage by instrument/time/size Execution quality
+Correlation matrix Cross-asset dependence
+25
+PAGE 26
+Visualisation Why it matters
+Rolling correlation Regime dependence
+Parameter heatmap Optimisation robustness
+IS/OOS window chart Walk-forward transparency
+OOS-only equity Honest validation result
+Monte Carlo fan chart Distribution of future-equivalent paths
+Monte Carlo MDD histogram/CDF Tail-risk interpretation
+QuantConnect's optimisation interface already demonstrates why parameter heatmaps are useful—its
+results provide parameter charts and two-dimensional heatmaps—while pyfolio demonstrates the value
+of combining risk statistics and plots into tear sheets. 
+Reports should be exportable as:
+HTML      full interactive report
+PDF       shareable static tear sheet
+CSV       trades / fills / summary
+Parquet   full analytical datasets
+JSON      API and automation output
+PNG/SVG   charts
+The HTML report should be the primary artefact because it can combine tables and interactive Plotly
+charts without imposing a desktop-specific format.
+Testing is unusually important in a backtester because plausible but wrong output is more
+dangerous than a crash.
+Your unit-test suite should include deterministic examples for:
+Area Essential test
+Return maths Known NAV series gives known returns/CAGR
+Sharpe/Sortino Hand-computed fixture matches implementation
+Drawdown Known peak/trough gives exact MDD and duration
+VaR/CVaR Fixed loss sample produces known quantile/tail mean
+Trade matching Long and short round trips yield correct P&L
+Partial fills Several fills reconstruct one order/position correctly
+Commission Correct fee per fill
+Slippage Buy worsens price upward; sell worsens downward
+Cash accounting Cash decreases/increases exactly with fills and fees
+59
+26
+PAGE 27
+Area Essential test
+Mark-to-market Unrealised + realised + cash reconciles with NAV
+Corporate actions Split changes units without artificial wealth change
+Dividend Correct cash adjustment
+Margin Oversized order rejected or resized according to configured rule
+Limit order Does not fill unless price condition is met
+Stop order Activates only after trigger
+Look-ahead Strategy cannot access  data while processing 
+WFO Optimiser sees IS only; OOS data is unavailable during parameter selection
+Monte Carlo Fixed seed produces byte-identical/near-identical result
+Reproducibility Same data/config/code/seed produces same result
+Add property-based invariants:
+subject to instrument-specific contract multipliers.
+For each order:
+For a long-only/no-leverage portfolio:
+unless the configured model explicitly permits financing.
+For any NAV series:
+provided NAV remains non-negative.
+And:
+Integration tests should replay a tiny hand-constructed market, run a strategy from data ingest through
+report generation, exercise a broker's paper/sandbox API, simulate disconnect/reconnect and verify
+duplicate broker messages are idempotent.
+For extra confidence, use differential tests: implement a trivial moving-average or buy-and-hold
+strategy in both your engine and LEAN/Backtrader , remove modelling differences, and verify fills, P&L
+t+1 t
+NAV=t Cash+t q P 
+i
+∑ i,t i,t
+0≤FilledQty ≤OrderQty.
+Cash≥0
+0≤MDD≤1
+GrossP&L−Costs=NetP&L.
+27
+PAGE 28
+and NAV agree. That does not prove correctness, but it is excellent at uncovering accounting and event-
+timing mistakes.
+Advanced scope, security and regulatory boundary
+Once the MVP is reliable, the roadmap can become substantially more quantitative.
+Portfolio optimisation should be a first major extension. Add mean-variance optimisation,
+subject to:
+risk parity,
+with approximately equal , and eventually Black–Litterman:
+These can plug into a generic rebalance target:
+weights = allocator.allocate(state)
+portfolio.rebalance(weights)
+rather than being hard-coded into strategies.
+A factor layer should eventually estimate:
+allowing:
+factor exposure reports,
+sector/style constraints,
+factor-neutral optimisation,
+factor contribution to risk,
+stress scenarios.
+Position sizing should become pluggable:
+Fixed units
+Fixed notional
+Percent NAV
+Volatility targeting
+w Σww
+min ⊤
+1 w=⊤ 1,
+RC=i w ,i
+w Σw⊤
+(Σw)
+i
+RC
+i
+μ =BL (τΣ) +P Ω P (τΣ) π+P Ω q .[ −1 ⊤ −1 ]−1
+[ −1 ⊤ −1 ]
+r =i,t α+i β f +i,1 1,t ⋯+β f +i,K K,t ϵ ,i,t
+• 
+• 
+• 
+• 
+• 
+28
+PAGE 29
+ATR sizing
+Risk per trade
+Kelly/fractional Kelly
+Risk parity
+Target portfolio volatility
+The risk engine should sit between strategy intent and execution:
+Controls worth adding before serious live trading include maximum order notional, maximum position
+concentration, gross/net exposure limits, maximum leverage, price collars, stale-market-data
+protection, maximum daily loss, maximum drawdown, message-rate limits, duplicate-order protection
+and a manual kill switch. These are not merely nice engineering features: the FCA's algorithmic-trading
+requirements for regulated firms include resilient systems, capacity, trading thresholds/limits,
+prevention of erroneous orders, testing and monitoring. 
+The FCA's August 2025 review is particularly relevant to your architecture. It highlights algorithm
+inventories, formal deployment/change processes, simulation testing using stressed scenarios, robust
+pre- and post-trade controls and market-abuse surveillance as important practices for regulated
+algorithmic trading firms.  That strongly supports building versioning, simulation/stress tests and
+risk controls into the terminal from the beginning rather than bolting them on after connecting a
+broker .
+For the US institutional/broker context, SEC Rule 15c3-5 requires broker-dealers with market access to
+operate financial and regulatory risk-management controls.  FINRA likewise examines algorithm
+approval, performance testing and supervision in algorithmic/HFT contexts.  These rules do not
+mean a private research application automatically becomes regulated; the regulatory perimeter
+depends on who is trading, whose assets are involved, where orders are routed and what services are
+offered. A commercial/client-facing deployment should therefore obtain jurisdiction-specific legal advice
+rather than inferring regulatory status from the software architecture alone.
+A proper strategy sandbox should eventually run every user algorithm in a separate process or
+container:
+terminal
+   |
+   +-- strategy container A
+   |
+   +-- strategy container B
+   |
+   +-- strategy container C
+Each should have:
+CPU and memory limits;
+Approved
+Reject / Resize
+Strategy
+Order
+Intent
+Pre-Trade
+Risk
+Broker
+/
+Simulator
+Risk
+Event
+Fill
+Portfolio
+Continuous
+Risk
+Monitor
+Kill
+Switch
+/
+Deleveraging
+60
+61
+62
+63
+• 
+29
+PAGE 30
+execution timeouts;
+an explicit read-only data API;
+no filesystem access outside a mounted workspace;
+network access disabled by default;
+dependency lockfiles;
+controlled secrets injection only for authorised live adapters;
+process termination independent of the rest of the terminal.
+Never give arbitrary strategy Python code direct access to broker credentials.
+Broker/data secrets should live in the operating-system keychain for desktop use or a secrets manager/
+KMS/Vault-style system for server deployment. Paper and live credentials should be physically separate,
+and the UI should make live mode visually and operationally harder to enable than a backtest or paper
+session.
+The live stack should maintain an immutable audit record:
+timestamp
+strategy version
+strategy instance
+signal
+order intent
+risk decision
+broker order ID
+order status
+fill ID
+fill price/quantity
+position before
+position after
+user/system action
+That gives you post-mortem reproducibility.
+Market-data governance deserves its own module. Do not assume that because an API returns
+market data you have the right to redistribute or bundle it. Data vendors and exchanges can
+distinguish use cases such as display, non-display, professional use and redistribution, and brokerage
+feeds can require separate market-data subscriptions. QuantRocket, for example, explicitly notes that
+its IBKR-derived data access requires an IBKR account and applicable market-data subscriptions. 
+Consequently your data catalogue should store licence metadata alongside technical metadata:
+provider: ...
+dataset: ...
+asset_class: ...
+redistribution_allowed: false
+non_display_use: ...
+retention_rule: ...
+user_entitlement: ...
+agreement_version: ...
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+13
+30
+PAGE 31
+For proprietary or client data, the security design must also account for personal data obligations.
+Where UK GDPR applies, organisations have breach-management and, for qualifying breaches,
+supervisory-authority notification duties.  Avoid storing unnecessary personally identifiable
+information in strategy/research databases at all.
+HFT should be treated as a separate product tier rather than an “advanced checkbox”. The
+architecture required for genuine latency-sensitive trading is fundamentally different. At that point you
+would consider:
+Python
+  research, orchestration, strategy configuration
+        ↓
+Rust / C++
+  market-data decoder
+  order book
+  risk gateway
+  execution engine
+        ↓
+FIX / native exchange protocol
+with order-book reconstruction, exchange timestamps, high-resolution clocks, binary feeds,
+deterministic allocation, lock-free structures and latency telemetry. A normal Python/FastAPI/Timescale
+research terminal is an excellent quantitative platform but should not be marketed as an HFT execution
+engine simply because it processes ticks.
+The advanced research roadmap should instead prioritise features with much higher value per unit
+effort:
+Priority Advanced feature
+High Bayesian/TPE optimisation
+High CMA-ES/genetic optimisation
+High Multi-objective/Pareto optimisation
+High Parameter-stability and robustness surfaces
+High Block-bootstrap Monte Carlo
+High Scenario/stress-test library
+High Risk parity / target-vol portfolios
+High Black–Litterman allocation
+High Factor attribution/risk
+High Paper/live broker abstraction
+Medium Multi-currency accounting
+Medium Futures continuous-contract logic
+64
+31
+PAGE 32
+Priority Advanced feature
+Medium Borrow/short availability
+Medium Financing/margin-interest models
+Medium Options/Greeks
+Medium Regime models/HMMs
+Medium ML feature/experiment pipelines
+Medium Alternative-data catalogue
+Later L2 order-book simulator
+Later Queue position and market impact
+Separate architecture True HFT
+The resulting recommended build can be summarised as:
+Final decision: build the terminal in Python. Use MATLAB only as an optional modelling connector .
+For a learning/research project, implement your own clean bar-based Python event engine so you
+understand order lifecycle, accounting and biases. For a faster route towards production-grade multi-
+asset execution semantics, design an EngineAdapter  boundary so LEAN can later become an
+alternative backend, rather than committing the whole product to either a homemade engine or LEAN
+from day one. LEAN already demonstrates sophisticated multi-asset portfolio, margin and reality
+modelling and can run on-premises, while remaining an open-source engine. 
+separate specialist path
+MVP
+Python
+strategy
+SDK
+Event
+backtester
+Portfolio
+accounting
+Costs/slippage
+Analytics/reports
+Research
+Platform
+Optimisation
+Walk-forward
+Monte
+Carlo
+Parameter
+robustness
+Portfolio
+Platform
+Risk
+parity
+Black-Litterman
+Factor
+models
+Scenario/stress
+Trading
+Platform
+Paper
+broker
+Live
+adapters
+Risk
+gateway
+Reconciliation
+Scale
+Distributed
+workers
+Multi-user
+Cloud
+Institutional
+controls
+Optional
+Low-Latency
+Tier
+Rust/C++
+execution
+L2
+book
+Native/FIX
+connectivity
+65
+32
+PAGE 33
+The resulting MVP should therefore be:
+A local-first Python quantitative terminal that loads historical data, executes
+arbitrary Python strategies through an event-driven simulator, models
+commissions/slippage/leverage, records orders/fills/trades/positions, generates
+reproducible tear-sheet reports, performs parameter optimisation, rolling/anchored
+walk-forward testing and pathwise Monte Carlo analysis, and exposes everything
+through both a CLI and browser UI.
+That is narrow enough to build, broad enough to be genuinely useful, and structurally capable of
+evolving into the “MultiCharts for Python” concept without having to rewrite the system when paper/live
+execution, portfolio optimisation and more sophisticated market modelling are added later .
+LEAN Engine Versions
+https://www.quantconnect.com/?utm_source=chatgpt.com
+Call Python from MATLAB - MATLAB & Simulink
+https://www.mathworks.com/help/matlab/call-python-libraries.html
+orders
+https://vectorbt.dev/?utm_source=chatgpt.com
+Trading system analysis for seeking the best strategy ...
+https://www.multicharts.com/?utm_source=chatgpt.com
+Strategies - QuantConnect.com
+https://www.quantconnect.com/docs/v2/cloud-platform/optimization/strategies?utm_source=chatgpt.com
+Cerebro
+https://www.backtrader .com/docu/cerebro/?utm_source=chatgpt.com
+Cerebro - Optimization - Improvements
+https://www.backtrader .com/docu/optimization-improvements/?utm_source=chatgpt.com
+Releases — Zipline 3.0 docs - Machine Learning for Trading
+https://zipline.ml4trading.io/?utm_source=chatgpt.com
+QuantRocket vs QuantConnect: What Are the Differences?
+https://www.quantrocket.com/?utm_source=chatgpt.com
+TradeStation Fintech Solutions: Algorithmic trading software
+https://developer .tradestation.com/?utm_source=chatgpt.com
+EasyLanguage® coding for trading | TradeStation Fintech Solutions
+https://developer .tradestation.com/easylanguage/?utm_source=chatgpt.com
+Cluster Analysis Evaluating Re-Optimization
+https://help.tradestation.com/?utm_source=chatgpt.com
+AmiBroker Knowledge Base » Analysis
+https://www.amibroker .com/?utm_source=chatgpt.com
+Institutional Trading Platform for Digital Assets | Wyden
+https://www.algotrader .com/
+bt — Flexible Backtesting for Python
+https://pmorissette.github.io/bt/?utm_source=chatgpt.com
+1 7 12 65
+2 46
+3 21 55
+4 5 6
+8
+9 45 49
+10
+11
+13
+14 31
+15
+16
+17
+18
+19 57
+33
+PAGE 34
+stefan-jansen/pyfolio-reloaded: Portfolio and risk analytics in Python
+https://github.com/stefan-jansen/pyfolio-reloaded?utm_source=chatgpt.com
+GitHub - scrtlabs/catalyst at hackernoon.com · GitHub
+https://github.com/enigmampc/catalyst?ref=hackernoon.com&utm_source=chatgpt.com
+Backtesting trading strategies - MultiCharts
+https://www.multicharts.com/features/strategy-backtesting/?utm_source=chatgpt.com
+Reality Modeling - QuantConnect.com
+https://www.quantconnect.com/docs/v2/writing-algorithms/reality-modeling/key-concepts?utm_source=chatgpt.com
+QuantConnect Pricing Page - QuantConnect.com
+https://www.quantconnect.com/pricing/
+Logging - Writer
+https://www.backtrader .com/docu/writer/?utm_source=chatgpt.com
+Backtrader - Python Backtesting library for trading strategies
+https://github.com/?utm_source=chatgpt.com
+quantopian repositories - GitHub
+https://github.com/orgs/quantopian/repositories?utm_source=chatgpt.com
+Supported Models - QuantConnect.com
+https://www.quantconnect.com/docs/v2/writing-algorithms/reality-modeling/slippage/supported-models?
+utm_source=chatgpt.com
+Brokerage Trading API | Tradestation Developer Solutions
+https://developer .tradestation.com/trading-api/?utm_source=chatgpt.com
+AmiBroker - Technical Analysis Software. Charting, Portfolio Backtesting, Scanning of stocks, futures,
+mutual funds, forex (currencies). Alerts. Free quotes.
+https://www.amibroker .com/order .html
+quantopian/pyfolio: Portfolio and risk analytics in Python - GitHub
+https://github.com/quantopian/pyfolio?utm_source=chatgpt.com
+Untitled
+https://cdn.jsdelivr .net/?utm_source=chatgpt.com
+Walk-forward testing and optimization
+https://www.amibroker .com/guide/h_walkforward.html
+pyfolio/pyfolio/utils.py at master · quantopian/pyfolio - GitHub
+https://github.com/quantopian/pyfolio/blob/master/pyfolio/utils.py?utm_source=chatgpt.com
+Getting Started - QuantConnect.com
+https://www.quantconnect.com/docs/v2/cloud-platform/optimization/getting-started?utm_source=chatgpt.com
+Optuna - A hyperparameter optimization framework
+https://optuna.org/?utm_source=chatgpt.com
+Monte Carlo simulation
+https://www.amibroker .com/guide/h_montecarlo.html
+Understand hypertables | Tiger Data Docs
+https://www.tigerdata.com/docs/learn/hypertables/understand-hypertables?utm_source=chatgpt.com
+quantopian/zipline at alpaca.markets - GitHub
+https://github.com/quantopian/Zipline?ref=alpaca.markets&utm_source=chatgpt.com
+20
+22
+23
+24 36 39 48
+25
+26
+27 37 54
+28
+29 40
+30
+32
+33 56
+34 58
+35 41
+38
+42
+43
+44
+47
+50
+34
+PAGE 35
+pyfolio/pyfolio/timeseries.py at master · quantopian/pyfolio - GitHub
+https://github.com/quantopian/pyfolio/blob/master/pyfolio/timeseries.py?utm_source=chatgpt.com
+pyfolio/pyfolio/tears.py at master · quantopian/pyfolio - GitHub
+https://github.com/quantopian/pyfolio/blob/master/pyfolio/tears.py?utm_source=chatgpt.com
+pyfolio/pyfolio/plotting.py at master · quantopian/pyfolio - GitHub
+https://github.com/quantopian/pyfolio/blob/master/pyfolio/plotting.py?utm_source=chatgpt.com
+Results - QuantConnect.com
+https://www.quantconnect.com/docs/v2/cloud-platform/optimization/results?utm_source=chatgpt.com
+FCA Handbook - MAR 7A Algorithmic trading
+https://handbook.fca.org.uk/handbook/mar7a?utm_source=chatgpt.com
+Multi-firm review of algorithmic trading controls: high-level observations | FCA
+https://www.fca.org.uk/publications/multi-firm-reviews/algorithmic-trading-controls-high-level-observations?
+utm_source=chatgpt.com
+Final Rule: Risk Management Controls for Brokers or ...
+https://www.sec.gov/?utm_source=chatgpt.com
+Targeted Examination Letter on High Frequency Trading
+https://www.finra.org/?utm_source=chatgpt.com
+Personal data breaches: a guide | ICO
+https://ico.org.uk/?utm_source=chatgpt.com
+51
+52
+53
+59
+60
+61
+62
+63
+64
+35

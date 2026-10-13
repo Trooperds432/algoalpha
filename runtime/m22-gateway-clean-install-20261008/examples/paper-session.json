@@ -1,0 +1,14 @@
+{
+  "session_id": "my-paper-session",
+  "config": {
+    "instrument": {
+      "instrument_id": "ETF-1", "symbol": "TEST", "currency": "USD",
+      "asset_class": "etf", "calendar": "XNYS", "timezone": "America/New_York",
+      "tick_size": "0.01", "quantity_step": "1"
+    },
+    "strategy": "buy_and_hold", "parameters": {"quantity": "10"},
+    "initial_cash": "10000", "max_order_notional": "2000",
+    "execution": {"commission_per_unit": "0.1", "slippage_kind": "fixed", "slippage_value": "0.01", "maximum_participation": "0.01"},
+    "stale_seconds": 120
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "at": "2026-10-13T10:51:26.163099+00:00",
+  "reviewer": "/root/consolidated_release",
+  "verdict": "bounded_participation_accepted",
+  "integrationPending": true,
+  "roles": [
+    {
+      "roleCode": "10.11",
+      "identifier": "ALG-555",
+      "agentId": "3d7c97f6-f1b1-4c76-8703-33252f52ea14",
+      "runId": "a1ebdb2d-0585-40a9-b605-aec03beaf925",
+      "issueId": "7b235da7-7157-4a49-816b-ab96f631caf7",
+      "freshRootVerification": {
+        "runId": "a1ebdb2d-0585-40a9-b605-aec03beaf925",
+        "issueId": "7b235da7-7157-4a49-816b-ab96f631caf7",
+        "artifact": "docs\\agent-contributions\\10-11.md",
+        "artifactSha256": "913def4c6b2a961fa03d25436277d13ce9e8377754ef275b4295f4fe9f07653f",
+        "interactionArtifact": "docs\\agent-contributions\\10-11.json",
+        "interactionSha256": "35aabeaf4a8e696a1587cc82cdf3512de953d2716bda300392eb0c404e50f2d0",
+        "verifiedAt": "2026-10-13T10:51:26.163058+00:00",
+        "scope": "identity/files/actual HTTP evidence verified; role finding needs independent review"
+      }
+    }
+  ],
+  "reproduction": "Observed quantity10 commission1/slippage0.1 entrycost1.1; conditional roundtrip2.2 not an observed exit. Hypothetical volume1000/100 at1% implies1/10days; zero volume no finite horizon. ES95 expected tail2.15 below5. Reviewer public dollar-ADV capacity checks reproduce hypothetical horizons and reject zero ADV; these are reviewer checks, not employee execution.",
+  "limits": "Shared old synthetic fixture. No completed exit, measured ADV/depth, stressed liquidation/funding adequacy, deployed-source equivalence or consumer-veto enforcement. Liquidity verdict partial.",
+  "finalReleaseApproved": false
+}

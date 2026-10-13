@@ -1,0 +1,662 @@
+{
+  "at": "2026-09-22T19:25:36.852Z",
+  "skillCount": 23,
+  "agentCount": 45,
+  "keys": [
+    "paperclipai/optional/browser/agent-browser",
+    "paperclipai/paperclip/agentmail",
+    "paperclipai/optional/product/design-critique",
+    "paperclipai/bundled/docs/doc-maintenance",
+    "paperclipai/bundled/software-development/github-pr-workflow",
+    "paperclipai/bundled/paperclip-operations/issue-triage",
+    "paperclipai/optional/research/last30days",
+    "paperclipai/paperclip/paperclip",
+    "paperclipai/paperclip/paperclip-board",
+    "paperclipai/bundled/product/paperclip-capsules",
+    "paperclipai/paperclip/paperclip-converting-plans-to-tasks",
+    "paperclipai/paperclip/paperclip-create-agent",
+    "paperclipai/paperclip/para-memory-files",
+    "paperclipai/optional/software-development/prepare-mcp-integration",
+    "paperclipai/bundled/quality/qa-acceptance",
+    "paperclipai/optional/finance/ramp",
+    "paperclipai/bundled/paperclip-operations/reflection-coach",
+    "paperclipai/optional/content/release-announcement",
+    "paperclipai/optional/content/simplified-english",
+    "paperclipai/bundled/paperclip-operations/status-card-query",
+    "paperclipai/bundled/paperclip-operations/summarize-status",
+    "paperclipai/bundled/paperclip-operations/task-planning",
+    "paperclipai/bundled/product/wireframe"
+  ],
+  "results": [
+    {
+      "agentId": "2d41db75-b4a5-49f5-bcc5-752bb3ed850b",
+      "name": "Production Engineer",
+      "desiredCount": 22,
+      "missing": [
+        "paperclipai/paperclip/agentmail"
+      ],
+      "supported": true,
+      "mode": "ephemeral",
+      "warnings": [],
+      "states": [
+        "configured"
+      ]
+    },
+    {
+      "agentId": "5cab51d9-bc95-4d87-b6ad-55192d185a8a",
+      "name": "Quantitative Trader",
+      "desiredCount": 22,
+      "missing": [
+        "paperclipai/paperclip/agentmail"
+      ],
+      "supported": true,
+      "mode": "ephemeral",
+      "warnings": [],
+      "states": [
+        "configured"
+      ]
+    },
+    {
+      "agentId": "a08fb5a4-d158-4a2e-937d-112e3b34757c",
+      "name": "Trading Operations",
+      "desiredCount": 22,
+      "missing": [
+        "paperclipai/paperclip/agentmail"
+      ],
+      "supported": true,
+      "mode": "ephemeral",
+      "warnings": [],
+      "states": [
+        "configured"
+      ]
+    },
+    {
+      "agentId": "c1076224-6208-444c-be37-996239356df0",
+      "name": "Institutional Sales & Trading",
+      "desiredCount": 22,
+      "missing": [
+        "paperclipai/paperclip/agentmail"
+      ],
+      "supported": true,
+      "mode": "ephemeral",
+      "warnings": [],
+      "states": [
+        "configured"
+      ]
+    },
+    {
+      "agentId": "d20fff00-9815-45ab-bb9d-eff698937909",
+      "name": "Fundamental Research Analyst",
+      "desiredCount": 22,
+      "missing": [
+        "paperclipai/paperclip/agentmail"
+      ],
+      "supported": true,
+      "mode": "ephemeral",
+      "warnings": [],
+      "states": [
+        "configured"
+      ]
+    },
+    {
+      "agentId": "e7f5692a-deda-4554-a929-be132d2c6ca8",
+      "name": "Infrastructure Engineer",
+      "desiredCount": 22,
+      "missing": [
+        "paperclipai/paperclip/agentmail"
+      ],
+      "supported": true,
+      "mode": "ephemeral",
+      "warnings": [],
+      "states": [
+        "configured"
+      ]
+    },
+    {
+      "agentId": "9ecfbe59-069d-41c6-900d-0a55c2f37ced",
+      "name": "CEO",
+      "desiredCount": 22,
+      "missing": [
+        "paperclipai/paperclip/agentmail"
+      ],
+      "supported": true,
+      "mode": "ephemeral",
+      "warnings": [],
+      "states": [
+        "configured"
+      ]
+    },
+    {
+      "agentId": "212ce742-8694-4b4c-bab9-6444d3ef60cd",
+      "name": "Paper Execution Agent",
+      "desiredCount": 22,
+      "missing": [
+        "paperclipai/paperclip/agentmail"
+      ],
+      "supported": true,
+      "mode": "ephemeral",
+      "warnings": [],
+      "states": [
+        "configured"
+      ]
+    },
+    {
+      "agentId": "23977d52-a520-4218-a8ee-3f0d47b1d841",
+      "name": "Machine Learning Engineer",
+      "desiredCount": 22,
+      "missing": [
+        "paperclipai/paperclip/agentmail"
+      ],
+      "supported": true,
+      "mode": "ephemeral",
+      "warnings": [],
+      "states": [
+        "configured"
+      ]
+    },
+    {
+      "agentId": "5193cebc-aec5-4b6b-aa68-ea7e87241e97",
+      "name": "Independent Backtest Agent",
+      "desiredCount": 22,
+      "missing": [
+        "paperclipai/paperclip/agentmail"
+      ],
+      "supported": true,
+      "mode": "ephemeral",
+      "warnings": [],
+      "states": [
+        "configured"
+      ]
+    },
+    {
+      "agentId": "7ed34a3d-9811-4d32-bcf4-3cbb6245e7a9",
+      "name": "Operations Specialist",
+      "desiredCount": 22,
+      "missing": [
+        "paperclipai/paperclip/agentmail"
+      ],
+      "supported": true,
+      "mode": "ephemeral",
+      "warnings": [],
+      "states": [
+        "configured"
+      ]
+    },
+    {
+      "agentId": "dee8add1-4af8-4bb1-a59b-f0e3e0c7114e",
+      "name": "Product Manager",
+      "desiredCount": 22,
+      "missing": [
+        "paperclipai/paperclip/agentmail"
+      ],
+      "supported": true,
+      "mode": "ephemeral",
+      "warnings": [],
+      "states": [
+        "configured"
+      ]
+    },
+    {
+      "agentId": "53d57855-3088-46f4-a3af-920aac15f294",
+      "name": "Facilities Engineer",
+      "desiredCount": 22,
+      "missing": [
+        "paperclipai/paperclip/agentmail"
+      ],
+      "supported": true,
+      "mode": "ephemeral",
+      "warnings": [],
+      "states": [
+        "configured"
+      ]
+    },
+    {
+      "agentId": "85eb111a-54b4-403b-8bb6-f456c327ad13",
+      "name": "Data Engineer",
+      "desiredCount": 22,
+      "missing": [
+        "paperclipai/paperclip/agentmail"
+      ],
+      "supported": true,
+      "mode": "ephemeral",
+      "warnings": [],
+      "states": [
+        "configured"
+      ]
+    },
+    {
+      "agentId": "f2616edd-0ef4-4562-8432-8eaa8a4c4f45",
+      "name": "Site Reliability Engineer",
+      "desiredCount": 22,
+      "missing": [
+        "paperclipai/paperclip/agentmail"
+      ],
+      "supported": true,
+      "mode": "ephemeral",
+      "warnings": [],
+      "states": [
+        "configured"
+      ]
+    },
+    {
+      "agentId": "229da861-af1e-4734-8b93-aa6b7769917d",
+      "name": "Systems Engineer",
+      "desiredCount": 22,
+      "missing": [
+        "paperclipai/paperclip/agentmail"
+      ],
+      "supported": true,
+      "mode": "ephemeral",
+      "warnings": [],
+      "states": [
+        "configured"
+      ]
+    },
+    {
+      "agentId": "56a5a903-bec7-4597-845a-62e166ddb271",
+      "name": "Office Management",
+      "desiredCount": 22,
+      "missing": [
+        "paperclipai/paperclip/agentmail"
+      ],
+      "supported": true,
+      "mode": "ephemeral",
+      "warnings": [],
+      "states": [
+        "configured"
+      ]
+    },
+    {
+      "agentId": "5ed56bac-12cf-4d2d-980d-daeb47fa4380",
+      "name": "Finance",
+      "desiredCount": 22,
+      "missing": [
+        "paperclipai/paperclip/agentmail"
+      ],
+      "supported": true,
+      "mode": "ephemeral",
+      "warnings": [],
+      "states": [
+        "configured"
+      ]
+    },
+    {
+      "agentId": "92562d14-83ac-4754-b26c-538113e4b673",
+      "name": "Network Engineer",
+      "desiredCount": 22,
+      "missing": [
+        "paperclipai/paperclip/agentmail"
+      ],
+      "supported": true,
+      "mode": "ephemeral",
+      "warnings": [],
+      "states": [
+        "configured"
+      ]
+    },
+    {
+      "agentId": "b44d2835-fbd0-4d19-b83c-14d82c39403f",
+      "name": "Legal Counsel",
+      "desiredCount": 22,
+      "missing": [
+        "paperclipai/paperclip/agentmail"
+      ],
+      "supported": true,
+      "mode": "ephemeral",
+      "warnings": [],
+      "states": [
+        "configured"
+      ]
+    },
+    {
+      "agentId": "c3b5adec-b311-4fe1-866d-22e2a5487cbc",
+      "name": "Human Resources",
+      "desiredCount": 22,
+      "missing": [
+        "paperclipai/paperclip/agentmail"
+      ],
+      "supported": true,
+      "mode": "ephemeral",
+      "warnings": [],
+      "states": [
+        "configured"
+      ]
+    },
+    {
+      "agentId": "d5d21c88-4830-4a8f-9f42-273ff6894fad",
+      "name": "Research Analyst",
+      "desiredCount": 22,
+      "missing": [
+        "paperclipai/paperclip/agentmail"
+      ],
+      "supported": true,
+      "mode": "ephemeral",
+      "warnings": [],
+      "states": [
+        "configured"
+      ]
+    },
+    {
+      "agentId": "e13b50ea-46d1-42f8-bc13-70763f0c759f",
+      "name": "Cost Optimiser",
+      "desiredCount": 22,
+      "missing": [
+        "paperclipai/paperclip/agentmail"
+      ],
+      "supported": true,
+      "mode": "ephemeral",
+      "warnings": [],
+      "states": [
+        "configured"
+      ]
+    },
+    {
+      "agentId": "24395ed9-c13c-49d7-ad13-52c7e6f2d79b",
+      "name": "Strategy and Product",
+      "desiredCount": 22,
+      "missing": [
+        "paperclipai/paperclip/agentmail"
+      ],
+      "supported": true,
+      "mode": "ephemeral",
+      "warnings": [],
+      "states": [
+        "configured"
+      ]
+    },
+    {
+      "agentId": "64d03f12-4b3e-4391-af6d-ebd311ee174e",
+      "name": "Building Operations",
+      "desiredCount": 22,
+      "missing": [
+        "paperclipai/paperclip/agentmail"
+      ],
+      "supported": true,
+      "mode": "ephemeral",
+      "warnings": [],
+      "states": [
+        "configured"
+      ]
+    },
+    {
+      "agentId": "85fc2491-6896-4f36-b136-487252bd2bc9",
+      "name": "Accounting",
+      "desiredCount": 22,
+      "missing": [
+        "paperclipai/paperclip/agentmail"
+      ],
+      "supported": true,
+      "mode": "ephemeral",
+      "warnings": [],
+      "states": [
+        "configured"
+      ]
+    },
+    {
+      "agentId": "8643d4c6-ed11-4f18-b3bc-8a5357b0fe2d",
+      "name": "Cybersecurity Engineer",
+      "desiredCount": 22,
+      "missing": [
+        "paperclipai/paperclip/agentmail"
+      ],
+      "supported": true,
+      "mode": "ephemeral",
+      "warnings": [],
+      "states": [
+        "configured"
+      ]
+    },
+    {
+      "agentId": "9ef86ead-3131-4980-9bf0-bd505d5765e6",
+      "name": "Compliance Officer",
+      "desiredCount": 22,
+      "missing": [
+        "paperclipai/paperclip/agentmail"
+      ],
+      "supported": true,
+      "mode": "ephemeral",
+      "warnings": [],
+      "states": [
+        "configured"
+      ]
+    },
+    {
+      "agentId": "492359aa-3604-4e98-8152-da894be0736b",
+      "name": "Data Scientist",
+      "desiredCount": 22,
+      "missing": [
+        "paperclipai/paperclip/agentmail"
+      ],
+      "supported": true,
+      "mode": "ephemeral",
+      "warnings": [],
+      "states": [
+        "configured"
+      ]
+    },
+    {
+      "agentId": "6708e6cd-c880-4a17-9c45-57cb820b42f0",
+      "name": "Fundamental Researcher",
+      "desiredCount": 22,
+      "missing": [
+        "paperclipai/paperclip/agentmail"
+      ],
+      "supported": true,
+      "mode": "ephemeral",
+      "warnings": [],
+      "states": [
+        "configured"
+      ]
+    },
+    {
+      "agentId": "8867db56-8067-4f5a-a928-198216143003",
+      "name": "Hospitality",
+      "desiredCount": 22,
+      "missing": [
+        "paperclipai/paperclip/agentmail"
+      ],
+      "supported": true,
+      "mode": "ephemeral",
+      "warnings": [],
+      "states": [
+        "configured"
+      ]
+    },
+    {
+      "agentId": "e3ea9802-b22f-472f-8139-4f70a33ce978",
+      "name": "Software Engineer",
+      "desiredCount": 22,
+      "missing": [
+        "paperclipai/paperclip/agentmail"
+      ],
+      "supported": true,
+      "mode": "ephemeral",
+      "warnings": [],
+      "states": [
+        "configured"
+      ]
+    },
+    {
+      "agentId": "3ba591c8-95cd-41c5-9cb2-9c401269e6b2",
+      "name": "Recruiting",
+      "desiredCount": 22,
+      "missing": [
+        "paperclipai/paperclip/agentmail"
+      ],
+      "supported": true,
+      "mode": "ephemeral",
+      "warnings": [],
+      "states": [
+        "configured"
+      ]
+    },
+    {
+      "agentId": "49e2d426-c4df-4af2-8cc3-f0318f4d0ac2",
+      "name": "Business Analyst",
+      "desiredCount": 22,
+      "missing": [
+        "paperclipai/paperclip/agentmail"
+      ],
+      "supported": true,
+      "mode": "ephemeral",
+      "warnings": [],
+      "states": [
+        "configured"
+      ]
+    },
+    {
+      "agentId": "c880723b-b05c-497d-a56f-ba7ba4551c78",
+      "name": "Quantitative Analyst",
+      "desiredCount": 22,
+      "missing": [
+        "paperclipai/paperclip/agentmail"
+      ],
+      "supported": true,
+      "mode": "ephemeral",
+      "warnings": [],
+      "states": [
+        "configured"
+      ]
+    },
+    {
+      "agentId": "db731fd6-de4e-4a71-90ab-d3d2c95adfb5",
+      "name": "Treasury",
+      "desiredCount": 22,
+      "missing": [
+        "paperclipai/paperclip/agentmail"
+      ],
+      "supported": true,
+      "mode": "ephemeral",
+      "warnings": [],
+      "states": [
+        "configured"
+      ]
+    },
+    {
+      "agentId": "46d53bec-928a-41fc-86ed-a8bd5f90330c",
+      "name": "Quantitative Researcher",
+      "desiredCount": 22,
+      "missing": [
+        "paperclipai/paperclip/agentmail"
+      ],
+      "supported": true,
+      "mode": "ephemeral",
+      "warnings": [],
+      "states": [
+        "configured"
+      ]
+    },
+    {
+      "agentId": "e92c1c50-69ee-417e-bd76-ce2c2a8181d3",
+      "name": "Trade Support",
+      "desiredCount": 22,
+      "missing": [
+        "paperclipai/paperclip/agentmail"
+      ],
+      "supported": true,
+      "mode": "ephemeral",
+      "warnings": [],
+      "states": [
+        "configured"
+      ]
+    },
+    {
+      "agentId": "3a7f3428-4452-4ef6-9443-aef22b225b58",
+      "name": "Operations Analyst",
+      "desiredCount": 22,
+      "missing": [
+        "paperclipai/paperclip/agentmail"
+      ],
+      "supported": true,
+      "mode": "ephemeral",
+      "warnings": [],
+      "states": [
+        "configured"
+      ]
+    },
+    {
+      "agentId": "443a0a29-4ddb-4b19-bf74-b4909b58161e",
+      "name": "Communications",
+      "desiredCount": 22,
+      "missing": [
+        "paperclipai/paperclip/agentmail"
+      ],
+      "supported": true,
+      "mode": "ephemeral",
+      "warnings": [],
+      "states": [
+        "configured"
+      ]
+    },
+    {
+      "agentId": "687a7f62-b5d8-4524-95f0-432aea6168df",
+      "name": "Machine Learning Researcher",
+      "desiredCount": 22,
+      "missing": [
+        "paperclipai/paperclip/agentmail"
+      ],
+      "supported": true,
+      "mode": "ephemeral",
+      "warnings": [],
+      "states": [
+        "configured"
+      ]
+    },
+    {
+      "agentId": "cd6e2321-5900-44a2-a3c5-bfb1a61dfe2d",
+      "name": "Risk Management",
+      "desiredCount": 22,
+      "missing": [
+        "paperclipai/paperclip/agentmail"
+      ],
+      "supported": true,
+      "mode": "ephemeral",
+      "warnings": [],
+      "states": [
+        "configured"
+      ]
+    },
+    {
+      "agentId": "3d7711d3-9058-41ed-9f08-c42f74848f12",
+      "name": "Validation Agent",
+      "desiredCount": 22,
+      "missing": [
+        "paperclipai/paperclip/agentmail"
+      ],
+      "supported": true,
+      "mode": "ephemeral",
+      "warnings": [],
+      "states": [
+        "configured"
+      ]
+    },
+    {
+      "agentId": "71e8e56e-fb2c-429c-94ab-25658e17308c",
+      "name": "Portfolio Manager",
+      "desiredCount": 22,
+      "missing": [
+        "paperclipai/paperclip/agentmail"
+      ],
+      "supported": true,
+      "mode": "ephemeral",
+      "warnings": [],
+      "states": [
+        "configured"
+      ]
+    },
+    {
+      "agentId": "9bf35b42-07c3-48be-a3f0-b44ac960782a",
+      "name": "Reporting Agent",
+      "desiredCount": 22,
+      "missing": [
+        "paperclipai/paperclip/agentmail"
+      ],
+      "supported": true,
+      "mode": "ephemeral",
+      "warnings": [],
+      "states": [
+        "configured"
+      ]
+    }
+  ]
+}

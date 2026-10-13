@@ -1,0 +1,10 @@
+{
+  "fair_value": 100.25,
+  "market_price": 100.33,
+  "dislocation": 0.0799999999999983,
+  "dislocation_bps": 7.9800498753115505,
+  "estimated_net_edge_per_share": 0.049999999999998296,
+  "candidate": true,
+  "direction": "sell_etf_buy_basket",
+  "qualification": "relative-value candidate, not guaranteed arbitrage; no creation/redemption access"
+}

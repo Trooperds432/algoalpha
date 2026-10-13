@@ -1,0 +1,1056 @@
+{
+  "agent_id": "f87ffab5-39bc-4344-8927-bf46388fe723",
+  "issue_id": "fc51eb30-b636-4a4b-a23f-06820a3af502",
+  "paperclip_run_id": "aa5d6704-501e-4c9e-9f37-b27b387eff0e",
+  "selected_run_id": "run-dcb6e4abe8564d598b79a2af7f026a6a",
+  "recorded_at": "2026-10-12T14:12:18.508769+00:00",
+  "http_interactions": [
+    {
+      "timestamp": "2026-10-12T14:10:41.971757+00:00",
+      "method": "GET",
+      "url": "http://127.0.0.1:8765/health",
+      "status": 200,
+      "sha256": "849f6f3f3f0d8e7c926729f285c59746d1db5add8a8aa7670f2e2d4371072ba6",
+      "body": {
+        "broker_orders_enabled": false,
+        "mode": "research",
+        "status": "ok"
+      }
+    },
+    {
+      "timestamp": "2026-10-12T14:10:42.019284+00:00",
+      "method": "GET",
+      "url": "http://127.0.0.1:8765/runs",
+      "status": 200,
+      "sha256": "915a511f68fd7c10df927870531864f4661fa12f17a1f05aafec7cfdfebfbb2c",
+      "body": [
+        {
+          "artifacts": [
+            {
+              "name": "report-bundle.zip",
+              "sha256": "a70b6a8776f6b3ff67ed4094691ee0afd692df37ddeb0f2a4d1f32ba88474017",
+              "size_bytes": 523803
+            },
+            {
+              "name": "source-bundle.zip",
+              "sha256": "12fcf84c574b44ab0ae47f6cc8c941e909220557b08960c81cfc1b5fe4e93f2d",
+              "size_bytes": 980929
+            },
+            {
+              "name": "strategy-source.py",
+              "sha256": "9c443815b801407b1ffc406d0d4e476eafe81c3e533cae7635868fca31361831",
+              "size_bytes": 8603
+            }
+          ],
+          "config": {
+            "analytics_settings": {
+              "annual_mar": "0",
+              "annual_risk_free_rate": "0",
+              "annualization": 252,
+              "risk_of_ruin": null,
+              "var_confidences": [
+                "0.95",
+                "0.99",
+                "0.999"
+              ]
+            },
+            "backtest_settings": {
+              "allow_short": false,
+              "allow_zero_costs": false,
+              "boundary_liquidation": false,
+              "max_order_notional": "1000000",
+              "short_assumption": null
+            },
+            "benchmark": {
+              "instrument_id": "ETF-DEMO"
+            },
+            "currency": "USD",
+            "datasets": [
+              {
+                "content_hash": "8df310773a9d303299dda28c6632f4a36cefa15ef975a0a6c66a095d5b2a04c7",
+                "input_hash": "de212095d7fdb2ccf1b5507061c7543a19f1ba4ac929de6921cf718950c6f8bc",
+                "instrument_ids": [
+                  "ETF-DEMO"
+                ],
+                "row_count": 43,
+                "snapshot_id": "26c1cf1b4e3b43c5188e7625c21cfd842d0331d64b5d61abab418a11bb33ecd7"
+              }
+            ],
+            "dependency_lock_hash": "debd1525a6d342409d95db7eb33bba95323ff2241935c9eaecfb8b2b2b794877",
+            "end": "2026-09-01T00:00:00+00:00",
+            "engine_version": "1.0.0rc1",
+            "execution_assumptions": {
+              "commission": {
+                "kind": "per_unit",
+                "minimum": null,
+                "per_unit_rate": "0.1"
+              },
+              "commission_model_repr": "PerUnitCommission(per_unit_rate=Decimal('0.1'), minimum=None)",
+              "maximum_participation": "0.01",
+              "slippage": {
+                "kind": "fixed",
+                "value": "0.01"
+              },
+              "slippage_model_repr": "ConfiguredSlippage(kind=<SlippageKind.FIXED: 'fixed'>, value=Decimal('0.01'))",
+              "zero_cost_assumption": null
+            },
+            "git_commit": null,
+            "initial_capital": "10000",
+            "parameters": {
+              "instrument_id": "ETF-DEMO",
+              "quantity": "10"
+            },
+            "project_source_hash": "12fcf84c574b44ab0ae47f6cc8c941e909220557b08960c81cfc1b5fe4e93f2d",
+            "seed": 20260927,
+            "start": "2026-07-01T00:00:00+00:00",
+            "strategy_id": "builtin.buy_and_hold.v1",
+            "strategy_name": "buy_and_hold",
+            "strategy_source_hash": "9c443815b801407b1ffc406d0d4e476eafe81c3e533cae7635868fca31361831"
+          },
+          "created_at": "2026-10-02T21:17:31.241208+00:00",
+          "input_fingerprint": "566a4133622db0c51cc8dd8a34037e420d2fa123405cda0b0a846ffa8e5abc68",
+          "metrics": {
+            "alpha": {
+              "observations": 0,
+              "reason": "M5 benchmark is price-only and lacks a compatible total-return session series",
+              "status": "unavailable",
+              "unit": "ratio",
+              "value": null
+            },
+            "annualized_arithmetic_return": {
+              "observations": 43,
+              "reason": null,
+              "status": "available",
+              "unit": "fraction_per_year",
+              "value": "0.08009466081060733341207083087717119"
+            },
+            "annualized_volatility": {
+              "observations": 43,
+              "reason": null,
+              "status": "available",
+              "unit": "fraction_per_year",
+              "value": "0.02845842705926333535965712971177927"
+            },
+            "average_gross_exposure": {
+              "observations": 44,
+              "reason": null,
+              "status": "available",
+              "unit": "USD",
+              "value": "1012.136363636363636363636363636364"
+            },
+            "average_gross_leverage": {
+              "observations": 44,
+              "reason": null,
+              "status": "available",
+              "unit": "multiple",
+              "value": "0.1003450844953871871994037445413188"
+            },
+            "average_holding_days": {
+              "observations": 0,
+              "reason": "no closed matched trades",
+              "status": "unavailable",
+              "unit": "days",
+              "value": null
+            },
+            "average_loss": {
+              "observations": 0,
+              "reason": "no losing trades",
+              "status": "unavailable",
+              "unit": "USD",
+              "value": null
+            },
+            "average_mae_per_unit": {
+              "observations": 0,
+              "reason": "no closed trade marks",
+              "status": "unavailable",
+              "unit": "USD",
+              "value": null
+            },
+            "average_mfe_per_unit": {
+              "observations": 0,
+              "reason": "no closed trade marks",
+              "status": "unavailable",
+              "unit": "USD",
+              "value": null
+            },
+            "average_net_exposure": {
+              "observations": 44,
+              "reason": null,
+              "status": "available",
+              "unit": "USD",
+              "value": "1012.136363636363636363636363636364"
+            },
+            "average_net_leverage": {
+              "observations": 44,
+              "reason": null,
+              "status": "available",
+              "unit": "multiple",
+              "value": "0.1003450844953871871994037445413188"
+            },
+            "average_win": {
+              "observations": 0,
+              "reason": "no winning trades",
+              "status": "unavailable",
+              "unit": "USD",
+              "value": null
+            },
+            "best_trade": {
+              "observations": 0,
+              "reason": "no closed matched trades",
+              "status": "unavailable",
+              "unit": "USD",
+              "value": null
+            },
+            "beta": {
+              "observations": 0,
+              "reason": "M5 benchmark is price-only and lacks a compatible total-return session series",
+              "status": "unavailable",
+              "unit": "ratio",
+              "value": null
+            },
+            "breakeven_trades": {
+              "observations": 0,
+              "reason": null,
+              "status": "available",
+              "unit": "trades",
+              "value": "0"
+            },
+            "cagr": {
+              "observations": 43,
+              "reason": null,
+              "status": "available",
+              "unit": "fraction_per_year",
+              "value": "0.083398107482581609928190403109212"
+            },
+            "calmar": {
+              "observations": 43,
+              "reason": null,
+              "status": "available",
+              "unit": "ratio",
+              "value": "18.25131322209566976056739063174207"
+            },
+            "commissions": {
+              "observations": 1,
+              "reason": null,
+              "status": "available",
+              "unit": "USD",
+              "value": "1"
+            },
+            "down_capture": {
+              "observations": 0,
+              "reason": "M5 benchmark is price-only and lacks a compatible total-return session series",
+              "status": "unavailable",
+              "unit": "ratio",
+              "value": null
+            },
+            "drawdown_duration_days": {
+              "observations": 44,
+              "reason": null,
+              "status": "available",
+              "unit": "days",
+              "value": "10"
+            },
+            "drawdown_duration_sessions": {
+              "observations": 44,
+              "reason": null,
+              "status": "available",
+              "unit": "sessions",
+              "value": "6"
+            },
+            "excess_kurtosis": {
+              "observations": 43,
+              "reason": null,
+              "status": "available",
+              "unit": "ratio",
+              "value": "3.631884747386214608783458555877277"
+            },
+            "expectancy": {
+              "observations": 0,
+              "reason": "no closed matched trades",
+              "status": "unavailable",
+              "unit": "USD",
+              "value": null
+            },
+            "expected_shortfall_95": {
+              "observations": 43,
+              "reason": "requires at least 20 returns and 5 expected tail observations",
+              "status": "insufficient_sample",
+              "unit": "loss_fraction",
+              "value": "0.004562862853186357909896974624225705"
+            },
+            "expected_shortfall_99": {
+              "observations": 43,
+              "reason": "requires at least 20 returns and 5 expected tail observations",
+              "status": "insufficient_sample",
+              "unit": "loss_fraction",
+              "value": "0.0045694305098888436360746605211137"
+            },
+            "expected_shortfall_99.9": {
+              "observations": 43,
+              "reason": "requires at least 20 returns and 5 expected tail observations",
+              "status": "insufficient_sample",
+              "unit": "loss_fraction",
+              "value": "0.0045694305098888436360746605211137"
+            },
+            "information_ratio": {
+              "observations": 0,
+              "reason": "M5 benchmark is price-only and lacks a compatible total-return session series",
+              "status": "unavailable",
+              "unit": "ratio",
+              "value": null
+            },
+            "loss_rate": {
+              "observations": 0,
+              "reason": "no closed matched trades",
+              "status": "unavailable",
+              "unit": "fraction",
+              "value": null
+            },
+            "max_consecutive_losses": {
+              "observations": 0,
+              "reason": null,
+              "status": "available",
+              "unit": "trades",
+              "value": "0"
+            },
+            "max_consecutive_wins": {
+              "observations": 0,
+              "reason": null,
+              "status": "available",
+              "unit": "trades",
+              "value": "0"
+            },
+            "maximum_drawdown": {
+              "observations": 44,
+              "reason": null,
+              "status": "available",
+              "unit": "fraction",
+              "value": "0.0045694305098888436360746605211137"
+            },
+            "median_trade": {
+              "observations": 0,
+              "reason": "no closed matched trades",
+              "status": "unavailable",
+              "unit": "USD",
+              "value": null
+            },
+            "omega": {
+              "observations": 43,
+              "reason": null,
+              "status": "available",
+              "unit": "ratio",
+              "value": "1.601035810665574111165101052362071"
+            },
+            "payoff_ratio": {
+              "observations": 0,
+              "reason": "requires nonzero mean losses and winning trades",
+              "status": "unavailable",
+              "unit": "ratio",
+              "value": null
+            },
+            "profit_factor": {
+              "observations": 0,
+              "reason": "no losing trades",
+              "status": "unavailable",
+              "unit": "ratio",
+              "value": null
+            },
+            "recovery_time_days": {
+              "observations": 44,
+              "reason": null,
+              "status": "available",
+              "unit": "days",
+              "value": "10"
+            },
+            "risk_of_ruin": {
+              "observations": 0,
+              "reason": "explicit risk-of-ruin assumptions were not supplied",
+              "status": "unavailable",
+              "unit": "probability",
+              "value": null
+            },
+            "sharpe": {
+              "observations": 43,
+              "reason": null,
+              "status": "available",
+              "unit": "ratio",
+              "value": "2.814444404949506548286648794884191"
+            },
+            "skew": {
+              "observations": 43,
+              "reason": null,
+              "status": "available",
+              "unit": "ratio",
+              "value": "-2.362172514904961629320586465468968"
+            },
+            "slippage_cost": {
+              "observations": 1,
+              "reason": null,
+              "status": "available",
+              "unit": "USD",
+              "value": "0.1"
+            },
+            "sortino": {
+              "observations": 43,
+              "reason": null,
+              "status": "available",
+              "unit": "ratio",
+              "value": "3.253486046099018630113062348351"
+            },
+            "tail_ratio_95_5": {
+              "observations": 43,
+              "reason": null,
+              "status": "available",
+              "unit": "ratio",
+              "value": "0.2194693411783753703453368126282465"
+            },
+            "total_cost": {
+              "observations": 1,
+              "reason": null,
+              "status": "available",
+              "unit": "USD",
+              "value": "1.1"
+            },
+            "total_return": {
+              "observations": 43,
+              "reason": null,
+              "status": "available",
+              "unit": "fraction",
+              "value": "0.01369"
+            },
+            "tracking_error": {
+              "observations": 0,
+              "reason": "M5 benchmark is price-only and lacks a compatible total-return session series",
+              "status": "unavailable",
+              "unit": "ratio",
+              "value": null
+            },
+            "trade_count": {
+              "observations": 0,
+              "reason": null,
+              "status": "available",
+              "unit": "trades",
+              "value": "0"
+            },
+            "turnover": {
+              "observations": 1,
+              "reason": null,
+              "status": "available",
+              "unit": "multiple",
+              "value": "0.09662387692135665330116475096476441"
+            },
+            "ulcer_index": {
+              "observations": 44,
+              "reason": null,
+              "status": "available",
+              "unit": "fraction",
+              "value": "0.002191060849806184591876473283993636"
+            },
+            "up_capture": {
+              "observations": 0,
+              "reason": "M5 benchmark is price-only and lacks a compatible total-return session series",
+              "status": "unavailable",
+              "unit": "ratio",
+              "value": null
+            },
+            "var_95": {
+              "observations": 43,
+              "reason": "requires at least 20 returns and 5 expected tail observations",
+              "status": "insufficient_sample",
+              "unit": "loss_fraction",
+              "value": "0.00454666988747388453956156320466815"
+            },
+            "var_99": {
+              "observations": 43,
+              "reason": "requires at least 20 returns and 5 expected tail observations",
+              "status": "insufficient_sample",
+              "unit": "loss_fraction",
+              "value": "0.004564866015191672963106775339608334"
+            },
+            "var_99.9": {
+              "observations": 43,
+              "reason": "requires at least 20 returns and 5 expected tail observations",
+              "status": "insufficient_sample",
+              "unit": "loss_fraction",
+              "value": "0.004568974060419126568777872002963163"
+            },
+            "win_rate": {
+              "observations": 0,
+              "reason": "no closed matched trades",
+              "status": "unavailable",
+              "unit": "fraction",
+              "value": null
+            },
+            "worst_trade": {
+              "observations": 0,
+              "reason": "no closed matched trades",
+              "status": "unavailable",
+              "unit": "USD",
+              "value": null
+            }
+          },
+          "python_version": "3.13.15",
+          "result_fingerprint": "62be7eaa06ceaad6f2fa83c6f13deb9c9a6a774103dc6e4ec7b778251fb9431c",
+          "run_id": "run-dcb6e4abe8564d598b79a2af7f026a6a",
+          "runtime_metadata": {
+            "adapter": "application-runtime-v1",
+            "platform": "Windows"
+          },
+          "schema_version": 1,
+          "tags": []
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-10-12T14:10:42.065124+00:00",
+      "method": "GET",
+      "url": "http://127.0.0.1:8765/runs/run-dcb6e4abe8564d598b79a2af7f026a6a",
+      "status": 200,
+      "sha256": "16c72ce69ef28fde0327747b278196f5bdf6cedf635bd234d6c4170a30007035",
+      "body": {
+        "artifacts": [
+          {
+            "name": "report-bundle.zip",
+            "sha256": "a70b6a8776f6b3ff67ed4094691ee0afd692df37ddeb0f2a4d1f32ba88474017",
+            "size_bytes": 523803
+          },
+          {
+            "name": "source-bundle.zip",
+            "sha256": "12fcf84c574b44ab0ae47f6cc8c941e909220557b08960c81cfc1b5fe4e93f2d",
+            "size_bytes": 980929
+          },
+          {
+            "name": "strategy-source.py",
+            "sha256": "9c443815b801407b1ffc406d0d4e476eafe81c3e533cae7635868fca31361831",
+            "size_bytes": 8603
+          }
+        ],
+        "config": {
+          "analytics_settings": {
+            "annual_mar": "0",
+            "annual_risk_free_rate": "0",
+            "annualization": 252,
+            "risk_of_ruin": null,
+            "var_confidences": [
+              "0.95",
+              "0.99",
+              "0.999"
+            ]
+          },
+          "backtest_settings": {
+            "allow_short": false,
+            "allow_zero_costs": false,
+            "boundary_liquidation": false,
+            "max_order_notional": "1000000",
+            "short_assumption": null
+          },
+          "benchmark": {
+            "instrument_id": "ETF-DEMO"
+          },
+          "currency": "USD",
+          "datasets": [
+            {
+              "content_hash": "8df310773a9d303299dda28c6632f4a36cefa15ef975a0a6c66a095d5b2a04c7",
+              "input_hash": "de212095d7fdb2ccf1b5507061c7543a19f1ba4ac929de6921cf718950c6f8bc",
+              "instrument_ids": [
+                "ETF-DEMO"
+              ],
+              "row_count": 43,
+              "snapshot_id": "26c1cf1b4e3b43c5188e7625c21cfd842d0331d64b5d61abab418a11bb33ecd7"
+            }
+          ],
+          "dependency_lock_hash": "debd1525a6d342409d95db7eb33bba95323ff2241935c9eaecfb8b2b2b794877",
+          "end": "2026-09-01T00:00:00+00:00",
+          "engine_version": "1.0.0rc1",
+          "execution_assumptions": {
+            "commission": {
+              "kind": "per_unit",
+              "minimum": null,
+              "per_unit_rate": "0.1"
+            },
+            "commission_model_repr": "PerUnitCommission(per_unit_rate=Decimal('0.1'), minimum=None)",
+            "maximum_participation": "0.01",
+            "slippage": {
+              "kind": "fixed",
+              "value": "0.01"
+            },
+            "slippage_model_repr": "ConfiguredSlippage(kind=<SlippageKind.FIXED: 'fixed'>, value=Decimal('0.01'))",
+            "zero_cost_assumption": null
+          },
+          "git_commit": null,
+          "initial_capital": "10000",
+          "parameters": {
+            "instrument_id": "ETF-DEMO",
+            "quantity": "10"
+          },
+          "project_source_hash": "12fcf84c574b44ab0ae47f6cc8c941e909220557b08960c81cfc1b5fe4e93f2d",
+          "seed": 20260927,
+          "start": "2026-07-01T00:00:00+00:00",
+          "strategy_id": "builtin.buy_and_hold.v1",
+          "strategy_name": "buy_and_hold",
+          "strategy_source_hash": "9c443815b801407b1ffc406d0d4e476eafe81c3e533cae7635868fca31361831"
+        },
+        "created_at": "2026-10-02T21:17:31.241208+00:00",
+        "input_fingerprint": "566a4133622db0c51cc8dd8a34037e420d2fa123405cda0b0a846ffa8e5abc68",
+        "metrics": {
+          "alpha": {
+            "observations": 0,
+            "reason": "M5 benchmark is price-only and lacks a compatible total-return session series",
+            "status": "unavailable",
+            "unit": "ratio",
+            "value": null
+          },
+          "annualized_arithmetic_return": {
+            "observations": 43,
+            "reason": null,
+            "status": "available",
+            "unit": "fraction_per_year",
+            "value": "0.08009466081060733341207083087717119"
+          },
+          "annualized_volatility": {
+            "observations": 43,
+            "reason": null,
+            "status": "available",
+            "unit": "fraction_per_year",
+            "value": "0.02845842705926333535965712971177927"
+          },
+          "average_gross_exposure": {
+            "observations": 44,
+            "reason": null,
+            "status": "available",
+            "unit": "USD",
+            "value": "1012.136363636363636363636363636364"
+          },
+          "average_gross_leverage": {
+            "observations": 44,
+            "reason": null,
+            "status": "available",
+            "unit": "multiple",
+            "value": "0.1003450844953871871994037445413188"
+          },
+          "average_holding_days": {
+            "observations": 0,
+            "reason": "no closed matched trades",
+            "status": "unavailable",
+            "unit": "days",
+            "value": null
+          },
+          "average_loss": {
+            "observations": 0,
+            "reason": "no losing trades",
+            "status": "unavailable",
+            "unit": "USD",
+            "value": null
+          },
+          "average_mae_per_unit": {
+            "observations": 0,
+            "reason": "no closed trade marks",
+            "status": "unavailable",
+            "unit": "USD",
+            "value": null
+          },
+          "average_mfe_per_unit": {
+            "observations": 0,
+            "reason": "no closed trade marks",
+            "status": "unavailable",
+            "unit": "USD",
+            "value": null
+          },
+          "average_net_exposure": {
+            "observations": 44,
+            "reason": null,
+            "status": "available",
+            "unit": "USD",
+            "value": "1012.136363636363636363636363636364"
+          },
+          "average_net_leverage": {
+            "observations": 44,
+            "reason": null,
+            "status": "available",
+            "unit": "multiple",
+            "value": "0.1003450844953871871994037445413188"
+          },
+          "average_win": {
+            "observations": 0,
+            "reason": "no winning trades",
+            "status": "unavailable",
+            "unit": "USD",
+            "value": null
+          },
+          "best_trade": {
+            "observations": 0,
+            "reason": "no closed matched trades",
+            "status": "unavailable",
+            "unit": "USD",
+            "value": null
+          },
+          "beta": {
+            "observations": 0,
+            "reason": "M5 benchmark is price-only and lacks a compatible total-return session series",
+            "status": "unavailable",
+            "unit": "ratio",
+            "value": null
+          },
+          "breakeven_trades": {
+            "observations": 0,
+            "reason": null,
+            "status": "available",
+            "unit": "trades",
+            "value": "0"
+          },
+          "cagr": {
+            "observations": 43,
+            "reason": null,
+            "status": "available",
+            "unit": "fraction_per_year",
+            "value": "0.083398107482581609928190403109212"
+          },
+          "calmar": {
+            "observations": 43,
+            "reason": null,
+            "status": "available",
+            "unit": "ratio",
+            "value": "18.25131322209566976056739063174207"
+          },
+          "commissions": {
+            "observations": 1,
+            "reason": null,
+            "status": "available",
+            "unit": "USD",
+            "value": "1"
+          },
+          "down_capture": {
+            "observations": 0,
+            "reason": "M5 benchmark is price-only and lacks a compatible total-return session series",
+            "status": "unavailable",
+            "unit": "ratio",
+            "value": null
+          },
+          "drawdown_duration_days": {
+            "observations": 44,
+            "reason": null,
+            "status": "available",
+            "unit": "days",
+            "value": "10"
+          },
+          "drawdown_duration_sessions": {
+            "observations": 44,
+            "reason": null,
+            "status": "available",
+            "unit": "sessions",
+            "value": "6"
+          },
+          "excess_kurtosis": {
+            "observations": 43,
+            "reason": null,
+            "status": "available",
+            "unit": "ratio",
+            "value": "3.631884747386214608783458555877277"
+          },
+          "expectancy": {
+            "observations": 0,
+            "reason": "no closed matched trades",
+            "status": "unavailable",
+            "unit": "USD",
+            "value": null
+          },
+          "expected_shortfall_95": {
+            "observations": 43,
+            "reason": "requires at least 20 returns and 5 expected tail observations",
+            "status": "insufficient_sample",
+            "unit": "loss_fraction",
+            "value": "0.004562862853186357909896974624225705"
+          },
+          "expected_shortfall_99": {
+            "observations": 43,
+            "reason": "requires at least 20 returns and 5 expected tail observations",
+            "status": "insufficient_sample",
+            "unit": "loss_fraction",
+            "value": "0.0045694305098888436360746605211137"
+          },
+          "expected_shortfall_99.9": {
+            "observations": 43,
+            "reason": "requires at least 20 returns and 5 expected tail observations",
+            "status": "insufficient_sample",
+            "unit": "loss_fraction",
+            "value": "0.0045694305098888436360746605211137"
+          },
+          "information_ratio": {
+            "observations": 0,
+            "reason": "M5 benchmark is price-only and lacks a compatible total-return session series",
+            "status": "unavailable",
+            "unit": "ratio",
+            "value": null
+          },
+          "loss_rate": {
+            "observations": 0,
+            "reason": "no closed matched trades",
+            "status": "unavailable",
+            "unit": "fraction",
+            "value": null
+          },
+          "max_consecutive_losses": {
+            "observations": 0,
+            "reason": null,
+            "status": "available",
+            "unit": "trades",
+            "value": "0"
+          },
+          "max_consecutive_wins": {
+            "observations": 0,
+            "reason": null,
+            "status": "available",
+            "unit": "trades",
+            "value": "0"
+          },
+          "maximum_drawdown": {
+            "observations": 44,
+            "reason": null,
+            "status": "available",
+            "unit": "fraction",
+            "value": "0.0045694305098888436360746605211137"
+          },
+          "median_trade": {
+            "observations": 0,
+            "reason": "no closed matched trades",
+            "status": "unavailable",
+            "unit": "USD",
+            "value": null
+          },
+          "omega": {
+            "observations": 43,
+            "reason": null,
+            "status": "available",
+            "unit": "ratio",
+            "value": "1.601035810665574111165101052362071"
+          },
+          "payoff_ratio": {
+            "observations": 0,
+            "reason": "requires nonzero mean losses and winning trades",
+            "status": "unavailable",
+            "unit": "ratio",
+            "value": null
+          },
+          "profit_factor": {
+            "observations": 0,
+            "reason": "no losing trades",
+            "status": "unavailable",
+            "unit": "ratio",
+            "value": null
+          },
+          "recovery_time_days": {
+            "observations": 44,
+            "reason": null,
+            "status": "available",
+            "unit": "days",
+            "value": "10"
+          },
+          "risk_of_ruin": {
+            "observations": 0,
+            "reason": "explicit risk-of-ruin assumptions were not supplied",
+            "status": "unavailable",
+            "unit": "probability",
+            "value": null
+          },
+          "sharpe": {
+            "observations": 43,
+            "reason": null,
+            "status": "available",
+            "unit": "ratio",
+            "value": "2.814444404949506548286648794884191"
+          },
+          "skew": {
+            "observations": 43,
+            "reason": null,
+            "status": "available",
+            "unit": "ratio",
+            "value": "-2.362172514904961629320586465468968"
+          },
+          "slippage_cost": {
+            "observations": 1,
+            "reason": null,
+            "status": "available",
+            "unit": "USD",
+            "value": "0.1"
+          },
+          "sortino": {
+            "observations": 43,
+            "reason": null,
+            "status": "available",
+            "unit": "ratio",
+            "value": "3.253486046099018630113062348351"
+          },
+          "tail_ratio_95_5": {
+            "observations": 43,
+            "reason": null,
+            "status": "available",
+            "unit": "ratio",
+            "value": "0.2194693411783753703453368126282465"
+          },
+          "total_cost": {
+            "observations": 1,
+            "reason": null,
+            "status": "available",
+            "unit": "USD",
+            "value": "1.1"
+          },
+          "total_return": {
+            "observations": 43,
+            "reason": null,
+            "status": "available",
+            "unit": "fraction",
+            "value": "0.01369"
+          },
+          "tracking_error": {
+            "observations": 0,
+            "reason": "M5 benchmark is price-only and lacks a compatible total-return session series",
+            "status": "unavailable",
+            "unit": "ratio",
+            "value": null
+          },
+          "trade_count": {
+            "observations": 0,
+            "reason": null,
+            "status": "available",
+            "unit": "trades",
+            "value": "0"
+          },
+          "turnover": {
+            "observations": 1,
+            "reason": null,
+            "status": "available",
+            "unit": "multiple",
+            "value": "0.09662387692135665330116475096476441"
+          },
+          "ulcer_index": {
+            "observations": 44,
+            "reason": null,
+            "status": "available",
+            "unit": "fraction",
+            "value": "0.002191060849806184591876473283993636"
+          },
+          "up_capture": {
+            "observations": 0,
+            "reason": "M5 benchmark is price-only and lacks a compatible total-return session series",
+            "status": "unavailable",
+            "unit": "ratio",
+            "value": null
+          },
+          "var_95": {
+            "observations": 43,
+            "reason": "requires at least 20 returns and 5 expected tail observations",
+            "status": "insufficient_sample",
+            "unit": "loss_fraction",
+            "value": "0.00454666988747388453956156320466815"
+          },
+          "var_99": {
+            "observations": 43,
+            "reason": "requires at least 20 returns and 5 expected tail observations",
+            "status": "insufficient_sample",
+            "unit": "loss_fraction",
+            "value": "0.004564866015191672963106775339608334"
+          },
+          "var_99.9": {
+            "observations": 43,
+            "reason": "requires at least 20 returns and 5 expected tail observations",
+            "status": "insufficient_sample",
+            "unit": "loss_fraction",
+            "value": "0.004568974060419126568777872002963163"
+          },
+          "win_rate": {
+            "observations": 0,
+            "reason": "no closed matched trades",
+            "status": "unavailable",
+            "unit": "fraction",
+            "value": null
+          },
+          "worst_trade": {
+            "observations": 0,
+            "reason": "no closed matched trades",
+            "status": "unavailable",
+            "unit": "USD",
+            "value": null
+          }
+        },
+        "python_version": "3.13.15",
+        "result_fingerprint": "62be7eaa06ceaad6f2fa83c6f13deb9c9a6a774103dc6e4ec7b778251fb9431c",
+        "run_id": "run-dcb6e4abe8564d598b79a2af7f026a6a",
+        "runtime_metadata": {
+          "adapter": "application-runtime-v1",
+          "platform": "Windows"
+        },
+        "schema_version": 1,
+        "tags": []
+      }
+    }
+  ],
+  "report_bundle_evidence": {
+    "timestamp": "2026-10-12T14:11:19.629320+00:00",
+    "method": "GET",
+    "url": "http://127.0.0.1:8765/runs/run-dcb6e4abe8564d598b79a2af7f026a6a/artifacts/report-bundle.zip",
+    "status": 200,
+    "sha256": "a70b6a8776f6b3ff67ed4094691ee0afd692df37ddeb0f2a4d1f32ba88474017",
+    "members": [
+      "bundle.json",
+      "report.html",
+      "report.json",
+      "tables/benchmark.csv",
+      "tables/benchmark.parquet",
+      "tables/chart_data.csv",
+      "tables/chart_data.parquet",
+      "tables/drawdowns.csv",
+      "tables/drawdowns.parquet",
+      "tables/execution_costs.csv",
+      "tables/execution_costs.parquet",
+      "tables/exposure.csv",
+      "tables/exposure.parquet",
+      "tables/exposure_metrics.csv",
+      "tables/exposure_metrics.parquet",
+      "tables/fills.csv",
+      "tables/fills.parquet",
+      "tables/metrics.csv",
+      "tables/metrics.parquet",
+      "tables/nav.csv",
+      "tables/nav.parquet",
+      "tables/orders.csv",
+      "tables/orders.parquet",
+      "tables/positions.csv",
+      "tables/positions.parquet",
+      "tables/risk_metrics.csv",
+      "tables/risk_metrics.parquet",
+      "tables/session_returns.csv",
+      "tables/session_returns.parquet",
+      "tables/trades.csv",
+      "tables/trades.parquet",
+      "tables/trading_statistics.csv",
+      "tables/trading_statistics.parquet"
+    ],
+    "ledgers": {
+      "tables/fills.csv": "fill_id,order_id,instrument_id,symbol,side,quantity,reference_price,price,commission,economic_timestamp,observed_at\nfill-16da96131c5e069cfeb99c3678f177cd66f18384ca9526c19cda2c41b12554a1,buy_and_hold-ETF-DEMO-20260701T200000000000,ETF-DEMO,SYNTHETIC,buy,10,97.400000000000,97.41,1.0,2026-07-02T13:30:00Z,2026-07-02T20:00:00Z\n",
+      "tables/orders.csv": "order_id,instrument_id,symbol,side,order_type,quantity,limit_price,stop_price,max_execution_price,created_at,expires_at,status,accepted_at,filled_quantity,remaining_quantity,reason,events_json\nbuy_and_hold-ETF-DEMO-20260701T200000000000,ETF-DEMO,SYNTHETIC,buy,market,10,,,121.50,2026-07-01T20:00:00Z,,filled,2026-07-01T20:00:00Z,10,0,,\"[{\"\"sequence\"\":0,\"\"status\"\":\"\"created\"\",\"\"timestamp\"\":\"\"2026-07-01T20:00:00Z\"\",\"\"reason\"\":null},{\"\"sequence\"\":1,\"\"status\"\":\"\"submitted\"\",\"\"timestamp\"\":\"\"2026-07-01T20:00:00Z\"\",\"\"reason\"\":null},{\"\"sequence\"\":2,\"\"status\"\":\"\"accepted\"\",\"\"timestamp\"\":\"\"2026-07-01T20:00:00Z\"\",\"\"reason\"\":null},{\"\"sequence\"\":3,\"\"status\"\":\"\"filled\"\",\"\"timestamp\"\":\"\"2026-07-02T20:00:00Z\"\",\"\"reason\"\":null}]\"\n"
+    }
+  },
+  "failure_case_execution": {
+    "timestamp": "2026-10-12T14:11:32.482275+00:00",
+    "test": "tests/unit/test_historical_execution.py::test_limit_price_protection_survives_adverse_slippage_and_invalid_sell_rejects",
+    "method": "Direct invocation of existing test via runpy; no pytest cache or campaign",
+    "result": "PASS: protected buy limit fills at 10; market sell reference 10 with fixed slippage 10 returns no fills and REJECTED status"
+  },
+  "requirement": "Synthetic execution must apply explicit adverse slippage, preserve limit protection, and reconcile fill-level slippage plus commissions to reported total costs.",
+  "failure_case": "A market sell at reference price 10 with fixed adverse slippage 10 must produce no fill and a REJECTED order; a buy limit of 10 remains protected despite 1000 basis-point slippage. Existing test executed successfully.",
+  "finding": "PASS for bounded cost reconciliation and nonpositive-price rejection. Market-impact forecast accuracy and temporary/persistent impact decomposition are NOT validated: selected run uses fixed 0.01 slippage independent of size, depth, volatility and horizon.",
+  "limitations": [
+    "Synthetic internal research fixture only; no external market data or publication. Run created 2026-10-02; configured sample 2026-07-01 through 2026-09-01, 43 rows; inspected 2026-10-12 UTC.",
+    "One buy fill and no closed trades; insufficient for six-month historical or out-of-sample impact validation, liquidity-regime stability or 30 days actual simulation.",
+    "Maximum participation 0.01 is recorded but this ledger alone does not expose bar volume, so realized participation compliance was not independently recomputed.",
+    "Sharpe uses annualization 252 and annual risk-free rate 0; no comparative strategy evaluation performed. Price-only ETF-DEMO benchmark cannot support alpha/beta; returned unavailable and insufficient_sample statuses must be retained.",
+    "Current-workspace failure test does not establish byte-identical behavior of the running server. No campaigns, strategy submissions, broker access, runtime changes or final gate approval."
+  ],
+  "recommendation": "Accept only the reviewed synthetic execution accounting behavior. Retain fixed slippage as an explicit assumption, not a calibrated impact forecast. Require independent size/participation, horizon, volatility and liquidity-regime validation with lawful data and OOS errors before using impact forecasts for scheduling.",
+  "reconciliation": {
+    "slippage_usd": "0.100000000000",
+    "commission_usd": "1.0",
+    "total_cost_usd": "1.100000000000",
+    "result": "PASS"
+  }
+}

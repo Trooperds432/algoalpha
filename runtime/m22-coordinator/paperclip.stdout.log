@@ -1,0 +1,59 @@
+Update available: 2026.1005.0 — run `paperclipai update`
+T   paperclipai run 
+|
+|  Home: C:\Users\Jonat\algoalpha\.paperclip
+|
+|  Instance: default
+|
+|  Config: C:\Users\Jonat\algoalpha\.paperclip\instances\default\config.json
+|
+o  Running doctor checks...
+Update available: 2026.1005.0 — run `paperclipai update`
+
+██████╗  █████╗ ██████╗ ███████╗██████╗  ██████╗██╗     ██╗██████╗ 
+██╔══██╗██╔══██╗██╔══██╗██╔════╝██╔══██╗██╔════╝██║     ██║██╔══██╗
+██████╔╝███████║██████╔╝█████╗  ██████╔╝██║     ██║     ██║██████╔╝
+██╔═══╝ ██╔══██║██╔═══╝ ██╔══╝  ██╔══██╗██║     ██║     ██║██╔═══╝ 
+██║     ██║  ██║██║     ███████╗██║  ██║╚██████╗███████╗██║██║     
+╚═╝     ╚═╝  ╚═╝╚═╝     ╚══════╝╚═╝  ╚═╝ ╚═════╝╚══════╝╚═╝╚═╝     
+  ───────────────────────────────────────────────────────
+  The app people use to manage AI agents for work
+
+T   paperclip doctor 
+|
+|  ✓ Config file: Valid config at C:\Users\Jonat\algoalpha\.paperclip\instances\default\config.json
+|
+|  ✓ Deployment/auth mode: local_trusted mode is configured for loopback-only access
+|
+|  ✓ Agent JWT secret: PAPERCLIP_AGENT_JWT_SECRET is set in environment
+|
+|  ! Secrets adapter: Local encrypted provider configured with key file C:\Users\Jonat\algoalpha\.paperclip\instances\default\secrets\master.key; key file permissions are 666 (run chmod 600 C:\Users\Jonat\algoalpha\.paperclip\instances\default\secrets\master.key)
+|
+|    Restrict the local encrypted secrets key file to owner read/write permissions
+|
+|  ✓ Storage: Local disk storage is writable: C:\Users\Jonat\algoalpha\.paperclip\instances\default\data\storage
+|
+|  ✓ Database: Embedded PostgreSQL configured at C:\Users\Jonat\algoalpha\.paperclip\instances\default\db (port 54329)
+|
+|  ✓ LLM provider: No LLM provider configured (optional)
+|
+|  ✓ Log directory: Log directory is writable: C:\Users\Jonat\algoalpha\.paperclip\instances\default\logs
+|
+|  ✓ Server port: Port 3100 is available
+|
+|  ✓ Node.js runtime: Node.js 24.20.0
+|
+|  ✓ Managed install: Not present (optional for npx, global npm, and source-checkout usage)
+|
+|  ✓ Background service: Service management is not supported on win32. Use paperclipai run instead.
+|
+o  Summary ---------------+
+|                         |
+|  11 passed, 1 warnings  |
+|                         |
++-------------------------+
+|
+—  All critical checks passed with some warnings.
+
+|
+o  Starting Paperclip server...

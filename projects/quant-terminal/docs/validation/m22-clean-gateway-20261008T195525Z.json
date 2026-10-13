@@ -1,0 +1,33 @@
+{
+  "at": "2026-10-08T19:55:25.710184+00:00",
+  "clean_install": "C:\\Users\\Jonat\\algoalpha\\runtime\\m22-audited-fixed-clean-install-20261008",
+  "archive": "C:\\Users\\Jonat\\algoalpha\\runtime\\quant-terminal-m22-20261008-audited-fixed.zip",
+  "archive_sha256": "20bf8fe18ee998cd17576cffb09d2ad935bca6a4b49c32a0eb0340c5cfc926bd",
+  "final_release": false,
+  "result": "passed",
+  "http_smoke": {
+    "/health": {
+      "status": 200,
+      "sha256": "849f6f3f3f0d8e7c926729f285c59746d1db5add8a8aa7670f2e2d4371072ba6"
+    },
+    "/ready": {
+      "status": 200,
+      "sha256": "3757e738ad1e5c143439cc27ac07016fa988e8e86b6d0b1fa2147add27503260"
+    },
+    "/sandbox/capabilities": {
+      "status": 200,
+      "sha256": "69524e14013ad9d628196667a40403522c572bce358bc1b785562df9fb028f0e"
+    },
+    "/ui/": {
+      "status": 200,
+      "sha256": "68c87a5f60e88a7e13a6d7797c91330b9e8d3d3376caf1125179f4a117053f78"
+    }
+  },
+  "installed_source_hashes_match": true,
+  "replay_exit_code": 0,
+  "replay_stderr": "",
+  "replay_job_id": "f3d4c01ee8e34e93aa57e7f94c8ed4ce",
+  "replay_run_id": "run-f3d4c01ee8e34e93aa57e7f94c8ed4ce",
+  "replay_result_fingerprint": "6de31ff1a3ff6b01902850de7e956d9d756b7fcfae40089e970ccb9dd89a3455",
+  "frozen_replay_matches": true
+}

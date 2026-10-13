@@ -1,0 +1,9 @@
+{
+  "inventory": -5000,
+  "action": "hedge",
+  "size": 4800,
+  "signed_size": 4800,
+  "side": "buy_basket",
+  "residual_delta_units": -200,
+  "reason": "hedge within liquidity/gross cap"
+}

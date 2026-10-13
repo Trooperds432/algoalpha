@@ -1,0 +1,61 @@
+{
+  "agent_id": "0d594786-fd73-4c67-854f-66d02f517c82",
+  "issue_id": "4cf8e474-36c6-4daa-9432-c6261690fd14",
+  "paperclip_run_id": "0d6f5aaf-c5b7-4672-832a-5024c55b5bef",
+  "selected_run_id": null,
+  "recorded_at": "2026-10-03T19:06:32.045838+00:00",
+  "http_interactions": [
+    {
+      "timestamp": "2026-10-03T19:06:27.965490+00:00",
+      "method": "GET",
+      "url": "http://127.0.0.1:8765/health",
+      "status": null,
+      "sha256": null,
+      "body": null,
+      "error": "<urlopen error [WinError 10061] No connection could be made because the target machine actively refused it>"
+    },
+    {
+      "timestamp": "2026-10-03T19:06:30.002405+00:00",
+      "method": "GET",
+      "url": "http://127.0.0.1:8765/runs",
+      "status": null,
+      "sha256": null,
+      "body": null,
+      "error": "<urlopen error [WinError 10061] No connection could be made because the target machine actively refused it>"
+    }
+  ],
+  "requirement": "CRO must be able to retrieve a registered run and inspect manifest provenance, risk metrics and milestone gate evidence before recommending research acceptance; service health alone cannot grant risk approval.",
+  "failure_case": "Terminal unavailable: health and run discovery refuse TCP connections, preventing independent manifest and metrics inspection. No run ID may be invented or substituted.",
+  "finding": "BLOCKED: fresh GET /health and /runs both failed with WinError 10061. No HTTP response bytes or returned run ID exist; GET /runs/<returned run_id> cannot be formed. Historical M21 report retains final 1.0 NO-GO and milestone state records M16, M21 and M22 in_progress.",
+  "limitations": [
+    "No response bytes exist: status, sha256 and body are null, not fabricated hashes of an empty response.",
+    "Manifest, metrics, sample dates, costs, benchmark, Sharpe convention, drawdown calculation and audit trail could not be inspected.",
+    "No six-month historical/OOS evidence or 30-day actual paper simulation was established; no strategy eligibility decision is possible.",
+    "M21 test results are historical documentary evidence, not checks rerun in this heartbeat.",
+    "Initial uncaptured health attempt also failed with connection refusal; timestamped attempts below are the bounded evidence capture, not continuous polling.",
+    "No runtime changes, broker activity, external research, source edits or gate approvals performed."
+  ],
+  "recommendation": "Coordinator/runtime owner must restore the authorized read-only terminal at 127.0.0.1:8765; CRO then repeats the three required GETs and inspects actual manifest/metrics. Keep release and risk acceptance ungranted.",
+  "documentary_evidence": [
+    {
+      "path": "AGENTS.md",
+      "sha256": "d398555f69969844dcea96f91e90e1a3f80ba6a5221a72f39e4a298b81da980c"
+    },
+    {
+      "path": "docs/roadmap.md",
+      "sha256": "a1030c6ac7ba9fc514629cbf951004bc09da7f38def5fb2070d761f40e76e277"
+    },
+    {
+      "path": "coordination/milestone-state.json",
+      "sha256": "369afbed18ff44547a5b6ecf143c0755ff8814d79753c229d1757e1c90f0feb2"
+    },
+    {
+      "path": "docs/m22-acceptance-contract.md",
+      "sha256": "ec0e811c5988a74e04ea067aeba13d416c1b88486cd2da9e22133aec8ef7683f"
+    },
+    {
+      "path": "docs/validation/m21-release-hardening.md",
+      "sha256": "ca63eb7ac8930b079e40bd5d48a623886c048220c004d1e7bd9f948f7a1e9b6f"
+    }
+  ]
+}

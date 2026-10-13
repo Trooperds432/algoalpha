@@ -1,0 +1,14 @@
+{
+  "multi_currency_account": {"base_currency":"USD","initial_balances":{"USD":"1000","EUR":"100"},"fx_rates":{"USD":"1","EUR":"1.2"},"events":[{"event_id":"buy","kind":"trade","asset_id":"SYNTHETIC-ETF","asset_class":"etf","currency":"EUR","quantity":"10","price":"5","fee":"1","borrow_available":"0"},{"event_id":"mark","kind":"mark","asset_id":"SYNTHETIC-ETF","price":"6"}]},
+  "fx_conversion": {"source_currency":"USD","target_currency":"EUR","quantity":"100","rate":"0.9","fee":"1"},
+  "borrow_availability": {"requested":"500","available":"400"},
+  "borrow_fee": {"short_quantity":"100","price":"10","annual_rate":"0.365","days":"10","day_count":"365"},
+  "financing": {"cash_balance":"-1000","debit_rate":"0.365","credit_rate":"0","days":"10","day_count":"365"},
+  "futures_pnl": {"contracts":2,"multiplier":"50","entry_price":"4000","exit_price":"4010"},
+  "futures_margin": {"contracts":2,"multiplier":"50","settlement_price":"4000","initial_margin_per_contract":"12000","maintenance_margin_per_contract":"10000","equity":"19000"},
+  "futures_settlement": {"contracts":2,"multiplier":"50","settlement_prices":["4000","4010","3990"],"initial_cash":"30000","initial_margin_per_contract":"12000","maintenance_margin_per_contract":"10000"},
+  "continuous_contract": {"prices":["100","102","110","111"],"contract_ids":["F1","F1","F2","F2"],"roll_old_prices":["0","0","104","0"],"method":"difference"},
+  "option_price": {"option_type":"call","spot":"100","strike":"100","time_to_expiry":"1","volatility":"0.2","risk_free_rate":"0.05","dividend_yield":"0","style":"european"},
+  "option_payoff": {"option_type":"call","spot":"110","strike":"100","contracts":1,"multiplier":100,"premium":"5"},
+  "option_margin": {"option_type":"call","spot":"100","strike":"110","premium":"5","contracts":-1,"multiplier":100,"policy":"equity_strategy_based"}
+}

@@ -1,0 +1,1749 @@
+{
+  "agent_id": "a9b40bcd-4fd1-47fa-8cee-d0d6f56e7d99",
+  "issue_id": "fa491614-5955-4c59-bbf3-02b7f71ba9d2",
+  "paperclip_run_id": "da166218-df7e-4a1a-b052-21b7a142a401",
+  "selected_run_id": "run-dcb6e4abe8564d598b79a2af7f026a6a",
+  "recorded_at": "2026-10-08T20:03:53.829035+00:00",
+  "http_interactions": [
+    {
+      "timestamp": "2026-10-08T20:03:53.708429+00:00",
+      "method": "GET",
+      "url": "http://127.0.0.1:8765/health",
+      "status": 200,
+      "sha256": "849f6f3f3f0d8e7c926729f285c59746d1db5add8a8aa7670f2e2d4371072ba6",
+      "body": {
+        "broker_orders_enabled": false,
+        "mode": "research",
+        "status": "ok"
+      }
+    },
+    {
+      "timestamp": "2026-10-08T20:03:53.769414+00:00",
+      "method": "GET",
+      "url": "http://127.0.0.1:8765/runs",
+      "status": 200,
+      "sha256": "915a511f68fd7c10df927870531864f4661fa12f17a1f05aafec7cfdfebfbb2c",
+      "body": [
+        {
+          "artifacts": [
+            {
+              "name": "report-bundle.zip",
+              "sha256": "a70b6a8776f6b3ff67ed4094691ee0afd692df37ddeb0f2a4d1f32ba88474017",
+              "size_bytes": 523803
+            },
+            {
+              "name": "source-bundle.zip",
+              "sha256": "12fcf84c574b44ab0ae47f6cc8c941e909220557b08960c81cfc1b5fe4e93f2d",
+              "size_bytes": 980929
+            },
+            {
+              "name": "strategy-source.py",
+              "sha256": "9c443815b801407b1ffc406d0d4e476eafe81c3e533cae7635868fca31361831",
+              "size_bytes": 8603
+            }
+          ],
+          "config": {
+            "analytics_settings": {
+              "annual_mar": "0",
+              "annual_risk_free_rate": "0",
+              "annualization": 252,
+              "risk_of_ruin": null,
+              "var_confidences": [
+                "0.95",
+                "0.99",
+                "0.999"
+              ]
+            },
+            "backtest_settings": {
+              "allow_short": false,
+              "allow_zero_costs": false,
+              "boundary_liquidation": false,
+              "max_order_notional": "1000000",
+              "short_assumption": null
+            },
+            "benchmark": {
+              "instrument_id": "ETF-DEMO"
+            },
+            "currency": "USD",
+            "datasets": [
+              {
+                "content_hash": "8df310773a9d303299dda28c6632f4a36cefa15ef975a0a6c66a095d5b2a04c7",
+                "input_hash": "de212095d7fdb2ccf1b5507061c7543a19f1ba4ac929de6921cf718950c6f8bc",
+                "instrument_ids": [
+                  "ETF-DEMO"
+                ],
+                "row_count": 43,
+                "snapshot_id": "26c1cf1b4e3b43c5188e7625c21cfd842d0331d64b5d61abab418a11bb33ecd7"
+              }
+            ],
+            "dependency_lock_hash": "debd1525a6d342409d95db7eb33bba95323ff2241935c9eaecfb8b2b2b794877",
+            "end": "2026-09-01T00:00:00+00:00",
+            "engine_version": "1.0.0rc1",
+            "execution_assumptions": {
+              "commission": {
+                "kind": "per_unit",
+                "minimum": null,
+                "per_unit_rate": "0.1"
+              },
+              "commission_model_repr": "PerUnitCommission(per_unit_rate=Decimal('0.1'), minimum=None)",
+              "maximum_participation": "0.01",
+              "slippage": {
+                "kind": "fixed",
+                "value": "0.01"
+              },
+              "slippage_model_repr": "ConfiguredSlippage(kind=<SlippageKind.FIXED: 'fixed'>, value=Decimal('0.01'))",
+              "zero_cost_assumption": null
+            },
+            "git_commit": null,
+            "initial_capital": "10000",
+            "parameters": {
+              "instrument_id": "ETF-DEMO",
+              "quantity": "10"
+            },
+            "project_source_hash": "12fcf84c574b44ab0ae47f6cc8c941e909220557b08960c81cfc1b5fe4e93f2d",
+            "seed": 20260927,
+            "start": "2026-07-01T00:00:00+00:00",
+            "strategy_id": "builtin.buy_and_hold.v1",
+            "strategy_name": "buy_and_hold",
+            "strategy_source_hash": "9c443815b801407b1ffc406d0d4e476eafe81c3e533cae7635868fca31361831"
+          },
+          "created_at": "2026-10-02T21:17:31.241208+00:00",
+          "input_fingerprint": "566a4133622db0c51cc8dd8a34037e420d2fa123405cda0b0a846ffa8e5abc68",
+          "metrics": {
+            "alpha": {
+              "observations": 0,
+              "reason": "M5 benchmark is price-only and lacks a compatible total-return session series",
+              "status": "unavailable",
+              "unit": "ratio",
+              "value": null
+            },
+            "annualized_arithmetic_return": {
+              "observations": 43,
+              "reason": null,
+              "status": "available",
+              "unit": "fraction_per_year",
+              "value": "0.08009466081060733341207083087717119"
+            },
+            "annualized_volatility": {
+              "observations": 43,
+              "reason": null,
+              "status": "available",
+              "unit": "fraction_per_year",
+              "value": "0.02845842705926333535965712971177927"
+            },
+            "average_gross_exposure": {
+              "observations": 44,
+              "reason": null,
+              "status": "available",
+              "unit": "USD",
+              "value": "1012.136363636363636363636363636364"
+            },
+            "average_gross_leverage": {
+              "observations": 44,
+              "reason": null,
+              "status": "available",
+              "unit": "multiple",
+              "value": "0.1003450844953871871994037445413188"
+            },
+            "average_holding_days": {
+              "observations": 0,
+              "reason": "no closed matched trades",
+              "status": "unavailable",
+              "unit": "days",
+              "value": null
+            },
+            "average_loss": {
+              "observations": 0,
+              "reason": "no losing trades",
+              "status": "unavailable",
+              "unit": "USD",
+              "value": null
+            },
+            "average_mae_per_unit": {
+              "observations": 0,
+              "reason": "no closed trade marks",
+              "status": "unavailable",
+              "unit": "USD",
+              "value": null
+            },
+            "average_mfe_per_unit": {
+              "observations": 0,
+              "reason": "no closed trade marks",
+              "status": "unavailable",
+              "unit": "USD",
+              "value": null
+            },
+            "average_net_exposure": {
+              "observations": 44,
+              "reason": null,
+              "status": "available",
+              "unit": "USD",
+              "value": "1012.136363636363636363636363636364"
+            },
+            "average_net_leverage": {
+              "observations": 44,
+              "reason": null,
+              "status": "available",
+              "unit": "multiple",
+              "value": "0.1003450844953871871994037445413188"
+            },
+            "average_win": {
+              "observations": 0,
+              "reason": "no winning trades",
+              "status": "unavailable",
+              "unit": "USD",
+              "value": null
+            },
+            "best_trade": {
+              "observations": 0,
+              "reason": "no closed matched trades",
+              "status": "unavailable",
+              "unit": "USD",
+              "value": null
+            },
+            "beta": {
+              "observations": 0,
+              "reason": "M5 benchmark is price-only and lacks a compatible total-return session series",
+              "status": "unavailable",
+              "unit": "ratio",
+              "value": null
+            },
+            "breakeven_trades": {
+              "observations": 0,
+              "reason": null,
+              "status": "available",
+              "unit": "trades",
+              "value": "0"
+            },
+            "cagr": {
+              "observations": 43,
+              "reason": null,
+              "status": "available",
+              "unit": "fraction_per_year",
+              "value": "0.083398107482581609928190403109212"
+            },
+            "calmar": {
+              "observations": 43,
+              "reason": null,
+              "status": "available",
+              "unit": "ratio",
+              "value": "18.25131322209566976056739063174207"
+            },
+            "commissions": {
+              "observations": 1,
+              "reason": null,
+              "status": "available",
+              "unit": "USD",
+              "value": "1"
+            },
+            "down_capture": {
+              "observations": 0,
+              "reason": "M5 benchmark is price-only and lacks a compatible total-return session series",
+              "status": "unavailable",
+              "unit": "ratio",
+              "value": null
+            },
+            "drawdown_duration_days": {
+              "observations": 44,
+              "reason": null,
+              "status": "available",
+              "unit": "days",
+              "value": "10"
+            },
+            "drawdown_duration_sessions": {
+              "observations": 44,
+              "reason": null,
+              "status": "available",
+              "unit": "sessions",
+              "value": "6"
+            },
+            "excess_kurtosis": {
+              "observations": 43,
+              "reason": null,
+              "status": "available",
+              "unit": "ratio",
+              "value": "3.631884747386214608783458555877277"
+            },
+            "expectancy": {
+              "observations": 0,
+              "reason": "no closed matched trades",
+              "status": "unavailable",
+              "unit": "USD",
+              "value": null
+            },
+            "expected_shortfall_95": {
+              "observations": 43,
+              "reason": "requires at least 20 returns and 5 expected tail observations",
+              "status": "insufficient_sample",
+              "unit": "loss_fraction",
+              "value": "0.004562862853186357909896974624225705"
+            },
+            "expected_shortfall_99": {
+              "observations": 43,
+              "reason": "requires at least 20 returns and 5 expected tail observations",
+              "status": "insufficient_sample",
+              "unit": "loss_fraction",
+              "value": "0.0045694305098888436360746605211137"
+            },
+            "expected_shortfall_99.9": {
+              "observations": 43,
+              "reason": "requires at least 20 returns and 5 expected tail observations",
+              "status": "insufficient_sample",
+              "unit": "loss_fraction",
+              "value": "0.0045694305098888436360746605211137"
+            },
+            "information_ratio": {
+              "observations": 0,
+              "reason": "M5 benchmark is price-only and lacks a compatible total-return session series",
+              "status": "unavailable",
+              "unit": "ratio",
+              "value": null
+            },
+            "loss_rate": {
+              "observations": 0,
+              "reason": "no closed matched trades",
+              "status": "unavailable",
+              "unit": "fraction",
+              "value": null
+            },
+            "max_consecutive_losses": {
+              "observations": 0,
+              "reason": null,
+              "status": "available",
+              "unit": "trades",
+              "value": "0"
+            },
+            "max_consecutive_wins": {
+              "observations": 0,
+              "reason": null,
+              "status": "available",
+              "unit": "trades",
+              "value": "0"
+            },
+            "maximum_drawdown": {
+              "observations": 44,
+              "reason": null,
+              "status": "available",
+              "unit": "fraction",
+              "value": "0.0045694305098888436360746605211137"
+            },
+            "median_trade": {
+              "observations": 0,
+              "reason": "no closed matched trades",
+              "status": "unavailable",
+              "unit": "USD",
+              "value": null
+            },
+            "omega": {
+              "observations": 43,
+              "reason": null,
+              "status": "available",
+              "unit": "ratio",
+              "value": "1.601035810665574111165101052362071"
+            },
+            "payoff_ratio": {
+              "observations": 0,
+              "reason": "requires nonzero mean losses and winning trades",
+              "status": "unavailable",
+              "unit": "ratio",
+              "value": null
+            },
+            "profit_factor": {
+              "observations": 0,
+              "reason": "no losing trades",
+              "status": "unavailable",
+              "unit": "ratio",
+              "value": null
+            },
+            "recovery_time_days": {
+              "observations": 44,
+              "reason": null,
+              "status": "available",
+              "unit": "days",
+              "value": "10"
+            },
+            "risk_of_ruin": {
+              "observations": 0,
+              "reason": "explicit risk-of-ruin assumptions were not supplied",
+              "status": "unavailable",
+              "unit": "probability",
+              "value": null
+            },
+            "sharpe": {
+              "observations": 43,
+              "reason": null,
+              "status": "available",
+              "unit": "ratio",
+              "value": "2.814444404949506548286648794884191"
+            },
+            "skew": {
+              "observations": 43,
+              "reason": null,
+              "status": "available",
+              "unit": "ratio",
+              "value": "-2.362172514904961629320586465468968"
+            },
+            "slippage_cost": {
+              "observations": 1,
+              "reason": null,
+              "status": "available",
+              "unit": "USD",
+              "value": "0.1"
+            },
+            "sortino": {
+              "observations": 43,
+              "reason": null,
+              "status": "available",
+              "unit": "ratio",
+              "value": "3.253486046099018630113062348351"
+            },
+            "tail_ratio_95_5": {
+              "observations": 43,
+              "reason": null,
+              "status": "available",
+              "unit": "ratio",
+              "value": "0.2194693411783753703453368126282465"
+            },
+            "total_cost": {
+              "observations": 1,
+              "reason": null,
+              "status": "available",
+              "unit": "USD",
+              "value": "1.1"
+            },
+            "total_return": {
+              "observations": 43,
+              "reason": null,
+              "status": "available",
+              "unit": "fraction",
+              "value": "0.01369"
+            },
+            "tracking_error": {
+              "observations": 0,
+              "reason": "M5 benchmark is price-only and lacks a compatible total-return session series",
+              "status": "unavailable",
+              "unit": "ratio",
+              "value": null
+            },
+            "trade_count": {
+              "observations": 0,
+              "reason": null,
+              "status": "available",
+              "unit": "trades",
+              "value": "0"
+            },
+            "turnover": {
+              "observations": 1,
+              "reason": null,
+              "status": "available",
+              "unit": "multiple",
+              "value": "0.09662387692135665330116475096476441"
+            },
+            "ulcer_index": {
+              "observations": 44,
+              "reason": null,
+              "status": "available",
+              "unit": "fraction",
+              "value": "0.002191060849806184591876473283993636"
+            },
+            "up_capture": {
+              "observations": 0,
+              "reason": "M5 benchmark is price-only and lacks a compatible total-return session series",
+              "status": "unavailable",
+              "unit": "ratio",
+              "value": null
+            },
+            "var_95": {
+              "observations": 43,
+              "reason": "requires at least 20 returns and 5 expected tail observations",
+              "status": "insufficient_sample",
+              "unit": "loss_fraction",
+              "value": "0.00454666988747388453956156320466815"
+            },
+            "var_99": {
+              "observations": 43,
+              "reason": "requires at least 20 returns and 5 expected tail observations",
+              "status": "insufficient_sample",
+              "unit": "loss_fraction",
+              "value": "0.004564866015191672963106775339608334"
+            },
+            "var_99.9": {
+              "observations": 43,
+              "reason": "requires at least 20 returns and 5 expected tail observations",
+              "status": "insufficient_sample",
+              "unit": "loss_fraction",
+              "value": "0.004568974060419126568777872002963163"
+            },
+            "win_rate": {
+              "observations": 0,
+              "reason": "no closed matched trades",
+              "status": "unavailable",
+              "unit": "fraction",
+              "value": null
+            },
+            "worst_trade": {
+              "observations": 0,
+              "reason": "no closed matched trades",
+              "status": "unavailable",
+              "unit": "USD",
+              "value": null
+            }
+          },
+          "python_version": "3.13.15",
+          "result_fingerprint": "62be7eaa06ceaad6f2fa83c6f13deb9c9a6a774103dc6e4ec7b778251fb9431c",
+          "run_id": "run-dcb6e4abe8564d598b79a2af7f026a6a",
+          "runtime_metadata": {
+            "adapter": "application-runtime-v1",
+            "platform": "Windows"
+          },
+          "schema_version": 1,
+          "tags": []
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-10-08T20:03:53.796411+00:00",
+      "method": "GET",
+      "url": "http://127.0.0.1:8765/runs/run-dcb6e4abe8564d598b79a2af7f026a6a",
+      "status": 200,
+      "sha256": "16c72ce69ef28fde0327747b278196f5bdf6cedf635bd234d6c4170a30007035",
+      "body": {
+        "artifacts": [
+          {
+            "name": "report-bundle.zip",
+            "sha256": "a70b6a8776f6b3ff67ed4094691ee0afd692df37ddeb0f2a4d1f32ba88474017",
+            "size_bytes": 523803
+          },
+          {
+            "name": "source-bundle.zip",
+            "sha256": "12fcf84c574b44ab0ae47f6cc8c941e909220557b08960c81cfc1b5fe4e93f2d",
+            "size_bytes": 980929
+          },
+          {
+            "name": "strategy-source.py",
+            "sha256": "9c443815b801407b1ffc406d0d4e476eafe81c3e533cae7635868fca31361831",
+            "size_bytes": 8603
+          }
+        ],
+        "config": {
+          "analytics_settings": {
+            "annual_mar": "0",
+            "annual_risk_free_rate": "0",
+            "annualization": 252,
+            "risk_of_ruin": null,
+            "var_confidences": [
+              "0.95",
+              "0.99",
+              "0.999"
+            ]
+          },
+          "backtest_settings": {
+            "allow_short": false,
+            "allow_zero_costs": false,
+            "boundary_liquidation": false,
+            "max_order_notional": "1000000",
+            "short_assumption": null
+          },
+          "benchmark": {
+            "instrument_id": "ETF-DEMO"
+          },
+          "currency": "USD",
+          "datasets": [
+            {
+              "content_hash": "8df310773a9d303299dda28c6632f4a36cefa15ef975a0a6c66a095d5b2a04c7",
+              "input_hash": "de212095d7fdb2ccf1b5507061c7543a19f1ba4ac929de6921cf718950c6f8bc",
+              "instrument_ids": [
+                "ETF-DEMO"
+              ],
+              "row_count": 43,
+              "snapshot_id": "26c1cf1b4e3b43c5188e7625c21cfd842d0331d64b5d61abab418a11bb33ecd7"
+            }
+          ],
+          "dependency_lock_hash": "debd1525a6d342409d95db7eb33bba95323ff2241935c9eaecfb8b2b2b794877",
+          "end": "2026-09-01T00:00:00+00:00",
+          "engine_version": "1.0.0rc1",
+          "execution_assumptions": {
+            "commission": {
+              "kind": "per_unit",
+              "minimum": null,
+              "per_unit_rate": "0.1"
+            },
+            "commission_model_repr": "PerUnitCommission(per_unit_rate=Decimal('0.1'), minimum=None)",
+            "maximum_participation": "0.01",
+            "slippage": {
+              "kind": "fixed",
+              "value": "0.01"
+            },
+            "slippage_model_repr": "ConfiguredSlippage(kind=<SlippageKind.FIXED: 'fixed'>, value=Decimal('0.01'))",
+            "zero_cost_assumption": null
+          },
+          "git_commit": null,
+          "initial_capital": "10000",
+          "parameters": {
+            "instrument_id": "ETF-DEMO",
+            "quantity": "10"
+          },
+          "project_source_hash": "12fcf84c574b44ab0ae47f6cc8c941e909220557b08960c81cfc1b5fe4e93f2d",
+          "seed": 20260927,
+          "start": "2026-07-01T00:00:00+00:00",
+          "strategy_id": "builtin.buy_and_hold.v1",
+          "strategy_name": "buy_and_hold",
+          "strategy_source_hash": "9c443815b801407b1ffc406d0d4e476eafe81c3e533cae7635868fca31361831"
+        },
+        "created_at": "2026-10-02T21:17:31.241208+00:00",
+        "input_fingerprint": "566a4133622db0c51cc8dd8a34037e420d2fa123405cda0b0a846ffa8e5abc68",
+        "metrics": {
+          "alpha": {
+            "observations": 0,
+            "reason": "M5 benchmark is price-only and lacks a compatible total-return session series",
+            "status": "unavailable",
+            "unit": "ratio",
+            "value": null
+          },
+          "annualized_arithmetic_return": {
+            "observations": 43,
+            "reason": null,
+            "status": "available",
+            "unit": "fraction_per_year",
+            "value": "0.08009466081060733341207083087717119"
+          },
+          "annualized_volatility": {
+            "observations": 43,
+            "reason": null,
+            "status": "available",
+            "unit": "fraction_per_year",
+            "value": "0.02845842705926333535965712971177927"
+          },
+          "average_gross_exposure": {
+            "observations": 44,
+            "reason": null,
+            "status": "available",
+            "unit": "USD",
+            "value": "1012.136363636363636363636363636364"
+          },
+          "average_gross_leverage": {
+            "observations": 44,
+            "reason": null,
+            "status": "available",
+            "unit": "multiple",
+            "value": "0.1003450844953871871994037445413188"
+          },
+          "average_holding_days": {
+            "observations": 0,
+            "reason": "no closed matched trades",
+            "status": "unavailable",
+            "unit": "days",
+            "value": null
+          },
+          "average_loss": {
+            "observations": 0,
+            "reason": "no losing trades",
+            "status": "unavailable",
+            "unit": "USD",
+            "value": null
+          },
+          "average_mae_per_unit": {
+            "observations": 0,
+            "reason": "no closed trade marks",
+            "status": "unavailable",
+            "unit": "USD",
+            "value": null
+          },
+          "average_mfe_per_unit": {
+            "observations": 0,
+            "reason": "no closed trade marks",
+            "status": "unavailable",
+            "unit": "USD",
+            "value": null
+          },
+          "average_net_exposure": {
+            "observations": 44,
+            "reason": null,
+            "status": "available",
+            "unit": "USD",
+            "value": "1012.136363636363636363636363636364"
+          },
+          "average_net_leverage": {
+            "observations": 44,
+            "reason": null,
+            "status": "available",
+            "unit": "multiple",
+            "value": "0.1003450844953871871994037445413188"
+          },
+          "average_win": {
+            "observations": 0,
+            "reason": "no winning trades",
+            "status": "unavailable",
+            "unit": "USD",
+            "value": null
+          },
+          "best_trade": {
+            "observations": 0,
+            "reason": "no closed matched trades",
+            "status": "unavailable",
+            "unit": "USD",
+            "value": null
+          },
+          "beta": {
+            "observations": 0,
+            "reason": "M5 benchmark is price-only and lacks a compatible total-return session series",
+            "status": "unavailable",
+            "unit": "ratio",
+            "value": null
+          },
+          "breakeven_trades": {
+            "observations": 0,
+            "reason": null,
+            "status": "available",
+            "unit": "trades",
+            "value": "0"
+          },
+          "cagr": {
+            "observations": 43,
+            "reason": null,
+            "status": "available",
+            "unit": "fraction_per_year",
+            "value": "0.083398107482581609928190403109212"
+          },
+          "calmar": {
+            "observations": 43,
+            "reason": null,
+            "status": "available",
+            "unit": "ratio",
+            "value": "18.25131322209566976056739063174207"
+          },
+          "commissions": {
+            "observations": 1,
+            "reason": null,
+            "status": "available",
+            "unit": "USD",
+            "value": "1"
+          },
+          "down_capture": {
+            "observations": 0,
+            "reason": "M5 benchmark is price-only and lacks a compatible total-return session series",
+            "status": "unavailable",
+            "unit": "ratio",
+            "value": null
+          },
+          "drawdown_duration_days": {
+            "observations": 44,
+            "reason": null,
+            "status": "available",
+            "unit": "days",
+            "value": "10"
+          },
+          "drawdown_duration_sessions": {
+            "observations": 44,
+            "reason": null,
+            "status": "available",
+            "unit": "sessions",
+            "value": "6"
+          },
+          "excess_kurtosis": {
+            "observations": 43,
+            "reason": null,
+            "status": "available",
+            "unit": "ratio",
+            "value": "3.631884747386214608783458555877277"
+          },
+          "expectancy": {
+            "observations": 0,
+            "reason": "no closed matched trades",
+            "status": "unavailable",
+            "unit": "USD",
+            "value": null
+          },
+          "expected_shortfall_95": {
+            "observations": 43,
+            "reason": "requires at least 20 returns and 5 expected tail observations",
+            "status": "insufficient_sample",
+            "unit": "loss_fraction",
+            "value": "0.004562862853186357909896974624225705"
+          },
+          "expected_shortfall_99": {
+            "observations": 43,
+            "reason": "requires at least 20 returns and 5 expected tail observations",
+            "status": "insufficient_sample",
+            "unit": "loss_fraction",
+            "value": "0.0045694305098888436360746605211137"
+          },
+          "expected_shortfall_99.9": {
+            "observations": 43,
+            "reason": "requires at least 20 returns and 5 expected tail observations",
+            "status": "insufficient_sample",
+            "unit": "loss_fraction",
+            "value": "0.0045694305098888436360746605211137"
+          },
+          "information_ratio": {
+            "observations": 0,
+            "reason": "M5 benchmark is price-only and lacks a compatible total-return session series",
+            "status": "unavailable",
+            "unit": "ratio",
+            "value": null
+          },
+          "loss_rate": {
+            "observations": 0,
+            "reason": "no closed matched trades",
+            "status": "unavailable",
+            "unit": "fraction",
+            "value": null
+          },
+          "max_consecutive_losses": {
+            "observations": 0,
+            "reason": null,
+            "status": "available",
+            "unit": "trades",
+            "value": "0"
+          },
+          "max_consecutive_wins": {
+            "observations": 0,
+            "reason": null,
+            "status": "available",
+            "unit": "trades",
+            "value": "0"
+          },
+          "maximum_drawdown": {
+            "observations": 44,
+            "reason": null,
+            "status": "available",
+            "unit": "fraction",
+            "value": "0.0045694305098888436360746605211137"
+          },
+          "median_trade": {
+            "observations": 0,
+            "reason": "no closed matched trades",
+            "status": "unavailable",
+            "unit": "USD",
+            "value": null
+          },
+          "omega": {
+            "observations": 43,
+            "reason": null,
+            "status": "available",
+            "unit": "ratio",
+            "value": "1.601035810665574111165101052362071"
+          },
+          "payoff_ratio": {
+            "observations": 0,
+            "reason": "requires nonzero mean losses and winning trades",
+            "status": "unavailable",
+            "unit": "ratio",
+            "value": null
+          },
+          "profit_factor": {
+            "observations": 0,
+            "reason": "no losing trades",
+            "status": "unavailable",
+            "unit": "ratio",
+            "value": null
+          },
+          "recovery_time_days": {
+            "observations": 44,
+            "reason": null,
+            "status": "available",
+            "unit": "days",
+            "value": "10"
+          },
+          "risk_of_ruin": {
+            "observations": 0,
+            "reason": "explicit risk-of-ruin assumptions were not supplied",
+            "status": "unavailable",
+            "unit": "probability",
+            "value": null
+          },
+          "sharpe": {
+            "observations": 43,
+            "reason": null,
+            "status": "available",
+            "unit": "ratio",
+            "value": "2.814444404949506548286648794884191"
+          },
+          "skew": {
+            "observations": 43,
+            "reason": null,
+            "status": "available",
+            "unit": "ratio",
+            "value": "-2.362172514904961629320586465468968"
+          },
+          "slippage_cost": {
+            "observations": 1,
+            "reason": null,
+            "status": "available",
+            "unit": "USD",
+            "value": "0.1"
+          },
+          "sortino": {
+            "observations": 43,
+            "reason": null,
+            "status": "available",
+            "unit": "ratio",
+            "value": "3.253486046099018630113062348351"
+          },
+          "tail_ratio_95_5": {
+            "observations": 43,
+            "reason": null,
+            "status": "available",
+            "unit": "ratio",
+            "value": "0.2194693411783753703453368126282465"
+          },
+          "total_cost": {
+            "observations": 1,
+            "reason": null,
+            "status": "available",
+            "unit": "USD",
+            "value": "1.1"
+          },
+          "total_return": {
+            "observations": 43,
+            "reason": null,
+            "status": "available",
+            "unit": "fraction",
+            "value": "0.01369"
+          },
+          "tracking_error": {
+            "observations": 0,
+            "reason": "M5 benchmark is price-only and lacks a compatible total-return session series",
+            "status": "unavailable",
+            "unit": "ratio",
+            "value": null
+          },
+          "trade_count": {
+            "observations": 0,
+            "reason": null,
+            "status": "available",
+            "unit": "trades",
+            "value": "0"
+          },
+          "turnover": {
+            "observations": 1,
+            "reason": null,
+            "status": "available",
+            "unit": "multiple",
+            "value": "0.09662387692135665330116475096476441"
+          },
+          "ulcer_index": {
+            "observations": 44,
+            "reason": null,
+            "status": "available",
+            "unit": "fraction",
+            "value": "0.002191060849806184591876473283993636"
+          },
+          "up_capture": {
+            "observations": 0,
+            "reason": "M5 benchmark is price-only and lacks a compatible total-return session series",
+            "status": "unavailable",
+            "unit": "ratio",
+            "value": null
+          },
+          "var_95": {
+            "observations": 43,
+            "reason": "requires at least 20 returns and 5 expected tail observations",
+            "status": "insufficient_sample",
+            "unit": "loss_fraction",
+            "value": "0.00454666988747388453956156320466815"
+          },
+          "var_99": {
+            "observations": 43,
+            "reason": "requires at least 20 returns and 5 expected tail observations",
+            "status": "insufficient_sample",
+            "unit": "loss_fraction",
+            "value": "0.004564866015191672963106775339608334"
+          },
+          "var_99.9": {
+            "observations": 43,
+            "reason": "requires at least 20 returns and 5 expected tail observations",
+            "status": "insufficient_sample",
+            "unit": "loss_fraction",
+            "value": "0.004568974060419126568777872002963163"
+          },
+          "win_rate": {
+            "observations": 0,
+            "reason": "no closed matched trades",
+            "status": "unavailable",
+            "unit": "fraction",
+            "value": null
+          },
+          "worst_trade": {
+            "observations": 0,
+            "reason": "no closed matched trades",
+            "status": "unavailable",
+            "unit": "USD",
+            "value": null
+          }
+        },
+        "python_version": "3.13.15",
+        "result_fingerprint": "62be7eaa06ceaad6f2fa83c6f13deb9c9a6a774103dc6e4ec7b778251fb9431c",
+        "run_id": "run-dcb6e4abe8564d598b79a2af7f026a6a",
+        "runtime_metadata": {
+          "adapter": "application-runtime-v1",
+          "platform": "Windows"
+        },
+        "schema_version": 1,
+        "tags": []
+      }
+    },
+    {
+      "timestamp": "2026-10-08T20:03:53.824252+00:00",
+      "method": "GET",
+      "url": "http://127.0.0.1:8765/runs/run-dcb6e4abe8564d598b79a2af7f026a6a/artifacts/report-bundle.zip",
+      "status": 200,
+      "sha256": "a70b6a8776f6b3ff67ed4094691ee0afd692df37ddeb0f2a4d1f32ba88474017",
+      "body": {
+        "format": "zip",
+        "parsed_csv_tables": {
+          "fills": [
+            {
+              "fill_id": "fill-16da96131c5e069cfeb99c3678f177cd66f18384ca9526c19cda2c41b12554a1",
+              "order_id": "buy_and_hold-ETF-DEMO-20260701T200000000000",
+              "instrument_id": "ETF-DEMO",
+              "symbol": "SYNTHETIC",
+              "side": "buy",
+              "quantity": "10",
+              "reference_price": "97.400000000000",
+              "price": "97.41",
+              "commission": "1.0",
+              "economic_timestamp": "2026-07-02T13:30:00Z",
+              "observed_at": "2026-07-02T20:00:00Z"
+            }
+          ],
+          "orders": [
+            {
+              "order_id": "buy_and_hold-ETF-DEMO-20260701T200000000000",
+              "instrument_id": "ETF-DEMO",
+              "symbol": "SYNTHETIC",
+              "side": "buy",
+              "order_type": "market",
+              "quantity": "10",
+              "limit_price": "",
+              "stop_price": "",
+              "max_execution_price": "121.50",
+              "created_at": "2026-07-01T20:00:00Z",
+              "expires_at": "",
+              "status": "filled",
+              "accepted_at": "2026-07-01T20:00:00Z",
+              "filled_quantity": "10",
+              "remaining_quantity": "0",
+              "reason": "",
+              "events_json": "[{\"sequence\":0,\"status\":\"created\",\"timestamp\":\"2026-07-01T20:00:00Z\",\"reason\":null},{\"sequence\":1,\"status\":\"submitted\",\"timestamp\":\"2026-07-01T20:00:00Z\",\"reason\":null},{\"sequence\":2,\"status\":\"accepted\",\"timestamp\":\"2026-07-01T20:00:00Z\",\"reason\":null},{\"sequence\":3,\"status\":\"filled\",\"timestamp\":\"2026-07-02T20:00:00Z\",\"reason\":null}]"
+            }
+          ],
+          "nav": [
+            {
+              "timestamp": "2026-07-01T00:00:00Z",
+              "nav": "10000",
+              "cash": "10000",
+              "period_return": "",
+              "realized_pnl": "0",
+              "unrealized_pnl": "0",
+              "long_exposure": "0",
+              "short_exposure": "0",
+              "gross_exposure": "0",
+              "net_exposure": "0",
+              "gross_leverage": "0",
+              "reconciliation_error": "0"
+            },
+            {
+              "timestamp": "2026-07-01T20:00:00Z",
+              "nav": "10000",
+              "cash": "10000",
+              "period_return": "0",
+              "realized_pnl": "0",
+              "unrealized_pnl": "0",
+              "long_exposure": "0",
+              "short_exposure": "0",
+              "gross_exposure": "0",
+              "net_exposure": "0",
+              "gross_leverage": "0",
+              "reconciliation_error": "0"
+            },
+            {
+              "timestamp": "2026-07-02T20:00:00Z",
+              "nav": "10006.900000000000",
+              "cash": "9024.90",
+              "period_return": "0.000690000000",
+              "realized_pnl": "0",
+              "unrealized_pnl": "6.900000000000",
+              "long_exposure": "982.000000000000",
+              "short_exposure": "0",
+              "gross_exposure": "982.000000000000",
+              "net_exposure": "982.000000000000",
+              "gross_leverage": "0.09813228872078265996462440915768120",
+              "reconciliation_error": "0E-12"
+            },
+            {
+              "timestamp": "2026-07-06T20:00:00Z",
+              "nav": "10016.900000000000",
+              "cash": "9024.90",
+              "period_return": "0.000999310475771717514914708850893",
+              "realized_pnl": "0",
+              "unrealized_pnl": "16.900000000000",
+              "long_exposure": "992.000000000000",
+              "short_exposure": "0",
+              "gross_exposure": "992.000000000000",
+              "net_exposure": "992.000000000000",
+              "gross_leverage": "0.09903263484710838682626361449150935",
+              "reconciliation_error": "0E-12"
+            },
+            {
+              "timestamp": "2026-07-07T20:00:00Z",
+              "nav": "10026.900000000000",
+              "cash": "9024.90",
+              "period_return": "0.000998312851281334544619592888019",
+              "realized_pnl": "0",
+              "unrealized_pnl": "26.900000000000",
+              "long_exposure": "1002.000000000000",
+              "short_exposure": "0",
+              "gross_exposure": "1002.000000000000",
+              "net_exposure": "1002.000000000000",
+              "gross_leverage": "0.09993118511204858929479699608054334",
+              "reconciliation_error": "0E-12"
+            },
+            {
+              "timestamp": "2026-07-08T20:00:00Z",
+              "nav": "10036.900000000000",
+              "cash": "9024.90",
+              "period_return": "0.000997317216687111669608752455894",
+              "realized_pnl": "0",
+              "unrealized_pnl": "36.900000000000",
+              "long_exposure": "1012.000000000000",
+              "short_exposure": "0",
+              "gross_exposure": "1012.000000000000",
+              "net_exposure": "1012.000000000000",
+              "gross_leverage": "0.1008279448833803265948649483406231",
+              "reconciliation_error": "0E-12"
+            },
+            {
+              "timestamp": "2026-07-09T20:00:00Z",
+              "nav": "10046.900000000000",
+              "cash": "9024.90",
+              "period_return": "0.000996323566041307575048072612061",
+              "realized_pnl": "0",
+              "unrealized_pnl": "46.900000000000",
+              "long_exposure": "1022.000000000000",
+              "short_exposure": "0",
+              "gross_exposure": "1022.000000000000",
+              "net_exposure": "1022.000000000000",
+              "gross_leverage": "0.1017229195075097791358528501328768",
+              "reconciliation_error": "0E-12"
+            },
+            {
+              "timestamp": "2026-07-10T20:00:00Z",
+              "nav": "10056.900000000000",
+              "cash": "9024.90",
+              "period_return": "0.000995331893419860852601299903453",
+              "realized_pnl": "0",
+              "unrealized_pnl": "56.900000000000",
+              "long_exposure": "1032.000000000000",
+              "short_exposure": "0",
+              "gross_exposure": "1032.000000000000",
+              "net_exposure": "1032.000000000000",
+              "gross_leverage": "0.1026161143095784983444202487844167",
+              "reconciliation_error": "0E-12"
+            },
+            {
+              "timestamp": "2026-07-13T20:00:00Z",
+              "nav": "10066.900000000000",
+              "cash": "9024.90",
+              "period_return": "0.000994342192922272270779265976593",
+              "realized_pnl": "0",
+              "unrealized_pnl": "66.900000000000",
+              "long_exposure": "1042.000000000000",
+              "short_exposure": "0",
+              "gross_exposure": "1042.000000000000",
+              "net_exposure": "1042.000000000000",
+              "gross_leverage": "0.1035075345935690232345607883260984",
+              "reconciliation_error": "0E-12"
+            },
+            {
+              "timestamp": "2026-07-14T20:00:00Z",
+              "nav": "10020.900000000000",
+              "cash": "9024.90",
+              "period_return": "-0.0045694305098888436360746605211137",
+              "realized_pnl": "0",
+              "unrealized_pnl": "20.900000000000",
+              "long_exposure": "996.000000000000",
+              "short_exposure": "0",
+              "gross_exposure": "996.000000000000",
+              "net_exposure": "996.000000000000",
+              "gross_leverage": "0.09939227015537526569469808101068766",
+              "reconciliation_error": "0E-12"
+            },
+            {
+              "timestamp": "2026-07-15T20:00:00Z",
+              "nav": "10030.900000000000",
+              "cash": "9024.90",
+              "period_return": "0.000997914358989711502958816074404",
+              "realized_pnl": "0",
+              "unrealized_pnl": "30.900000000000",
+              "long_exposure": "1006.000000000000",
+              "short_exposure": "0",
+              "gross_exposure": "1006.000000000000",
+              "net_exposure": "1006.000000000000",
+              "gross_leverage": "0.1002901035799379916059376526533013",
+              "reconciliation_error": "0E-12"
+            },
+            {
+              "timestamp": "2026-07-16T20:00:00Z",
+              "nav": "10040.900000000000",
+              "cash": "9024.90",
+              "period_return": "0.000996919518687256377792620801723",
+              "realized_pnl": "0",
+              "unrealized_pnl": "40.900000000000",
+              "long_exposure": "1016.000000000000",
+              "short_exposure": "0",
+              "gross_exposure": "1016.000000000000",
+              "net_exposure": "1016.000000000000",
+              "gross_leverage": "0.1011861486520132657431106773297214",
+              "reconciliation_error": "0E-12"
+            },
+            {
+              "timestamp": "2026-07-17T20:00:00Z",
+              "nav": "10050.900000000000",
+              "cash": "9024.90",
+              "period_return": "0.000995926659960760489597546036710",
+              "realized_pnl": "0",
+              "unrealized_pnl": "50.900000000000",
+              "long_exposure": "1026.000000000000",
+              "short_exposure": "0",
+              "gross_exposure": "1026.000000000000",
+              "net_exposure": "1026.000000000000",
+              "gross_leverage": "0.1020804107094887025042533504462287",
+              "reconciliation_error": "0E-12"
+            },
+            {
+              "timestamp": "2026-07-20T20:00:00Z",
+              "nav": "10060.900000000000",
+              "cash": "9024.90",
+              "period_return": "0.000994935776895601388930344546260",
+              "realized_pnl": "0",
+              "unrealized_pnl": "60.900000000000",
+              "long_exposure": "1036.000000000000",
+              "short_exposure": "0",
+              "gross_exposure": "1036.000000000000",
+              "net_exposure": "1036.000000000000",
+              "gross_leverage": "0.1029728950690296096770666640161417",
+              "reconciliation_error": "0E-12"
+            },
+            {
+              "timestamp": "2026-07-21T20:00:00Z",
+              "nav": "10070.900000000000",
+              "cash": "9024.90",
+              "period_return": "0.000993946863600671908079794054210",
+              "realized_pnl": "0",
+              "unrealized_pnl": "70.900000000000",
+              "long_exposure": "1046.000000000000",
+              "short_exposure": "0",
+              "gross_exposure": "1046.000000000000",
+              "net_exposure": "1046.000000000000",
+              "gross_leverage": "0.1038636070261843529376719061851473",
+              "reconciliation_error": "0E-12"
+            },
+            {
+              "timestamp": "2026-07-22T20:00:00Z",
+              "nav": "10080.900000000000",
+              "cash": "9024.90",
+              "period_return": "0.000992959914208263412406041168118",
+              "realized_pnl": "0",
+              "unrealized_pnl": "80.900000000000",
+              "long_exposure": "1056.000000000000",
+              "short_exposure": "0",
+              "gross_exposure": "1056.000000000000",
+              "net_exposure": "1056.000000000000",
+              "gross_leverage": "0.1047525518554890932357230009225367",
+              "reconciliation_error": "0E-12"
+            },
+            {
+              "timestamp": "2026-07-23T20:00:00Z",
+              "nav": "10090.900000000000",
+              "cash": "9024.90",
+              "period_return": "0.000991974922873949746550407205706",
+              "realized_pnl": "0",
+              "unrealized_pnl": "90.900000000000",
+              "long_exposure": "1066.000000000000",
+              "short_exposure": "0",
+              "gross_exposure": "1066.000000000000",
+              "net_exposure": "1066.000000000000",
+              "gross_leverage": "0.1056397348105719014161274019165783",
+              "reconciliation_error": "0E-12"
+            },
+            {
+              "timestamp": "2026-07-24T20:00:00Z",
+              "nav": "10044.900000000000",
+              "cash": "9024.90",
+              "period_return": "-0.0045585626653717706051987434222914",
+              "realized_pnl": "0",
+              "unrealized_pnl": "44.900000000000",
+              "long_exposure": "1020.000000000000",
+              "short_exposure": "0",
+              "gross_exposure": "1020.000000000000",
+              "net_exposure": "1020.000000000000",
+              "gross_leverage": "0.1015440671385479198399187647462892",
+              "reconciliation_error": "0E-12"
+            },
+            {
+              "timestamp": "2026-07-27T20:00:00Z",
+              "nav": "10054.900000000000",
+              "cash": "9024.90",
+              "period_return": "0.000995530069985763919999203575944",
+              "realized_pnl": "0",
+              "unrealized_pnl": "54.900000000000",
+              "long_exposure": "1030.000000000000",
+              "short_exposure": "0",
+              "gross_exposure": "1030.000000000000",
+              "net_exposure": "1030.000000000000",
+              "gross_leverage": "0.1024376174800346099911485942177446",
+              "reconciliation_error": "0E-12"
+            },
+            {
+              "timestamp": "2026-07-28T20:00:00Z",
+              "nav": "10064.900000000000",
+              "cash": "9024.90",
+              "period_return": "0.000994539975534316601855811594347",
+              "realized_pnl": "0",
+              "unrealized_pnl": "64.900000000000",
+              "long_exposure": "1040.000000000000",
+              "short_exposure": "0",
+              "gross_exposure": "1040.000000000000",
+              "net_exposure": "1040.000000000000",
+              "gross_leverage": "0.1033293922443342705839104213653390",
+              "reconciliation_error": "0E-12"
+            },
+            {
+              "timestamp": "2026-07-29T20:00:00Z",
+              "nav": "10074.900000000000",
+              "cash": "9024.90",
+              "period_return": "0.000993551848503214140229907897744",
+              "realized_pnl": "0",
+              "unrealized_pnl": "74.900000000000",
+              "long_exposure": "1050.000000000000",
+              "short_exposure": "0",
+              "gross_exposure": "1050.000000000000",
+              "net_exposure": "1050.000000000000",
+              "gross_leverage": "0.1042193967185778518893487776553613",
+              "reconciliation_error": "0E-12"
+            },
+            {
+              "timestamp": "2026-07-30T20:00:00Z",
+              "nav": "10084.900000000000",
+              "cash": "9024.90",
+              "period_return": "0.000992565683034074779898559787194",
+              "realized_pnl": "0",
+              "unrealized_pnl": "84.900000000000",
+              "long_exposure": "1060.000000000000",
+              "short_exposure": "0",
+              "gross_exposure": "1060.000000000000",
+              "net_exposure": "1060.000000000000",
+              "gross_leverage": "0.1051076361689258197899830439568067",
+              "reconciliation_error": "0E-12"
+            },
+            {
+              "timestamp": "2026-07-31T20:00:00Z",
+              "nav": "10094.900000000000",
+              "cash": "9024.90",
+              "period_return": "0.000991581473291753016886632490159",
+              "realized_pnl": "0",
+              "unrealized_pnl": "94.900000000000",
+              "long_exposure": "1070.000000000000",
+              "short_exposure": "0",
+              "gross_exposure": "1070.000000000000",
+              "net_exposure": "1070.000000000000",
+              "gross_leverage": "0.1059941158406720225064141299071809",
+              "reconciliation_error": "0E-12"
+            },
+            {
+              "timestamp": "2026-08-03T20:00:00Z",
+              "nav": "10104.900000000000",
+              "cash": "9024.90",
+              "period_return": "0.000990599213464224509405739531843",
+              "realized_pnl": "0",
+              "unrealized_pnl": "104.900000000000",
+              "long_exposure": "1080.000000000000",
+              "short_exposure": "0",
+              "gross_exposure": "1080.000000000000",
+              "net_exposure": "1080.000000000000",
+              "gross_leverage": "0.1068788409583469405931775673188255",
+              "reconciliation_error": "0E-12"
+            },
+            {
+              "timestamp": "2026-08-04T20:00:00Z",
+              "nav": "10114.900000000000",
+              "cash": "9024.90",
+              "period_return": "0.000989618897762471672159051549248",
+              "realized_pnl": "0",
+              "unrealized_pnl": "114.900000000000",
+              "long_exposure": "1090.000000000000",
+              "short_exposure": "0",
+              "gross_exposure": "1090.000000000000",
+              "net_exposure": "1090.000000000000",
+              "gross_leverage": "0.1077618167258203244718188019654174",
+              "reconciliation_error": "0E-12"
+            },
+            {
+              "timestamp": "2026-08-05T20:00:00Z",
+              "nav": "10068.900000000000",
+              "cash": "9024.90",
+              "period_return": "-0.0045477463939337017667006099912011",
+              "realized_pnl": "0",
+              "unrealized_pnl": "68.900000000000",
+              "long_exposure": "1044.000000000000",
+              "short_exposure": "0",
+              "gross_exposure": "1044.000000000000",
+              "net_exposure": "1044.000000000000",
+              "gross_leverage": "0.1036856061734648273396299496469326",
+              "reconciliation_error": "0E-12"
+            },
+            {
+              "timestamp": "2026-08-06T20:00:00Z",
+              "nav": "10078.900000000000",
+              "cash": "9024.90",
+              "period_return": "0.000993157147255410223559673847193",
+              "realized_pnl": "0",
+              "unrealized_pnl": "78.900000000000",
+              "long_exposure": "1054.000000000000",
+              "short_exposure": "0",
+              "gross_exposure": "1054.000000000000",
+              "net_exposure": "1054.000000000000",
+              "gross_leverage": "0.1045749040073817579299328299715247",
+              "reconciliation_error": "0E-12"
+            },
+            {
+              "timestamp": "2026-08-07T20:00:00Z",
+              "nav": "10088.900000000000",
+              "cash": "9024.90",
+              "period_return": "0.000992171764775918006925358918136",
+              "realized_pnl": "0",
+              "unrealized_pnl": "88.900000000000",
+              "long_exposure": "1064.000000000000",
+              "short_exposure": "0",
+              "gross_exposure": "1064.000000000000",
+              "net_exposure": "1064.000000000000",
+              "gross_leverage": "0.1054624389180188127546115037318241",
+              "reconciliation_error": "0E-12"
+            },
+            {
+              "timestamp": "2026-08-10T20:00:00Z",
+              "nav": "10098.900000000000",
+              "cash": "9024.90",
+              "period_return": "0.000991188335695665533408002854622",
+              "realized_pnl": "0",
+              "unrealized_pnl": "98.900000000000",
+              "long_exposure": "1074.000000000000",
+              "short_exposure": "0",
+              "gross_exposure": "1074.000000000000",
+              "net_exposure": "1074.000000000000",
+              "gross_leverage": "0.1063482161423521373614948162671182",
+              "reconciliation_error": "0E-12"
+            },
+            {
+              "timestamp": "2026-08-11T20:00:00Z",
+              "nav": "10108.900000000000",
+              "cash": "9024.90",
+              "period_return": "0.000990206854211844854390082088148",
+              "realized_pnl": "0",
+              "unrealized_pnl": "108.900000000000",
+              "long_exposure": "1084.000000000000",
+              "short_exposure": "0",
+              "gross_exposure": "1084.000000000000",
+              "net_exposure": "1084.000000000000",
+              "gross_leverage": "0.1072322408966356379032337840912463",
+              "reconciliation_error": "0E-12"
+            },
+            {
+              "timestamp": "2026-08-12T20:00:00Z",
+              "nav": "10118.900000000000",
+              "cash": "9024.90",
+              "period_return": "0.000989227314544609205749389152133",
+              "realized_pnl": "0",
+              "unrealized_pnl": "118.900000000000",
+              "long_exposure": "1094.000000000000",
+              "short_exposure": "0",
+              "gross_exposure": "1094.000000000000",
+              "net_exposure": "1094.000000000000",
+              "gross_leverage": "0.1081145183765033748727628497168665",
+              "reconciliation_error": "0E-12"
+            },
+            {
+              "timestamp": "2026-08-13T20:00:00Z",
+              "nav": "10128.900000000000",
+              "cash": "9024.90",
+              "period_return": "0.000988249710936959550939331350246",
+              "realized_pnl": "0",
+              "unrealized_pnl": "128.900000000000",
+              "long_exposure": "1104.000000000000",
+              "short_exposure": "0",
+              "gross_exposure": "1104.000000000000",
+              "net_exposure": "1104.000000000000",
+              "gross_leverage": "0.1089950537570713502947013002399076",
+              "reconciliation_error": "0E-12"
+            },
+            {
+              "timestamp": "2026-08-14T20:00:00Z",
+              "nav": "10138.900000000000",
+              "cash": "9024.90",
+              "period_return": "0.000987274037654631796147656705072",
+              "realized_pnl": "0",
+              "unrealized_pnl": "138.900000000000",
+              "long_exposure": "1114.000000000000",
+              "short_exposure": "0",
+              "gross_exposure": "1114.000000000000",
+              "net_exposure": "1114.000000000000",
+              "gross_leverage": "0.1098738521930386925603369201787176",
+              "reconciliation_error": "0E-12"
+            },
+            {
+              "timestamp": "2026-08-17T20:00:00Z",
+              "nav": "10092.900000000000",
+              "cash": "9024.90",
+              "period_return": "-0.0045369813293355294953101421258716",
+              "realized_pnl": "0",
+              "unrealized_pnl": "92.900000000000",
+              "long_exposure": "1068.000000000000",
+              "short_exposure": "0",
+              "gross_exposure": "1068.000000000000",
+              "net_exposure": "1068.000000000000",
+              "gross_leverage": "0.1058169604375352970900335879677793",
+              "reconciliation_error": "0E-12"
+            },
+            {
+              "timestamp": "2026-08-18T20:00:00Z",
+              "nav": "10102.900000000000",
+              "cash": "9024.90",
+              "period_return": "0.000990795509714749972753123482844",
+              "realized_pnl": "0",
+              "unrealized_pnl": "102.900000000000",
+              "long_exposure": "1078.000000000000",
+              "short_exposure": "0",
+              "gross_exposure": "1078.000000000000",
+              "net_exposure": "1078.000000000000",
+              "gross_leverage": "0.1067020360490552217680072058517851",
+              "reconciliation_error": "0E-12"
+            },
+            {
+              "timestamp": "2026-08-19T20:00:00Z",
+              "nav": "10112.900000000000",
+              "cash": "9024.90",
+              "period_return": "0.000989814805649862910649417493987",
+              "realized_pnl": "0",
+              "unrealized_pnl": "112.900000000000",
+              "long_exposure": "1088.000000000000",
+              "short_exposure": "0",
+              "gross_exposure": "1088.000000000000",
+              "net_exposure": "1088.000000000000",
+              "gross_leverage": "0.1075853612712476144330508558375936",
+              "reconciliation_error": "0E-12"
+            },
+            {
+              "timestamp": "2026-08-20T20:00:00Z",
+              "nav": "10122.900000000000",
+              "cash": "9024.90",
+              "period_return": "0.000988836041096025867950835072037",
+              "realized_pnl": "0",
+              "unrealized_pnl": "122.900000000000",
+              "long_exposure": "1098.000000000000",
+              "short_exposure": "0",
+              "gross_exposure": "1098.000000000000",
+              "net_exposure": "1098.000000000000",
+              "gross_leverage": "0.1084669412915271315532110363630975",
+              "reconciliation_error": "0E-12"
+            },
+            {
+              "timestamp": "2026-08-21T20:00:00Z",
+              "nav": "10132.900000000000",
+              "cash": "9024.90",
+              "period_return": "0.000987859210305347281905382844837",
+              "realized_pnl": "0",
+              "unrealized_pnl": "132.900000000000",
+              "long_exposure": "1108.000000000000",
+              "short_exposure": "0",
+              "gross_exposure": "1108.000000000000",
+              "net_exposure": "1108.000000000000",
+              "gross_leverage": "0.1093467812768309171115870086549754",
+              "reconciliation_error": "0E-12"
+            },
+            {
+              "timestamp": "2026-08-24T20:00:00Z",
+              "nav": "10142.900000000000",
+              "cash": "9024.90",
+              "period_return": "0.000986884307552625605700243760424",
+              "realized_pnl": "0",
+              "unrealized_pnl": "142.900000000000",
+              "long_exposure": "1118.000000000000",
+              "short_exposure": "0",
+              "gross_exposure": "1118.000000000000",
+              "net_exposure": "1118.000000000000",
+              "gross_leverage": "0.1102248863737195476638831103530548",
+              "reconciliation_error": "0E-12"
+            },
+            {
+              "timestamp": "2026-08-25T20:00:00Z",
+              "nav": "10152.900000000000",
+              "cash": "9024.90",
+              "period_return": "0.000985911327135237456743140521941",
+              "realized_pnl": "0",
+              "unrealized_pnl": "152.900000000000",
+              "long_exposure": "1128.000000000000",
+              "short_exposure": "0",
+              "gross_exposure": "1128.000000000000",
+              "net_exposure": "1128.000000000000",
+              "gross_leverage": "0.1111012617084773808468516384481281",
+              "reconciliation_error": "0E-12"
+            },
+            {
+              "timestamp": "2026-08-26T20:00:00Z",
+              "nav": "10162.900000000000",
+              "cash": "9024.90",
+              "period_return": "0.000984940263373026425947266298299",
+              "realized_pnl": "0",
+              "unrealized_pnl": "162.900000000000",
+              "long_exposure": "1138.000000000000",
+              "short_exposure": "0",
+              "gross_exposure": "1138.000000000000",
+              "net_exposure": "1138.000000000000",
+              "gross_leverage": "0.1119759123872123114465359297051039",
+              "reconciliation_error": "0E-12"
+            },
+            {
+              "timestamp": "2026-08-27T20:00:00Z",
+              "nav": "10116.900000000000",
+              "cash": "9024.90",
+              "period_return": "-0.0045262671087976856999478495311378",
+              "realized_pnl": "0",
+              "unrealized_pnl": "116.900000000000",
+              "long_exposure": "1092.000000000000",
+              "short_exposure": "0",
+              "gross_exposure": "1092.000000000000",
+              "net_exposure": "1092.000000000000",
+              "gross_leverage": "0.1079382024137828781543753521335587",
+              "reconciliation_error": "0E-12"
+            },
+            {
+              "timestamp": "2026-08-28T20:00:00Z",
+              "nav": "10126.900000000000",
+              "cash": "9024.90",
+              "period_return": "0.000988445077049293755992448279611",
+              "realized_pnl": "0",
+              "unrealized_pnl": "126.900000000000",
+              "long_exposure": "1102.000000000000",
+              "short_exposure": "0",
+              "gross_exposure": "1102.000000000000",
+              "net_exposure": "1102.000000000000",
+              "gross_leverage": "0.1088190858011829878837551471822572",
+              "reconciliation_error": "0E-12"
+            },
+            {
+              "timestamp": "2026-08-31T20:00:00Z",
+              "nav": "10136.900000000000",
+              "cash": "9024.90",
+              "period_return": "0.000987469018159555243954220936318",
+              "realized_pnl": "0",
+              "unrealized_pnl": "136.900000000000",
+              "long_exposure": "1112.000000000000",
+              "short_exposure": "0",
+              "gross_exposure": "1112.000000000000",
+              "net_exposure": "1112.000000000000",
+              "gross_leverage": "0.1096982312146711519300772425494974",
+              "reconciliation_error": "0E-12"
+            }
+          ],
+          "positions": [
+            {
+              "instrument_id": "ETF-DEMO",
+              "symbol": "SYNTHETIC",
+              "quantity": "10",
+              "average_entry_price": "97.41",
+              "mark_price": "111.200000000000",
+              "market_value": "1112.000000000000",
+              "realized_pnl": "0",
+              "unrealized_pnl": "136.900000000000"
+            }
+          ],
+          "execution_costs": [
+            {
+              "metric": "commissions",
+              "value": "1.0",
+              "unit": "USD",
+              "status": "available",
+              "reason": ""
+            },
+            {
+              "metric": "slippage_cost",
+              "value": "0.100000000000",
+              "unit": "USD",
+              "status": "available",
+              "reason": ""
+            },
+            {
+              "metric": "total_cost",
+              "value": "1.100000000000",
+              "unit": "USD",
+              "status": "available",
+              "reason": ""
+            }
+          ]
+        },
+        "member_names": [
+          "bundle.json",
+          "report.html",
+          "report.json",
+          "tables/benchmark.csv",
+          "tables/benchmark.parquet",
+          "tables/chart_data.csv",
+          "tables/chart_data.parquet",
+          "tables/drawdowns.csv",
+          "tables/drawdowns.parquet",
+          "tables/execution_costs.csv",
+          "tables/execution_costs.parquet",
+          "tables/exposure.csv",
+          "tables/exposure.parquet",
+          "tables/exposure_metrics.csv",
+          "tables/exposure_metrics.parquet",
+          "tables/fills.csv",
+          "tables/fills.parquet",
+          "tables/metrics.csv",
+          "tables/metrics.parquet",
+          "tables/nav.csv",
+          "tables/nav.parquet",
+          "tables/orders.csv",
+          "tables/orders.parquet",
+          "tables/positions.csv",
+          "tables/positions.parquet",
+          "tables/risk_metrics.csv",
+          "tables/risk_metrics.parquet",
+          "tables/session_returns.csv",
+          "tables/session_returns.parquet",
+          "tables/trades.csv",
+          "tables/trades.parquet",
+          "tables/trading_statistics.csv",
+          "tables/trading_statistics.parquet"
+        ]
+      }
+    }
+  ],
+  "finding": "PARTIAL role coverage: PASS for exact synthetic fill/cost reconciliation and insufficient-sample warning. No options sensitivities, implied volatility, hedge efficiency or stress execution demonstrated. Recommend accepting this bounded software evidence only and retaining those coverage gaps; no release or strategy eligibility approval.",
+  "requirement": "A simulated hedge-like underlying purchase must retain explicit commission and adverse slippage, execute after acceptance, and reconcile cash and NAV without double-charging slippage (M4/M6 contracts). This is an execution-cost proxy, not an actual delta hedge.",
+  "failure_case": "Stress-risk reporting with only 43 daily returns must not label the 99% Expected Shortfall estimate adequately sampled: 43 * 0.01 = 0.43 expected tail observations, below the required 5. Observed status is insufficient_sample despite a numeric estimate; alpha is unavailable for the price-only benchmark. This verifies reporting rejection of sufficiency, not an order rejection.",
+  "limitations": [
+    "One existing synthetic ETF buy-and-hold run, 43 input rows, July 1 through August 31 2026 within configured end September 1; less than six months, no OOS or 30-day actual simulation evidence.",
+    "Annualized portfolio volatility is not implied volatility or underlying realized volatility. No option position, delta/gamma/vega/theta ledger, volatility premium attribution or repeated hedge adjustment exists in this inspected sample.",
+    "Fixed slippage 0.01 USD/unit, commission 0.1 USD/unit, maximum participation 0.01; this fixture cannot establish stress liquidity, spread dynamics or attainable market fills.",
+    "No campaign rerun, order submission, broker access, TradingView access, external research, source mutation or strategy eligibility evaluation. No M16/M21/M22 or final release gate passed.",
+    "Observed existing simulated action only; no new simulated order or rejected-order test. Engineering verdict limited to published artifact consistency, not full execution-engine correctness.",
+    "Manifest git_commit is null; source/dependency hashes provide provenance references but archived source was not independently reexecuted."
+  ],
+  "checks": {
+    "result": "PASS",
+    "method": "Python urllib.request; SHA256 of raw response bytes; ZIP parsed in memory; Decimal assertions",
+    "commission": "1",
+    "slippage": "0.1",
+    "total_cost": "1.1",
+    "post_fill_cash": "9024.90",
+    "final_nav": "10136.90",
+    "all_nav_reconciliation_errors_zero": true
+  },
+  "source": {
+    "kind": "local owner-provided synthetic software fixture; no external market-data licence claimed",
+    "created_at": "2026-10-02T21:17:31.241208+00:00",
+    "retrieved_at": "2026-10-08T20:03:53.708429+00:00"
+  }
+}

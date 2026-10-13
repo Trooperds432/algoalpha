@@ -1,0 +1,20 @@
+{
+  "approval": false,
+  "reasons": [
+    "Synthetic or unidentified data supports engineering only",
+    "actual_paper_days_documented must be documented and true",
+    "independent_backtest must be documented and true",
+    "independent_risk_review must be documented and true",
+    "historical_months missing, malformed or below requirement",
+    "paper_days missing, malformed or below requirement",
+    "sharpe missing, malformed or below requirement",
+    "capacity_gbp missing, malformed or below requirement",
+    "proposed_daily_volume_gbp missing, malformed or below requirement",
+    "market_daily_volume_gbp missing, malformed or below requirement",
+    "max_participation missing, malformed or below requirement",
+    "fx_gbp_per_quote missing, malformed or below requirement",
+    "Regime coverage must include bull, bear and sideways"
+  ],
+  "eligibility": "engineering_only",
+  "limitation": "Structured assertions require independent verification of actual dated evidence; no live authority"
+}

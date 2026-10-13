@@ -1,0 +1,41 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "algoalpha-quant-terminal"
+version = "1.0.0rc1"
+description = "Local-first quantitative research terminal"
+requires-python = ">=3.12"
+dependencies = [
+  "duckdb>=1.5.5,<1.6",
+  "holidays>=0.105,<0.106",
+  "pyarrow>=25.0.1,<26",
+  "pytz>=2026.4,<2027",
+  "tzdata>=2026.4,<2027",
+  "fastapi>=0.141.1,<0.142",
+  "uvicorn>=0.54.0,<0.55",
+]
+
+[project.scripts]
+quant = "quant_terminal.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
+addopts = "-ra"
+
+[tool.ruff]
+target-version = "py312"
+line-length = 100
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B"]
+
+[tool.mypy]
+python_version = "3.12"
+strict = true
+files = ["src"]

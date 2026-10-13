@@ -1,0 +1,23 @@
+{
+  "verifiedAt": "2026-09-23T10:03:02.103Z",
+  "checks": {
+    "company": true,
+    "agentCount": 370,
+    "uniqueAgents": true,
+    "adapters": true,
+    "cwd": true,
+    "bypassDisabled": true,
+    "modelUnset": true,
+    "reportingLines": true,
+    "instructions": true,
+    "ceoSpecialistIds": true,
+    "paperOnly": true,
+    "phaseThresholds": true,
+    "smokeFile": true,
+    "smokeIssueDone": true,
+    "agentComment": true,
+    "runStatuses": [
+      "succeeded"
+    ]
+  }
+}

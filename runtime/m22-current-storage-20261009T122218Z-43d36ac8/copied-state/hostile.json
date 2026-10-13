@@ -1,0 +1,34 @@
+{
+  "at": "2026-10-07T19:53:36.837498+00:00",
+  "scope": "operator backend hostile suite, not public queued API acceptance",
+  "public_admission_enabled": false,
+  "image": "sha256:083a4ee8f04d4e4c91bc735931eccd5780c8e4e8ba7acfae04b6234fc573fc29",
+  "profile": "/home/user/algoalpha-seccomp.json",
+  "source_hashes": {
+    "src\\quant_terminal\\sandbox\\admission.py": "4deb577747b0971e1383ae2fb7eaa5484706127de6a66f6a6623dba5047d65ea",
+    "src\\quant_terminal\\sandbox\\podman.py": "0b2260f7b777f2daa9a43096b88648d5a8bdf826b14bbc4b5ad4801f533aa870",
+    "src\\quant_terminal\\sandbox\\protocol.py": "caa9342eb746f6eb38ff12bc7d4ad751310a415a573228195d1037c4c7c86394",
+    "src\\quant_terminal\\sandbox\\runtime_owner.py": "ae898982abf4dd87de6c8ac3bfdfd23a7abbf9447791c2a98d9c29551c3ae6b4",
+    "src\\quant_terminal\\sandbox\\source_package.py": "38a7421b5efcd100791d210bcb7a15e6cf724012d5413d14c05c7b96fe757390",
+    "src\\quant_terminal\\sandbox\\strategy.py": "0c5ecd15128f6fb9ad1d4ef57abe168ab8421d4ff4915c19a678bf8f660b52b5",
+    "src\\quant_terminal\\sandbox\\strategy_worker.py": "0e5dbe5c41d1ad49df2cf87e5f4d58d66128538b483490d40107d477238cc94b",
+    "src\\quant_terminal\\sandbox\\wsl_keeper.py": "ca65b496401e0a1e07a7b2355fe513c46c10dd7b59ebf7a425d7acac3465bdb0",
+    "tests\\security\\test_m16_hostile.py": "677aafe336cbf9a1ddb32a6fdbc6685ec11e425e7bf8d433ea3b97f3ee7bff10"
+  },
+  "result": "passed",
+  "pre_suite_container_inventory": [],
+  "command": [
+    "C:\\Users\\Jonat\\algoalpha\\projects\\quant-terminal\\.venv\\Scripts\\python.exe",
+    "-m",
+    "pytest",
+    "tests/security/test_m16_hostile.py",
+    "-q",
+    "--tb=short",
+    "--junitxml=C:\\Users\\Jonat\\algoalpha\\projects\\quant-terminal\\docs\\validation\\m22-hostile-current-20261007T195336Z.xml"
+  ],
+  "exit_code": 0,
+  "stdout": "..............................                                           [100%]\n30 passed in 305.01s (0:05:05)\n",
+  "stderr": "",
+  "post_suite_container_inventory": [],
+  "keeper_cleanup": "confirmed_empty_inventory_before_close"
+}

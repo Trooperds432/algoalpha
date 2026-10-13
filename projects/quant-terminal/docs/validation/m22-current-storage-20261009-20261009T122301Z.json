@@ -1,0 +1,178 @@
+{
+  "at": "2026-10-09T12:23:01.139814+00:00",
+  "issue": "ALG485",
+  "scope": "Offline installed candidate storage on copied synthetic state; no containment execution",
+  "original": "C:\\Users\\Jonat\\algoalpha\\runtime\\m22-gateway-20261008T195348Z-281f07ab",
+  "owned_root": "C:\\Users\\Jonat\\algoalpha\\runtime\\m22-current-storage-20261009T122301Z-4944d79e",
+  "candidate": "C:\\Users\\Jonat\\algoalpha\\runtime\\quant-terminal-m22-20261008-audited-fixed.zip",
+  "candidate_sha256": "20bf8fe18ee998cd17576cffb09d2ad935bca6a4b49c32a0eb0340c5cfc926bd",
+  "final_release_approved": false,
+  "commands": [
+    {
+      "args": [
+        "--state-dir",
+        "C:\\Users\\Jonat\\algoalpha\\runtime\\m22-current-storage-20261009T122301Z-4944d79e\\copied-state",
+        "backup",
+        "--output",
+        "C:\\Users\\Jonat\\algoalpha\\runtime\\m22-current-storage-20261009T122301Z-4944d79e\\backup.zip"
+      ],
+      "exit_code": 0,
+      "stdout": "{\"archive\":\"C:\\\\Users\\\\Jonat\\\\algoalpha\\\\runtime\\\\m22-current-storage-20261009T122301Z-4944d79e\\\\backup.zip\",\"files\":32,\"format_version\":1,\"offline_precondition\":\"caller stops all writers; scheduler lock is checked\",\"size_bytes\":4089108}\n",
+      "stderr": ""
+    },
+    {
+      "args": [
+        "restore",
+        "--archive",
+        "C:\\Users\\Jonat\\algoalpha\\runtime\\m22-current-storage-20261009T122301Z-4944d79e\\backup.zip",
+        "--destination",
+        "C:\\Users\\Jonat\\algoalpha\\runtime\\m22-current-storage-20261009T122301Z-4944d79e\\restored-state"
+      ],
+      "exit_code": 0,
+      "stdout": "{\"destination\":\"C:\\\\Users\\\\Jonat\\\\algoalpha\\\\runtime\\\\m22-current-storage-20261009T122301Z-4944d79e\\\\restored-state\",\"files\":32,\"format_version\":1,\"offline_precondition\":\"restore to a new state root before starting services\"}\n",
+      "stderr": ""
+    },
+    {
+      "args": [
+        "database-inspect",
+        "--database",
+        "C:\\Users\\Jonat\\algoalpha\\runtime\\m22-current-storage-20261009T122301Z-4944d79e\\restored-state\\jobs.sqlite",
+        "--kind",
+        "jobs"
+      ],
+      "exit_code": 0,
+      "stdout": "{\"database_kind\":\"jobs\",\"needs_upgrade\":true,\"schema_version\":0,\"supported_version\":1}\n",
+      "stderr": ""
+    },
+    {
+      "args": [
+        "database-upgrade",
+        "--database",
+        "C:\\Users\\Jonat\\algoalpha\\runtime\\m22-current-storage-20261009T122301Z-4944d79e\\restored-state\\jobs.sqlite",
+        "--kind",
+        "jobs"
+      ],
+      "exit_code": 0,
+      "stdout": "{\"database_kind\":\"jobs\",\"needs_upgrade\":false,\"schema_version\":1,\"supported_version\":1,\"upgraded\":true}\n",
+      "stderr": ""
+    },
+    {
+      "args": [
+        "database-inspect",
+        "--database",
+        "C:\\Users\\Jonat\\algoalpha\\runtime\\m22-current-storage-20261009T122301Z-4944d79e\\restored-state\\jobs.sqlite",
+        "--kind",
+        "jobs"
+      ],
+      "exit_code": 0,
+      "stdout": "{\"database_kind\":\"jobs\",\"needs_upgrade\":false,\"schema_version\":1,\"supported_version\":1}\n",
+      "stderr": ""
+    },
+    {
+      "args": [
+        "database-inspect",
+        "--database",
+        "C:\\Users\\Jonat\\algoalpha\\runtime\\m22-current-storage-20261009T122301Z-4944d79e\\restored-state\\isolated-jobs\\jobs.sqlite",
+        "--kind",
+        "jobs"
+      ],
+      "exit_code": 0,
+      "stdout": "{\"database_kind\":\"jobs\",\"needs_upgrade\":true,\"schema_version\":0,\"supported_version\":1}\n",
+      "stderr": ""
+    },
+    {
+      "args": [
+        "database-upgrade",
+        "--database",
+        "C:\\Users\\Jonat\\algoalpha\\runtime\\m22-current-storage-20261009T122301Z-4944d79e\\restored-state\\isolated-jobs\\jobs.sqlite",
+        "--kind",
+        "jobs"
+      ],
+      "exit_code": 0,
+      "stdout": "{\"database_kind\":\"jobs\",\"needs_upgrade\":false,\"schema_version\":1,\"supported_version\":1,\"upgraded\":true}\n",
+      "stderr": ""
+    },
+    {
+      "args": [
+        "database-inspect",
+        "--database",
+        "C:\\Users\\Jonat\\algoalpha\\runtime\\m22-current-storage-20261009T122301Z-4944d79e\\restored-state\\isolated-jobs\\jobs.sqlite",
+        "--kind",
+        "jobs"
+      ],
+      "exit_code": 0,
+      "stdout": "{\"database_kind\":\"jobs\",\"needs_upgrade\":false,\"schema_version\":1,\"supported_version\":1}\n",
+      "stderr": ""
+    },
+    {
+      "args": [
+        "database-inspect",
+        "--database",
+        "C:\\Users\\Jonat\\algoalpha\\runtime\\m22-current-storage-20261009T122301Z-4944d79e\\restored-state\\runs\\experiments.sqlite3",
+        "--kind",
+        "experiments"
+      ],
+      "exit_code": 0,
+      "stdout": "{\"database_kind\":\"experiments\",\"needs_upgrade\":false,\"schema_version\":1,\"supported_version\":1}\n",
+      "stderr": ""
+    },
+    {
+      "args": [
+        "database-upgrade",
+        "--database",
+        "C:\\Users\\Jonat\\algoalpha\\runtime\\m22-current-storage-20261009T122301Z-4944d79e\\restored-state\\runs\\experiments.sqlite3",
+        "--kind",
+        "experiments"
+      ],
+      "exit_code": 0,
+      "stdout": "{\"database_kind\":\"experiments\",\"needs_upgrade\":false,\"schema_version\":1,\"supported_version\":1,\"upgraded\":true}\n",
+      "stderr": ""
+    },
+    {
+      "args": [
+        "database-inspect",
+        "--database",
+        "C:\\Users\\Jonat\\algoalpha\\runtime\\m22-current-storage-20261009T122301Z-4944d79e\\restored-state\\runs\\experiments.sqlite3",
+        "--kind",
+        "experiments"
+      ],
+      "exit_code": 0,
+      "stdout": "{\"database_kind\":\"experiments\",\"needs_upgrade\":false,\"schema_version\":1,\"supported_version\":1}\n",
+      "stderr": ""
+    },
+    {
+      "args": [
+        "database-upgrade",
+        "--database",
+        "C:\\Users\\Jonat\\algoalpha\\runtime\\m22-current-storage-20261009T122301Z-4944d79e\\future-jobs.sqlite",
+        "--kind",
+        "jobs"
+      ],
+      "exit_code": 1,
+      "stdout": "",
+      "stderr": "{\"error\":\"DomainError\",\"message\":\"Database schema is newer than this application supports\"}\n"
+    }
+  ],
+  "result": "passed",
+  "backup_sha256": "17bf88122a4ad005d3eb918aa8f47c3dc2892e7dd6f960526fbfd1a1b5a67b92",
+  "migrated_databases": [
+    "jobs.sqlite",
+    "isolated-jobs/jobs.sqlite",
+    "runs/experiments.sqlite3"
+  ],
+  "qualified_run_ids": [
+    "run-3cbc5cfd94ca4d569535501b74c2d099",
+    "run-e8f0f6a78e914d4f8f9c1e7efc76a744",
+    "run-f3d4c01ee8e34e93aa57e7f94c8ed4ce"
+  ],
+  "unconfirmed_run_ids": [
+    "run-935eaac6eda343a7b0181cd6e6fbd586"
+  ],
+  "registry_reports_fingerprints_and_public_qualification_preserved": true,
+  "read_view_sha256": "6ce3de9dcb2690fadb2381f2e38943b2bc021ceb65f8dd1e23123d1d8414d652",
+  "immutable_files_preserved": 18,
+  "future_schema_rejected_without_mutation": true,
+  "original_hashes_unchanged": true,
+  "original_file_count": 33,
+  "helper_sha256": "166329a83af50e9498b9f4cd18fdebe7761390a94def3fb56ea45d618751084c"
+}

@@ -1,0 +1,50 @@
+FFFFFFFF                                                                 [100%]
+================================== FAILURES ===================================
+__________ test_combined_bundle_is_canonical_and_keeps_source_opaque __________
+tests\unit\test_isolated_source_bundle.py:19: in test_combined_bundle_is_canonical_and_keeps_source_opaque
+    combined = build_source_bundle(tmp_path, submitted_strategy=source)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E   TypeError: build_source_bundle() got an unexpected keyword argument 'submitted_strategy'
+_____ test_reserved_source_path_rejects_collision[submitted-strategy.py] ______
+tests\unit\test_isolated_source_bundle.py:42: in test_reserved_source_path_rejects_collision
+    build_source_bundle(tmp_path, submitted_strategy=b"opaque")
+E   TypeError: build_source_bundle() got an unexpected keyword argument 'submitted_strategy'
+_____ test_reserved_source_path_rejects_collision[SUBMITTED-STRATEGY.PY] ______
+tests\unit\test_isolated_source_bundle.py:42: in test_reserved_source_path_rejects_collision
+    build_source_bundle(tmp_path, submitted_strategy=b"opaque")
+E   TypeError: build_source_bundle() got an unexpected keyword argument 'submitted_strategy'
+__________ test_invalid_source_rejects_before_reading_project[empty] __________
+tests\unit\test_isolated_source_bundle.py:52: in test_invalid_source_rejects_before_reading_project
+    build_source_bundle(tmp_path / "absent", submitted_strategy=source)  # type: ignore[arg-type]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E   TypeError: build_source_bundle() got an unexpected keyword argument 'submitted_strategy'
+________ test_invalid_source_rejects_before_reading_project[not-bytes] ________
+tests\unit\test_isolated_source_bundle.py:52: in test_invalid_source_rejects_before_reading_project
+    build_source_bundle(tmp_path / "absent", submitted_strategy=source)  # type: ignore[arg-type]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E   TypeError: build_source_bundle() got an unexpected keyword argument 'submitted_strategy'
+______ test_invalid_source_rejects_before_reading_project[invalid-utf8] _______
+tests\unit\test_isolated_source_bundle.py:52: in test_invalid_source_rejects_before_reading_project
+    build_source_bundle(tmp_path / "absent", submitted_strategy=source)  # type: ignore[arg-type]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E   TypeError: build_source_bundle() got an unexpected keyword argument 'submitted_strategy'
+________ test_invalid_source_rejects_before_reading_project[oversize] _________
+tests\unit\test_isolated_source_bundle.py:52: in test_invalid_source_rejects_before_reading_project
+    build_source_bundle(tmp_path / "absent", submitted_strategy=source)  # type: ignore[arg-type]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E   TypeError: build_source_bundle() got an unexpected keyword argument 'submitted_strategy'
+________________ test_utf8_byte_limit_and_source_only_project _________________
+tests\unit\test_isolated_source_bundle.py:57: in test_utf8_byte_limit_and_source_only_project
+    with zipfile.ZipFile(io.BytesIO(build_source_bundle(tmp_path, submitted_strategy=source))) as archive:
+                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E   TypeError: build_source_bundle() got an unexpected keyword argument 'submitted_strategy'
+=========================== short test summary info ===========================
+FAILED tests/unit/test_isolated_source_bundle.py::test_combined_bundle_is_canonical_and_keeps_source_opaque
+FAILED tests/unit/test_isolated_source_bundle.py::test_reserved_source_path_rejects_collision[submitted-strategy.py]
+FAILED tests/unit/test_isolated_source_bundle.py::test_reserved_source_path_rejects_collision[SUBMITTED-STRATEGY.PY]
+FAILED tests/unit/test_isolated_source_bundle.py::test_invalid_source_rejects_before_reading_project[empty]
+FAILED tests/unit/test_isolated_source_bundle.py::test_invalid_source_rejects_before_reading_project[not-bytes]
+FAILED tests/unit/test_isolated_source_bundle.py::test_invalid_source_rejects_before_reading_project[invalid-utf8]
+FAILED tests/unit/test_isolated_source_bundle.py::test_invalid_source_rejects_before_reading_project[oversize]
+FAILED tests/unit/test_isolated_source_bundle.py::test_utf8_byte_limit_and_source_only_project
+8 failed in 1.07s

@@ -1,0 +1,51 @@
+{
+  "at": "2026-10-12T20:47:07.435732+00:00",
+  "reviewer": "/root/consolidated_release",
+  "verdict": "separate bounded findings accepted",
+  "identityEvidence": "Independent fresh live succeeded/done, exact associations/assignees and aware timestamps in windows; exact artifact/source and three HTTP bytes/bodies verified.",
+  "reproduction": "Six thin-tail diagnostics from43 returns confirmed. Weighted shocks at weights.5/.25 give returns+/-.2, NAVchanges+/-200 and signedlosses-/+200 onNAV1000; uninvestedcash.25 unshocked. Assetreturn-1.1 rejects. Four recorded source/doc hashes current.",
+  "roles": [
+    {
+      "roleCode": "10.4",
+      "identifier": "ALG-546",
+      "agentId": "0e0e9ad3-beb1-4386-9a23-5af284b8fdd1",
+      "runId": "9edca5a1-ed4c-4b55-baf7-0941e0aa196e",
+      "issueId": "4ea95784-5710-455a-a498-09f60dbc4bc2",
+      "startedAt": "2026-10-12T20:43:35.678Z",
+      "finishedAt": "2026-10-12T20:45:23.292Z",
+      "freshRootVerification": {
+        "runId": "9edca5a1-ed4c-4b55-baf7-0941e0aa196e",
+        "issueId": "4ea95784-5710-455a-a498-09f60dbc4bc2",
+        "artifact": "docs\\agent-contributions\\10-4.md",
+        "artifactSha256": "c2e176a820c825b94faf6503f87c5b4402b633d75730be7ae6f1e38ee55a90df",
+        "interactionArtifact": "docs\\agent-contributions\\10-4.json",
+        "interactionSha256": "22116219f3225e6e91104276276f4dc930f7b6285b9d69cff3a054e897627bf8",
+        "verifiedAt": "2026-10-12T20:47:07.276863+00:00",
+        "scope": "identity/files/actual HTTP evidence verified; role finding needs independent review"
+      },
+      "independentScope": "Tail-disclosure observation only; no crisis or severe-stress calculation exercised."
+    },
+    {
+      "roleCode": "10.5",
+      "identifier": "ALG-547",
+      "agentId": "2f8a7462-52ad-42b9-a349-7ad93344216f",
+      "runId": "42dcb5dc-1b7a-4dcb-a2fd-e14fcdd2a942",
+      "issueId": "ca69aad5-25cb-4f96-96fa-c8286f51025e",
+      "startedAt": "2026-10-12T20:43:35.787Z",
+      "finishedAt": "2026-10-12T20:45:30.782Z",
+      "freshRootVerification": {
+        "runId": "42dcb5dc-1b7a-4dcb-a2fd-e14fcdd2a942",
+        "issueId": "ca69aad5-25cb-4f96-96fa-c8286f51025e",
+        "artifact": "docs\\agent-contributions\\10-5.md",
+        "artifactSha256": "817d49f9495652f9db93a3cdaeb345167e93ded27cf1dde396228f0438d41c6b",
+        "interactionArtifact": "docs\\agent-contributions\\10-5.json",
+        "interactionSha256": "8b8b8fc3b1aa9c78e27cd5ce364e88246acb6bf4bd5613e7d96b9610b178aeae",
+        "verifiedAt": "2026-10-12T20:47:07.435638+00:00",
+        "scope": "identity/files/actual HTTP evidence verified; role finding needs independent review"
+      },
+      "independentScope": "Independent weighted simple-return shocks preserve signed NAV/loss and uninvested cash; -1.1 asset return rejects. Broader macro/nonlinear/liquidity modelling unproved."
+    }
+  ],
+  "limits": "Same prior-candidate synthetic43-row fixture.10.4 overlaps prior disclosure reviews and has no actual crisis calculation.10.5 has two deterministic linear rows, no macrofactor maps, volatility/correlation shocks, option convexity, liquiditycosts, position-level repricing, OOS or warning enforcement.",
+  "finalReleaseApproved": false
+}

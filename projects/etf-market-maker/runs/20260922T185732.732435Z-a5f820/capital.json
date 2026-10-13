@@ -1,0 +1,24 @@
+{
+  "allocations": [
+    {
+      "name": "Synthetic ETF market maker",
+      "votes": {
+        "quant": "buy",
+        "fundamental": "neutral",
+        "risk": "veto",
+        "execution": "buy",
+        "validation": "rejected"
+      },
+      "eligible_capital": 0,
+      "reasons": [
+        "risk vote missing or not approving",
+        "validation vote missing or not approving"
+      ],
+      "allocated_capital": 0
+    }
+  ],
+  "allocated_capital": 0,
+  "unallocated_capital": 1000000,
+  "paper_only": true,
+  "policy": "Unanimous required approvals; risk and validation veto; proportional capped allocation"
+}

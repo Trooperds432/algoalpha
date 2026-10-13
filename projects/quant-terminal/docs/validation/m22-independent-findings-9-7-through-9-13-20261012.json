@@ -1,0 +1,324 @@
+{
+  "reviewer": "/root/consolidated_release",
+  "observed_at": "2026-10-12T20:33:30.343982+00:00",
+  "live_identity": "pending: independent Paperclip API attempt returned URLError",
+  "roles": {
+    "9-7": {
+      "agent_id": "0c5d5ccb-ab39-466a-abf8-d0b587f48620",
+      "issue_id": "bed092d0-d864-40b2-b7bd-20661431edcd",
+      "run_id": "abc874f7-08a7-4793-ba62-89cd83da0866",
+      "markdown_sha256": "0cc1c30495809cce4f99b29cfd28e92dfa4a2bac3aa841c3f0da9eff863c2c8d",
+      "json_sha256": "aa79903144170990449f8b85e6264fc09d78a3296401c79def5a5146d12fc2cc",
+      "http_checks": [
+        {
+          "url": "http://127.0.0.1:8765/health",
+          "bytes": 63,
+          "sha256": "849f6f3f3f0d8e7c926729f285c59746d1db5add8a8aa7670f2e2d4371072ba6"
+        },
+        {
+          "url": "http://127.0.0.1:8765/runs",
+          "bytes": 9887,
+          "sha256": "915a511f68fd7c10df927870531864f4661fa12f17a1f05aafec7cfdfebfbb2c"
+        },
+        {
+          "url": "http://127.0.0.1:8765/runs/run-dcb6e4abe8564d598b79a2af7f026a6a",
+          "bytes": 9885,
+          "sha256": "16c72ce69ef28fde0327747b278196f5bdf6cedf635bd234d6c4170a30007035"
+        }
+      ],
+      "source_hashes_match": {
+        "tests/unit/test_historical_execution.py": "e2f43e44efb2ec8bd957c63078f8721986b74317c3e8cf9ef86a8f8cd6595326",
+        "src/quant_terminal/execution/simulator.py": "baf5ae3cb24f7a60fdbb98603fa8c55bb3ecd818a8fd6d6a4c6f57c26f694831",
+        "src/quant_terminal/accounting/ledger.py": "9b4b8d2fe5376752cbd96dba0578f3bfd1dbe7e8ccbecf7c0c23a284a5646664"
+      },
+      "decision": "bounded finding accepted; broader role capability partial",
+      "limits": [
+        "Synthetic local fixtures only; no external market data or redistribution. No forecast or strategy campaign executed.",
+        "Selected run covers 43 bars during 2026-07-01 to 2026-09-01, created 2026-10-02; not six months or 30 days actual paper simulation.",
+        "OHLC capacity is retrospective and does not model L2/L3 depth, queue priority, cancellations or liquidation under market stress.",
+        "HTTP manifest has no execution ledger; ledger demonstration is separate current-source in-memory fixture, not reconstruction of selected run.",
+        "No forecast OOS evaluation or benchmark-compatible total-return series; alpha/beta unavailable and tail metrics insufficient_sample.",
+        "No M16, eligibility or final release acceptance claimed; M21/M22 remain open."
+      ],
+      "reproduced": "Capacity5 filled4+1;cash949.5/NAV999.5;zero volume nofill; duplicatebar rejects unchanged."
+    },
+    "9-8": {
+      "agent_id": "8b84eec2-53c9-40ae-9510-8abdced5d515",
+      "issue_id": "cc6a389c-09f4-4b72-aec3-5c77648ba7e2",
+      "run_id": "ebf7ff16-1af4-42b6-97d7-984a8cb638b1",
+      "markdown_sha256": "b4e9b37c99030560540025946043c2b7fa99697d5207c5b3290793f0b5d2ed3d",
+      "json_sha256": "e4dbcb8475473dfb309791006efe4519e6fa7fabb2ed52984983fd36110987c8",
+      "http_checks": [
+        {
+          "url": "http://127.0.0.1:8765/health",
+          "bytes": 63,
+          "sha256": "849f6f3f3f0d8e7c926729f285c59746d1db5add8a8aa7670f2e2d4371072ba6"
+        },
+        {
+          "url": "http://127.0.0.1:8765/runs",
+          "bytes": 9887,
+          "sha256": "915a511f68fd7c10df927870531864f4661fa12f17a1f05aafec7cfdfebfbb2c"
+        },
+        {
+          "url": "http://127.0.0.1:8765/runs/run-dcb6e4abe8564d598b79a2af7f026a6a",
+          "bytes": 9885,
+          "sha256": "16c72ce69ef28fde0327747b278196f5bdf6cedf635bd234d6c4170a30007035"
+        }
+      ],
+      "source_hashes_match": {
+        "src/quant_terminal/execution/fills.py": "50cf9744a6e1ad543c029a469fc9a8c15b539f6a24cc0643d0c0542d3948bdc3",
+        "src/quant_terminal/execution/simulator.py": "baf5ae3cb24f7a60fdbb98603fa8c55bb3ecd818a8fd6d6a4c6f57c26f694831",
+        "src/quant_terminal/accounting/ledger.py": "9b4b8d2fe5376752cbd96dba0578f3bfd1dbe7e8ccbecf7c0c23a284a5646664",
+        "tests/unit/test_historical_execution.py": "e2f43e44efb2ec8bd957c63078f8721986b74317c3e8cf9ef86a8f8cd6595326"
+      },
+      "decision": "bounded finding accepted; broader role capability partial",
+      "limits": [
+        "Synthetic local data only; no external data source or publication, broker access, strategy submission, campaign rerun or live orders.",
+        "Selected run sample 2026-07-01 through configured end 2026-09-01, 43 rows; created 2026-10-02T21:17:31.241208+00:00. Not six months or 30 days actual paper simulation.",
+        "HTTP manifest has no raw ledger; ledger demonstration is a separate in-memory current-workspace fixture, not the selected run ledger or proof of installed binary/source equivalence.",
+        "No midpoint series, queue position, aggressor direction, order-flow imbalance, independently labeled alerts, accuracy or cost-reduction evidence; bar-close proxy cannot identify within-bar ordering.",
+        "No strategy eligibility, M16, M21, M22 or final release pass claimed.",
+        "M21 report is historical evidence; current milestone state records later M16 technical acceptance, which this review does not independently validate."
+      ],
+      "reproduced": "Prematurebar rejects unchanged;5@10 fee.5 cash949.5/NAV999.5; close proxy-.5 is not midpoint markout. Only retryALG534 reviewed."
+    },
+    "9-9": {
+      "agent_id": "82195d42-7369-423c-b485-4057032eab09",
+      "issue_id": "205f33c0-bee8-400a-9913-08390f3b2208",
+      "run_id": "402bfbee-0d29-494b-b776-d12cc06a126d",
+      "markdown_sha256": "7d634db41f274dd27cd727862866f8419ff7eaff45774cb9f9e0135784d16f5a",
+      "json_sha256": "36246ea4ea00e3b07c1cc6caa4d7272665d27444c1cd802722ced61fe230a12f",
+      "http_checks": [
+        {
+          "url": "http://127.0.0.1:8765/health",
+          "bytes": 63,
+          "sha256": "849f6f3f3f0d8e7c926729f285c59746d1db5add8a8aa7670f2e2d4371072ba6"
+        },
+        {
+          "url": "http://127.0.0.1:8765/runs",
+          "bytes": 9887,
+          "sha256": "915a511f68fd7c10df927870531864f4661fa12f17a1f05aafec7cfdfebfbb2c"
+        },
+        {
+          "url": "http://127.0.0.1:8765/runs/run-dcb6e4abe8564d598b79a2af7f026a6a",
+          "bytes": 9885,
+          "sha256": "16c72ce69ef28fde0327747b278196f5bdf6cedf635bd234d6c4170a30007035"
+        }
+      ],
+      "source_hashes_match": {
+        "src\\quant_terminal\\accounting\\ledger.py": "9b4b8d2fe5376752cbd96dba0578f3bfd1dbe7e8ccbecf7c0c23a284a5646664",
+        "docs\\m4-execution-contract.md": "d68556bf210ca90f224cee8efe19bc6b6c5ce8111739d602a28ecad45ca1828a",
+        "docs\\m6-analytics-contract.md": "6f2075a5093bda89d52ef794b07179753810d186135a2e4f2c737a2c4dd7264c"
+      },
+      "decision": "bounded finding accepted; broader role capability partial",
+      "limits": [
+        "Synthetic local research only; no broker, order, strategy submission or forward simulation.",
+        "In-memory ledger fixture is separate from the returned stored run; direct fills do not exercise order routing, matching, liquidity or slippage.",
+        "43 dataset rows from 2026-07-01 to 2026-09-01 are less than six months; no OOS or 30-day actual simulation evidence established.",
+        "No owner risk threshold compliance, hedge effectiveness, strategy eligibility, M16 or final-release pass is asserted.",
+        "Returned manifest source hashes recorded but packaged source not independently downloaded or matched to running service. git_commit is null.",
+        "No external data fetched or redistributed; synthetic local data has no market publication date. Manifest created_at is artifact creation, not market publication."
+      ],
+      "reproduced": "Long10\u21924/exposure1000\u2192400;cash9598.4/NAV9998.4;oversell5 rejects unchanged."
+    },
+    "9-10": {
+      "agent_id": "04ab23cf-9759-46ff-9494-9772d6c3ddca",
+      "issue_id": "e6551c3e-7caa-412a-85d4-b0ee2d64b301",
+      "run_id": "5ab98d41-df5f-46ca-ac3a-b07967db176d",
+      "markdown_sha256": "8ff2746c6c163729564d6fb145ae21ce48dc21b0b48072733e8a7c8267e91457",
+      "json_sha256": "e0b6da2e7fac918cb813bc5e61eba75a79d18ea548c0c35d917f2e24057f40a1",
+      "http_checks": [
+        {
+          "url": "http://127.0.0.1:8765/health",
+          "bytes": 63,
+          "sha256": "849f6f3f3f0d8e7c926729f285c59746d1db5add8a8aa7670f2e2d4371072ba6"
+        },
+        {
+          "url": "http://127.0.0.1:8765/runs",
+          "bytes": 9887,
+          "sha256": "915a511f68fd7c10df927870531864f4661fa12f17a1f05aafec7cfdfebfbb2c"
+        },
+        {
+          "url": "http://127.0.0.1:8765/runs/run-dcb6e4abe8564d598b79a2af7f026a6a",
+          "bytes": 9885,
+          "sha256": "16c72ce69ef28fde0327747b278196f5bdf6cedf635bd234d6c4170a30007035"
+        },
+        {
+          "url": "http://127.0.0.1:8765/runs/run-dcb6e4abe8564d598b79a2af7f026a6a/report",
+          "bytes": 154406,
+          "sha256": "a090e220f243b096c8485ace08d131c8595ba2f0498e210f4d4194202c6f4476"
+        },
+        {
+          "url": "http://127.0.0.1:8765/health",
+          "bytes": 63,
+          "sha256": "849f6f3f3f0d8e7c926729f285c59746d1db5add8a8aa7670f2e2d4371072ba6"
+        },
+        {
+          "url": "http://127.0.0.1:8765/runs",
+          "bytes": 9887,
+          "sha256": "915a511f68fd7c10df927870531864f4661fa12f17a1f05aafec7cfdfebfbb2c"
+        },
+        {
+          "url": "http://127.0.0.1:8765/runs/run-dcb6e4abe8564d598b79a2af7f026a6a",
+          "bytes": 9885,
+          "sha256": "16c72ce69ef28fde0327747b278196f5bdf6cedf635bd234d6c4170a30007035"
+        },
+        {
+          "url": "http://127.0.0.1:8765/runs/run-dcb6e4abe8564d598b79a2af7f026a6a/report",
+          "bytes": 154406,
+          "sha256": "a090e220f243b096c8485ace08d131c8595ba2f0498e210f4d4194202c6f4476"
+        }
+      ],
+      "source_hashes_match": {},
+      "decision": "bounded finding accepted; broader role capability partial",
+      "limits": [
+        "Read-only inspection of an existing simulated fill; no new simulated or real order submitted.",
+        "Synthetic ETF-DEMO is not an underlying constituent basket; no creation-unit size, cash component, financing accrual, authorized participant instruction or settlement completion demonstrated.",
+        "43 dataset rows over configured 2026-07-01 to 2026-09-01; no six-month historical test, documented OOS assessment or 30-day actual simulation established.",
+        "Sharpe and drawdown are descriptive synthetic metrics, not alpha, strategy eligibility or professional approval.",
+        "No M16, M21, M22 or final release gate is passed by this review.",
+        "Historical response evidence is preserved from interrupted run; cancellation cause is not established beyond the supplied cancelled status."
+      ],
+      "reproduced": "Existingfill10@97.41 fee1/slippage.1/cash9024.9;44NAVrows reconcile;0closedtrades/alpha-beta unavailable. No creation-redemption rejection tested."
+    },
+    "9-11": {
+      "agent_id": "b5c244b2-7082-45f4-8296-a8d4df68d37d",
+      "issue_id": "b75a2c47-e65e-4402-9412-01cfd3ac6b6f",
+      "run_id": "62efe99b-dbae-4705-9771-ec530658a8cb",
+      "markdown_sha256": "2397e83fe36007d4d18a7eb7826975da74c1a0cc4177735a656653452c7149f8",
+      "json_sha256": "0c989881d72002ca22695d70654e9956deba00b7f5b16765d73ff6770b2d247e",
+      "http_checks": [
+        {
+          "url": "http://127.0.0.1:8765/health",
+          "bytes": 63,
+          "sha256": "849f6f3f3f0d8e7c926729f285c59746d1db5add8a8aa7670f2e2d4371072ba6"
+        },
+        {
+          "url": "http://127.0.0.1:8765/runs",
+          "bytes": 9887,
+          "sha256": "915a511f68fd7c10df927870531864f4661fa12f17a1f05aafec7cfdfebfbb2c"
+        },
+        {
+          "url": "http://127.0.0.1:8765/runs/run-dcb6e4abe8564d598b79a2af7f026a6a",
+          "bytes": 9885,
+          "sha256": "16c72ce69ef28fde0327747b278196f5bdf6cedf635bd234d6c4170a30007035"
+        },
+        {
+          "url": "http://127.0.0.1:8765/runs/run-dcb6e4abe8564d598b79a2af7f026a6a/report",
+          "bytes": 154406,
+          "sha256": "a090e220f243b096c8485ace08d131c8595ba2f0498e210f4d4194202c6f4476"
+        },
+        {
+          "url": "http://127.0.0.1:8765/health",
+          "bytes": 63,
+          "sha256": "849f6f3f3f0d8e7c926729f285c59746d1db5add8a8aa7670f2e2d4371072ba6"
+        },
+        {
+          "url": "http://127.0.0.1:8765/runs",
+          "bytes": 9887,
+          "sha256": "915a511f68fd7c10df927870531864f4661fa12f17a1f05aafec7cfdfebfbb2c"
+        },
+        {
+          "url": "http://127.0.0.1:8765/runs/run-dcb6e4abe8564d598b79a2af7f026a6a",
+          "bytes": 9885,
+          "sha256": "16c72ce69ef28fde0327747b278196f5bdf6cedf635bd234d6c4170a30007035"
+        },
+        {
+          "url": "http://127.0.0.1:8765/runs/run-dcb6e4abe8564d598b79a2af7f026a6a/report",
+          "bytes": 154406,
+          "sha256": "a090e220f243b096c8485ace08d131c8595ba2f0498e210f4d4194202c6f4476"
+        }
+      ],
+      "source_hashes_match": {},
+      "decision": "bounded finding accepted; broader role capability partial",
+      "limits": [
+        "Single synthetic ETF buy; no AP identities, basket creation/redemption legs, settlement status, contractual SLA or counterparty reliability evidence.",
+        "In-memory local source check; not a broker action or persistent API mutation. Instrument tick .01 and quantity step 1 are explicit replay assumptions.",
+        "Sample 2026-07-01 through 2026-08-31 (manifest end 2026-09-01 exclusive), 43 bars; no six-month history, OOS qualification or 30-day actual simulation.",
+        "Alpha/beta unavailable because price-only benchmark lacks compatible total-return series; no closed matched trades. No strategy eligibility, M16 or final release acceptance.",
+        "Manifest source hash is reported provenance; local ledger file hash captured separately, without asserting equivalence to installed server source."
+      ],
+      "reproduced": "Fillreplay cash9024.9/NAV9999 atfillmark/qty10;duplicate rejects unchanged snapshot/history."
+    },
+    "9-12": {
+      "agent_id": "f87ffab5-39bc-4344-8927-bf46388fe723",
+      "issue_id": "fc51eb30-b636-4a4b-a23f-06820a3af502",
+      "run_id": "aa5d6704-501e-4c9e-9f37-b27b387eff0e",
+      "markdown_sha256": "da9b23816c683856faaca810de099b0c2fe1dffe5c806453fd4261a854102be6",
+      "json_sha256": "13f4ceef2e9c304445f9820502ebdcde99b8ca7c312141a034466edce4a174c1",
+      "http_checks": [
+        {
+          "url": "http://127.0.0.1:8765/health",
+          "bytes": 63,
+          "sha256": "849f6f3f3f0d8e7c926729f285c59746d1db5add8a8aa7670f2e2d4371072ba6"
+        },
+        {
+          "url": "http://127.0.0.1:8765/runs",
+          "bytes": 9887,
+          "sha256": "915a511f68fd7c10df927870531864f4661fa12f17a1f05aafec7cfdfebfbb2c"
+        },
+        {
+          "url": "http://127.0.0.1:8765/runs/run-dcb6e4abe8564d598b79a2af7f026a6a",
+          "bytes": 9885,
+          "sha256": "16c72ce69ef28fde0327747b278196f5bdf6cedf635bd234d6c4170a30007035"
+        }
+      ],
+      "source_hashes_match": {},
+      "decision": "bounded finding accepted; broader role capability partial",
+      "limits": [
+        "Synthetic internal research fixture only; no external market data or publication. Run created 2026-10-02; configured sample 2026-07-01 through 2026-09-01, 43 rows; inspected 2026-10-12 UTC.",
+        "One buy fill and no closed trades; insufficient for six-month historical or out-of-sample impact validation, liquidity-regime stability or 30 days actual simulation.",
+        "Maximum participation 0.01 is recorded but this ledger alone does not expose bar volume, so realized participation compliance was not independently recomputed.",
+        "Sharpe uses annualization 252 and annual risk-free rate 0; no comparative strategy evaluation performed. Price-only ETF-DEMO benchmark cannot support alpha/beta; returned unavailable and insufficient_sample statuses must be retained.",
+        "Current-workspace failure test does not establish byte-identical behavior of the running server. No campaigns, strategy submissions, broker access, runtime changes or final gate approval."
+      ],
+      "reproduced": "Existingtestpassed buy-limit10 protected against1000bps; market sell reference10/fixedslippage10 nofill/rejected. Binarybundle/hash and recorded CSVbytes match."
+    },
+    "9-13": {
+      "agent_id": "9886456a-f268-4b42-8675-009102c908cc",
+      "issue_id": "a532e337-f0ac-4a4a-be3a-77647ade77bf",
+      "run_id": "b8e21788-c2fb-4731-9b63-9f66d95f919c",
+      "markdown_sha256": "da95d61a1b5caad231bbf1c13bd7fcb45875331792979e35c173135ab415be7c",
+      "json_sha256": "ae90d8d33a765c734b4677bab87287b8e66e59c83decd65cfc8834e9b48c1cc4",
+      "http_checks": [
+        {
+          "url": "http://127.0.0.1:8765/health",
+          "bytes": 63,
+          "sha256": "849f6f3f3f0d8e7c926729f285c59746d1db5add8a8aa7670f2e2d4371072ba6"
+        },
+        {
+          "url": "http://127.0.0.1:8765/runs",
+          "bytes": 9887,
+          "sha256": "915a511f68fd7c10df927870531864f4661fa12f17a1f05aafec7cfdfebfbb2c"
+        },
+        {
+          "url": "http://127.0.0.1:8765/runs/run-dcb6e4abe8564d598b79a2af7f026a6a",
+          "bytes": 9885,
+          "sha256": "16c72ce69ef28fde0327747b278196f5bdf6cedf635bd234d6c4170a30007035"
+        },
+        {
+          "url": "http://127.0.0.1:8765/runs/run-dcb6e4abe8564d598b79a2af7f026a6a/report",
+          "bytes": 154406,
+          "sha256": "a090e220f243b096c8485ace08d131c8595ba2f0498e210f4d4194202c6f4476"
+        }
+      ],
+      "source_hashes_match": {
+        "src/quant_terminal/execution/simulator.py": "baf5ae3cb24f7a60fdbb98603fa8c55bb3ecd818a8fd6d6a4c6f57c26f694831",
+        "src/quant_terminal/accounting/ledger.py": "9b4b8d2fe5376752cbd96dba0578f3bfd1dbe7e8ccbecf7c0c23a284a5646664",
+        "tests/unit/test_historical_execution.py": "e2f43e44efb2ec8bd957c63078f8721986b74317c3e8cf9ef86a8f8cd6595326"
+      },
+      "decision": "bounded finding accepted; broader role capability partial",
+      "limits": [
+        "One synthetic execution; no venue, queue, latency or real liquidity comparison.",
+        "43 rows, configured 2026-07-01 to 2026-09-01: not six months, no demonstrated OOS or 30 days actual paper simulation.",
+        "No strategy submission, campaign rerun, broker interaction, source changes or M16/final-release acceptance.",
+        "Local simulator exercise is separate from stored 1.0.0rc1 evidence; archived-source equivalence not established.",
+        "Price-only ETF-DEMO benchmark leaves alpha/beta unavailable; zero closed trades and undefined win rate cannot support eligibility."
+      ],
+      "reproduced": "5@10.01 ref10 fee.5/slippage.05/cash949.45/NAV999.5;duplicate rejects unchanged."
+    }
+  },
+  "overlap": "All seven share previous RC1 synthetic43-rowterminalrun. In-memory cases are separate; installed-source equivalence unverified.",
+  "preserved_review_harness_failure": "First aggregate review terminated with AssertionError; independent 9.13 NAV expression incorrectly divided9999.5by10. Corrected to exact999.5 in this fresh review. No product change.",
+  "prior_records": "9.10/9.11 explicitly preserve earlier interrupted-run HTTP evidence and additional fresh receipts. Live windows pending; prior receipts must not be attributed to latest runs."
+}

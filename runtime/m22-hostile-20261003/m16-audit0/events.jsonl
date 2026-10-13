@@ -1,0 +1,1 @@
+{"backend": "podman", "event": "capability_probe", "image": "sha256:083a4ee8f04d4e4c91bc735931eccd5780c8e4e8ba7acfae04b6234fc573fc29", "image_provenance": {}, "outcome": "failed", "reason": "podman_command_failed", "timestamp": "2026-10-03T11:48:35.790006+00:00", "version": null}

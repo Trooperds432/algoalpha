@@ -1,0 +1,16 @@
+# M14 independent UI retest
+
+Verdict: **PASS for the three QA-M14-01/02/03 defects and the 1280 px overflow retest**. This is a bounded independent review of the repaired UI, not by itself the full M14 milestone gate. The reviewer was a Codex subagent, not a Paperclip employee or Paperclip run. The original Paperclip QA finding and real run are recorded in `docs/agent-contributions/27-4.md`; this document does not claim a new Paperclip contribution.
+
+Observation date: 2026-09-30, approximately 19:43-19:49 UTC. Target: local research UI at `http://127.0.0.1:8765/ui/`, backed by the existing synthetic ETF-DEMO state. No research job, forward test, broker order, or live connection was submitted. The browser tab was closed after the retest.
+
+| Finding | Independent fresh evidence | Result |
+| --- | --- | --- |
+| QA-M14-01, risk cells hide nonzero loss and insufficient samples | In Experiments, selected `run-2ae4d31b18564d33850d1f516526db2f` and `c7a8348088454a5a80ea2ad7d45573f3-opt-4a5a80ea2ad7d45573f3-00000`, then compared. Rendered expected shortfall 95 cells were `0.46%` and `0.23%`; VaR 95 cells were `0.45%` and `0.23%`. All four visibly showed `insufficient_sample: requires at least 20 returns and 5 expected tail observations`. Hover titles retained the exact raw nonzero values and `loss_fraction`. The null risk-of-ruin row showed `Unavailable` and its explicit missing-assumptions reason. Live POST `/compare` returned the same raw values, status and reason. | PASS |
+| QA-M14-02, missing chart axes | Opened the existing backtest from Dashboard. Browser DOM `.xtitle,.ytitle` yielded, in chart order: `UTC time`, `NAV`, `UTC session`, `Drawdown fraction`, `UTC time`, `Normalized value`. The report API supplied those labels. | PASS |
+| QA-M14-03, lost job journal | On the opened run, Backtests > Logs rendered `JOB JOURNAL 1 RECORDED EVENTS`, including `#1 registered_run`. Its JSON displayed `job_id: 2ae4d31b18564d33850d1f516526db2f` and `job_status: succeeded`. Live GET `/jobs/2ae4d31b18564d33850d1f516526db2f/events?after=0&limit=100` returned one event. | PASS |
+| 1280 px horizontal overflow | At a 1280 x 900 CSS-pixel viewport, both Experiments and Backtests Overview had `document.documentElement.scrollWidth=clientWidth=1265`; the Overview information-grid preformatted content's furthest right edge was 1213 px, inside the viewport. | PASS |
+
+Supporting checks: `npm test -- --run` in `apps/web` returned 12/12 tests passed and `npm run build` succeeded, both observed earlier the same day. The build emitted only Vite's large Plotly chunk warning. Those commands preceded the final CSS/status-display adjustment; the browser observations above used the later served build and directly covered the changed presentation. The local `/health` reported `status=ok` and `broker_orders_enabled=false`.
+
+This retest checks the exact prior defects and desktop-width layout, not the entire UI matrix. It does not validate mobile layout, all campaign transitions, financial formulas, external market data, six-month strategy evidence, Paperclip role participation beyond the cited historical QA run, or broker behavior. No milestone-state file was changed by this reviewer.

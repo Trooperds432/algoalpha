@@ -1,0 +1,97 @@
+[7F60:5C18][2026-09-30T21:24:44]i001: Burn x64 v5.0.2+aa65968c419420d32e3e1b647aea0082f5ca5b78, Windows v10.0 x64 (Build 26200: Service Pack 0), path: C:\Users\Jonat\AppData\Local\Temp\WinGet\RedHat.Podman.5.8.3\podman-installer-windows-amd64.exe
+[7F60:5C18][2026-09-30T21:24:44]i000: Initializing formatted variable 'InstallFolder' to value '[ProgramFiles64Folder]RedHat\Podman'
+[7F60:5C18][2026-09-30T21:24:44]i000: Initializing string variable 'VERSION' to value '5.8.3'
+[7F60:5C18][2026-09-30T21:24:44]i000: Initializing string variable 'MachineProvider' to value 'wsl'
+[7F60:5C18][2026-09-30T21:24:44]i000: Initializing numeric variable 'AllowOldWin' to value '0'
+[7F60:5C18][2026-09-30T21:24:44]i000: Initializing string variable 'LaunchTarget' to value 'explorer.exe'
+[7F60:5C18][2026-09-30T21:24:44]i000: Initializing string variable 'LaunchArguments' to value '"[InstallFolder]\podman-for-windows.html"'
+[7F60:5C18][2026-09-30T21:24:44]i000: Initializing numeric variable 'SkipConfigFileCreation' to value '0'
+[7F60:5C18][2026-09-30T21:24:44]i009: Command Line: '/quiet /norestart /log C:\Users\Jonat\algoalpha\runtime\m16\podman-install-retry.log'
+[7F60:5C18][2026-09-30T21:24:44]i000: Setting string variable 'WixBundleOriginalSource' to value 'C:\Users\Jonat\AppData\Local\Temp\WinGet\RedHat.Podman.5.8.3\podman-installer-windows-amd64.exe'
+[7F60:5C18][2026-09-30T21:24:44]i000: Setting string variable 'WixBundleOriginalSourceFolder' to value 'C:\Users\Jonat\AppData\Local\Temp\WinGet\RedHat.Podman.5.8.3\'
+[7F60:5C18][2026-09-30T21:24:44]i000: Setting string variable 'WixBundleLog' to value 'C:\Users\Jonat\algoalpha\runtime\m16\podman-install-retry.log'
+[7F60:5C18][2026-09-30T21:24:44]i000: Setting string variable 'WixBundleInProgressName' to value ''
+[7F60:5C18][2026-09-30T21:24:44]i000: Setting string variable 'WixBundleName' to value 'Podman'
+[7F60:5C18][2026-09-30T21:24:44]i000: Setting string variable 'WixBundleManufacturer' to value 'Red Hat'
+[7F60:0B78][2026-09-30T21:24:44]i000: Setting version variable 'WixBundleFileVersion' to value '5.0.2.0'
+[7F60:0B78][2026-09-30T21:24:44]i000: Setting numeric variable 'WixStdBASuppressOptionsUI' to value 1
+[7F60:0B78][2026-09-30T21:24:44]i000: Setting numeric variable 'WixStdBAShowVersion' to value 1
+[7F60:0B78][2026-09-30T21:24:44]i000: Setting numeric variable 'WixStdBALanguageId' to value 1033
+[7F60:5C18][2026-09-30T21:24:44]i100: Detect begin, 1 packages
+[7F60:5C18][2026-09-30T21:24:44]i000: Setting string variable 'CBNumber' to value '26200'
+[7F60:5C18][2026-09-30T21:24:44]i000: Registry key not found. Key = 'SOFTWARE\[WixBundleManufacturer]\[WixBundleName]'
+[7F60:5C18][2026-09-30T21:24:44]i000: Registry key not found. Key = 'SOFTWARE\[WixBundleManufacturer]\Updates\[WixBundleName]'
+[7F60:5C18][2026-09-30T21:24:44]i052: Condition 'PreviousInstallFolder' evaluates to false.
+[7F60:5C18][2026-09-30T21:24:44]i101: Detected package: Setup, state: Absent, cached: No, install registration state: Absent, cache registration state: Absent
+[7F60:0B78][2026-09-30T21:24:44]i052: Condition 'VersionNT >= v10.0 AND (CBNumber >= 19041 OR AllowOldWin = 1)' evaluates to true.
+[7F60:0B78][2026-09-30T21:24:44]i052: Condition 'WixBundleInstalled OR WixBundleForcedRestartPackage OR PreviousVersion <> VERSION' evaluates to true.
+[7F60:0B78][2026-09-30T21:24:44]i052: Condition 'PreviousVersion <> v5.3.1' evaluates to true.
+[7F60:5C18][2026-09-30T21:24:44]i199: Detect complete, result: 0x0, registration state: None, cached: No, eligible for cleanup: No
+[7F60:5C18][2026-09-30T21:24:44]i200: Plan begin, 1 packages, action: Install
+[7F60:5C18][2026-09-30T21:24:44]i000: Setting string variable 'WixBundleRollbackLog_Setup' to value 'C:\Users\Jonat\algoalpha\runtime\m16\podman-install-retry_000_Setup_rollback.log'
+[7F60:5C18][2026-09-30T21:24:44]i000: Setting string variable 'WixBundleLog_Setup' to value 'C:\Users\Jonat\algoalpha\runtime\m16\podman-install-retry_000_Setup.log'
+[7F60:5C18][2026-09-30T21:24:44]i222: Planned rollback boundary: 'WixDefaultBoundary', vital: Yes, transaction: No (default: No)
+[7F60:5C18][2026-09-30T21:24:44]i201: Planned package: Setup, state: Absent, default requested: Present, ba requested: Present, execute: Install, rollback: Uninstall, default cache strategy: Keep, ba requested strategy: Keep, cache: Vital, uncache: No, dependency: Register, expected install registration state: Present, expected cache registration state: Present
+[7F60:5C18][2026-09-30T21:24:44]i299: Plan complete, result: 0x0
+[7F60:5C18][2026-09-30T21:24:44]i300: Apply begin
+[7F60:5C18][2026-09-30T21:24:44]i010: Launching elevated engine process.
+[7F60:5C18][2026-09-30T21:24:45]i011: Launched elevated engine process.
+[7F60:5C18][2026-09-30T21:24:45]i012: Connected to elevated engine.
+[9CC8:0F64][2026-09-30T21:24:45]i358: Pausing automatic updates.
+[9CC8:0F64][2026-09-30T21:24:45]i359: Paused automatic updates.
+[9CC8:0F64][2026-09-30T21:24:45]i360: Creating a system restore point.
+[9CC8:0F64][2026-09-30T21:24:45]i361: Created a system restore point.
+[9CC8:0F64][2026-09-30T21:24:45]i370: Session begin, registration key: SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\{462CF9C3-20B3-45A0-9EA2-3EAD2F503A2D}, options: 0x3, disable resume: No
+[9CC8:0F64][2026-09-30T21:24:45]i000: Caching bundle from: 'C:\WINDOWS\TEMP\{DD2A0F70-4C01-4850-980A-F21206BEDBFD}\.be\podman-setup.exe' to: 'C:\ProgramData\Package Cache\{462CF9C3-20B3-45A0-9EA2-3EAD2F503A2D}\podman-setup.exe'
+[9CC8:0F64][2026-09-30T21:24:45]i320: Registering bundle dependency provider: {462CF9C3-20B3-45A0-9EA2-3EAD2F503A2D}, version: 5.8.3
+[9CC8:0F64][2026-09-30T21:24:45]i371: Updating session, registration key: SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\{462CF9C3-20B3-45A0-9EA2-3EAD2F503A2D}, resume: Active, restart initiated: No, disable resume: No
+[9CC8:5C5C][2026-09-30T21:24:45]i305: Verified acquired payload: Setup at path: C:\ProgramData\Package Cache\.unverified\Setup, moving to: C:\ProgramData\Package Cache\{C6F9601D-FEA9-4757-9419-53A1EF8E3F77}v5.8.3\podman.msi.
+[9CC8:0F64][2026-09-30T21:24:45]i323: Registering package dependency provider: {C6F9601D-FEA9-4757-9419-53A1EF8E3F77}_v5.8.3, version: 5.8.3, package: Setup
+[9CC8:0F64][2026-09-30T21:24:45]i301: Applying execute package: Setup, action: Install, path: C:\ProgramData\Package Cache\{C6F9601D-FEA9-4757-9419-53A1EF8E3F77}v5.8.3\podman.msi, arguments: ' INSTALLDIR="C:\Program Files\RedHat\Podman" MACHINE_PROVIDER="wsl" SKIP_CONFIG_FILE_CREATION="0" ARPSYSTEMCOMPONENT="1" MSIFASTINSTALL="7" BURNMSIINSTALL=1 REINSTALLMODE="muso" REBOOT=ReallySuppress'
+[7F60:5C18][2026-09-30T21:24:49]i319: Applied execute package: Setup, result: 0x0, restart: None
+[9CC8:0F64][2026-09-30T21:24:49]i325: Registering dependency: {462CF9C3-20B3-45A0-9EA2-3EAD2F503A2D} on package provider: {C6F9601D-FEA9-4757-9419-53A1EF8E3F77}_v5.8.3, package: Setup
+[7F60:5C18][2026-09-30T21:24:49]i373: Calculating whether to keep registration
+[7F60:5C18][2026-09-30T21:24:49]i374:   package: Setup, install registration state: Present, cache registration state: Present
+[7F60:5C18][2026-09-30T21:24:49]i372: Session end, registration key: SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\{462CF9C3-20B3-45A0-9EA2-3EAD2F503A2D}, resume: ARP, restart: None, disable resume: No, default registration: Full, ba requested registration: Full
+[9CC8:0F64][2026-09-30T21:24:49]i371: Updating session, registration key: SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\{462CF9C3-20B3-45A0-9EA2-3EAD2F503A2D}, resume: ARP, restart initiated: No, disable resume: No
+[9CC8:0F64][2026-09-30T21:24:49]i420: Resuming automatic updates.
+[9CC8:0F64][2026-09-30T21:24:49]i421: Resumed automatic updates.
+[7F60:0B78][2026-09-30T21:24:49]i000: Setting string variable 'WixStdBARestartRequired' to value ''
+[7F60:5C18][2026-09-30T21:24:49]i399: Apply complete, result: 0x0, restart: None, ba requested restart:  No
+[7F60:5C18][2026-09-30T21:24:49]i500: Shutting down, exit code: 0x0
+[7F60:5C18][2026-09-30T21:24:49]i502: Cleanup begin.
+[7F60:5C18][2026-09-30T21:24:49]i503: Cleanup not required due to running Apply.
+[7F60:5C18][2026-09-30T21:24:49]i599: Cleanup complete, result: 0x0
+[7F60:5C18][2026-09-30T21:24:49]i410: Variable: AllowOldWin = 0
+[7F60:5C18][2026-09-30T21:24:49]i410: Variable: CBNumber = 26200
+[7F60:5C18][2026-09-30T21:24:49]i410: Variable: InstallFolder = C:\Program Files\RedHat\Podman
+[7F60:5C18][2026-09-30T21:24:49]i410: Variable: LaunchArguments = "[InstallFolder]\podman-for-windows.html"
+[7F60:5C18][2026-09-30T21:24:49]i410: Variable: LaunchTarget = explorer.exe
+[7F60:5C18][2026-09-30T21:24:49]i410: Variable: MachineProvider = wsl
+[7F60:5C18][2026-09-30T21:24:49]i410: Variable: ProgramFiles64Folder = C:\Program Files\
+[7F60:5C18][2026-09-30T21:24:49]i410: Variable: RebootPending = 1
+[7F60:5C18][2026-09-30T21:24:49]i410: Variable: SkipConfigFileCreation = 0
+[7F60:5C18][2026-09-30T21:24:49]i410: Variable: VERSION = 5.8.3
+[7F60:5C18][2026-09-30T21:24:49]i410: Variable: VersionNT = 10.0.0.0
+[7F60:5C18][2026-09-30T21:24:49]i410: Variable: WixBundleAction = 6
+[7F60:5C18][2026-09-30T21:24:49]i410: Variable: WixBundleCommandLineAction = 6
+[7F60:5C18][2026-09-30T21:24:49]i410: Variable: WixBundleElevated = 1
+[7F60:5C18][2026-09-30T21:24:49]i410: Variable: WixBundleFileVersion = 5.0.2.0
+[7F60:5C18][2026-09-30T21:24:49]i410: Variable: WixBundleInProgressName = 
+[7F60:5C18][2026-09-30T21:24:49]i410: Variable: WixBundleInstalled = 0
+[7F60:5C18][2026-09-30T21:24:49]i410: Variable: WixBundleLog = C:\Users\Jonat\algoalpha\runtime\m16\podman-install-retry.log
+[7F60:5C18][2026-09-30T21:24:49]i410: Variable: WixBundleLog_Setup = C:\Users\Jonat\algoalpha\runtime\m16\podman-install-retry_000_Setup.log
+[7F60:5C18][2026-09-30T21:24:49]i410: Variable: WixBundleManufacturer = Red Hat
+[7F60:5C18][2026-09-30T21:24:49]i410: Variable: WixBundleName = Podman
+[7F60:5C18][2026-09-30T21:24:49]i410: Variable: WixBundleOriginalSource = C:\Users\Jonat\AppData\Local\Temp\WinGet\RedHat.Podman.5.8.3\podman-installer-windows-amd64.exe
+[7F60:5C18][2026-09-30T21:24:49]i410: Variable: WixBundleOriginalSourceFolder = C:\Users\Jonat\AppData\Local\Temp\WinGet\RedHat.Podman.5.8.3\
+[7F60:5C18][2026-09-30T21:24:49]i410: Variable: WixBundleProviderKey = {462CF9C3-20B3-45A0-9EA2-3EAD2F503A2D}
+[7F60:5C18][2026-09-30T21:24:49]i410: Variable: WixBundleRollbackLog_Setup = C:\Users\Jonat\algoalpha\runtime\m16\podman-install-retry_000_Setup_rollback.log
+[7F60:5C18][2026-09-30T21:24:49]i410: Variable: WixBundleTag = 
+[7F60:5C18][2026-09-30T21:24:49]i410: Variable: WixBundleUILevel = 2
+[7F60:5C18][2026-09-30T21:24:49]i410: Variable: WixBundleVersion = 5.8.3
+[7F60:5C18][2026-09-30T21:24:49]i410: Variable: WixStdBALanguageId = 1033
+[7F60:5C18][2026-09-30T21:24:49]i410: Variable: WixStdBARestartRequired = 
+[7F60:5C18][2026-09-30T21:24:49]i410: Variable: WixStdBAShowVersion = 1
+[7F60:5C18][2026-09-30T21:24:49]i410: Variable: WixStdBASuppressOptionsUI = 1
+[7F60:5C18][2026-09-30T21:24:49]i007: Exit code: 0x0, restarting: No

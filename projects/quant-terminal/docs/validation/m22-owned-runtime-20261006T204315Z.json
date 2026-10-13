@@ -1,0 +1,27 @@
+{
+  "at": "2026-10-06T20:43:15.447994+00:00",
+  "audit": "C:\\Users\\Jonat\\algoalpha\\runtime\\m22-owner-20261006T204315Z-67bebe8f\\audit.jsonl",
+  "public_admission_enabled": false,
+  "source_hashes": {
+    "src\\quant_terminal\\sandbox\\podman.py": "2de3bd3aaf936961b583d8bacd374177986e20b90f829e9cfce95b1502646e88",
+    "src\\quant_terminal\\sandbox\\wsl_keeper.py": "ca65b496401e0a1e07a7b2355fe513c46c10dd7b59ebf7a425d7acac3465bdb0",
+    "src\\quant_terminal\\sandbox\\runtime_owner.py": "1056fddcb0f26b0dce53153e2d07db0338d926a10bb7003e95c5d2aa846659c6"
+  },
+  "backend_identity": {
+    "backend": "podman",
+    "client_version": "5.8.3",
+    "engine_version": "5.8.8",
+    "image_files": {
+      "quant_terminal/sandbox/protocol.py": "caa9342eb746f6eb38ff12bc7d4ad751310a415a573228195d1037c4c7c86394",
+      "strategy_worker.py": "0e5dbe5c41d1ad49df2cf87e5f4d58d66128538b483490d40107d477238cc94b"
+    },
+    "image_id": "083a4ee8f04d4e4c91bc735931eccd5780c8e4e8ba7acfae04b6234fc573fc29",
+    "python_version": "3.13.15",
+    "seccomp_sha256": "8286354c8a4e31bacb3a8969e6cc4abad3466a17db16bb0fba7b8bd0f45f8e02"
+  },
+  "competitor": "isolation_busy",
+  "benign_protocol_replay": "equal_ok_empty_intents",
+  "cleanup": "confirmed_before_release",
+  "post_owner_container_inventory": [],
+  "result": "passed"
+}

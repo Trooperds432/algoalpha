@@ -1,0 +1,90 @@
+﻿{
+    "id":  "0d73ab60-5802-49f6-89b9-4dbff1ed400e",
+    "companyId":  "3b1d401d-7010-4eed-acd1-be7d52372c07",
+    "goalId":  null,
+    "name":  "Multi-Agent ETF Market Maker",
+    "description":  "Build seven paper-only deliverables: independent fair value, order-flow forecasting, inventory and hedging, dynamic quotes, risk scenarios, adversarial validation, veto-aware capital allocation. Synthetic engineering demo, not market alpha validation.",
+    "status":  "completed",
+    "leadAgentId":  "9ecfbe59-069d-41c6-900d-0a55c2f37ced",
+    "targetDate":  null,
+    "color":  null,
+    "icon":  null,
+    "env":  null,
+    "pauseReason":  null,
+    "pausedAt":  null,
+    "executionWorkspacePolicy":  null,
+    "archivedAt":  null,
+    "createdAt":  "2026-09-22T15:28:37.418Z",
+    "updatedAt":  "2026-09-22T18:58:36.437Z",
+    "urlKey":  "multi-agent-etf-market-maker",
+    "goalIds":  [
+
+                ],
+    "goals":  [
+
+              ],
+    "codebase":  {
+                     "workspaceId":  "231d597b-0f56-43d3-b7a9-8eb7780b120d",
+                     "repoUrl":  null,
+                     "repoRef":  null,
+                     "defaultRef":  null,
+                     "repoName":  null,
+                     "localFolder":  "C:/Users/Jonat/algoalpha/projects/etf-market-maker",
+                     "managedFolder":  "C:\\Users\\Jonat\\algoalpha\\.paperclip\\instances\\default\\projects\\3b1d401d-7010-4eed-acd1-be7d52372c07\\0d73ab60-5802-49f6-89b9-4dbff1ed400e\\_default",
+                     "effectiveLocalFolder":  "C:/Users/Jonat/algoalpha/projects/etf-market-maker",
+                     "origin":  "local_folder"
+                 },
+    "workspaces":  [
+                       {
+                           "id":  "231d597b-0f56-43d3-b7a9-8eb7780b120d",
+                           "companyId":  "3b1d401d-7010-4eed-acd1-be7d52372c07",
+                           "projectId":  "0d73ab60-5802-49f6-89b9-4dbff1ed400e",
+                           "name":  "ETF market maker",
+                           "sourceType":  "local_path",
+                           "cwd":  "C:/Users/Jonat/algoalpha/projects/etf-market-maker",
+                           "repoUrl":  null,
+                           "repoRef":  null,
+                           "defaultRef":  null,
+                           "visibility":  "default",
+                           "setupCommand":  null,
+                           "cleanupCommand":  null,
+                           "remoteProvider":  null,
+                           "remoteWorkspaceRef":  null,
+                           "sharedWorkspaceKey":  null,
+                           "metadata":  null,
+                           "runtimeConfig":  null,
+                           "isPrimary":  true,
+                           "runtimeServices":  [
+
+                                               ],
+                           "createdAt":  "2026-09-22T15:28:37.418Z",
+                           "updatedAt":  "2026-09-22T15:28:37.418Z"
+                       }
+                   ],
+    "primaryWorkspace":  {
+                             "id":  "231d597b-0f56-43d3-b7a9-8eb7780b120d",
+                             "companyId":  "3b1d401d-7010-4eed-acd1-be7d52372c07",
+                             "projectId":  "0d73ab60-5802-49f6-89b9-4dbff1ed400e",
+                             "name":  "ETF market maker",
+                             "sourceType":  "local_path",
+                             "cwd":  "C:/Users/Jonat/algoalpha/projects/etf-market-maker",
+                             "repoUrl":  null,
+                             "repoRef":  null,
+                             "defaultRef":  null,
+                             "visibility":  "default",
+                             "setupCommand":  null,
+                             "cleanupCommand":  null,
+                             "remoteProvider":  null,
+                             "remoteWorkspaceRef":  null,
+                             "sharedWorkspaceKey":  null,
+                             "metadata":  null,
+                             "runtimeConfig":  null,
+                             "isPrimary":  true,
+                             "runtimeServices":  [
+
+                                                 ],
+                             "createdAt":  "2026-09-22T15:28:37.418Z",
+                             "updatedAt":  "2026-09-22T15:28:37.418Z"
+                         },
+    "managedByPlugin":  null
+}

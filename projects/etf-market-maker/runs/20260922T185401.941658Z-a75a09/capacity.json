@@ -1,0 +1,89 @@
+{
+  "target_capital_gbp": 100000000,
+  "scenarios": [
+    {
+      "capital_gbp": 100000000,
+      "daily_turnover": 0.1,
+      "assumed_adv_gbp": 50000000,
+      "daily_volume_gbp": 10000000.0,
+      "participation": 0.2,
+      "participation_cap": 0.05,
+      "within_volume_cap": false
+    },
+    {
+      "capital_gbp": 100000000,
+      "daily_turnover": 1,
+      "assumed_adv_gbp": 50000000,
+      "daily_volume_gbp": 100000000,
+      "participation": 2.0,
+      "participation_cap": 0.05,
+      "within_volume_cap": false
+    },
+    {
+      "capital_gbp": 100000000,
+      "daily_turnover": 5,
+      "assumed_adv_gbp": 50000000,
+      "daily_volume_gbp": 500000000,
+      "participation": 10.0,
+      "participation_cap": 0.05,
+      "within_volume_cap": false
+    },
+    {
+      "capital_gbp": 100000000,
+      "daily_turnover": 0.1,
+      "assumed_adv_gbp": 250000000,
+      "daily_volume_gbp": 10000000.0,
+      "participation": 0.04,
+      "participation_cap": 0.05,
+      "within_volume_cap": true
+    },
+    {
+      "capital_gbp": 100000000,
+      "daily_turnover": 1,
+      "assumed_adv_gbp": 250000000,
+      "daily_volume_gbp": 100000000,
+      "participation": 0.4,
+      "participation_cap": 0.05,
+      "within_volume_cap": false
+    },
+    {
+      "capital_gbp": 100000000,
+      "daily_turnover": 5,
+      "assumed_adv_gbp": 250000000,
+      "daily_volume_gbp": 500000000,
+      "participation": 2.0,
+      "participation_cap": 0.05,
+      "within_volume_cap": false
+    },
+    {
+      "capital_gbp": 100000000,
+      "daily_turnover": 0.1,
+      "assumed_adv_gbp": 1000000000,
+      "daily_volume_gbp": 10000000.0,
+      "participation": 0.01,
+      "participation_cap": 0.05,
+      "within_volume_cap": true
+    },
+    {
+      "capital_gbp": 100000000,
+      "daily_turnover": 1,
+      "assumed_adv_gbp": 1000000000,
+      "daily_volume_gbp": 100000000,
+      "participation": 0.1,
+      "participation_cap": 0.05,
+      "within_volume_cap": false
+    },
+    {
+      "capital_gbp": 100000000,
+      "daily_turnover": 5,
+      "assumed_adv_gbp": 1000000000,
+      "daily_volume_gbp": 500000000,
+      "participation": 0.5,
+      "participation_cap": 0.05,
+      "within_volume_cap": false
+    }
+  ],
+  "approval": false,
+  "reason": "No measured ADV, creation/redemption, borrow, queue, or hedge capacity evidence",
+  "fx_assumption": "Scenario values already in GBP; no live FX conversion; USD simulation separate"
+}

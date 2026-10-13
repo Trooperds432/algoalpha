@@ -1,0 +1,41 @@
+{
+  "gate": "not_passed",
+  "tests": 30,
+  "failures": 1,
+  "skips": 0,
+  "passed": 29,
+  "duration_seconds": 155.923,
+  "backend": "Podman 5.8.3 WSL2 Linux",
+  "image": "sha256:d0e7be621e8522748273ceb2b87f8758dbb2fd2280bef93f19f1e35c9f795747",
+  "seccomp_profile": "/home/user/algoalpha-seccomp.json",
+  "source_sha256": {
+    "src/quant_terminal/sandbox/podman.py": "0be83c9aa0d0ada8ef0eaebbf061c6574f130100836925ab53399e1d0ab8b681",
+    "src/quant_terminal/sandbox/protocol.py": "caa9342eb746f6eb38ff12bc7d4ad751310a415a573228195d1037c4c7c86394",
+    "src/quant_terminal/sandbox/strategy_worker.py": "0848ea3a7c9a9a16042203b677004aecd63219628c1ae1526395c409d0fb8bf9",
+    "tests/security/test_m16_hostile.py": "19d52299f6cf2899a42cb0c311cfa10736b24c37d3616839597a2c33296d6fe4"
+  },
+  "hostile_source_host_execution": false,
+  "failures_summary": [
+    "Buffered print flushed after worker stdout restoration contaminates protocol; trusted backend rejected malformed response (safe non-success) but redaction fixture requires returned error response"
+  ],
+  "evidence": [
+    "docs\\validation\\m16-hostile-run-20261001B.xml",
+    "docs/validation/m16-hostile-run-20261001B.txt"
+  ],
+  "verified": [
+    "Concurrent two real strategy containers observed together",
+    "Cancellation follows observed running strategy and descendants",
+    "Abrupt launcher death reaps before three seconds despite ten-second conmon budget",
+    "All resource and filesystem/network/native and child attacks contained"
+  ],
+  "limits": {
+    "wall_seconds": 5,
+    "cpu_seconds": 3,
+    "memory_bytes": 64000000,
+    "process_count": 4,
+    "open_files": 32,
+    "scratch_bytes": 0,
+    "scratch_files": 0,
+    "output_bytes": 4096
+  }
+}

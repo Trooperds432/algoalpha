@@ -1,0 +1,615 @@
+{
+  "at": "2026-10-08T19:53:48.317793+00:00",
+  "state": "C:\\Users\\Jonat\\algoalpha\\runtime\\m22-gateway-20261008T195348Z-281f07ab",
+  "scope": "acceptance_testing",
+  "final_release_approved": false,
+  "default_admission_enabled": false,
+  "source_hashes": {
+    "src/quant_terminal/__init__.py": "b9e9c849fc505be4eeaafb335cf42578ee32109925cc6968a1814221f6d2e321",
+    "src/quant_terminal/__main__.py": "935a1c1166b0c1ea35a82256345000bf2c73ded718d77773bc27a71ecce28f7d",
+    "src/quant_terminal/accounting/__init__.py": "69f4f70af807453ea9173f03b66376552390a27b55a8dcd91b7cf5d154f31671",
+    "src/quant_terminal/accounting/ledger.py": "9b4b8d2fe5376752cbd96dba0578f3bfd1dbe7e8ccbecf7c0c23a284a5646664",
+    "src/quant_terminal/advanced_assets/__init__.py": "3436cdc0cc88e1687b27a27776e2ae747d97f9aac6f8846030c4acbc407d9331",
+    "src/quant_terminal/advanced_assets/futures.py": "6facb8a6ed9ab5bd61efbeff00a6d673626fcd9e7257c29b99e815c1dbb9d8f1",
+    "src/quant_terminal/advanced_assets/money.py": "c24b61fccca108e66a32bc143410b41bb7afbf52a7883b3cbfa4598ad316eb94",
+    "src/quant_terminal/advanced_assets/options.py": "2f664f023049b98a8e8bd7ad25e96cd340a8ee6ec781d25c386d666008937a83",
+    "src/quant_terminal/advanced_assets/service.py": "eee6a8b4d4f6d127de96b0d423a317725791943ad9d64c5aa71d7797cbf94965",
+    "src/quant_terminal/analytics/__init__.py": "f4d0bad2e34b429727f76cb80764d3c46451d1e5bd70c2b6b79ad0291b123d12",
+    "src/quant_terminal/analytics/metrics.py": "b8da2cd837176d08a2625fc91e5b48197784afaeef06a72a7eaf4b39af61656c",
+    "src/quant_terminal/api.py": "babdbfcdf9bb880989e7593fcc6172a31c4df15fc5dcafbd444d23bf9782d6a9",
+    "src/quant_terminal/application/__init__.py": "59dd1ee11ff63aa0ed8d9ba5ac93f20b99edbe4458519b5e295ae1e638700472",
+    "src/quant_terminal/application/campaigns.py": "ff654ab0ab870fcc05c018b04c33744932668530c80c7ce88fab281c2bad4403",
+    "src/quant_terminal/application/isolated_jobs.py": "a00b83328516604c50b24f3f1a26f8ae9ea2b8bc200fd54c94f029ac54d20c9d",
+    "src/quant_terminal/application/isolated_runtime.py": "54b385992ac6f48c2ad9f74fbaa4b463f4949ddc6c5fa1d7157f16b2994a4efb",
+    "src/quant_terminal/application/jobs.py": "c27ddb00252dd702c25d7d6944b5752c32f51afe5d9cd8b3ff9d745945708a18",
+    "src/quant_terminal/application/runtime.py": "62c7f361c4991a546c0995267b430735d5ab1f406f67f472dd2d407d6e969593",
+    "src/quant_terminal/application/service.py": "ef41308642814f1ba60a4a7fa772402098e3be887c6b6a5e4ddf10070237066a",
+    "src/quant_terminal/application/worker.py": "66388c9bfaaa3f669b1fdad0ff77a18da4b01c8d76980e750f2dd1b4e07960d4",
+    "src/quant_terminal/backtesting/__init__.py": "39eeb64f3e88adfaf47c87696a11642b337e0850226d972956fd5d46dcc8c5e5",
+    "src/quant_terminal/backtesting/engine.py": "7b61f87c64f2bcc16376d7ee7b44464fb5e840b6f44d835d053a15a6480662f2",
+    "src/quant_terminal/backtesting/models.py": "97ea279af8c6944b61066de0d120f07363387b6c72067e085e18676f1b3fb45f",
+    "src/quant_terminal/backtesting/strategies.py": "2db83e037ac29d0f51a38ca629c5c5e23372a3742a74728ac5d1a93b59152fb5",
+    "src/quant_terminal/brokers/__init__.py": "635108f480e1ae682786054a8d20cee85a6ccaae5b0efc19e7ea989dcdb79dd9",
+    "src/quant_terminal/brokers/status.py": "77d0ce04dcbb17677fff0c9fd122cd8f04f9ec064d1db89d4840d0b35001a848",
+    "src/quant_terminal/cli.py": "7fbafb2e3c4c460d2d846e5b7f0393b8a485a90e9844aa9c47fc8bf5f851afbb",
+    "src/quant_terminal/config.py": "70ac764303cc8643be25bafc60b652ea43beb4c4f4a466b021e5381372450ac8",
+    "src/quant_terminal/core/__init__.py": "89d45cf461972de09c433a629a8c967b49afa141946c08faa541a1b4ddec23e6",
+    "src/quant_terminal/core/clock.py": "002333d02c512d125875930c28444bab379593da57258f53333722105a3bd5b3",
+    "src/quant_terminal/core/enums.py": "ff555bf1355e38b0ab144a0d889757a76cc0cc9b431d64868b73761626be3a50",
+    "src/quant_terminal/core/events.py": "a41fa16b325325b1058648a650d73d332667eda4ac5a9f332bbd88615babc84b",
+    "src/quant_terminal/core/exceptions.py": "879dcbacef34305cc520d42986f8fa11c89e8f885043d2845a783d7943dfd711",
+    "src/quant_terminal/core/identifiers.py": "443c98476bdb0ff8b5f2b38179abbd6056c37c317903f9669a1f8129cca60d84",
+    "src/quant_terminal/core/serialization.py": "3e462da3f422033f0620d8c9cafa0c401790e14ed17eaebb8be3a0d7dc3e469a",
+    "src/quant_terminal/data/__init__.py": "f37ecf92786ce13fe600b21d210ae9314f4485af24d2902f7408cbcec6956ce6",
+    "src/quant_terminal/data/calendar.py": "6400d1922270962e0877ad5454c0e22ce45035dd6684525eaf9d360f02bdf4d3",
+    "src/quant_terminal/data/feed.py": "0b1f838db447b27759bc3f388c1879b746b4aa6c8b3a493154db9512e2a9979b",
+    "src/quant_terminal/data/model.py": "48e4e93874db8729b1b1366b11f85f42821eae7fcca0840a0e71adc585a207fc",
+    "src/quant_terminal/data/storage.py": "e58e1a0473e26547545039eb3511602ba9d732cf4feb8f0182e95ebd9d9d10c3",
+    "src/quant_terminal/execution/__init__.py": "3f15627c63b3e367ed02b8010f29ae0c5fe6ad2cb41044c988c354af1b3c560f",
+    "src/quant_terminal/execution/brokers/__init__.py": "d52340f7cf3872b1dfd7f0ff44b2b0eae75f78dc3d9fff9ae3e24405f94345cf",
+    "src/quant_terminal/execution/brokers/trading212.py": "be1c8e0448af6802866025fe45323c7ddd0f2d8b5632b8bec260a331729b28a7",
+    "src/quant_terminal/execution/fills.py": "50cf9744a6e1ad543c029a469fc9a8c15b539f6a24cc0643d0c0542d3948bdc3",
+    "src/quant_terminal/execution/models.py": "fd6e5b492378e03716221eef317c6cc0ad82758b2a4a14578be18f6e74f8243d",
+    "src/quant_terminal/execution/simulator.py": "baf5ae3cb24f7a60fdbb98603fa8c55bb3ecd818a8fd6d6a4c6f57c26f694831",
+    "src/quant_terminal/experiments/__init__.py": "221786585043d2f6146195565e0c68ab64557238f21797f6f1450bd978f69e37",
+    "src/quant_terminal/experiments/models.py": "45410ecf5d36982fc4cbf14527af3fd8931c3f28d3de49500cf730caf0912244",
+    "src/quant_terminal/experiments/source.py": "96e0f0a88ee61b10a6bedf93824bf32e20c72d2fa519bf11a0172bb71e4213ce",
+    "src/quant_terminal/experiments/store.py": "e5bce1cbf09f8ea96760455173219eddbf7215225c2b358fd6be7e8c0e809d80",
+    "src/quant_terminal/logging.py": "18d1199874e705790971ef0d3bf61f4413c4bd4ee0fbf40ec4d9be6ea461fd4e",
+    "src/quant_terminal/monte_carlo/__init__.py": "8540d3229d657c29934fcfa5c711507e28bbf70df9731b2e62ec2a73ef275de6",
+    "src/quant_terminal/monte_carlo/engine.py": "770483b55352e7f7e991bde407277663380e49596fc16957c1fda5d13e005e53",
+    "src/quant_terminal/monte_carlo/models.py": "ebf25ad1e2917b3b5e6681c1592db52ca15b9ece820744de43a64e25b153ccb9",
+    "src/quant_terminal/optimization/__init__.py": "c5e5bde038648483b8b67f49631392f56b14d692eb5f997519969a324bf6b915",
+    "src/quant_terminal/optimization/analysis.py": "00e5496bec84c36aca4326d2cc4f6432187b0151f7ffe466f445f198c0935e1e",
+    "src/quant_terminal/optimization/engine.py": "e0116a339cd56eab98f9dee933236fdec64ba3cd4a9bc4440a85952acbcd8159",
+    "src/quant_terminal/optimization/journal.py": "b6dd4825eb635d03f30bf903256a0c10896e2af2f247a29498b0153c985ec961",
+    "src/quant_terminal/optimization/models.py": "47be098ce8a7e78fb1e6859824079106c4a12aedc5de71eeeca14afff33ee78e",
+    "src/quant_terminal/orders/__init__.py": "da65f90112fdd75ce09e89c7e9a2f8fb40e6656ca7dd6a36aa3763e4bb4b8e0a",
+    "src/quant_terminal/orders/lifecycle.py": "8a64ab935d3783fd56609566075b95b36688c3449c50e6f463591ca2cd6ebac2",
+    "src/quant_terminal/orders/models.py": "dfef1973616fcf90ee4ffd4cd125bb9297f0f9eb4dee1a39812ca0882f8f5aed",
+    "src/quant_terminal/paper/__init__.py": "13ac8cbcf78f1faf04de3a7bad12ec8d5479e60368458bf7f911de0e873950ba",
+    "src/quant_terminal/paper/clock.py": "9376440ba29b224a7c5170ccf356ce57e15f9a988df3a2743d2f8daa38231176",
+    "src/quant_terminal/paper/engine.py": "35043db8edc3d49934c8d4faf5612409f690296c6143cabed0ce77fb72793686",
+    "src/quant_terminal/paper/feed.py": "52fee0151b53c24dc6d2ab816876d5551817f99ffccac843cea4642423ce6bb4",
+    "src/quant_terminal/paper/schema.py": "05aecfac679c9ff06e1d0fac4927666781a20fa0ddc7585e52e6287a1ff7ba33",
+    "src/quant_terminal/paper/service.py": "97258020808ebd3cc952ba4213ffbc11ef6f4267eccffc385fb854e678552645",
+    "src/quant_terminal/portfolio_research/__init__.py": "a7dbb3287eb2f69edafcd092ef7b0ed6e0564c792ea2dac0355f9ec3571335d5",
+    "src/quant_terminal/portfolio_research/allocation.py": "83d600dee6a794a2a7e97a7cec9cc230aee41765d5a6c4263099efa284dafe3c",
+    "src/quant_terminal/portfolio_research/diagnostics.py": "a8eef417b31093091ffe24ae60b71de4394936b78e906742a324c3620a8f8d1c",
+    "src/quant_terminal/portfolio_research/math.py": "86b1a2a88c3e43d589aadef11e07bd246a7752d575433041b83f43d38614a92c",
+    "src/quant_terminal/portfolio_research/service.py": "4d7c3579f92c697a43dff1d9562e15bde3c530964d38b1e76e21656c34bc8ef3",
+    "src/quant_terminal/release/__init__.py": "3a9c56b1bd554e45fd6c10a91e2e656ea3b01993445a23aa98f0fd2a9af9b26a",
+    "src/quant_terminal/release/distribution.py": "a5973bb44a8e8a725bd7f1b5b8c7455c087366a559ad921afb342637b5b2c638",
+    "src/quant_terminal/release/observability.py": "a5249549b5e058ac65e946d69bea997ab684ae25dca45a7ec76073c473276348",
+    "src/quant_terminal/release/storage.py": "5b9d6af5cbe648152792f2b2205da1f6d339af645a17924733a83f9e5fa99fea",
+    "src/quant_terminal/reporting/__init__.py": "24fc3176094162755ff03aa7044145f144f888866e1a3a7385fc52f5442e9c60",
+    "src/quant_terminal/reporting/builder.py": "2fae3f4df54824485c45cb70a30ff4ec36c73f5546b8e58c3acab3d0cf2f69af",
+    "src/quant_terminal/reporting/export.py": "c4c3260557731508aaf7777ebe93082882c9de6f1e7e5bb3737846f3b25cfe4e",
+    "src/quant_terminal/reporting/html.py": "96e9d3819861456952ee59b727d1723f40e8cf9c8fa9042c2977f25bbac2da9c",
+    "src/quant_terminal/reporting/models.py": "d08d48af7788305557ffdd7e974880a209801ee1fbb9275172a90d76ea12ced6",
+    "src/quant_terminal/reporting/utils.py": "309a0bda4c3c287aa483dd34393404ca6934a4fd490471c2d7681ddb9740f012",
+    "src/quant_terminal/risk/pretrade.py": "3f8e9158d93eab3486da91cdeb8371a3ab91af7c0d9bcafb8225d96dc49d6df6",
+    "src/quant_terminal/robustness/__init__.py": "d0ecbbbd4a77e4b6a6a2714cd4e5024f1977d92b3b9ffe17c862753915ee2648",
+    "src/quant_terminal/robustness/adapter.py": "618b8c7b1416930aa1814fa071a7417e168c15457134ca49d1db8bf8660d15f0",
+    "src/quant_terminal/robustness/bootstrap.py": "a895bdfe4d5036a426a854186e51fc77cf5c284c20b46f5197c8a9c96f6b163d",
+    "src/quant_terminal/robustness/engine.py": "d7116792e47d070c42b0d703cf61fec412c9b4310b4636300efc98ca176296e6",
+    "src/quant_terminal/robustness/method_support.py": "04a672dc95991a6daf71ea5f3ff4d5994018d2dddb2405ea94359ff74634ec5e",
+    "src/quant_terminal/robustness/models.py": "1e279aa74d8345571f179fff60682b984d6361631006a79d75a323c41f76cae8",
+    "src/quant_terminal/robustness/sharpe.py": "3ae4ec8cab169e3f877c06f9108691629ea6df38a666bd4bba11c77e0df6d73d",
+    "src/quant_terminal/sandbox/admission.py": "cd46244b66a765c7f287c61ffd2fc19f041b9f8a9fce4a262a3b287ecdc56df8",
+    "src/quant_terminal/sandbox/gateway.py": "98963e024df42e606d9dd6a664bce103a41393db5964fb8da2e18b045cd0d946",
+    "src/quant_terminal/sandbox/podman.py": "0b2260f7b777f2daa9a43096b88648d5a8bdf826b14bbc4b5ad4801f533aa870",
+    "src/quant_terminal/sandbox/protocol.py": "caa9342eb746f6eb38ff12bc7d4ad751310a415a573228195d1037c4c7c86394",
+    "src/quant_terminal/sandbox/public_audit.py": "7a8909fd48a02b06e91506e62d9ece484d8bc09c0eae2877c8b0983c3f58bdbe",
+    "src/quant_terminal/sandbox/runtime_owner.py": "0cdfe178324f368a8b04aecd67b96384e36dfe2da44f2756519486c11b3114e2",
+    "src/quant_terminal/sandbox/source_package.py": "38a7421b5efcd100791d210bcb7a15e6cf724012d5413d14c05c7b96fe757390",
+    "src/quant_terminal/sandbox/strategy.py": "0c5ecd15128f6fb9ad1d4ef57abe168ab8421d4ff4915c19a678bf8f660b52b5",
+    "src/quant_terminal/sandbox/strategy_worker.py": "0e5dbe5c41d1ad49df2cf87e5f4d58d66128538b483490d40107d477238cc94b",
+    "src/quant_terminal/sandbox/wsl_keeper.py": "ca65b496401e0a1e07a7b2355fe513c46c10dd7b59ebf7a425d7acac3465bdb0",
+    "src/quant_terminal/walk_forward/__init__.py": "cfcd3896e662c356726c65a03eb93c99b88fc4fc748a79bdf673979818fbb0d2",
+    "src/quant_terminal/walk_forward/engine.py": "0bc007a6a442bafa9053a226d45c933206cfc033ccb8af40f6803c8ab71f8d06",
+    "src/quant_terminal/walk_forward/models.py": "2a342ab41c8a1150535180349314f1ef754d79890ab736a39a31fb165f8e6fe4"
+  },
+  "http_job_id": "3cbc5cfd94ca4d569535501b74c2d099",
+  "http_run_id": "run-3cbc5cfd94ca4d569535501b74c2d099",
+  "http_status": "succeeded",
+  "http_result": {
+    "artifacts": [
+      {
+        "name": "report-bundle.zip",
+        "sha256": "e2e44d9a2bbbeefba12f19e22e61af57a9a8abb0425a8427863483be822d2e8c",
+        "size_bytes": 147873
+      },
+      {
+        "name": "source-bundle.zip",
+        "sha256": "8ce302eab664e49009b08e687e4ec1af6252526bf7195c8060d7cdf2aa37881b",
+        "size_bytes": 6638067
+      },
+      {
+        "name": "strategy-source.py",
+        "sha256": "e6b6ada2860fbc700bf266120abc0c0cde2c0117e482add0edf45bda30657a2a",
+        "size_bytes": 40
+      }
+    ],
+    "config": {
+      "analytics_settings": {
+        "annual_mar": "0",
+        "annual_risk_free_rate": "0",
+        "annualization": 252,
+        "risk_of_ruin": null,
+        "var_confidences": [
+          "0.95",
+          "0.99",
+          "0.999"
+        ]
+      },
+      "backtest_settings": {
+        "allow_short": false,
+        "allow_zero_costs": false,
+        "boundary_liquidation": false,
+        "max_order_notional": "1000000",
+        "short_assumption": null
+      },
+      "benchmark": null,
+      "currency": "USD",
+      "datasets": [
+        {
+          "content_hash": "4fa468966ef5db526cb1be8603ab65dc36e397df1a1604a9afca4416a6c67c07",
+          "input_hash": "027af6eaac09dbc50188298653015fd4722420588de0def313ae9b3490f4d9b7",
+          "instrument_ids": [
+            "ETF-1"
+          ],
+          "row_count": 2,
+          "snapshot_id": "7f2e0813345ae26caf644bd1f3f52486bc62a7df096b9ee521dd4ce99f3d694d"
+        }
+      ],
+      "dependency_lock_hash": "debd1525a6d342409d95db7eb33bba95323ff2241935c9eaecfb8b2b2b794877",
+      "end": "2026-11-28T00:00:00+00:00",
+      "engine_version": "1.0.0rc1",
+      "execution_assumptions": {
+        "commission": {
+          "kind": "per_unit",
+          "minimum": null,
+          "per_unit_rate": "0.1"
+        },
+        "commission_model_repr": "PerUnitCommission(per_unit_rate=Decimal('0.1'), minimum=None)",
+        "maximum_participation": "1",
+        "slippage": {
+          "kind": "none",
+          "value": "0"
+        },
+        "slippage_model_repr": "ConfiguredSlippage(kind=<SlippageKind.NONE: 'none'>, value=Decimal('0'))",
+        "zero_cost_assumption": null
+      },
+      "git_commit": null,
+      "initial_capital": "10000",
+      "parameters": {
+        "backend_identity": "{\"backend\":\"podman\",\"client_version\":\"5.8.3\",\"engine_version\":\"5.8.8\",\"image_files\":{\"quant_terminal/sandbox/protocol.py\":\"caa9342eb746f6eb38ff12bc7d4ad751310a415a573228195d1037c4c7c86394\",\"strategy_worker.py\":\"0e5dbe5c41d1ad49df2cf87e5f4d58d66128538b483490d40107d477238cc94b\"},\"image_id\":\"083a4ee8f04d4e4c91bc735931eccd5780c8e4e8ba7acfae04b6234fc573fc29\",\"python_version\":\"3.13.15\",\"seccomp_sha256\":\"8286354c8a4e31bacb3a8969e6cc4abad3466a17db16bb0fba7b8bd0f45f8e02\"}",
+        "budget": {
+          "cpu_seconds": 3,
+          "memory_bytes": 64000000,
+          "open_files": 32,
+          "output_bytes": 4096,
+          "process_count": 4,
+          "scratch_bytes": 0,
+          "scratch_files": 0,
+          "wall_seconds": 5
+        },
+        "history_count": 256,
+        "instrument_ids": [
+          "ETF-1"
+        ]
+      },
+      "project_source_hash": "8ce302eab664e49009b08e687e4ec1af6252526bf7195c8060d7cdf2aa37881b",
+      "seed": 41,
+      "start": "2026-11-25T14:30:00+00:00",
+      "strategy_id": "isolated.python.v1",
+      "strategy_name": "isolated_python",
+      "strategy_source_hash": "e6b6ada2860fbc700bf266120abc0c0cde2c0117e482add0edf45bda30657a2a"
+    },
+    "created_at": "2026-10-08T19:54:15.113907+00:00",
+    "input_fingerprint": "130117d3f1d58d0ce560be1db2bf8af088e9f686d3d50fd2c80647b2fa634409",
+    "metrics": {
+      "alpha": {
+        "observations": 0,
+        "reason": "M5 benchmark is price-only and lacks a compatible total-return session series",
+        "status": "unavailable",
+        "unit": "ratio",
+        "value": null
+      },
+      "annualized_arithmetic_return": {
+        "observations": 2,
+        "reason": null,
+        "status": "available",
+        "unit": "fraction_per_year",
+        "value": "0"
+      },
+      "annualized_volatility": {
+        "observations": 2,
+        "reason": null,
+        "status": "available",
+        "unit": "fraction_per_year",
+        "value": "0"
+      },
+      "average_gross_exposure": {
+        "observations": 3,
+        "reason": null,
+        "status": "available",
+        "unit": "USD",
+        "value": "0"
+      },
+      "average_gross_leverage": {
+        "observations": 3,
+        "reason": null,
+        "status": "available",
+        "unit": "multiple",
+        "value": "0"
+      },
+      "average_holding_days": {
+        "observations": 0,
+        "reason": "no closed matched trades",
+        "status": "unavailable",
+        "unit": "days",
+        "value": null
+      },
+      "average_loss": {
+        "observations": 0,
+        "reason": "no losing trades",
+        "status": "unavailable",
+        "unit": "USD",
+        "value": null
+      },
+      "average_mae_per_unit": {
+        "observations": 0,
+        "reason": "no closed trade marks",
+        "status": "unavailable",
+        "unit": "USD",
+        "value": null
+      },
+      "average_mfe_per_unit": {
+        "observations": 0,
+        "reason": "no closed trade marks",
+        "status": "unavailable",
+        "unit": "USD",
+        "value": null
+      },
+      "average_net_exposure": {
+        "observations": 3,
+        "reason": null,
+        "status": "available",
+        "unit": "USD",
+        "value": "0"
+      },
+      "average_net_leverage": {
+        "observations": 3,
+        "reason": null,
+        "status": "available",
+        "unit": "multiple",
+        "value": "0"
+      },
+      "average_win": {
+        "observations": 0,
+        "reason": "no winning trades",
+        "status": "unavailable",
+        "unit": "USD",
+        "value": null
+      },
+      "best_trade": {
+        "observations": 0,
+        "reason": "no closed matched trades",
+        "status": "unavailable",
+        "unit": "USD",
+        "value": null
+      },
+      "beta": {
+        "observations": 0,
+        "reason": "M5 benchmark is price-only and lacks a compatible total-return session series",
+        "status": "unavailable",
+        "unit": "ratio",
+        "value": null
+      },
+      "breakeven_trades": {
+        "observations": 0,
+        "reason": null,
+        "status": "available",
+        "unit": "trades",
+        "value": "0"
+      },
+      "cagr": {
+        "observations": 2,
+        "reason": null,
+        "status": "available",
+        "unit": "fraction_per_year",
+        "value": "0"
+      },
+      "calmar": {
+        "observations": 2,
+        "reason": "requires defined CAGR and positive drawdown",
+        "status": "unavailable",
+        "unit": "ratio",
+        "value": null
+      },
+      "commissions": {
+        "observations": 0,
+        "reason": null,
+        "status": "available",
+        "unit": "USD",
+        "value": "0"
+      },
+      "down_capture": {
+        "observations": 0,
+        "reason": "M5 benchmark is price-only and lacks a compatible total-return session series",
+        "status": "unavailable",
+        "unit": "ratio",
+        "value": null
+      },
+      "drawdown_duration_days": {
+        "observations": 3,
+        "reason": null,
+        "status": "available",
+        "unit": "days",
+        "value": "0"
+      },
+      "drawdown_duration_sessions": {
+        "observations": 3,
+        "reason": null,
+        "status": "available",
+        "unit": "sessions",
+        "value": "0"
+      },
+      "excess_kurtosis": {
+        "observations": 2,
+        "reason": "requires four observations and nonzero variance",
+        "status": "unavailable",
+        "unit": "ratio",
+        "value": null
+      },
+      "expectancy": {
+        "observations": 0,
+        "reason": "no closed matched trades",
+        "status": "unavailable",
+        "unit": "USD",
+        "value": null
+      },
+      "expected_shortfall_95": {
+        "observations": 2,
+        "reason": "requires at least 20 returns and 5 expected tail observations",
+        "status": "insufficient_sample",
+        "unit": "loss_fraction",
+        "value": "0"
+      },
+      "expected_shortfall_99": {
+        "observations": 2,
+        "reason": "requires at least 20 returns and 5 expected tail observations",
+        "status": "insufficient_sample",
+        "unit": "loss_fraction",
+        "value": "0"
+      },
+      "expected_shortfall_99.9": {
+        "observations": 2,
+        "reason": "requires at least 20 returns and 5 expected tail observations",
+        "status": "insufficient_sample",
+        "unit": "loss_fraction",
+        "value": "0"
+      },
+      "information_ratio": {
+        "observations": 0,
+        "reason": "M5 benchmark is price-only and lacks a compatible total-return session series",
+        "status": "unavailable",
+        "unit": "ratio",
+        "value": null
+      },
+      "loss_rate": {
+        "observations": 0,
+        "reason": "no closed matched trades",
+        "status": "unavailable",
+        "unit": "fraction",
+        "value": null
+      },
+      "max_consecutive_losses": {
+        "observations": 0,
+        "reason": null,
+        "status": "available",
+        "unit": "trades",
+        "value": "0"
+      },
+      "max_consecutive_wins": {
+        "observations": 0,
+        "reason": null,
+        "status": "available",
+        "unit": "trades",
+        "value": "0"
+      },
+      "maximum_drawdown": {
+        "observations": 3,
+        "reason": null,
+        "status": "available",
+        "unit": "fraction",
+        "value": "0"
+      },
+      "median_trade": {
+        "observations": 0,
+        "reason": "no closed matched trades",
+        "status": "unavailable",
+        "unit": "USD",
+        "value": null
+      },
+      "omega": {
+        "observations": 2,
+        "reason": "no shortfall below MAR",
+        "status": "unavailable",
+        "unit": "ratio",
+        "value": null
+      },
+      "payoff_ratio": {
+        "observations": 0,
+        "reason": "requires nonzero mean losses and winning trades",
+        "status": "unavailable",
+        "unit": "ratio",
+        "value": null
+      },
+      "profit_factor": {
+        "observations": 0,
+        "reason": "no losing trades",
+        "status": "unavailable",
+        "unit": "ratio",
+        "value": null
+      },
+      "recovery_time_days": {
+        "observations": 3,
+        "reason": "no drawdown recovered in the sample",
+        "status": "unavailable",
+        "unit": "days",
+        "value": null
+      },
+      "risk_of_ruin": {
+        "observations": 0,
+        "reason": "explicit risk-of-ruin assumptions were not supplied",
+        "status": "unavailable",
+        "unit": "probability",
+        "value": null
+      },
+      "sharpe": {
+        "observations": 2,
+        "reason": "requires two returns and positive excess-return deviation",
+        "status": "unavailable",
+        "unit": "ratio",
+        "value": null
+      },
+      "skew": {
+        "observations": 2,
+        "reason": "requires three observations and nonzero variance",
+        "status": "unavailable",
+        "unit": "ratio",
+        "value": null
+      },
+      "slippage_cost": {
+        "observations": 0,
+        "reason": null,
+        "status": "available",
+        "unit": "USD",
+        "value": "0"
+      },
+      "sortino": {
+        "observations": 2,
+        "reason": "downside deviation is zero or returns are missing",
+        "status": "unavailable",
+        "unit": "ratio",
+        "value": null
+      },
+      "tail_ratio_95_5": {
+        "observations": 2,
+        "reason": "5th percentile is zero or missing",
+        "status": "unavailable",
+        "unit": "ratio",
+        "value": null
+      },
+      "total_cost": {
+        "observations": 0,
+        "reason": null,
+        "status": "available",
+        "unit": "USD",
+        "value": "0"
+      },
+      "total_return": {
+        "observations": 2,
+        "reason": null,
+        "status": "available",
+        "unit": "fraction",
+        "value": "0"
+      },
+      "tracking_error": {
+        "observations": 0,
+        "reason": "M5 benchmark is price-only and lacks a compatible total-return session series",
+        "status": "unavailable",
+        "unit": "ratio",
+        "value": null
+      },
+      "trade_count": {
+        "observations": 0,
+        "reason": null,
+        "status": "available",
+        "unit": "trades",
+        "value": "0"
+      },
+      "turnover": {
+        "observations": 0,
+        "reason": null,
+        "status": "available",
+        "unit": "multiple",
+        "value": "0"
+      },
+      "ulcer_index": {
+        "observations": 3,
+        "reason": null,
+        "status": "available",
+        "unit": "fraction",
+        "value": "0"
+      },
+      "up_capture": {
+        "observations": 0,
+        "reason": "M5 benchmark is price-only and lacks a compatible total-return session series",
+        "status": "unavailable",
+        "unit": "ratio",
+        "value": null
+      },
+      "var_95": {
+        "observations": 2,
+        "reason": "requires at least 20 returns and 5 expected tail observations",
+        "status": "insufficient_sample",
+        "unit": "loss_fraction",
+        "value": "0"
+      },
+      "var_99": {
+        "observations": 2,
+        "reason": "requires at least 20 returns and 5 expected tail observations",
+        "status": "insufficient_sample",
+        "unit": "loss_fraction",
+        "value": "0"
+      },
+      "var_99.9": {
+        "observations": 2,
+        "reason": "requires at least 20 returns and 5 expected tail observations",
+        "status": "insufficient_sample",
+        "unit": "loss_fraction",
+        "value": "0"
+      },
+      "win_rate": {
+        "observations": 0,
+        "reason": "no closed matched trades",
+        "status": "unavailable",
+        "unit": "fraction",
+        "value": null
+      },
+      "worst_trade": {
+        "observations": 0,
+        "reason": "no closed matched trades",
+        "status": "unavailable",
+        "unit": "USD",
+        "value": null
+      }
+    },
+    "python_version": "3.13.15",
+    "result_fingerprint": "6de31ff1a3ff6b01902850de7e956d9d756b7fcfae40089e970ccb9dd89a3455",
+    "run_id": "run-3cbc5cfd94ca4d569535501b74c2d099",
+    "runtime_metadata": {
+      "adapter": "application-runtime-v1",
+      "platform": "Windows"
+    },
+    "schema_version": 1,
+    "tags": []
+  },
+  "cancel_job_id": "a15ee49058994f8a9295e4d036bf2a3a",
+  "cancel_status": "cancelled_after_cleanup",
+  "cancel_observed_containers": [
+    "e5add1e845b8"
+  ],
+  "cancelled_experiment_published": false,
+  "cli_exit_code": 0,
+  "cli_stderr": "",
+  "cli_job_id": "e8f0f6a78e914d4f8f9c1e7efc76a744",
+  "cli_run_id": "run-e8f0f6a78e914d4f8f9c1e7efc76a744",
+  "replay": "HTTP_and_subprocess_CLI_identical_result_fingerprint",
+  "container_inventory": [],
+  "result": "passed"
+}

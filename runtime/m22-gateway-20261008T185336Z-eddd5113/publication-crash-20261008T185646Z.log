@@ -1,0 +1,18 @@
+INFO:     Started server process [13884]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://127.0.0.1:56927 (Press CTRL+C to quit)
+INFO:     127.0.0.1:58655 - "GET /sandbox/capabilities HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58658 - "GET /runs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58659 - "POST /sandbox/strategies HTTP/1.1" 202 Accepted
+INFO:     Started server process [8176]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://127.0.0.1:56927 (Press CTRL+C to quit)
+INFO:     127.0.0.1:58775 - "GET /sandbox/capabilities HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58786 - "GET /sandbox/jobs/879706f9da294430be1db822a5603d0c HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58787 - "GET /runs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58788 - "GET /runs/run-879706f9da294430be1db822a5603d0c HTTP/1.1" 409 Conflict
+INFO:     127.0.0.1:58789 - "GET /runs/run-879706f9da294430be1db822a5603d0c/metrics HTTP/1.1" 409 Conflict
+INFO:     127.0.0.1:58790 - "GET /runs/run-879706f9da294430be1db822a5603d0c/report HTTP/1.1" 409 Conflict
+INFO:     127.0.0.1:58791 - "POST /compare HTTP/1.1" 409 Conflict

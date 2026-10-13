@@ -1,0 +1,4 @@
+[acpx] spawning agent: C:\Users\Jonat\AppData\Local\npm-cache\_npx\43414d9b790239bb\node_modules\.bin\claude-agent-acp.cmd 
+[acpx] initialized protocol version 1
+[session/query] sessionId=e4d5e295-cd0e-47c7-a188-c3f362a2d925 resume=none apiType=native baseUrl=native
+Session e4d5e295-cd0e-47c7-a188-c3f362a2d925: cannot attach auth_required to a prompt response because no active turn exists; publishing a session-scoped failure

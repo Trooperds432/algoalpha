@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="0" failures="2" skipped="0" tests="30" time="133.393" timestamp="2026-10-01T17:57:11.559702+01:00" hostname="MoneyMakingMouse"><testcase classname="tests.security.test_m16_hostile" name="test_benign_replay_and_provenance" time="10.020" /><testcase classname="tests.security.test_m16_hostile" name="test_host_canary_paths_environment_proc_and_write_denial" time="3.865" /><testcase classname="tests.security.test_m16_hostile" name="test_network_socket_denied[1-2]" time="3.935" /><testcase classname="tests.security.test_m16_hostile" name="test_network_socket_denied[1-23]" time="3.870" /><testcase classname="tests.security.test_m16_hostile" name="test_network_socket_denied[2-2]" time="3.945" /><testcase classname="tests.security.test_m16_hostile" name="test_network_socket_denied[2-23]" time="3.975" /><testcase classname="tests.security.test_m16_hostile" name="test_dns_loopback_ipc_and_ffi_cannot_escape" time="3.830" /><testcase classname="tests.security.test_m16_hostile" name="test_resource_and_protocol_attacks_are_bounded[cpu-while True: pass]" time="8.329" /><testcase classname="tests.security.test_m16_hostile" name="test_resource_and_protocol_attacks_are_bounded[memory-chunks=[]\n    while True: chunks.append(bytearray(4_000_000))]" time="4.045" /><testcase classname="tests.security.test_m16_hostile" name="test_resource_and_protocol_attacks_are_bounded[process-import os,time\n    while True:\n        if os.fork() == 0: time.sleep(60)]" time="4.190" /><testcase classname="tests.security.test_m16_hostile" name="test_resource_and_protocol_attacks_are_bounded[openfiles-files=[]\n    while True: files.append(open('/dev/null'))]" time="4.170" /><testcase classname="tests.security.test_m16_hostile" name="test_resource_and_protocol_attacks_are_bounded[scratch-with open('/tmp/flood', 'wb') as f: f.write(b'x')]" time="4.071" /><testcase classname="tests.security.test_m16_hostile" name="test_resource_and_protocol_attacks_are_bounded[stdout-while True: print('x' * 8192, flush=True)]" time="8.438" /><testcase classname="tests.security.test_m16_hostile" name="test_resource_and_protocol_attacks_are_bounded[stderr-import os\n    while True: os.write(2, b'x' * 8192)]" time="8.381" /><testcase classname="tests.security.test_m16_hostile" name="test_resource_and_protocol_attacks_are_bounded[recursion-def recurse(): return recurse()\n    recurse()]" time="4.054" /><testcase classname="tests.security.test_m16_hostile" name="test_resource_and_protocol_attacks_are_bounded[crash-import os\n    os._exit(71)]" time="3.907" /><testcase classname="tests.security.test_m16_hostile" name="test_resource_and_protocol_attacks_are_bounded[protocol-import os\n    for fd in range(3,32):\n        try: os.write(fd, b'not-json')\n        except OSError: pass\n    os._exit(0)]" time="3.850" /><testcase classname="tests.security.test_m16_hostile" name="test_malformed_intent_rejected['NaN']" time="4.000" /><testcase classname="tests.security.test_m16_hostile" name="test_malformed_intent_rejected['-1']" time="3.899" /><testcase classname="tests.security.test_m16_hostile" name="test_malformed_intent_rejected['0']" time="3.979" /><testcase classname="tests.security.test_m16_hostile" name="test_malformed_intent_rejected[True]" time="3.933" /><testcase classname="tests.security.test_m16_hostile" name="test_malformed_intent_rejected['9' * 129]" time="3.809" /><testcase classname="tests.security.test_m16_hostile" name="test_cancel_reaps_sleeping_strategy_and_descendants[False]" time="3.320" /><testcase classname="tests.security.test_m16_hostile" name="test_cancel_reaps_sleeping_strategy_and_descendants[True]" time="3.294" /><testcase classname="tests.security.test_m16_hostile" name="test_concurrent_container_state_is_private" time="5.974"><failure message="quant_terminal.sandbox.podman.SandboxUnavailable: podman_command_failed">verified_backend = &lt;quant_terminal.sandbox.podman.PodmanBackend object at 0x00000231AD71B8C0&gt;
+
+    def test_concurrent_container_state_is_private(verified_backend: PodmanBackend) -&gt; None:
+        source = (
+            "def on_bar(context, bar):\n"
+            "    import os,time\n"
+            "    time.sleep(2)\n"
+            "    try:\n"
+            "        with open('/tmp/shared', 'w') as f: f.write('state')\n"
+            "        return [" + _intent("SHARED") + "]\n"
+            "    except OSError: return []\n"
+        )
+        with ThreadPoolExecutor(max_workers=2) as pool:
+            backends = [PodmanBackend(verified_backend.config) for _ in range(2)]
+            futures = [
+                pool.submit(backends[i].execute, _request(source, job_id=f"concurrent-{i}"))
+                for i in range(2)
+            ]
+            overlapped = False
+            deadline = time.monotonic() + 25
+            while time.monotonic() &lt; deadline and not all(future.done() for future in futures):
+                listing = subprocess.run(
+                    ("podman", "ps", "--format={{.Labels}}"),
+                    capture_output=True,
+                    check=True,
+                    timeout=5,
+                ).stdout
+                if b"concurrent-0" in listing and b"concurrent-1" in listing:
+                    overlapped = True
+                    break
+                time.sleep(0.1)
+&gt;           results = [future.result(timeout=30) for future in futures]
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests\security\test_m16_hostile.py:314: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+..\..\..\AppData\Local\Programs\Python\Python313\Lib\concurrent\futures\_base.py:453: in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+..\..\..\AppData\Local\Programs\Python\Python313\Lib\concurrent\futures\_base.py:402: in __get_result
+    raise self._exception
+..\..\..\AppData\Local\Programs\Python\Python313\Lib\concurrent\futures\thread.py:59: in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = &lt;quant_terminal.sandbox.podman.PodmanBackend object at 0x00000231AD76DA90&gt;
+request_blob = b'{"budget":{"cpu_seconds":3,"memory_bytes":64000000,"open_files":32,"output_bytes":4096,"process_count":4,"scratch_by...OSError: return []\\n","source_sha256":"3547c0e8bc2d21569fa42b1b7951067e23109b3dd3c3a4dbb675e87c740c85ce","version":1}'
+cancel = None
+
+    def execute(
+        self, request_blob: bytes, cancel: threading.Event | None = None
+    ) -&gt; SandboxResponse:
+        """Launch after effective control proof; cleanup precedes every returned result."""
+        request = decode_request(request_blob)
+        with self._lock:
+            self._audit("admission", request)
+            if request.dependencies:
+                self._audit("rejection", request, "failed", "dependencies_unsupported")
+                raise SandboxUnavailable("dependencies_unsupported")
+            capability = self.probe()
+            if not capability.available:
+                self._audit("rejection", request, "failed", capability.reason)
+&gt;               raise SandboxUnavailable(capability.reason)
+E               quant_terminal.sandbox.podman.SandboxUnavailable: podman_command_failed
+
+src\quant_terminal\sandbox\podman.py:612: SandboxUnavailable</failure></testcase><testcase classname="tests.security.test_m16_hostile" name="test_audit_redacts_stdout_and_exception" time="0.007"><failure message="quant_terminal.sandbox.podman.SandboxUnavailable: cleanup_unhealthy">verified_backend = &lt;quant_terminal.sandbox.podman.PodmanBackend object at 0x00000231AD71B8C0&gt;
+
+    def test_audit_redacts_stdout_and_exception(verified_backend: PodmanBackend) -&gt; None:
+        secret = "FAKE_SECRET_" + secrets.token_hex(24)
+        source = (
+            f"def on_bar(context, bar):\n    print({secret!r})\n    raise RuntimeError({secret!r})\n"
+        )
+&gt;       response = _run(verified_backend, source, job_id="redaction")
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests\security\test_m16_hostile.py:325: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+tests\security\test_m16_hostile.py:83: in _run
+    response = backend.execute(_request(source, job_id=job_id))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = &lt;quant_terminal.sandbox.podman.PodmanBackend object at 0x00000231AD71B8C0&gt;
+request_blob = b'{"budget":{"cpu_seconds":3,"memory_bytes":64000000,"open_files":32,"output_bytes":4096,"process_count":4,"scratch_by...40552790897a4fb\')\\n","source_sha256":"1c542d65f62f56422f295f05858acf72e1b95ee7ab5cf527540312e78e009b39","version":1}'
+cancel = None
+
+    def execute(
+        self, request_blob: bytes, cancel: threading.Event | None = None
+    ) -&gt; SandboxResponse:
+        """Launch after effective control proof; cleanup precedes every returned result."""
+        request = decode_request(request_blob)
+        with self._lock:
+            self._audit("admission", request)
+            if request.dependencies:
+                self._audit("rejection", request, "failed", "dependencies_unsupported")
+                raise SandboxUnavailable("dependencies_unsupported")
+            capability = self.probe()
+            if not capability.available:
+                self._audit("rejection", request, "failed", capability.reason)
+&gt;               raise SandboxUnavailable(capability.reason)
+E               quant_terminal.sandbox.podman.SandboxUnavailable: cleanup_unhealthy
+
+src\quant_terminal\sandbox\podman.py:612: SandboxUnavailable</failure></testcase><testcase classname="tests.security.test_m16_hostile" name="test_audit_failure_blocks_admission" time="0.212" /><testcase classname="tests.security.test_m16_hostile" name="test_changed_source_hash_rejects_before_launch" time="0.228" /><testcase classname="tests.security.test_m16_hostile" name="test_abrupt_client_death_has_independent_wall_limit_and_recovery" time="9.506" /><testcase classname="tests.security.test_m16_hostile" name="test_child_process_inherits_network_and_host_file_denial" time="3.852" /></testsuite></testsuites>

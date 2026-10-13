@@ -1,0 +1,13 @@
+{
+  "CEO": "9ecfbe59-069d-41c6-900d-0a55c2f37ced",
+  "Data Engineer": "85eb111a-54b4-403b-8bb6-f456c327ad13",
+  "Quant Researcher": "46d53bec-928a-41fc-86ed-a8bd5f90330c",
+  "ML Researcher": "687a7f62-b5d8-4524-95f0-432aea6168df",
+  "Trader": "5cab51d9-bc95-4d87-b6ad-55192d185a8a",
+  "Risk Manager": "cd6e2321-5900-44a2-a3c5-bfb1a61dfe2d",
+  "Execution Agent": "212ce742-8694-4b4c-bab9-6444d3ef60cd",
+  "Validation Agent": "3d7711d3-9058-41ed-9f08-c42f74848f12",
+  "Portfolio Manager": "71e8e56e-fb2c-429c-94ab-25658e17308c",
+  "Reporting Agent": "9bf35b42-07c3-48be-a3f0-b44ac960782a",
+  "Fundamental Committee Adviser": "d20fff00-9815-45ab-bb9d-eff698937909"
+}

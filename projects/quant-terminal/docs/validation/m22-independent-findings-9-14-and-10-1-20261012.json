@@ -1,0 +1,50 @@
+{
+  "at": "2026-10-12T20:38:56.969573+00:00",
+  "reviewer": "/root/consolidated_release",
+  "verdict": "both bounded findings accepted separately",
+  "liveIdentityAndHTTP": "Independent reviewer checked completed issue/run status, exact agent/context issue association, aware timestamp windows, artifact/source hashes and HTTP bytes/bodies.",
+  "roles": [
+    {
+      "roleCode": "9.14",
+      "identifier": "ALG-542",
+      "agentId": "b26a8edf-ec97-4fc8-ab30-0ff0e22374bb",
+      "actualRunId": "81105e42-4800-409e-a469-69f06c45b9b7",
+      "issueId": "68ea2c3c-edc9-4558-b5be-ebbaf4676f6c",
+      "startedAt": "2026-10-12T20:33:31.156Z",
+      "finishedAt": "2026-10-12T20:35:47.737Z",
+      "rootFreshVerification": {
+        "runId": "81105e42-4800-409e-a469-69f06c45b9b7",
+        "issueId": "68ea2c3c-edc9-4558-b5be-ebbaf4676f6c",
+        "artifact": "docs\\agent-contributions\\m22\\retry-2\\9-14.md",
+        "artifactSha256": "631a35775c22482bf5b2dfec8787f487cc405fd64da878b60c8ca608673ed58a",
+        "interactionArtifact": "docs\\agent-contributions\\m22\\retry-2\\9-14.json",
+        "interactionSha256": "7613622500be7ba2a2b897fb383847ab8fb09346542eeecfb21b1a0ac30e8137",
+        "verifiedAt": "2026-10-12T20:38:56.770057+00:00",
+        "scope": "identity/files/actual HTTP evidence verified; role finding needs independent review"
+      },
+      "independentScope": "Exact commission/slippage accounting and nonpositive-price rejection independently reproduced; broader cost attribution remains partial."
+    },
+    {
+      "roleCode": "10.1",
+      "identifier": "ALG-543",
+      "agentId": "cd6e2321-5900-44a2-a3c5-bfb1a61dfe2d",
+      "actualRunId": "eb70668b-1f8f-45db-a52f-584b412fda54",
+      "issueId": "52b9ed3b-faa2-4a8f-9b76-fbad7b72bc49",
+      "startedAt": "2026-10-12T20:34:15.392Z",
+      "finishedAt": "2026-10-12T20:36:24.594Z",
+      "rootFreshVerification": {
+        "runId": "eb70668b-1f8f-45db-a52f-584b412fda54",
+        "issueId": "52b9ed3b-faa2-4a8f-9b76-fbad7b72bc49",
+        "artifact": "docs\\agent-contributions\\m22\\retry-2\\10-1.md",
+        "artifactSha256": "5c34ce12cd4186ac45b41f2650a97261ee8574368bd7663cde606a0c4d06130a",
+        "interactionArtifact": "docs\\agent-contributions\\m22\\retry-2\\10-1.json",
+        "interactionSha256": "3a3e406d50eaa1b137e5cade15ec25b0273092447773635d637d38d0ebcaea58",
+        "verifiedAt": "2026-10-12T20:38:56.969483+00:00",
+        "scope": "identity/files/actual HTTP evidence verified; role finding needs independent review"
+      },
+      "independentScope": "43 return tail counts2.15/.43/.043 and all six insufficient_sample diagnostics independently confirmed; numeric thresholds are not eligibility. Veto recommendation is not tested enforcement."
+    }
+  ],
+  "limits": "Shared prior RC1 synthetic43bar sample; no calibrated cost model, risk enforcement, stress testing, OOS/simulation eligibility or professional approval. Reviewer BOM-reading harness failures corrected without product changes.",
+  "finalReleaseApproved": false
+}

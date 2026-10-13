@@ -1,0 +1,86 @@
+{
+  "at": "2026-10-07T19:48:38.777142+00:00",
+  "state": "C:\\Users\\Jonat\\algoalpha\\runtime\\m22-real-queue-20261007T194838Z-cadcc9c9",
+  "audit": "C:\\Users\\Jonat\\algoalpha\\runtime\\m22-real-queue-20261007T194838Z-cadcc9c9\\audit.jsonl",
+  "public_admission_enabled": false,
+  "source_hashes": {
+    "application/isolated_jobs.py": "18fc918f8da0f0886f4ded25e71679ed0210095f60635d3f8cd64173dab207ab",
+    "application/jobs.py": "1cf890a5e27e2ff6875c1741f5bb638e15f5c1e0e734ec6ff566cadc554c41ff",
+    "application/isolated_runtime.py": "54b385992ac6f48c2ad9f74fbaa4b463f4949ddc6c5fa1d7157f16b2994a4efb",
+    "application/runtime.py": "62c7f361c4991a546c0995267b430735d5ab1f406f67f472dd2d407d6e969593",
+    "sandbox/podman.py": "0b2260f7b777f2daa9a43096b88648d5a8bdf826b14bbc4b5ad4801f533aa870",
+    "sandbox/runtime_owner.py": "ae898982abf4dd87de6c8ac3bfdfd23a7abbf9447791c2a98d9c29551c3ae6b4",
+    "sandbox/wsl_keeper.py": "ca65b496401e0a1e07a7b2355fe513c46c10dd7b59ebf7a425d7acac3465bdb0",
+    "sandbox/source_package.py": "38a7421b5efcd100791d210bcb7a15e6cf724012d5413d14c05c7b96fe757390",
+    "experiments/source.py": "96e0f0a88ee61b10a6bedf93824bf32e20c72d2fa519bf11a0172bb71e4213ce",
+    "sandbox/strategy.py": "0c5ecd15128f6fb9ad1d4ef57abe168ab8421d4ff4915c19a678bf8f660b52b5"
+  },
+  "result": "passed",
+  "job_ids": [
+    "254c9dd940a946478dd326cbf40c7f3a",
+    "3c66fa4de7464ceb8c45159e68ddd6e5"
+  ],
+  "run_ids": [
+    "run-254c9dd940a946478dd326cbf40c7f3a",
+    "run-3c66fa4de7464ceb8c45159e68ddd6e5"
+  ],
+  "statuses": [
+    "succeeded",
+    "succeeded"
+  ],
+  "result_fingerprint": "6de31ff1a3ff6b01902850de7e956d9d756b7fcfae40089e970ccb9dd89a3455",
+  "backend_identity": "{\"backend\":\"podman\",\"client_version\":\"5.8.3\",\"engine_version\":\"5.8.8\",\"image_files\":{\"quant_terminal/sandbox/protocol.py\":\"caa9342eb746f6eb38ff12bc7d4ad751310a415a573228195d1037c4c7c86394\",\"strategy_worker.py\":\"0e5dbe5c41d1ad49df2cf87e5f4d58d66128538b483490d40107d477238cc94b\"},\"image_id\":\"083a4ee8f04d4e4c91bc735931eccd5780c8e4e8ba7acfae04b6234fc573fc29\",\"python_version\":\"3.13.15\",\"seccomp_sha256\":\"8286354c8a4e31bacb3a8969e6cc4abad3466a17db16bb0fba7b8bd0f45f8e02\"}",
+  "replay": "identical_config_result_and_report",
+  "cleanup": "two_confirmed_runtime_closes_before_publication",
+  "job_events": [
+    [
+      {
+        "sequence": 1,
+        "event": {
+          "event": "isolated_started",
+          "source_sha256": "e6b6ada2860fbc700bf266120abc0c0cde2c0117e482add0edf45bda30657a2a"
+        }
+      },
+      {
+        "sequence": 2,
+        "event": {
+          "event": "registered_run",
+          "run_id": "run-254c9dd940a946478dd326cbf40c7f3a"
+        }
+      }
+    ],
+    [
+      {
+        "sequence": 3,
+        "event": {
+          "event": "isolated_started",
+          "source_sha256": "e6b6ada2860fbc700bf266120abc0c0cde2c0117e482add0edf45bda30657a2a"
+        }
+      },
+      {
+        "sequence": 4,
+        "event": {
+          "event": "registered_run",
+          "run_id": "run-3c66fa4de7464ceb8c45159e68ddd6e5"
+        }
+      }
+    ]
+  ],
+  "cancel_running_container_observed": [
+    "e6f8ad8d79df"
+  ],
+  "cancel_job_id": "1f1124dd898341ef81b94f76648c9a88",
+  "cancel_status": "cancelled_after_confirmed_cleanup",
+  "cancelled_source_sha256": "62f5e0863c3d353c2115d74e9ff65190d5718f1d0a3e4b69456b37620a07f4fb",
+  "cancelled_experiment_published": false,
+  "cancel_job_events": [
+    {
+      "sequence": 5,
+      "event": {
+        "event": "isolated_started",
+        "source_sha256": "62f5e0863c3d353c2115d74e9ff65190d5718f1d0a3e4b69456b37620a07f4fb"
+      }
+    }
+  ],
+  "post_scheduler_container_inventory": []
+}

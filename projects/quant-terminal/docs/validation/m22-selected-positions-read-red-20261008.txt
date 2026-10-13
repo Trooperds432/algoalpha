@@ -1,0 +1,82 @@
+..................F.....                                                 [100%]
+================================== FAILURES ===================================
+_ test_selected_accounting_reads_supplement_required_interactions[positions] __
+
+monkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x0000023BA2712A40>
+tmp_path = WindowsPath('C:/Users/Jonat/AppData/Local/Temp/pytest-of-Jonat/pytest-489/test_selected_accounting_reads3')
+section = 'positions'
+
+    @pytest.mark.parametrize("section", ["orders", "fills", "nav", "positions"])
+    def test_selected_accounting_reads_supplement_required_interactions(monkeypatch, tmp_path, section):
+        receipt, run, path = report_receipt(monkeypatch, tmp_path)
+        evidence = json.loads(path.read_text())
+        evidence["http_interactions"][-1]["url"] = "http://127.0.0.1:8765/runs/run-example/" + section
+        path.write_text(json.dumps(evidence))
+        raw = {i["url"]: json.dumps(i["body"]).encode() for i in evidence["http_interactions"]}
+        monkeypatch.setattr(
+            campaign.urllib.request, "urlopen", lambda url, timeout: io.BytesIO(raw[url])
+        )
+>       assert campaign.verify(receipt, run)["runId"] == "actual"
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests\test_m22_dispatch.py:436: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+receipt = {'agentId': 'employee', 'issueId': 'task', 'artifact': 'role.md'}
+run = {'id': 'actual', 'agentId': 'employee', 'contextSnapshot': {'issueId': 'task'}}
+
+    def verify(receipt: dict[str, object], run: dict[str, object]) -> dict[str, object]:
+        if (
+            run.get("agentId") != receipt["agentId"]
+            or run.get("contextSnapshot", {}).get("issueId") != receipt["issueId"]
+        ):
+            raise ValueError("Live Paperclip run is not associated with this employee/task")
+        artifact = ROOT / str(receipt["artifact"])
+        evidence_path = artifact.with_suffix(".json")
+        if not artifact.is_file() or not evidence_path.is_file():
+            raise ValueError("Missing role review or HTTP evidence")
+        if artifact.stat().st_size < 250 or evidence_path.stat().st_size > 1_000_000:
+            raise ValueError("Artifact is incomplete or exceeds evidence budget")
+        evidence = json.loads(evidence_path.read_text(encoding="utf-8-sig"))
+        expected = {
+            "agent_id": receipt["agentId"],
+            "issue_id": receipt["issueId"],
+            "paperclip_run_id": run["id"],
+        }
+        if any(evidence.get(key) != value for key, value in expected.items()):
+            raise ValueError("Artifact task/run/agent identity mismatch")
+        report = artifact.read_text(encoding="utf-8-sig")
+        requirement = evidence.get("requirement") or "## Requirement" in report
+        failure_case = evidence.get("failure_case") or any(
+            heading in report for heading in ("## Required failure case", "## Failure case")
+        )
+        if (
+            not evidence.get("finding")
+            or not evidence.get("limitations")
+            or not requirement
+            or not failure_case
+        ):
+            raise ValueError("Missing role requirement, failure case, finding or limitations")
+        interactions = evidence.get("http_interactions")
+        if not isinstance(interactions, list) or not 3 <= len(interactions) <= 12:
+            raise ValueError("Missing bounded actual HTTP receipts")
+        selected = evidence.get("selected_run_id")
+        required = {
+            "http://127.0.0.1:8765" + path for path in ("/health", "/runs", f"/runs/{selected}")
+        }
+        allowed = required | {
+            f"http://127.0.0.1:8765/runs/{selected}/{section}"
+            for section in ("report", "orders", "fills", "nav")
+        }
+        observed = set()
+        bodies = {}
+        for item in interactions:
+            url = item.get("url")
+            if url not in allowed or item.get("method") != "GET" or item.get("status") != 200:
+>               raise ValueError("Unexpected interaction URL/method/status")
+E               ValueError: Unexpected interaction URL/method/status
+
+coordination\m22_run_roles.py:176: ValueError
+=========================== short test summary info ===========================
+FAILED tests/test_m22_dispatch.py::test_selected_accounting_reads_supplement_required_interactions[positions]
+1 failed, 23 passed in 1.48s

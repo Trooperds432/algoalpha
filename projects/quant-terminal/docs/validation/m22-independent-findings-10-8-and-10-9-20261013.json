@@ -1,0 +1,51 @@
+{
+  "at": "2026-10-13T10:44:39.819012+00:00",
+  "reviewer": "/root/consolidated_release",
+  "verdict": "both bounded findings accepted separately",
+  "identityEvidence": "Exact live agent/assignee/context issue, succeeded/done and own aware timestamp windows independently verified; artifact/HTTP bytes and bodies match.",
+  "reproduction": "Factor outputs .6*1+.4*.5=.8 and .6*2+.4*(-1)=.8; dimension mismatch rejects. Beta remains explicitly unavailable. All six tail warnings with expected counts2.15/.43/.043 and minimums100/500/5000 reproduced. Reviewer result-key harness error corrected without product changes.",
+  "roles": [
+    {
+      "roleCode": "10.8",
+      "identifier": "ALG-552",
+      "agentId": "77dd806c-6abc-49e6-9aab-98e7844db417",
+      "runId": "e64e93e5-b8f3-4a51-84dd-3a57f55bf477",
+      "issueId": "2c39e3d9-6c3c-4878-a7e2-95f6e9f86d0f",
+      "startedAt": "2026-10-13T10:39:04.180Z",
+      "finishedAt": "2026-10-13T10:41:34.312Z",
+      "freshRootVerification": {
+        "runId": "e64e93e5-b8f3-4a51-84dd-3a57f55bf477",
+        "issueId": "2c39e3d9-6c3c-4878-a7e2-95f6e9f86d0f",
+        "artifact": "docs\\agent-contributions\\10-8.md",
+        "artifactSha256": "002ba03bb446e29cacb9ef44f71f98c81f217ea1cab966efa8102c59a38e7864",
+        "interactionArtifact": "docs\\agent-contributions\\10-8.json",
+        "interactionSha256": "6982931f7efd0fa62343af0474797f4a9b92866f5c333d6aeda72ae5f0cc1094",
+        "verifiedAt": "2026-10-13T10:44:39.559399+00:00",
+        "scope": "identity/files/actual HTTP evidence verified; role finding needs independent review"
+      },
+      "independentScope": "Weighted factor arithmetic/dimension rejection and unavailable-beta semantics independently reproduced; semantic/date alignment, estimation and neutrality unproved."
+    },
+    {
+      "roleCode": "10.9",
+      "identifier": "ALG-553",
+      "agentId": "f98ad962-672a-4f30-9473-ae9c24ef90eb",
+      "runId": "e9b4f169-b22f-46a9-a67e-b6a248ddcf3a",
+      "issueId": "66fadc8a-bfb3-40e2-9013-54ceab200d90",
+      "startedAt": "2026-10-13T10:39:04.280Z",
+      "finishedAt": "2026-10-13T10:41:33.699Z",
+      "freshRootVerification": {
+        "runId": "e9b4f169-b22f-46a9-a67e-b6a248ddcf3a",
+        "issueId": "66fadc8a-bfb3-40e2-9013-54ceab200d90",
+        "artifact": "docs\\agent-contributions\\10-9.md",
+        "artifactSha256": "417c7298bd6df50a204372bec578829f6fd46876401335ac57f5c787d2d9a6ce",
+        "interactionArtifact": "docs\\agent-contributions\\10-9.json",
+        "interactionSha256": "196e71f6052c27685abe46d79a8b3c08ffeb1a483b6fd3de6637f549a9283cb8",
+        "verifiedAt": "2026-10-13T10:44:39.818898+00:00",
+        "scope": "identity/files/actual HTTP evidence verified; role finding needs independent review"
+      },
+      "independentScope": "All six thin-tail metadata warnings independently reproduced; no raw-return tail recomputation, tail protection or consumer veto enforcement."
+    }
+  ],
+  "limits": "Same old synthetic fixture. No separate local-source hash inventory or deployed-source equivalence claim; no factor estimation, semantic/date alignment, joint/nonlinear tail forecast or enforcement.",
+  "finalReleaseApproved": false
+}

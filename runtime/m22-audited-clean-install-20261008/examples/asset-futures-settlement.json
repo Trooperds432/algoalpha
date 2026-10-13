@@ -1,0 +1,11 @@
+{
+  "operation": "futures_settlement",
+  "inputs": {
+    "contracts": 2,
+    "multiplier": "50",
+    "settlement_prices": ["4000", "4010", "3990"],
+    "initial_cash": "30000",
+    "initial_margin_per_contract": "12000",
+    "maintenance_margin_per_contract": "10000"
+  }
+}

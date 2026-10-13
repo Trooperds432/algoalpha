@@ -1,0 +1,20 @@
+{
+  "mcpServers": {
+    "codex": {
+      "type": "stdio",
+      "command": "node",
+      "args": ["tools/codex-mcp/server.mjs"],
+      "env": {
+        "CODEX_BIN": "C:\\Users\\Jonat\\AppData\\Local\\Programs\\OpenAI\\Codex\\bin\\codex.exe"
+      }
+    },
+    "paperclip": {
+      "type": "stdio",
+      "command": "node",
+      "args": ["tools/paperclip-mcp/server.mjs"],
+      "env": {
+        "PAPERCLIP_URL": "http://127.0.0.1:3100"
+      }
+    }
+  }
+}

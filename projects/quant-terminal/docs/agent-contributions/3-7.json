@@ -1,0 +1,49 @@
+{
+  "agent_id": "5ed56bac-12cf-4d2d-980d-daeb47fa4380",
+  "issue_id": "dcb146a1-9e65-4c34-bff8-53f9065aded9",
+  "paperclip_run_id": "58725ef8-c04a-4b8b-abcc-603c87698ff3",
+  "selected_run_id": null,
+  "recorded_at": "2026-10-03T19:06:53.932664+00:00",
+  "http_interactions": [
+    {
+      "timestamp": "2026-10-03T19:06:49.867870+00:00",
+      "method": "GET",
+      "url": "http://127.0.0.1:8765/health",
+      "status": null,
+      "sha256": null,
+      "body": null,
+      "error": "<urlopen error [WinError 10061] No connection could be made because the target machine actively refused it>"
+    },
+    {
+      "timestamp": "2026-10-03T19:06:51.915913+00:00",
+      "method": "GET",
+      "url": "http://127.0.0.1:8765/runs",
+      "status": null,
+      "sha256": null,
+      "body": null,
+      "error": "<urlopen error [WinError 10061] No connection could be made because the target machine actively refused it>"
+    }
+  ],
+  "requirement": "For CFO financial-reporting controls, a research result must be traceable to a verified immutable run manifest, exact capital/currency and explicit execution costs, with unavailable metrics and unresolved release gates retained; research NAV must not be represented as corporate cash or recognised revenue.",
+  "failure_case": "The released terminal is unavailable: health and run-list requests are refused, preventing manifest/cost/metric audit and reliable CFO use of the reported research result.",
+  "finding": {
+    "verdict": "inconclusive_blocked",
+    "severity": "medium",
+    "confidence": "high for connection failure; financial-control behavior unverified",
+    "detail": "Local terminal connection refused on both required endpoints. CFO auditability acceptance cannot be established.",
+    "recommendation": "Service owner/coordinator must restore the assigned local terminal; then resume this issue to capture all three GET responses and inspect the returned manifest and metrics before acceptance."
+  },
+  "limitations": [
+    "No HTTP response bytes were received; status, sha256 and body are null, not hashes of an empty response.",
+    "No run ID was returned; /runs/<run_id> was not attempted and no manifest or metrics were inspected.",
+    "The initial unrecorded-time /health attempt also failed with WinError 10061; the two timestamped attempts below preserve the bounded follow-up evidence.",
+    "M21 and M8/M6 documents are historical/specification evidence, not fresh runtime proof. No campaigns or tests were rerun.",
+    "No corporate ledger, bank balance, budget or treasury forecast was supplied or reconciled. No professional approval, strategy eligibility, M16 pass or final-release pass is claimed."
+  ],
+  "documentary_evidence": {
+    "docs/m8-experiment-contract.md": "Requires immutable provenance, canonical Decimal inputs/results, explicit costs, hashes and integrity checks.",
+    "docs/m6-analytics-contract.md": "Costs derive from ledger; unavailable metrics retain status/reason.",
+    "docs/validation/m21-release-hardening.md": "Historical RC1 verification; final 1.0 withheld, M16 and role participation unresolved.",
+    "coordination/milestone-state.json": "M16, M21 and M22 in_progress at inspection."
+  }
+}

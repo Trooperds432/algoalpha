@@ -1,0 +1,1879 @@
+[
+  {
+    "agentId": "6a103650-96e5-40f6-8ff5-ebca07ae3a1c",
+    "roleCode": "11.3",
+    "issueId": "4e355f7a-2b05-44cd-8267-6e00dd526043",
+    "identifier": "ALG-381",
+    "artifact": "docs/agent-contributions/11-3.md",
+    "status": "evidence_verified",
+    "description": "M22 final release acceptance: Research Validation Agent (11.3). Owner explicitly approved role-specific final review and actual terminal interaction. This is a NEW bounded acceptance task, not replay of a failed prior task.\n\nRead project AGENTS.md, docs/m22-acceptance-contract.md, docs/validation/m21-release-hardening.md, and your exact role mandate. Review existing implementation against one concrete requirement and one failure case relevant to your role. No source or unrelated file edits. Only create your exclusive contribution artifact at C:/Users/Jonat/algoalpha/projects/quant-terminal/docs/agent-contributions/11-3.md and a same-stem .json evidence file. No delegation, no new tasks, no orders, external broker connections, paid services, secret reads or changes to runtime/source.\n\nActually interact with the trusted frozen terminal at http://127.0.0.1:8765 using GET /health, GET /runs, and GET /runs/<run_id> for the returned synthetic run. Inspect its manifest/metrics for your role, including unavailable benchmark/insufficient-sample caveats. Store timestamp, requested method/URL, response status and SHA256 of exact response bytes, selected actual run_id and Paperclip run/issue IDs from your task context (not invented). Store clear role-specific finding with observed evidence and limitation, required failure case and whether observed implementation satisfies it. A synthetic Sharpe does not prove alpha or justify capital allocation. HTTP success alone is not acceptance.\n\nUse Python urllib.request or PowerShell Invoke-WebRequest for actual requests. Record failures truthfully; do not claim M16 or final release passed. Mark this issue done only if artifact and real terminal interaction evidence exist; otherwise report concrete blockage on this issue. Preserve all existing artifacts.\n\nRole build scope: Independently review fixtures and evidence for leakage, accounting, robustness or governance according to your role. Do not approve your own implementation.\nRole interaction scope: Rerun an approved synthetic experiment or inspect its immutable artifacts, then record a traceable challenge.\nRole mandate:\n11.3 Research Validation Agent\n\nMandate: Verify the methodological integrity and reproducibility of quantitative research.\n\nResponsibilities: Review research hypotheses, data selection, statistical calculations and model documentation; reproduce material findings; confirm temporal validity; and examine the relationship between reported results and supporting evidence.\n\nDeliverables: Research validation reports, methodological exception logs and validation recommendations.\n\nKPIs: Validation coverage, reproducibility and identification of material research defects.\n",
+    "actualRunId": "3f3ccebd-bdf4-422d-a833-aa9afdd3debf",
+    "verification": {
+      "runId": "3f3ccebd-bdf4-422d-a833-aa9afdd3debf",
+      "issueId": "4e355f7a-2b05-44cd-8267-6e00dd526043",
+      "artifact": "docs\\agent-contributions\\11-3.md",
+      "artifactSha256": "622a7236b405d0dd849bd59b6019465e571c0dcd6bfd54d0e93994b86f28b407",
+      "interactionArtifact": "docs\\agent-contributions\\11-3.json",
+      "interactionSha256": "588cadaa813fcd8b5c55bfad1811720eb7b456cc659fcca884393d88fb730ace",
+      "verifiedAt": "2026-10-03T11:58:22.575098+00:00",
+      "scope": "identity/files/actual HTTP evidence verified; role finding needs independent review"
+    },
+    "findingReview": {
+      "status": "bounded_participation_accepted",
+      "review": "docs/validation/m22-role-evidence-audit.md",
+      "scope": "independent substantive participation; broader product/release gate not passed",
+      "artifactSha256": "622a7236b405d0dd849bd59b6019465e571c0dcd6bfd54d0e93994b86f28b407",
+      "interactionSha256": "588cadaa813fcd8b5c55bfad1811720eb7b456cc659fcca884393d88fb730ace"
+    }
+  },
+  {
+    "agentId": "9ecfbe59-069d-41c6-900d-0a55c2f37ced",
+    "roleCode": "3.1",
+    "issueId": "cc6f8f36-e3a9-4afc-ab1a-68d8ff1960b3",
+    "identifier": "ALG-382",
+    "artifact": "docs/agent-contributions/3-1.md",
+    "status": "evidence_verified",
+    "actualRunId": "125cb5d2-10ff-4891-a6d2-76e92d7369ff",
+    "verification": {
+      "runId": "125cb5d2-10ff-4891-a6d2-76e92d7369ff",
+      "issueId": "cc6f8f36-e3a9-4afc-ab1a-68d8ff1960b3",
+      "artifact": "docs\\agent-contributions\\3-1.md",
+      "artifactSha256": "8c0b2d69b13bf84b4aecb95dbd3d809b68fb64020974fbb2c3bd2c59f023564e",
+      "interactionArtifact": "docs\\agent-contributions\\3-1.json",
+      "interactionSha256": "5739fddf9beb6642f828499c8a007165c090bdc02a222cc41aafaa8b193a9ff0",
+      "verifiedAt": "2026-10-03T12:00:24.054708+00:00",
+      "scope": "identity/files/actual HTTP evidence verified; role finding needs independent review"
+    },
+    "findingReview": {
+      "status": "bounded_participation_accepted",
+      "review": "docs/validation/m22-role-findings-review-20261004.md",
+      "scope": "independent substantive participation; broader product/release gate not passed",
+      "artifactSha256": "8c0b2d69b13bf84b4aecb95dbd3d809b68fb64020974fbb2c3bd2c59f023564e",
+      "interactionSha256": "5739fddf9beb6642f828499c8a007165c090bdc02a222cc41aafaa8b193a9ff0"
+    }
+  },
+  {
+    "agentId": "e018ba52-0d91-4198-8a85-9b7d7dfb3576",
+    "roleCode": "3.2",
+    "issueId": "0334badb-5627-4b96-a135-40edd2b6d85c",
+    "identifier": "ALG-383",
+    "artifact": "docs/agent-contributions/3-2.md",
+    "status": "evidence_verified",
+    "actualRunId": "131bcca1-bd44-454a-b666-22008694c931",
+    "verification": {
+      "runId": "131bcca1-bd44-454a-b666-22008694c931",
+      "issueId": "0334badb-5627-4b96-a135-40edd2b6d85c",
+      "artifact": "docs\\agent-contributions\\3-2.md",
+      "artifactSha256": "5cb9ffad3fffd595acf902484065915140c0088659ede6099973ee8853f98999",
+      "interactionArtifact": "docs\\agent-contributions\\3-2.json",
+      "interactionSha256": "63303a012ff33c0b6bc96cb366c3153421600b69f4516303c7bf246bdad09623",
+      "verifiedAt": "2026-10-03T11:59:03.272708+00:00",
+      "scope": "identity/files/actual HTTP evidence verified; role finding needs independent review"
+    },
+    "findingReview": {
+      "status": "bounded_participation_accepted",
+      "review": "docs/validation/m22-role-findings-review-20261004.md",
+      "scope": "independent substantive participation; broader product/release gate not passed",
+      "artifactSha256": "5cb9ffad3fffd595acf902484065915140c0088659ede6099973ee8853f98999",
+      "interactionSha256": "63303a012ff33c0b6bc96cb366c3153421600b69f4516303c7bf246bdad09623"
+    }
+  },
+  {
+    "agentId": "1253f521-078d-4f68-82e8-626eda5925e8",
+    "roleCode": "3.3",
+    "issueId": "fe17daa4-5b03-46f3-8da6-c84a67db8871",
+    "identifier": "ALG-384",
+    "artifact": "docs/agent-contributions/3-3.md",
+    "status": "blocked",
+    "actualRunId": "753345b5-4f44-41fb-97a5-f09d094e12cb",
+    "reason": "Actual run/issue did not complete",
+    "runStatus": "failed",
+    "retryAuthorized": true,
+    "retryAuthorization": "Owner continued M22 on 2026-10-06; one new bounded review attempt. Original failure/artifacts preserved; no release approval."
+  },
+  {
+    "agentId": "838871e1-8f00-425c-b99b-7d3dddbe21cc",
+    "roleCode": "3.4",
+    "issueId": "7d8bfbcb-49a1-450a-b444-a34ecd1d09e5",
+    "identifier": "ALG-385",
+    "artifact": "docs/agent-contributions/3-4.md",
+    "status": "blocked",
+    "actualRunId": "8d7ffc29-f9a1-4114-94c5-c60525ac0cc8",
+    "reason": "Actual run/issue did not complete",
+    "runStatus": "failed",
+    "retryAuthorized": true,
+    "retryAuthorization": "Owner continued M22 on 2026-10-06; one new bounded review attempt. Original failure/artifacts preserved; no release approval."
+  },
+  {
+    "agentId": "0d594786-fd73-4c67-854f-66d02f517c82",
+    "roleCode": "3.5",
+    "issueId": "4cf8e474-36c6-4daa-9432-c6261690fd14",
+    "identifier": "ALG-386",
+    "artifact": "docs/agent-contributions/3-5.md",
+    "status": "blocked",
+    "actualRunId": "0d6f5aaf-c5b7-4672-832a-5024c55b5bef",
+    "reason": "Actual run/issue did not complete",
+    "runStatus": "succeeded",
+    "retryAuthorized": true,
+    "priorFailure": "M22 task documented terminal outage; frozen service is now live in tracked session"
+  },
+  {
+    "agentId": "593c9b7b-a543-4e0c-9eae-cc28dd8ed04e",
+    "roleCode": "3.6",
+    "issueId": "9feb54a6-6f4a-4e14-894f-f79a3e5c10f4",
+    "identifier": "ALG-387",
+    "artifact": "docs/agent-contributions/3-6.md",
+    "status": "blocked",
+    "actualRunId": "663b2fd7-1c5e-4bc6-be83-04303e73fbe0",
+    "reason": "Actual run/issue did not complete",
+    "runStatus": "succeeded",
+    "retryAuthorized": true,
+    "priorFailure": "M22 task documented terminal outage; frozen service is now live in tracked session"
+  },
+  {
+    "agentId": "5ed56bac-12cf-4d2d-980d-daeb47fa4380",
+    "roleCode": "3.7",
+    "issueId": "dcb146a1-9e65-4c34-bff8-53f9065aded9",
+    "identifier": "ALG-388",
+    "artifact": "docs/agent-contributions/3-7.md",
+    "status": "blocked",
+    "actualRunId": "58725ef8-c04a-4b8b-abcc-603c87698ff3",
+    "reason": "Actual run/issue did not complete",
+    "runStatus": "succeeded",
+    "retryAuthorized": true,
+    "priorFailure": "M22 task documented terminal outage; frozen service is now live in tracked session"
+  },
+  {
+    "agentId": "b6d88baf-13aa-49c3-9731-caf291e480e0",
+    "roleCode": "3.8",
+    "issueId": "d3a55e37-80ed-4a33-9ed9-996aaf118446",
+    "identifier": "ALG-389",
+    "artifact": "docs/agent-contributions/3-8.md",
+    "status": "blocked",
+    "actualRunId": "d9354a0b-7777-4a21-bd2d-fe9c2b1edba7",
+    "reason": "Actual run/issue did not complete",
+    "runStatus": "succeeded",
+    "retryAuthorized": true,
+    "priorFailure": "M22 task documented terminal outage; frozen service is now live in tracked session"
+  },
+  {
+    "agentId": "71e8e56e-fb2c-429c-94ab-25658e17308c",
+    "roleCode": "4.1",
+    "issueId": "4da198a0-ed83-4b79-a18e-4e06048c597f",
+    "identifier": "ALG-390",
+    "artifact": "docs/agent-contributions/4-1.md",
+    "status": "blocked",
+    "actualRunId": "ae46cfeb-9df3-4be2-be91-96eec55ec113",
+    "reason": "Actual run/issue did not complete",
+    "runStatus": "succeeded",
+    "retryAuthorized": true,
+    "priorFailure": "M22 task documented terminal outage; frozen service is now live in tracked session"
+  },
+  {
+    "agentId": "75315315-9bba-44a3-a0b4-7b7fd84f9fe2",
+    "roleCode": "4.2",
+    "issueId": "5eff362a-9c21-4f16-acbc-746c32e95199",
+    "identifier": "ALG-391",
+    "artifact": "docs/agent-contributions/4-2.md",
+    "status": "blocked",
+    "actualRunId": "3e0eb30c-9998-4b05-a3c3-29914b8ce232",
+    "reason": "Actual run/issue did not complete",
+    "runStatus": "succeeded",
+    "retryAuthorized": true,
+    "priorFailure": "M22 task documented terminal outage; frozen service is now live in tracked session"
+  },
+  {
+    "agentId": "0d594786-fd73-4c67-854f-66d02f517c82",
+    "roleCode": "3.5",
+    "issueId": "4cf8e474-36c6-4daa-9432-c6261690fd14",
+    "identifier": "ALG-386",
+    "artifact": "docs/agent-contributions/m22/retry-2/3-5.md",
+    "status": "blocked",
+    "reason": "Superseded: Paperclip deduplicated the retry to the original issue; no new retry run is claimed.",
+    "superseded": true
+  },
+  {
+    "agentId": "593c9b7b-a543-4e0c-9eae-cc28dd8ed04e",
+    "roleCode": "3.6",
+    "issueId": "9feb54a6-6f4a-4e14-894f-f79a3e5c10f4",
+    "identifier": "ALG-387",
+    "artifact": "docs/agent-contributions/m22/retry-2/3-6.md",
+    "status": "blocked",
+    "reason": "Superseded: Paperclip deduplicated the retry to the original issue; no new retry run is claimed.",
+    "superseded": true
+  },
+  {
+    "agentId": "5ed56bac-12cf-4d2d-980d-daeb47fa4380",
+    "roleCode": "3.7",
+    "issueId": "dcb146a1-9e65-4c34-bff8-53f9065aded9",
+    "identifier": "ALG-388",
+    "artifact": "docs/agent-contributions/m22/retry-2/3-7.md",
+    "status": "blocked",
+    "reason": "Superseded: Paperclip deduplicated the retry to the original issue; no new retry run is claimed.",
+    "superseded": true
+  },
+  {
+    "agentId": "0d594786-fd73-4c67-854f-66d02f517c82",
+    "roleCode": "3.5",
+    "issueId": "4cf8e474-36c6-4daa-9432-c6261690fd14",
+    "identifier": "ALG-386",
+    "artifact": "docs/agent-contributions/m22/retry-3/3-5.md",
+    "status": "blocked",
+    "superseded": true,
+    "reason": "Paperclip returned the preexisting blocked issue for this retry; no new issue or run occurred."
+  },
+  {
+    "agentId": "593c9b7b-a543-4e0c-9eae-cc28dd8ed04e",
+    "roleCode": "3.6",
+    "issueId": "9feb54a6-6f4a-4e14-894f-f79a3e5c10f4",
+    "identifier": "ALG-387",
+    "artifact": "docs/agent-contributions/m22/retry-3/3-6.md",
+    "status": "blocked",
+    "superseded": true,
+    "reason": "Paperclip returned the preexisting blocked issue for this retry; no new issue or run occurred."
+  },
+  {
+    "agentId": "5ed56bac-12cf-4d2d-980d-daeb47fa4380",
+    "roleCode": "3.7",
+    "issueId": "dcb146a1-9e65-4c34-bff8-53f9065aded9",
+    "identifier": "ALG-388",
+    "artifact": "docs/agent-contributions/m22/retry-3/3-7.md",
+    "status": "blocked",
+    "superseded": true,
+    "reason": "Paperclip returned the preexisting blocked issue for this retry; no new issue or run occurred."
+  },
+  {
+    "agentId": "0d594786-fd73-4c67-854f-66d02f517c82",
+    "roleCode": "3.5",
+    "issueId": "af15f032-37a2-4e8e-bcea-8ea242af8f83",
+    "identifier": "ALG-392",
+    "artifact": "docs/agent-contributions/m22/retry-4/3-5.md",
+    "status": "evidence_verified",
+    "actualRunId": "8258f8af-3ecf-4f5e-9779-8a2671623dbf",
+    "verification": {
+      "runId": "8258f8af-3ecf-4f5e-9779-8a2671623dbf",
+      "issueId": "af15f032-37a2-4e8e-bcea-8ea242af8f83",
+      "artifact": "docs\\agent-contributions\\m22\\retry-4\\3-5.md",
+      "artifactSha256": "ef4539bcf2d94e92ac9d819d32360aeac9afe44366d2351eb0f11109b4e32aea",
+      "interactionArtifact": "docs\\agent-contributions\\m22\\retry-4\\3-5.json",
+      "interactionSha256": "3c045c59e28a310ebd54fc38343de79b5e95064b139422e7b52118adae271753",
+      "verifiedAt": "2026-10-03T19:27:26.509969+00:00",
+      "scope": "identity/files/actual HTTP evidence verified; role finding needs independent review"
+    },
+    "findingReview": {
+      "status": "bounded_participation_accepted",
+      "review": "docs/validation/m22-role-findings-review-20261004.md",
+      "scope": "independent substantive participation; broader product/release gate not passed",
+      "artifactSha256": "ef4539bcf2d94e92ac9d819d32360aeac9afe44366d2351eb0f11109b4e32aea",
+      "interactionSha256": "3c045c59e28a310ebd54fc38343de79b5e95064b139422e7b52118adae271753"
+    }
+  },
+  {
+    "agentId": "593c9b7b-a543-4e0c-9eae-cc28dd8ed04e",
+    "roleCode": "3.6",
+    "issueId": "6ffcef10-7bfe-42ac-ac6d-7d90eaf4c723",
+    "identifier": "ALG-393",
+    "artifact": "docs/agent-contributions/m22/retry-4/3-6.md",
+    "status": "evidence_verified",
+    "actualRunId": "62456cb8-a189-4ac4-96ec-ca56881b75c3",
+    "verification": {
+      "runId": "62456cb8-a189-4ac4-96ec-ca56881b75c3",
+      "issueId": "6ffcef10-7bfe-42ac-ac6d-7d90eaf4c723",
+      "artifact": "docs\\agent-contributions\\m22\\retry-4\\3-6.md",
+      "artifactSha256": "8505af9557a0d980d0e4a90c6237c832e5d3eea91adcd8a0f6ebefad6951f926",
+      "interactionArtifact": "docs\\agent-contributions\\m22\\retry-4\\3-6.json",
+      "interactionSha256": "2258e8dc3b2b5e1f7af74f921ae633053159196a4d460856989bb00b3b083872",
+      "verifiedAt": "2026-10-03T19:27:26.629783+00:00",
+      "scope": "identity/files/actual HTTP evidence verified; role finding needs independent review"
+    },
+    "findingReview": {
+      "status": "bounded_participation_accepted",
+      "review": "docs/validation/m22-role-findings-review-20261004.md",
+      "scope": "independent substantive participation; broader product/release gate not passed",
+      "artifactSha256": "8505af9557a0d980d0e4a90c6237c832e5d3eea91adcd8a0f6ebefad6951f926",
+      "interactionSha256": "2258e8dc3b2b5e1f7af74f921ae633053159196a4d460856989bb00b3b083872"
+    }
+  },
+  {
+    "agentId": "5ed56bac-12cf-4d2d-980d-daeb47fa4380",
+    "roleCode": "3.7",
+    "issueId": "ac4e1dde-3141-47f0-8fd4-737b3449d894",
+    "identifier": "ALG-394",
+    "artifact": "docs/agent-contributions/m22/retry-4/3-7.md",
+    "status": "evidence_verified",
+    "actualRunId": "2be296bc-2c29-4e24-b966-66bbce4a9768",
+    "verification": {
+      "runId": "2be296bc-2c29-4e24-b966-66bbce4a9768",
+      "issueId": "ac4e1dde-3141-47f0-8fd4-737b3449d894",
+      "artifact": "docs\\agent-contributions\\m22\\retry-4\\3-7.md",
+      "artifactSha256": "587702755032c7cdfe341c36fed1f594ea01edfac4d0a918598b05eed0641e95",
+      "interactionArtifact": "docs\\agent-contributions\\m22\\retry-4\\3-7.json",
+      "interactionSha256": "3f67f1142c41a94812e315761fead4bda61addc88a5f4f9e1009b3bfe555226d",
+      "verifiedAt": "2026-10-03T19:26:25.986880+00:00",
+      "scope": "identity/files/actual HTTP evidence verified; role finding needs independent review"
+    },
+    "findingReview": {
+      "status": "bounded_participation_accepted",
+      "review": "docs/validation/m22-role-findings-review-20261004.md",
+      "scope": "independent substantive participation; broader product/release gate not passed",
+      "artifactSha256": "587702755032c7cdfe341c36fed1f594ea01edfac4d0a918598b05eed0641e95",
+      "interactionSha256": "3f67f1142c41a94812e315761fead4bda61addc88a5f4f9e1009b3bfe555226d"
+    }
+  },
+  {
+    "agentId": "b6d88baf-13aa-49c3-9731-caf291e480e0",
+    "roleCode": "3.8",
+    "issueId": "142f53ec-64d6-4897-8c16-12565d7d919c",
+    "identifier": "ALG-395",
+    "artifact": "docs/agent-contributions/m22/retry-2/3-8.md",
+    "status": "evidence_verified",
+    "actualRunId": "111fea8b-b241-4e4d-ac94-fda6b33bea96",
+    "verification": {
+      "runId": "111fea8b-b241-4e4d-ac94-fda6b33bea96",
+      "issueId": "142f53ec-64d6-4897-8c16-12565d7d919c",
+      "artifact": "docs\\agent-contributions\\m22\\retry-2\\3-8.md",
+      "artifactSha256": "72bf74cf922593147f8f7b6a56743e3cf2c7750fa213406d656cdcc4c84632f6",
+      "interactionArtifact": "docs\\agent-contributions\\m22\\retry-2\\3-8.json",
+      "interactionSha256": "a142fd041030045775c6b2a403dc0c955b12a4f1d3ee9ecd2d3fc40c94efd35c",
+      "verifiedAt": "2026-10-03T19:31:53.418734+00:00",
+      "scope": "identity/files/actual HTTP evidence verified; role finding needs independent review"
+    },
+    "findingReview": {
+      "status": "bounded_participation_accepted",
+      "review": "docs/validation/m22-role-findings-review-20261004.md",
+      "scope": "independent substantive participation; broader product/release gate not passed",
+      "artifactSha256": "72bf74cf922593147f8f7b6a56743e3cf2c7750fa213406d656cdcc4c84632f6",
+      "interactionSha256": "a142fd041030045775c6b2a403dc0c955b12a4f1d3ee9ecd2d3fc40c94efd35c"
+    }
+  },
+  {
+    "agentId": "71e8e56e-fb2c-429c-94ab-25658e17308c",
+    "roleCode": "4.1",
+    "issueId": "ebba39c5-0aaf-4576-9bd2-5bce9caf724c",
+    "identifier": "ALG-396",
+    "artifact": "docs/agent-contributions/m22/retry-2/4-1.md",
+    "status": "evidence_verified",
+    "actualRunId": "9f7561e1-0c3c-4065-8681-3747c855298e",
+    "verification": {
+      "runId": "9f7561e1-0c3c-4065-8681-3747c855298e",
+      "issueId": "ebba39c5-0aaf-4576-9bd2-5bce9caf724c",
+      "artifact": "docs\\agent-contributions\\m22\\retry-2\\4-1.md",
+      "artifactSha256": "f0bff11692acdde5dd5f8273b36f311355df0e11318aea870a443fe2aa39b048",
+      "interactionArtifact": "docs\\agent-contributions\\m22\\retry-2\\4-1.json",
+      "interactionSha256": "e029a5d3f62aded5beeea9aaceeee7412651708b23bbb21040c842155efe4199",
+      "verifiedAt": "2026-10-03T19:30:12.417366+00:00",
+      "scope": "identity/files/actual HTTP evidence verified; role finding needs independent review"
+    },
+    "findingReview": {
+      "status": "bounded_participation_accepted",
+      "review": "docs/validation/m22-role-findings-review-20261004.md",
+      "scope": "independent substantive participation; broader product/release gate not passed",
+      "artifactSha256": "f0bff11692acdde5dd5f8273b36f311355df0e11318aea870a443fe2aa39b048",
+      "interactionSha256": "e029a5d3f62aded5beeea9aaceeee7412651708b23bbb21040c842155efe4199"
+    }
+  },
+  {
+    "agentId": "75315315-9bba-44a3-a0b4-7b7fd84f9fe2",
+    "roleCode": "4.2",
+    "issueId": "daabb988-6ab1-42ae-84d1-577a3b14e3d8",
+    "identifier": "ALG-397",
+    "artifact": "docs/agent-contributions/m22/retry-2/4-2.md",
+    "status": "evidence_verified",
+    "actualRunId": "3a880409-fc65-4d67-8bff-21214d5aab84",
+    "verification": {
+      "runId": "3a880409-fc65-4d67-8bff-21214d5aab84",
+      "issueId": "daabb988-6ab1-42ae-84d1-577a3b14e3d8",
+      "artifact": "docs\\agent-contributions\\m22\\retry-2\\4-2.md",
+      "artifactSha256": "bbcfd2b9779d18b629cdf58acc5f4e88cf9a5dc505213d930f6435bdac0c6688",
+      "interactionArtifact": "docs\\agent-contributions\\m22\\retry-2\\4-2.json",
+      "interactionSha256": "0b9cfb4732efa67f177d96ab3f65bbedac927acbce129d960de43b0059ca2201",
+      "verifiedAt": "2026-10-03T19:31:33.278766+00:00",
+      "scope": "identity/files/actual HTTP evidence verified; role finding needs independent review"
+    },
+    "findingReview": {
+      "status": "bounded_participation_accepted",
+      "review": "docs/validation/m22-role-findings-review-20261004.md",
+      "scope": "independent substantive participation; broader product/release gate not passed",
+      "artifactSha256": "bbcfd2b9779d18b629cdf58acc5f4e88cf9a5dc505213d930f6435bdac0c6688",
+      "interactionSha256": "0b9cfb4732efa67f177d96ab3f65bbedac927acbce129d960de43b0059ca2201"
+    }
+  },
+  {
+    "agentId": "207f62e3-cf4a-4186-9b0c-84c37a870809",
+    "roleCode": "4.3",
+    "issueId": "7281a1f8-c92c-4282-98ea-dcee0bfa689f",
+    "identifier": "ALG-398",
+    "artifact": "docs/agent-contributions/4-3.md",
+    "status": "blocked",
+    "actualRunId": "bbb91e90-a716-4e97-9667-9abf7127fc2b",
+    "reason": "Actual run/issue did not complete",
+    "runStatus": "failed",
+    "retryAuthorized": true,
+    "retryAuthorization": "Owner continued M22 on 2026-10-06; one new bounded review attempt. Original failure/artifacts preserved; no release approval."
+  },
+  {
+    "agentId": "e35a5ddd-3654-4373-bac4-dc4e8e23ed2c",
+    "roleCode": "4.4",
+    "issueId": "36a2aba5-968f-4121-b325-424c69ccef40",
+    "identifier": "ALG-399",
+    "artifact": "docs/agent-contributions/4-4.md",
+    "status": "blocked",
+    "actualRunId": "e5091939-dc85-4011-9928-b1cfb9283b4c",
+    "runStatus": "failed",
+    "reason": "Live reconciliation: three failed task runs; latest ACP agent reported a terminal limit failure.",
+    "retryAuthorized": true,
+    "retryAuthorization": "Owner continued M22 on 2026-10-06; one new bounded review attempt. Original failure/artifacts preserved; no release approval."
+  },
+  {
+    "agentId": "69e9c7d6-f5dc-4ca1-baec-f95eb4bae6fa",
+    "roleCode": "4.5",
+    "issueId": "a91a2bc9-966e-435d-878e-8c5fbaa21cde",
+    "identifier": "ALG-400",
+    "artifact": "docs/agent-contributions/4-5.md",
+    "status": "blocked",
+    "actualRunId": "82796f1a-535b-49fa-a946-2350e5492a2e",
+    "reason": "Actual run/issue did not complete",
+    "runStatus": "failed",
+    "retryAuthorized": true,
+    "retryAuthorization": "Owner continued M22 on 2026-10-06; one new bounded review attempt. Original failure/artifacts preserved; no release approval."
+  },
+  {
+    "agentId": "db72e09b-1273-4b5b-b2f5-2da2f95de2e9",
+    "roleCode": "4.6",
+    "issueId": "5f4d8305-3153-4133-8d0f-29e65ced5ee1",
+    "identifier": "ALG-401",
+    "artifact": "docs/agent-contributions/4-6.md",
+    "status": "evidence_verified",
+    "actualRunId": "7cca137a-920e-47e7-82ac-f3e9ac3e7137",
+    "verification": {
+      "runId": "7cca137a-920e-47e7-82ac-f3e9ac3e7137",
+      "issueId": "5f4d8305-3153-4133-8d0f-29e65ced5ee1",
+      "artifact": "docs\\agent-contributions\\4-6.md",
+      "artifactSha256": "f4728b8fd9941938a6f948105f5ba01b6b8860766e43632e2d691dc4dd7b5ccb",
+      "interactionArtifact": "docs\\agent-contributions\\4-6.json",
+      "interactionSha256": "41086c4490f50df36889a7f9efef09340fa2ce42ba03c2f3b129d8f7487d69ae",
+      "verifiedAt": "2026-10-04T11:06:50.409088+00:00",
+      "scope": "identity/files/actual HTTP evidence verified; role finding needs independent review"
+    },
+    "findingReview": {
+      "status": "bounded_participation_accepted",
+      "review": "docs/validation/m22-role-findings-review-20261004.md",
+      "scope": "independent substantive participation; broader product/release gate not passed",
+      "artifactSha256": "f4728b8fd9941938a6f948105f5ba01b6b8860766e43632e2d691dc4dd7b5ccb",
+      "interactionSha256": "41086c4490f50df36889a7f9efef09340fa2ce42ba03c2f3b129d8f7487d69ae"
+    }
+  },
+  {
+    "agentId": "55097e5d-7b99-4dfc-8d55-248317ebbd66",
+    "roleCode": "4.7",
+    "issueId": "5bf4a21b-af98-4068-87f5-7be3d5626992",
+    "identifier": "ALG-402",
+    "artifact": "docs/agent-contributions/4-7.md",
+    "status": "evidence_verified",
+    "actualRunId": "443f710b-a7a5-460a-b70c-e22fa89b8eb0",
+    "verification": {
+      "runId": "443f710b-a7a5-460a-b70c-e22fa89b8eb0",
+      "issueId": "5bf4a21b-af98-4068-87f5-7be3d5626992",
+      "artifact": "docs\\agent-contributions\\4-7.md",
+      "artifactSha256": "d33dc1795e2ce92f6dbf13689dd1d409f60e49ca5900691f9acbc41a7b8b31c3",
+      "interactionArtifact": "docs\\agent-contributions\\4-7.json",
+      "interactionSha256": "da46aaf7d627293c81e6758e567f20e5b4bbd2d26c4624c99a22758e2ea0787a",
+      "verifiedAt": "2026-10-04T11:11:29.830307+00:00",
+      "scope": "identity/files/actual HTTP evidence verified; role finding needs independent review"
+    },
+    "findingReview": {
+      "status": "bounded_participation_accepted",
+      "review": "docs/validation/m22-role-findings-review-20261004.md",
+      "scope": "independent substantive participation; broader product/release gate not passed",
+      "artifactSha256": "d33dc1795e2ce92f6dbf13689dd1d409f60e49ca5900691f9acbc41a7b8b31c3",
+      "interactionSha256": "da46aaf7d627293c81e6758e567f20e5b4bbd2d26c4624c99a22758e2ea0787a"
+    }
+  },
+  {
+    "agentId": "c7555051-af5b-42f6-abce-f9c5dfde5edb",
+    "roleCode": "4.8",
+    "issueId": "7bea8dc6-d91e-4a44-9c52-d016428b66b4",
+    "identifier": "ALG-403",
+    "artifact": "docs/agent-contributions/4-8.md",
+    "status": "evidence_verified",
+    "actualRunId": "55f4f111-3cd1-48d2-86f6-e1034ed77069",
+    "verification": {
+      "runId": "55f4f111-3cd1-48d2-86f6-e1034ed77069",
+      "issueId": "7bea8dc6-d91e-4a44-9c52-d016428b66b4",
+      "artifact": "docs\\agent-contributions\\4-8.md",
+      "artifactSha256": "0644568689ba8b1f56252105834043443263d507f6d5f336df65b5f3d3cc3be3",
+      "interactionArtifact": "docs\\agent-contributions\\4-8.json",
+      "interactionSha256": "f88e083bdbfbaeb2f0c2c9c08d816ff3ba946fc8d4a39333cbee984ab94fa11a",
+      "verifiedAt": "2026-10-04T11:14:47.129272+00:00",
+      "scope": "identity/files/actual HTTP evidence verified; role finding needs independent review"
+    },
+    "findingReview": {
+      "status": "bounded_participation_accepted",
+      "review": "docs/validation/m22-role-findings-review-20261004.md",
+      "scope": "independent substantive participation; broader product/release gate not passed",
+      "artifactSha256": "0644568689ba8b1f56252105834043443263d507f6d5f336df65b5f3d3cc3be3",
+      "interactionSha256": "f88e083bdbfbaeb2f0c2c9c08d816ff3ba946fc8d4a39333cbee984ab94fa11a"
+    }
+  },
+  {
+    "agentId": "1e78976d-c852-460f-9ec7-c764b0c06457",
+    "roleCode": "4.9",
+    "issueId": "df719c1c-33c6-449e-9448-2e53798e7225",
+    "identifier": "ALG-404",
+    "artifact": "docs/agent-contributions/4-9.md",
+    "status": "evidence_verified",
+    "actualRunId": "f63ed396-dc48-4cdb-8dce-e4a9b78dd171",
+    "verification": {
+      "runId": "f63ed396-dc48-4cdb-8dce-e4a9b78dd171",
+      "issueId": "df719c1c-33c6-449e-9448-2e53798e7225",
+      "artifact": "docs\\agent-contributions\\4-9.md",
+      "artifactSha256": "b81528053e474a46e496d3aa5552144ff4fc55536cc15eedbbbacfae8ecbb6aa",
+      "interactionArtifact": "docs\\agent-contributions\\4-9.json",
+      "interactionSha256": "824a0099496351e434c05aa5b20675e8e77e0461e015ac70b87a7e89771bcaf8",
+      "verifiedAt": "2026-10-04T11:14:47.350263+00:00",
+      "scope": "identity/files/actual HTTP evidence verified; role finding needs independent review"
+    },
+    "findingReview": {
+      "status": "bounded_participation_accepted",
+      "review": "docs/validation/m22-role-findings-review-20261004.md",
+      "scope": "independent substantive participation; broader product/release gate not passed",
+      "artifactSha256": "b81528053e474a46e496d3aa5552144ff4fc55536cc15eedbbbacfae8ecbb6aa",
+      "interactionSha256": "824a0099496351e434c05aa5b20675e8e77e0461e015ac70b87a7e89771bcaf8"
+    }
+  },
+  {
+    "agentId": "969df8f0-a120-440d-86c4-daa0a2d0b200",
+    "roleCode": "4.10",
+    "issueId": "505cfafa-05c0-4702-9be8-d5a4679b16c1",
+    "identifier": "ALG-405",
+    "artifact": "docs/agent-contributions/4-10.md",
+    "status": "evidence_verified",
+    "actualRunId": "87e2a977-30e4-47bd-bcda-7e7bdab5ec8b",
+    "verification": {
+      "runId": "87e2a977-30e4-47bd-bcda-7e7bdab5ec8b",
+      "issueId": "505cfafa-05c0-4702-9be8-d5a4679b16c1",
+      "artifact": "docs\\agent-contributions\\4-10.md",
+      "artifactSha256": "24756f335d3130aedd817f9116623ed67477ff395407ec4d55d76dfd9ef9a54e",
+      "interactionArtifact": "docs\\agent-contributions\\4-10.json",
+      "interactionSha256": "befb608a59014bac46b6acb9b171cdfcfb914424e5f72253ab50c560983c04c9",
+      "verifiedAt": "2026-10-04T11:15:07.608637+00:00",
+      "scope": "identity/files/actual HTTP evidence verified; role finding needs independent review"
+    },
+    "findingReview": {
+      "status": "bounded_participation_accepted",
+      "review": "docs/validation/m22-role-findings-review-20261004.md",
+      "scope": "independent substantive participation; broader product/release gate not passed",
+      "artifactSha256": "24756f335d3130aedd817f9116623ed67477ff395407ec4d55d76dfd9ef9a54e",
+      "interactionSha256": "befb608a59014bac46b6acb9b171cdfcfb914424e5f72253ab50c560983c04c9"
+    }
+  },
+  {
+    "agentId": "efa6c34e-9fae-4ec0-9b73-615ffc72e965",
+    "roleCode": "4.11",
+    "issueId": "58c82540-9cb6-43d8-9972-ce3d8cc09cd0",
+    "identifier": "ALG-406",
+    "artifact": "docs/agent-contributions/4-11.md",
+    "status": "evidence_verified",
+    "actualRunId": "0b2088c2-135a-463b-a9a6-ab3357925d22",
+    "verification": {
+      "runId": "0b2088c2-135a-463b-a9a6-ab3357925d22",
+      "issueId": "58c82540-9cb6-43d8-9972-ce3d8cc09cd0",
+      "artifact": "docs\\agent-contributions\\4-11.md",
+      "artifactSha256": "192ce306165ac1fcee3fb776f7d69b4a52f16811e644e9084786628f8a608ea8",
+      "interactionArtifact": "docs\\agent-contributions\\4-11.json",
+      "interactionSha256": "3d373b5a8018a411fd7df71be9c116444487224c6ab0679eb1974f8e0d169162",
+      "verifiedAt": "2026-10-04T11:20:56.540459+00:00",
+      "scope": "identity/files/actual HTTP evidence verified; role finding needs independent review"
+    },
+    "findingReview": {
+      "status": "bounded_participation_accepted",
+      "review": "docs/validation/m22-role-findings-review-20261004.md",
+      "scope": "independent substantive participation; broader product/release gate not passed",
+      "artifactSha256": "192ce306165ac1fcee3fb776f7d69b4a52f16811e644e9084786628f8a608ea8",
+      "interactionSha256": "3d373b5a8018a411fd7df71be9c116444487224c6ab0679eb1974f8e0d169162"
+    }
+  },
+  {
+    "agentId": "7ab9dd43-4f8c-41b6-ae7c-ab2ed51de676",
+    "roleCode": "4.12",
+    "issueId": "32353483-5f70-4a5b-bb19-0d14dab943a5",
+    "identifier": "ALG-407",
+    "artifact": "docs/agent-contributions/4-12.md",
+    "status": "evidence_verified",
+    "actualRunId": "87dc7d3c-107c-4d9e-ae86-b66ef925ea10",
+    "verification": {
+      "runId": "87dc7d3c-107c-4d9e-ae86-b66ef925ea10",
+      "issueId": "32353483-5f70-4a5b-bb19-0d14dab943a5",
+      "artifact": "docs\\agent-contributions\\4-12.md",
+      "artifactSha256": "c0049fa9ac046406156de07210ba36249c0ead3db42b8e27991924c2d006ecfd",
+      "interactionArtifact": "docs\\agent-contributions\\4-12.json",
+      "interactionSha256": "cb24d6a046a8b8b9227033a5e47767ec8a93e3e05a5e2855d79990e6f48c2e7a",
+      "verifiedAt": "2026-10-04T11:21:56.984062+00:00",
+      "scope": "identity/files/actual HTTP evidence verified; role finding needs independent review"
+    },
+    "findingReview": {
+      "status": "bounded_participation_accepted",
+      "review": "docs/validation/m22-role-findings-review-20261004.md",
+      "scope": "independent substantive participation; broader product/release gate not passed",
+      "artifactSha256": "c0049fa9ac046406156de07210ba36249c0ead3db42b8e27991924c2d006ecfd",
+      "interactionSha256": "cb24d6a046a8b8b9227033a5e47767ec8a93e3e05a5e2855d79990e6f48c2e7a"
+    }
+  },
+  {
+    "agentId": "f4bf3ea4-a3f4-4bf3-b863-fbe1d294d3fa",
+    "roleCode": "4.13",
+    "issueId": "d559600f-d0dc-4dfe-af2b-ec7857515d14",
+    "identifier": "ALG-415",
+    "artifact": "docs/agent-contributions/4-13.md",
+    "status": "evidence_verified",
+    "actualRunId": "98b7ab8d-8087-4b62-8f3e-9b9f724a43cc",
+    "verification": {
+      "runId": "98b7ab8d-8087-4b62-8f3e-9b9f724a43cc",
+      "issueId": "d559600f-d0dc-4dfe-af2b-ec7857515d14",
+      "artifact": "docs\\agent-contributions\\4-13.md",
+      "artifactSha256": "eb38a630cac06e3bac16fc1d620c821c4378ab8ebee29d5a0597b1186f12da9f",
+      "interactionArtifact": "docs\\agent-contributions\\4-13.json",
+      "interactionSha256": "6912bfd4ef92f396bfaa2813cfb83dc0607acd2287036ce626a2bbd205e695e2",
+      "verifiedAt": "2026-10-04T18:19:10.477542+00:00",
+      "scope": "identity/files/actual HTTP evidence verified; role finding needs independent review"
+    }
+  },
+  {
+    "agentId": "5c1d3174-02eb-41b1-b6f5-5a77bd5f3502",
+    "roleCode": "4.14",
+    "issueId": "e223757f-dd36-435e-8ce5-e4ee3bb9a29a",
+    "identifier": "ALG-416",
+    "artifact": "docs/agent-contributions/4-14.md",
+    "status": "evidence_verified",
+    "actualRunId": "57ab20f1-23fb-4bbf-9f12-e034d544d170",
+    "verification": {
+      "runId": "57ab20f1-23fb-4bbf-9f12-e034d544d170",
+      "issueId": "e223757f-dd36-435e-8ce5-e4ee3bb9a29a",
+      "artifact": "docs\\agent-contributions\\4-14.md",
+      "artifactSha256": "0ef9616b0b0fb3a4367ec1841516d02f7c429a7bdb2b1ca0384d46f73769f03c",
+      "interactionArtifact": "docs\\agent-contributions\\4-14.json",
+      "interactionSha256": "86a36ad2748dcb2ca63c9207e1dc20728869f689cf17b02ddb32fd82136a0fe9",
+      "verifiedAt": "2026-10-04T18:21:51.307961+00:00",
+      "scope": "identity/files/actual HTTP evidence verified; role finding needs independent review"
+    }
+  },
+  {
+    "agentId": "46d53bec-928a-41fc-86ed-a8bd5f90330c",
+    "roleCode": "5.1",
+    "issueId": "fb3485da-fe7a-4e22-8eb1-358014fb07c7",
+    "identifier": "ALG-417",
+    "artifact": "docs/agent-contributions/5-1.md",
+    "status": "evidence_verified",
+    "actualRunId": "80f6ee46-51fc-4f98-824d-bd475a976486",
+    "verification": {
+      "runId": "80f6ee46-51fc-4f98-824d-bd475a976486",
+      "issueId": "fb3485da-fe7a-4e22-8eb1-358014fb07c7",
+      "artifact": "docs\\agent-contributions\\5-1.md",
+      "artifactSha256": "0fd3d27ec4925ea02b34cec33ee69d810bf180b1cfbe0651bcbdfd476e0ae79f",
+      "interactionArtifact": "docs\\agent-contributions\\5-1.json",
+      "interactionSha256": "25a4ec99fb77fcf53251707e33a705e1cd06eb7fb002732f20907412cd16b2ec",
+      "verifiedAt": "2026-10-04T18:24:52.102730+00:00",
+      "scope": "identity/files/actual HTTP evidence verified; role finding needs independent review"
+    }
+  },
+  {
+    "agentId": "42ef6e28-f718-466d-a15a-808046f0d834",
+    "roleCode": "5.2",
+    "issueId": "d9cfe606-be04-47e6-bd5b-a86b6cb54f07",
+    "identifier": "ALG-418",
+    "artifact": "docs/agent-contributions/5-2.md",
+    "status": "evidence_verified",
+    "actualRunId": "88af4828-2bb2-4a9f-a8a7-625b3a7a0828",
+    "verification": {
+      "runId": "88af4828-2bb2-4a9f-a8a7-625b3a7a0828",
+      "issueId": "d9cfe606-be04-47e6-bd5b-a86b6cb54f07",
+      "artifact": "docs\\agent-contributions\\5-2.md",
+      "artifactSha256": "677a6358bf3531c08d099906679bb30306b6c3836f99814b0a2c6b92b36dda3d",
+      "interactionArtifact": "docs\\agent-contributions\\5-2.json",
+      "interactionSha256": "f2de3ba2de94d93df078b16f13812f67c057dc02bab89b78fce4399b31bb4e80",
+      "verifiedAt": "2026-10-04T18:27:52.815071+00:00",
+      "scope": "identity/files/actual HTTP evidence verified; role finding needs independent review"
+    }
+  },
+  {
+    "agentId": "c310b045-c0a4-441d-90d2-8b85e56715d3",
+    "roleCode": "5.3",
+    "issueId": "c9e69cff-e6b5-4934-b0d1-73bad2ec9a6b",
+    "identifier": "ALG-419",
+    "artifact": "docs/agent-contributions/5-3.md",
+    "status": "evidence_verified",
+    "actualRunId": "eed63f70-6cb1-4049-980c-b4b876e0cee8",
+    "verification": {
+      "runId": "eed63f70-6cb1-4049-980c-b4b876e0cee8",
+      "issueId": "c9e69cff-e6b5-4934-b0d1-73bad2ec9a6b",
+      "artifact": "docs\\agent-contributions\\5-3.md",
+      "artifactSha256": "013a309c0a703193996e44d415fca1f0e2ae31a88c399ccab98c6359388eb130",
+      "interactionArtifact": "docs\\agent-contributions\\5-3.json",
+      "interactionSha256": "7fe0701a641bdc8e020c6af1b3867fb814ca9c2dd2567b7ed087dbecd036e5e8",
+      "verifiedAt": "2026-10-04T18:30:33.477026+00:00",
+      "scope": "identity/files/actual HTTP evidence verified; role finding needs independent review"
+    }
+  },
+  {
+    "agentId": "c92ff256-0705-48e8-ba08-94c6938ba3e9",
+    "roleCode": "5.4",
+    "issueId": "7b8cb442-39aa-44ad-9203-dacaf8cea3ff",
+    "identifier": "ALG-420",
+    "artifact": "docs/agent-contributions/5-4.md",
+    "status": "evidence_verified",
+    "actualRunId": "88dc2a92-54f8-4eed-b11b-4ac954021291",
+    "verification": {
+      "runId": "88dc2a92-54f8-4eed-b11b-4ac954021291",
+      "issueId": "7b8cb442-39aa-44ad-9203-dacaf8cea3ff",
+      "artifact": "docs\\agent-contributions\\5-4.md",
+      "artifactSha256": "e5fe19d3fcf8095c6cc0a814f38b5060a812eb079c60dfe372b85df281e6f583",
+      "interactionArtifact": "docs\\agent-contributions\\5-4.json",
+      "interactionSha256": "5726542c57b825d24b34e51c92bbb190bfaf0dc506ff19e23665137ec2f883b5",
+      "verifiedAt": "2026-10-04T18:32:54.073868+00:00",
+      "scope": "identity/files/actual HTTP evidence verified; role finding needs independent review"
+    }
+  },
+  {
+    "agentId": "043c7b60-3e6c-48c3-a3f8-903246ff31c9",
+    "roleCode": "5.5",
+    "issueId": "db6030b3-31f6-4408-a1e1-c4ee5deb1aee",
+    "identifier": "ALG-421",
+    "artifact": "docs/agent-contributions/5-5.md",
+    "status": "evidence_verified",
+    "actualRunId": "a31c89a3-47b7-4602-9cba-a33a4ff1e202",
+    "verification": {
+      "runId": "a31c89a3-47b7-4602-9cba-a33a4ff1e202",
+      "issueId": "db6030b3-31f6-4408-a1e1-c4ee5deb1aee",
+      "artifact": "docs\\agent-contributions\\5-5.md",
+      "artifactSha256": "efd8c19c49496965faf6112304912474f3b147a2d3c1c0468f68c0ff201e6a00",
+      "interactionArtifact": "docs\\agent-contributions\\5-5.json",
+      "interactionSha256": "c47bc2f1751ee0212615f20fd612fbc198ac6184ad6db69cc3781887c93b1bf7",
+      "verifiedAt": "2026-10-04T18:53:20.364739+00:00",
+      "scope": "identity/files/actual HTTP evidence verified; role finding needs independent review"
+    }
+  },
+  {
+    "agentId": "c6e550ff-c65a-4b13-84a2-4589e47a319a",
+    "roleCode": "5.6",
+    "issueId": "2dca0306-2d35-4fd8-8cba-0606fd8ea79b",
+    "identifier": "ALG-422",
+    "artifact": "docs/agent-contributions/5-6.md",
+    "status": "evidence_verified",
+    "actualRunId": "cad11e01-f460-4346-a51d-3c6533738cde",
+    "verification": {
+      "runId": "cad11e01-f460-4346-a51d-3c6533738cde",
+      "issueId": "2dca0306-2d35-4fd8-8cba-0606fd8ea79b",
+      "artifact": "docs\\agent-contributions\\5-6.md",
+      "artifactSha256": "edb909eff7e62cd74cc3e94950bce107ddbe0413cc915ec3ca62159afaa8ce8e",
+      "interactionArtifact": "docs\\agent-contributions\\5-6.json",
+      "interactionSha256": "71a85b35a35e597599c6960485236fb4712d0371e568b7dc986309ff052d4558",
+      "verifiedAt": "2026-10-04T18:55:41.007132+00:00",
+      "scope": "identity/files/actual HTTP evidence verified; role finding needs independent review"
+    }
+  },
+  {
+    "agentId": "d7c85845-89ea-430d-9c59-b15ebdd74733",
+    "roleCode": "5.7",
+    "issueId": "feacdeec-89be-4b03-9da7-7a590cefd47f",
+    "identifier": "ALG-423",
+    "artifact": "docs/agent-contributions/5-7.md",
+    "status": "evidence_verified",
+    "actualRunId": "1de80029-bbaf-43fa-98ee-112aef471180",
+    "verification": {
+      "runId": "1de80029-bbaf-43fa-98ee-112aef471180",
+      "issueId": "feacdeec-89be-4b03-9da7-7a590cefd47f",
+      "artifact": "docs\\agent-contributions\\5-7.md",
+      "artifactSha256": "110a2cb3517cc4c2377566617ae843321273fcf6be2409a5c7af80e594cb157d",
+      "interactionArtifact": "docs\\agent-contributions\\5-7.json",
+      "interactionSha256": "54171d5956c4fbda630d17c09010cea6b1f31c890dc76bf889dacd3fd2b8ee4e",
+      "verifiedAt": "2026-10-04T18:57:41.545177+00:00",
+      "scope": "identity/files/actual HTTP evidence verified; role finding needs independent review"
+    }
+  },
+  {
+    "agentId": "260a8298-e47e-4cb2-880f-b320de626ce5",
+    "roleCode": "5.8",
+    "issueId": "c942bbfa-4cb1-4c0f-9dd8-7010cf5ac947",
+    "identifier": "ALG-424",
+    "artifact": "docs/agent-contributions/5-8.md",
+    "status": "blocked",
+    "actualRunId": "5ba957d4-aa0f-474d-b612-3cb0180d8d05",
+    "reason": "Actual run/issue did not complete",
+    "runStatus": "scheduled_retry",
+    "retryAuthorized": true,
+    "retryAuthorization": "Owner continued M22 on 2026-10-06; one new bounded review attempt. Original failure/artifacts preserved; no release approval."
+  },
+  {
+    "agentId": "fabf5ce4-286a-4f82-97ad-58dad5931f18",
+    "roleCode": "5.9",
+    "issueId": "6cca911f-a79d-4b1f-b8cc-9bac3e72a494",
+    "identifier": "ALG-425",
+    "artifact": "docs/agent-contributions/5-9.md",
+    "status": "blocked",
+    "actualRunId": "ff087f99-6597-4fa2-af77-28a0916a26c8",
+    "reason": "Actual run/issue did not complete",
+    "runStatus": "scheduled_retry",
+    "retryAuthorized": true,
+    "retryAuthorization": "Owner continued M22 on 2026-10-06; one new bounded review attempt. Original failure/artifacts preserved; no release approval."
+  },
+  {
+    "agentId": "6f6dabfc-5cf3-43cd-8cc9-44b9b0fb1b8d",
+    "roleCode": "5.10",
+    "issueId": "0ab22193-9f40-48de-a2a3-69a7d95982eb",
+    "identifier": "ALG-426",
+    "artifact": "docs/agent-contributions/5-10.md",
+    "status": "blocked",
+    "actualRunId": "cc26ed90-2fbd-447e-9528-cb9be5faf96e",
+    "reason": "Actual run/issue did not complete",
+    "runStatus": "scheduled_retry",
+    "retryAuthorized": true,
+    "retryAuthorization": "Owner continued M22 on 2026-10-06; one new bounded review attempt. Original failure/artifacts preserved; no release approval."
+  },
+  {
+    "agentId": "687a7f62-b5d8-4524-95f0-432aea6168df",
+    "roleCode": "5.11",
+    "issueId": "3a6d33b3-1438-4ac3-bc7c-983a1d42f04e",
+    "identifier": "ALG-427",
+    "artifact": "docs/agent-contributions/5-11.md",
+    "status": "evidence_verified",
+    "actualRunId": "3e572142-047d-4514-8612-760d9eada4f8",
+    "verification": {
+      "runId": "3e572142-047d-4514-8612-760d9eada4f8",
+      "issueId": "3a6d33b3-1438-4ac3-bc7c-983a1d42f04e",
+      "artifact": "docs\\agent-contributions\\5-11.md",
+      "artifactSha256": "589f8feaac35ecb7d9f538bec38c883750761e631bcc6b4f82b8a371ad640eb7",
+      "interactionArtifact": "docs\\agent-contributions\\5-11.json",
+      "interactionSha256": "09892726775b9db660b6ca216bacbdf9a42b58095718d4f6f9a2767c2fb03dff",
+      "verifiedAt": "2026-10-05T12:56:34.286164+00:00",
+      "scope": "identity/files/actual HTTP evidence verified; role finding needs independent review"
+    }
+  },
+  {
+    "agentId": "985eb8ac-418e-4373-b75d-b06575fe91e8",
+    "roleCode": "5.12",
+    "issueId": "d94e435c-998d-4ffd-b127-82b6ebb2c957",
+    "identifier": "ALG-428",
+    "artifact": "docs/agent-contributions/5-12.md",
+    "status": "evidence_verified",
+    "actualRunId": "de9b5b35-4415-441e-a235-f3fe02b8f7d9",
+    "verification": {
+      "runId": "de9b5b35-4415-441e-a235-f3fe02b8f7d9",
+      "issueId": "d94e435c-998d-4ffd-b127-82b6ebb2c957",
+      "artifact": "docs\\agent-contributions\\5-12.md",
+      "artifactSha256": "f89ad52a915212959f8a028b7fc4e328683c7515d83ccc4e66097467d2e113ea",
+      "interactionArtifact": "docs\\agent-contributions\\5-12.json",
+      "interactionSha256": "95716ba62615ee27acd8a80923cd4ba4b973ebcac47c24d57e6ee053448884fc",
+      "verifiedAt": "2026-10-05T12:58:55.142223+00:00",
+      "scope": "identity/files/actual HTTP evidence verified; role finding needs independent review"
+    }
+  },
+  {
+    "agentId": "e7d5f441-486c-444c-863f-e53fb70bbcdc",
+    "roleCode": "5.13",
+    "issueId": "00a25db9-7de5-4c1b-8aca-5148ebe2738b",
+    "identifier": "ALG-429",
+    "artifact": "docs/agent-contributions/5-13.md",
+    "status": "evidence_verified",
+    "actualRunId": "4ad1d043-d17c-42fe-a917-605c8a0d9890",
+    "verification": {
+      "runId": "4ad1d043-d17c-42fe-a917-605c8a0d9890",
+      "issueId": "00a25db9-7de5-4c1b-8aca-5148ebe2738b",
+      "artifact": "docs\\agent-contributions\\5-13.md",
+      "artifactSha256": "7add37342561f0bf3530c490d3b9690cd6e5274c27bdaaed5cca5c67206b20b8",
+      "interactionArtifact": "docs\\agent-contributions\\5-13.json",
+      "interactionSha256": "4abd17719b7c7294f45913d55bc9fcb6531e936f5ebac986a45e25a6e9f16153",
+      "verifiedAt": "2026-10-05T13:01:56.266562+00:00",
+      "scope": "identity/files/actual HTTP evidence verified; role finding needs independent review"
+    }
+  },
+  {
+    "agentId": "58b3d28f-faf2-4e08-9ca9-869f7524ca33",
+    "roleCode": "5.14",
+    "issueId": "7579e392-f37d-437a-b130-5f56d88ac73d",
+    "identifier": "ALG-430",
+    "artifact": "docs/agent-contributions/5-14.md",
+    "status": "evidence_verified",
+    "actualRunId": "8634df6f-7bd3-49b0-b584-01294bf78a93",
+    "verification": {
+      "runId": "8634df6f-7bd3-49b0-b584-01294bf78a93",
+      "issueId": "7579e392-f37d-437a-b130-5f56d88ac73d",
+      "artifact": "docs\\agent-contributions\\5-14.md",
+      "artifactSha256": "bb6d9eeb485582a4942f6be039642964cd20d2bfc202cf3e3b5e97c3288a2114",
+      "interactionArtifact": "docs\\agent-contributions\\5-14.json",
+      "interactionSha256": "30c525bf777ccd4a07d046b56c5e5a9d772a01d6d6e87200176c82a846215898",
+      "verifiedAt": "2026-10-05T13:04:57.034294+00:00",
+      "scope": "identity/files/actual HTTP evidence verified; role finding needs independent review"
+    }
+  },
+  {
+    "agentId": "f0af4745-fb7e-42c1-a4cf-d861bd6aa3b7",
+    "roleCode": "5.15",
+    "issueId": "b238c067-c66d-4b87-9eed-64b3edb0c591",
+    "identifier": "ALG-431",
+    "artifact": "docs/agent-contributions/5-15.md",
+    "status": "evidence_verified",
+    "actualRunId": "bcb3e3c6-6162-48f5-b3d7-3b6dc717c9b8",
+    "verification": {
+      "runId": "bcb3e3c6-6162-48f5-b3d7-3b6dc717c9b8",
+      "issueId": "b238c067-c66d-4b87-9eed-64b3edb0c591",
+      "artifact": "docs\\agent-contributions\\5-15.md",
+      "artifactSha256": "96da7c0098229306bf74baeef56078e756e4ae8453c901856fb8a561a0a7e876",
+      "interactionArtifact": "docs\\agent-contributions\\5-15.json",
+      "interactionSha256": "e085dcd4f204e6a34603fd54ac26c9307693e7481f2b8fa523e851687a6db0d9",
+      "verifiedAt": "2026-10-05T13:07:37.638483+00:00",
+      "scope": "identity/files/actual HTTP evidence verified; role finding needs independent review"
+    }
+  },
+  {
+    "agentId": "abbef82f-2e24-4bfb-9675-11f34a325499",
+    "roleCode": "5.16",
+    "issueId": "b138a154-4f9d-497c-8536-42aeb31bd1d9",
+    "identifier": "ALG-432",
+    "artifact": "docs/agent-contributions/5-16.md",
+    "status": "evidence_verified",
+    "actualRunId": "fc777564-dd5c-4fb0-9042-9b372fa7422a",
+    "verification": {
+      "runId": "fc777564-dd5c-4fb0-9042-9b372fa7422a",
+      "issueId": "b138a154-4f9d-497c-8536-42aeb31bd1d9",
+      "artifact": "docs\\agent-contributions\\5-16.md",
+      "artifactSha256": "f2f16aa617717c56ab68805c28bd87ab4af2341a84a4b4a0c6e96657a28cc2c7",
+      "interactionArtifact": "docs\\agent-contributions\\5-16.json",
+      "interactionSha256": "6f8a94a1c738e9c0b4e8d7cc8989e5fe9e928eeb174f061fa5f2eb2581afbacc",
+      "verifiedAt": "2026-10-05T13:10:18.367181+00:00",
+      "scope": "identity/files/actual HTTP evidence verified; role finding needs independent review"
+    }
+  },
+  {
+    "agentId": "8e0fc772-7734-4fb5-92a2-701cf4bbdcf1",
+    "roleCode": "5.17",
+    "issueId": "82efa897-09d3-4d85-93b5-acfcf2e4f03d",
+    "identifier": "ALG-433",
+    "artifact": "docs/agent-contributions/5-17.md",
+    "status": "evidence_verified",
+    "actualRunId": "3ad82a06-b227-4bed-929f-115a9c8401ce",
+    "verification": {
+      "runId": "3ad82a06-b227-4bed-929f-115a9c8401ce",
+      "issueId": "82efa897-09d3-4d85-93b5-acfcf2e4f03d",
+      "artifact": "docs\\agent-contributions\\5-17.md",
+      "artifactSha256": "474f8d28c75b4184fc268f042f855f9f4d8c7d5cd172271024f1b565904ab799",
+      "interactionArtifact": "docs\\agent-contributions\\5-17.json",
+      "interactionSha256": "ea130687d0365e0fe239c6b090dde7d3f71dfdedc65be6cd96cdfe99392bf0f1",
+      "verifiedAt": "2026-10-05T13:14:57.672633+00:00",
+      "scope": "identity/files/actual HTTP evidence verified; role finding needs independent review"
+    }
+  },
+  {
+    "agentId": "cb223307-7c04-4d77-b705-fae3aa76534b",
+    "roleCode": "5.18",
+    "issueId": "45bbad5d-ce8b-47e2-a4f0-1052dc471314",
+    "identifier": "ALG-434",
+    "artifact": "docs/agent-contributions/5-18.md",
+    "status": "evidence_verified",
+    "actualRunId": "6d4c1908-9490-476b-b387-f33d5d39bf0b",
+    "verification": {
+      "runId": "6d4c1908-9490-476b-b387-f33d5d39bf0b",
+      "issueId": "45bbad5d-ce8b-47e2-a4f0-1052dc471314",
+      "artifact": "docs\\agent-contributions\\5-18.md",
+      "artifactSha256": "f6d7b23bc98a7121d032660eb2cdc09fb3e3804d562e9096ed0b3b701c8fd288",
+      "interactionArtifact": "docs\\agent-contributions\\5-18.json",
+      "interactionSha256": "810cbae239633741169aa003840d0a3e96bfb5f395d20523b4b0ac098c7f19cb",
+      "verifiedAt": "2026-10-05T13:17:18.503680+00:00",
+      "scope": "identity/files/actual HTTP evidence verified; role finding needs independent review"
+    }
+  },
+  {
+    "agentId": "12c4906d-58b6-43a9-8f2c-911468c09e89",
+    "roleCode": "5.19",
+    "issueId": "5a2b5981-8588-4cab-b74e-415e194d10a5",
+    "identifier": "ALG-435",
+    "artifact": "docs/agent-contributions/5-19.md",
+    "status": "evidence_verified",
+    "actualRunId": "bc07f7a9-771c-477e-bb33-47d0723c9150",
+    "verification": {
+      "runId": "bc07f7a9-771c-477e-bb33-47d0723c9150",
+      "issueId": "5a2b5981-8588-4cab-b74e-415e194d10a5",
+      "artifact": "docs\\agent-contributions\\5-19.md",
+      "artifactSha256": "6cebd3517b7d795b20805e310f9467e71656449744aac629e96d563d934ca9e2",
+      "interactionArtifact": "docs\\agent-contributions\\5-19.json",
+      "interactionSha256": "907f02501c8e48c779d0e0f555982b619a5404204a1364d9df3d5860428174ab",
+      "verifiedAt": "2026-10-05T13:19:39.357397+00:00",
+      "scope": "identity/files/actual HTTP evidence verified; role finding needs independent review"
+    }
+  },
+  {
+    "agentId": "d20fff00-9815-45ab-bb9d-eff698937909",
+    "roleCode": "6.1",
+    "issueId": "18ede6f9-4ffc-4a4a-bb44-923c275c76b6",
+    "identifier": "ALG-436",
+    "artifact": "docs/agent-contributions/6-1.md",
+    "status": "evidence_verified",
+    "actualRunId": "4fc6325e-663c-447e-86fd-fedade6d00f6",
+    "verification": {
+      "runId": "4fc6325e-663c-447e-86fd-fedade6d00f6",
+      "issueId": "18ede6f9-4ffc-4a4a-bb44-923c275c76b6",
+      "artifact": "docs\\agent-contributions\\6-1.md",
+      "artifactSha256": "3a167892dc70b5e91ded922fc605a3a87b87722ce7813d341dcb5efd645596c6",
+      "interactionArtifact": "docs\\agent-contributions\\6-1.json",
+      "interactionSha256": "82de1b2c7f640b5e18683f2adcde8be0b19509a5eb3d3a8d113a82ed2570fb37",
+      "verifiedAt": "2026-10-05T13:22:00.184230+00:00",
+      "scope": "identity/files/actual HTTP evidence verified; role finding needs independent review"
+    }
+  },
+  {
+    "agentId": "0ba4cafc-6e0a-4c65-98e2-e18d6fcd1dae",
+    "roleCode": "6.2",
+    "issueId": "0ef22b73-d78f-40e6-a078-5442d3acd0d5",
+    "identifier": "ALG-437",
+    "artifact": "docs/agent-contributions/6-2.md",
+    "status": "evidence_verified",
+    "actualRunId": "da0d403e-b747-4409-9e52-b9e956f29bbe",
+    "verification": {
+      "runId": "da0d403e-b747-4409-9e52-b9e956f29bbe",
+      "issueId": "0ef22b73-d78f-40e6-a078-5442d3acd0d5",
+      "artifact": "docs\\agent-contributions\\6-2.md",
+      "artifactSha256": "5d74e8a5d2aa20957e5d84140ecb83bba332e40e4388feaddf886517b42aa287",
+      "interactionArtifact": "docs\\agent-contributions\\6-2.json",
+      "interactionSha256": "606cb0d258472544b7f0b7c2019ebb9ca7434a9a4803067289f0eb0f46193bb6",
+      "verifiedAt": "2026-10-05T13:24:01.044420+00:00",
+      "scope": "identity/files/actual HTTP evidence verified; role finding needs independent review"
+    }
+  },
+  {
+    "agentId": "1bb3b676-7f69-4564-aa1a-6b633f839878",
+    "roleCode": "6.3",
+    "issueId": "3f2e2de1-70d2-4382-bc6c-2d90949439a8",
+    "identifier": "ALG-438",
+    "artifact": "docs/agent-contributions/6-3.md",
+    "status": "blocked",
+    "actualRunId": "7bc1f5aa-4420-4ac1-97d9-307480fb2a40",
+    "reason": "Actual run/issue did not complete",
+    "runStatus": "scheduled_retry",
+    "retryAuthorized": true,
+    "retryAuthorization": "Owner continued M22 on 2026-10-06; one new bounded review attempt. Original failure/artifacts preserved; no release approval."
+  },
+  {
+    "agentId": "1253f521-078d-4f68-82e8-626eda5925e8",
+    "roleCode": "3.3",
+    "issueId": "88121007-cf87-43c3-8549-b37dbc234b82",
+    "identifier": "ALG-440",
+    "artifact": "docs/agent-contributions/m22/retry-2/3-3.md",
+    "status": "evidence_verified",
+    "actualRunId": "89142084-875b-403d-91d0-2f1dfacec2f5",
+    "verification": {
+      "runId": "89142084-875b-403d-91d0-2f1dfacec2f5",
+      "issueId": "88121007-cf87-43c3-8549-b37dbc234b82",
+      "artifact": "docs\\agent-contributions\\m22\\retry-2\\3-3.md",
+      "artifactSha256": "06ce6d0d1fce1416c3174a2d728f4233c8846ca88f64edbccffceafc345b20c8",
+      "interactionArtifact": "docs\\agent-contributions\\m22\\retry-2\\3-3.json",
+      "interactionSha256": "a679715dcb1b0f8e0a8987972cbc3ca94781697efc65fc43113332de73249040",
+      "verifiedAt": "2026-10-06T11:37:29.487993+00:00",
+      "scope": "identity/files/actual HTTP evidence verified; role finding needs independent review"
+    }
+  },
+  {
+    "agentId": "838871e1-8f00-425c-b99b-7d3dddbe21cc",
+    "roleCode": "3.4",
+    "issueId": "739daa4a-c82f-4d93-be73-49dc653172fb",
+    "identifier": "ALG-441",
+    "artifact": "docs/agent-contributions/m22/retry-2/3-4.md",
+    "status": "evidence_verified",
+    "actualRunId": "f58e8e86-c37f-4fa3-bd57-9feeed394305",
+    "verification": {
+      "runId": "f58e8e86-c37f-4fa3-bd57-9feeed394305",
+      "issueId": "739daa4a-c82f-4d93-be73-49dc653172fb",
+      "artifact": "docs\\agent-contributions\\m22\\retry-2\\3-4.md",
+      "artifactSha256": "5ad668df733303fa5ca58502b9f33ca932f265c73b53585abeb8c818a8c73873",
+      "interactionArtifact": "docs\\agent-contributions\\m22\\retry-2\\3-4.json",
+      "interactionSha256": "2a90ac5f7218d3b77c5c33dff2c06dabc1ec77959be7e978c9ebcb98e1059f02",
+      "verifiedAt": "2026-10-06T11:40:10.941423+00:00",
+      "scope": "identity/files/actual HTTP evidence verified; role finding needs independent review"
+    }
+  },
+  {
+    "agentId": "207f62e3-cf4a-4186-9b0c-84c37a870809",
+    "roleCode": "4.3",
+    "issueId": "49843d9d-47a7-4dfb-90e8-9c897ae9c413",
+    "identifier": "ALG-442",
+    "artifact": "docs/agent-contributions/m22/retry-2/4-3.md",
+    "status": "evidence_verified",
+    "actualRunId": "e8e167da-e218-4218-8c72-ebfd32d33569",
+    "verification": {
+      "runId": "e8e167da-e218-4218-8c72-ebfd32d33569",
+      "issueId": "49843d9d-47a7-4dfb-90e8-9c897ae9c413",
+      "artifact": "docs\\agent-contributions\\m22\\retry-2\\4-3.md",
+      "artifactSha256": "8f370a63a63def5ef26907f86b7c84049cfd7f2ddf577f28c61d18334e061164",
+      "interactionArtifact": "docs\\agent-contributions\\m22\\retry-2\\4-3.json",
+      "interactionSha256": "2d64516a5c1fdcdb23d7ad8d6e2f001761de7775e78ad2c8a9e55b505c153bd5",
+      "verifiedAt": "2026-10-06T11:42:52.858994+00:00",
+      "scope": "identity/files/actual HTTP evidence verified; role finding needs independent review"
+    }
+  },
+  {
+    "agentId": "e35a5ddd-3654-4373-bac4-dc4e8e23ed2c",
+    "roleCode": "4.4",
+    "issueId": "44df84fe-1247-40c5-a2cc-c26161f4f0d7",
+    "identifier": "ALG-444",
+    "artifact": "docs/agent-contributions/m22/retry-2/4-4.md",
+    "status": "evidence_verified",
+    "actualRunId": "63a06a08-2c0e-4219-bef4-ac6b2baf21e6",
+    "verification": {
+      "runId": "63a06a08-2c0e-4219-bef4-ac6b2baf21e6",
+      "issueId": "44df84fe-1247-40c5-a2cc-c26161f4f0d7",
+      "artifact": "docs\\agent-contributions\\m22\\retry-2\\4-4.md",
+      "artifactSha256": "fb5e1d077ccf774704ccb59ce666f982b3e9850a7c470294e3ae107ad7396339",
+      "interactionArtifact": "docs\\agent-contributions\\m22\\retry-2\\4-4.json",
+      "interactionSha256": "3d3483937acfb1b9b0416ffb9105b28834b048ba712789d273aea89e8f5deea1",
+      "verifiedAt": "2026-10-06T11:45:13.874506+00:00",
+      "scope": "identity/files/actual HTTP evidence verified; role finding needs independent review"
+    }
+  },
+  {
+    "agentId": "69e9c7d6-f5dc-4ca1-baec-f95eb4bae6fa",
+    "roleCode": "4.5",
+    "issueId": "aa08dda0-33bb-4b87-904a-966843f269f1",
+    "identifier": "ALG-445",
+    "artifact": "docs/agent-contributions/m22/retry-2/4-5.md",
+    "status": "evidence_verified",
+    "actualRunId": "fbb1d13a-7a42-40ad-ac83-3d0bd02c043a",
+    "verification": {
+      "runId": "fbb1d13a-7a42-40ad-ac83-3d0bd02c043a",
+      "issueId": "aa08dda0-33bb-4b87-904a-966843f269f1",
+      "artifact": "docs\\agent-contributions\\m22\\retry-2\\4-5.md",
+      "artifactSha256": "024cf1b8ad467488e452eea0cd65fd33100b838048057d6949d09e77c06635b0",
+      "interactionArtifact": "docs\\agent-contributions\\m22\\retry-2\\4-5.json",
+      "interactionSha256": "2ffc3b816556bbb90b22102a23fc7f36d5467d076adefba0658c36bc0aeaef32",
+      "verifiedAt": "2026-10-06T11:48:15.190854+00:00",
+      "scope": "identity/files/actual HTTP evidence verified; role finding needs independent review"
+    }
+  },
+  {
+    "agentId": "260a8298-e47e-4cb2-880f-b320de626ce5",
+    "roleCode": "5.8",
+    "issueId": "19a36915-1e48-4394-aed6-b55e5d655db4",
+    "identifier": "ALG-446",
+    "artifact": "docs/agent-contributions/m22/retry-2/5-8.md",
+    "status": "blocked",
+    "actualRunId": "57f0a326-6189-4967-9105-b595a69388c4",
+    "reason": "Actual run/issue did not complete",
+    "runStatus": "failed"
+  },
+  {
+    "agentId": "fabf5ce4-286a-4f82-97ad-58dad5931f18",
+    "roleCode": "5.9",
+    "issueId": "800e014b-25f2-44d4-a376-6c64d89d3a47",
+    "identifier": "ALG-447",
+    "artifact": "docs/agent-contributions/m22/retry-2/5-9.md",
+    "status": "blocked",
+    "actualRunId": "271f21fb-8a89-4b72-9f8f-8a5f8f55ef12",
+    "reason": "Actual run/issue did not complete",
+    "runStatus": "scheduled_retry"
+  },
+  {
+    "agentId": "6f6dabfc-5cf3-43cd-8cc9-44b9b0fb1b8d",
+    "roleCode": "5.10",
+    "issueId": "e4112e17-99b2-4cc7-a78a-d66bc28c626e",
+    "identifier": "ALG-448",
+    "artifact": "docs/agent-contributions/m22/retry-2/5-10.md",
+    "status": "blocked",
+    "actualRunId": "789122cd-e569-4b6c-8ee6-943b917b42c8",
+    "reason": "Actual run/issue did not complete",
+    "runStatus": "scheduled_retry"
+  },
+  {
+    "agentId": "1bb3b676-7f69-4564-aa1a-6b633f839878",
+    "roleCode": "6.3",
+    "issueId": "854aa130-09d8-4c40-970e-fa85a4d8babb",
+    "identifier": "ALG-449",
+    "artifact": "docs/agent-contributions/m22/retry-2/6-3.md",
+    "status": "blocked",
+    "actualRunId": "9338d8e1-6be6-47ec-a4ff-fab3cf68ae52",
+    "reason": "Actual run/issue did not complete",
+    "runStatus": "scheduled_retry"
+  },
+  {
+    "agentId": "6f6dabfc-5cf3-43cd-8cc9-44b9b0fb1b8d",
+    "roleCode": "5.10",
+    "issueId": "e4112e17-99b2-4cc7-a78a-d66bc28c626e",
+    "identifier": "ALG-448",
+    "artifact": "docs/agent-contributions/m22/retry-2/5-10.md",
+    "actualRunId": "44107aef-56bc-45e8-9e77-da8e5f25ef3d",
+    "status": "evidence_verified",
+    "origin": "actual Paperclip automatic restart retry; prior receipt retained",
+    "verification": {
+      "runId": "44107aef-56bc-45e8-9e77-da8e5f25ef3d",
+      "issueId": "e4112e17-99b2-4cc7-a78a-d66bc28c626e",
+      "artifact": "docs\\agent-contributions\\m22\\retry-2\\5-10.md",
+      "artifactSha256": "58222fe5a48de4f09a1408b411533acab9442ab169fdb58c41bd3da92577ff9f",
+      "interactionArtifact": "docs\\agent-contributions\\m22\\retry-2\\5-10.json",
+      "interactionSha256": "e3b529dae19ff3a411ab94c16c185683a0e3ac55353ebed2709b1437bb5fb269",
+      "verifiedAt": "2026-10-06T20:49:47.789588+00:00",
+      "scope": "identity/files/actual HTTP evidence verified; role finding needs independent review"
+    },
+    "independentFindingReview": "Coordinator reproduced exact costs, unavailable relative metrics, short-tail flags and distribution counterexample. Bounded participation only."
+  },
+  {
+    "agentId": "1bb3b676-7f69-4564-aa1a-6b633f839878",
+    "roleCode": "6.3",
+    "issueId": "854aa130-09d8-4c40-970e-fa85a4d8babb",
+    "identifier": "ALG-449",
+    "artifact": "docs/agent-contributions/m22/retry-2/6-3.md",
+    "actualRunId": "9338d8e1-6be6-47ec-a4ff-fab3cf68ae52",
+    "status": "evidence_verified",
+    "origin": "actual Paperclip automatic restart retry; prior receipt retained",
+    "verification": {
+      "runId": "9338d8e1-6be6-47ec-a4ff-fab3cf68ae52",
+      "issueId": "854aa130-09d8-4c40-970e-fa85a4d8babb",
+      "artifact": "docs\\agent-contributions\\m22\\retry-2\\6-3.md",
+      "artifactSha256": "14b5f693c128eaf321d05895e8a3cdb5f8bced4739b11c31c41ce01db76811a6",
+      "interactionArtifact": "docs\\agent-contributions\\m22\\retry-2\\6-3.json",
+      "interactionSha256": "9854b32daced8a68bfad525eed105f9aa23085e49c3e9d06ee38dd12d6ffe1ab",
+      "verifiedAt": "2026-10-06T20:49:48.093118+00:00",
+      "scope": "identity/files/actual HTTP evidence verified; role finding needs independent review"
+    },
+    "independentFindingReview": "Coordinator reproduced exact costs, unavailable relative metrics, short-tail flags and distribution counterexample. Bounded participation only."
+  },
+  {
+    "agentId": "3fc49623-f125-41a8-83bb-d608804503ba",
+    "roleCode": "6.4",
+    "issueId": "a50244a5-56c2-4d79-8647-843e9602c9a4",
+    "identifier": "ALG-452",
+    "artifact": "docs/agent-contributions/6-4.md",
+    "status": "evidence_verified",
+    "actualRunId": "a52153ae-e676-40f6-b281-87fabb5f52a4",
+    "verification": {
+      "runId": "a52153ae-e676-40f6-b281-87fabb5f52a4",
+      "issueId": "a50244a5-56c2-4d79-8647-843e9602c9a4",
+      "artifact": "docs\\agent-contributions\\6-4.md",
+      "artifactSha256": "2c70831f853b40cd1ace48915f514b10fceaa17961e3920118e0c554652fd0ac",
+      "interactionArtifact": "docs\\agent-contributions\\6-4.json",
+      "interactionSha256": "587ea215923b0b834ec21566a272a3d91186568f5ecad3ee0f9d0b2c16e68ffe",
+      "verifiedAt": "2026-10-07T15:55:52.504782+00:00",
+      "scope": "identity/files/actual HTTP evidence verified; role finding needs independent review"
+    },
+    "independentFindingReview": "Costs, comparative-metric and short-tail limitations reproduced. Earnings vintage oracle independently reconciles; industry conclusions correctly remain unsupported. Bounded participation only."
+  },
+  {
+    "agentId": "c156113c-f7f7-4790-9385-212266e8bf97",
+    "roleCode": "6.5",
+    "issueId": "9d31211c-8bcf-4528-ae9e-a0ce14ee8888",
+    "identifier": "ALG-454",
+    "artifact": "docs/agent-contributions/6-5.md",
+    "status": "evidence_verified",
+    "actualRunId": "380d3f88-3db2-4129-81ab-528965c66e2b",
+    "verification": {
+      "runId": "380d3f88-3db2-4129-81ab-528965c66e2b",
+      "issueId": "9d31211c-8bcf-4528-ae9e-a0ce14ee8888",
+      "artifact": "docs\\agent-contributions\\6-5.md",
+      "artifactSha256": "927e18aedd22f6ad8d9d541c72e848d56522dd2aec4f54347bc2b7404de9aff3",
+      "interactionArtifact": "docs\\agent-contributions\\6-5.json",
+      "interactionSha256": "ec27ddb27045e550a0bb0d7ebcb392b6c4438867909e77ff37c59258c2b2b80a",
+      "verifiedAt": "2026-10-07T15:55:52.815126+00:00",
+      "scope": "identity/files/actual HTTP evidence verified; role finding needs independent review"
+    },
+    "independentFindingReview": "Costs, comparative-metric and short-tail limitations reproduced. Earnings vintage oracle independently reconciles; industry conclusions correctly remain unsupported. Bounded participation only."
+  },
+  {
+    "agentId": "0c9de6da-7524-4a4f-92af-230b7f37ea25",
+    "roleCode": "6.6",
+    "issueId": "ccdeb269-069c-4d6f-b9a1-847cd106870e",
+    "identifier": "ALG-455",
+    "artifact": "docs/agent-contributions/6-6.md",
+    "status": "blocked",
+    "actualRunId": "76991885-0fad-4733-9550-1910a73c4a97",
+    "reason": "Actual run/issue did not complete",
+    "runStatus": "scheduled_retry"
+  },
+  {
+    "agentId": "d84396b8-26c1-4081-8424-26a3fdf71693",
+    "roleCode": "6.7",
+    "issueId": "71dc048b-99eb-4c1e-a02b-7fe7c1e22134",
+    "identifier": "ALG-456",
+    "artifact": "docs/agent-contributions/6-7.md",
+    "status": "blocked",
+    "actualRunId": "0c88682d-fa37-4279-9ba5-407d86e3f59c",
+    "reason": "Actual run/issue did not complete",
+    "runStatus": "scheduled_retry"
+  },
+  {
+    "agentId": "48b078d7-0d9c-4bb1-adc5-47bb5bc2d372",
+    "roleCode": "6.8",
+    "issueId": "dd324006-7a7b-44ac-8d4c-3103afea32da",
+    "identifier": "ALG-457",
+    "artifact": "docs/agent-contributions/6-8.md",
+    "status": "blocked",
+    "actualRunId": "023a4089-abc6-424d-abdb-7addfb103fad",
+    "reason": "Actual run/issue did not complete",
+    "runStatus": "scheduled_retry"
+  },
+  {
+    "agentId": "f2734c35-4b88-4e82-bd65-3579d0248bd4",
+    "roleCode": "6.9",
+    "issueId": "dd68c237-3461-44db-b475-84cbb2ca2dd5",
+    "identifier": "ALG-458",
+    "artifact": "docs/agent-contributions/6-9.md",
+    "status": "blocked",
+    "actualRunId": "a8cdfa6a-b232-4d25-9375-33c4e59862be",
+    "reason": "Actual run/issue did not complete",
+    "runStatus": "scheduled_retry"
+  },
+  {
+    "agentId": "403db3cc-d779-41aa-a309-cbcb9cf9cb57",
+    "roleCode": "7.1",
+    "issueId": "403d367c-5c5c-45e3-b860-b4ce396763f5",
+    "identifier": "ALG-459",
+    "artifact": "docs/agent-contributions/7-1.md",
+    "status": "blocked",
+    "actualRunId": "2bfe6f35-2ad6-4250-81fc-21583c934996",
+    "reason": "Actual run/issue did not complete",
+    "runStatus": "scheduled_retry"
+  },
+  {
+    "agentId": "85eb111a-54b4-403b-8bb6-f456c327ad13",
+    "roleCode": "7.2",
+    "issueId": "e4f23483-8c78-4c70-b294-29b0af3fdf7f",
+    "identifier": "ALG-460",
+    "artifact": "docs/agent-contributions/7-2.md",
+    "status": "blocked",
+    "actualRunId": "851a2943-dbf6-46bc-9ec6-3f169d0b5c50",
+    "reason": "Actual run/issue did not complete",
+    "runStatus": "scheduled_retry"
+  },
+  {
+    "agentId": "de48a187-04d2-4821-85f0-f6b7b9ba5dcf",
+    "roleCode": "7.3",
+    "issueId": "f82639c2-a7e7-45af-a920-2e21dd3f08de",
+    "identifier": "ALG-461",
+    "artifact": "docs/agent-contributions/7-3.md",
+    "status": "blocked",
+    "actualRunId": "a0149939-c588-43f9-b9fb-bfd6dbcb35a9",
+    "reason": "Actual run/issue did not complete",
+    "runStatus": "scheduled_retry"
+  },
+  {
+    "agentId": "7b999f77-b3f3-4b86-be71-ef0810e1b37d",
+    "roleCode": "7.4",
+    "issueId": "604e2f64-d713-4976-ac5d-c8a3f3d3b721",
+    "identifier": "ALG-462",
+    "artifact": "docs/agent-contributions/7-4.md",
+    "status": "blocked",
+    "actualRunId": "322e198b-2ee7-4162-8960-d275a2df1907",
+    "reason": "Actual run/issue did not complete",
+    "runStatus": "scheduled_retry"
+  },
+  {
+    "agentId": "e3ea9802-b22f-472f-8139-4f70a33ce978",
+    "roleCode": "12.2",
+    "issueId": "7654b275-edc0-4ce1-9019-1eba52378ff4",
+    "identifier": "ALG-450",
+    "artifact": "docs/agent-contributions/12-2.md",
+    "status": "evidence_verified",
+    "scope": "source_package.py, test_source_package.py and own role artifacts only",
+    "actualRunId": "d60cbb75-58bc-46b0-b93c-f5c767572dc6",
+    "verification": {
+      "runId": "d60cbb75-58bc-46b0-b93c-f5c767572dc6",
+      "issueId": "7654b275-edc0-4ce1-9019-1eba52378ff4",
+      "artifact": "docs/agent-contributions/12-2.md",
+      "artifactSha256": "60a5672c3ee98547238c3d0f18d0be276ae4e507ea05473b739ff294ec71eb01",
+      "interactionArtifact": "docs\\agent-contributions\\12-2.json",
+      "interactionSha256": "37f4437f7560c4ceddf1d1c5bdc2ed2ec68edbdabe4801563703ede5b7cbb6a0",
+      "verifiedAt": "2026-10-07T15:55:59.182355+00:00",
+      "scope": "Actual localhost raw-byte receipts with recorded_at/response_sha256 keys explicitly verified; original artifacts unchanged. Source package independently reviewed and tested."
+    },
+    "independentFindingReview": "SourcePackage independent engineering review passed; root fresh source/protocol/bridge/runtime checks69passed. No public execution authority conferred."
+  },
+  {
+    "agentId": "a6396a82-f5cc-4abb-ad22-0c84518f47d8",
+    "roleCode": "7.5",
+    "issueId": "54b96e80-617e-41a3-b18e-719ec0d30331",
+    "identifier": "ALG-463",
+    "artifact": "docs/agent-contributions/7-5.md",
+    "status": "blocked",
+    "actualRunId": "fe564712-1648-44de-bd19-cd09aec9a9fb",
+    "runStatus": "cancelled",
+    "reason": "Original actual run cancelled; fresh successful retry recorded separately"
+  },
+  {
+    "agentId": "a6396a82-f5cc-4abb-ad22-0c84518f47d8",
+    "roleCode": "7.5",
+    "issueId": "54b96e80-617e-41a3-b18e-719ec0d30331",
+    "identifier": "ALG-463",
+    "artifact": "docs/agent-contributions/7-5.md",
+    "actualRunId": "88317274-6c38-4d38-894a-a0cf03f03138",
+    "status": "evidence_verified",
+    "origin": "Actual successful Paperclip retry; original cancellation retained",
+    "verification": {
+      "runId": "88317274-6c38-4d38-894a-a0cf03f03138",
+      "issueId": "54b96e80-617e-41a3-b18e-719ec0d30331",
+      "artifact": "docs\\agent-contributions\\7-5.md",
+      "artifactSha256": "bbe2c45bc2bb206803aa3cf4722fbf88cefe3a393bb4008486c57860426614a5",
+      "interactionArtifact": "docs\\agent-contributions\\7-5.json",
+      "interactionSha256": "0b4c255f1bd234a61aab1703cdb9d01e7625ad2e7c9c019023fefa5405849347",
+      "verifiedAt": "2026-10-07T19:51:19.249506+00:00",
+      "scope": "identity/files/actual HTTP evidence verified; role finding needs independent review"
+    },
+    "independentFindingReview": "Coordinator reproduced exact accepted Bar and premature-publication rejection. Actual three receipt hashes/identities matched. Feature-level registry/parity/entitlements remain unproven; bounded participation only."
+  },
+  {
+    "agentId": "192c5bef-fcdc-46eb-bfe5-b149022e9c47",
+    "roleCode": "7.6",
+    "issueId": "71b86a41-bdae-4480-8927-f88b675ebdab",
+    "identifier": "ALG-466",
+    "artifact": "docs/agent-contributions/7-6.md",
+    "status": "evidence_verified",
+    "actualRunId": "081a205a-1ed7-4d8c-89f4-31fa0da99818",
+    "verification": {
+      "runId": "081a205a-1ed7-4d8c-89f4-31fa0da99818",
+      "issueId": "71b86a41-bdae-4480-8927-f88b675ebdab",
+      "artifact": "docs\\agent-contributions\\7-6.md",
+      "artifactSha256": "b4ea592bd3462fe5e783d75afea9a8de971714ef3b68b612ec1ae43e4844c1f1",
+      "interactionArtifact": "docs\\agent-contributions\\7-6.json",
+      "interactionSha256": "d4324954bc9e109a16066974c11b36c6736094d8c3091713b30dac2e0dbc4744",
+      "verifiedAt": "2026-10-08T12:21:09.548797+00:00",
+      "scope": "identity/files/actual HTTP evidence verified; role finding needs independent review"
+    },
+    "independentFindingReview": {
+      "reviewer": "/root/m22_gateway_review",
+      "status": "bounded_participation_accepted",
+      "at": "2026-10-08T19:18:20.414899+00:00",
+      "evidence": "docs/validation/m22-role-findings-review-20261004.md",
+      "scope": "Actual identity/time/HTTP receipts and synthetic role findings independently reproduced; no release or strategy approval"
+    }
+  },
+  {
+    "agentId": "32d94ac5-8205-4e3e-9330-163360149519",
+    "roleCode": "7.7",
+    "issueId": "26c9105c-e3d9-443f-bd40-c4c43cc706f8",
+    "identifier": "ALG-467",
+    "artifact": "docs/agent-contributions/7-7.md",
+    "status": "evidence_verified",
+    "actualRunId": "bdc6207b-c9a0-4c12-99f9-b512541cdd67",
+    "verification": {
+      "runId": "bdc6207b-c9a0-4c12-99f9-b512541cdd67",
+      "issueId": "26c9105c-e3d9-443f-bd40-c4c43cc706f8",
+      "artifact": "docs\\agent-contributions\\7-7.md",
+      "artifactSha256": "53f68ea11a0a74def6b602119f768879e25527adb5b0fe6920d464c0bbdef84a",
+      "interactionArtifact": "docs\\agent-contributions\\7-7.json",
+      "interactionSha256": "a0ae815ad374cfb1aa9385e3e9ccab4efc352b439656a22083c9f0bf28416967",
+      "verifiedAt": "2026-10-08T12:25:59.736606+00:00",
+      "scope": "identity/files/actual HTTP evidence verified; role finding needs independent review"
+    },
+    "independentFindingReview": {
+      "reviewer": "/root/m22_gateway_review",
+      "status": "bounded_participation_accepted",
+      "at": "2026-10-08T19:18:20.663146+00:00",
+      "evidence": "docs/validation/m22-role-findings-review-20261004.md",
+      "scope": "Actual identity/time/HTTP receipts and synthetic role findings independently reproduced; no release or strategy approval"
+    }
+  },
+  {
+    "agentId": "757c9c5b-c3ab-4150-9fd8-0f7c79fc0980",
+    "roleCode": "7.8",
+    "issueId": "d405324b-9518-4307-a2aa-10c94df5faa3",
+    "identifier": "ALG-468",
+    "artifact": "docs/agent-contributions/7-8.md",
+    "status": "evidence_verified",
+    "actualRunId": "feeaad6c-8314-4ee6-99bf-a31e48823bf4",
+    "verification": {
+      "runId": "feeaad6c-8314-4ee6-99bf-a31e48823bf4",
+      "issueId": "d405324b-9518-4307-a2aa-10c94df5faa3",
+      "artifact": "docs\\agent-contributions\\7-8.md",
+      "artifactSha256": "184f78fb2d35f167b9f311fb6884dda85b62897f607adc05f3ddd2c61541492d",
+      "interactionArtifact": "docs\\agent-contributions\\7-8.json",
+      "interactionSha256": "b3cc3b91a36dc6424704a4c2108959b3510149e70e785206985dc724d586636b",
+      "verifiedAt": "2026-10-08T12:24:18.884368+00:00",
+      "scope": "identity/files/actual HTTP evidence verified; role finding needs independent review"
+    },
+    "independentFindingReview": {
+      "reviewer": "/root/m22_gateway_review",
+      "status": "bounded_participation_accepted",
+      "at": "2026-10-08T19:18:20.922713+00:00",
+      "evidence": "docs/validation/m22-role-findings-review-20261004.md",
+      "scope": "Actual identity/time/HTTP receipts and synthetic role findings independently reproduced; no release or strategy approval"
+    }
+  },
+  {
+    "agentId": "bfda6dca-3d76-404e-8b41-46324eb54cca",
+    "roleCode": "7.9",
+    "issueId": "d814188e-b735-4e9b-ac04-ff99f3547606",
+    "identifier": "ALG-469",
+    "artifact": "docs/agent-contributions/7-9.md",
+    "status": "blocked",
+    "actualRunId": "8316cb11-a85e-4c78-b64f-f30b585d1355",
+    "reason": "Actual run/issue did not complete",
+    "runStatus": "scheduled_retry"
+  },
+  {
+    "agentId": "9c2d9aa3-1012-4829-8844-5770ce2af45c",
+    "roleCode": "7.10",
+    "issueId": "0bfaafce-f7a0-4e5d-8359-4559f91c5754",
+    "identifier": "ALG-470",
+    "artifact": "docs/agent-contributions/7-10.md",
+    "status": "evidence_verified",
+    "actualRunId": "d387de5b-5605-433b-889d-8ca03cd1cb71",
+    "verification": {
+      "runId": "d387de5b-5605-433b-889d-8ca03cd1cb71",
+      "issueId": "0bfaafce-f7a0-4e5d-8359-4559f91c5754",
+      "artifact": "docs\\agent-contributions\\7-10.md",
+      "artifactSha256": "9a6f988fba122b8a187dbe5bd6e9a223c679c782758f9b19be5eaf303002c2f3",
+      "interactionArtifact": "docs\\agent-contributions\\7-10.json",
+      "interactionSha256": "daf05ba20be57b7c7d0b74ca86085a146b5839d416e68f52fbc2c290a9f247b9",
+      "verifiedAt": "2026-10-08T12:34:53.139508+00:00",
+      "scope": "identity/files/actual HTTP evidence verified; role finding needs independent review"
+    },
+    "independentFindingReview": {
+      "reviewer": "/root/m22_gateway_review",
+      "status": "bounded_participation_accepted",
+      "at": "2026-10-08T19:18:21.370551+00:00",
+      "evidence": "docs/validation/m22-role-findings-review-20261004.md",
+      "scope": "Actual identity/time/HTTP receipts and synthetic role findings independently reproduced; no release or strategy approval"
+    }
+  },
+  {
+    "agentId": "bfda6dca-3d76-404e-8b41-46324eb54cca",
+    "roleCode": "7.9",
+    "issueId": "d814188e-b735-4e9b-ac04-ff99f3547606",
+    "identifier": "ALG-469",
+    "artifact": "docs/agent-contributions/7-9.md",
+    "actualRunId": "8316cb11-a85e-4c78-b64f-f30b585d1355",
+    "status": "evidence_verified",
+    "origin": "Later completed observation of the same actual run; prior scheduled_retry observation retained, not a new run",
+    "verification": {
+      "runId": "8316cb11-a85e-4c78-b64f-f30b585d1355",
+      "issueId": "d814188e-b735-4e9b-ac04-ff99f3547606",
+      "artifact": "docs\\agent-contributions\\7-9.md",
+      "artifactSha256": "eb4c390658b6cda59ce93773e1053410a34ffff47f5840c62b74e6a59a7f1d07",
+      "interactionArtifact": "docs\\agent-contributions\\7-9.json",
+      "interactionSha256": "a649fa60a5c60ef131db15c2c742fb81edf7d5ec4149793a5e6ef337cc13286c",
+      "verifiedAt": "2026-10-08T12:40:52.882138+00:00",
+      "scope": "identity/files/actual HTTP evidence verified; role finding needs independent review"
+    },
+    "independentFindingReview": {
+      "reviewer": "/root/m22_gateway_review",
+      "status": "bounded_participation_accepted",
+      "at": "2026-10-08T19:18:21.180385+00:00",
+      "evidence": "docs/validation/m22-role-findings-review-20261004.md",
+      "scope": "Actual identity/time/HTTP receipts and synthetic role findings independently reproduced; no release or strategy approval"
+    }
+  },
+  {
+    "agentId": "902470b0-8a0f-4770-a37c-3bc04216e555",
+    "roleCode": "7.11",
+    "issueId": "add30788-f523-4de6-ba86-7d1b3cc83e54",
+    "identifier": "ALG-473",
+    "artifact": "docs/agent-contributions/7-11.md",
+    "status": "blocked",
+    "actualRunId": "a1367a37-334e-4fab-b738-576116e3fcdc",
+    "reason": "Actual run/issue did not complete",
+    "runStatus": "failed"
+  },
+  {
+    "agentId": "5cab51d9-bc95-4d87-b6ad-55192d185a8a",
+    "roleCode": "8.1",
+    "issueId": "6f746f5b-b814-45d7-92b8-3b98a8b21507",
+    "identifier": "ALG-474",
+    "artifact": "docs/agent-contributions/8-1.md",
+    "status": "blocked",
+    "actualRunId": "4dff2880-f38b-4ff4-8a65-3952ad8fb634",
+    "reason": "Actual run/issue did not complete",
+    "runStatus": "failed"
+  },
+  {
+    "agentId": "848d90f5-e2b3-49eb-bdb9-4c212109a0f4",
+    "roleCode": "8.2",
+    "issueId": "5d9d8be4-4823-48af-af10-545fac342309",
+    "identifier": "ALG-475",
+    "artifact": "docs/agent-contributions/8-2.md",
+    "status": "blocked",
+    "actualRunId": "efed2a7a-cd09-4ea0-93a2-a2cfe080bc99",
+    "reason": "Unexpected interaction URL/method/status"
+  },
+  {
+    "agentId": "848d90f5-e2b3-49eb-bdb9-4c212109a0f4",
+    "roleCode": "8.2",
+    "issueId": "5d9d8be4-4823-48af-af10-545fac342309",
+    "identifier": "ALG-475",
+    "artifact": "docs/agent-contributions/8-2.md",
+    "actualRunId": "efed2a7a-cd09-4ea0-93a2-a2cfe080bc99",
+    "status": "evidence_verified",
+    "origin": "Revalidated the same actual successful run under clarified selected-report read policy; prior validator rejection retained, not a new run",
+    "verification": {
+      "runId": "efed2a7a-cd09-4ea0-93a2-a2cfe080bc99",
+      "issueId": "5d9d8be4-4823-48af-af10-545fac342309",
+      "artifact": "docs\\agent-contributions\\8-2.md",
+      "artifactSha256": "7c2ab2124c949819701de7686d967fa0de53eeb39b820eb0d3426156bf206f7a",
+      "interactionArtifact": "docs\\agent-contributions\\8-2.json",
+      "interactionSha256": "8aed5e760b234ae47949fda8bd0cdcf7e0f0bd546a282a767c12563ee7aa4c1d",
+      "verifiedAt": "2026-10-08T19:18:21.705553+00:00",
+      "scope": "identity/files/actual HTTP evidence verified; role finding needs independent review"
+    },
+    "independentFindingReview": {
+      "reviewer": "/root/m22_gateway_review",
+      "status": "bounded_participation_accepted",
+      "at": "2026-10-08T19:18:21.708290+00:00",
+      "evidence": "docs/validation/m22-role-findings-review-20261004.md",
+      "scope": "Actual identity/time/HTTP receipts and synthetic role findings independently reproduced; no release or strategy approval"
+    }
+  },
+  {
+    "agentId": "cffa9b10-ec23-4bb0-9b15-27a5e88d1ccf",
+    "roleCode": "8.3",
+    "issueId": "c2498a8a-8384-41fb-bf0d-a3265720390b",
+    "identifier": "ALG-477",
+    "artifact": "docs/agent-contributions/8-3.md",
+    "status": "evidence_verified",
+    "actualRunId": "6f25fbbe-3c60-4935-b739-d7c38ae54b02",
+    "verification": {
+      "runId": "6f25fbbe-3c60-4935-b739-d7c38ae54b02",
+      "issueId": "c2498a8a-8384-41fb-bf0d-a3265720390b",
+      "artifact": "docs\\agent-contributions\\8-3.md",
+      "artifactSha256": "fbb3b9013b99ebe782144990aa2565ef3be4b2e6e744660ae7c62c0fc34dbaa2",
+      "interactionArtifact": "docs\\agent-contributions\\8-3.json",
+      "interactionSha256": "06aeb56e3e370ee158b80784344e083bfb7b8ae97729a64af62f085222c30be0",
+      "verifiedAt": "2026-10-08T19:41:19.184581+00:00",
+      "scope": "identity/files/actual HTTP evidence verified; role finding needs independent review"
+    },
+    "independentFindingReview": {
+      "reviewer": "/root/m22_gateway_review",
+      "status": "bounded_participation_accepted",
+      "at": "2026-10-08T19:41:19.185650+00:00",
+      "evidence": "docs/validation/m22-role-findings-review-20261004.md",
+      "scope": "Actual identity/time/HTTP receipts and synthetic role findings independently reproduced; no release or strategy approval"
+    }
+  },
+  {
+    "agentId": "2b917383-1be0-47a4-82b6-3e818a7273da",
+    "roleCode": "8.4",
+    "issueId": "c849351d-a338-457b-a3ea-6d0dedc137cd",
+    "identifier": "ALG-478",
+    "artifact": "docs/agent-contributions/8-4.md",
+    "status": "blocked",
+    "actualRunId": "308742e9-52a3-4a22-874b-a42944813686",
+    "reason": "Unexpected interaction URL/method/status"
+  },
+  {
+    "agentId": "2b917383-1be0-47a4-82b6-3e818a7273da",
+    "roleCode": "8.4",
+    "issueId": "c849351d-a338-457b-a3ea-6d0dedc137cd",
+    "identifier": "ALG-478",
+    "artifact": "docs/agent-contributions/8-4.md",
+    "actualRunId": "308742e9-52a3-4a22-874b-a42944813686",
+    "origin": "Same successful actual run revalidated under selected accounting section read policy; original rejection preserved, not a new run",
+    "status": "evidence_verified",
+    "verification": {
+      "runId": "308742e9-52a3-4a22-874b-a42944813686",
+      "issueId": "c849351d-a338-457b-a3ea-6d0dedc137cd",
+      "artifact": "docs\\agent-contributions\\8-4.md",
+      "artifactSha256": "db0c512c7ddd09193d3cf062cc494517228dad7bc0635c950aadad2d1a1cbccb",
+      "interactionArtifact": "docs\\agent-contributions\\8-4.json",
+      "interactionSha256": "ddd0fef0219d9d3fe8806fa1280db7975476e9e1bb854a40efa394bf7c64c646",
+      "verifiedAt": "2026-10-08T19:41:19.644864+00:00",
+      "scope": "identity/files/actual HTTP evidence verified; role finding needs independent review"
+    },
+    "independentFindingReview": {
+      "reviewer": "/root/m22_gateway_review",
+      "status": "bounded_participation_accepted",
+      "at": "2026-10-08T19:41:19.646199+00:00",
+      "evidence": "docs/validation/m22-role-findings-review-20261004.md",
+      "scope": "Actual identity/time/HTTP receipts and synthetic role findings independently reproduced; no release or strategy approval"
+    }
+  },
+  {
+    "agentId": "6109b930-bf48-4dab-aa9d-7548eb358a62",
+    "roleCode": "8.5",
+    "issueId": "51c5b389-5d22-4ca7-9fe9-3deb815182a2",
+    "identifier": "ALG-480",
+    "artifact": "docs/agent-contributions/8-5.md",
+    "status": "evidence_verified",
+    "actualRunId": "f4854a3a-cc24-48ca-98ee-50aeb9bb0c82",
+    "verification": {
+      "runId": "f4854a3a-cc24-48ca-98ee-50aeb9bb0c82",
+      "issueId": "51c5b389-5d22-4ca7-9fe9-3deb815182a2",
+      "artifact": "docs\\agent-contributions\\8-5.md",
+      "artifactSha256": "ec3e14100ce0d49de89e957b1db11b8430df723666af2c420242364f593adb8a",
+      "interactionArtifact": "docs\\agent-contributions\\8-5.json",
+      "interactionSha256": "f9160b26e778a0d15daa9f28f46d5f4cab0cc9890ee29336af9b735f9cf2a604",
+      "verifiedAt": "2026-10-08T19:49:53.252776+00:00",
+      "scope": "identity/files/actual HTTP evidence verified; role finding needs independent review"
+    },
+    "independentFindingReview": {
+      "reviewer": "/root/m22_gateway_review",
+      "status": "bounded_participation_accepted",
+      "at": "2026-10-08T19:49:53.253400+00:00",
+      "evidence": "docs/validation/m22-role-findings-review-20261004.md",
+      "scope": "Actual identity/time/HTTP receipts and synthetic role findings independently reproduced; no release or strategy approval"
+    }
+  },
+  {
+    "agentId": "2b2cf555-1e23-4ef0-bcfd-ac7f27999f3b",
+    "roleCode": "8.6",
+    "issueId": "f620f9c0-7ed0-4974-a098-45ea9e9c2fef",
+    "identifier": "ALG-481",
+    "artifact": "docs/agent-contributions/8-6.md",
+    "status": "blocked",
+    "actualRunId": "5d80dad0-623b-4e30-8e57-985d33898bee",
+    "reason": "Unexpected interaction URL/method/status"
+  },
+  {
+    "agentId": "2b2cf555-1e23-4ef0-bcfd-ac7f27999f3b",
+    "roleCode": "8.6",
+    "issueId": "f620f9c0-7ed0-4974-a098-45ea9e9c2fef",
+    "identifier": "ALG-481",
+    "artifact": "docs/agent-contributions/8-6.md",
+    "actualRunId": "5d80dad0-623b-4e30-8e57-985d33898bee",
+    "origin": "Same successful actual run revalidated allowing exact selected positions read; prior rejection retained, not a new run",
+    "status": "evidence_verified",
+    "verification": {
+      "runId": "5d80dad0-623b-4e30-8e57-985d33898bee",
+      "issueId": "f620f9c0-7ed0-4974-a098-45ea9e9c2fef",
+      "artifact": "docs\\agent-contributions\\8-6.md",
+      "artifactSha256": "18e4a9034b87c6c85db8e2c3c46befb16f50613dd8c3b724a02dd292987f1144",
+      "interactionArtifact": "docs\\agent-contributions\\8-6.json",
+      "interactionSha256": "47b81954937e693dc2b76f7368e43844413d29512a0280b7fb0144a872678333",
+      "verifiedAt": "2026-10-08T19:49:53.557112+00:00",
+      "scope": "identity/files/actual HTTP evidence verified; role finding needs independent review"
+    },
+    "independentFindingReview": {
+      "reviewer": "/root/m22_gateway_review",
+      "status": "bounded_participation_accepted",
+      "at": "2026-10-08T19:49:53.557478+00:00",
+      "evidence": "docs/validation/m22-role-findings-review-20261004.md",
+      "scope": "Actual identity/time/HTTP receipts and synthetic role findings independently reproduced; no release or strategy approval"
+    }
+  },
+  {
+    "agentId": "ce714c08-e9d8-45bf-b710-cfc0b90779b2",
+    "roleCode": "8.7",
+    "issueId": "8a473df1-33c4-47d1-93a1-7ee47413aaa1",
+    "identifier": "ALG-482",
+    "artifact": "docs/agent-contributions/8-7.md",
+    "status": "evidence_verified",
+    "actualRunId": "73df07ec-144f-4c00-8524-60bac7b82187",
+    "verification": {
+      "runId": "73df07ec-144f-4c00-8524-60bac7b82187",
+      "issueId": "8a473df1-33c4-47d1-93a1-7ee47413aaa1",
+      "artifact": "docs\\agent-contributions\\8-7.md",
+      "artifactSha256": "c1a0552433b70f7a0cbf00b96ee1ee38df2cdca8e546c9c25c2b1b98b2722da6",
+      "interactionArtifact": "docs\\agent-contributions\\8-7.json",
+      "interactionSha256": "5a4028ef2545c45d969df294396bee1fb448892d9424d14d2a4096a3018b709a",
+      "verifiedAt": "2026-10-08T20:10:55.545798+00:00",
+      "scope": "identity/files/actual HTTP evidence verified; role finding needs independent review"
+    },
+    "independentFindingReview": {
+      "reviewer": "/root/m22_gateway_review",
+      "status": "bounded_participation_accepted",
+      "at": "2026-10-08T20:10:55.546759+00:00",
+      "evidence": "docs/validation/m22-role-findings-review-20261004.md",
+      "scope": "Actual identity/time/HTTP receipts and synthetic role findings independently reproduced; no release or strategy approval"
+    }
+  },
+  {
+    "agentId": "fe635ca3-dd06-4e30-9782-f2ca7aa1e297",
+    "roleCode": "8.8",
+    "issueId": "7da5c9f7-da47-44bd-93ac-7e5a9a6ce18d",
+    "identifier": "ALG-483",
+    "artifact": "docs/agent-contributions/8-8.md",
+    "status": "evidence_verified",
+    "actualRunId": "83524c11-ba43-41f7-a00f-5d13ef155008",
+    "verification": {
+      "runId": "83524c11-ba43-41f7-a00f-5d13ef155008",
+      "issueId": "7da5c9f7-da47-44bd-93ac-7e5a9a6ce18d",
+      "artifact": "docs\\agent-contributions\\8-8.md",
+      "artifactSha256": "0d5d67529d87141289ff46ac23247c8f1f0e07571b6e982ea426b67676f8d5bb",
+      "interactionArtifact": "docs\\agent-contributions\\8-8.json",
+      "interactionSha256": "36105f6e1c307bc67dbce535fb194b9f8cfc108806f3c67eb19f244b297ce693",
+      "verifiedAt": "2026-10-08T20:10:55.742130+00:00",
+      "scope": "identity/files/actual HTTP evidence verified; role finding needs independent review"
+    },
+    "independentFindingReview": {
+      "reviewer": "/root/m22_gateway_review",
+      "status": "bounded_participation_accepted",
+      "at": "2026-10-08T20:10:55.742781+00:00",
+      "evidence": "docs/validation/m22-role-findings-review-20261004.md",
+      "scope": "Actual identity/time/HTTP receipts and synthetic role findings independently reproduced; no release or strategy approval"
+    }
+  },
+  {
+    "agentId": "a9b40bcd-4fd1-47fa-8cee-d0d6f56e7d99",
+    "roleCode": "8.9",
+    "issueId": "fa491614-5955-4c59-bbf3-02b7f71ba9d2",
+    "identifier": "ALG-484",
+    "artifact": "docs/agent-contributions/8-9.md",
+    "status": "blocked",
+    "actualRunId": "da166218-df7e-4a1a-b052-21b7a142a401",
+    "reason": "Unexpected interaction URL/method/status"
+  },
+  {
+    "agentId": "a9b40bcd-4fd1-47fa-8cee-d0d6f56e7d99",
+    "roleCode": "8.9",
+    "issueId": "fa491614-5955-4c59-bbf3-02b7f71ba9d2",
+    "identifier": "ALG-484",
+    "artifact": "docs/agent-contributions/8-9.md",
+    "actualRunId": "da166218-df7e-4a1a-b052-21b7a142a401",
+    "origin": "Same successful actual run revalidated for exact selected report ZIP with checked parsed CSV receipt; original rejection preserved, not a new run",
+    "status": "evidence_verified",
+    "verification": {
+      "runId": "da166218-df7e-4a1a-b052-21b7a142a401",
+      "issueId": "fa491614-5955-4c59-bbf3-02b7f71ba9d2",
+      "artifact": "docs\\agent-contributions\\8-9.md",
+      "artifactSha256": "2e0db9174a70cdc9304a9c032b6979627d3d9ffa9cd58bf714fc35e1d8f72a8f",
+      "interactionArtifact": "docs\\agent-contributions\\8-9.json",
+      "interactionSha256": "7c397e7dff833dd2910c7470ab14946e6f7cd44da0df2d7bcf6fafc3e694e771",
+      "verifiedAt": "2026-10-08T20:10:56.008801+00:00",
+      "scope": "identity/files/actual HTTP evidence verified; role finding needs independent review"
+    },
+    "independentFindingReview": {
+      "reviewer": "/root/m22_gateway_review",
+      "status": "bounded_participation_accepted",
+      "at": "2026-10-08T20:10:56.009742+00:00",
+      "evidence": "docs/validation/m22-role-findings-review-20261004.md",
+      "scope": "Actual identity/time/HTTP receipts and synthetic role findings independently reproduced; no release or strategy approval"
+    }
+  },
+  {
+    "agentId": "212ce742-8694-4b4c-bab9-6444d3ef60cd",
+    "roleCode": "8.10",
+    "issueId": "345704a9-3389-4496-9cba-9b0cf84a0922",
+    "identifier": "ALG-489",
+    "artifact": "docs/agent-contributions/8-10.md",
+    "status": "evidence_verified",
+    "actualRunId": "6c355cf7-bbae-4b1f-bf5f-fabdcba5b09e",
+    "verification": {
+      "runId": "6c355cf7-bbae-4b1f-bf5f-fabdcba5b09e",
+      "issueId": "345704a9-3389-4496-9cba-9b0cf84a0922",
+      "artifact": "docs\\agent-contributions\\8-10.md",
+      "artifactSha256": "908139618d0fe88fbb5e6e672ebd039a294f9b94511f4eb42417a82260892f42",
+      "interactionArtifact": "docs\\agent-contributions\\8-10.json",
+      "interactionSha256": "938bad3b59977ca31692b43e804814c88508c06f97f6a3839fe8919346deb5d7",
+      "verifiedAt": "2026-10-09T12:30:18.810260+00:00",
+      "scope": "identity/files/actual HTTP evidence verified; role finding needs independent review"
+    }
+  },
+  {
+    "agentId": "11292298-a77f-4ae6-95a1-b4b5eb148eb7",
+    "roleCode": "8.11",
+    "issueId": "f186a6c5-9963-44e6-a0e9-e2bd0c1b1ba3",
+    "identifier": "ALG-491",
+    "artifact": "docs/agent-contributions/8-11.md",
+    "status": "evidence_verified",
+    "actualRunId": "023e44b9-2b32-42c0-b51a-e5bd015024cb",
+    "verification": {
+      "runId": "023e44b9-2b32-42c0-b51a-e5bd015024cb",
+      "issueId": "f186a6c5-9963-44e6-a0e9-e2bd0c1b1ba3",
+      "artifact": "docs\\agent-contributions\\8-11.md",
+      "artifactSha256": "6928b98c399fff73088dbdf5aad08ad44bbb51e5b0e20b563a1399c2ced84ab6",
+      "interactionArtifact": "docs\\agent-contributions\\8-11.json",
+      "interactionSha256": "cf56feeddf6a4432729d8071fd2db55f40f05be8e3857a04891a5c1fcc1e10e2",
+      "verifiedAt": "2026-10-09T12:33:40.883653+00:00",
+      "scope": "identity/files/actual HTTP evidence verified; role finding needs independent review"
+    }
+  },
+  {
+    "agentId": "6ce8ece8-9f16-499c-9e3d-43864d8e155a",
+    "roleCode": "8.12",
+    "issueId": "91d75d28-8bb1-4950-bcd7-81db56d32a30",
+    "identifier": "ALG-492",
+    "artifact": "docs/agent-contributions/8-12.md",
+    "status": "dispatched",
+    "actualRunId": "e226bc5d-6bf0-4d19-a0ec-386dffc18d65"
+  }
+]

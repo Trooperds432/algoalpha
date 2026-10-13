@@ -1,0 +1,13 @@
+{
+  "at": "2026-10-13T10:33:16.470463+00:00",
+  "launch": "hidden Start-Process background processes",
+  "paperclipLaunchedPid": 1284,
+  "terminalLaunchedPid": 14028,
+  "paperclipHealth": "ok",
+  "paperclipRecovery": "ready",
+  "terminalHealth": "ok",
+  "terminalMode": "research",
+  "brokerOrdersEnabled": false,
+  "scope": "Health verified after cold startup; survival across a future app/session restart is not yet verified.",
+  "logs": "C:/Users/Jonat/algoalpha/runtime/m22-coordinator/*-20261013.*.log"
+}

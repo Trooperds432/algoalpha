@@ -1,0 +1,84 @@
+{
+  "at": "20260925T145956436456Z",
+  "python": "3.13.15 (tags/v3.13.15:4061bc4, Aug  5 2026, 13:05:39) [MSC v.1944 64 bit (AMD64)]",
+  "files": {
+    "src\\quant_terminal\\__init__.py": "fac90e3e4543031b65eaf1b3022920e7453b55549874d953504fca4017c0af0f",
+    "src\\quant_terminal\\config.py": "70ac764303cc8643be25bafc60b652ea43beb4c4f4a466b021e5381372450ac8",
+    "src\\quant_terminal\\core\\__init__.py": "89d45cf461972de09c433a629a8c967b49afa141946c08faa541a1b4ddec23e6",
+    "src\\quant_terminal\\core\\clock.py": "002333d02c512d125875930c28444bab379593da57258f53333722105a3bd5b3",
+    "src\\quant_terminal\\core\\enums.py": "ff555bf1355e38b0ab144a0d889757a76cc0cc9b431d64868b73761626be3a50",
+    "src\\quant_terminal\\core\\events.py": "a41fa16b325325b1058648a650d73d332667eda4ac5a9f332bbd88615babc84b",
+    "src\\quant_terminal\\core\\exceptions.py": "879dcbacef34305cc520d42986f8fa11c89e8f885043d2845a783d7943dfd711",
+    "src\\quant_terminal\\core\\identifiers.py": "443c98476bdb0ff8b5f2b38179abbd6056c37c317903f9669a1f8129cca60d84",
+    "src\\quant_terminal\\core\\serialization.py": "3e462da3f422033f0620d8c9cafa0c401790e14ed17eaebb8be3a0d7dc3e469a",
+    "src\\quant_terminal\\data\\feed.py": "d7c18f0c64542ea04a17b176bc6deda360148e943d891d3e5a2fdecfcacb53b7",
+    "src\\quant_terminal\\logging.py": "18d1199874e705790971ef0d3bf61f4413c4bd4ee0fbf40ec4d9be6ea461fd4e",
+    "tests\\integration\\test_data_storage.py": "ef58877a27dd5161b34cd78acbd963d87c1a3a3702f4f772e07c190d6703afc8",
+    "tests\\integration\\test_foundation.py": "45ce6ccc1031bffc99816c06ea161b3747a1260e689b5d1ab617e43124e67163",
+    "tests\\unit\\test_config_logging.py": "a6cddd6d62de8bad7ec5946fa347b3578a2519d67f06bcebc2d81a3be55e0df3",
+    "tests\\unit\\test_core.py": "5c67d333b573b55e0b89d22bf7186b3fd2d816e779cd1e65f113f13601f91ba3",
+    "tests\\unit\\test_data_model_calendar.py": "b3cc74d00cabbf8bc0469a7871800d94387b160fcb4e13b4da3034aeea94dc31"
+  },
+  "results": [
+    {
+      "command": [
+        "C:\\Users\\Jonat\\algoalpha\\projects\\quant-terminal\\.venv\\Scripts\\python.exe",
+        "-m",
+        "ruff",
+        "check",
+        "src",
+        "tests"
+      ],
+      "exit_code": 1,
+      "stdout": "E501 Line too long (103 > 100)\n  --> src\\quant_terminal\\data\\feed.py:21:101\n   |\n19 |     \"\"\"\n20 |\n21 |     def __init__(self, store: DatasetStore, snapshot: DatasetSnapshot, clock: SimulationClock) -> None:\n   |                                                                                                     ^^^\n22 |         if not isinstance(store, DatasetStore) or not isinstance(snapshot, DatasetSnapshot):\n23 |             raise DomainError(\"A dataset store and immutable snapshot are required\")\n   |\n\nI001 [*] Import block is un-sorted or un-formatted\n  --> tests\\integration\\test_data_storage.py:3:1\n   |\n 1 |   \"\"\"Real file and DuckDB checks for immutable historical data snapshots.\"\"\"\n 2 |\n 3 | / import csv\n 4 | | from datetime import datetime, timedelta, timezone\n 5 | | from decimal import Decimal\n 6 | | from pathlib import Path\n 7 | |\n 8 | | import pyarrow as pa\n 9 | | import pyarrow.parquet as pq\n10 | | import pytest\n11 | |\n12 | | from quant_terminal.core.exceptions import DomainError\n13 | | from quant_terminal.core.identifiers import InstrumentId\n14 | | from quant_terminal.data.model import InstrumentMeta\n15 | | from quant_terminal.data.storage import BAR_SCHEMA, DatasetStore\n   | |________________________________________________________________^\nhelp: Organize imports\n   |\n10 | import pytest\n11 + from quant_terminal.data.model import InstrumentMeta\n12 + from quant_terminal.data.storage import BAR_SCHEMA, DatasetStore\n13 |\n14 | from quant_terminal.core.exceptions import DomainError\n15 | from quant_terminal.core.identifiers import InstrumentId\n   - from quant_terminal.data.model import InstrumentMeta\n   - from quant_terminal.data.storage import BAR_SCHEMA, DatasetStore\n16 |\n   |\n\nUP017 [*] Use `datetime.UTC` alias\n   --> tests\\integration\\test_data_storage.py:99:71\n    |\n 97 |     assert csv_snapshot.row_count == 2\n 98 |     loaded = store.load_snapshot(csv_snapshot.snapshot_id)\n 99 |     bars = store.query_bars(loaded, end=datetime(2026, 11, 28, tzinfo=timezone.utc))\n    |                                                                       ^^^^^^^^^^^^\n100 |     assert len(bars) == 2\n101 |     assert bars[0].close == Decimal(\"100.25\")\n    |\nhelp: Convert to `datetime.UTC` alias\n    |\n3   | import csv\n    - from datetime import datetime, timedelta, timezone\n4   + from datetime import datetime, timedelta, timezone, UTC\n5   | from decimal import Decimal\n--------------------------------------------------------------------------------\n98  |     loaded = store.load_snapshot(csv_snapshot.snapshot_id)\n    -     bars = store.query_bars(loaded, end=datetime(2026, 11, 28, tzinfo=timezone.utc))\n99  +     bars = store.query_bars(loaded, end=datetime(2026, 11, 28, tzinfo=UTC))\n100 |     assert len(bars) == 2\n    |\n\nUP017 [*] Use `datetime.UTC` alias\n   --> tests\\integration\\test_data_storage.py:103:61\n    |\n101 |     assert bars[0].close == Decimal(\"100.25\")\n102 |     assert isinstance(bars[0].close, Decimal)\n103 |     assert bars[1].end == datetime(2026, 11, 27, 18, tzinfo=timezone.utc)\n    |                                                             ^^^^^^^^^^^^\n104 |     assert store.query_bars(loaded, end=bars[1].start) == (bars[0],)\n    |\nhelp: Convert to `datetime.UTC` alias\n    |\n3   | import csv\n    - from datetime import datetime, timedelta, timezone\n4   + from datetime import datetime, timedelta, timezone, UTC\n5   | from decimal import Decimal\n--------------------------------------------------------------------------------\n102 |     assert isinstance(bars[0].close, Decimal)\n    -     assert bars[1].end == datetime(2026, 11, 27, 18, tzinfo=timezone.utc)\n103 +     assert bars[1].end == datetime(2026, 11, 27, 18, tzinfo=UTC)\n104 |     assert store.query_bars(loaded, end=bars[1].start) == (bars[0],)\n    |\n\nI001 [*] Import block is un-sorted or un-formatted\n  --> tests\\unit\\test_data_model_calendar.py:1:1\n   |\n 1 | / from dataclasses import FrozenInstanceError\n 2 | | from datetime import UTC, date, datetime, timedelta\n 3 | | from decimal import Decimal\n 4 | | from zoneinfo import ZoneInfo\n 5 | |\n 6 | | import pytest\n 7 | |\n 8 | | from quant_terminal.core.exceptions import DomainError\n 9 | | from quant_terminal.core.identifiers import InstrumentId\n10 | | from quant_terminal.data.calendar import missing_bar_starts, validate_bar\n11 | | from quant_terminal.data.model import Bar, CorporateAction, InstrumentMeta\n   | |__________________________________________________________________________^\n12 |\n13 |   NY = ZoneInfo(\"America/New_York\")\n   |\nhelp: Organize imports\n   |\n6  | import pytest\n7  + from quant_terminal.data.calendar import missing_bar_starts, validate_bar\n8  + from quant_terminal.data.model import Bar, CorporateAction, InstrumentMeta\n9  |\n10 | from quant_terminal.core.exceptions import DomainError\n11 | from quant_terminal.core.identifiers import InstrumentId\n   - from quant_terminal.data.calendar import missing_bar_starts, validate_bar\n   - from quant_terminal.data.model import Bar, CorporateAction, InstrumentMeta\n12 |\n   |\n\nFound 5 errors.\n[*] 4 fixable with the `--fix` option.\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "C:\\Users\\Jonat\\algoalpha\\projects\\quant-terminal\\.venv\\Scripts\\python.exe",
+        "-m",
+        "ruff",
+        "format",
+        "--check",
+        "src",
+        "tests"
+      ],
+      "exit_code": 1,
+      "stdout": "unformatted: File would be reformatted\n  --> src\\quant_terminal\\data\\feed.py:21:18\n   |\n20 |\n   -     def __init__(self, store: DatasetStore, snapshot: DatasetSnapshot, clock: SimulationClock) -> None:\n21 +     def __init__(\n22 +         self, store: DatasetStore, snapshot: DatasetSnapshot, clock: SimulationClock\n23 +     ) -> None:\n24 |         if not isinstance(store, DatasetStore) or not isinstance(snapshot, DatasetSnapshot):\n   |\n\nunformatted: File would be reformatted\n   --> tests\\integration\\test_data_storage.py:107:26\n    |\n106 |\n    - @pytest.mark.parametrize(\"bad_rows\", [\n    -     lambda rows: [rows[0], rows[0]],\n    -     lambda rows: list(reversed(rows)),\n    -     lambda rows: [{**rows[0], \"high\": \"99.99\"}, rows[1]],\n    -     lambda rows: [{**rows[0], \"volume\": \"-1\"}, rows[1]],\n    -     lambda rows: [{**rows[0], \"close\": \"100.0000000000001\"}, rows[1]],\n    - ])\n107 + @pytest.mark.parametrize(\n108 +     \"bad_rows\",\n109 +     [\n110 +         lambda rows: [rows[0], rows[0]],\n111 +         lambda rows: list(reversed(rows)),\n112 +         lambda rows: [{**rows[0], \"high\": \"99.99\"}, rows[1]],\n113 +         lambda rows: [{**rows[0], \"volume\": \"-1\"}, rows[1]],\n114 +         lambda rows: [{**rows[0], \"close\": \"100.0000000000001\"}, rows[1]],\n115 +     ],\n116 + )\n117 | def test_bad_import_is_rejected_without_snapshot(tmp_path: Path, bad_rows: object) -> None:\n    |\n\nunformatted: File would be reformatted\n   --> tests\\unit\\test_data_model_calendar.py:110:17\n    |\n109 |     dividend = CorporateAction(\n    -         \"div-1\", ID, \"dividend\", known, effective, amount=Decimal(\"0.50\"),\n    -         ex_date=date(2026, 6, 5), pay_date=date(2026, 6, 15),\n110 +         \"div-1\",\n111 +         ID,\n112 +         \"dividend\",\n113 +         known,\n114 +         effective,\n115 +         amount=Decimal(\"0.50\"),\n116 +         ex_date=date(2026, 6, 5),\n117 +         pay_date=date(2026, 6, 15),\n118 |     )\n--------------------------------------------------------------------------------\n124 |     with pytest.raises(DomainError):\n    -         CorporateAction(\"bad\", ID, \"dividend\", known, effective, amount=Decimal(\"1\"),\n    -                         ex_date=date(2026, 6, 5), pay_date=date(2026, 6, 4))\n125 +         CorporateAction(\n126 +             \"bad\",\n127 +             ID,\n128 +             \"dividend\",\n129 +             known,\n130 +             effective,\n131 +             amount=Decimal(\"1\"),\n132 +             ex_date=date(2026, 6, 5),\n133 +             pay_date=date(2026, 6, 4),\n134 +         )\n135 |\n--------------------------------------------------------------------------------\n159 |     first = bar(day, frequency=\"1m\")\n    -     third = bar(day, frequency=\"1m\", start=first.start + timedelta(minutes=2),\n    -                 end=first.end + timedelta(minutes=2),\n    -                 available_at=first.available_at + timedelta(minutes=2))\n160 +     third = bar(\n161 +         day,\n162 +         frequency=\"1m\",\n163 +         start=first.start + timedelta(minutes=2),\n164 +         end=first.end + timedelta(minutes=2),\n165 +         available_at=first.available_at + timedelta(minutes=2),\n166 +     )\n167 |     validate_bar(first, inst)\n168 |     assert missing_bar_starts([first, third], inst, first.start, third.end) == (\n169 |         first.start + timedelta(minutes=1),\n170 |     )\n    -     before_open = bar(day, frequency=\"1m\", start=first.start - timedelta(minutes=1),\n    -                       end=first.start, available_at=first.start)\n171 +     before_open = bar(\n172 +         day,\n173 +         frequency=\"1m\",\n174 +         start=first.start - timedelta(minutes=1),\n175 +         end=first.start,\n176 +         available_at=first.start,\n177 +     )\n178 |     with pytest.raises(DomainError):\n    |\n\n3 files would be reformatted, 13 files already formatted\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "C:\\Users\\Jonat\\algoalpha\\projects\\quant-terminal\\.venv\\Scripts\\python.exe",
+        "-m",
+        "mypy",
+        "src"
+      ],
+      "exit_code": 1,
+      "stdout": "src\\quant_terminal\\data\\feed.py:10: error: Skipping analyzing \"quant_terminal.data.model\": module is installed, but missing library stubs or py.typed marker  [import-untyped]\nsrc\\quant_terminal\\data\\feed.py:10: note: See https://mypy.readthedocs.io/en/stable/running_mypy.html#missing-imports\nsrc\\quant_terminal\\data\\feed.py:11: error: Skipping analyzing \"quant_terminal.data.storage\": module is installed, but missing library stubs or py.typed marker  [import-untyped]\nFound 2 errors in 1 file (checked 11 source files)\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "C:\\Users\\Jonat\\algoalpha\\projects\\quant-terminal\\.venv\\Scripts\\python.exe",
+        "-m",
+        "pytest",
+        "-q"
+      ],
+      "exit_code": 2,
+      "stdout": "\n=================================== ERRORS ====================================\n___________ ERROR collecting tests/integration/test_data_storage.py ___________\nImportError while importing test module 'C:\\Users\\Jonat\\algoalpha\\projects\\quant-terminal\\tests\\integration\\test_data_storage.py'.\nHint: make sure your test modules/packages have valid Python names.\nTraceback:\n..\\..\\..\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\importlib\\__init__.py:88: in import_module\n    return _bootstrap._gcd_import(name[level:], package, level)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\ntests\\integration\\test_data_storage.py:14: in <module>\n    from quant_terminal.data.model import InstrumentMeta\nE   ModuleNotFoundError: No module named 'quant_terminal.data.model'\n___________ ERROR collecting tests/unit/test_data_model_calendar.py ___________\nImportError while importing test module 'C:\\Users\\Jonat\\algoalpha\\projects\\quant-terminal\\tests\\unit\\test_data_model_calendar.py'.\nHint: make sure your test modules/packages have valid Python names.\nTraceback:\n..\\..\\..\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\importlib\\__init__.py:88: in import_module\n    return _bootstrap._gcd_import(name[level:], package, level)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\ntests\\unit\\test_data_model_calendar.py:10: in <module>\n    from quant_terminal.data.calendar import missing_bar_starts, validate_bar\nE   ModuleNotFoundError: No module named 'quant_terminal.data.calendar'\n=========================== short test summary info ===========================\nERROR tests/integration/test_data_storage.py\nERROR tests/unit/test_data_model_calendar.py\n!!!!!!!!!!!!!!!!!!! Interrupted: 2 errors during collection !!!!!!!!!!!!!!!!!!!\n2 errors in 7.09s\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "C:\\Users\\Jonat\\algoalpha\\projects\\quant-terminal\\.venv\\Scripts\\python.exe",
+        "-m",
+        "pip",
+        "check"
+      ],
+      "exit_code": 0,
+      "stdout": "No broken requirements found.\n",
+      "stderr": ""
+    }
+  ]
+}
